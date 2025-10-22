@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>ghet nhat it tren doi</title>
+ <style> 
+body {
+  background: #D7B25C;
+  margin: 0;
+}
+
+.conterner {
+  max-width: 1000px;
+  padding: 20px;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.box {
+  position: relative;
+  width: 200px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+  transition: transform 0.6s, box-shadow 0.6s;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  border-radius: 8px;
+}
+
+.box:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 25px rgba(255, 50, 50, 0.8);
+  z-index: 3;
+}
+
+.box:hover .overlay {
+  opacity: 1;
+}
+ </style>
+</head>
+
+<body> 
+  <div class="conterner">
+    <div class="box">
+      <img src="akali.jpg" alt="Ảnh 1">
+      <div class="overlay">Akali</div>
+    </div>
+
+    <div class="box">
+      <img src="varus.jpg" alt="Ảnh 2">
+      <div class="overlay">Varus</div>
+    </div>
+
+    <div class="box">
+      <img src="vayne.jpg" alt="Ảnh 3">
+      <div class="overlay">Vayne</div>
+    </div>
+
+    <div class="box">
+      <img src="viego.jpg" alt="Ảnh 4">
+      <div class="overlay">Viego</div>
+    </div>
+
+    <div class="box">
+      <img src="sona.jpg" alt="Ảnh 5">
+      <div class="overlay">Sona</div>
+    </div>
+  </div>
+</body>
+</html>
