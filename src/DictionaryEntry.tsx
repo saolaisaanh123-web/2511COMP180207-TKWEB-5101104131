@@ -46,6 +46,8 @@ export default function DictionaryEntry({
   change,
 }: DictionaryEntryProps) {
   const w = entry.word;
+  const imported = w.content_status === "dictionary";
+  const reference = w.content_status === "reference";
   const sources = referenceLinks(w.source || "");
   const isOxfordList =
     (w.collections || "")
@@ -77,16 +79,22 @@ export default function DictionaryEntry({
         </h2>
         <div className="dict-grammar">
           <span className="dict-pos" lang={w.part_of_speech ? "en" : "vi"}>
-            {w.part_of_speech || "Chưa khai báo từ loại"}
+            {reference
+              ? "Từ loại nguồn cần đối chiếu"
+              : w.part_of_speech || "Chưa khai báo từ loại"}
           </span>
-          {w.level && <span className="dict-level">{w.level}</span>}
+          {w.level && !reference && (
+            <span className="dict-level">{w.level}</span>
+          )}
         </div>
         <p className="dict-level-note">
-          {w.level
-            ? isOxfordList
-              ? "Mức từ/loại từ trong danh sách Oxford. Mức này không xác nhận riêng từng nghĩa."
-              : "Mức CEFR do nguồn của mục từ khai báo; chưa đối chiếu riêng từng nghĩa."
-            : "Chưa đối chiếu mức CEFR."}
+          {reference
+            ? "Bản nguồn có xung đột hoặc thiếu nghĩa phù hợp; chưa xác nhận nhãn học."
+            : w.level
+              ? isOxfordList
+                ? "Mức từ/loại từ trong danh sách Oxford. Mức này không xác nhận riêng từng nghĩa."
+                : "Mức CEFR do nguồn của mục từ khai báo; chưa đối chiếu riêng từng nghĩa."
+              : "Chưa đối chiếu mức CEFR."}
         </p>
         <div className="dict-pronunciation">
           <span className="dict-ipa" lang={w.ipa ? "en" : "vi"}>
@@ -118,13 +126,20 @@ export default function DictionaryEntry({
           1
         </div>
         <div className="dict-sense-body">
-          <p className="dict-label">Giải nghĩa biên soạn</p>
+          <p className="dict-label">
+            {imported ? "Giải nghĩa từ nguồn" : "Giải nghĩa biên soạn"}
+          </p>
           <p className="dict-definition" lang="en">
             {w.definition_en || "Chưa có giải nghĩa tiếng Anh trong dữ liệu."}
           </p>
-          <p className="dict-label">Nghĩa tiếng Việt · biên soạn</p>
+          <p className="dict-label">
+            {imported
+              ? "Nghĩa tiếng Việt · nguồn từ điển mở"
+              : "Nghĩa tiếng Việt · biên soạn"}
+          </p>
           <p className="dict-translation" lang="vi">
-            {w.meaning_vi}
+            {w.meaning_vi ||
+              "Chưa có nghĩa cùng từ loại đáng tin cậy; mục này chỉ để tra cứu nguồn."}
           </p>
           <p className="dict-muted dict-sense-note">
             Mục này học một nghĩa; mã {w.id}. Không phải toàn bộ các nghĩa của
@@ -140,7 +155,11 @@ export default function DictionaryEntry({
 
           <div className="dict-example">
             <div className="dict-example-heading">
-              <h3>Ví dụ biên soạn</h3>
+              <h3>
+                {imported
+                  ? "Ngữ liệu từ nguồn (có thể là cụm từ)"
+                  : "Ví dụ biên soạn"}
+              </h3>
               <button
                 className="dict-audio"
                 aria-label="Nghe câu"
@@ -158,14 +177,16 @@ export default function DictionaryEntry({
               </button>
             </div>
             <p className="dict-example-en" lang="en">
-              {w.example_en}
+              {w.example_en ||
+                "Nguồn chưa cung cấp ví dụ; ứng dụng không tự tạo bài điền ngữ cảnh cho mục này."}
             </p>
             <p className="dict-example-vi" lang="vi">
               {w.example_vi}
             </p>
             <p className="dict-muted">
-              Giải nghĩa, bản dịch và ví dụ do Lexi/người nhập biên soạn; không
-              phải nội dung trích nguyên văn từ Oxford.
+              {imported
+                ? "Nghĩa và ngữ liệu được nhập theo giấy phép của nguồn từ điển mở, chưa rà soát thủ công từng mục. Chúng không phải định nghĩa hoặc ví dụ Oxford."
+                : "Giải nghĩa, bản dịch và ví dụ do Lexi/người nhập biên soạn; không phải nội dung trích nguyên văn từ Oxford."}
             </p>
           </div>
         </div>
@@ -193,6 +214,13 @@ export default function DictionaryEntry({
         {w.topics && <p className="dict-muted">Chủ đề: {w.topics}</p>}
       </section>
 
+      {(imported || reference) && (
+        <div className="notice">
+          {reference
+            ? "Mục nguồn có xung đột hoặc thiếu nghĩa đã đối chiếu; chưa dùng để kiểm tra."
+            : "Nội dung từ điển mở chưa rà soát từng mục. Kiểm tra nguồn và sửa nghĩa/ví dụ nếu cần trước khi học chuyên sâu."}
+        </div>
+      )}
       <section className="dict-learning" aria-label="Việc học của bạn">
         <h3>Việc học của bạn</h3>
         <label className="dict-goal">

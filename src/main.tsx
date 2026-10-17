@@ -10,6 +10,8 @@ import {
   Download,
   Headphones,
   Leaf,
+  MessageCircle,
+  Layers,
   Plus,
   Search,
   Settings2,
@@ -36,10 +38,14 @@ import {
   record,
   day,
   validateBackup,
+  canPractice,
+  cloze,
+  isSlang,
 } from "./core";
 import "./style.css";
 import ErrorBoundary from "./ErrorBoundary";
 import WordDetail from "./DictionaryEntry";
+import CollectionBrowser from "./CollectionBrowser";
 const uid = () => crypto.randomUUID();
 function download(name: string, text: string, type = "text/plain") {
   const url = URL.createObjectURL(
@@ -61,6 +67,7 @@ function App() {
     [collection, setCollection] = useState(""),
     [level, setLevel] = useState(""),
     [status, setStatus] = useState(""),
+    [libraryPage, setLibraryPage] = useState(1),
     [detail, setDetail] = useState<string>(),
     [editor, setEditor] = useState<string>(),
     [pending, setPending] = useState<{ words: Word[]; origin: string }>(),
@@ -70,6 +77,7 @@ function App() {
     [settings, setSettings] = useState(false),
     [range, setRange] = useState(30),
     [focus, setFocus] = useState("studied"),
+    [evidenceLimit, setEvidenceLimit] = useState(100),
     [practice, setPractice] = useState(1),
     [answer, setAnswer] = useState(""),
     [revealed, setRevealed] = useState(false),
@@ -192,7 +200,11 @@ function App() {
     ([k, s]) =>
       s.due <= now &&
       state.entries[k.slice(0, k.lastIndexOf(":"))] &&
-      !state.entries[k.slice(0, k.lastIndexOf(":"))].archived,
+      !state.entries[k.slice(0, k.lastIndexOf(":"))].archived &&
+      canPractice(
+        state.entries[k.slice(0, k.lastIndexOf(":"))].word,
+        Number(k.slice(k.lastIndexOf(":") + 1)),
+      ),
   );
   const dueWords = new Set(due.map(([k]) => k.slice(0, k.lastIndexOf(":"))))
     .size;
@@ -201,8 +213,13 @@ function App() {
       .filter(([, s]) => day(s.due) < day(now))
       .map(([k]) => k.slice(0, k.lastIndexOf(":"))),
   ).size;
+  const studiedIds = new Set(state.history.map((h) => h.wordId));
   const fresh = active.filter(
-    (e) => !e.known && !state.history.some((h) => h.wordId === e.word.id),
+    (e) =>
+      !e.known &&
+      !studiedIds.has(e.word.id) &&
+      canPractice(e.word, 0) &&
+      !isSlang(e.word),
   );
   const studiedToday = new Set(
     state.history.filter((h) => day(h.time) === day(now)).map((h) => h.wordId),
@@ -236,8 +253,18 @@ function App() {
         (status === "known"
           ? e.known
           : status === "new"
-            ? !state.history.some((h) => h.wordId === e.word.id)
-            : state.history.some((h) => h.wordId === e.word.id))),
+            ? !studiedIds.has(e.word.id)
+            : studiedIds.has(e.word.id))),
+  );
+  const pageCount = Math.max(1, Math.ceil(filtered.length / 60));
+  const currentLibraryPage = Math.min(libraryPage, pageCount);
+  const visibleWords = filtered.slice(
+    (currentLibraryPage - 1) * 60,
+    currentLibraryPage * 60,
+  );
+  useEffect(
+    () => setLibraryPage(1),
+    [search, topic, collection, level, status],
   );
   const selectOptions = (key: string) => [
     ...new Set(
@@ -290,16 +317,17 @@ function App() {
             skill: Number(k.slice(k.lastIndexOf(":") + 1)),
             review: uid(),
           }));
-        fresh
-          .slice(0, planned)
-          .forEach((e) =>
-            (e.goal === "recognition" ? [0, 2] : [0, 1, 2, 3, 4, 5]).forEach(
-              (skill) => queue.push({ id: e.word.id, skill, review: uid() }),
-            ),
-          );
+        fresh.slice(0, planned).forEach((e) =>
+          (e.goal === "recognition" ? [0, 2] : [0, 1, 2, 3, 4, 5]).forEach(
+            (skill) => {
+              if (canPractice(e.word, skill))
+                queue.push({ id: e.word.id, skill, review: uid() });
+            },
+          ),
+        );
       } else {
         queue = (only ? [state.entries[only]] : filtered)
-          .filter(Boolean)
+          .filter((e) => !!e && canPractice(e.word, skillOverride ?? practice))
           .slice(0, 20)
           .map((e) => ({
             id: e.word.id,
@@ -478,33 +506,48 @@ function App() {
     ["forgotten", "Thường quên lại (ít nhất 2 lượt)"],
     ["insufficient", "Chưa đủ dữ liệu để kết luận"],
   ];
-  const evidenceList = active.filter((e) => {
-    const h = history.filter((r) => r.wordId === e.word.id);
-    const understands = h.some((r) => r.skill === 0 && r.correct && !r.hint);
-    if (focus === "stable")
-      return skills.some(
-        (_, i) => strength(state, e.word.id, i) === "Nhớ khá vững",
-      );
-    if (focus === "writing")
-      return (
-        understands &&
-        !h.some(
-          (r) => r.skill === 1 && r.correct && !r.hint && r.method === "rule",
-        )
-      );
-    if (focus === "listening")
-      return (
-        understands &&
-        !h.some((r) => [2, 3].includes(r.skill) && r.correct && !r.hint)
-      );
-    if (focus === "forgotten")
-      return h.filter((r) => !r.correct && r.method !== "ungraded").length >= 2;
-    if (focus === "insufficient")
-      return !skills.some(
-        (_, i) => strength(state, e.word.id, i) === "Nhớ khá vững",
-      );
-    return h.length > 0;
-  });
+  const periodHistory = new Map<string, typeof history>();
+  for (const r of history) {
+    const list = periodHistory.get(r.wordId) || [];
+    list.push(r);
+    periodHistory.set(r.wordId, list);
+  }
+  useEffect(() => setEvidenceLimit(100), [focus, range]);
+  const evidenceList =
+    page === "progress"
+      ? active.filter((e) => {
+          const h = periodHistory.get(e.word.id) || [];
+          const understands = h.some(
+            (r) => r.skill === 0 && r.correct && !r.hint,
+          );
+          if (focus === "stable")
+            return skills.some(
+              (_, i) => strength(state, e.word.id, i) === "Nhớ khá vững",
+            );
+          if (focus === "writing")
+            return (
+              understands &&
+              !h.some(
+                (r) =>
+                  r.skill === 1 && r.correct && !r.hint && r.method === "rule",
+              )
+            );
+          if (focus === "listening")
+            return (
+              understands &&
+              !h.some((r) => [2, 3].includes(r.skill) && r.correct && !r.hint)
+            );
+          if (focus === "forgotten")
+            return (
+              h.filter((r) => !r.correct && r.method !== "ungraded").length >= 2
+            );
+          if (focus === "insufficient")
+            return !skills.some(
+              (_, i) => strength(state, e.word.id, i) === "Nhớ khá vững",
+            );
+          return h.length > 0;
+        })
+      : [];
   const modal = (content: React.ReactNode, close: () => void) => (
     <div className="scrim" onClick={close}>
       <section
@@ -560,6 +603,8 @@ function App() {
           {[
             ["today", "Hôm nay", CalendarDays],
             ["library", "Kho từ", BookOpen],
+            ["phrasal-verbs", "Cụm động từ", Layers],
+            ["slang", "Slang", MessageCircle],
             ["practice", "Luyện tập", Headphones],
             ["progress", "Tiến độ", ChartNoAxesCombined],
           ].map(([key, label, Icon]) => (
@@ -609,6 +654,8 @@ function App() {
                 {
                   today: "Hôm nay",
                   library: "Kho từ",
+                  "phrasal-verbs": "Cụm động từ",
+                  slang: "Slang",
                   practice: "Luyện tập",
                   progress: "Tiến độ",
                   learn: "Phiên học",
@@ -938,12 +985,25 @@ function App() {
                   <div className="eyebrow">KHÔNG GIAN TỪ VỰNG</div>
                   <h1>Kho từ của bạn</h1>
                   <p>
-                    {new Set(active.map((e) => e.word.word.toLowerCase())).size}{" "}
-                    từ/cụm từ · {active.length} mục nghĩa
+                    {
+                      new Set(
+                        active.map((e) => e.word.word.normalize("NFC").trim()),
+                      ).size
+                    }{" "}
+                    từ/cụm từ ·{" "}
+                    {active.filter((e) => !!e.word.meaning_vi?.trim()).length}{" "}
+                    mục có nghĩa ·{" "}
+                    {
+                      active.filter(
+                        (e) => e.word.content_status === "reference",
+                      ).length
+                    }{" "}
+                    mục chỉ tra cứu
                   </p>
                   <p className="fineprint">
                     Kho mặc định đối chiếu từ/loại từ/CEFR theo bản lưu PDF
-                    Oxford. Nghĩa và ví dụ do ứng dụng biên soạn.{" "}
+                    Oxford. Nghĩa/ngữ liệu từ từ điển mở hoặc biên soạn được ghi
+                    riêng theo từng mục.{" "}
                     <a
                       href={import.meta.env.BASE_URL + "data/SOURCES.md"}
                       target="_blank"
@@ -963,6 +1023,27 @@ function App() {
                 >
                   <Plus size={18} /> Thêm từ
                 </button>
+              </div>
+              <div className="notice success">
+                Oxford 5000:{" "}
+                {new Set(
+                  active
+                    .filter((e) =>
+                      (e.word.collections || "")
+                        .split(",")
+                        .some((c) => c.startsWith("oxford-")),
+                    )
+                    .map((e) => e.word.word),
+                ).size.toLocaleString("vi-VN")}{" "}
+                đầu từ/cách viết. Nội dung đã rà soát:{" "}
+                {active
+                  .filter(
+                    (e) =>
+                      e.word.content_status !== "dictionary" &&
+                      e.word.content_status !== "reference",
+                  )
+                  .length.toLocaleString("vi-VN")}{" "}
+                mục. Nội dung từ từ điển mở được ghi nguồn và nhãn chưa rà soát.
               </div>
               <div className="toolbar">
                 <label className="search">
@@ -1038,8 +1119,8 @@ function App() {
                 <button onClick={source}>↻ Cập nhật kho mặc định</button>
                 <span>Chỉnh sửa được lưu trên trình duyệt.</span>
               </div>
-              <div className="word-grid">
-                {filtered.map((e) => (
+              <div className="word-grid" data-total-items={filtered.length}>
+                {visibleWords.map((e) => (
                   <button
                     className="word-card"
                     key={e.word.id}
@@ -1053,12 +1134,25 @@ function App() {
                     </div>
                     <h3>{e.word.word}</h3>
                     <p>{e.word.meaning_vi}</p>
-                    <small>{e.word.example_en}</small>
+                    <small>
+                      {e.word.example_en ||
+                        "Nguồn chưa có ví dụ; bài điền ngữ cảnh sẽ không được tạo."}
+                    </small>
+                    {e.word.content_status === "reference" && (
+                      <small className="content-status">
+                        Chưa có nghĩa phù hợp · chỉ tra cứu
+                      </small>
+                    )}
+                    {e.word.content_status === "dictionary" && (
+                      <small className="content-status">
+                        Nghĩa từ từ điển mở · chưa rà soát thủ công
+                      </small>
+                    )}
                     <footer>
                       <span>
                         {e.known
                           ? "Tự đánh dấu đã biết"
-                          : state.history.some((h) => h.wordId === e.word.id)
+                          : studiedIds.has(e.word.id)
                             ? "Đang học"
                             : "Chưa học"}
                       </span>
@@ -1067,6 +1161,26 @@ function App() {
                   </button>
                 ))}
               </div>
+              {filtered.length > 60 && (
+                <div className="library-pagination">
+                  <button
+                    disabled={currentLibraryPage === 1}
+                    onClick={() => setLibraryPage(currentLibraryPage - 1)}
+                  >
+                    ← Trang trước
+                  </button>
+                  <span>
+                    Trang {currentLibraryPage}/{pageCount} ·{" "}
+                    {filtered.length.toLocaleString("vi-VN")} mục
+                  </span>
+                  <button
+                    disabled={currentLibraryPage === pageCount}
+                    onClick={() => setLibraryPage(currentLibraryPage + 1)}
+                  >
+                    Trang sau →
+                  </button>
+                </div>
+              )}
               {!filtered.length && (
                 <div className="empty-state">
                   Không có từ phù hợp. Thử bỏ bộ lọc hoặc thêm từ của bạn.
@@ -1103,6 +1217,15 @@ function App() {
                   ))}
               </details>
             </>
+          )}
+          {(page === "slang" || page === "phrasal-verbs") && (
+            <CollectionBrowser
+              key={page}
+              kind={page}
+              entries={active}
+              onOpen={setDetail}
+              onPractice={(id) => start(false, id, 1)}
+            />
           )}
           {page === "practice" && (
             <>
@@ -1202,16 +1325,8 @@ function App() {
                     </button>
                   </>
                 )}
-                {[1, 4].includes(task.skill) && (
-                  <p className="context">
-                    {w.example_en.replace(
-                      new RegExp(
-                        w.word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"),
-                        "gi",
-                      ),
-                      "________",
-                    )}
-                  </p>
+                {[1, 4].includes(task.skill) && w.example_en && (
+                  <p className="context">{cloze(w)}</p>
                 )}
                 {task.skill === 5 && (
                   <p>
@@ -1269,7 +1384,7 @@ function App() {
                       </button>
                     </h3>
                     <p>{w.meaning_vi}</p>
-                    <p>{w.example_en}</p>
+                    {w.example_en && <p>{w.example_en}</p>}
                     <small>{w.example_vi}</small>
                     {!feedback &&
                       ([0, 2].includes(task.skill) ? (
@@ -1447,7 +1562,7 @@ function App() {
                     </option>
                   ))}
                 </select>
-                {evidenceList.map((e) => (
+                {evidenceList.slice(0, evidenceLimit).map((e) => (
                   <div className="weak-row" key={e.word.id}>
                     <button
                       className="text-button"
@@ -1482,6 +1597,12 @@ function App() {
                     </button>
                   </div>
                 ))}
+                {evidenceList.length > evidenceLimit && (
+                  <button onClick={() => setEvidenceLimit((n) => n + 100)}>
+                    Xem thêm · {Math.min(evidenceLimit, evidenceList.length)}/
+                    {evidenceList.length} mục
+                  </button>
+                )}
                 {!evidenceList.length && (
                   <div className="empty-state">
                     Chưa đủ dữ liệu để kết luận. Bắt đầu một phiên học để lưu
@@ -1638,12 +1759,18 @@ function App() {
               nhân sẽ được bỏ qua.
             </p>
             <div className="preview-list">
-              {pending.words.map((w) => (
+              {pending.words.slice(0, 60).map((w) => (
                 <p key={w.id}>
                   {w.word} — {w.meaning_vi}
                 </p>
               ))}
             </div>
+            {pending.words.length > 60 && (
+              <p className="fineprint">
+                Xem trước 60/{pending.words.length.toLocaleString("vi-VN")} mục.
+                Xác nhận sẽ áp dụng đầy đủ các mục hợp lệ trong file.
+              </p>
+            )}
             <button
               className="primary"
               onClick={() =>

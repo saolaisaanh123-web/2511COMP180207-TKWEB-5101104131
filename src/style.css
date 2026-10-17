@@ -1684,3 +1684,48 @@ hr {
     top: -70px;
   }
 }
+.library-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 20px 0 28px;
+  font-size: 11px;
+}
+.content-status {
+  display: block;
+  color: #8b7950;
+  margin-top: 8px;
+  font-size: 9px !important;
+}
+.source-update {
+  flex-wrap: wrap;
+}
+@media (min-width: 801px) and (max-height: 850px) {
+  .sidebar-note {
+    display: none;
+  }
+  .settings {
+    margin-top: auto;
+  }
+}
+@media (max-width: 600px) {
+  nav {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  nav button {
+    padding: 7px 2px;
+  }
+  nav button span {
+    font-size: 8px;
+    white-space: nowrap;
+  }
+  .library-pagination {
+    gap: 7px;
+    font-size: 9px;
+  }
+  .library-pagination button {
+    font-size: 9px;
+    padding: 9px 7px;
+  }
+}

@@ -25,7 +25,9 @@ Các trường bắt buộc: `id`, `word`, `meaning_vi`, `example_en`, `example_
 
 - Giữ nguyên ID khi sửa cách diễn đạt để giữ lịch sử. Một nghĩa mới nên có ID mới.
 - Bộ từ: `foundation`, `ielts`, `personal`; một mục có thể có nhiều nhãn.
-- Kho mặc định gồm **259 mục nghĩa**, A1–C1, chọn theo đầu từ/loại từ/CEFR trong bản lưu PDF Oxford 3000/5000. Nguồn và giới hạn được ghi rõ trong [SOURCES.md](public/data/SOURCES.md); nghĩa Việt, giải nghĩa và ví dụ là nội dung tự biên soạn. IPA/âm thanh Oxford chưa đối chiếu nên để trống. File `vocabulary.sample.txt` giữ 20 mục minh họa định dạng ban đầu.
+- Kho mặc định gồm **toàn bộ 4.955 đầu từ/cách viết trong hai PDF Oxford 3000/5000** (5.323 dòng nguồn/từ loại/CEFR), cộng **100 mục nghĩa cụm động từ** và **80 mục Slang/khẩu ngữ**; tổng 5.135 bản ghi. Phân biệt nội dung đã rà soát, nghĩa nhập từ từ điển mở chưa rà soát từng mục, và 1 mục chỉ tra cứu có xung đột nguồn. Không gán mọi nghĩa/âm thanh cho Oxford. Xem [SOURCES.md](public/data/SOURCES.md) và giấy phép dữ liệu nhập.
+- Các trường mở rộng: `content_status` (`reviewed`, `dictionary`, `reference`), `example_type`, `register`, `region`, `case_sensitive`. Mục nhập thông thường vẫn bắt buộc nghĩa và ví dụ. `dictionary` cho phép thiếu ví dụ khi nguồn không cung cấp, phải có nghĩa và nguồn; `reference` chỉ tra cứu và bắt buộc ID/từ/nguồn, không tạo bài kiểm tra. Không dùng giá trị giả để qua kiểm tra.
+- Kho từ phân trang 60 mục, Slang/cụm động từ phân trang 24 mục. Slang có trang riêng và không tự chen vào kế hoạch từ mới Oxford. Cụm từ không được gán CEFR khi chưa có căn cứ.
 - Sửa file repository rồi triển khai lại. Chọn **Kho từ → Cập nhật kho mặc định** để xem trước và áp dụng phiên bản mới. Khi tải lại, ứng dụng báo nếu có bản mới và cho xem trước; không tự thay thế bản chỉnh sửa cá nhân.
 - Hoặc chọn **Nhập .txt**, kiểm tra số thêm/sửa/lưu trữ rồi xác nhận. File lỗi bị từ chối toàn bộ với số dòng/mục; không ghi đè im lặng.
 - Mỗi nguồn cập nhật lưu trữ những mục không còn xuất hiện trong cùng nguồn; lịch sử và lịch ôn vẫn còn. File cá nhân có ưu tiên so với mặc định khi trùng ID. Phần xem trước liệt kê thay đổi nội dung, những xung đột mặc định/cá nhân được giữ bản cá nhân.
@@ -78,10 +80,12 @@ Vite dùng `base: './'`; nội dung lấy theo `import.meta.env.BASE_URL`. Đi�
 
 ## Giới hạn được biết
 
-- Không có dịch vụ chấm ngữ nghĩa/câu viết hoặc đồng bộ; nghe nhớ nghĩa là tự đánh giá.
+- Không có dịch vụ chấm ngữ nghĩa/câu viết hoặc đồng bộ; nghe nhớ nghĩa là tự đánh giá. Nội dung từ điển mở lịch sử chưa được rà soát thủ công toàn bộ; luôn xem nhãn nguồn trước khi học chuyên sâu.
 - CEFR của kho mặc định đối chiếu đầu từ/loại từ trong bản lưu PDF Oxford, không xác nhận riêng mọi nghĩa. Chưa đối chiếu byte với PDF hiện tại trên host nhà xuất bản. Xem nguồn, commit, SHA256 và từng dòng đối chiếu trong `public/data/oxford-provenance.json`.
 - Trong cùng một phiên và lần ôn, thử lại không được tính như bằng chứng lần đầu. Nên dùng bài ngữ cảnh có đáp án duy nhất; dùng nút báo câu hỏi nếu ví dụ chưa đủ rõ.
 - Kiểm thử trình duyệt kiểm tra đường đi giọng đọc không khả dụng, không xác nhận chất lượng âm thanh thực tế hoặc giọng của mọi thiết bị. Thử phát từ/câu trên thiết bị cá nhân trước bài nghe.
 - Việc push mã nguồn không tự chứng minh GitHub Pages đã triển khai; cần Source GitHub Actions và workflow thành công.
 
 `npm run test:production` kiểm tra bản `dist` bằng Chromium trên máy chủ tĩnh ở cả đường dẫn gốc và đường dẫn con tương tự GitHub Pages; kiểm tra kho từ, tải lại và thông báo khi JavaScript không tải được. Workflow chạy kiểm tra này trước khi xuất bản. Nếu gặp lỗi ứng dụng, trang hiện thông báo khôi phục thay vì khoảng trắng và không xóa dữ liệu học.
+
+`npm run test:e2e` bao gồm phân trang kho hơn 5.000 mục, trang Slang/cụm động từ, cập nhật giữ tiến độ và bản sửa cá nhân. Các mục không có ngữ liệu không được tạo bài điền câu; mạo từ gộp a/an không tạo bài điền thiếu ngữ cảnh. Những từ phân biệt hoa/thường như May/may dùng quy tắc riêng khi chấm.

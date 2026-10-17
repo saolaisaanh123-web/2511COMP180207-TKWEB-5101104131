@@ -54,7 +54,14 @@ try {
       .getByRole("heading", { name: "Hôm nay, mình học gì?" })
       .waitFor();
     await page.getByRole("button", { name: "Kho từ", exact: true }).click();
-    assert.equal(await page.locator(".word-card").count(), expectedCount);
+    assert.equal(
+      Number(await page.locator(".word-grid").getAttribute("data-total-items")),
+      expectedCount,
+    );
+    assert.equal(
+      await page.locator(".word-card").count(),
+      Math.min(60, expectedCount),
+    );
     await page.reload();
     await page
       .getByRole("heading", { name: "Hôm nay, mình học gì?" })

@@ -1,0 +1,2299 @@
+id: pv-wake-up-stop-sleeping-01
+word: wake up
+part_of_speech: phrasal verb
+meaning_vi: thức giấc
+definition_en: To stop sleeping and become awake.
+ipa:
+level:
+topics: daily-life
+collections: phrasal-verbs
+collocation: wake up early
+example_en: I usually wake up before my alarm rings.
+example_vi: Tôi thường thức giấc trước khi chuông báo thức reo.
+audio_word:
+audio_example:
+accepted_answers: wake up
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: nội động từ, không có tân ngữ.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-get-up-leave-bed-01
+word: get up
+part_of_speech: phrasal verb
+meaning_vi: ra khỏi giường sau khi thức dậy
+definition_en: To leave your bed after sleeping.
+ipa:
+level:
+topics: daily-life
+collections: phrasal-verbs
+collocation: get up at seven
+example_en: I get up at seven and make breakfast.
+example_vi: Tôi ra khỏi giường lúc bảy giờ rồi làm bữa sáng.
+audio_word:
+audio_example:
+accepted_answers: get up
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nội động từ; phân biệt với wake up là thức giấc.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-lie-down-rest-flat-01
+word: lie down
+part_of_speech: phrasal verb
+meaning_vi: nằm xuống để nghỉ
+definition_en: To move into a flat resting position on a bed or another surface.
+ipa:
+level:
+topics: health
+collections: phrasal-verbs
+collocation: lie down for a while
+example_en: You can lie down on the sofa if you feel tired.
+example_vi: Bạn có thể nằm xuống ghế sofa nếu thấy mệt.
+audio_word:
+audio_example:
+accepted_answers: lie down
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nội động từ; lie trong nghĩa này có quá khứ là lay và quá khứ phân từ là lain.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-sit-down-take-seat-01
+word: sit down
+part_of_speech: phrasal verb
+meaning_vi: ngồi xuống
+definition_en: To move from standing to a sitting position.
+ipa:
+level:
+topics: daily-life
+collections: phrasal-verbs
+collocation: sit down on a chair
+example_en: Please sit down while I find the documents.
+example_vi: Mời bạn ngồi xuống trong khi tôi tìm tài liệu.
+audio_word:
+audio_example:
+accepted_answers: sit down
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: nội động từ, không có tân ngữ.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-stand-up-rise-to-feet-01
+word: stand up
+part_of_speech: phrasal verb
+meaning_vi: đứng dậy
+definition_en: To rise to a standing position.
+ipa:
+level:
+topics: daily-life
+collections: phrasal-verbs
+collocation: stand up slowly
+example_en: Please stand up slowly if you feel dizzy.
+example_vi: Hãy đứng dậy từ từ nếu bạn thấy chóng mặt.
+audio_word:
+audio_example:
+accepted_answers: stand up
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: nội động từ, không có tân ngữ.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-go-out-leave-for-leisure-01
+word: go out
+part_of_speech: phrasal verb
+meaning_vi: ra ngoài để vui chơi hoặc gặp gỡ
+definition_en: To leave home for a social activity or entertainment.
+ipa:
+level:
+topics: daily-life
+collections: phrasal-verbs
+collocation: go out for dinner
+example_en: We often go out for dinner on Fridays.
+example_vi: Chúng tôi thường ra ngoài ăn tối vào thứ Sáu.
+audio_word:
+audio_example:
+accepted_answers: go out
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: nội động từ; có thể thêm for dinner hoặc with friends.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-come-back-return-here-01
+word: come back
+part_of_speech: phrasal verb
+meaning_vi: quay lại nơi người nói đang ở hoặc đang nói đến
+definition_en: To return to the place where the speaker is or the place being discussed.
+ipa:
+level:
+topics: daily-life
+collections: phrasal-verbs
+collocation: come back tomorrow
+example_en: Can you come back tomorrow to collect your order?
+example_vi: Bạn có thể quay lại vào ngày mai để nhận đơn hàng không?
+audio_word:
+audio_example:
+accepted_answers: come back
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nội động từ; có thể nêu nơi đến sau to, nhưng dùng come back home không có to.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-go-back-return-there-01
+word: go back
+part_of_speech: phrasal verb
+meaning_vi: trở lại nơi trước đó
+definition_en: To return to a place where you were before.
+ipa:
+level:
+topics: travel
+collections: phrasal-verbs
+collocation: go back to the office
+example_en: I need to go back to the office for my keys.
+example_vi: Tôi cần quay lại văn phòng để lấy chìa khóa.
+audio_word:
+audio_example:
+accepted_answers: go back
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nội động từ; nơi đến thường theo sau to; dùng go back home không có to.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-come-in-enter-01
+word: come in
+part_of_speech: phrasal verb
+meaning_vi: đi vào
+definition_en: To enter the room or place where the speaker is.
+ipa:
+level:
+topics: daily-life
+collections: phrasal-verbs
+collocation: come in quietly
+example_en: Please come in and close the door.
+example_vi: Mời vào và đóng cửa lại.
+audio_word:
+audio_example:
+accepted_answers: come in
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: nội động từ, không đặt tân ngữ trực tiếp sau cụm.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-get-in-enter-car-01
+word: get in
+part_of_speech: phrasal verb
+meaning_vi: lên xe ô tô hoặc phương tiện nhỏ tương tự
+definition_en: To enter a car, taxi, or similar small vehicle.
+ipa:
+level:
+topics: travel
+collections: phrasal-verbs
+collocation: get in the car
+example_en: We should get in the taxi before it starts raining.
+example_vi: Chúng ta nên lên taxi trước khi trời bắt đầu mưa.
+audio_word:
+audio_example:
+accepted_answers: get in
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa lên xe: có thể dùng không tân ngữ hoặc get in + xe; không nói get the taxi in để diễn đạt nghĩa này.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-get-out-leave-car-01
+word: get out
+part_of_speech: phrasal verb
+meaning_vi: ra khỏi xe ô tô hoặc phương tiện nhỏ tương tự
+definition_en: To leave a car, taxi, or similar small vehicle.
+ipa:
+level:
+topics: travel
+collections: phrasal-verbs
+collocation: get out of the car
+example_en: You can get out here; the station is across the road.
+example_vi: Bạn có thể xuống xe ở đây; nhà ga ở bên kia đường.
+audio_word:
+audio_example:
+accepted_answers: get out
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nội động từ; khi nêu xe, dùng get out of + xe, ví dụ get out of it.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-get-on-board-transport-01
+word: get on
+part_of_speech: phrasal verb
+meaning_vi: lên xe buýt, tàu hoặc máy bay
+definition_en: To board a bus, train, plane, or similar form of transport.
+ipa:
+level:
+topics: travel
+collections: phrasal-verbs
+collocation: get on the bus
+example_en: We need to get on the bus at the next stop.
+example_vi: Chúng ta cần lên xe buýt ở điểm dừng tiếp theo.
+audio_word:
+audio_example:
+accepted_answers: get on
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: tân ngữ chỉ phương tiện theo sau on; không tách, ví dụ get on it.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-get-off-leave-transport-01
+word: get off
+part_of_speech: phrasal verb
+meaning_vi: xuống xe buýt, tàu hoặc máy bay
+definition_en: To leave a bus, train, plane, or similar form of transport.
+ipa:
+level:
+topics: travel
+collections: phrasal-verbs
+collocation: get off the train
+example_en: We should get off the train at Central Station.
+example_vi: Chúng ta nên xuống tàu ở ga Trung tâm.
+audio_word:
+audio_example:
+accepted_answers: get off
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: tân ngữ chỉ phương tiện theo sau off; không tách, ví dụ get off it.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-take-off-remove-clothing-01
+word: take off
+part_of_speech: phrasal verb
+meaning_vi: cởi hoặc tháo quần áo, giày hay phụ kiện đang mang
+definition_en: To remove an item of clothing or something you are wearing.
+ipa:
+level:
+topics: daily-life
+collections: phrasal-verbs
+collocation: take off your shoes
+example_en: Please take off your shoes before entering the room.
+example_vi: Hãy cởi giày trước khi vào phòng.
+audio_word:
+audio_example:
+accepted_answers: take off
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Ngoại động từ, tách được; đại từ phải ở giữa: take them off.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-put-on-wear-clothing-01
+word: put on
+part_of_speech: phrasal verb
+meaning_vi: mặc hoặc đeo một món đồ
+definition_en: To place clothing or an accessory on your body.
+ipa:
+level:
+topics: daily-life
+collections: phrasal-verbs
+collocation: put on a coat
+example_en: You should put on a coat before going outside.
+example_vi: Bạn nên mặc áo khoác trước khi ra ngoài.
+audio_word:
+audio_example:
+accepted_answers: put on
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Ngoại động từ, tách được; đại từ phải ở giữa: put it on.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-try-on-test-clothing-01
+word: try on
+part_of_speech: phrasal verb
+meaning_vi: mặc thử quần áo hoặc đi thử giày
+definition_en: To put on clothing or shoes briefly to check the fit or appearance.
+ipa:
+level:
+topics: shopping
+collections: phrasal-verbs
+collocation: try on a jacket
+example_en: Can I try on this jacket before I buy it?
+example_vi: Tôi có thể mặc thử chiếc áo khoác này trước khi mua không?
+audio_word:
+audio_example:
+accepted_answers: try on
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Ngoại động từ, tách được; đại từ phải ở giữa: try it on.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-dress-up-wear-special-clothes-01
+word: dress up
+part_of_speech: phrasal verb
+meaning_vi: ăn mặc trang trọng hoặc đặc biệt hơn thường ngày
+definition_en: To wear clothes that are more formal or special than your usual clothes.
+ipa:
+level:
+topics: daily-life
+collections: phrasal-verbs
+collocation: dress up for dinner
+example_en: We do not need to dress up for this restaurant.
+example_vi: Chúng ta không cần ăn mặc trang trọng để đến nhà hàng này.
+audio_word:
+audio_example:
+accepted_answers: dress up
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: nội động từ; dress up as + nhân vật diễn đạt nghĩa hóa trang, không phải nghĩa đang học.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-turn-on-start-device-01
+word: turn on
+part_of_speech: phrasal verb
+meaning_vi: bật thiết bị hoặc nguồn cung cấp
+definition_en: To make a device or supply of power, light, or water start working.
+ipa:
+level:
+topics: technology
+collections: phrasal-verbs
+collocation: turn on the light
+example_en: Please turn on the light so I can read.
+example_vi: Hãy bật đèn để tôi có thể đọc sách.
+audio_word:
+audio_example:
+accepted_answers: turn on
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Ngoại động từ, tách được; đại từ phải ở giữa: turn it on.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-turn-off-stop-device-01
+word: turn off
+part_of_speech: phrasal verb
+meaning_vi: tắt thiết bị hoặc nguồn cung cấp
+definition_en: To stop a device or supply of power, light, or water from working.
+ipa:
+level:
+topics: technology
+collections: phrasal-verbs
+collocation: turn off the computer
+example_en: Please turn off the computer before you leave.
+example_vi: Hãy tắt máy tính trước khi bạn rời đi.
+audio_word:
+audio_example:
+accepted_answers: turn off
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Ngoại động từ, tách được; đại từ phải ở giữa: turn it off.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-turn-up-increase-volume-01
+word: turn up
+part_of_speech: phrasal verb
+meaning_vi: tăng âm lượng hoặc mức hoạt động của thiết bị
+definition_en: To increase the volume or setting of a device.
+ipa:
+level:
+topics: technology
+collections: phrasal-verbs
+collocation: turn up the volume
+example_en: Can you turn up the volume so everyone can hear?
+example_vi: Bạn có thể tăng âm lượng để mọi người đều nghe được không?
+audio_word:
+audio_example:
+accepted_answers: turn up
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: ngoại động từ, tách được; đại từ phải ở giữa: turn it up.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-turn-down-decrease-volume-01
+word: turn down
+part_of_speech: phrasal verb
+meaning_vi: giảm âm lượng hoặc mức hoạt động của thiết bị
+definition_en: To reduce the volume or setting of a device.
+ipa:
+level:
+topics: technology
+collections: phrasal-verbs
+collocation: turn down the music
+example_en: Please turn down the music while I am studying.
+example_vi: Hãy giảm âm lượng nhạc trong khi tôi đang học.
+audio_word:
+audio_example:
+accepted_answers: turn down
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: ngoại động từ, tách được; đại từ phải ở giữa: turn it down.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-plug-in-connect-power-01
+word: plug in
+part_of_speech: phrasal verb
+meaning_vi: cắm thiết bị vào nguồn điện
+definition_en: To connect electrical equipment to a power supply with a plug.
+ipa:
+level:
+topics: technology
+collections: phrasal-verbs
+collocation: plug in a charger
+example_en: You need to plug in the charger before the battery runs out.
+example_vi: Bạn cần cắm bộ sạc vào nguồn điện trước khi pin cạn.
+audio_word:
+audio_example:
+accepted_answers: plug in
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Ngoại động từ, tách được; đại từ phải ở giữa: plug it in.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-log-in-access-account-01
+word: log in
+part_of_speech: phrasal verb
+meaning_vi: đăng nhập vào hệ thống
+definition_en: To gain access to a computer system or account by providing the required identification.
+ipa:
+level:
+topics: technology
+collections: phrasal-verbs
+collocation: log in to your account
+example_en: You need to log in before you can save your progress.
+example_vi: Bạn cần đăng nhập trước khi có thể lưu tiến độ.
+audio_word:
+audio_example:
+accepted_answers: log in
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nội động từ; khi nêu tài khoản hoặc hệ thống, thường dùng log in to + tên hệ thống. Danh từ login viết liền.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-log-out-leave-account-01
+word: log out
+part_of_speech: phrasal verb
+meaning_vi: đăng xuất khỏi hệ thống
+definition_en: To end your active session in a computer system or account.
+ipa:
+level:
+topics: technology
+collections: phrasal-verbs
+collocation: log out of your account
+example_en: Remember to log out when you use a shared computer.
+example_vi: Hãy nhớ đăng xuất khi dùng máy tính chung.
+audio_word:
+audio_example:
+accepted_answers: log out
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nội động từ; khi nêu hệ thống, dùng log out of + tên hệ thống.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-sign-up-register-01
+word: sign up
+part_of_speech: phrasal verb
+meaning_vi: đăng ký tham gia
+definition_en: To register to join an activity or receive a service.
+ipa:
+level:
+topics: education
+collections: phrasal-verbs
+collocation: sign up for a course
+example_en: You can sign up for the free writing course today.
+example_vi: Bạn có thể đăng ký khóa học viết miễn phí ngay hôm nay.
+audio_word:
+audio_example:
+accepted_answers: sign up
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: nội động từ; dùng sign up for + khóa học/dịch vụ hoặc sign up to do something.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-fill-in-complete-form-01
+word: fill in
+part_of_speech: phrasal verb
+meaning_vi: điền thông tin vào biểu mẫu
+definition_en: To enter the requested information in a form or document.
+ipa:
+level:
+topics: work
+collections: phrasal-verbs
+collocation: fill in an application form
+example_en: Please fill in the application form in black ink.
+example_vi: Hãy điền mẫu đơn bằng mực đen.
+audio_word:
+audio_example:
+accepted_answers: fill in
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Ngoại động từ, tách được: fill it in. Fill in a form phổ biến trong tiếng Anh Anh; fill out a form cũng được dùng, đặc biệt trong tiếng Anh Mỹ.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-write-down-record-writing-01
+word: write down
+part_of_speech: phrasal verb
+meaning_vi: ghi lại bằng chữ viết
+definition_en: To record information in writing so that you can keep or remember it.
+ipa:
+level:
+topics: education
+collections: phrasal-verbs
+collocation: write down an address
+example_en: Please write down the address before you forget it.
+example_vi: Hãy ghi lại địa chỉ trước khi bạn quên.
+audio_word:
+audio_example:
+accepted_answers: write down
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Ngoại động từ, tách được; đại từ phải ở giữa: write it down.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-look-up-consult-reference-01
+word: look up
+part_of_speech: phrasal verb
+meaning_vi: tra cứu thông tin trong nguồn tham khảo
+definition_en: To search for a specific piece of information in a reference source.
+ipa:
+level:
+topics: education
+collections: phrasal-verbs
+collocation: look up a word
+example_en: You can look up this word in a dictionary.
+example_vi: Bạn có thể tra từ này trong từ điển.
+audio_word:
+audio_example:
+accepted_answers: look up
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Ngoại động từ, tách được; đại từ phải ở giữa: look it up. Nghĩa này khác look up to someone.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-read-through-read-completely-01
+word: read through
+part_of_speech: phrasal verb
+meaning_vi: đọc hết một văn bản để kiểm tra hoặc nắm nội dung
+definition_en: To read a whole text, often to check it or understand its contents.
+ipa:
+level:
+topics: education
+collections: phrasal-verbs
+collocation: read through a report
+example_en: Please read through the report before the meeting.
+example_vi: Hãy đọc hết báo cáo trước cuộc họp.
+audio_word:
+audio_example:
+accepted_answers: read through
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Có thể dùng read through the report hoặc read the report through; với đại từ, read it through tự nhiên hơn. Không nhầm với read into.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-go-over-review-01
+word: go over
+part_of_speech: phrasal verb
+meaning_vi: xem lại hoặc ôn lại kỹ
+definition_en: To examine or review something carefully.
+ipa:
+level:
+topics: education
+collections: phrasal-verbs
+collocation: go over your notes
+example_en: We should go over our notes before the test.
+example_vi: Chúng ta nên ôn lại ghi chép trước bài kiểm tra.
+audio_word:
+audio_example:
+accepted_answers: go over
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: tân ngữ theo sau cả cụm; không tách, ví dụ go over them.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-hand-in-submit-01
+word: hand in
+part_of_speech: phrasal verb
+meaning_vi: nộp bài hoặc tài liệu cho người có trách nhiệm
+definition_en: To give completed work or a document to the person responsible for receiving it.
+ipa:
+level:
+topics: education
+collections: phrasal-verbs
+collocation: hand in an assignment
+example_en: We must hand in the assignment by Friday.
+example_vi: Chúng ta phải nộp bài tập chậm nhất vào thứ Sáu.
+audio_word:
+audio_example:
+accepted_answers: hand in
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Ngoại động từ, tách được; đại từ phải ở giữa: hand it in.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-hand-out-distribute-01
+word: hand out
+part_of_speech: phrasal verb
+meaning_vi: phát cho từng người trong một nhóm
+definition_en: To give copies or items to people in a group.
+ipa:
+level:
+topics: education
+collections: phrasal-verbs
+collocation: hand out worksheets
+example_en: The teacher will hand out the worksheets after the break.
+example_vi: Giáo viên sẽ phát phiếu bài tập sau giờ nghỉ.
+audio_word:
+audio_example:
+accepted_answers: hand out
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Ngoại động từ, tách được; đại từ phải ở giữa: hand them out.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-give-back-return-item-01
+word: give back
+part_of_speech: phrasal verb
+meaning_vi: trả lại một vật cho người sở hữu
+definition_en: To return something to the person who had it before.
+ipa:
+level:
+topics: daily-life
+collections: phrasal-verbs
+collocation: give back a book
+example_en: Please give back the book when you finish reading it.
+example_vi: Hãy trả lại cuốn sách khi bạn đọc xong.
+audio_word:
+audio_example:
+accepted_answers: give back
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Ngoại động từ, tách được: give it back. Có thể nêu người nhận bằng to: give it back to Mai.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-take-back-return-purchase-01
+word: take back
+part_of_speech: phrasal verb
+meaning_vi: mang món hàng đã mua trở lại cửa hàng
+definition_en: To return something you bought to the shop that sold it.
+ipa:
+level:
+topics: shopping
+collections: phrasal-verbs
+collocation: take back a faulty item
+example_en: I need to take back this kettle because it leaks.
+example_vi: Tôi cần mang trả chiếc ấm này vì nó bị rò nước.
+audio_word:
+audio_example:
+accepted_answers: take back
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: ngoại động từ, tách được; đại từ phải ở giữa: take it back.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-pick-up-lift-01
+word: pick up
+part_of_speech: phrasal verb
+meaning_vi: nhấc hoặc nhặt một vật lên
+definition_en: To lift something from a surface or from the ground.
+ipa:
+level:
+topics: daily-life
+collections: phrasal-verbs
+collocation: pick up a bag
+example_en: Please pick up the bag from the floor.
+example_vi: Hãy nhấc chiếc túi dưới sàn lên.
+audio_word:
+audio_example:
+accepted_answers: pick up
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: ngoại động từ, tách được; đại từ phải ở giữa: pick it up.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-put-down-place-on-surface-01
+word: put down
+part_of_speech: phrasal verb
+meaning_vi: đặt vật đang cầm xuống
+definition_en: To place something you are holding onto a surface.
+ipa:
+level:
+topics: daily-life
+collections: phrasal-verbs
+collocation: put down a cup
+example_en: You can put down your cup on this tray.
+example_vi: Bạn có thể đặt cốc xuống chiếc khay này.
+audio_word:
+audio_example:
+accepted_answers: put down
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: ngoại động từ, tách được; đại từ phải ở giữa: put it down.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-put-away-store-01
+word: put away
+part_of_speech: phrasal verb
+meaning_vi: cất vật vào đúng chỗ
+definition_en: To place something in its usual storage place after using it.
+ipa:
+level:
+topics: daily-life
+collections: phrasal-verbs
+collocation: put away your clothes
+example_en: Please put away your clothes before dinner.
+example_vi: Hãy cất quần áo vào đúng chỗ trước bữa tối.
+audio_word:
+audio_example:
+accepted_answers: put away
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Ngoại động từ, tách được; đại từ phải ở giữa: put them away.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-throw-away-discard-01
+word: throw away
+part_of_speech: phrasal verb
+meaning_vi: vứt bỏ vì không cần hoặc không muốn giữ nữa
+definition_en: To get rid of something by putting it in the rubbish.
+ipa:
+level:
+topics: environment
+collections: phrasal-verbs
+collocation: throw away old receipts
+example_en: Do not throw away this receipt until the warranty ends.
+example_vi: Đừng vứt hóa đơn này đi cho đến khi hết thời hạn bảo hành.
+audio_word:
+audio_example:
+accepted_answers: throw away
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Ngoại động từ, tách được; đại từ phải ở giữa: throw it away.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-tidy-up-make-orderly-01
+word: tidy up
+part_of_speech: phrasal verb
+meaning_vi: dọn đồ cho ngăn nắp
+definition_en: To put things in order so that a place is neat.
+ipa:
+level:
+topics: daily-life
+collections: phrasal-verbs
+collocation: tidy up your room
+example_en: I need to tidy up my room before my friends arrive.
+example_vi: Tôi cần dọn phòng cho ngăn nắp trước khi bạn bè đến.
+audio_word:
+audio_example:
+accepted_answers: tidy up
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Dùng nội động từ hoặc ngoại động từ; khi có tân ngữ có thể tách: tidy it up. Tập trung vào sự ngăn nắp.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-clean-up-remove-dirt-01
+word: clean up
+part_of_speech: phrasal verb
+meaning_vi: dọn sạch bụi bẩn, rác hoặc chỗ bừa bộn
+definition_en: To remove dirt, waste, or a mess from a place.
+ipa:
+level:
+topics: daily-life
+collections: phrasal-verbs
+collocation: clean up a spill
+example_en: We need to clean up the spilled paint before it dries.
+example_vi: Chúng ta cần dọn sạch chỗ sơn đổ trước khi nó khô.
+audio_word:
+audio_example:
+accepted_answers: clean up
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Dùng nội động từ hoặc ngoại động từ; khi có tân ngữ có thể tách: clean it up. Tập trung vào việc làm sạch.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-wash-up-wash-dishes-01
+word: wash up
+part_of_speech: phrasal verb
+meaning_vi: rửa bát đĩa sau bữa ăn
+definition_en: To wash the dishes and utensils used for a meal.
+ipa:
+level:
+topics: daily-life
+collections: phrasal-verbs
+collocation: wash up after dinner
+example_en: I usually wash up after dinner while my brother clears the table.
+example_vi: Tôi thường rửa bát sau bữa tối trong khi em trai dọn bàn.
+audio_word:
+audio_example:
+accepted_answers: wash up
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa rửa bát chủ yếu dùng trong tiếng Anh Anh; ở đây dùng nội động từ. Trong tiếng Anh Mỹ, wash up thường là rửa tay hoặc mặt.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-eat-out-restaurant-meal-01
+word: eat out
+part_of_speech: phrasal verb
+meaning_vi: ăn ở nhà hàng thay vì ở nhà
+definition_en: To have a meal at a restaurant instead of at home.
+ipa:
+level:
+topics: daily-life
+collections: phrasal-verbs
+collocation: eat out at weekends
+example_en: We rarely eat out because we enjoy cooking at home.
+example_vi: Chúng tôi hiếm khi ăn ở nhà hàng vì thích nấu ăn ở nhà.
+audio_word:
+audio_example:
+accepted_answers: eat out
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nội động từ, không có tân ngữ trực tiếp.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-cut-down-on-reduce-consumption-01
+word: cut down on
+part_of_speech: phrasal verb
+meaning_vi: giảm lượng sử dụng hoặc tiêu thụ
+definition_en: To use, consume, or do less of something.
+ipa:
+level:
+topics: health
+collections: phrasal-verbs
+collocation: cut down on sugar
+example_en: I am trying to cut down on sugar in my drinks.
+example_vi: Tôi đang cố giảm lượng đường trong đồ uống.
+audio_word:
+audio_example:
+accepted_answers: cut down on
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Cụm ba từ; tân ngữ hoặc V-ing theo sau on; không tách, ví dụ cut down on it.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-give-up-stop-habit-01
+word: give up
+part_of_speech: phrasal verb
+meaning_vi: từ bỏ một thói quen hoặc hoạt động
+definition_en: To stop an activity or a habit, often permanently.
+ipa:
+level:
+topics: health
+collections: phrasal-verbs
+collocation: give up smoking
+example_en: My father decided to give up smoking last year.
+example_vi: Bố tôi đã quyết định bỏ thuốc lá vào năm ngoái.
+audio_word:
+audio_example:
+accepted_answers: give up
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: ngoại động từ, tách được với danh từ: give it up; dùng give up + V-ing, không dùng to V.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-take-up-start-hobby-01
+word: take up
+part_of_speech: phrasal verb
+meaning_vi: bắt đầu một sở thích hoặc hoạt động thường xuyên
+definition_en: To begin doing an activity as a hobby or regular interest.
+ipa:
+level:
+topics: daily-life
+collections: phrasal-verbs
+collocation: take up swimming
+example_en: I want to take up swimming to improve my fitness.
+example_vi: Tôi muốn bắt đầu tập bơi để cải thiện thể lực.
+audio_word:
+audio_example:
+accepted_answers: take up
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: ngoại động từ, tách được: take it up. Hoạt động thường ở dạng danh từ hoặc V-ing.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-keep-up-with-maintain-level-01
+word: keep up with
+part_of_speech: phrasal verb
+meaning_vi: theo kịp tốc độ hoặc mức độ của ai hay việc gì
+definition_en: To stay at the same pace or level as someone or something.
+ipa:
+level:
+topics: education
+collections: phrasal-verbs
+collocation: keep up with the class
+example_en: I review my notes daily to keep up with the class.
+example_vi: Tôi xem lại ghi chép hằng ngày để theo kịp lớp.
+audio_word:
+audio_example:
+accepted_answers: keep up with
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Cụm ba từ; tân ngữ theo sau with; không tách: keep up with them.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-catch-up-on-finish-backlog-01
+word: catch up on
+part_of_speech: phrasal verb
+meaning_vi: làm bù phần việc đã chậm hoặc bỏ lỡ
+definition_en: To do work or another activity that you have fallen behind with.
+ipa:
+level:
+topics: work
+collections: phrasal-verbs
+collocation: catch up on work
+example_en: I need the weekend to catch up on unfinished work.
+example_vi: Tôi cần cuối tuần để làm bù phần việc chưa xong.
+audio_word:
+audio_example:
+accepted_answers: catch up on
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Cụm ba từ; tân ngữ theo sau on; không tách: catch up on it. Khác catch up with someone.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-catch-up-with-reach-same-level-01
+word: catch up with
+part_of_speech: phrasal verb
+meaning_vi: bắt kịp người đang đi trước hoặc có tiến độ nhanh hơn
+definition_en: To reach the position or level of someone who was ahead of you.
+ipa:
+level:
+topics: education
+collections: phrasal-verbs
+collocation: catch up with classmates
+example_en: Extra practice can help you catch up with your classmates.
+example_vi: Luyện tập thêm có thể giúp bạn bắt kịp các bạn cùng lớp.
+audio_word:
+audio_example:
+accepted_answers: catch up with
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Cụm ba từ; tân ngữ theo sau with; không tách: catch up with them. Nghĩa gặp lại để trò chuyện không nằm trong mục này.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-fall-behind-make-slow-progress-01
+word: fall behind
+part_of_speech: phrasal verb
+meaning_vi: bị tụt lại về tiến độ
+definition_en: To make less progress than is expected or needed.
+ipa:
+level:
+topics: education
+collections: phrasal-verbs
+collocation: fall behind with coursework
+example_en: Students may fall behind if they miss several lessons.
+example_vi: Học sinh có thể bị chậm tiến độ nếu nghỉ nhiều buổi học.
+audio_word:
+audio_example:
+accepted_answers: fall behind
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này dùng nội động từ; có thể thêm with hoặc on + công việc tùy ngữ cảnh, hoặc behind + người/nhóm để nêu đối tượng bị tụt lại.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-carry-on-continue-activity-01
+word: carry on
+part_of_speech: phrasal verb
+meaning_vi: tiếp tục một việc đang làm
+definition_en: To continue an activity after or despite an interruption or difficulty.
+ipa:
+level:
+topics: work
+collections: phrasal-verbs
+collocation: carry on working
+example_en: We can carry on working once the power returns.
+example_vi: Chúng ta có thể tiếp tục làm việc khi có điện trở lại.
+audio_word:
+audio_example:
+accepted_answers: carry on
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này dùng carry on + V-ing hoặc carry on with + danh từ; không dùng carry on to V để diễn đạt tiếp tục cùng việc.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-keep-on-repeat-persist-01
+word: keep on
+part_of_speech: phrasal verb
+meaning_vi: cứ tiếp tục hoặc lặp đi lặp lại một hành động
+definition_en: To continue doing something persistently or repeatedly.
+ipa:
+level:
+topics: education
+collections: phrasal-verbs
+collocation: keep on practising
+example_en: If you keep on practising, the sounds will become easier.
+example_vi: Nếu bạn tiếp tục luyện tập, các âm sẽ trở nên dễ phát âm hơn.
+audio_word:
+audio_example:
+accepted_answers: keep on
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Theo sau bằng V-ing; nhấn mạnh sự tiếp diễn hoặc lặp lại, đôi khi gợi sự khó chịu tùy ngữ cảnh.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-work-out-solve-01
+word: work out
+part_of_speech: phrasal verb
+meaning_vi: tìm ra lời giải bằng suy nghĩ hoặc tính toán
+definition_en: To find an answer or solution by thinking or calculating.
+ipa:
+level:
+topics: education
+collections: phrasal-verbs
+collocation: work out the answer
+example_en: We can work out the total cost with a calculator.
+example_vi: Chúng ta có thể tính ra tổng chi phí bằng máy tính.
+audio_word:
+audio_example:
+accepted_answers: work out
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: ngoại động từ, tách được; đại từ phải ở giữa: work it out. Không phải nghĩa tập thể dục.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-figure-out-understand-01
+word: figure out
+part_of_speech: phrasal verb
+meaning_vi: hiểu ra hoặc tìm ra cách giải quyết
+definition_en: To understand something or discover how to deal with it by thinking.
+ipa:
+level:
+topics: education
+collections: phrasal-verbs
+collocation: figure out how it works
+example_en: I cannot figure out why this printer keeps stopping.
+example_vi: Tôi không hiểu ra được tại sao chiếc máy in này cứ ngừng hoạt động.
+audio_word:
+audio_example:
+accepted_answers: figure out
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Ngoại động từ, tách được: figure it out. Có thể theo sau bằng mệnh đề why/how/what. Thường dùng trong giao tiếp.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-find-out-discover-information-01
+word: find out
+part_of_speech: phrasal verb
+meaning_vi: tìm ra hoặc biết được thông tin
+definition_en: To discover information that you did not know before.
+ipa:
+level:
+topics: education
+collections: phrasal-verbs
+collocation: find out the reason
+example_en: We need to find out when the library closes.
+example_vi: Chúng ta cần tìm hiểu thư viện đóng cửa lúc nào.
+audio_word:
+audio_example:
+accepted_answers: find out
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Với tân ngữ danh từ có thể tách: find it out; cũng thường dùng find out + mệnh đề hoặc find out about + chủ đề.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-come-up-with-produce-idea-01
+word: come up with
+part_of_speech: phrasal verb
+meaning_vi: nghĩ ra ý tưởng hoặc giải pháp
+definition_en: To think of or produce an idea, answer, or plan.
+ipa:
+level:
+topics: work
+collections: phrasal-verbs
+collocation: come up with a solution
+example_en: Our team needs to come up with a cheaper solution.
+example_vi: Nhóm chúng tôi cần nghĩ ra một giải pháp ít tốn kém hơn.
+audio_word:
+audio_example:
+accepted_answers: come up with
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Cụm ba từ; tân ngữ theo sau with; không tách: come up with it.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-point-out-draw-attention-01
+word: point out
+part_of_speech: phrasal verb
+meaning_vi: chỉ ra hoặc lưu ý cho ai thấy một điều
+definition_en: To draw attention to a fact or detail that someone may not have noticed.
+ipa:
+level:
+topics: work
+collections: phrasal-verbs
+collocation: point out a mistake
+example_en: Please point out any errors you notice in the report.
+example_vi: Hãy chỉ ra những lỗi bạn nhận thấy trong báo cáo.
+audio_word:
+audio_example:
+accepted_answers: point out
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Ngoại động từ, tách được: point it out. Có thể dùng point out that + mệnh đề; người nhận theo sau to.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-bring-up-introduce-topic-01
+word: bring up
+part_of_speech: phrasal verb
+meaning_vi: đề cập một chủ đề để thảo luận
+definition_en: To introduce a subject into a conversation.
+ipa:
+level:
+topics: work
+collections: phrasal-verbs
+collocation: bring up an issue
+example_en: I plan to bring up the deadline at our meeting.
+example_vi: Tôi dự định đề cập thời hạn trong cuộc họp của chúng ta.
+audio_word:
+audio_example:
+accepted_answers: bring up
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: ngoại động từ, tách được; đại từ phải ở giữa: bring it up.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-talk-over-discuss-before-decision-01
+word: talk over
+part_of_speech: phrasal verb
+meaning_vi: bàn bạc kỹ trước khi quyết định
+definition_en: To discuss something carefully with someone before making a decision.
+ipa:
+level:
+topics: work
+collections: phrasal-verbs
+collocation: talk over a proposal
+example_en: We should talk over the proposal before we accept it.
+example_vi: Chúng ta nên bàn bạc kỹ đề xuất trước khi chấp nhận.
+audio_word:
+audio_example:
+accepted_answers: talk over
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Ngoại động từ, tách được: talk it over. Người cùng bàn bạc theo sau with: talk it over with Mai.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-think-over-consider-carefully-01
+word: think over
+part_of_speech: phrasal verb
+meaning_vi: suy nghĩ kỹ trước khi quyết định
+definition_en: To consider something carefully before making a decision.
+ipa:
+level:
+topics: work
+collections: phrasal-verbs
+collocation: think over an offer
+example_en: I need a day to think over your offer.
+example_vi: Tôi cần một ngày để suy nghĩ kỹ về lời đề nghị của bạn.
+audio_word:
+audio_example:
+accepted_answers: think over
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Ngoại động từ, tách được; đại từ phải ở giữa: think it over.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-make-up-invent-story-01
+word: make up
+part_of_speech: phrasal verb
+meaning_vi: bịa ra câu chuyện hoặc thông tin
+definition_en: To invent a story, excuse, or piece of information.
+ipa:
+level:
+topics: communication
+collections: phrasal-verbs
+collocation: make up an excuse
+example_en: You do not need to make up an excuse; just explain what happened.
+example_vi: Bạn không cần bịa ra lý do; chỉ cần giải thích chuyện đã xảy ra.
+audio_word:
+audio_example:
+accepted_answers: make up
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: ngoại động từ, tách được; đại từ phải ở giữa: make it up.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-make-up-for-compensate-01
+word: make up for
+part_of_speech: phrasal verb
+meaning_vi: bù đắp cho điều thiếu hụt hoặc bất lợi
+definition_en: To provide something that balances a loss, disadvantage, or mistake.
+ipa:
+level:
+topics: work
+collections: phrasal-verbs
+collocation: make up for lost time
+example_en: We will start early to make up for lost time.
+example_vi: Chúng tôi sẽ bắt đầu sớm để bù lại thời gian đã mất.
+audio_word:
+audio_example:
+accepted_answers: make up for
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Cụm ba từ; tân ngữ hoặc V-ing theo sau for; không tách: make up for it.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-deal-with-handle-problem-01
+word: deal with
+part_of_speech: phrasal verb
+meaning_vi: xử lý một vấn đề hoặc tình huống
+definition_en: To take action to handle a problem, task, or situation.
+ipa:
+level:
+topics: work
+collections: phrasal-verbs
+collocation: deal with a complaint
+example_en: Our support team can deal with this complaint.
+example_vi: Nhóm hỗ trợ của chúng tôi có thể xử lý khiếu nại này.
+audio_word:
+audio_example:
+accepted_answers: deal with
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Động từ + giới từ; tân ngữ theo sau with; không tách: deal with it. Quá khứ của deal là dealt.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-sort-out-resolve-problem-01
+word: sort out
+part_of_speech: phrasal verb
+meaning_vi: giải quyết để vấn đề trở nên ổn thỏa
+definition_en: To resolve a problem or difficulty.
+ipa:
+level:
+topics: work
+collections: phrasal-verbs
+collocation: sort out a problem
+example_en: We need to sort out this payment problem today.
+example_vi: Chúng ta cần giải quyết vấn đề thanh toán này hôm nay.
+audio_word:
+audio_example:
+accepted_answers: sort out
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: ngoại động từ, tách được; đại từ phải ở giữa: sort it out.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-carry-out-perform-task-01
+word: carry out
+part_of_speech: phrasal verb
+meaning_vi: thực hiện một nhiệm vụ hoặc kế hoạch
+definition_en: To perform a task or procedure, or put a plan into action.
+ipa:
+level:
+topics: work
+collections: phrasal-verbs
+collocation: carry out an inspection
+example_en: Engineers will carry out a safety inspection tomorrow.
+example_vi: Các kỹ sư sẽ thực hiện một đợt kiểm tra an toàn vào ngày mai.
+audio_word:
+audio_example:
+accepted_answers: carry out
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Ngoại động từ, tách được; đại từ phải ở giữa: carry it out. Thường dùng trong ngữ cảnh công việc hoặc văn bản trang trọng.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-set-up-establish-01
+word: set up
+part_of_speech: phrasal verb
+meaning_vi: thành lập hoặc thiết lập để hoạt động
+definition_en: To establish an organization, service, or system and make it ready to operate.
+ipa:
+level:
+topics: work
+collections: phrasal-verbs
+collocation: set up a business
+example_en: They plan to set up a small translation business.
+example_vi: Họ dự định thành lập một doanh nghiệp dịch thuật nhỏ.
+audio_word:
+audio_example:
+accepted_answers: set up
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: ngoại động từ, tách được; đại từ phải ở giữa: set it up. Quá khứ và quá khứ phân từ của set vẫn là set.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-put-off-postpone-01
+word: put off
+part_of_speech: phrasal verb
+meaning_vi: hoãn sang một thời điểm muộn hơn
+definition_en: To delay an event or action until a later time.
+ipa:
+level:
+topics: work
+collections: phrasal-verbs
+collocation: put off a meeting
+example_en: We should not put off the meeting again.
+example_vi: Chúng ta không nên hoãn cuộc họp thêm lần nữa.
+audio_word:
+audio_example:
+accepted_answers: put off
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Ngoại động từ, tách được: put it off. Khi theo sau bằng hành động, dùng V-ing: put off making a decision.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-call-off-cancel-01
+word: call off
+part_of_speech: phrasal verb
+meaning_vi: hủy một sự kiện hoặc hoạt động đã lên kế hoạch
+definition_en: To cancel a planned event or activity.
+ipa:
+level:
+topics: work
+collections: phrasal-verbs
+collocation: call off a match
+example_en: The organizers may call off the match if the storm continues.
+example_vi: Ban tổ chức có thể hủy trận đấu nếu bão tiếp diễn.
+audio_word:
+audio_example:
+accepted_answers: call off
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Ngoại động từ, tách được; đại từ phải ở giữa: call it off.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-put-up-with-tolerate-01
+word: put up with
+part_of_speech: phrasal verb
+meaning_vi: chịu đựng điều gây khó chịu
+definition_en: To accept an unpleasant situation or behaviour without stopping it.
+ipa:
+level:
+topics: daily-life
+collections: phrasal-verbs
+collocation: put up with noise
+example_en: We cannot put up with this noise every night.
+example_vi: Chúng tôi không thể chịu đựng tiếng ồn này mỗi đêm.
+audio_word:
+audio_example:
+accepted_answers: put up with
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Cụm ba từ; tân ngữ hoặc V-ing theo sau with; không tách: put up with it.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-run-out-of-exhaust-supply-01
+word: run out of
+part_of_speech: phrasal verb
+meaning_vi: dùng hết và không còn thứ cần dùng
+definition_en: To have none of a supply left because it has all been used.
+ipa:
+level:
+topics: daily-life
+collections: phrasal-verbs
+collocation: run out of milk
+example_en: We may run out of milk before the shops open.
+example_vi: Chúng ta có thể hết sữa trước khi các cửa hàng mở cửa.
+audio_word:
+audio_example:
+accepted_answers: run out of
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Cụm ba từ; chủ ngữ là người, tổ chức hoặc vật bị hết thứ cần dùng; tân ngữ theo sau of; không tách: run out of it. Ví dụ: The car ran out of petrol. Quá khứ: ran out of.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-use-up-consume-all-01
+word: use up
+part_of_speech: phrasal verb
+meaning_vi: sử dụng hết toàn bộ một lượng có sẵn
+definition_en: To consume all of an available supply of something.
+ipa:
+level:
+topics: environment
+collections: phrasal-verbs
+collocation: use up the paper
+example_en: Please do not use up all the paper on one draft.
+example_vi: Đừng dùng hết toàn bộ giấy cho một bản nháp.
+audio_word:
+audio_example:
+accepted_answers: use up
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Ngoại động từ, tách được; đại từ phải ở giữa: use it up.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-break-down-machine-fail-01
+word: break down
+part_of_speech: phrasal verb
+meaning_vi: bị hỏng và ngừng hoạt động
+definition_en: To stop working because of a mechanical or technical fault.
+ipa:
+level:
+topics: technology
+collections: phrasal-verbs
+collocation: break down on the road
+example_en: Old buses can break down without warning.
+example_vi: Xe buýt cũ có thể bị hỏng bất ngờ.
+audio_word:
+audio_example:
+accepted_answers: break down
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa máy móc hỏng: nội động từ. Quá khứ: broke down; quá khứ phân từ: broken down.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-break-up-end-relationship-01
+word: break up
+part_of_speech: phrasal verb
+meaning_vi: chấm dứt quan hệ yêu đương
+definition_en: To end a romantic relationship.
+ipa:
+level:
+topics: relationships
+collections: phrasal-verbs
+collocation: break up with a partner
+example_en: They decided to break up after months of arguments.
+example_vi: Họ quyết định chia tay sau nhiều tháng cãi vã.
+audio_word:
+audio_example:
+accepted_answers: break up
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: nội động từ; khi nêu người yêu, dùng break up with + người. Không tách.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-get-along-with-have-good-relationship-01
+word: get along with
+part_of_speech: phrasal verb
+meaning_vi: hòa thuận hoặc có quan hệ tốt với ai
+definition_en: To have a friendly or cooperative relationship with someone.
+ipa:
+level:
+topics: relationships
+collections: phrasal-verbs
+collocation: get along with colleagues
+example_en: I get along with most of my colleagues.
+example_vi: Tôi hòa thuận với phần lớn đồng nghiệp.
+audio_word:
+audio_example:
+accepted_answers: get along with
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Cụm ba từ; tân ngữ theo sau with; không tách: get along with them. Get on with cũng có thể diễn đạt nghĩa này.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-fall-out-quarrel-01
+word: fall out
+part_of_speech: phrasal verb
+meaning_vi: cãi nhau đến mức mất hòa khí
+definition_en: To have an argument that damages a friendly relationship.
+ipa:
+level:
+topics: relationships
+collections: phrasal-verbs
+collocation: fall out with a friend
+example_en: Friends sometimes fall out over small misunderstandings.
+example_vi: Bạn bè đôi khi mất hòa khí vì những hiểu lầm nhỏ.
+audio_word:
+audio_example:
+accepted_answers: fall out
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nội động từ; dùng fall out with + người và fall out over/about + nguyên nhân. Quá khứ: fell out.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-make-up-reconcile-01
+word: make up
+part_of_speech: phrasal verb
+meaning_vi: làm hòa sau khi cãi nhau
+definition_en: To become friendly again after an argument.
+ipa:
+level:
+topics: relationships
+collections: phrasal-verbs
+collocation: make up after an argument
+example_en: They usually make up soon after an argument.
+example_vi: Họ thường làm hòa ngay sau khi cãi nhau.
+audio_word:
+audio_example:
+accepted_answers: make up
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: nội động từ; có thể dùng make up with + người. Khác make something up là bịa chuyện.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-look-after-care-for-01
+word: look after
+part_of_speech: phrasal verb
+meaning_vi: chăm sóc người, vật nuôi hoặc thứ được giao
+definition_en: To take care of someone or something and keep them safe or in good condition.
+ipa:
+level:
+topics: daily-life
+collections: phrasal-verbs
+collocation: look after a child
+example_en: Can you look after my cat while I am away?
+example_vi: Bạn có thể chăm sóc mèo của tôi trong lúc tôi đi vắng không?
+audio_word:
+audio_example:
+accepted_answers: look after
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Động từ + giới từ; tân ngữ theo sau after; không tách: look after it.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-get-over-recover-01
+word: get over
+part_of_speech: phrasal verb
+meaning_vi: hồi phục sau bệnh tật hoặc một trải nghiệm khó khăn
+definition_en: To recover from an illness or a distressing experience.
+ipa:
+level:
+topics: health
+collections: phrasal-verbs
+collocation: get over a cold
+example_en: It may take a week to get over this cold.
+example_vi: Có thể mất một tuần để khỏi đợt cảm lạnh này.
+audio_word:
+audio_example:
+accepted_answers: get over
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: tân ngữ theo sau over; không tách: get over it. Với trải nghiệm buồn, thời gian hồi phục tùy ngữ cảnh.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-look-for-search-01
+word: look for
+part_of_speech: phrasal verb
+meaning_vi: tìm kiếm người hoặc vật
+definition_en: To try to find someone or something.
+ipa:
+level:
+topics: daily-life
+collections: phrasal-verbs
+collocation: look for your keys
+example_en: I need to look for my keys before we leave.
+example_vi: Tôi cần tìm chìa khóa trước khi chúng ta đi.
+audio_word:
+audio_example:
+accepted_answers: look for
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Động từ + giới từ; tân ngữ theo sau for; không tách: look for them. Look for là quá trình tìm, không khẳng định đã tìm thấy.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-look-forward-to-anticipate-pleasure-01
+word: look forward to
+part_of_speech: phrasal verb
+meaning_vi: mong chờ một điều với tâm trạng háo hức
+definition_en: To feel pleased and excited about something that is going to happen.
+ipa:
+level:
+topics: communication
+collections: phrasal-verbs
+collocation: look forward to a trip
+example_en: We look forward to meeting your family next month.
+example_vi: Chúng tôi mong được gặp gia đình bạn vào tháng tới.
+audio_word:
+audio_example:
+accepted_answers: look forward to
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Cụm ba từ; to là giới từ, theo sau bằng danh từ hoặc V-ing: look forward to meeting, không dùng to meet trong cấu trúc này.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-look-into-investigate-01
+word: look into
+part_of_speech: phrasal verb
+meaning_vi: tìm hiểu hoặc điều tra một vấn đề
+definition_en: To examine a situation or problem to discover more information about it.
+ipa:
+level:
+topics: work
+collections: phrasal-verbs
+collocation: look into a complaint
+example_en: The manager will look into your complaint today.
+example_vi: Quản lý sẽ tìm hiểu khiếu nại của bạn hôm nay.
+audio_word:
+audio_example:
+accepted_answers: look into
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: tân ngữ theo sau into; không tách: look into it.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-look-out-be-alert-01
+word: look out
+part_of_speech: phrasal verb
+meaning_vi: coi chừng; chú ý để tránh nguy hiểm
+definition_en: To be alert to danger or a possible problem.
+ipa:
+level:
+topics: safety
+collections: phrasal-verbs
+collocation: look out for traffic
+example_en: You must look out for cyclists when opening a car door.
+example_vi: Bạn phải chú ý người đi xe đạp khi mở cửa ô tô.
+audio_word:
+audio_example:
+accepted_answers: look out
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nội động từ; Look out! dùng để cảnh báo. Khi nêu điều cần đề phòng, dùng look out for + danh từ.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-watch-out-take-care-01
+word: watch out
+part_of_speech: phrasal verb
+meaning_vi: cẩn thận để tránh nguy hiểm
+definition_en: To take care because something may be dangerous.
+ipa:
+level:
+topics: safety
+collections: phrasal-verbs
+collocation: watch out for broken glass
+example_en: Please watch out for broken glass on the path.
+example_vi: Hãy cẩn thận với mảnh kính vỡ trên lối đi.
+audio_word:
+audio_example:
+accepted_answers: watch out
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nội động từ; Watch out! là lời cảnh báo trực tiếp. Có thể thêm for + mối nguy.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-look-back-on-recall-past-01
+word: look back on
+part_of_speech: phrasal verb
+meaning_vi: nhìn lại hoặc nhớ về một giai đoạn đã qua
+definition_en: To think about and remember a past event or period.
+ipa:
+level:
+topics: daily-life
+collections: phrasal-verbs
+collocation: look back on school days
+example_en: Many people look back on their school days with affection.
+example_vi: Nhiều người nhớ về thời đi học với tình cảm trìu mến.
+audio_word:
+audio_example:
+accepted_answers: look back on
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Cụm ba từ; tân ngữ theo sau on; không tách: look back on them.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-look-down-on-consider-inferior-01
+word: look down on
+part_of_speech: phrasal verb
+meaning_vi: coi thường vì cho rằng ai đó kém hơn mình
+definition_en: To think that someone is less worthy or important than you.
+ipa:
+level:
+topics: relationships
+collections: phrasal-verbs
+collocation: look down on others
+example_en: We should not look down on people because of their jobs.
+example_vi: Chúng ta không nên coi thường người khác vì nghề nghiệp của họ.
+audio_word:
+audio_example:
+accepted_answers: look down on
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Cụm ba từ; tân ngữ theo sau on; không tách: look down on them. Diễn tả thái độ tiêu cực.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-look-up-to-admire-01
+word: look up to
+part_of_speech: phrasal verb
+meaning_vi: ngưỡng mộ và kính trọng ai
+definition_en: To admire and respect someone.
+ipa:
+level:
+topics: relationships
+collections: phrasal-verbs
+collocation: look up to a mentor
+example_en: Many young players look up to their coach.
+example_vi: Nhiều cầu thủ trẻ ngưỡng mộ và kính trọng huấn luyện viên của mình.
+audio_word:
+audio_example:
+accepted_answers: look up to
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Cụm ba từ; tân ngữ theo sau to; không tách: look up to her. Không nhầm với look a word up.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-take-after-resemble-family-01
+word: take after
+part_of_speech: phrasal verb
+meaning_vi: giống một người thân về ngoại hình hoặc tính cách
+definition_en: To resemble an older family member in appearance or character.
+ipa:
+level:
+topics: relationships
+collections: phrasal-verbs
+collocation: take after your mother
+example_en: People say I take after my mother in both looks and temperament.
+example_vi: Mọi người nói tôi giống mẹ cả về ngoại hình lẫn tính cách.
+audio_word:
+audio_example:
+accepted_answers: take after
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: tân ngữ theo sau after; không tách: take after her. Thường nói về người thân lớn tuổi hơn.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-grow-up-become-adult-01
+word: grow up
+part_of_speech: phrasal verb
+meaning_vi: lớn lên từ thời thơ ấu đến trưởng thành
+definition_en: To develop from a child into an adult.
+ipa:
+level:
+topics: daily-life
+collections: phrasal-verbs
+collocation: grow up in a village
+example_en: Children who grow up near the sea often learn to swim early.
+example_vi: Trẻ em lớn lên gần biển thường học bơi sớm.
+audio_word:
+audio_example:
+accepted_answers: grow up
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nội động từ; quá khứ: grew up; quá khứ phân từ: grown up. Grown-up có thể là danh từ hoặc tính từ.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-bring-up-raise-child-01
+word: bring up
+part_of_speech: phrasal verb
+meaning_vi: nuôi dạy một đứa trẻ
+definition_en: To care for a child and teach them how to behave as they grow.
+ipa:
+level:
+topics: relationships
+collections: phrasal-verbs
+collocation: bring up children
+example_en: It takes patience to bring up children.
+example_vi: Nuôi dạy trẻ em đòi hỏi sự kiên nhẫn.
+audio_word:
+audio_example:
+accepted_answers: bring up
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: ngoại động từ, tách được; đại từ phải ở giữa: bring them up. Quá khứ: brought up.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-move-in-start-living-01
+word: move in
+part_of_speech: phrasal verb
+meaning_vi: chuyển vào sống ở một nơi mới
+definition_en: To start living in a new home.
+ipa:
+level:
+topics: daily-life
+collections: phrasal-verbs
+collocation: move in next week
+example_en: We can move in once the repairs are finished.
+example_vi: Chúng tôi có thể chuyển vào ở khi việc sửa chữa hoàn tất.
+audio_word:
+audio_example:
+accepted_answers: move in
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nội động từ; nêu nhà cụ thể thường dùng move into + nơi ở. Move in with + người là chuyển đến sống cùng người đó.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-move-out-leave-home-01
+word: move out
+part_of_speech: phrasal verb
+meaning_vi: chuyển đi, ngừng sống tại nơi ở hiện tại
+definition_en: To leave the home where you have been living.
+ipa:
+level:
+topics: daily-life
+collections: phrasal-verbs
+collocation: move out of an apartment
+example_en: We have to move out before the lease ends.
+example_vi: Chúng tôi phải chuyển đi trước khi hợp đồng thuê hết hạn.
+audio_word:
+audio_example:
+accepted_answers: move out
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nội động từ; khi nêu nơi ở cũ, dùng move out of + nơi ở.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-settle-down-become-quiet-01
+word: settle down
+part_of_speech: phrasal verb
+meaning_vi: ổn định và trở nên yên lặng sau khi xao động
+definition_en: To become quiet and ready to concentrate after being active or distracted.
+ipa:
+level:
+topics: education
+collections: phrasal-verbs
+collocation: settle down to work
+example_en: The class needs to settle down before the lesson can begin.
+example_vi: Cả lớp cần ổn định trật tự trước khi buổi học có thể bắt đầu.
+audio_word:
+audio_example:
+accepted_answers: settle down
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: nội động từ; khác nghĩa lập gia đình hoặc sống ổn định lâu dài. Settle down to + danh từ/V-ing diễn tả bắt đầu tập trung vào việc.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-calm-down-become-less-upset-01
+word: calm down
+part_of_speech: phrasal verb
+meaning_vi: bình tĩnh lại, bớt tức giận hoặc lo lắng
+definition_en: To become less angry, worried, or emotionally excited.
+ipa:
+level:
+topics: health
+collections: phrasal-verbs
+collocation: calm down after a shock
+example_en: Take a few slow breaths to help yourself calm down.
+example_vi: Hãy hít thở chậm vài lần để giúp bản thân bình tĩnh lại.
+audio_word:
+audio_example:
+accepted_answers: calm down
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: nội động từ. Dạng làm ai bình tĩnh là ngoại động từ tách được: calm her down.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-cheer-up-become-happier-01
+word: cheer up
+part_of_speech: phrasal verb
+meaning_vi: vui lên sau khi buồn
+definition_en: To become happier after feeling sad or discouraged.
+ipa:
+level:
+topics: relationships
+collections: phrasal-verbs
+collocation: cheer up after bad news
+example_en: A walk in the park may help you cheer up.
+example_vi: Một cuộc đi dạo trong công viên có thể giúp bạn vui lên.
+audio_word:
+audio_example:
+accepted_answers: cheer up
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: nội động từ. Dạng làm ai vui lên là ngoại động từ tách được: cheer him up.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-slow-down-reduce-speed-01
+word: slow down
+part_of_speech: phrasal verb
+meaning_vi: giảm tốc độ
+definition_en: To move or operate at a lower speed.
+ipa:
+level:
+topics: travel
+collections: phrasal-verbs
+collocation: slow down near a school
+example_en: Drivers must slow down near the school gate.
+example_vi: Người lái xe phải giảm tốc độ gần cổng trường.
+audio_word:
+audio_example:
+accepted_answers: slow down
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: nội động từ. Dạng làm vật gì chậm lại tách được: slow it down.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-hurry-up-act-faster-01
+word: hurry up
+part_of_speech: phrasal verb
+meaning_vi: nhanh lên; làm nhanh hơn
+definition_en: To act or move more quickly.
+ipa:
+level:
+topics: daily-life
+collections: phrasal-verbs
+collocation: hurry up or you will be late
+example_en: We need to hurry up or we will miss the train.
+example_vi: Chúng ta cần nhanh lên nếu không sẽ lỡ tàu.
+audio_word:
+audio_example:
+accepted_answers: hurry up
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: nội động từ. Hurry up! có thể nghe thúc ép; thêm please nếu cần lịch sự hơn.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-show-up-arrive-01
+word: show up
+part_of_speech: phrasal verb
+meaning_vi: xuất hiện hoặc đến nơi, nhất là nơi đã hẹn
+definition_en: To arrive or appear at a place, especially where you are expected.
+ipa:
+level:
+topics: daily-life
+collections: phrasal-verbs
+collocation: show up on time
+example_en: Please show up ten minutes before your interview.
+example_vi: Hãy đến sớm mười phút trước buổi phỏng vấn.
+audio_word:
+audio_example:
+accepted_answers: show up
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: nội động từ; thường dùng trong giao tiếp. Không phải nghĩa show someone up.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-pass-out-faint-01
+word: pass out
+part_of_speech: phrasal verb
+meaning_vi: ngất, mất ý thức trong thời gian ngắn
+definition_en: To lose consciousness for a short time.
+ipa:
+level:
+topics: health
+collections: phrasal-verbs
+collocation: pass out from the heat
+example_en: People can pass out if they become severely dehydrated.
+example_vi: Người ta có thể ngất nếu bị mất nước nghiêm trọng.
+audio_word:
+audio_example:
+accepted_answers: pass out
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: nội động từ; cách nói thông dụng. Ngoại động từ pass something out nghĩa là phát đồ, không phải nghĩa này.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-hold-on-wait-01
+word: hold on
+part_of_speech: phrasal verb
+meaning_vi: đợi một lát
+definition_en: To wait for a short time, especially during a conversation or phone call.
+ipa:
+level:
+topics: communication
+collections: phrasal-verbs
+collocation: hold on a moment
+example_en: Please hold on while I check your booking.
+example_vi: Vui lòng đợi trong khi tôi kiểm tra thông tin đặt chỗ của bạn.
+audio_word:
+audio_example:
+accepted_answers: hold on
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Nghĩa này: nội động từ; thường dùng trong giao tiếp. Hold on to + vật nghĩa là nắm giữ, không phải nghĩa đang học.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-hang-up-end-call-01
+word: hang up
+part_of_speech: phrasal verb
+meaning_vi: kết thúc cuộc gọi điện thoại
+definition_en: To end a telephone call by disconnecting the line.
+ipa:
+level:
+topics: communication
+collections: phrasal-verbs
+collocation: hang up the phone
+example_en: Please do not hang up until I give you the reference number.
+example_vi: Vui lòng đừng gác máy cho đến khi tôi cung cấp mã tham chiếu.
+audio_word:
+audio_example:
+accepted_answers: hang up
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Có thể dùng nội động từ hoặc hang up the phone; với đại từ, hang it up. Quá khứ trong nghĩa này là hung up.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: pv-call-back-return-call-01
+word: call back
+part_of_speech: phrasal verb
+meaning_vi: gọi điện lại cho ai
+definition_en: To phone someone again or return their phone call.
+ipa:
+level:
+topics: communication
+collections: phrasal-verbs
+collocation: call back a customer
+example_en: I will call back this afternoon when I have the results.
+example_vi: Tôi sẽ gọi lại vào chiều nay khi có kết quả.
+audio_word:
+audio_example:
+accepted_answers: call back
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note: Dùng nội động từ hoặc ngoại động từ tách được: call the customer back; với đại từ, call her back.
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:

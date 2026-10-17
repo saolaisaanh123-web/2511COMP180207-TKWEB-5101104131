@@ -1,58 +1,71 @@
 # Nguồn và phạm vi kho từ Lexi IELTS
 
-Kho mặc định hiện có **259 mục nghĩa / 259 đầu từ**, được chọn để học nền tảng và các chủ đề IELTS. Đây là tuyển chọn của ứng dụng, **không phải toàn bộ Oxford 3000/5000**, không phải danh sách IELTS chính thức và không dùng số từ để suy ra band.
+Kho mặc định hiện chứa **toàn bộ phạm vi Oxford 3000 và phần bổ sung Oxford 5000 theo hai PDF đã đối chiếu**, cộng bộ **100 mục nghĩa cụm động từ (98 cụm)** và **80 mục Slang/khẩu ngữ**. Tất cả nội dung học nằm trong file UTF-8 `vocabulary.txt`; không nhúng từ vựng vào mã giao diện.
 
-## Những gì đã đối chiếu
+## Đếm đúng phạm vi Oxford
 
-Từ chính, loại từ và mức CEFR khớp với các dòng trong hai tài liệu có thương hiệu và bản quyền Oxford University Press:
+- Hai PDF có **5.323 dòng đầu mục/từ loại/CEFR**.
+- Gộp các từ trùng cách viết, giữ riêng May/may, March/march, IT/it: **4.955 đầu từ/cách viết**.
+- Giữ toàn bộ 5.323 dòng nguồn trong `oxford-provenance.json`: 4.955 dòng gắn mục học chính và 368 dòng nguồn bổ sung. Một đầu từ có thể có nhiều loại từ hoặc nghĩa.
+- `Oxford 5000` là tên danh sách; ứng dụng không nhân đôi thẻ để ép số đếm thành 5.000. Đây là phạm vi đầy đủ của **bản PDF lưu trữ cụ thể**, không tuyên bố đã xác minh phiên bản mới nhất trực tiếp từ nhà xuất bản.
+- Phần Oxford 5000 bổ sung chủ yếu ở B2–C1, không phải toàn bộ là từ sơ cấp. Có thể lọc CEFR khi củng cố nền tảng.
 
-- The Oxford 3000™ by CEFR level.
-- The Oxford 5000™ by CEFR level (phần từ bổ sung).
+## Ba mức nội dung
 
-**Giới hạn nguồn:** các yêu cầu tải PDF trực tiếp từ máy chủ Oxford trả HTTP 403 lúc biên soạn. Việc đối chiếu sử dụng bản PDF lưu tại GitHub, khóa theo commit `7dc22b8ff8e5cb3410e962b0511d22cdf74b120c`. Đã kiểm tra lại SHA256 của chính bản lưu đó; chưa so sánh byte với phiên bản hiện tại trên máy chủ nhà xuất bản. Không gọi đây là xác minh trực tiếp từ website Oxford hoặc bảo đảm chính xác tuyệt đối.
+1. **Đã rà soát:** nội dung biên soạn và rà soát ngôn ngữ riêng, giữ các ID cũ. Không đồng nghĩa là Oxford chứng nhận nghĩa hoặc người học đã thuộc.
+2. **Từ từ điển mở:** nghĩa Việt cùng từ loại được chọn từ FVDP/OVDP hoặc dữ liệu Wiktionary có nguồn. Chưa rà soát thủ công từng mục; nguồn lịch sử có thể có lỗi hoặc cách diễn đạt cũ. Bản dịch, ví dụ này **không phải định nghĩa/ví dụ Oxford**.
+3. **Chỉ tra cứu:** dòng nguồn có xung đột hoặc thiếu nghĩa cùng từ loại đáng tin cậy. Không tạo bài kiểm tra cho mục này. Hiện có `diplomatic`: bản PDF lưu ghi `n.`, trong khi nguồn nghĩa phổ biến ghi tính từ. Ứng dụng không sửa âm thầm hoặc dạy một từ loại chưa đối chiếu.
 
-CEFR là nhãn của đầu từ/loại từ trong danh sách, **không xác nhận mức cho mọi nghĩa hoặc cụm từ liên quan**. Nhãn IELTS, chủ đề và lựa chọn mục học do ứng dụng tổ chức.
+Một mục học một nghĩa chính; các nghĩa Oxford khác vẫn có dấu vết dòng nguồn, không được tuyên bố đã cung cấp đầy đủ mọi nghĩa của mỗi từ.
 
-## Những gì không phải nội dung Oxford
+Nếu nguồn không có ví dụ, để trống và ghi rõ. Không dựng câu ví dụ giả để đủ số lượng. Bài điền ngữ cảnh chỉ tạo khi có ngữ liệu Anh–Việt và đáp án mục tiêu có thể che đúng; cụm trích từ từ điển được ghi là ngữ liệu, không giả là câu mới biên soạn. Các mục có nghĩa vẫn hỗ trợ nhớ nghĩa, nhớ để viết, nghe và tự viết câu. Không đồng nhất nội dung đã xem với bằng chứng đã nhớ.
 
-Nghĩa tiếng Việt, định nghĩa tiếng Anh ngắn, cụm từ và ví dụ là nội dung tự biên soạn. Đã rà soát để tránh ghép khác nghĩa, sai từ loại và sai bản dịch; không trình bày chúng là bản dịch hoặc ví dụ chính thức của Oxford.
+## Nguồn đầu từ/loại từ/CEFR
 
-IPA và URL âm thanh Oxford được để trống do chưa đối chiếu. Nút nghe dùng giọng tổng hợp tiếng Anh trên thiết bị và được ghi rõ. Không có chấm phát âm.
-
-Không phân phối lại các PDF đầy đủ, âm thanh hoặc định nghĩa có bản quyền của từ điển. Giấy phép của kho GitHub lưu trữ không được xem là giấy phép cho nội dung OUP.
-
-## Dấu vết nguồn
-
-File `oxford-provenance.json` trong cùng thư mục ghi nguồn gốc, SHA256, commit, trang và nguyên dòng nguồn cho từng ID. Bản PDF được dùng chỉ để đối chiếu dữ kiện đầu từ/loại từ/CEFR.
+PDF có thương hiệu và © Oxford University Press, lấy qua mirror khóa theo commit. Đã kiểm tra SHA256 của bản lưu. Yêu cầu tải PDF trực tiếp từ Oxford trả HTTP403; chưa so sánh byte với bản hiện tại trên host nhà xuất bản. CEFR là dữ kiện đầu từ/loại từ, không chứng thực mọi nghĩa, cụm từ hoặc ví dụ ghép với đầu từ.
 
 ### Oxford 3000
 
 - Tham chiếu nhà xuất bản: https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf
-- Bản lưu đã dùng: https://raw.githubusercontent.com/ittuann/The-Oxford-5000-Word-Lists/7dc22b8ff8e5cb3410e962b0511d22cdf74b120c/The_Oxford_3000_by_CEFR_level.pdf
+- Bản lưu thực tế: https://raw.githubusercontent.com/ittuann/The-Oxford-5000-Word-Lists/7dc22b8ff8e5cb3410e962b0511d22cdf74b120c/The_Oxford_3000_by_CEFR_level.pdf
 - SHA256: `b81e3f65c976fc93eb342ba34c40f0ff8c3a59646312d09ac50f9c648e461cd3`
 
 ### Oxford 5000
 
 - Tham chiếu nhà xuất bản: https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf
-- Bản lưu đã dùng: https://raw.githubusercontent.com/ittuann/The-Oxford-5000-Word-Lists/7dc22b8ff8e5cb3410e962b0511d22cdf74b120c/The_Oxford_5000_by_CEFR_level.pdf
+- Bản lưu thực tế: https://raw.githubusercontent.com/ittuann/The-Oxford-5000-Word-Lists/7dc22b8ff8e5cb3410e962b0511d22cdf74b120c/The_Oxford_5000_by_CEFR_level.pdf
 - SHA256: `6577e6eb8745226ab7ab80912e83d285cf421ec70e61c92d74d5fef5f2c99570`
 
-## Cập nhật từ phiên bản 20 mục mẫu
+## Nguồn nghĩa Việt và giấy phép
 
-18 mục mẫu có đối chiếu được giữ nguyên ID để giữ lịch sử. Hai mục `commute-01` và `take-part-in-01` không có trong hai danh sách PDF đã dùng nên không gắn nhãn Oxford và không nằm trong kho mặc định mới. Khi chấp nhận cập nhật, chúng được lưu trữ, không xóa tiến độ. Việc không có trong hai danh sách không có nghĩa đó là từ/cụm tiếng Anh sai.
+- **Free Vietnamese Dictionary Project (FVDP):** Hồ Ngọc Đức và cộng tác viên, ©1997–2003, bản cập nhật 2004-07-01. Nguồn GPL, đối chiếu bản text tại `robert-strandh/VietAnh`, commit `7ed4138b1698dd5b8c3170ff7a33a640f81b6f22`, file `anhviet.dict`. Phần nghĩa/ngữ liệu nhập và lọc lại vẫn tuân theo GPL; xem `licenses/GPL-2.0.txt`.
+- **Open Vietnamese Dictionary Project (OVDP):** GPL-2.0, bản StarDict lưu tại `dynamotn/stardict-vi`, commit `0f0b46997db2305ccd0cb9e161f25ac73988b0a9`. Chỉ dùng phần từ điển tổng quát, không lấy phụ lục chuyên ngành để ghi đè nghĩa phổ thông.
+- **Wiktionary qua MinhQND dictionary:** chỉ chọn đúng đầu từ tiếng Anh, định nghĩa tiếng Việt, nhãn nguồn Wiktionary và từ loại phù hợp. Đóng góp của Wiktionary contributors/MinhQND, CC BY-SA 4.0, release v2.0.0 của `minhqnd/dictionary`, commit `f11b18fcc12dc291eff91dbebbd1f7ffac17aa5b`. Không nhập IPA hoặc ví dụ sinh tự động. Xem `licenses/CC-BY-SA-4.0.txt`.
 
-File `vocabulary.sample.txt` vẫn giữ 20 mục minh họa ban đầu để tham khảo định dạng. Nhập file mẫu là thao tác riêng, không cần thiết để học kho mới.
+`oxford-provenance.json` lưu tác giả, bản quyền, commit, URL và hash các nguồn, cùng phạm vi nhập thực tế. Bản TXT là nội dung có thể sửa trực tiếp; khi phân phối lại phần nhập cần giữ ghi nguồn và giấy phép tương ứng. Giấy phép của dữ liệu nhập không được trình bày là giấy phép cho toàn bộ mã ứng dụng hoặc PDF OUP.
 
-Mục cá nhân hoặc bản sửa do bạn tạo không bị bản cập nhật mặc định ghi đè. Nếu phát hiện nội dung chưa rõ, dùng nút báo câu hỏi trong phiên học hoặc sửa mục từ và xuất TXT để giữ bản sửa.
+Không sao chép định nghĩa, bản dịch hoặc âm thanh có bản quyền của từ điển Oxford. Không gán IPA/URL phát âm Oxford khi chưa đối chiếu. Nút nghe dùng giọng tổng hợp của thiết bị nếu không có URL âm thanh và ghi rõ điều đó.
 
-## Phân bố tuyển chọn hiện tại
+## Slang và cụm động từ
 
-| Mức trong danh sách | Số mục |
-| --- | ---: |
-| A1 | 87 |
-| A2 | 61 |
-| B1 | 30 |
-| B2 | 57 |
-| C1 | 24 |
+Hai bộ này được biên soạn riêng, không tự nhận là danh sách Oxford hoặc gán CEFR. Slang bao gồm tiếng lóng, khẩu ngữ và một số thuật ngữ/viết tắt mạng có giải thích rõ. Các nghĩa có thể gây chê bai hoặc thân mật đều có ghi chú; không khuyến khích đưa slang thân mật vào IELTS Writing trang trọng. Thuật ngữ như DM, troll, FOMO cần đánh giá theo chủ đề và văn cảnh, không bị gọi sai là luôn luôn tiếng lóng.
 
-Các mức không phải mục tiêu band IELTS. Bạn có thể lọc A1/A2 để củng cố nền tảng và học chủ đề phù hợp song song.
+Mỗi cụm động từ có một nghĩa/ID cụ thể, hướng dẫn tân ngữ, tính tách được/không tách và vị trí đại từ khi phù hợp. Những từ có hai nghĩa được đếm thành hai mục nghĩa, không thành hai từ khác nhau.
+
+## Cập nhật và giữ lịch sử
+
+ID của 259 mục đã có được giữ nguyên. Bản sửa cá nhân không bị bản cập nhật mặc định ghi đè. Các mục mẫu không còn trong nguồn được lưu trữ, không xóa lịch sử. File `vocabulary.sample.txt` giữ 20 mục minh họa định dạng cũ; không phải kho chính.
+
+`data/authoring/*.txt` lưu riêng nội dung biên soạn cho các mục bổ sung, cụm động từ và slang. `scripts/build-full-corpus.py` kết hợp chúng với dữ kiện/nguồn trích xuất có ghi provenance; Vite không cần chạy script này, chỉ đọc TXT đã lưu. Người dùng thêm/sửa từ trực tiếp trong `vocabulary.txt` hoặc giao diện như trước.
+
+## Số lượng bản hiện tại
+
+- oxfordHeadwords: 4955
+- entryCount: 5135
+- reviewed: 610
+- dictionary: 4524
+- reference: 1
+- phrasalSenses: 100
+- slangSenses: 80
+- withBilingualContext: 3590
+- missingContext: 1545

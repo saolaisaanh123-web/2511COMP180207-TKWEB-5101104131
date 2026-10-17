@@ -83,6 +83,11 @@ export const fields = [
   "accepted_answers",
   "source",
   "note",
+  "content_status",
+  "example_type",
+  "register",
+  "region",
+  "case_sensitive",
 ];
 export function parse(text: string): Word[] {
   const blocks = text
@@ -95,7 +100,13 @@ export function parse(text: string): Word[] {
   let start = 1;
   function finish() {
     if (!Object.keys(current).length) return;
-    for (const key of ["id", "word", "meaning_vi", "example_en", "example_vi"])
+    const required =
+      current.content_status === "reference"
+        ? ["id", "word", "source"]
+        : current.content_status === "dictionary"
+          ? ["id", "word", "meaning_vi", "source"]
+          : ["id", "word", "meaning_vi", "example_en", "example_vi"];
+    for (const key of required)
       if (!current[key]?.trim())
         throw Error(
           `Mục ${current.id || words.length + 1}, dòng ${start}: thiếu ${key}`,
@@ -162,19 +173,67 @@ export function merge(state: State, words: Word[], origin: string): State {
   words.forEach((word) => {
     const old = next.entries[word.id];
     if (old && old.origin !== origin && origin === "default") return;
-    next.entries[word.id] = { ...old, word, origin, archived: false };
+    next.entries[word.id] = {
+      ...old,
+      word: { ...word },
+      origin,
+      archived: false,
+    };
   });
   return next;
 }
 export const normalize = (s: string) =>
-  s.trim().replace(/\s+/g, " ").toLocaleLowerCase();
+  s.trim().replace(/[’‘]/g, "'").replace(/\s+/g, " ").toLocaleLowerCase();
 export const grade = (answer: string, w: Word) =>
   [w.word, ...(w.accepted_answers || "").split("|")]
     .filter(Boolean)
-    .some((a) => normalize(a) === normalize(answer));
-export const day = (n: number) => new Date(n).toLocaleDateString("sv-SE");
+    .some((a) =>
+      w.case_sensitive === "true"
+        ? a.trim().replace(/\s+/g, " ") === answer.trim().replace(/\s+/g, " ")
+        : normalize(a) === normalize(answer),
+    );
+export function cloze(w: Word) {
+  const answers = [w.word, ...(w.accepted_answers || "").split("|")]
+    .filter(Boolean)
+    .sort((a, b) => b.length - a.length);
+  let text = w.example_en || "";
+  for (const answer of answers) {
+    const escaped = answer.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    text = text.replace(
+      new RegExp("(?<![\\p{L}\\p{N}])" + escaped + "(?![\\p{L}\\p{N}])", "giu"),
+      "________",
+    );
+  }
+  return text;
+}
+export const canPractice = (w: Word, skill: number) =>
+  w.content_status !== "reference" &&
+  !!w.meaning_vi?.trim() &&
+  (skill !== 4 ||
+    (w.example_type !== "no-cloze" &&
+      !!w.example_en &&
+      !!w.example_vi &&
+      cloze(w) !== w.example_en));
+export const isSlang = (w: Word) =>
+  (w.collections || "").split(",").includes("slang");
+export const day = (n: number) => {
+  const d = new Date(n);
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+};
+const groupedHistory = new WeakMap<State, Map<string, Result[]>>();
 export function strength(state: State, id: string, skill: number) {
-  const h = state.history.filter((r) => r.wordId === id && r.skill === skill);
+  let groups = groupedHistory.get(state);
+  if (!groups) {
+    groups = new Map();
+    for (const r of state.history) {
+      const key = r.wordId + ":" + r.skill;
+      const list = groups.get(key) || [];
+      list.push(r);
+      groups.set(key, list);
+    }
+    groupedHistory.set(state, groups);
+  }
+  const h = groups.get(id + ":" + skill) || [];
   const clean = h.filter(
     (r) => r.correct && !r.hint && r.method === "rule" && r.first,
   );
@@ -190,8 +249,15 @@ export function strength(state: State, id: string, skill: number) {
 }
 export function record(state: State, r: Result, scheduled: boolean) {
   if (state.history.some((x) => x.id === r.id)) return state;
-  const next = structuredClone(state);
-  next.history.push(r);
+  const next: State = {
+    ...state,
+    entries: { ...state.entries },
+    history: [...state.history, r],
+    schedules: { ...state.schedules },
+    session: state.session
+      ? { ...state.session, queue: [...state.session.queue] }
+      : undefined,
+  };
   const key = `${r.wordId}:${r.skill}`;
   if (
     scheduled &&

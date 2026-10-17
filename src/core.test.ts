@@ -11,6 +11,8 @@ import {
   strength,
   validateBackup,
   type Result,
+  canPractice,
+  cloze,
 } from "./core";
 const source = readFileSync("public/data/vocabulary.txt", "utf8");
 const words = parse(source);
@@ -36,8 +38,8 @@ const result = (overrides: Partial<Result> = {}): Result => ({
 });
 describe("Vocabulary file", () => {
   it("loads the curated corpus and roundtrips UTF-8 BOM and Windows newlines", () => {
-    expect(words).toHaveLength(proof.entries.length);
-    expect(words.length).toBeGreaterThanOrEqual(250);
+    expect(words).toHaveLength(proof.coverage.entryCount);
+    expect(words.length).toBeGreaterThanOrEqual(5000);
     expect(parse("\uFEFF" + serialize(words).replace(/\n/g, "\r\n"))).toEqual(
       words,
     );
@@ -146,23 +148,27 @@ describe("Oxford-grounded content and safe upgrade", () => {
       pronoun: "pron.",
       determiner: "det.",
     };
-    expect(new Set(words.map((w) => w.word)).size).toBe(words.length);
-    for (const w of words) {
+    const coreWords = words.filter((w) =>
+      (w.collections || "").split(",").some((c) => c.startsWith("oxford-")),
+    );
+    expect(new Set(coreWords.map((w) => w.word)).size).toBe(4955);
+    expect(proof.entries.length + proof.additionalFacts.length).toBe(5323);
+    for (const w of coreWords) {
       const f = proof.entries.find((f: { id: string }) => f.id === w.id);
       expect(f).toBeDefined();
-      expect(w.word).toBe(f.word);
+      expect(w.word).toBe(f.canonicalWord || f.word);
       expect(w.level).toBe(f.cefr);
-      expect(f.pos.split(",").map((v: string) => v.trim())).toContain(
-        pos[w.part_of_speech],
-      );
-      expect(w.source).toContain(`tr. ${f.page}`);
       expect(w.source).toContain(f.source_row);
-      expect(w.definition_en).toBeTruthy();
-      expect(w.collocation).toBeTruthy();
-      expect(w.example_en.toLowerCase()).toContain(w.word.toLowerCase());
       expect(w.ipa).toBe("");
       expect(w.audio_word).toBe("");
+      if (w.content_status !== "reference") expect(w.meaning_vi).toBeTruthy();
     }
+    expect(
+      words.filter((w) => w.collections.split(",").includes("phrasal-verbs")),
+    ).toHaveLength(100);
+    expect(
+      words.filter((w) => w.collections.split(",").includes("slang")),
+    ).toHaveLength(80);
   });
   it("keeps sample history and personal edits, archives only unsupported default entries", () => {
     let old = merge(empty(), sample, "default");
@@ -186,5 +192,57 @@ describe("Oxford-grounded content and safe upgrade", () => {
     s.entries[words[0].id].origin = "personal";
     s.entries[words[0].id].word.meaning_vi = "riêng";
     expect(diff(s, [words[0]], "default").changed).toBe(0);
+  });
+});
+
+describe("Large dictionary learning safeguards", () => {
+  it("keeps strict ordinary imports while explicitly labeling dictionary/reference gaps", () => {
+    const base = {
+      id: "gap",
+      word: "test",
+      meaning_vi: "thử",
+      source: "dictionary",
+      example_en: "",
+      example_vi: "",
+    };
+    expect(() => parse(serialize([base]))).toThrow(/example_en/);
+    expect(
+      parse(serialize([{ ...base, content_status: "dictionary" }])),
+    ).toHaveLength(1);
+    expect(canPractice({ ...base, content_status: "dictionary" }, 1)).toBe(
+      true,
+    );
+    expect(canPractice({ ...base, content_status: "dictionary" }, 4)).toBe(
+      false,
+    );
+    expect(canPractice({ ...base, content_status: "reference" }, 1)).toBe(
+      false,
+    );
+  });
+  it("masks complete words and handles case-sensitive lexical items", () => {
+    const w = {
+      id: "read",
+      word: "read",
+      meaning_vi: "đọc",
+      example_en: "I am ready to read.",
+      example_vi: "Tôi sẵn sàng đọc.",
+    };
+    expect(cloze(w)).toBe("I am ready to ________.");
+    expect(grade("may", { ...w, word: "May", case_sensitive: "true" })).toBe(
+      false,
+    );
+    expect(grade("May", { ...w, word: "May", case_sensitive: "true" })).toBe(
+      true,
+    );
+  });
+  it("keeps all complete authored slang/phrasal senses contextual and separate from Oxford claims", () => {
+    for (const w of words.filter((w) =>
+      /slang|phrasal-verbs/.test(w.collections),
+    )) {
+      expect(w.level).toBe("");
+      expect(w.meaning_vi).toBeTruthy();
+      expect(canPractice(w, 4)).toBe(true);
+      expect(w.content_status).toBe("reviewed");
+    }
   });
 });

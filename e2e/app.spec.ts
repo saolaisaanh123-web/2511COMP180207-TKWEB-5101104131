@@ -221,7 +221,11 @@ test("existing learner previews Oxford corpus update without losing progress or 
   await expect(page.locator(".preview-counts")).toContainText("2Lưu trữ");
   await page.getByRole("button", { name: "Xác nhận cập nhật" }).click();
   await page.getByRole("button", { name: "Kho từ", exact: true }).click();
-  await expect(page.locator(".word-card")).toHaveCount(corpus.length);
+  await expect(page.locator(".word-grid")).toHaveAttribute(
+    "data-total-items",
+    String(corpus.length),
+  );
+  await expect(page.locator(".word-card")).toHaveCount(60);
   await page
     .getByRole("textbox", { name: "Tìm từ và nghĩa" })
     .fill("bản sửa riêng của tôi");
@@ -262,4 +266,60 @@ test("existing learner previews Oxford corpus update without losing progress or 
   );
   expect(saved.entries["commute-01"].archived).toBe(true);
   expect(saved.entries["take-part-in-01"].archived).toBe(true);
+});
+
+test("full Oxford catalogue is paginated; Slang and phrasal verbs have dedicated working pages", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await page.getByRole("button", { name: "Kho từ", exact: true }).click();
+  await expect(page.locator(".word-grid")).toHaveAttribute(
+    "data-total-items",
+    String(corpus.length),
+  );
+  await expect(page.locator(".word-card")).toHaveCount(60);
+  const first = await page.locator(".word-card h3").first().innerText();
+  await page.getByRole("button", { name: "Trang sau →", exact: true }).click();
+  await expect(page.locator(".word-card h3").first()).not.toHaveText(first);
+  await page.getByRole("textbox", { name: "Tìm từ và nghĩa" }).fill("website");
+  await expect(
+    page.locator(".word-card h3").filter({ hasText: /^website$/ }),
+  ).toBeVisible();
+  await page.getByRole("button", { name: "Slang", exact: true }).click();
+  await expect(
+    page.getByRole("heading", { name: "Slang", exact: true }),
+  ).toBeVisible();
+  await expect(page.locator(".coll-card")).toHaveCount(24);
+  await page.locator(".coll-search input").fill("my bad");
+  await expect(page.locator(".coll-card")).toHaveCount(1);
+  await page
+    .getByRole("button", { name: "Xem chi tiết và nguồn của my bad" })
+    .click();
+  await expect(page.locator(".dict-headword")).toHaveText("my bad");
+  await expect(page.locator(".dict-level")).toHaveCount(0);
+  await page.getByRole("button", { name: "Đóng", exact: true }).click();
+  await page.getByRole("button", { name: "Luyện my bad", exact: true }).click();
+  await page.getByRole("textbox", { name: "Câu trả lời" }).fill("my bad");
+  await page.getByRole("button", { name: "Kiểm tra", exact: true }).click();
+  await expect(page.getByText(/Chính xác!/)).toBeVisible();
+  await page.getByRole("button", { name: "Cụm động từ", exact: true }).click();
+  await expect(
+    page.getByRole("heading", { name: "Cụm động từ", exact: true }),
+  ).toBeVisible();
+  await page.locator(".coll-search input").fill("look after");
+  await page
+    .getByRole("button", { name: "Xem chi tiết và nguồn của look after" })
+    .click();
+  await expect(page.locator(".dict-headword")).toHaveText("look after");
+  await expect(page.locator(".dict-source-note")).toContainText(/không tách/i);
+  await page.getByRole("button", { name: "Đóng", exact: true }).click();
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.getByRole("button", { name: "Slang", exact: true }).click();
+  await expect(page.locator(".coll-card")).toHaveCount(24);
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth,
+    ),
+  ).toBe(true);
+  await page.screenshot({ path: "/tmp/lexi-slang-mobile.png", fullPage: true });
 });

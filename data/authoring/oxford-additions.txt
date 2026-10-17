@@ -1,0 +1,3955 @@
+id: ox-e8284756126524-01
+word: allegedly
+part_of_speech: adverb
+meaning_vi: được cho là; theo cáo buộc chưa được chứng minh
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The official allegedly accepted money from the company.
+example_vi: Quan chức đó được cho là đã nhận tiền từ công ty.
+audio_word:
+audio_example:
+accepted_answers: allegedly
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-b50c7a88362747-01
+word: any more
+part_of_speech: adverb
+meaning_vi: nữa (trong câu phủ định hoặc câu hỏi)
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: I do not live in that city any more.
+example_vi: Tôi không sống ở thành phố đó nữa.
+audio_word:
+audio_example:
+accepted_answers: any more
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-a172cedcae4747-01
+word: app
+part_of_speech: noun
+meaning_vi: ứng dụng trên điện thoại hoặc máy tính
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: This app helps me plan my study time.
+example_vi: Ứng dụng này giúp tôi lên kế hoạch thời gian học.
+audio_word:
+audio_example:
+accepted_answers: app
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-c58f404983be7b-01
+word: emotionally
+part_of_speech: adverb
+meaning_vi: về mặt cảm xúc
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The experience affected her emotionally.
+example_vi: Trải nghiệm đó đã tác động đến cô ấy về mặt cảm xúc.
+audio_word:
+audio_example:
+accepted_answers: emotionally
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-585c9d6237b9b7-01
+word: exclusively
+part_of_speech: adverb
+meaning_vi: chỉ dành riêng; hoàn toàn riêng cho một nhóm hoặc mục đích
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The room is used exclusively for quiet study.
+example_vi: Căn phòng chỉ được dùng riêng cho việc học yên tĩnh.
+audio_word:
+audio_example:
+accepted_answers: exclusively
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-91e1620ca8e28e-01
+word: film-maker
+part_of_speech: noun
+meaning_vi: người làm phim
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The film-maker spoke about her latest documentary.
+example_vi: Nhà làm phim nói về bộ phim tài liệu mới nhất của cô ấy.
+audio_word:
+audio_example:
+accepted_answers: film-maker
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-65fc87903cb2ce-01
+word: fundraising
+part_of_speech: noun
+meaning_vi: hoạt động gây quỹ
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The school organised a fundraising event for the local library.
+example_vi: Trường tổ chức một sự kiện gây quỹ cho thư viện địa phương.
+audio_word:
+audio_example:
+accepted_answers: fundraising
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-68b8f014518125-01
+word: grandparent
+part_of_speech: noun
+meaning_vi: ông hoặc bà
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Each child can invite a grandparent to the school event.
+example_vi: Mỗi em nhỏ có thể mời một người ông hoặc bà đến sự kiện của trường.
+audio_word:
+audio_example:
+accepted_answers: grandparent
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-3d8049711c0c70-01
+word: healthcare
+part_of_speech: noun
+meaning_vi: dịch vụ chăm sóc sức khỏe
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Access to healthcare is important for every community.
+example_vi: Khả năng tiếp cận dịch vụ chăm sóc sức khỏe rất quan trọng với mọi cộng đồng.
+audio_word:
+audio_example:
+accepted_answers: healthcare
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-72f5fa1cff8609-01
+word: high-profile
+part_of_speech: adjective
+meaning_vi: thu hút nhiều sự chú ý của công chúng
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The court is hearing a high-profile case this week.
+example_vi: Tòa đang xét xử một vụ án được công chúng chú ý trong tuần này.
+audio_word:
+audio_example:
+accepted_answers: high-profile
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-06d65378901e35-01
+word: large-scale
+part_of_speech: adjective
+meaning_vi: ở quy mô lớn
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The project requires large-scale investment.
+example_vi: Dự án cần đầu tư ở quy mô lớn.
+audio_word:
+audio_example:
+accepted_answers: large-scale
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-f61fc65b2a7677-01
+word: non-profit
+part_of_speech: adjective
+meaning_vi: hoạt động không nhằm mục đích kiếm lợi nhuận
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: She works for a non-profit organisation.
+example_vi: Cô ấy làm việc cho một tổ chức phi lợi nhuận.
+audio_word:
+audio_example:
+accepted_answers: non-profit
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-fa3069bd423c0a-01
+word: regulatory
+part_of_speech: adjective
+meaning_vi: thuộc việc đặt ra hoặc thực thi quy định
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The company must meet regulatory requirements.
+example_vi: Công ty phải đáp ứng các yêu cầu theo quy định.
+audio_word:
+audio_example:
+accepted_answers: regulatory
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-7309d9f34f5872-01
+word: strongly
+part_of_speech: adverb
+meaning_vi: một cách mạnh mẽ; với mức độ hoặc sự tin tưởng cao
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: I strongly support equal access to education.
+example_vi: Tôi ủng hộ mạnh mẽ việc tiếp cận giáo dục bình đẳng.
+audio_word:
+audio_example:
+accepted_answers: strongly
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-5ee23aea3d8c59-01
+word: thought-provoking
+part_of_speech: adjective
+meaning_vi: gợi nhiều suy nghĩ
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The article raises a thought-provoking question.
+example_vi: Bài viết đặt ra một câu hỏi gợi nhiều suy nghĩ.
+audio_word:
+audio_example:
+accepted_answers: thought-provoking
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-df864c0596aa1a-01
+word: abandon
+part_of_speech: verb
+meaning_vi: từ bỏ; ngừng theo đuổi một việc
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We may abandon the plan if it costs too much.
+example_vi: Chúng tôi có thể từ bỏ kế hoạch nếu nó quá tốn kém.
+audio_word:
+audio_example:
+accepted_answers: abandon
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-8c78fe5b993648-01
+word: May
+part_of_speech: noun
+meaning_vi: tháng Năm
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The course starts in May.
+example_vi: Khóa học bắt đầu vào tháng Năm.
+audio_word:
+audio_example:
+accepted_answers: May
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-9d95a2cf0d7180-01
+word: March
+part_of_speech: noun
+meaning_vi: tháng Ba
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Our next meeting is in March.
+example_vi: Cuộc họp tiếp theo của chúng tôi diễn ra vào tháng Ba.
+audio_word:
+audio_example:
+accepted_answers: March
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-f415bf7b07a9b2-01
+word: IT
+part_of_speech: noun
+meaning_vi: công nghệ thông tin
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The IT team maintains the school network.
+example_vi: Nhóm công nghệ thông tin bảo trì mạng của trường.
+audio_word:
+audio_example:
+accepted_answers: IT
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-b1d6b91b67c2af-01
+word: at
+part_of_speech: preposition
+meaning_vi: ở; tại (một vị trí cụ thể)
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: I will meet you at the station.
+example_vi: Tôi sẽ gặp bạn tại nhà ga.
+audio_word:
+audio_example:
+accepted_answers: at
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-7e92261c4445c0-01
+word: concentrate
+part_of_speech: verb
+meaning_vi: tập trung sự chú ý
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: I need a quiet place to concentrate.
+example_vi: Tôi cần một nơi yên tĩnh để tập trung.
+audio_word:
+audio_example:
+accepted_answers: concentrate
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-4381dc2ab14285-01
+word: bank
+part_of_speech: noun
+meaning_vi: ngân hàng (tổ chức cung cấp dịch vụ tài chính)
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: I keep my savings in a bank.
+example_vi: Tôi giữ tiền tiết kiệm trong một ngân hàng.
+audio_word:
+audio_example:
+accepted_answers: bank
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-0b27c158feb36a-01
+word: kind
+part_of_speech: noun
+meaning_vi: loại; kiểu
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: What kind of music do you enjoy?
+example_vi: Bạn thích loại nhạc nào?
+audio_word:
+audio_example:
+accepted_answers: kind
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-3547cb112ac448-01
+word: last
+part_of_speech: determiner
+meaning_vi: cuối cùng trong một chuỗi
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: She caught the last bus home.
+example_vi: Cô ấy bắt chuyến xe buýt cuối cùng về nhà.
+audio_word:
+audio_example:
+accepted_answers: last
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-99a7026172d427-01
+word: light
+part_of_speech: noun
+meaning_vi: ánh sáng
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The room gets plenty of natural light.
+example_vi: Căn phòng nhận được nhiều ánh sáng tự nhiên.
+audio_word:
+audio_example:
+accepted_answers: light
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-cab2644828bcc1-01
+word: like
+part_of_speech: preposition
+meaning_vi: giống; tương tự
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: This fabric feels like silk.
+example_vi: Loại vải này cho cảm giác giống lụa.
+audio_word:
+audio_example:
+accepted_answers: like
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-4945a70fa7f9c1-01
+word: match
+part_of_speech: noun
+meaning_vi: trận thi đấu thể thao
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We watched a football match on Saturday.
+example_vi: Chúng tôi xem một trận bóng đá vào thứ Bảy.
+audio_word:
+audio_example:
+accepted_answers: match
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-16367aacb67a4a-01
+word: second
+part_of_speech: number
+meaning_vi: thứ hai (trong thứ tự)
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: She finished in second place.
+example_vi: Cô ấy kết thúc ở vị trí thứ hai.
+audio_word:
+audio_example:
+accepted_answers: second
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-bc98bb50e8094b-01
+word: bear
+part_of_speech: noun
+meaning_vi: con gấu
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: A bear can search for food over a large area.
+example_vi: Một con gấu có thể tìm thức ăn trên một khu vực rộng.
+audio_word:
+audio_example:
+accepted_answers: bear
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-3fd30542fe3f61-01
+word: mine
+part_of_speech: pronoun
+meaning_vi: của tôi (đại từ sở hữu)
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: That notebook is mine.
+example_vi: Cuốn sổ đó là của tôi.
+audio_word:
+audio_example:
+accepted_answers: mine
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-129ce50dd90bf2-01
+word: race
+part_of_speech: noun
+meaning_vi: cuộc đua
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The race begins at nine tomorrow.
+example_vi: Cuộc đua bắt đầu lúc chín giờ ngày mai.
+audio_word:
+audio_example:
+accepted_answers: race
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-2e09d5210db841-01
+word: rest
+part_of_speech: noun
+meaning_vi: phần còn lại
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: I will finish the rest tomorrow.
+example_vi: Tôi sẽ hoàn thành phần còn lại vào ngày mai.
+audio_word:
+audio_example:
+accepted_answers: rest
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-350a770c0ec9f3-01
+word: rock
+part_of_speech: noun
+meaning_vi: đá; tảng đá
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: A large rock blocked the path.
+example_vi: Một tảng đá lớn chắn lối đi.
+audio_word:
+audio_example:
+accepted_answers: rock
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-c8b1a1a3e6bcee-01
+word: lie
+part_of_speech: verb
+meaning_vi: nói dối
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Please do not lie about what happened.
+example_vi: Xin đừng nói dối về chuyện đã xảy ra.
+audio_word:
+audio_example:
+accepted_answers: lie
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-6ee0eb490ff832-01
+word: set
+part_of_speech: verb
+meaning_vi: đặt vào một vị trí
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Please set the books on the table.
+example_vi: Hãy đặt sách lên bàn.
+audio_word:
+audio_example:
+accepted_answers: set
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-8f53dd914ced58-01
+word: stick
+part_of_speech: verb
+meaning_vi: dán; làm cho vật bám vào bề mặt
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We can stick the poster on the wall.
+example_vi: Chúng ta có thể dán áp phích lên tường.
+audio_word:
+audio_example:
+accepted_answers: stick
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-efe899c74558f2-01
+word: counter
+part_of_speech: noun
+meaning_vi: quầy; mặt bàn dài để phục vụ khách
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: You can pay at the counter.
+example_vi: Bạn có thể thanh toán tại quầy.
+audio_word:
+audio_example:
+accepted_answers: counter
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-ebefe184171f13-01
+word: grave
+part_of_speech: noun
+meaning_vi: ngôi mộ
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: They put flowers on the grave.
+example_vi: Họ đặt hoa lên ngôi mộ.
+audio_word:
+audio_example:
+accepted_answers: grave
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-d60384034b77c1-01
+word: strip
+part_of_speech: noun
+meaning_vi: dải vật liệu dài và hẹp
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Cut a strip of paper for the label.
+example_vi: Hãy cắt một dải giấy để làm nhãn.
+audio_word:
+audio_example:
+accepted_answers: strip
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-2961a6d1c8dcd6-01
+word: according to
+part_of_speech: preposition
+meaning_vi: theo lời hoặc thông tin từ một nguồn
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: According to the timetable, the train leaves at six.
+example_vi: Theo thời gian biểu, tàu rời ga lúc sáu giờ.
+audio_word:
+audio_example:
+accepted_answers: according to
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-5e05171a0e19ef-01
+word: aged
+part_of_speech: adjective
+meaning_vi: có độ tuổi là
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The class is for children aged seven to nine.
+example_vi: Lớp học dành cho trẻ từ bảy đến chín tuổi.
+audio_word:
+audio_example:
+accepted_answers: aged
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-b3e123b35578e3-01
+word: AIDS
+part_of_speech: noun
+meaning_vi: hội chứng suy giảm miễn dịch mắc phải
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Effective treatment can prevent HIV from progressing to AIDS.
+example_vi: Điều trị hiệu quả có thể ngăn HIV tiến triển thành AIDS.
+audio_word:
+audio_example:
+accepted_answers: AIDS
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-add339ab9bc935-01
+word: albeit
+part_of_speech: conjunction
+meaning_vi: mặc dù; dù là
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The task was completed, albeit a little late.
+example_vi: Nhiệm vụ đã hoàn thành, dù hơi muộn.
+audio_word:
+audio_example:
+accepted_answers: albeit
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-b3f3d949ee908d-01
+word: amazed
+part_of_speech: adjective
+meaning_vi: rất ngạc nhiên
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: I was amazed by how quickly she learned.
+example_vi: Tôi rất ngạc nhiên trước tốc độ học của cô ấy.
+audio_word:
+audio_example:
+accepted_answers: amazed
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-41dda3b2113b58-01
+word: ancient
+part_of_speech: adjective
+meaning_vi: thuộc thời cổ đại
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We visited an ancient temple near the coast.
+example_vi: Chúng tôi thăm một ngôi đền cổ gần bờ biển.
+audio_word:
+audio_example:
+accepted_answers: ancient
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-d86982d2329abe-01
+word: arms
+part_of_speech: noun
+meaning_vi: vũ khí
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The agreement limits the sale of arms.
+example_vi: Thỏa thuận hạn chế việc bán vũ khí.
+audio_word:
+audio_example:
+accepted_answers: arms
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-de38e0881e31dd-01
+word: associated
+part_of_speech: adjective
+meaning_vi: có liên hệ hoặc gắn liền với
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The report examines costs associated with the project.
+example_vi: Báo cáo xem xét các chi phí gắn với dự án.
+audio_word:
+audio_example:
+accepted_answers: associated
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-6ed8919ce20490-01
+word: audio
+part_of_speech: adjective
+meaning_vi: thuộc âm thanh hoặc việc ghi âm
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The website provides audio lessons for beginners.
+example_vi: Trang web cung cấp các bài học âm thanh cho người mới bắt đầu.
+audio_word:
+audio_example:
+accepted_answers: audio
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-c0905088ba5b80-01
+word: balanced
+part_of_speech: adjective
+meaning_vi: cân đối giữa những thành phần cần thiết
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: A balanced diet includes a variety of foods.
+example_vi: Chế độ ăn cân đối bao gồm nhiều loại thực phẩm.
+audio_word:
+audio_example:
+accepted_answers: balanced
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-f0dc3075f012ec-01
+word: barrier
+part_of_speech: noun
+meaning_vi: vật hoặc yếu tố cản trở
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Cost should not be a barrier to education.
+example_vi: Chi phí không nên là rào cản đối với giáo dục.
+audio_word:
+audio_example:
+accepted_answers: barrier
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-dd20955d60739e-01
+word: based
+part_of_speech: adjective
+meaning_vi: có cơ sở hoặc căn cứ ở đâu, vào điều gì
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The film is based on a true story.
+example_vi: Bộ phim dựa trên một câu chuyện có thật.
+audio_word:
+audio_example:
+accepted_answers: based
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-d265d1416b14d7-01
+word: boast
+part_of_speech: verb
+meaning_vi: khoe khoang
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: You do not need to boast about your achievements.
+example_vi: Bạn không cần khoe khoang về thành tích của mình.
+audio_word:
+audio_example:
+accepted_answers: boast
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-001d057c49888d-01
+word: booking
+part_of_speech: noun
+meaning_vi: việc đặt chỗ trước
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: I received an email confirming my booking.
+example_vi: Tôi nhận được email xác nhận việc đặt chỗ.
+audio_word:
+audio_example:
+accepted_answers: booking
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-0822963756ce70-01
+word: born
+part_of_speech: verb
+meaning_vi: được sinh ra (dùng với be)
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: She was born in a small coastal town.
+example_vi: Cô ấy được sinh ra tại một thị trấn nhỏ ven biển.
+audio_word:
+audio_example:
+accepted_answers: born
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-ff7772053abf7d-01
+word: both
+part_of_speech: determiner
+meaning_vi: cả hai
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Both students answered the question correctly.
+example_vi: Cả hai học sinh đều trả lời đúng câu hỏi.
+audio_word:
+audio_example:
+accepted_answers: both
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-b49f425a7e1f9c-01
+word: bye
+part_of_speech: interjection
+meaning_vi: tạm biệt (thân mật)
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Bye, see you tomorrow!
+example_vi: Tạm biệt, hẹn gặp bạn ngày mai!
+audio_word:
+audio_example:
+accepted_answers: bye
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-9a43b6dac46608-01
+word: cannot
+part_of_speech: modal verb
+meaning_vi: không thể; không được phép
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Visitors cannot enter this area without permission.
+example_vi: Khách không được vào khu vực này khi chưa được phép.
+audio_word:
+audio_example:
+accepted_answers: cannot
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-90ec58127ec472-01
+word: CD
+part_of_speech: noun
+meaning_vi: đĩa quang compact disc
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The album is available on CD.
+example_vi: Album được phát hành dưới dạng đĩa CD.
+audio_word:
+audio_example:
+accepted_answers: CD
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-c388fa9a52705a-01
+word: cent
+part_of_speech: noun
+meaning_vi: đơn vị tiền bằng một phần trăm đô la hoặc một số đồng tiền khác
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: One cent is one hundredth of a dollar.
+example_vi: Một xu cent bằng một phần trăm đô la.
+audio_word:
+audio_example:
+accepted_answers: cent
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-f1937e8bf25a4b-01
+word: confused
+part_of_speech: adjective
+meaning_vi: bối rối vì chưa hiểu rõ
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: I was confused by the different instructions.
+example_vi: Tôi bối rối vì các hướng dẫn khác nhau.
+audio_word:
+audio_example:
+accepted_answers: confused
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-cbbeb3cc2d482a-01
+word: coordination
+part_of_speech: noun
+meaning_vi: sự phối hợp các hoạt động để cùng đạt mục tiêu
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The event requires careful coordination between teams.
+example_vi: Sự kiện cần sự phối hợp cẩn thận giữa các nhóm.
+audio_word:
+audio_example:
+accepted_answers: coordination
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-8de65c884945d1-01
+word: decision-making
+part_of_speech: noun
+meaning_vi: quá trình ra quyết định
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Clear information supports better decision-making.
+example_vi: Thông tin rõ ràng hỗ trợ quá trình ra quyết định tốt hơn.
+audio_word:
+audio_example:
+accepted_answers: decision-making
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-0083289f36deda-01
+word: deliberately
+part_of_speech: adverb
+meaning_vi: một cách có chủ ý
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: He deliberately left his phone at home.
+example_vi: Anh ấy cố ý để điện thoại ở nhà.
+audio_word:
+audio_example:
+accepted_answers: deliberately
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-d6a98598212ed7-01
+word: dense
+part_of_speech: adjective
+meaning_vi: dày đặc; có các thành phần nằm sát nhau
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: A dense forest covers the hillside.
+example_vi: Một khu rừng rậm phủ sườn đồi.
+audio_word:
+audio_example:
+accepted_answers: dense
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-17eb3c0168d0d7-01
+word: disabled
+part_of_speech: adjective
+meaning_vi: có khuyết tật
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The new entrance improves access for disabled visitors.
+example_vi: Lối vào mới giúp khách khuyết tật tiếp cận thuận tiện hơn.
+audio_word:
+audio_example:
+accepted_answers: disabled
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-e3b01096f1b796-01
+word: disturbing
+part_of_speech: adjective
+meaning_vi: gây lo lắng hoặc bất an
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The documentary contains some disturbing scenes.
+example_vi: Phim tài liệu có một số cảnh gây bất an.
+audio_word:
+audio_example:
+accepted_answers: disturbing
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-701efb4ebfd2d8-01
+word: dressed
+part_of_speech: adjective
+meaning_vi: đã mặc quần áo hoặc mặc theo một cách nào đó
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Everyone was dressed appropriately for the interview.
+example_vi: Mọi người đều ăn mặc phù hợp cho buổi phỏng vấn.
+audio_word:
+audio_example:
+accepted_answers: dressed
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-d9c1acf117657b-01
+word: driving
+part_of_speech: noun
+meaning_vi: việc lái xe
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: She takes driving lessons twice a week.
+example_vi: Cô ấy học lái xe hai lần mỗi tuần.
+audio_word:
+audio_example:
+accepted_answers: driving
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-bec1687971e36b-01
+word: each
+part_of_speech: determiner
+meaning_vi: mỗi (xét riêng từng người hoặc vật)
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Each student receives a workbook.
+example_vi: Mỗi học sinh được nhận một sách bài tập.
+audio_word:
+audio_example:
+accepted_answers: each
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-f06c64ed51a565-01
+word: elementary
+part_of_speech: adjective
+meaning_vi: ở mức cơ bản hoặc sơ cấp
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The course introduces elementary grammar.
+example_vi: Khóa học giới thiệu ngữ pháp cơ bản.
+audio_word:
+audio_example:
+accepted_answers: elementary
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-925b979d6564ad-01
+word: ethic
+part_of_speech: noun
+meaning_vi: nguyên tắc hoặc hệ giá trị chi phối cách ứng xử
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The organisation promotes an ethic of public service.
+example_vi: Tổ chức đề cao tinh thần phục vụ cộng đồng như một nguyên tắc ứng xử.
+audio_word:
+audio_example:
+accepted_answers: ethic
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-66a424a9a958b1-01
+word: every
+part_of_speech: determiner
+meaning_vi: mọi; mỗi (trong toàn bộ một nhóm)
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Every classroom has a reading corner.
+example_vi: Mọi phòng học đều có góc đọc sách.
+audio_word:
+audio_example:
+accepted_answers: every
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-10eb99d2d879b4-01
+word: everybody
+part_of_speech: pronoun
+meaning_vi: mọi người
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Everybody is welcome at the meeting.
+example_vi: Mọi người đều được chào đón tại cuộc họp.
+audio_word:
+audio_example:
+accepted_answers: everybody
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-5d67991ae96799-01
+word: everyone
+part_of_speech: pronoun
+meaning_vi: mọi người
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Everyone needs time to rest.
+example_vi: Mọi người đều cần thời gian nghỉ ngơi.
+audio_word:
+audio_example:
+accepted_answers: everyone
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-f12fd56ea99e79-01
+word: fairness
+part_of_speech: noun
+meaning_vi: sự công bằng
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Students expect fairness in the assessment process.
+example_vi: Sinh viên mong đợi sự công bằng trong quá trình đánh giá.
+audio_word:
+audio_example:
+accepted_answers: fairness
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-b5d54c39e66671-01
+word: fake
+part_of_speech: adjective
+meaning_vi: giả; không phải thật
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The shop refused to accept the fake banknote.
+example_vi: Cửa hàng từ chối nhận tờ tiền giả.
+audio_word:
+audio_example:
+accepted_answers: fake
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-a57c4e7933ced6-01
+word: fellow
+part_of_speech: adjective
+meaning_vi: cùng nhóm, hoàn cảnh hoặc hoạt động với mình
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: She shared her notes with fellow students.
+example_vi: Cô ấy chia sẻ ghi chép với các sinh viên cùng học.
+audio_word:
+audio_example:
+accepted_answers: fellow
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-354cbfc814262a-01
+word: her
+part_of_speech: pronoun
+meaning_vi: cô ấy; bà ấy (dạng tân ngữ)
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: I sent her the meeting notes.
+example_vi: Tôi đã gửi ghi chép cuộc họp cho cô ấy.
+audio_word:
+audio_example:
+accepted_answers: her
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-5a7cf4ac138054-01
+word: him
+part_of_speech: pronoun
+meaning_vi: anh ấy; ông ấy (dạng tân ngữ)
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We invited him to the workshop.
+example_vi: Chúng tôi mời anh ấy đến buổi hội thảo.
+audio_word:
+audio_example:
+accepted_answers: him
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-530b70a20ffb9a-01
+word: humanitarian
+part_of_speech: adjective
+meaning_vi: thuộc việc cứu trợ và bảo vệ con người
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The organisation provides humanitarian aid after disasters.
+example_vi: Tổ chức cung cấp viện trợ nhân đạo sau thiên tai.
+audio_word:
+audio_example:
+accepted_answers: humanitarian
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-9cfb469bd28ba2-01
+word: impressed
+part_of_speech: adjective
+meaning_vi: cảm thấy ấn tượng
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: I was impressed by the quality of her work.
+example_vi: Tôi ấn tượng với chất lượng công việc của cô ấy.
+audio_word:
+audio_example:
+accepted_answers: impressed
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-031af55b1821e7-01
+word: including
+part_of_speech: preposition
+meaning_vi: bao gồm cả
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The course covers several skills, including writing.
+example_vi: Khóa học bao quát một số kỹ năng, bao gồm cả viết.
+audio_word:
+audio_example:
+accepted_answers: including
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-d759e5ec6eb705-01
+word: increasingly
+part_of_speech: adverb
+meaning_vi: ngày càng
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: People are increasingly aware of online privacy.
+example_vi: Mọi người ngày càng quan tâm đến quyền riêng tư trực tuyến.
+audio_word:
+audio_example:
+accepted_answers: increasingly
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-cbcf6dfcd8154e-01
+word: instantly
+part_of_speech: adverb
+meaning_vi: ngay lập tức
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The lights came on instantly.
+example_vi: Đèn sáng lên ngay lập tức.
+audio_word:
+audio_example:
+accepted_answers: instantly
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-d1e49ac43dac0c-01
+word: integrated
+part_of_speech: adjective
+meaning_vi: được kết hợp thành một hệ thống thống nhất
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The city needs an integrated transport system.
+example_vi: Thành phố cần một hệ thống giao thông tích hợp.
+audio_word:
+audio_example:
+accepted_answers: integrated
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-6b847a0ed0b2c4-01
+word: into
+part_of_speech: preposition
+meaning_vi: vào bên trong
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: She put the books into her bag.
+example_vi: Cô ấy cho sách vào túi.
+audio_word:
+audio_example:
+accepted_answers: into
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-ea103d6cb5c3fb-01
+word: its
+part_of_speech: determiner
+meaning_vi: của nó (từ hạn định sở hữu)
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The company changed its name last year.
+example_vi: Công ty đổi tên vào năm ngoái.
+audio_word:
+audio_example:
+accepted_answers: its
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-f61e4e48a0a3ce-01
+word: legendary
+part_of_speech: adjective
+meaning_vi: nổi tiếng đến mức được nhiều người kể lại
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The museum celebrates a legendary musician.
+example_vi: Bảo tàng tôn vinh một nhạc sĩ huyền thoại.
+audio_word:
+audio_example:
+accepted_answers: legendary
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-f6a9dcb1876421-01
+word: lesbian
+part_of_speech: adjective
+meaning_vi: thuộc phụ nữ đồng tính hoặc tình yêu giữa phụ nữ
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The festival includes films by lesbian directors.
+example_vi: Liên hoan có các phim của những đạo diễn nữ đồng tính.
+audio_word:
+audio_example:
+accepted_answers: lesbian
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-61a78304b3c41e-01
+word: lifestyle
+part_of_speech: noun
+meaning_vi: lối sống
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Regular exercise is part of a healthy lifestyle.
+example_vi: Tập luyện đều đặn là một phần của lối sống lành mạnh.
+audio_word:
+audio_example:
+accepted_answers: lifestyle
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-b6f8ae88482bde-01
+word: located
+part_of_speech: adjective
+meaning_vi: nằm ở một vị trí
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The library is located near the station.
+example_vi: Thư viện nằm gần nhà ga.
+audio_word:
+audio_example:
+accepted_answers: located
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-76f75e6129fe30-01
+word: lost
+part_of_speech: adjective
+meaning_vi: bị lạc; không biết mình đang ở đâu
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We were lost without a map.
+example_vi: Chúng tôi bị lạc vì không có bản đồ.
+audio_word:
+audio_example:
+accepted_answers: lost
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-ed0a3b494b3cd4-01
+word: manufacture
+part_of_speech: verb
+meaning_vi: sản xuất hàng hóa, thường với số lượng lớn
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: These factories manufacture medical equipment.
+example_vi: Các nhà máy này sản xuất thiết bị y tế.
+audio_word:
+audio_example:
+accepted_answers: manufacture
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-1137b15c7797aa-01
+word: many
+part_of_speech: determiner
+meaning_vi: nhiều (đi với danh từ đếm được số nhiều)
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Many students use the library after class.
+example_vi: Nhiều sinh viên sử dụng thư viện sau giờ học.
+audio_word:
+audio_example:
+accepted_answers: many
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-e0705e68b04682-01
+word: matching
+part_of_speech: adjective
+meaning_vi: hợp hoặc giống nhau về kiểu dáng, màu sắc
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The room has matching chairs and curtains.
+example_vi: Căn phòng có ghế và rèm đồng bộ.
+audio_word:
+audio_example:
+accepted_answers: matching
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-48a39a33117179-01
+word: motorcycle
+part_of_speech: noun
+meaning_vi: xe máy; xe mô tô
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: He travels to work by motorcycle.
+example_vi: Anh ấy đi làm bằng xe máy.
+audio_word:
+audio_example:
+accepted_answers: motorcycle
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-038468518ad812-01
+word: my
+part_of_speech: determiner
+meaning_vi: của tôi (từ hạn định sở hữu)
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: My notebook is on the desk.
+example_vi: Cuốn sổ của tôi ở trên bàn.
+audio_word:
+audio_example:
+accepted_answers: my
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-b032a8abd93a9c-01
+word: next to
+part_of_speech: preposition
+meaning_vi: bên cạnh
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The pharmacy is next to the bank.
+example_vi: Nhà thuốc ở bên cạnh ngân hàng.
+audio_word:
+audio_example:
+accepted_answers: next to
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-9390298f3fb0c5-01
+word: no
+part_of_speech: interjection
+meaning_vi: không (dùng để trả lời phủ định)
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: No, I have not finished yet.
+example_vi: Không, tôi vẫn chưa làm xong.
+audio_word:
+audio_example:
+accepted_answers: no
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-04225201515016-01
+word: no one
+part_of_speech: pronoun
+meaning_vi: không một ai
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: No one was waiting at the gate.
+example_vi: Không có ai đợi ở cổng.
+audio_word:
+audio_example:
+accepted_answers: no one
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-6382b3cc881412-01
+word: nobody
+part_of_speech: pronoun
+meaning_vi: không ai
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Nobody knew the answer.
+example_vi: Không ai biết câu trả lời.
+audio_word:
+audio_example:
+accepted_answers: nobody
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-140bedbf9c3f6d-01
+word: none
+part_of_speech: pronoun
+meaning_vi: không một người hoặc vật nào trong số đã nhắc đến
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: I checked the bags, but none was mine.
+example_vi: Tôi kiểm tra các túi nhưng không túi nào là của tôi.
+audio_word:
+audio_example:
+accepted_answers: none
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-1785cfc3bc6ac7-01
+word: nothing
+part_of_speech: pronoun
+meaning_vi: không có gì
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: There is nothing in the box.
+example_vi: Không có gì trong hộp.
+audio_word:
+audio_example:
+accepted_answers: nothing
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-0729b81afda020-01
+word: nursing
+part_of_speech: adjective
+meaning_vi: đang cho con bú
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: A nursing mother may need additional support.
+example_vi: Một người mẹ đang cho con bú có thể cần hỗ trợ thêm.
+audio_word:
+audio_example:
+accepted_answers: nursing
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-102ad29298b7b4-01
+word: o'clock
+part_of_speech: adverb
+meaning_vi: giờ (dùng sau số chỉ giờ đúng)
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The lesson starts at nine o'clock.
+example_vi: Bài học bắt đầu lúc chín giờ đúng.
+audio_word:
+audio_example:
+accepted_answers: o'clock
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-1e1c48dbdb5c1b-01
+word: obviously
+part_of_speech: adverb
+meaning_vi: rõ ràng; theo điều có thể nhận thấy
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The instructions were obviously unclear.
+example_vi: Rõ ràng các hướng dẫn không rõ ràng.
+audio_word:
+audio_example:
+accepted_answers: obviously
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-565339bc4d33d7-01
+word: OK
+part_of_speech: interjection
+meaning_vi: được; đồng ý
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: OK, let us start the meeting.
+example_vi: Được rồi, chúng ta bắt đầu cuộc họp thôi.
+audio_word:
+audio_example:
+accepted_answers: OK
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-a6556e4852e263-01
+word: our
+part_of_speech: determiner
+meaning_vi: của chúng tôi hoặc chúng ta
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Our class is preparing a group presentation.
+example_vi: Lớp chúng tôi đang chuẩn bị bài thuyết trình nhóm.
+audio_word:
+audio_example:
+accepted_answers: our
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-b427c3dec90459-01
+word: per
+part_of_speech: preposition
+meaning_vi: mỗi; cho mỗi đơn vị
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The ticket costs ten dollars per person.
+example_vi: Vé có giá mười đô la mỗi người.
+audio_word:
+audio_example:
+accepted_answers: per
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-f5d48a058c4813-01
+word: permanently
+part_of_speech: adverb
+meaning_vi: một cách lâu dài hoặc vĩnh viễn
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The factory closed permanently last year.
+example_vi: Nhà máy đã đóng cửa vĩnh viễn vào năm ngoái.
+audio_word:
+audio_example:
+accepted_answers: permanently
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-55c64d0fcd6f9d-01
+word: photo
+part_of_speech: noun
+meaning_vi: bức ảnh
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: She showed me a photo of her family.
+example_vi: Cô ấy cho tôi xem một bức ảnh gia đình mình.
+audio_word:
+audio_example:
+accepted_answers: photo
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-82b5f777009797-01
+word: plenty
+part_of_speech: pronoun
+meaning_vi: rất nhiều; nhiều hơn mức cần thiết
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We have plenty to discuss today.
+example_vi: Hôm nay chúng ta có nhiều điều để thảo luận.
+audio_word:
+audio_example:
+accepted_answers: plenty
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-847f5804f3fc1d-01
+word: poisonous
+part_of_speech: adjective
+meaning_vi: có độc, gây hại nếu ăn, hít hoặc hấp thụ
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Some wild mushrooms are poisonous.
+example_vi: Một số loại nấm dại có độc.
+audio_word:
+audio_example:
+accepted_answers: poisonous
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-d9343d0a0097eb-01
+word: potentially
+part_of_speech: adverb
+meaning_vi: có khả năng xảy ra hoặc trở thành
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The change could potentially reduce waste.
+example_vi: Thay đổi đó có khả năng làm giảm chất thải.
+audio_word:
+audio_example:
+accepted_answers: potentially
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-b0f4b2e7996a5f-01
+word: prepared
+part_of_speech: adjective
+meaning_vi: đã sẵn sàng
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We are prepared for the interview.
+example_vi: Chúng tôi đã sẵn sàng cho buổi phỏng vấn.
+audio_word:
+audio_example:
+accepted_answers: prepared
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-ab2620f9b7154d-01
+word: programming
+part_of_speech: noun
+meaning_vi: việc viết chương trình máy tính
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: She is learning programming at college.
+example_vi: Cô ấy đang học lập trình ở trường cao đẳng.
+audio_word:
+audio_example:
+accepted_answers: programming
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-ee6fb3167b02cd-01
+word: ranking
+part_of_speech: noun
+meaning_vi: vị trí hoặc thứ tự trong một bảng xếp hạng
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The team's ranking improved after the competition.
+example_vi: Thứ hạng của đội được cải thiện sau cuộc thi.
+audio_word:
+audio_example:
+accepted_answers: ranking
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-005cef244b8c15-01
+word: regardless
+part_of_speech: adverb
+meaning_vi: bất kể điều vừa nói; dù thế nào
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: It may rain, but we will go regardless.
+example_vi: Có thể trời mưa, nhưng chúng tôi vẫn sẽ đi dù thế nào.
+audio_word:
+audio_example:
+accepted_answers: regardless
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-637d7becb99839-01
+word: reporting
+part_of_speech: noun
+meaning_vi: hoạt động thu thập và đưa tin
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Accurate reporting is essential in journalism.
+example_vi: Đưa tin chính xác là điều thiết yếu trong báo chí.
+audio_word:
+audio_example:
+accepted_answers: reporting
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-2740e59ffb8c5e-01
+word: several
+part_of_speech: determiner
+meaning_vi: một vài; nhiều hơn hai nhưng không nhiều
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: I have several questions about the plan.
+example_vi: Tôi có một vài câu hỏi về kế hoạch.
+audio_word:
+audio_example:
+accepted_answers: several
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-0266a143d4d043-01
+word: shaped
+part_of_speech: adjective
+meaning_vi: có hình dạng nào đó
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The garden has a star-shaped flower bed.
+example_vi: Khu vườn có một luống hoa hình ngôi sao.
+audio_word:
+audio_example:
+accepted_answers: shaped
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-e3ced7f422ffbf-01
+word: shocked
+part_of_speech: adjective
+meaning_vi: rất bất ngờ và buồn hoặc khó chịu
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We were shocked by the news.
+example_vi: Chúng tôi bàng hoàng trước tin đó.
+audio_word:
+audio_example:
+accepted_answers: shocked
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-a6b46dd0d1ae5e-01
+word: some
+part_of_speech: determiner
+meaning_vi: một số; một ít (số lượng không xác định)
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We need some fresh water.
+example_vi: Chúng ta cần một ít nước sạch.
+audio_word:
+audio_example:
+accepted_answers: some
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-1cac4d101ee696-01
+word: southern
+part_of_speech: adjective
+meaning_vi: thuộc hoặc ở phía nam
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The city lies on the southern coast.
+example_vi: Thành phố nằm trên bờ biển phía nam.
+audio_word:
+audio_example:
+accepted_answers: southern
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-262cd7e8d3156b-01
+word: spending
+part_of_speech: noun
+meaning_vi: việc hoặc số tiền chi tiêu
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Public spending on education increased.
+example_vi: Chi tiêu công cho giáo dục đã tăng.
+audio_word:
+audio_example:
+accepted_answers: spending
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-8e19545f050320-01
+word: spoken
+part_of_speech: adjective
+meaning_vi: được nói ra, thuộc lời nói
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The course focuses on spoken English.
+example_vi: Khóa học tập trung vào tiếng Anh nói.
+audio_word:
+audio_example:
+accepted_answers: spoken
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-815fbec040e347-01
+word: spouse
+part_of_speech: noun
+meaning_vi: vợ hoặc chồng
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Employees may bring a spouse to the event.
+example_vi: Nhân viên có thể đưa vợ hoặc chồng đến sự kiện.
+audio_word:
+audio_example:
+accepted_answers: spouse
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-e5930e63213247-01
+word: statistic
+part_of_speech: noun
+meaning_vi: một số liệu thống kê cụ thể
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The report includes a statistic on average travel time.
+example_vi: Báo cáo có một số liệu thống kê về thời gian đi lại trung bình.
+audio_word:
+audio_example:
+accepted_answers: statistic
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-a5c935d142e9fa-01
+word: such
+part_of_speech: determiner
+meaning_vi: như thế; thuộc loại vừa được nhắc đến
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We need to prevent such mistakes.
+example_vi: Chúng ta cần ngăn những lỗi như thế.
+audio_word:
+audio_example:
+accepted_answers: such
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-c06a4f8f0647f5-01
+word: temporarily
+part_of_speech: adverb
+meaning_vi: một cách tạm thời
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The road is temporarily closed for repairs.
+example_vi: Con đường tạm thời đóng để sửa chữa.
+audio_word:
+audio_example:
+accepted_answers: temporarily
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-fd963e4fd45949-01
+word: their
+part_of_speech: determiner
+meaning_vi: của họ (từ hạn định sở hữu)
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The students presented their ideas.
+example_vi: Các sinh viên trình bày ý tưởng của họ.
+audio_word:
+audio_example:
+accepted_answers: their
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-42ea40f608ce24-01
+word: themselves
+part_of_speech: pronoun
+meaning_vi: chính họ; tự họ
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: They completed the project themselves.
+example_vi: Họ tự hoàn thành dự án.
+audio_word:
+audio_example:
+accepted_answers: themselves
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-584e2d9ef6aea5-01
+word: thrilled
+part_of_speech: adjective
+meaning_vi: rất vui và hào hứng
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: She was thrilled to receive the scholarship.
+example_vi: Cô ấy rất vui mừng khi nhận được học bổng.
+audio_word:
+audio_example:
+accepted_answers: thrilled
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-e0da2baa664d4f-01
+word: turnout
+part_of_speech: noun
+meaning_vi: số người tham dự hoặc đi bỏ phiếu
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The election had a high turnout.
+example_vi: Cuộc bầu cử có tỷ lệ cử tri đi bỏ phiếu cao.
+audio_word:
+audio_example:
+accepted_answers: turnout
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-85738f8f9a7f1b-01
+word: whatever
+part_of_speech: determiner
+meaning_vi: bất kỳ điều hoặc loại nào
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Choose whatever colour you prefer.
+example_vi: Hãy chọn bất kỳ màu nào bạn thích.
+audio_word:
+audio_example:
+accepted_answers: whatever
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-006f92f1bdf8ce-01
+word: whatsoever
+part_of_speech: adverb
+meaning_vi: chút nào cả (nhấn mạnh trong câu phủ định)
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: There was no evidence whatsoever.
+example_vi: Không có chút bằng chứng nào cả.
+audio_word:
+audio_example:
+accepted_answers: whatsoever
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-b3922e60250ba1-01
+word: wherever
+part_of_speech: conjunction
+meaning_vi: bất cứ nơi nào
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: You can study wherever you feel comfortable.
+example_vi: Bạn có thể học ở bất cứ nơi nào bạn thấy thoải mái.
+audio_word:
+audio_example:
+accepted_answers: wherever
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-7aca9b2c4a3612-01
+word: worldwide
+part_of_speech: adjective
+meaning_vi: trên khắp thế giới
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The campaign received worldwide attention.
+example_vi: Chiến dịch nhận được sự chú ý trên toàn thế giới.
+audio_word:
+audio_example:
+accepted_answers: worldwide
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-a495a4b86c1eac-01
+word: yeah
+part_of_speech: interjection
+meaning_vi: ừ; vâng (thân mật)
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Yeah, I can help you with that.
+example_vi: Ừ, tôi có thể giúp bạn việc đó.
+audio_word:
+audio_example:
+accepted_answers: yeah
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-8a798890fe9381-01
+word: yes
+part_of_speech: interjection
+meaning_vi: có; vâng; đúng (để đồng ý hoặc xác nhận)
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Yes, that is the correct address.
+example_vi: Đúng, đó là địa chỉ chính xác.
+audio_word:
+audio_example:
+accepted_answers: yes
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-4d040d3f646601-01
+word: your
+part_of_speech: determiner
+meaning_vi: của bạn hoặc các bạn
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: Please write your name here.
+example_vi: Hãy viết tên bạn ở đây.
+audio_word:
+audio_example:
+accepted_answers: your
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-3fc4ccfe745870-01
+word: two
+part_of_speech: number
+meaning_vi: hai
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We invited two people to the workshop.
+example_vi: Chúng tôi mời 2 người đến buổi hội thảo.
+audio_word:
+audio_example:
+accepted_answers: two
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-8b5b9db0c13db2-01
+word: three
+part_of_speech: number
+meaning_vi: ba
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We invited three people to the workshop.
+example_vi: Chúng tôi mời 3 người đến buổi hội thảo.
+audio_word:
+audio_example:
+accepted_answers: three
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-04efaf080f5a3e-01
+word: four
+part_of_speech: number
+meaning_vi: bốn
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We invited four people to the workshop.
+example_vi: Chúng tôi mời 4 người đến buổi hội thảo.
+audio_word:
+audio_example:
+accepted_answers: four
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-222b0bd51fcef7-01
+word: five
+part_of_speech: number
+meaning_vi: năm
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We invited five people to the workshop.
+example_vi: Chúng tôi mời 5 người đến buổi hội thảo.
+audio_word:
+audio_example:
+accepted_answers: five
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-3ba8d02b16fd2a-01
+word: seven
+part_of_speech: number
+meaning_vi: bảy
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We invited seven people to the workshop.
+example_vi: Chúng tôi mời 7 người đến buổi hội thảo.
+audio_word:
+audio_example:
+accepted_answers: seven
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-c195d2d8756234-01
+word: eight
+part_of_speech: number
+meaning_vi: tám
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We invited eight people to the workshop.
+example_vi: Chúng tôi mời 8 người đến buổi hội thảo.
+audio_word:
+audio_example:
+accepted_answers: eight
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-edcd8e701a2df0-01
+word: nine
+part_of_speech: number
+meaning_vi: chín
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We invited nine people to the workshop.
+example_vi: Chúng tôi mời 9 người đến buổi hội thảo.
+audio_word:
+audio_example:
+accepted_answers: nine
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-e979074ebd5633-01
+word: eleven
+part_of_speech: number
+meaning_vi: mười một
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We invited eleven people to the workshop.
+example_vi: Chúng tôi mời 11 người đến buổi hội thảo.
+audio_word:
+audio_example:
+accepted_answers: eleven
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-d1a749ad879b6c-01
+word: twelve
+part_of_speech: number
+meaning_vi: mười hai
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We invited twelve people to the workshop.
+example_vi: Chúng tôi mời 12 người đến buổi hội thảo.
+audio_word:
+audio_example:
+accepted_answers: twelve
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-9ecc81f0a4b6df-01
+word: thirteen
+part_of_speech: number
+meaning_vi: mười ba
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We invited thirteen people to the workshop.
+example_vi: Chúng tôi mời 13 người đến buổi hội thảo.
+audio_word:
+audio_example:
+accepted_answers: thirteen
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-fef8f41cdcd203-01
+word: fourteen
+part_of_speech: number
+meaning_vi: mười bốn
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We invited fourteen people to the workshop.
+example_vi: Chúng tôi mời 14 người đến buổi hội thảo.
+audio_word:
+audio_example:
+accepted_answers: fourteen
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-c463967e5708ca-01
+word: fifteen
+part_of_speech: number
+meaning_vi: mười lăm
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We invited fifteen people to the workshop.
+example_vi: Chúng tôi mời 15 người đến buổi hội thảo.
+audio_word:
+audio_example:
+accepted_answers: fifteen
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-2c5abdef2a0eac-01
+word: seventeen
+part_of_speech: number
+meaning_vi: mười bảy
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We invited seventeen people to the workshop.
+example_vi: Chúng tôi mời 17 người đến buổi hội thảo.
+audio_word:
+audio_example:
+accepted_answers: seventeen
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-34357b18abddea-01
+word: eighteen
+part_of_speech: number
+meaning_vi: mười tám
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We invited eighteen people to the workshop.
+example_vi: Chúng tôi mời 18 người đến buổi hội thảo.
+audio_word:
+audio_example:
+accepted_answers: eighteen
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-cde4e100efd26f-01
+word: nineteen
+part_of_speech: number
+meaning_vi: mười chín
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We invited nineteen people to the workshop.
+example_vi: Chúng tôi mời 19 người đến buổi hội thảo.
+audio_word:
+audio_example:
+accepted_answers: nineteen
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-7c2c4df740f720-01
+word: twenty
+part_of_speech: number
+meaning_vi: hai mươi
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We invited twenty people to the workshop.
+example_vi: Chúng tôi mời 20 người đến buổi hội thảo.
+audio_word:
+audio_example:
+accepted_answers: twenty
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-aca5fb59db69e5-01
+word: thirty
+part_of_speech: number
+meaning_vi: ba mươi
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We invited thirty people to the workshop.
+example_vi: Chúng tôi mời 30 người đến buổi hội thảo.
+audio_word:
+audio_example:
+accepted_answers: thirty
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-9cee2304bd633d-01
+word: forty
+part_of_speech: number
+meaning_vi: bốn mươi
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We invited forty people to the workshop.
+example_vi: Chúng tôi mời 40 người đến buổi hội thảo.
+audio_word:
+audio_example:
+accepted_answers: forty
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-f8d807ee15e983-01
+word: fifty
+part_of_speech: number
+meaning_vi: năm mươi
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We invited fifty people to the workshop.
+example_vi: Chúng tôi mời 50 người đến buổi hội thảo.
+audio_word:
+audio_example:
+accepted_answers: fifty
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-df41164e151227-01
+word: sixty
+part_of_speech: number
+meaning_vi: sáu mươi
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We invited sixty people to the workshop.
+example_vi: Chúng tôi mời 60 người đến buổi hội thảo.
+audio_word:
+audio_example:
+accepted_answers: sixty
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-ab0e4b1a783957-01
+word: seventy
+part_of_speech: number
+meaning_vi: bảy mươi
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We invited seventy people to the workshop.
+example_vi: Chúng tôi mời 70 người đến buổi hội thảo.
+audio_word:
+audio_example:
+accepted_answers: seventy
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-0dbc3407a7080e-01
+word: eighty
+part_of_speech: number
+meaning_vi: tám mươi
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We invited eighty people to the workshop.
+example_vi: Chúng tôi mời 80 người đến buổi hội thảo.
+audio_word:
+audio_example:
+accepted_answers: eighty
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-521c74a4d5824a-01
+word: ninety
+part_of_speech: number
+meaning_vi: chín mươi
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: We invited ninety people to the workshop.
+example_vi: Chúng tôi mời 90 người đến buổi hội thảo.
+audio_word:
+audio_example:
+accepted_answers: ninety
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-f9194e73f9e945-01
+word: zero
+part_of_speech: number
+meaning_vi: số không (0)
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The temperature fell to zero.
+example_vi: Nhiệt độ giảm xuống không độ.
+audio_word:
+audio_example:
+accepted_answers: zero
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-97fe8a37490699-01
+word: hundred
+part_of_speech: number
+meaning_vi: một trăm (100)
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: A hundred people attended the meeting.
+example_vi: Một trăm người tham dự cuộc họp.
+audio_word:
+audio_example:
+accepted_answers: hundred
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-a0af3a48cfad1f-01
+word: thousand
+part_of_speech: number
+meaning_vi: một nghìn (1.000)
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The school has about a thousand students.
+example_vi: Trường có khoảng một nghìn học sinh.
+audio_word:
+audio_example:
+accepted_answers: thousand
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-c8ce96a5ba0d15-01
+word: million
+part_of_speech: number
+meaning_vi: một triệu (1.000.000)
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The project costs one million dollars.
+example_vi: Dự án có chi phí một triệu đô la.
+audio_word:
+audio_example:
+accepted_answers: million
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-80c697e9924a52-01
+word: billion
+part_of_speech: number
+meaning_vi: một tỷ (1.000.000.000; cách dùng hiện đại)
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The project costs one billion dollars.
+example_vi: Dự án có chi phí một tỷ đô la.
+audio_word:
+audio_example:
+accepted_answers: billion
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-55b484fa51b492-01
+word: trillion
+part_of_speech: number
+meaning_vi: một nghìn tỷ (1.000.000.000.000; cách dùng hiện đại)
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The national debt exceeded one trillion dollars.
+example_vi: Nợ quốc gia vượt một nghìn tỷ đô la.
+audio_word:
+audio_example:
+accepted_answers: trillion
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-dc81b1d371a407-01
+word: fourth
+part_of_speech: number
+meaning_vi: thứ tư (trong thứ tự)
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The office is on the fourth floor.
+example_vi: Văn phòng ở tầng thứ tư.
+audio_word:
+audio_example:
+accepted_answers: fourth
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:
+---
+id: ox-1774b8eebdec58-01
+word: fifth
+part_of_speech: number
+meaning_vi: thứ năm (trong thứ tự)
+definition_en:
+ipa:
+level:
+topics:
+collections:
+collocation:
+example_en: The office is on the fifth floor.
+example_vi: Văn phòng ở tầng thứ năm.
+audio_word:
+audio_example:
+accepted_answers: fifth
+source: Nghĩa và ví dụ tự biên soạn; không phải trích dẫn Oxford.
+note:
+content_status: reviewed
+example_type:
+register:
+region:
+case_sensitive:

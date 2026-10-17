@@ -1,0 +1,1839 @@
+id: slang-chill-relax-01
+word: chill
+part_of_speech: verb
+meaning_vi: thư giãn; nghỉ cho thoải mái
+definition_en: To relax and stop worrying for a while.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: chill at home
+example_en: I just want to chill at home tonight.
+example_vi: Tối nay tôi chỉ muốn thư giãn ở nhà.
+audio_word:
+audio_example:
+accepted_answers: chill
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Khẩu ngữ. Mục này dùng nghĩa thư giãn, không phải nghĩa làm lạnh. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-hangry-hungry-angry-01
+word: hangry
+part_of_speech: adjective
+meaning_vi: cáu kỉnh vì đói
+definition_en: Irritable because you are hungry.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: get hangry
+example_en: I get hangry if I skip lunch.
+example_vi: Tôi hay cáu vì đói nếu bỏ bữa trưa.
+audio_word:
+audio_example:
+accepted_answers: hangry
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Từ thân mật, thường nói vui; ghép từ hungry và angry. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-ghost-stop-contact-01
+word: ghost
+part_of_speech: verb
+meaning_vi: đột ngột cắt liên lạc mà không giải thích
+definition_en: To suddenly stop replying to someone without explaining why.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: ghost someone
+example_en: Please do not ghost me if you change your mind.
+example_vi: Nếu đổi ý, xin đừng đột ngột cắt liên lạc với tôi.
+audio_word:
+audio_example:
+accepted_answers: ghost
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Tiếng lóng trong quan hệ cá nhân; hành động thường khiến người khác tổn thương. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-low-key-quietly-somewhat-01
+word: low-key
+part_of_speech: adverb
+meaning_vi: hơi; một cách kín đáo, không muốn thể hiện nhiều
+definition_en: Used to describe a feeling you have but do not want to emphasize openly.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: low-key excited
+example_en: I am low-key excited about the school reunion.
+example_vi: Tôi cũng hơi háo hức về buổi họp lớp, dù không thể hiện nhiều.
+audio_word:
+audio_example:
+accepted_answers: low-key
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Cách dùng như trạng từ mang tính tiếng lóng. Low-key còn có cách dùng tính từ thông thường với nghĩa kín đáo, không phô trương. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-flex-show-off-01
+word: flex
+part_of_speech: verb
+meaning_vi: khoe khoang; phô trương thứ mình có hoặc làm được
+definition_en: To show off something you own or can do, often to impress others.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: flex about money
+example_en: He likes to flex about how expensive his watch is.
+example_vi: Anh ấy thích khoe chiếc đồng hồ của mình đắt tiền đến mức nào.
+audio_word:
+audio_example:
+accepted_answers: flex
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Tiếng lóng; thường hàm ý chê việc khoe khoang. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-cringe-embarrassing-01
+word: cringe
+part_of_speech: adjective
+meaning_vi: gượng gạo hoặc ngượng ngùng đến mức khiến người xem khó chịu
+definition_en: Embarrassing to watch because it feels awkward or forced.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: so cringe
+example_en: That forced joke was so cringe.
+example_vi: Câu đùa gượng ép đó làm người nghe ngượng thay.
+audio_word:
+audio_example:
+accepted_answers: cringe
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Tính từ trong tiếng lóng hiện đại; có thể mang tính chê bai. Cringe cũng có cách dùng động từ khác. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-awesome-excellent-01
+word: awesome
+part_of_speech: adjective
+meaning_vi: rất hay; tuyệt vời
+definition_en: Extremely good or enjoyable.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: an awesome concert
+example_en: That was an awesome concert.
+example_vi: Đó là một buổi hòa nhạc tuyệt vời.
+audio_word:
+audio_example:
+accepted_answers: awesome
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Khẩu ngữ khi khen; không phải mọi cách dùng của awesome đều là tiếng lóng. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-bummer-disappointment-01
+word: bummer
+part_of_speech: noun
+meaning_vi: chuyện đáng tiếc; điều gây thất vọng
+definition_en: Something disappointing or inconvenient.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: a real bummer
+example_en: Missing the last bus was a real bummer.
+example_vi: Lỡ chuyến xe buýt cuối thật là đáng tiếc.
+audio_word:
+audio_example:
+accepted_answers: bummer
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Khẩu ngữ. Thường dùng để bày tỏ sự tiếc nuối về một việc không như ý. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-no-worries-reassurance-01
+word: no worries
+part_of_speech: phrase
+meaning_vi: không sao đâu; không có gì phải lo
+definition_en: A friendly response meaning that something is not a problem.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: No worries, I can wait.
+example_en: No worries, I can wait another five minutes.
+example_vi: Không sao đâu, tôi có thể đợi thêm năm phút.
+audio_word:
+audio_example:
+accepted_answers: no worries
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Cụm khẩu ngữ để trấn an hoặc đáp lại lời xin lỗi, lời cảm ơn; không phải tiếng lóng theo nghĩa hẹp. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-my-bad-admit-mistake-01
+word: my bad
+part_of_speech: phrase
+meaning_vi: lỗi của tôi
+definition_en: Used to admit casually that you made a mistake.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: My bad, I forgot.
+example_en: My bad, I sent you the wrong file.
+example_vi: Lỗi của tôi, tôi đã gửi nhầm tệp cho bạn.
+audio_word:
+audio_example:
+accepted_answers: my bad
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Tiếng lóng, lời nhận lỗi thân mật; không phù hợp khi cần lời xin lỗi trang trọng hoặc nghiêm túc. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-legit-genuine-01
+word: legit
+part_of_speech: adjective
+meaning_vi: thật; có vẻ đáng tin, không phải giả mạo
+definition_en: Genuine or trustworthy rather than fake.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: look legit
+example_en: The shop looks legit, but I will still check the reviews.
+example_vi: Cửa hàng có vẻ đáng tin, nhưng tôi vẫn sẽ kiểm tra các đánh giá.
+audio_word:
+audio_example:
+accepted_answers: legit
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Dạng rút gọn thân mật của legitimate. Cảm giác có vẻ legit không bảo đảm một nơi thực sự đáng tin. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-vibes-atmosphere-01
+word: vibes
+part_of_speech: noun
+meaning_vi: bầu không khí hoặc cảm giác mà một nơi hay một người mang lại
+definition_en: The feelings or atmosphere that a person or place seems to create.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: good vibes
+example_en: This little café has such peaceful vibes.
+example_vi: Quán cà phê nhỏ này mang lại cảm giác thật yên bình.
+audio_word:
+audio_example:
+accepted_answers: vibes
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Khẩu ngữ; vibes ở đây là dạng số nhiều, không chỉ rung động vật lý. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-cool-good-01
+word: cool
+part_of_speech: adjective
+meaning_vi: hay; ổn; đáng thích
+definition_en: Good, enjoyable, or impressive.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: a cool idea
+example_en: That is a cool idea for the weekend.
+example_vi: Đó là một ý tưởng hay cho cuối tuần.
+audio_word:
+audio_example:
+accepted_answers: cool
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Khẩu ngữ khi đánh giá tích cực; không phải nghĩa nhiệt độ mát. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-dope-excellent-01
+word: dope
+part_of_speech: adjective
+meaning_vi: rất hay; rất ấn tượng
+definition_en: Very good or impressive.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: a dope beat
+example_en: That song has a dope beat.
+example_vi: Bài hát đó có nhịp điệu rất ấn tượng.
+audio_word:
+audio_example:
+accepted_answers: dope
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Tiếng lóng khen ngợi, bắt nguồn từ tiếng Anh Mỹ. Dope có những nghĩa khác, kể cả nghĩa liên quan đến chất cấm; cần đọc ngữ cảnh. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-lit-exciting-01
+word: lit
+part_of_speech: adjective
+meaning_vi: rất sôi động; rất hào hứng
+definition_en: Very exciting, lively, and enjoyable.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: a lit party
+example_en: The party was lit once the band started playing.
+example_vi: Bữa tiệc trở nên cực kỳ sôi động khi ban nhạc bắt đầu chơi.
+audio_word:
+audio_example:
+accepted_answers: lit
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Tiếng lóng. Mục này chỉ nghĩa sôi động; lit còn có nghĩa khác trong các ngữ cảnh khác. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-fire-excellent-01
+word: fire
+part_of_speech: adjective
+meaning_vi: cực hay; rất xuất sắc
+definition_en: Excellent in a way that feels exciting or impressive.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: That song is fire.
+example_en: Your new song is fire.
+example_vi: Bài hát mới của bạn cực hay.
+audio_word:
+audio_example:
+accepted_answers: fire
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Tiếng lóng, thường dùng sau động từ be khi khen âm nhạc, trang phục hoặc sản phẩm sáng tạo; không phải nghĩa lửa. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-goat-greatest-01
+word: GOAT
+part_of_speech: noun
+meaning_vi: người được coi là vĩ đại nhất mọi thời đại trong một lĩnh vực
+definition_en: Someone considered the greatest of all time in a particular field.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: the GOAT
+example_en: Many fans call her the GOAT of the sport.
+example_vi: Nhiều người hâm mộ gọi cô ấy là người vĩ đại nhất mọi thời đại của môn thể thao đó.
+audio_word:
+audio_example:
+accepted_answers: GOAT
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Viết tắt của greatest of all time, thường viết hoa. Đây là lời đánh giá chủ quan, hay gặp trong thể thao và giải trí. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-salty-resentful-01
+word: salty
+part_of_speech: adjective
+meaning_vi: cay cú; bực bội vì thua hoặc bị phật ý
+definition_en: Annoyed or resentful, especially after losing or feeling slighted.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: still salty about losing
+example_en: He is still salty about losing the game.
+example_vi: Anh ấy vẫn còn cay cú vì thua trận.
+audio_word:
+audio_example:
+accepted_answers: salty
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Tiếng lóng, thường mang sắc thái châm chọc; không phải nghĩa có vị mặn. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-shady-dishonest-01
+word: shady
+part_of_speech: adjective
+meaning_vi: mờ ám; có vẻ không trung thực
+definition_en: Seeming dishonest or suspicious.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: a shady deal
+example_en: That deal sounds shady to me.
+example_vi: Tôi thấy thỏa thuận đó có vẻ mờ ám.
+audio_word:
+audio_example:
+accepted_answers: shady
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Nghĩa khẩu ngữ; không phải nghĩa có bóng râm. Đây là đánh giá theo ngữ cảnh. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-sketchy-suspicious-01
+word: sketchy
+part_of_speech: adjective
+meaning_vi: đáng ngờ; có vẻ không đáng tin
+definition_en: Making you suspect that something may be dishonest or unsafe.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: look sketchy
+example_en: This payment page looks sketchy.
+example_vi: Trang thanh toán này trông đáng ngờ.
+audio_word:
+audio_example:
+accepted_answers: sketchy
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Khẩu ngữ. Mục này dùng nghĩa đáng ngờ, không phải nghĩa sơ sài hoặc chỉ phác thảo. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-sus-suspicious-01
+word: sus
+part_of_speech: adjective
+meaning_vi: đáng ngờ
+definition_en: Suspicious or not easy to trust.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: look sus
+example_en: That message asking for my password looks sus.
+example_vi: Tin nhắn đòi mật khẩu của tôi trông đáng ngờ.
+audio_word:
+audio_example:
+accepted_answers: sus
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Dạng rút gọn tiếng lóng của suspicious; hay gặp khi nhắn tin, chơi game và trên mạng. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-crush-romantic-person-01
+word: crush
+part_of_speech: noun
+meaning_vi: người mình thầm thích
+definition_en: A person you have romantic feelings for, often without telling them.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: my secret crush
+example_en: My crush smiled at me after class.
+example_vi: Người tôi thầm thích đã mỉm cười với tôi sau giờ học.
+audio_word:
+audio_example:
+accepted_answers: crush
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Khẩu ngữ. Mục này chỉ người được thích; have a crush on someone là có cảm tình lãng mạn với ai. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-crush-it-perform-well-01
+word: crush it
+part_of_speech: phrase
+meaning_vi: làm cực tốt; thể hiện rất xuất sắc
+definition_en: To perform extremely well at an activity.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: crush it on stage
+example_en: I know you will crush it on stage tonight.
+example_vi: Tôi biết tối nay bạn sẽ thể hiện rất xuất sắc trên sân khấu.
+audio_word:
+audio_example:
+accepted_answers: crush it
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Thành ngữ khẩu ngữ để động viên hoặc khen; không nói đến nghiền nát vật gì. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-nailed-it-succeeded-01
+word: nailed it
+part_of_speech: phrase
+meaning_vi: làm được hoàn hảo rồi; xử lý rất chuẩn
+definition_en: Used to say that someone has done something very successfully.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: You nailed it!
+example_en: You nailed it with that final answer!
+example_vi: Bạn trả lời câu cuối chuẩn quá!
+audio_word:
+audio_example:
+accepted_answers: nailed it
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Cụm khẩu ngữ khen một việc đã làm tốt; thường đứng một mình như lời reo. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-sick-impressive-01
+word: sick
+part_of_speech: adjective
+meaning_vi: cực đỉnh; rất ấn tượng
+definition_en: Extremely good or impressive.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: a sick guitar solo
+example_en: That guitar solo was sick.
+example_vi: Đoạn độc tấu ghi-ta đó cực đỉnh.
+audio_word:
+audio_example:
+accepted_answers: sick
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Tiếng lóng mang nghĩa khen; khác với nghĩa thông thường là ốm hoặc buồn nôn. Cần dựa vào ngữ cảnh. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-sweet-pleasing-01
+word: sweet
+part_of_speech: adjective
+meaning_vi: hay quá; quá ổn
+definition_en: Very pleasing or welcome.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: a sweet deal
+example_en: A free room upgrade? Sweet!
+example_vi: Được nâng hạng phòng miễn phí à? Hay quá!
+audio_word:
+audio_example:
+accepted_answers: sweet
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Cách dùng khẩu ngữ để thể hiện sự hài lòng; không phải nghĩa vị ngọt. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-savage-cutting-01
+word: savage
+part_of_speech: adjective
+meaning_vi: sắc bén, không nương tay khi chọc hoặc đáp trả
+definition_en: Very sharp and unsparing when making a joke or response.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: a savage reply
+example_en: That was a savage reply to his rude comment.
+example_vi: Đó là một câu đáp trả rất sắc và không nương tay trước lời bình luận thô lỗ của anh ấy.
+audio_word:
+audio_example:
+accepted_answers: savage
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Nghĩa tiếng lóng có thể vừa khen độ sắc vừa chê sự cay nghiệt. Không dùng từ này để gán nhãn một dân tộc hay nhóm người. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-meh-indifference-01
+word: meh
+part_of_speech: interjection
+meaning_vi: bình thường thôi; chẳng hứng thú lắm
+definition_en: Used to show that you are unimpressed or not very interested.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: Meh, it was okay.
+example_en: Meh, the film was okay, but I would not watch it again.
+example_vi: Cũng bình thường thôi, bộ phim xem được nhưng tôi sẽ không xem lại.
+audio_word:
+audio_example:
+accepted_answers: meh
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Thán từ khẩu ngữ; có thể nghe hơi hờ hững hoặc thiếu nhiệt tình. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-yikes-dismay-01
+word: yikes
+part_of_speech: interjection
+meaning_vi: ôi chao; ôi, tệ thật
+definition_en: Used to react to something alarming, awkward, or unpleasant.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: Yikes, that is expensive!
+example_en: Yikes, that repair costs more than my bike!
+example_vi: Ôi chao, tiền sửa còn đắt hơn cả chiếc xe đạp của tôi!
+audio_word:
+audio_example:
+accepted_answers: yikes
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Thán từ thân mật biểu lộ sự giật mình hoặc ngán ngẩm, không phải lời chửi. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-duh-obvious-01
+word: duh
+part_of_speech: interjection
+meaning_vi: biết rồi; rõ quá còn gì
+definition_en: Used to suggest that something should have been obvious.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: Duh, of course.
+example_en: Duh, of course we need tickets to get in.
+example_vi: Rõ quá còn gì, tất nhiên phải có vé mới vào được.
+audio_word:
+audio_example:
+accepted_answers: duh
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Thán từ khẩu ngữ, thường mỉa mai và có thể khiến người nghe cảm thấy bị coi thường. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-nope-no-01
+word: nope
+part_of_speech: interjection
+meaning_vi: không
+definition_en: An informal way to say no.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: Nope, not today.
+example_en: Nope, I have not seen your keys.
+example_vi: Không, tôi chưa thấy chìa khóa của bạn.
+audio_word:
+audio_example:
+accepted_answers: nope
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Cách nói thân mật của no; không nhất thiết là tiếng lóng theo nghĩa hẹp. Có thể nghe cộc nếu ngữ điệu không phù hợp. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-yep-yes-01
+word: yep
+part_of_speech: interjection
+meaning_vi: ừ; có
+definition_en: An informal way to say yes.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: Yep, I am ready.
+example_en: Yep, I am ready to leave.
+example_vi: Ừ, tôi sẵn sàng đi rồi.
+audio_word:
+audio_example:
+accepted_answers: yep
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Cách nói thân mật của yes; không nhất thiết là tiếng lóng theo nghĩa hẹp. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-gotcha-understood-01
+word: gotcha
+part_of_speech: interjection
+meaning_vi: hiểu rồi
+definition_en: Used to tell someone that you understand what they mean.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: Gotcha, thanks.
+example_en: Gotcha, I will use the side entrance.
+example_vi: Hiểu rồi, tôi sẽ đi lối vào bên hông.
+audio_word:
+audio_example:
+accepted_answers: gotcha
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Khẩu ngữ, bắt nguồn từ got you. Mục này chỉ nghĩa đã hiểu; gotcha còn có cách dùng khi bắt gặp hoặc chơi khăm ai. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-what-s-up-greeting-01
+word: what's up
+part_of_speech: phrase
+meaning_vi: có gì mới không; chào bạn
+definition_en: An informal greeting that asks how someone is or what is happening.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: Hey, what's up?
+example_en: What's up, Mai? How was your weekend?
+example_vi: Chào Mai, có gì mới không? Cuối tuần của bạn thế nào?
+audio_word:
+audio_example:
+accepted_answers: what's up
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Lời chào thân mật. Cũng có thể là câu hỏi có chuyện gì vậy trong ngữ cảnh lo lắng; mục này dạy cách chào. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-hit-me-up-contact-me-01
+word: hit me up
+part_of_speech: phrase
+meaning_vi: liên lạc với tôi nhé
+definition_en: Used to ask someone to contact you.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: hit me up later
+example_en: Hit me up when you are free this weekend.
+example_vi: Cuối tuần này khi nào rảnh thì liên lạc với tôi nhé.
+audio_word:
+audio_example:
+accepted_answers: hit me up
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Tiếng lóng, thường là nhắn tin hoặc gọi điện; không hiểu theo nghĩa đánh ai. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-crash-sleep-temporarily-01
+word: crash
+part_of_speech: verb
+meaning_vi: ngủ nhờ tạm
+definition_en: To sleep temporarily in an available place, often at someone else's home.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: crash on a sofa
+example_en: Can I crash on your sofa tonight?
+example_vi: Tối nay tôi ngủ nhờ trên ghế sô-pha nhà bạn được không?
+audio_word:
+audio_example:
+accepted_answers: crash
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Khẩu ngữ. Mục này chỉ ngủ nhờ, không phải tai nạn hoặc sự cố máy tính. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-couch-potato-inactive-tv-watcher-01
+word: couch potato
+part_of_speech: noun
+meaning_vi: người dành quá nhiều thời gian ngồi xem ti-vi, ít vận động
+definition_en: A person who spends a lot of time sitting and watching television instead of being active.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: be a couch potato
+example_en: I became a couch potato during the rainy weekend.
+example_vi: Tôi cứ ngồi lì xem ti-vi suốt cuối tuần mưa gió.
+audio_word:
+audio_example:
+accepted_answers: couch potato
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Cách nói thân mật, thường tự trào hoặc chê nhẹ; có thể khiến người khác khó chịu khi bị gọi như vậy. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-loaded-wealthy-01
+word: loaded
+part_of_speech: adjective
+meaning_vi: rất giàu; có rất nhiều tiền
+definition_en: Having a lot of money.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: be loaded
+example_en: Her uncle is loaded, but he still drives an old car.
+example_vi: Chú cô ấy rất giàu nhưng vẫn lái một chiếc xe cũ.
+audio_word:
+audio_example:
+accepted_answers: loaded
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Tiếng lóng. Loaded còn có các nghĩa khác, kể cả say xỉn; mục này chỉ nghĩa giàu. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-broke-without-money-01
+word: broke
+part_of_speech: adjective
+meaning_vi: hết tiền; không còn tiền để tiêu
+definition_en: Having little or no money available.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: broke until payday
+example_en: I am broke until payday.
+example_vi: Tôi hết tiền cho đến ngày nhận lương.
+audio_word:
+audio_example:
+accepted_answers: broke
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Khẩu ngữ về tình trạng tiền bạc; không phải quá khứ của break trong câu này. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-bucks-dollars-01
+word: bucks
+part_of_speech: noun
+meaning_vi: đô la
+definition_en: An informal plural word for dollars.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: twenty bucks
+example_en: The ticket cost twenty bucks.
+example_vi: Chiếc vé có giá hai mươi đô la.
+audio_word:
+audio_example:
+accepted_answers: bucks
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Khẩu ngữ ở các nơi dùng tiền đô la, đặc biệt thường gặp trong tiếng Anh Mỹ. Số ít là buck; cần ngữ cảnh để biết loại đô la. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-quid-pounds-01
+word: quid
+part_of_speech: noun
+meaning_vi: bảng Anh
+definition_en: An informal word for one or more British pounds.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: ten quid
+example_en: I paid ten quid for this book.
+example_vi: Tôi trả mười bảng Anh cho cuốn sách này.
+audio_word:
+audio_example:
+accepted_answers: quid
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Khẩu ngữ Anh. Sau số đếm vẫn thường dùng quid, chẳng hạn one quid và ten quid. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-mate-friend-01
+word: mate
+part_of_speech: noun
+meaning_vi: bạn; bạn bè
+definition_en: A friend.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: a mate from school
+example_en: I am meeting a mate from school for lunch.
+example_vi: Tôi sẽ ăn trưa với một người bạn cùng trường.
+audio_word:
+audio_example:
+accepted_answers: mate
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Khẩu ngữ, đặc biệt phổ biến trong tiếng Anh Anh và tiếng Anh Úc. Mate cũng dùng để gọi người khác thân mật. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-dude-man-01
+word: dude
+part_of_speech: noun
+meaning_vi: anh chàng; gã
+definition_en: An informal word for a man or boy.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: that dude over there
+example_en: That dude in the blue jacket is my cousin.
+example_vi: Anh chàng mặc áo khoác xanh đó là anh họ tôi.
+audio_word:
+audio_example:
+accepted_answers: dude
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Khẩu ngữ bắt nguồn từ tiếng Anh Mỹ, nay được dùng rộng hơn. Thường chỉ hoặc gọi nam giới, không phù hợp trong ngữ cảnh trang trọng. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-bro-friendly-address-01
+word: bro
+part_of_speech: noun
+meaning_vi: ông bạn; anh bạn
+definition_en: An informal way of addressing a male friend.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: Thanks, bro.
+example_en: Thanks, bro, that really helped.
+example_vi: Cảm ơn ông bạn, việc đó giúp tôi nhiều lắm.
+audio_word:
+audio_example:
+accepted_answers: bro
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Dạng rút gọn của brother, dùng thân mật với bạn bè; không có nghĩa người được gọi nhất thiết là anh em ruột. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-bestie-best-friend-01
+word: bestie
+part_of_speech: noun
+meaning_vi: bạn thân nhất
+definition_en: A very close friend, especially your best friend.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: my bestie
+example_en: My bestie knows how to cheer me up.
+example_vi: Bạn thân nhất của tôi biết cách làm tôi vui lên.
+audio_word:
+audio_example:
+accepted_answers: bestie
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Khẩu ngữ thân mật, thường gặp trong trò chuyện và trên mạng. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-fam-close-circle-01
+word: fam
+part_of_speech: noun
+meaning_vi: nhóm bạn thân thiết như gia đình
+definition_en: Close friends who feel like family.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: part of my fam
+example_en: You are part of my fam now.
+example_vi: Giờ bạn là người thân thiết như gia đình của tôi rồi.
+audio_word:
+audio_example:
+accepted_answers: fam
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Tiếng lóng, rút gọn từ family. Mục này chỉ nhóm người thân thiết, không khẳng định quan hệ huyết thống. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-squad-friend-group-01
+word: squad
+part_of_speech: noun
+meaning_vi: hội bạn; nhóm bạn thân
+definition_en: A group of friends who spend time together.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: my squad
+example_en: My squad is coming over for a film night.
+example_vi: Hội bạn của tôi sẽ qua nhà để cùng xem phim.
+audio_word:
+audio_example:
+accepted_answers: squad
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Nghĩa tiếng lóng trong đời sống. Squad còn có nghĩa thông thường là một đội hoặc tiểu đội. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-bff-best-friend-01
+word: BFF
+part_of_speech: noun
+meaning_vi: bạn thân nhất mãi mãi (cách nói thân mật, thường mang tính cường điệu)
+definition_en: A very close friend, described as a best friend forever.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: my BFF
+example_en: Lan has been my BFF since primary school.
+example_vi: Lan là bạn thân nhất của tôi từ thời tiểu học.
+audio_word:
+audio_example:
+accepted_answers: BFF
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Viết tắt thân mật của best friend forever; thường dùng khi nhắn tin hoặc trên mạng. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-fomo-fear-missing-out-01
+word: FOMO
+part_of_speech: noun
+meaning_vi: nỗi sợ bỏ lỡ điều hay hoặc hoạt động mà người khác đang tham gia
+definition_en: An anxious feeling that other people may be enjoying something you are missing.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: get FOMO
+example_en: I get FOMO when all my friends go out without me.
+example_vi: Tôi thấy sợ bỏ lỡ cuộc vui khi tất cả bạn bè đi chơi mà không có mình.
+audio_word:
+audio_example:
+accepted_answers: FOMO
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Viết tắt của fear of missing out, dùng trong đời sống và cả nghiên cứu; không phải một chẩn đoán. Khi viết học thuật, viết đầy đủ fear of missing out (FOMO) ở lần đầu nếu thuật ngữ phù hợp.
+content_status: reviewed
+example_type:
+register: thuật ngữ mạng / viết tắt
+region:
+case_sensitive:
+---
+id: slang-lol-typed-laughter-01
+word: LOL
+part_of_speech: interjection
+meaning_vi: haha; buồn cười quá
+definition_en: Used in messages to show laughter or a light, joking tone.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: LOL, that was funny.
+example_en: You put salt in your tea? LOL!
+example_vi: Bạn bỏ muối vào trà à? Haha!
+audio_word:
+audio_example:
+accepted_answers: LOL
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Viết tắt của laughing out loud, chủ yếu trong tin nhắn. Người viết không nhất thiết thực sự đang cười thành tiếng. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-tbh-honest-introduction-01
+word: TBH
+part_of_speech: phrase
+meaning_vi: thật lòng mà nói
+definition_en: Used in messages before an honest opinion or admission.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: TBH, I disagree.
+example_en: TBH, I would rather stay home tonight.
+example_vi: Thật lòng mà nói, tối nay tôi muốn ở nhà hơn.
+audio_word:
+audio_example:
+accepted_answers: TBH
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Viết tắt của to be honest; dạng chữ viết thân mật, thường gặp trên mạng. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-irl-offline-01
+word: IRL
+part_of_speech: adverb
+meaning_vi: ngoài đời thực; khi gặp trực tiếp
+definition_en: In real life rather than only online.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: meet IRL
+example_en: We chat online every day, but we have never met IRL.
+example_vi: Chúng tôi trò chuyện trực tuyến hằng ngày nhưng chưa từng gặp nhau ngoài đời.
+audio_word:
+audio_example:
+accepted_answers: IRL
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Viết tắt thân mật của in real life. Mục này diễn tả sự phân biệt giữa giao tiếp trực tuyến và gặp trực tiếp. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-dm-private-message-01
+word: DM
+part_of_speech: noun
+meaning_vi: tin nhắn riêng trên một nền tảng trực tuyến
+definition_en: A private direct message sent to someone on an online platform.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: send a DM
+example_en: Send me a DM with the meeting time.
+example_vi: Gửi tin nhắn riêng cho tôi để báo giờ gặp nhé.
+audio_word:
+audio_example:
+accepted_answers: DM
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Viết tắt của direct message, thuật ngữ nhắn tin trên nền tảng trực tuyến; không phải tiếng lóng theo nghĩa hẹp. Khi viết trang trọng, nên viết đầy đủ direct message ở lần đầu nếu cần. DM cũng có thể làm động từ.
+content_status: reviewed
+example_type:
+register: thuật ngữ mạng / viết tắt
+region:
+case_sensitive:
+---
+id: slang-nerd-enthusiast-01
+word: nerd
+part_of_speech: noun
+meaning_vi: người rất say mê và am hiểu một lĩnh vực
+definition_en: A person who is especially enthusiastic and knowledgeable about a subject.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: a grammar nerd
+example_en: I am a grammar nerd, so I enjoy discussing punctuation.
+example_vi: Tôi rất mê ngữ pháp nên thích bàn về dấu câu.
+audio_word:
+audio_example:
+accepted_answers: nerd
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Khẩu ngữ. Có thể là cách tự nhận đầy tự hào, nhưng khi gán cho người khác cũng có thể nghe như chê bai. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-newbie-beginner-01
+word: newbie
+part_of_speech: noun
+meaning_vi: người mới; người mới bắt đầu
+definition_en: Someone who is new to an activity or group.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: a complete newbie
+example_en: I am a complete newbie at video editing.
+example_vi: Tôi hoàn toàn là người mới trong việc chỉnh sửa video.
+audio_word:
+audio_example:
+accepted_answers: newbie
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Khẩu ngữ, thường khá nhẹ nhàng; nên dùng learner hoặc beginner trong văn phong trang trọng. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-hype-public-excitement-01
+word: hype
+part_of_speech: noun
+meaning_vi: sự hào hứng và bàn tán lớn quanh một điều gì đó
+definition_en: A lot of public excitement or attention surrounding something.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: live up to the hype
+example_en: The new album lived up to the hype.
+example_vi: Album mới hay đúng như sự kỳ vọng và bàn tán trước đó.
+audio_word:
+audio_example:
+accepted_answers: hype
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Khẩu ngữ. Hype có thể gợi sự quảng bá quá mức, nhưng không phải lúc nào cũng mang nghĩa tiêu cực. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-hyped-excited-01
+word: hyped
+part_of_speech: adjective
+meaning_vi: rất háo hức; phấn khích
+definition_en: Very excited about something that is going to happen.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: hyped for a concert
+example_en: I am hyped for the concert on Saturday.
+example_vi: Tôi rất háo hức chờ buổi hòa nhạc vào thứ Bảy.
+audio_word:
+audio_example:
+accepted_answers: hyped
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Khẩu ngữ. Mục này chỉ cảm giác phấn khích, không phải việc một sản phẩm được quảng bá. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-stan-devoted-fan-01
+word: stan
+part_of_speech: noun
+meaning_vi: fan cực kỳ nhiệt thành
+definition_en: A very enthusiastic and devoted fan of a person or group.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: a huge stan
+example_en: My sister is a huge stan of that band.
+example_vi: Em gái tôi là fan cực kỳ nhiệt thành của ban nhạc đó.
+audio_word:
+audio_example:
+accepted_answers: stan
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Tiếng lóng trên mạng và trong cộng đồng người hâm mộ. Có thể tự nhận vui hoặc hàm ý hâm mộ quá mức tùy ngữ cảnh. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-ship-support-romance-01
+word: ship
+part_of_speech: verb
+meaning_vi: mong hai người thành một cặp
+definition_en: To want two people or fictional characters to have a romantic relationship.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: ship two characters
+example_en: Some viewers ship the two main characters.
+example_vi: Một số khán giả mong hai nhân vật chính thành một cặp.
+audio_word:
+audio_example:
+accepted_answers: ship
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Tiếng lóng của cộng đồng người hâm mộ, từ relationship. Đây là mong muốn của người nói, không khẳng định quan hệ có thật. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-tea-gossip-01
+word: tea
+part_of_speech: noun
+meaning_vi: chuyện bàn tán; tin hóng về người khác
+definition_en: Gossip or interesting news about other people.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: the latest tea
+example_en: What's the tea about the surprise announcement?
+example_vi: Có chuyện gì để hóng về thông báo bất ngờ đó vậy?
+audio_word:
+audio_example:
+accepted_answers: tea
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Tiếng lóng trên mạng và trong trò chuyện; không phải nghĩa trà. Tea có thể là tin đồn chưa được xác minh. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-spill-the-tea-share-gossip-01
+word: spill the tea
+part_of_speech: phrase
+meaning_vi: kể chuyện hóng; tiết lộ chuyện để bàn tán
+definition_en: To tell someone gossip or interesting details about a situation.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: spill the tea about something
+example_en: Come on, spill the tea about your date!
+example_vi: Nào, kể chuyện buổi hẹn của bạn cho nghe đi!
+audio_word:
+audio_example:
+accepted_answers: spill the tea
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Tiếng lóng thân mật. Thường mời kể chuyện riêng; thông tin kể lại chưa chắc đã được xác minh. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-throw-shade-indirect-criticism-01
+word: throw shade
+part_of_speech: phrase
+meaning_vi: đá xéo; chê bai một cách gián tiếp
+definition_en: To criticize or mock someone indirectly.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: throw shade at someone
+example_en: I was not trying to throw shade at your idea.
+example_vi: Tôi không có ý đá xéo ý tưởng của bạn.
+audio_word:
+audio_example:
+accepted_answers: throw shade
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Tiếng lóng; thường có sắc thái mỉa mai và có thể làm mất lòng người khác. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-clapback-sharp-response-01
+word: clapback
+part_of_speech: noun
+meaning_vi: câu đáp trả sắc bén trước lời chỉ trích
+definition_en: A sharp response to criticism or an insult.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: a sharp clapback
+example_en: Her clever clapback ended the argument.
+example_vi: Câu đáp trả khéo mà sắc của cô ấy đã chấm dứt cuộc tranh cãi.
+audio_word:
+audio_example:
+accepted_answers: clapback
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Tiếng lóng, thường gặp trên mạng; sắc thái đối đầu, có thể hài hước hoặc gay gắt. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-roast-mock-humorously-01
+word: roast
+part_of_speech: verb
+meaning_vi: chọc quê; trêu chọc bằng lời đùa sắc
+definition_en: To make fun of someone with sharp jokes, often as entertainment.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: roast each other
+example_en: The friends roast each other about their terrible cooking.
+example_vi: Nhóm bạn chọc quê nhau về tài nấu ăn dở tệ.
+audio_word:
+audio_example:
+accepted_answers: roast
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Khẩu ngữ. Có thể là trêu vui giữa người quen nhưng cũng có thể gây tổn thương nếu người bị trêu không thấy vui. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-troll-online-provoker-01
+word: troll
+part_of_speech: noun
+meaning_vi: người cố tình gây hấn hoặc chọc tức người khác trên mạng
+definition_en: Someone who deliberately posts online to upset people or provoke arguments.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: an online troll
+example_en: Ignore the troll who keeps posting insults.
+example_vi: Hãy bỏ qua kẻ cố tình gây hấn cứ đăng những lời xúc phạm đó.
+audio_word:
+audio_example:
+accepted_answers: troll
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Thuật ngữ về người cố gây hấn hoặc chọc tức trên mạng; cũng xuất hiện trong nghiên cứu. Khi viết trang trọng, định nghĩa rõ nếu cần và tránh gán nhãn cho người chỉ đang bất đồng ý kiến. Không phải nghĩa sinh vật dân gian.
+content_status: reviewed
+example_type:
+register: thuật ngữ mạng / viết tắt
+region:
+case_sensitive:
+---
+id: slang-catfish-fake-online-identity-01
+word: catfish
+part_of_speech: verb
+meaning_vi: lừa người khác trên mạng bằng danh tính giả
+definition_en: To deceive someone online by using a false identity.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: catfish someone online
+example_en: Scammers sometimes catfish people by using stolen photos.
+example_vi: Kẻ lừa đảo đôi khi dùng ảnh đánh cắp để giả danh và lừa người khác trên mạng.
+audio_word:
+audio_example:
+accepted_answers: catfish
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Tiếng lóng, thường liên quan tới làm quen hoặc hẹn hò trực tuyến; không phải nghĩa cá da trơn. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-green-flag-positive-relationship-sign-01
+word: green flag
+part_of_speech: noun
+meaning_vi: dấu hiệu tích cực về cách cư xử trong một mối quan hệ
+definition_en: A sign that someone may be considerate or suitable for a healthy relationship.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: a green flag in a relationship
+example_en: Respecting your boundaries is a green flag.
+example_vi: Tôn trọng ranh giới của bạn là một dấu hiệu tích cực.
+audio_word:
+audio_example:
+accepted_answers: green flag
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Cách nói thân mật phổ biến trên mạng, nhất là về hẹn hò; một dấu hiệu không bảo đảm hoàn toàn về một người. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-the-ick-romantic-aversion-01
+word: the ick
+part_of_speech: noun
+meaning_vi: cảm giác đột ngột mất hứng hoặc thấy phản cảm với người mình đang tìm hiểu
+definition_en: A sudden feeling of aversion toward someone you had been romantically interested in.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: give someone the ick
+example_en: His rude behavior at dinner gave me the ick.
+example_vi: Cách cư xử thô lỗ của anh ấy trong bữa tối khiến tôi đột ngột mất thiện cảm khi đang tìm hiểu nhau.
+audio_word:
+audio_example:
+accepted_answers: the ick
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Tiếng lóng trong ngữ cảnh hẹn hò; thường đi với the trong cụm give someone the ick. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-extra-overdramatic-01
+word: extra
+part_of_speech: adjective
+meaning_vi: làm quá; quá phô trương hoặc kịch tính
+definition_en: Behaving in a way that seems unnecessarily dramatic or excessive.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: be extra
+example_en: He was being extra about a tiny stain on his shirt.
+example_vi: Anh ấy đang làm quá lên chỉ vì một vết bẩn nhỏ trên áo.
+audio_word:
+audio_example:
+accepted_answers: extra
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Tiếng lóng, có thể trêu vui hoặc chê bai; khác với nghĩa thêm hoặc bổ sung. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-basic-unoriginal-01
+word: basic
+part_of_speech: adjective
+meaning_vi: đại trà; bị cho là thiếu cá tính hoặc quá theo số đông
+definition_en: Unoriginal or too similar to what many other people like.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: call something basic
+example_en: She called my playlist basic because it only had chart hits.
+example_vi: Cô ấy chê danh sách nhạc của tôi đại trà vì toàn là các bài đang đứng đầu bảng xếp hạng.
+audio_word:
+audio_example:
+accepted_answers: basic
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Tiếng lóng mang tính phán xét, dễ làm mất lòng; khác nghĩa trung tính là cơ bản. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-bougie-fancy-pretentious-01
+word: bougie
+part_of_speech: adjective
+meaning_vi: sang chảnh, đôi khi bị chê là thích ra vẻ thượng lưu
+definition_en: Fancy or expensive in a way associated with upper-class tastes, sometimes pretentiously.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: a bougie café
+example_en: This café is a little bougie for a quick coffee.
+example_vi: Quán này hơi sang chảnh quá nếu chỉ ghé uống nhanh một ly cà phê.
+audio_word:
+audio_example:
+accepted_answers: bougie
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Tiếng lóng, có thể nói vui hoặc chê sự làm sang; liên quan đến sắc thái tầng lớp nên cần thận trọng với người nghe. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-slay-perform-impressively-01
+word: slay
+part_of_speech: verb
+meaning_vi: thể hiện cực đỉnh; làm rất xuất sắc
+definition_en: To perform exceptionally well.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: slay on stage
+example_en: You slay every time you step on stage.
+example_vi: Mỗi lần bước lên sân khấu bạn đều thể hiện cực đỉnh.
+audio_word:
+audio_example:
+accepted_answers: slay
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Tiếng lóng khen ngợi trong giải trí và thời trang; khác với nghĩa trang trọng hoặc văn chương là giết. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-glow-up-positive-transformation-01
+word: glow-up
+part_of_speech: noun
+meaning_vi: sự thay đổi tích cực rõ rệt, nhất là về ngoại hình hoặc sự tự tin
+definition_en: A noticeable positive transformation, especially in appearance or confidence.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: a real glow-up
+example_en: A new haircut gave him a real glow-up.
+example_vi: Kiểu tóc mới khiến diện mạo anh ấy thay đổi tích cực hẳn.
+audio_word:
+audio_example:
+accepted_answers: glow-up
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Tiếng lóng, thường gặp trên mạng; nhấn mạnh một sự thay đổi tích cực có thể nhận thấy rõ. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-adulting-adult-responsibilities-01
+word: adulting
+part_of_speech: noun
+meaning_vi: việc tự lo những trách nhiệm thường ngày của người trưởng thành
+definition_en: Doing everyday responsibilities associated with being an independent adult.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: a day of adulting
+example_en: Paying bills is my least favorite part of adulting.
+example_vi: Thanh toán hóa đơn là phần tôi ít thích nhất trong những việc phải tự lo khi trưởng thành.
+audio_word:
+audio_example:
+accepted_answers: adulting
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Cách nói thân mật, thường hài hước hoặc tự trào. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-hot-take-provocative-opinion-01
+word: hot take
+part_of_speech: noun
+meaning_vi: ý kiến mạnh, dễ gây tranh luận
+definition_en: A strongly expressed opinion that is likely to cause disagreement.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: my hot take
+example_en: My hot take is that the sequel is better than the original.
+example_vi: Ý kiến dễ gây tranh luận của tôi là phần tiếp theo hay hơn bản gốc.
+audio_word:
+audio_example:
+accepted_answers: hot take
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Cách nói thân mật phổ biến trên mạng và trong bình luận; không bảo đảm ý kiến đó đã được nghiên cứu kỹ. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-side-eye-skeptical-look-01
+word: side-eye
+part_of_speech: noun
+meaning_vi: cái liếc mắt tỏ vẻ hoài nghi hoặc không tán thành
+definition_en: A sideways look that expresses doubt, disapproval, or suspicion.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: give someone side-eye
+example_en: She gave me side-eye when I said I had finished all my homework.
+example_vi: Cô ấy liếc tôi đầy hoài nghi khi tôi nói đã làm xong hết bài tập.
+audio_word:
+audio_example:
+accepted_answers: side-eye
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Khẩu ngữ. Diễn tả thái độ trong ánh mắt; không phải mọi cái nhìn sang bên đều là side-eye theo nghĩa này. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-facepalm-embarrassed-reaction-01
+word: facepalm
+part_of_speech: noun
+meaning_vi: động tác úp tay lên mặt vì ngán ngẩm, khó tin hoặc ngượng ngùng
+definition_en: A gesture of putting a hand over the face to show frustration, disbelief, or embarrassment.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: a facepalm moment
+example_en: Sending the email without the attachment was a facepalm moment.
+example_vi: Gửi email mà quên đính kèm tệp đúng là một pha chỉ biết úp tay lên mặt vì ngán ngẩm.
+audio_word:
+audio_example:
+accepted_answers: facepalm
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Từ thân mật phổ biến trên mạng; cũng có thể dùng khi nói về biểu tượng hoặc phản ứng ngán ngẩm. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-rip-off-overpriced-purchase-01
+word: rip-off
+part_of_speech: noun
+meaning_vi: món mua hoặc dịch vụ có giá quá đắt so với giá trị
+definition_en: Something that costs much more than it is worth.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: a complete rip-off
+example_en: Ten dollars for a small bottle of water is a rip-off.
+example_vi: Mười đô la cho một chai nước nhỏ đúng là quá đắt so với giá trị.
+audio_word:
+audio_example:
+accepted_answers: rip-off
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Khẩu ngữ mang tính phàn nàn. Mục này chỉ giá quá cao, không khẳng định đã có hành vi phạm pháp. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-freebie-free-item-01
+word: freebie
+part_of_speech: noun
+meaning_vi: đồ được cho miễn phí, thường để quảng bá
+definition_en: Something given away for free, often as a promotion.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: a freebie with a purchase
+example_en: The shop included a freebie with my order.
+example_vi: Cửa hàng tặng kèm một món miễn phí trong đơn của tôi.
+audio_word:
+audio_example:
+accepted_answers: freebie
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Khẩu ngữ, thường dùng về quà tặng hoặc hàng khuyến mại. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
+---
+id: slang-stoked-very-excited-01
+word: stoked
+part_of_speech: adjective
+meaning_vi: cực kỳ háo hức; rất vui mừng
+definition_en: Very excited and pleased about something.
+ipa:
+level:
+topics: slang,daily-life
+collections: slang
+collocation: stoked about a trip
+example_en: I am stoked about our camping trip.
+example_vi: Tôi cực kỳ háo hức về chuyến cắm trại của chúng ta.
+audio_word:
+audio_example:
+accepted_answers: stoked
+source: Giải nghĩa và ví dụ tự biên soạn; không phải danh sách hoặc định nghĩa Oxford.
+note: Tiếng lóng thân mật khi thể hiện sự phấn khích. Tránh dùng trong IELTS Writing học thuật.
+content_status: reviewed
+example_type:
+register: khẩu ngữ / tiếng lóng
+region:
+case_sensitive:
