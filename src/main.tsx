@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import {
   ArrowRight,
@@ -41,6 +41,7 @@ import {
   canPractice,
   cloze,
   isSlang,
+  sortForLearning,
 } from "./core";
 import "./style.css";
 import ErrorBoundary from "./ErrorBoundary";
@@ -194,7 +195,13 @@ function App() {
     started.current = Date.now();
     lock.current = !!saved;
   }, [state.session?.index, state.session?.id]);
-  const active = Object.values(state.entries).filter((e) => !e.archived),
+  const active = useMemo(
+      () =>
+        sortForLearning(
+          Object.values(state.entries).filter((e) => !e.archived),
+        ),
+      [state.entries],
+    ),
     now = Date.now();
   const due = Object.entries(state.schedules).filter(
     ([k, s]) =>
@@ -588,14 +595,14 @@ function App() {
       <aside>
         <a
           className="brand"
-          aria-label="Lexi IELTS — Hôm nay"
+          aria-label="Jeongyeon — Hôm nay"
           href="#"
           onClick={() => setPage("today")}
         >
           <span className="brand-icon">
             <Leaf size={24} />
           </span>
-          lexi<span className="brand-dot">.</span>
+          Jeongyeon<span className="brand-dot">.</span>
         </a>
         <div className="brand-caption">MỖI TỪ, MỘT BƯỚC TIẾN</div>
         <div className="nav-label">GÓC HỌC CỦA BẠN</div>
@@ -1045,6 +1052,14 @@ function App() {
                   .length.toLocaleString("vi-VN")}{" "}
                 mục. Nội dung từ từ điển mở được ghi nguồn và nhãn chưa rà soát.
               </div>
+              <p className="fineprint" data-testid="library-order">
+                Thứ tự: A1 → A2 → B1 → B2 → C1 → C2; trong cùng trình độ, từ
+                thông dụng hơn đứng trước theo tần suất tiếng Anh tổng hợp
+                wordfreq. Cùng tần suất thì xếp A–Z. Mục chưa có CEFR nằm cuối;
+                chưa có tần suất nằm sau các mục có dữ liệu trong cùng trình độ.
+                Tần suất gộp cách viết không phân biệt hoa/thường, không xác
+                nhận riêng từng nghĩa hoặc từ loại.
+              </p>
               <div className="toolbar">
                 <label className="search">
                   <Search size={18} />
@@ -1081,9 +1096,11 @@ function App() {
                   onChange={(e) => setLevel(e.target.value)}
                 >
                   <option value="">Mọi trình độ</option>
-                  {selectOptions("level").map((t) => (
-                    <option key={t}>{t}</option>
-                  ))}
+                  {selectOptions("level")
+                    .sort()
+                    .map((t) => (
+                      <option key={t}>{t}</option>
+                    ))}
                 </select>
                 <select
                   aria-label="Trạng thái"
@@ -1653,7 +1670,7 @@ function App() {
           )}
         </main>
         <footer className="app-footer">
-          lexi. <span>Một góc nhỏ cho những bước tiến lớn.</span>
+          Jeongyeon. <span>Một góc nhỏ cho những bước tiến lớn.</span>
           <span>Riêng tư · Không tài khoản · Không đồng bộ</span>
         </footer>
       </div>
@@ -1849,7 +1866,7 @@ function App() {
               <button
                 onClick={() =>
                   download(
-                    "lexi-backup.json",
+                    "jeongyeon-backup.json",
                     JSON.stringify(state, null, 2),
                     "application/json",
                   )

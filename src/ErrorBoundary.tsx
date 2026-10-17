@@ -31,7 +31,7 @@ export default class ErrorBoundary extends Component<Props, State> {
           style={{ maxWidth: 520, lineHeight: 1.7 }}
         >
           <h1 id="recovery-title" style={{ fontSize: 28, lineHeight: 1.3 }}>
-            Lexi IELTS chưa thể mở
+            Jeongyeon chưa thể mở
           </h1>
           <p>Ứng dụng gặp lỗi khi hiển thị. Bạn hãy thử tải lại trang.</p>
           <p>

@@ -1,6 +1,6 @@
-# Nguồn và phạm vi kho từ Lexi IELTS
+# Nguồn và phạm vi kho từ Jeongyeon
 
-Kho mặc định hiện chứa **toàn bộ phạm vi Oxford 3000 và phần bổ sung Oxford 5000 theo hai PDF đã đối chiếu**, cộng bộ **100 mục nghĩa cụm động từ (98 cụm)** và **80 mục Slang/khẩu ngữ**. Tất cả nội dung học nằm trong file UTF-8 `vocabulary.txt`; không nhúng từ vựng vào mã giao diện.
+Kho mặc định hiện chứa **toàn bộ phạm vi Oxford 3000 và phần bổ sung Oxford 5000 theo hai PDF đã đối chiếu**, cộng bộ **100 mục nghĩa cụm động từ (98 cụm)** và **107 mục Slang/thành ngữ/khẩu ngữ**, gồm 27 thành ngữ có ngữ cảnh báo chí. Tất cả nội dung học nằm trong file UTF-8 `vocabulary.txt`; không nhúng từ vựng vào mã giao diện.
 
 ## Đếm đúng phạm vi Oxford
 
@@ -52,6 +52,26 @@ Hai bộ này được biên soạn riêng, không tự nhận là danh sách Ox
 
 Mỗi cụm động từ có một nghĩa/ID cụ thể, hướng dẫn tân ngữ, tính tách được/không tách và vị trí đại từ khi phù hợp. Những từ có hai nghĩa được đếm thành hai mục nghĩa, không thành hai từ khác nhau.
 
+### Thành ngữ trong ngữ cảnh báo/đài Mỹ
+
+Bổ sung **27 thành ngữ từ 27 bài tin, phỏng vấn, bài chuyên đề hoặc bản chép chương trình** của AP qua PBS, PBS NewsHour và VOA Learning English. Đây là các bài có nội dung tin/phỏng vấn, không lấy bài dạy thành ngữ rồi gọi là bản tin. Một trường hợp dùng trong tiêu đề được ghi rõ. Nguồn gồm bản lưu lịch sử; ngày đăng hiển thị là ngày bài nguồn, không phải lời khẳng định đây là tin mới hoặc các cụm đang thịnh hành.
+
+Ví dụ `feel like a million bucks` được đối chiếu với lời nhân vật trong bài AP/PBS ngày 11/02/2025; `kick the can down the road`, `walk a tightrope`, `a double-edged sword` có ngữ cảnh nguồn riêng. Thành ngữ không đồng nghĩa với tiếng lóng: `expression_type` phân biệt thành ngữ, slang, khẩu ngữ, viết tắt và thuật ngữ; `register` mô tả sắc thái cụ thể.
+
+Mỗi mục có trích đoạn ngắn nguyên văn, tác giả xuất bản, URL, tiêu đề và ngày đăng; phần giải thích/bản dịch/ví dụ luyện tập do Jeongyeon biên soạn nằm riêng. Trích nguồn giữ cách chia động từ, đại từ và mạo từ thực tế nên có thể khác dạng đầu mục học. Lời của người được phỏng vấn không phải sự xác nhận của tòa soạn. Một bài có dùng cụm từ không chứng minh tần suất sử dụng. Bản chép chương trình cũng có thể có lỗi phiên âm.
+
+Xem `news-provenance.json` để biết từng nguồn, phạm vi đối chiếu, thời điểm truy xuất và SHA256 HTML. `scripts/audit-news-content.py` kiểm tra trích đoạn với HTML lưu cục bộ; không phân phối lại toàn bộ bài báo. Website đọc nội dung đã biên soạn trong TXT, không tự thu thập tin mới khi mở trang. Các 80 mục cũ chưa gắn bài nguồn được ghi riêng trong bộ lọc, không tự nhận đã được báo chí xác minh.
+
+## Sắp xếp theo trình độ và tần suất
+
+Kho từ xếp **A1 → A2 → B1 → B2 → C1 → C2**, rồi theo tần suất tiếng Anh giảm dần trong cùng trình độ; cùng điểm thì A–Z và ID ổn định. Mục chưa có CEFR nằm cuối; mục thiếu điểm nằm sau các mục có điểm trong cùng trình độ. Từ mới trong kế hoạch học dùng cùng thứ tự; lượt ôn đến hạn vẫn đi trước. Slang/cụm động từ ở trang riêng vẫn mặc định A–Z.
+
+Điểm `frequency_zipf` lấy từ **wordfreq 3.1.1, bảng English large** của Robyn Speer và các nguồn được ghi công, gồm dữ liệu tổng hợp ở nhiều miền ngữ liệu. Đã kiểm tra hash gói và bảng nguồn. **4.925 đầu mục Oxford** có điểm trực tiếp; 30 đầu mục khác giữ trống vì thiếu cách viết chính xác hoặc là cụm/đầu mục gộp. Không ước lượng tần suất thành ngữ bằng tích tần suất các từ thành phần, và không gán điểm của nghĩa đen cho slang.
+
+Đây là ước lượng tần suất **cách viết không phân biệt hoa/thường**, gộp các nghĩa/từ loại; `May/may`, `March/march`, `IT/it` dùng chung ước lượng cách viết. Không phải điểm Oxford, độ khó IELTS hay tần suất riêng trong thời sự Mỹ. Nguồn là bản chụp lịch sử, không phải đo lường thời gian thực. Điểm cao hơn chỉ biểu thị tần suất tổng hợp cao hơn; thiếu dữ liệu không có nghĩa là từ hiếm.
+
+Các giá trị chọn lọc từ wordfreq theo **CC BY-SA 4.0**; giữ giấy phép, `licenses/wordfreq-NOTICE.txt` và `licenses/wordfreq-upstream-attribution.txt` khi phân phối lại. Xem `frequency-provenance.json` cho phương pháp, hash và phạm vi từng mục; `data/frequency/README.md` hướng dẫn tái tạo. Cài Python/wordfreq chỉ cần khi chủ ý tạo lại dữ liệu, không cần cho chạy/build web thông thường.
+
 ## Cập nhật và giữ lịch sử
 
 ID của 259 mục đã có được giữ nguyên. Bản sửa cá nhân không bị bản cập nhật mặc định ghi đè. Các mục mẫu không còn trong nguồn được lưu trữ, không xóa lịch sử. File `vocabulary.sample.txt` giữ 20 mục minh họa định dạng cũ; không phải kho chính.
@@ -61,11 +81,13 @@ ID của 259 mục đã có được giữ nguyên. Bản sửa cá nhân không
 ## Số lượng bản hiện tại
 
 - oxfordHeadwords: 4955
-- entryCount: 5135
-- reviewed: 610
+- entryCount: 5162
+- reviewed: 637
 - dictionary: 4524
 - reference: 1
 - phrasalSenses: 100
-- slangSenses: 80
-- withBilingualContext: 3590
+- slangSenses: 107
+- newsIdioms: 27
+- frequencyScored: 4925
+- withBilingualContext: 3617
 - missingContext: 1545

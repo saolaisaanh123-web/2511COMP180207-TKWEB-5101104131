@@ -1,19 +1,137 @@
 import { test, expect } from "@playwright/test";
 import { readFileSync } from "node:fs";
-import { parse, merge, empty, record } from "../src/core";
+import {
+  parse,
+  serialize,
+  merge,
+  empty,
+  record,
+  sortForLearning,
+  canPractice,
+  isSlang,
+} from "../src/core";
 const corpus = parse(readFileSync("public/data/vocabulary.txt", "utf8"));
+const firstNewWord = sortForLearning(
+  Object.values(merge(empty(), corpus, "default").entries),
+).find((e) => canPractice(e.word, 0) && !isSlang(e.word))!.word;
+
+test("library orders by CEFR then frequency and new study uses that order", async ({
+  page,
+}) => {
+  const fixture = [
+    ["higher-level", "A2", "8"],
+    ["unknown-level", "", "8"],
+    ["z-common", "A1", "6"],
+    ["rare", "A1", "2"],
+    ["no-frequency", "A1", ""],
+    ["a-common", "A1", "6"],
+  ].map(([word, level, frequency_zipf]) => ({
+    id: word,
+    word,
+    level,
+    frequency_zipf,
+    meaning_vi: word,
+    example_en: `This is ${word}.`,
+    example_vi: `Đây là ${word}.`,
+    frequency_source: "wordfreq-3.1.1-en-large",
+  }));
+  await page.route("**/data/vocabulary.txt", (route) =>
+    route.fulfill({
+      contentType: "text/plain;charset=utf-8",
+      body: serialize(fixture),
+    }),
+  );
+  await page.goto("/");
+  await page.getByRole("button", { name: "Kho từ", exact: true }).click();
+  await expect(page.locator(".word-card h3")).toHaveText([
+    "a-common",
+    "z-common",
+    "rare",
+    "no-frequency",
+    "higher-level",
+    "unknown-level",
+  ]);
+  await expect(page.getByTestId("library-order")).toContainText("A1 → A2");
+  await page
+    .getByRole("combobox", { name: "Trình độ", exact: true })
+    .selectOption("A2");
+  await expect(page.locator(".word-card h3")).toHaveText(["higher-level"]);
+  await page.getByRole("button", { name: "Hôm nay", exact: true }).click();
+  await page.getByRole("button", { name: "Bắt đầu học", exact: true }).click();
+  await expect(page.locator(".study h2")).toHaveText("a-common");
+});
+
+test("news idioms filter and display attributed context separately from practice examples", async ({
+  page,
+}) => {
+  const idiom = corpus.find((w) => w.word === "feel like a million bucks")!;
+  const reporting = corpus.filter((w) => w.news_source_type === "reporting");
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/");
+  await page.getByRole("button", { name: "Slang", exact: true }).click();
+  await page
+    .getByRole("combobox", { name: "Loại cách nói", exact: true })
+    .selectOption("idiom");
+  await page
+    .getByRole("combobox", { name: "Nguồn ngữ cảnh", exact: true })
+    .selectOption("reporting");
+  await expect(page.locator(".coll-results-summary")).toContainText(
+    `${reporting.length} mục nghĩa`,
+  );
+  await page.locator(".coll-search input").fill("million bucks");
+  await expect(page.locator(".coll-card")).toHaveCount(1);
+  await page
+    .getByRole("button", { name: `Xem chi tiết và nguồn của ${idiom.word}` })
+    .click();
+  await expect(page.locator(".dict-headword")).toHaveText(idiom.word);
+  await expect(page.locator(".dict-example-en")).toHaveText(idiom.example_en);
+  await expect(page.locator(".dict-news blockquote")).toHaveText(
+    idiom.news_excerpt,
+  );
+  await expect(page.locator(".dict-news-link")).toHaveAttribute(
+    "href",
+    idiom.news_url,
+  );
+  await expect(page.locator(".dict-news time")).toHaveAttribute(
+    "datetime",
+    "2025-02-11",
+  );
+  await expect(page.locator(".dict-news-type")).toHaveText(
+    "Bản tin / phỏng vấn",
+  );
+  await expect(page.locator(".dict-level")).toHaveCount(0);
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth,
+    ),
+  ).toBe(true);
+  await page.screenshot({
+    path: "/tmp/lexi-news-idiom-mobile.png",
+    fullPage: true,
+  });
+  await page.getByRole("button", { name: "Đóng", exact: true }).click();
+  await page.locator(".coll-search input").fill("");
+  await page
+    .getByRole("combobox", { name: "Nguồn ngữ cảnh", exact: true })
+    .selectOption("language-lesson");
+  await expect(page.locator(".coll-card")).toHaveCount(0);
+  await expect(
+    page.getByRole("heading", { name: "Chưa tìm thấy từ bạn cần" }),
+  ).toBeVisible();
+});
 test("dashboard, scheduled study, persistence, evidence and backup", async ({
   page,
 }) => {
   const errors: string[] = [];
   page.on("pageerror", (e) => errors.push(e.message));
   await page.goto("/");
+  await expect(page).toHaveTitle(/^Jeongyeon/);
   await expect(
     page.getByRole("heading", { name: "Hôm nay, mình học gì?" }),
   ).toBeVisible();
   await page.screenshot({ path: "/tmp/lexi-desktop.png", fullPage: true });
   await page.getByRole("button", { name: "Bắt đầu học", exact: true }).click();
-  await expect(page.locator(".study h2")).toHaveText("avoid");
+  await expect(page.locator(".study h2")).toHaveText(firstNewWord.word);
   await page.getByRole("button", { name: "Mở đáp án để tự đánh giá" }).click();
   await page.getByRole("button", { name: "Nhớ rõ", exact: true }).click();
   await expect(page.getByText("Đã lưu tự đánh giá.")).toBeVisible();
@@ -23,9 +141,13 @@ test("dashboard, scheduled study, persistence, evidence and backup", async ({
     page.getByText("Lượt này đã được lưu. Tiếp tục để tránh tính trùng."),
   ).toBeVisible();
   await page.getByRole("button", { name: "Tiếp tục", exact: true }).click();
-  await expect(page.locator(".study h2")).toHaveText("tránh");
+  await expect(page.locator(".study h2")).toHaveText(firstNewWord.meaning_vi);
   await expect(page.locator(".answer")).toHaveCount(0);
-  await page.getByRole("textbox", { name: "Câu trả lời" }).fill(" AVOID ");
+  await page
+    .getByRole("textbox", { name: "Câu trả lời" })
+    .fill(
+      ` ${firstNewWord.accepted_answers?.split("|")[0] || firstNewWord.word} `,
+    );
   await page.getByRole("button", { name: "Kiểm tra", exact: true }).dblclick();
   await expect(page.getByText(/Chính xác!/)).toBeVisible();
   await page.getByRole("button", { name: "Tiến độ", exact: true }).click();

@@ -1,5 +1,5 @@
 import { BookOpen, ExternalLink, Volume2 } from "lucide-react";
-import { type State, skills, strength } from "./core";
+import { type State, frequencyScore, skills, strength } from "./core";
 import "./dictionary.css";
 
 type DictionaryEntryProps = {
@@ -26,7 +26,7 @@ function referenceLinks(source: string) {
   return [...links];
 }
 
-function audioUrl(value?: string) {
+function safeHttpsUrl(value?: string) {
   if (!value) return undefined;
   try {
     const url = new URL(value);
@@ -36,6 +36,19 @@ function audioUrl(value?: string) {
   } catch {
     return undefined;
   }
+}
+
+const expressionLabels: Record<string, string> = {
+  idiom: "Thành ngữ",
+  slang: "Tiếng lóng",
+  colloquialism: "Cách nói đời thường",
+  abbreviation: "Từ viết tắt",
+  term: "Thuật ngữ",
+};
+
+function sourceDate(value: string) {
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value);
+  return match ? `${match[3]}/${match[2]}/${match[1]}` : value;
 }
 
 export default function DictionaryEntry({
@@ -60,8 +73,11 @@ export default function DictionaryEntry({
         hostname.endsWith(".oxfordlearnersdictionaries.com")
       );
     });
-  const wordAudio = audioUrl(w.audio_word);
-  const exampleAudio = audioUrl(w.audio_example);
+  const wordAudio = safeHttpsUrl(w.audio_word);
+  const exampleAudio = safeHttpsUrl(w.audio_example);
+  const newsUrl = safeHttpsUrl(w.news_url);
+  const hasNewsContext = !!(w.news_source || w.news_title || w.news_excerpt);
+  const frequency = frequencyScore(w);
   const history = state.history
     .filter((result) => result.wordId === w.id)
     .slice()
@@ -72,7 +88,7 @@ export default function DictionaryEntry({
       <header className="dict-header">
         <div className="dict-kicker">
           <BookOpen size={15} aria-hidden="true" />
-          <span>Lexi IELTS · Sổ từ cá nhân</span>
+          <span>Jeongyeon · Sổ từ cá nhân</span>
         </div>
         <h2 className="dict-headword" lang="en">
           {w.word}
@@ -87,6 +103,25 @@ export default function DictionaryEntry({
             <span className="dict-level">{w.level}</span>
           )}
         </div>
+        {(expressionLabels[w.expression_type] || w.register || w.region) && (
+          <div className="dict-expression-tags">
+            {expressionLabels[w.expression_type] && (
+              <span>{expressionLabels[w.expression_type]}</span>
+            )}
+            {w.register && (
+              <span>
+                <span className="dict-tag-label">Sắc thái: </span>
+                {w.register}
+              </span>
+            )}
+            {w.region && (
+              <span>
+                <span className="dict-tag-label">Vùng miền: </span>
+                {w.region}
+              </span>
+            )}
+          </div>
+        )}
         <p className="dict-level-note">
           {reference
             ? "Bản nguồn có xung đột hoặc thiếu nghĩa phù hợp; chưa xác nhận nhãn học."
@@ -96,6 +131,24 @@ export default function DictionaryEntry({
                 : "Mức CEFR do nguồn của mục từ khai báo; chưa đối chiếu riêng từng nghĩa."
               : "Chưa đối chiếu mức CEFR."}
         </p>
+        {frequency !== undefined && (
+          <div className="dict-frequency" aria-label="Mức độ thông dụng">
+            <p>
+              <strong>
+                Độ thông dụng · Zipf{" "}
+                {frequency.toLocaleString("vi-VN", {
+                  maximumFractionDigits: 2,
+                })}
+              </strong>{" "}
+              — số cao hơn nghĩa là thông dụng hơn trong tiếng Anh nói chung.
+            </p>
+            <p>
+              Tính theo cách viết, gộp chữ hoa/thường; không tách từng nghĩa
+              hoặc từ loại. Đây không phải điểm Oxford hay IELTS.
+              {w.frequency_source?.trim() && <> Nguồn: {w.frequency_source}.</>}
+            </p>
+          </div>
+        )}
         <div className="dict-pronunciation">
           <span className="dict-ipa" lang={w.ipa ? "en" : "vi"}>
             {w.ipa || "IPA chưa đối chiếu"}
@@ -186,11 +239,72 @@ export default function DictionaryEntry({
             <p className="dict-muted">
               {imported
                 ? "Nghĩa và ngữ liệu được nhập theo giấy phép của nguồn từ điển mở, chưa rà soát thủ công từng mục. Chúng không phải định nghĩa hoặc ví dụ Oxford."
-                : "Giải nghĩa, bản dịch và ví dụ do Lexi/người nhập biên soạn; không phải nội dung trích nguyên văn từ Oxford."}
+                : "Giải nghĩa, bản dịch và ví dụ do Jeongyeon/người nhập biên soạn; không phải nội dung trích nguyên văn từ Oxford."}
             </p>
           </div>
         </div>
       </section>
+
+      {hasNewsContext && (
+        <section className="dict-news" aria-label="Ngữ cảnh có nguồn">
+          <div className="dict-news-heading">
+            <h3>Ngữ cảnh có nguồn</h3>
+            {w.news_source_type && (
+              <span className="dict-news-type">
+                {w.news_source_type === "reporting"
+                  ? "Bản tin / phỏng vấn"
+                  : w.news_source_type === "language-lesson"
+                    ? "Chuyên mục học tiếng Anh"
+                    : w.news_source_type}
+              </span>
+            )}
+          </div>
+          {(w.news_source || w.news_date) && (
+            <p className="dict-news-publisher">
+              {w.news_source}
+              {w.news_source && w.news_date && " · "}
+              {w.news_date && (
+                <time dateTime={w.news_date}>{sourceDate(w.news_date)}</time>
+              )}
+            </p>
+          )}
+          {newsUrl ? (
+            <a
+              className="dict-news-link"
+              href={newsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>{w.news_title || "Mở bài nguồn"}</span>
+              <ExternalLink size={14} aria-hidden="true" />
+            </a>
+          ) : w.news_title ? (
+            <p className="dict-news-title">{w.news_title}</p>
+          ) : null}
+          {w.news_excerpt && (
+            <div className="dict-news-quotation">
+              <p className="dict-label">Trích ngắn nguyên văn</p>
+              <blockquote lang="en">
+                <p>{w.news_excerpt}</p>
+              </blockquote>
+            </div>
+          )}
+          {w.news_context_vi && (
+            <div className="dict-news-context">
+              <p className="dict-label">
+                Giải thích ngữ cảnh · Jeongyeon biên soạn
+              </p>
+              <p lang="vi">{w.news_context_vi}</p>
+            </div>
+          )}
+          <p className="dict-muted">
+            {w.news_source_type === "language-lesson"
+              ? "Đây là bài dạy cách dùng của đơn vị xuất bản, không phải bằng chứng cụm từ xuất hiện trong bản tin thời sự."
+              : "Ngữ cảnh này cho thấy một cách dùng thực tế; không dùng một bài nguồn để kết luận tần suất phổ biến."}{" "}
+            Ví dụ luyện tập phía trên được trình bày riêng với phần trích nguồn.
+          </p>
+        </section>
+      )}
 
       <section className="dict-source" aria-label="Nguồn và đối chiếu">
         <h3>Nguồn & đối chiếu</h3>

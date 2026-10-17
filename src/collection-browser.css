@@ -173,6 +173,41 @@
   min-height: 44px;
 }
 
+.coll-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.coll-filters label {
+  display: flex;
+  flex: 1 1 190px;
+  min-width: 0;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 10px;
+  color: #64775b;
+}
+
+.coll-browser .coll-filters select {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  border: 1px solid #dfe7dd;
+  border-radius: 8px;
+  background: #fff;
+  padding: 10px 12px;
+  color: #49653f;
+  font-size: 11px;
+}
+
+.coll-browser .coll-filters button {
+  min-height: 44px;
+  font-size: 10px;
+}
+
 .coll-browser .coll-results-summary {
   display: flex;
   flex-wrap: wrap;
@@ -241,6 +276,18 @@
   padding: 3px 7px;
   color: #687b4f;
   font-size: 9px;
+}
+
+.coll-tags > .coll-expression-type {
+  background: #e6eee2;
+  color: #3f633f;
+  border-color: #d0dfc8;
+}
+
+.coll-tags > .coll-source-tag {
+  background: #edf2f4;
+  color: #476674;
+  border-color: #d8e4e8;
 }
 
 .coll-browser .coll-meaning {

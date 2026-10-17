@@ -50,6 +50,7 @@ try {
     const errors = [];
     page.on("pageerror", (e) => errors.push(e.message));
     await page.goto(`http://127.0.0.1:${port}${path}`);
+    assert.match(await page.title(), /^Jeongyeon/);
     await page
       .getByRole("heading", { name: "Hôm nay, mình học gì?" })
       .waitFor();

@@ -74115,13 +74115,13 @@
   ],
   "coverage": {
     "oxfordHeadwords": 4955,
-    "entryCount": 5135,
-    "reviewed": 610,
+    "entryCount": 5162,
+    "reviewed": 637,
     "dictionary": 4524,
     "reference": 1,
     "phrasalSenses": 100,
-    "slangSenses": 80,
-    "withBilingualContext": 3590,
+    "slangSenses": 107,
+    "withBilingualContext": 3617,
     "missingContext": 1545,
     "referenceWords": [
       {

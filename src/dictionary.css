@@ -56,6 +56,45 @@
   padding: 3px 7px;
 }
 
+.dict-expression-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 12px 0;
+}
+
+.dict-expression-tags > span {
+  background: #edf2e7;
+  border: 1px solid #dbe5d2;
+  border-radius: 5px;
+  color: #4c6946;
+  font-size: 10px;
+  line-height: 1.7;
+  padding: 3px 7px;
+}
+
+.dict-tag-label {
+  color: #64785c;
+}
+
+.dict-frequency {
+  border-left: 2px solid #c8d7bd;
+  padding-left: 10px;
+  margin: 13px 0;
+}
+
+.dict-entry .dict-frequency p {
+  color: #637568;
+  font-size: 10px;
+  line-height: 1.8;
+  margin: 4px 0;
+}
+
+.dict-frequency strong {
+  color: #476140;
+  font-weight: 600;
+}
+
 .dict-entry .dict-level-note,
 .dict-entry .dict-muted {
   font-size: 10px;
@@ -196,6 +235,89 @@
   font-size: 12px;
   line-height: 1.85;
   margin: 0;
+}
+
+.dict-news {
+  background: #f0f5f7;
+  border: 1px solid #d8e5eb;
+  border-radius: 9px;
+  padding: 18px;
+  margin: 0 0 20px;
+}
+
+.dict-news-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 7px 12px;
+}
+
+.dict-entry .dict-news-heading h3 {
+  color: #3a5f70;
+}
+
+.dict-news-type {
+  font-size: 9px;
+  line-height: 1.7;
+  color: #557585;
+  border: 1px solid #c9dce5;
+  border-radius: 5px;
+  padding: 2px 6px;
+}
+
+.dict-entry .dict-news-publisher {
+  color: #5d7580;
+  font-size: 10px;
+  line-height: 1.8;
+  margin: 6px 0;
+}
+
+.dict-news-link {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 7px;
+  color: #2f6076;
+  font-size: 12px;
+  line-height: 1.8;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.dict-news-link svg {
+  flex: 0 0 auto;
+}
+
+.dict-entry .dict-news-title {
+  color: #3a5f70;
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.dict-news-quotation,
+.dict-news-context {
+  margin-top: 17px;
+}
+
+.dict-news blockquote {
+  margin: 0;
+  padding-left: 12px;
+  border-left: 2px solid #b0c9d4;
+}
+
+.dict-entry .dict-news blockquote p,
+.dict-entry .dict-news-context > p:last-child {
+  color: #3b5b68;
+  font-size: 12px;
+  line-height: 1.9;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.dict-entry .dict-news .dict-muted {
+  color: #627884;
+  margin-top: 15px;
 }
 
 .dict-source {
@@ -388,6 +510,10 @@
 
   .dict-example {
     padding: 12px;
+  }
+
+  .dict-news {
+    padding: 14px;
   }
 
   .dict-goal {

@@ -20,6 +20,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: colloquialism
 ---
 id: slang-hangry-hungry-angry-01
 word: hangry
@@ -43,6 +44,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-ghost-stop-contact-01
 word: ghost
@@ -66,6 +68,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-low-key-quietly-somewhat-01
 word: low-key
@@ -89,6 +92,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-flex-show-off-01
 word: flex
@@ -112,6 +116,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-cringe-embarrassing-01
 word: cringe
@@ -135,6 +140,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-awesome-excellent-01
 word: awesome
@@ -158,6 +164,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: colloquialism
 ---
 id: slang-bummer-disappointment-01
 word: bummer
@@ -181,6 +188,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-no-worries-reassurance-01
 word: no worries
@@ -204,6 +212,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: colloquialism
 ---
 id: slang-my-bad-admit-mistake-01
 word: my bad
@@ -227,6 +236,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-legit-genuine-01
 word: legit
@@ -250,6 +260,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-vibes-atmosphere-01
 word: vibes
@@ -273,6 +284,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-cool-good-01
 word: cool
@@ -296,6 +308,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: colloquialism
 ---
 id: slang-dope-excellent-01
 word: dope
@@ -319,6 +332,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-lit-exciting-01
 word: lit
@@ -342,6 +356,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-fire-excellent-01
 word: fire
@@ -365,6 +380,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-goat-greatest-01
 word: GOAT
@@ -388,6 +404,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: abbreviation
 ---
 id: slang-salty-resentful-01
 word: salty
@@ -411,6 +428,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-shady-dishonest-01
 word: shady
@@ -434,6 +452,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-sketchy-suspicious-01
 word: sketchy
@@ -457,6 +476,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-sus-suspicious-01
 word: sus
@@ -480,6 +500,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-crush-romantic-person-01
 word: crush
@@ -503,6 +524,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-crush-it-perform-well-01
 word: crush it
@@ -526,6 +548,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-nailed-it-succeeded-01
 word: nailed it
@@ -549,6 +572,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: colloquialism
 ---
 id: slang-sick-impressive-01
 word: sick
@@ -572,6 +596,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-sweet-pleasing-01
 word: sweet
@@ -595,6 +620,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-savage-cutting-01
 word: savage
@@ -618,6 +644,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-meh-indifference-01
 word: meh
@@ -641,6 +668,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-yikes-dismay-01
 word: yikes
@@ -664,6 +692,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: colloquialism
 ---
 id: slang-duh-obvious-01
 word: duh
@@ -687,6 +716,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: colloquialism
 ---
 id: slang-nope-no-01
 word: nope
@@ -710,6 +740,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: colloquialism
 ---
 id: slang-yep-yes-01
 word: yep
@@ -733,6 +764,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: colloquialism
 ---
 id: slang-gotcha-understood-01
 word: gotcha
@@ -756,6 +788,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: colloquialism
 ---
 id: slang-what-s-up-greeting-01
 word: what's up
@@ -779,6 +812,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: colloquialism
 ---
 id: slang-hit-me-up-contact-me-01
 word: hit me up
@@ -802,6 +836,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-crash-sleep-temporarily-01
 word: crash
@@ -825,6 +860,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-couch-potato-inactive-tv-watcher-01
 word: couch potato
@@ -848,6 +884,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: idiom
 ---
 id: slang-loaded-wealthy-01
 word: loaded
@@ -871,6 +908,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-broke-without-money-01
 word: broke
@@ -894,6 +932,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: colloquialism
 ---
 id: slang-bucks-dollars-01
 word: bucks
@@ -917,6 +956,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: colloquialism
 ---
 id: slang-quid-pounds-01
 word: quid
@@ -940,6 +980,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: colloquialism
 ---
 id: slang-mate-friend-01
 word: mate
@@ -963,6 +1004,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: colloquialism
 ---
 id: slang-dude-man-01
 word: dude
@@ -986,6 +1028,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: colloquialism
 ---
 id: slang-bro-friendly-address-01
 word: bro
@@ -1009,6 +1052,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: colloquialism
 ---
 id: slang-bestie-best-friend-01
 word: bestie
@@ -1032,6 +1076,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-fam-close-circle-01
 word: fam
@@ -1055,6 +1100,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-squad-friend-group-01
 word: squad
@@ -1078,6 +1124,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-bff-best-friend-01
 word: BFF
@@ -1101,6 +1148,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: abbreviation
 ---
 id: slang-fomo-fear-missing-out-01
 word: FOMO
@@ -1124,6 +1172,7 @@ example_type:
 register: thuật ngữ mạng / viết tắt
 region:
 case_sensitive:
+expression_type: abbreviation
 ---
 id: slang-lol-typed-laughter-01
 word: LOL
@@ -1147,6 +1196,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: abbreviation
 ---
 id: slang-tbh-honest-introduction-01
 word: TBH
@@ -1170,6 +1220,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: abbreviation
 ---
 id: slang-irl-offline-01
 word: IRL
@@ -1193,6 +1244,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: abbreviation
 ---
 id: slang-dm-private-message-01
 word: DM
@@ -1216,6 +1268,7 @@ example_type:
 register: thuật ngữ mạng / viết tắt
 region:
 case_sensitive:
+expression_type: abbreviation
 ---
 id: slang-nerd-enthusiast-01
 word: nerd
@@ -1239,6 +1292,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-newbie-beginner-01
 word: newbie
@@ -1262,6 +1316,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: colloquialism
 ---
 id: slang-hype-public-excitement-01
 word: hype
@@ -1285,6 +1340,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: colloquialism
 ---
 id: slang-hyped-excited-01
 word: hyped
@@ -1308,6 +1364,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: colloquialism
 ---
 id: slang-stan-devoted-fan-01
 word: stan
@@ -1331,6 +1388,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-ship-support-romance-01
 word: ship
@@ -1354,6 +1412,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-tea-gossip-01
 word: tea
@@ -1377,6 +1436,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-spill-the-tea-share-gossip-01
 word: spill the tea
@@ -1400,6 +1460,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-throw-shade-indirect-criticism-01
 word: throw shade
@@ -1423,6 +1484,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-clapback-sharp-response-01
 word: clapback
@@ -1446,6 +1508,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-roast-mock-humorously-01
 word: roast
@@ -1469,6 +1532,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-troll-online-provoker-01
 word: troll
@@ -1492,6 +1556,7 @@ example_type:
 register: thuật ngữ mạng / viết tắt
 region:
 case_sensitive:
+expression_type: term
 ---
 id: slang-catfish-fake-online-identity-01
 word: catfish
@@ -1515,6 +1580,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-green-flag-positive-relationship-sign-01
 word: green flag
@@ -1538,6 +1604,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-the-ick-romantic-aversion-01
 word: the ick
@@ -1561,6 +1628,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-extra-overdramatic-01
 word: extra
@@ -1584,6 +1652,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-basic-unoriginal-01
 word: basic
@@ -1607,6 +1676,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-bougie-fancy-pretentious-01
 word: bougie
@@ -1630,6 +1700,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-slay-perform-impressively-01
 word: slay
@@ -1653,6 +1724,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-glow-up-positive-transformation-01
 word: glow-up
@@ -1676,6 +1748,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-adulting-adult-responsibilities-01
 word: adulting
@@ -1699,6 +1772,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-hot-take-provocative-opinion-01
 word: hot take
@@ -1722,6 +1796,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-side-eye-skeptical-look-01
 word: side-eye
@@ -1745,6 +1820,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-facepalm-embarrassed-reaction-01
 word: facepalm
@@ -1768,6 +1844,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-rip-off-overpriced-purchase-01
 word: rip-off
@@ -1791,6 +1868,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang
 ---
 id: slang-freebie-free-item-01
 word: freebie
@@ -1814,6 +1892,7 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: colloquialism
 ---
 id: slang-stoked-very-excited-01
 word: stoked
@@ -1837,3 +1916,4 @@ example_type:
 register: khẩu ngữ / tiếng lóng
 region:
 case_sensitive:
+expression_type: slang

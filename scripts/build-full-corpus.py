@@ -1,5 +1,5 @@
 """Build editable UTF-8 learning data from audited Oxford metadata and licensed sources.
-Inputs are pinned source extracts outside the checkout; see data/SOURCES.md.
+Inputs are pinned source extracts outside the checkout; see public/data/SOURCES.md.
 No Oxford definitions, pronunciations or audio are imported.
 """
 import json,re,hashlib,sys
@@ -84,8 +84,10 @@ order={word:i for i,word in enumerate(reviewed)}
 records.sort(key=lambda w:order.get(w['word'],len(order)))
 # Original phrasal/slang content, peer-reviewed issues applied explicitly.
 pv=authored('phrasal-verbs.txt');slang=authored('slang.txt')
+if (ROOT/'data/authoring/news-idioms.txt').exists():
+ slang+=authored('news-idioms.txt')
 records+=pv+slang
-fields=['id','word','part_of_speech','meaning_vi','definition_en','ipa','level','topics','collections','collocation','example_en','example_vi','audio_word','audio_example','accepted_answers','source','note','content_status','example_type','register','region','case_sensitive']
+fields=['id','word','part_of_speech','meaning_vi','definition_en','ipa','level','topics','collections','collocation','example_en','example_vi','audio_word','audio_example','accepted_answers','source','note','content_status','example_type','register','region','case_sensitive','frequency_zipf','frequency_source','expression_type','news_source','news_title','news_url','news_date','news_excerpt','news_context_vi','news_source_type']
 ids=[w['id'] for w in records];assert len(ids)==len(set(ids))
 text='\n---\n'.join('\n'.join((f'{k}: '+str(w.get(k,''))).rstrip() for k in fields) for w in records)+'\n'
 (ROOT/'public/data/vocabulary.txt').write_text(text)

@@ -168,7 +168,7 @@ describe("Oxford-grounded content and safe upgrade", () => {
     ).toHaveLength(100);
     expect(
       words.filter((w) => w.collections.split(",").includes("slang")),
-    ).toHaveLength(80);
+    ).toHaveLength(proof.coverage.slangSenses);
   });
   it("keeps sample history and personal edits, archives only unsupported default entries", () => {
     let old = merge(empty(), sample, "default");

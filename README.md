@@ -1,4 +1,4 @@
-# Lexi IELTS — Góc học từ vựng IELTS cá nhân
+# Jeongyeon — Góc học từ vựng IELTS cá nhân
 
 Ứng dụng React + TypeScript + Vite, giao diện tiếng Việt, không cần tài khoản/backend/API trả phí.
 
@@ -25,9 +25,11 @@ Các trường bắt buộc: `id`, `word`, `meaning_vi`, `example_en`, `example_
 
 - Giữ nguyên ID khi sửa cách diễn đạt để giữ lịch sử. Một nghĩa mới nên có ID mới.
 - Bộ từ: `foundation`, `ielts`, `personal`; một mục có thể có nhiều nhãn.
-- Kho mặc định gồm **toàn bộ 4.955 đầu từ/cách viết trong hai PDF Oxford 3000/5000** (5.323 dòng nguồn/từ loại/CEFR), cộng **100 mục nghĩa cụm động từ** và **80 mục Slang/khẩu ngữ**; tổng 5.135 bản ghi. Phân biệt nội dung đã rà soát, nghĩa nhập từ từ điển mở chưa rà soát từng mục, và 1 mục chỉ tra cứu có xung đột nguồn. Không gán mọi nghĩa/âm thanh cho Oxford. Xem [SOURCES.md](public/data/SOURCES.md) và giấy phép dữ liệu nhập.
+- Kho mặc định gồm **toàn bộ 4.955 đầu từ/cách viết trong hai PDF Oxford 3000/5000** (5.323 dòng nguồn/từ loại/CEFR), cộng **100 mục nghĩa cụm động từ** và **107 mục Slang/thành ngữ/khẩu ngữ**; tổng 5.162 bản ghi. Có 27 thành ngữ đối chiếu với bài báo/chương trình Mỹ. Phân biệt nội dung đã rà soát, nghĩa nhập từ từ điển mở chưa rà soát từng mục, và 1 mục chỉ tra cứu có xung đột nguồn. Không gán mọi nghĩa/âm thanh cho Oxford. Xem [SOURCES.md](public/data/SOURCES.md) và giấy phép dữ liệu nhập.
 - Các trường mở rộng: `content_status` (`reviewed`, `dictionary`, `reference`), `example_type`, `register`, `region`, `case_sensitive`. Mục nhập thông thường vẫn bắt buộc nghĩa và ví dụ. `dictionary` cho phép thiếu ví dụ khi nguồn không cung cấp, phải có nghĩa và nguồn; `reference` chỉ tra cứu và bắt buộc ID/từ/nguồn, không tạo bài kiểm tra. Không dùng giá trị giả để qua kiểm tra.
 - Kho từ phân trang 60 mục, Slang/cụm động từ phân trang 24 mục. Slang có trang riêng và không tự chen vào kế hoạch từ mới Oxford. Cụm từ không được gán CEFR khi chưa có căn cứ.
+- Kho từ và danh sách từ mới xếp theo CEFR A1–C2, rồi tần suất giảm dần trong cùng trình độ, rồi A–Z. Mục chưa có CEFR nằm cuối; chưa có điểm nằm sau mục có điểm trong cùng trình độ. `frequency_zipf` và `frequency_source` ghi ước lượng cách viết tổng hợp từ wordfreq 3.1.1 cho 4.925 mục; không phân biệt nghĩa/từ loại/chữ hoa, không phải điểm Oxford hay tần suất riêng của thời sự Mỹ. Xem [phương pháp và giấy phép](data/frequency/README.md).
+- Trong Slang, lọc **Loại cách nói → Thành ngữ** và **Nguồn ngữ cảnh → Bản tin / phỏng vấn** để tìm các cụm dài. `expression_type` phân biệt `idiom`, `slang`, `colloquialism`, `abbreviation`, `term`. Các trường `news_source`, `news_title`, `news_url`, `news_date`, `news_excerpt`, `news_context_vi`, `news_source_type` lưu ngữ cảnh có nguồn; `news_source_type` là `reporting` hoặc `language-lesson`, không gộp bài dạy tiếng Anh thành tin thời sự. Trích dẫn và ví dụ luyện tập được trình bày riêng. Xem [dấu vết đối chiếu 27 bài nguồn](public/data/news-provenance.json). Không tự tải tin mới khi người học mở web.
 - Sửa file repository rồi triển khai lại. Chọn **Kho từ → Cập nhật kho mặc định** để xem trước và áp dụng phiên bản mới. Khi tải lại, ứng dụng báo nếu có bản mới và cho xem trước; không tự thay thế bản chỉnh sửa cá nhân.
 - Hoặc chọn **Nhập .txt**, kiểm tra số thêm/sửa/lưu trữ rồi xác nhận. File lỗi bị từ chối toàn bộ với số dòng/mục; không ghi đè im lặng.
 - Mỗi nguồn cập nhật lưu trữ những mục không còn xuất hiện trong cùng nguồn; lịch sử và lịch ôn vẫn còn. File cá nhân có ưu tiên so với mặc định khi trùng ID. Phần xem trước liệt kê thay đổi nội dung, những xung đột mặc định/cá nhân được giữ bản cá nhân.
@@ -63,7 +65,7 @@ Dữ liệu chưa tự đồng bộ giữa thiết bị và có thể mất khi 
 Đã có workflow `.github/workflows/pages.yml`, build/test và triển khai khi push lên `main`.
 
 1. Trong repository, vào **Settings → Pages → Build and deployment → Source**, chọn **GitHub Actions** (cần quyền quản trị repository).
-2. Push lên `main`, hoặc chạy workflow **Deploy Lexi IELTS to GitHub Pages** thủ công từ Actions.
+2. Push lên `main`, hoặc chạy workflow **Deploy Jeongyeon to GitHub Pages** thủ công từ Actions.
 3. Khi job deploy thành công, lấy địa chỉ thật tại **Settings → Pages** hoặc kết quả workflow.
 
 Vite dùng `base: './'`; nội dung lấy theo `import.meta.env.BASE_URL`. Điều hướng nội bộ không thêm đường dẫn nên tải lại trên GitHub Pages không gây 404. Không đưa thư mục `dist` hoặc `node_modules` lên Git.

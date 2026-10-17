@@ -1,4 +1,4 @@
-name: Deploy Lexi IELTS to GitHub Pages
+name: Deploy Jeongyeon to GitHub Pages
 on:
   push:
     branches: [main]

@@ -1,0 +1,1402 @@
+{
+  "sourceId": "wordfreq-3.1.1-en-large",
+  "name": "wordfreq 3.1.1, English large word list",
+  "author": "Robyn Speer and the attributed source contributors",
+  "homepage": "https://github.com/rspeer/wordfreq/",
+  "package": "https://pypi.org/project/wordfreq/3.1.1/",
+  "wheel": {
+    "url": "https://files.pythonhosted.org/packages/24/61/62835c475d69872d30689f284497853fe33fe1d6dd18f57346d13305861d/wordfreq-3.1.1-py3-none-any.whl",
+    "sha256": "4b1c6ecffc6198be3396d5cf871c4423ca71c907c231348d352dd54d62b97473"
+  },
+  "dataFile": {
+    "pathInPackage": "wordfreq/data/large_en.msgpack.gz",
+    "sha256": "dffae8066b78dce0a6667cf5f58e567054f902674667090a7ac8a8a44628b05c"
+  },
+  "dataLicense": "CC-BY-SA-4.0",
+  "codeLicense": "Apache-2.0",
+  "licenseFile": "licenses/CC-BY-SA-4.0.txt",
+  "attributionFile": "licenses/wordfreq-NOTICE.txt",
+  "upstreamLicenseAndCitations": "licenses/wordfreq-upstream-attribution.txt",
+  "method": {
+    "language": "en",
+    "wordlist": "large",
+    "lookup": "Exact casefolded headword lookup in get_frequency_dict; no token-product phrase estimates, lemmatization, synonym substitution or estimated missing values.",
+    "metric": "Zipf = 9 + log10(proportion), rounded to 0.01 as quantized by the source. Higher means more frequent; ties have no additional frequency distinction.",
+    "unknown": "Empty frequency_zipf and frequency_source; never zero or an invented score.",
+    "case": "Case-insensitive spelling-level estimate: May/may, March/march and IT/it share the spelling frequency. This is not a proper-name or abbreviation-specific frequency.",
+    "scope": "Oxford headwords only. Unscored multiword expressions, alternate spellings in one record, or exact forms absent from the source stay unscored."
+  },
+  "limitations": [
+    "Frequency belongs to a spelling, not a particular meaning, grammatical part of speech, or inflectional lemma family.",
+    "General English aggregate across seven source domains: Wikipedia, subtitles (including freely available SUBTLEX data), news, books, web text, Twitter and Reddit; not a count specifically from American news.",
+    "Historical pinned snapshot; not real-time usage, learner usefulness, IELTS importance, or an Oxford frequency score.",
+    "wordfreq combines estimates from sources and rounds them. Decimal precision represents the source scale, not absolute accuracy or a claim to an exact corpus count."
+  ],
+  "modifications": "Selected exact headwords present in the app, converted table proportions to the source Zipf scale, attached by stable app ID; no source text or full frequency table redistributed.",
+  "inputBeforeAttachingMetadata": {
+    "filename": "vocabulary.txt",
+    "sha256": "8ced54ea9f49e335cb21a42a8cb6924a7eef74401d69af2af787a141c0557c40"
+  },
+  "coverage": {
+    "records": 5162,
+    "scored": 4925,
+    "unscored": 237,
+    "unscoredByReason": {
+      "no_exact_spelling_in_pinned_table": 20,
+      "multiword_or_alternatives_not_an_observed_phrase_frequency": 10,
+      "outside_oxford_headwords": 207
+    },
+    "caseNormalizedScoredHeadwords": 27,
+    "caseConflationGroupsPresentInApp": [
+      {
+        "lookup": "it",
+        "headwords": [
+          "IT",
+          "it"
+        ]
+      },
+      {
+        "lookup": "march",
+        "headwords": [
+          "March",
+          "march"
+        ]
+      },
+      {
+        "lookup": "may",
+        "headwords": [
+          "May",
+          "may"
+        ]
+      }
+    ]
+  },
+  "caseNormalizedScoredHeadwords": [
+    {
+      "id": "ox-b3e123b35578e3-01",
+      "word": "AIDS",
+      "lookup": "aids"
+    },
+    {
+      "id": "ox-4afe6ea150d532-01",
+      "word": "April",
+      "lookup": "april"
+    },
+    {
+      "id": "ox-a66d8970e569a9-01",
+      "word": "August",
+      "lookup": "august"
+    },
+    {
+      "id": "ox-90ec58127ec472-01",
+      "word": "CD",
+      "lookup": "cd"
+    },
+    {
+      "id": "ox-8fb204ca460968-01",
+      "word": "December",
+      "lookup": "december"
+    },
+    {
+      "id": "ox-8e4b1ec158ffb4-01",
+      "word": "DVD",
+      "lookup": "dvd"
+    },
+    {
+      "id": "ox-c877c6ff405ec2-01",
+      "word": "February",
+      "lookup": "february"
+    },
+    {
+      "id": "ox-e21f3f372a46d4-01",
+      "word": "Friday",
+      "lookup": "friday"
+    },
+    {
+      "id": "ox-a83dd0ccbffe39-01",
+      "word": "I",
+      "lookup": "i"
+    },
+    {
+      "id": "ox-3843971dcfdee5-01",
+      "word": "ID",
+      "lookup": "id"
+    },
+    {
+      "id": "ox-f415bf7b07a9b2-01",
+      "word": "IT",
+      "lookup": "it"
+    },
+    {
+      "id": "ox-37082e68df858e-01",
+      "word": "January",
+      "lookup": "january"
+    },
+    {
+      "id": "ox-e9cf7a1ca4a760-01",
+      "word": "July",
+      "lookup": "july"
+    },
+    {
+      "id": "ox-d5808c0e0a4798-01",
+      "word": "June",
+      "lookup": "june"
+    },
+    {
+      "id": "ox-9d95a2cf0d7180-01",
+      "word": "March",
+      "lookup": "march"
+    },
+    {
+      "id": "ox-8c78fe5b993648-01",
+      "word": "May",
+      "lookup": "may"
+    },
+    {
+      "id": "ox-6a00dfc1dc867e-01",
+      "word": "Monday",
+      "lookup": "monday"
+    },
+    {
+      "id": "ox-9de6fe1d72659d-01",
+      "word": "November",
+      "lookup": "november"
+    },
+    {
+      "id": "ox-fdd791787b64d2-01",
+      "word": "October",
+      "lookup": "october"
+    },
+    {
+      "id": "ox-565339bc4d33d7-01",
+      "word": "OK",
+      "lookup": "ok"
+    },
+    {
+      "id": "ox-dbe35c7363c2f7-01",
+      "word": "Saturday",
+      "lookup": "saturday"
+    },
+    {
+      "id": "ox-cd559ea0abca08-01",
+      "word": "September",
+      "lookup": "september"
+    },
+    {
+      "id": "ox-873fef760e5d00-01",
+      "word": "Sunday",
+      "lookup": "sunday"
+    },
+    {
+      "id": "ox-fc2662062ffdef-01",
+      "word": "Thursday",
+      "lookup": "thursday"
+    },
+    {
+      "id": "ox-7d8af1de1262f1-01",
+      "word": "Tuesday",
+      "lookup": "tuesday"
+    },
+    {
+      "id": "ox-ca62d5e073f52f-01",
+      "word": "TV",
+      "lookup": "tv"
+    },
+    {
+      "id": "ox-c0a6cc829cd087-01",
+      "word": "Wednesday",
+      "lookup": "wednesday"
+    }
+  ],
+  "unscoredEntries": [
+    {
+      "id": "well-being-01",
+      "word": "well-being",
+      "reason": "no_exact_spelling_in_pinned_table"
+    },
+    {
+      "id": "ox-8c5f566e6d9d1a-01",
+      "word": "a, an",
+      "reason": "multiword_or_alternatives_not_an_observed_phrase_frequency"
+    },
+    {
+      "id": "ox-2961a6d1c8dcd6-01",
+      "word": "according to",
+      "reason": "multiword_or_alternatives_not_an_observed_phrase_frequency"
+    },
+    {
+      "id": "ox-dfbdd9492bec0b-01",
+      "word": "all right",
+      "reason": "multiword_or_alternatives_not_an_observed_phrase_frequency"
+    },
+    {
+      "id": "ox-b50c7a88362747-01",
+      "word": "any more",
+      "reason": "multiword_or_alternatives_not_an_observed_phrase_frequency"
+    },
+    {
+      "id": "ox-8de65c884945d1-01",
+      "word": "decision-making",
+      "reason": "no_exact_spelling_in_pinned_table"
+    },
+    {
+      "id": "ox-91e1620ca8e28e-01",
+      "word": "film-maker",
+      "reason": "no_exact_spelling_in_pinned_table"
+    },
+    {
+      "id": "ox-612546d7f1fb07-01",
+      "word": "full-time",
+      "reason": "no_exact_spelling_in_pinned_table"
+    },
+    {
+      "id": "ox-2c9f6f9e513d32-01",
+      "word": "have to",
+      "reason": "multiword_or_alternatives_not_an_observed_phrase_frequency"
+    },
+    {
+      "id": "ox-72f5fa1cff8609-01",
+      "word": "high-profile",
+      "reason": "no_exact_spelling_in_pinned_table"
+    },
+    {
+      "id": "ox-e971c330aab874-01",
+      "word": "ice cream",
+      "reason": "multiword_or_alternatives_not_an_observed_phrase_frequency"
+    },
+    {
+      "id": "ox-06d65378901e35-01",
+      "word": "large-scale",
+      "reason": "no_exact_spelling_in_pinned_table"
+    },
+    {
+      "id": "ox-0068525961b740-01",
+      "word": "line-up",
+      "reason": "no_exact_spelling_in_pinned_table"
+    },
+    {
+      "id": "ox-a47ccf285c1435-01",
+      "word": "long-standing",
+      "reason": "no_exact_spelling_in_pinned_table"
+    },
+    {
+      "id": "ox-3252503ad6ced2-01",
+      "word": "long-term",
+      "reason": "no_exact_spelling_in_pinned_table"
+    },
+    {
+      "id": "ox-79f103fb4dc17d-01",
+      "word": "long-time",
+      "reason": "no_exact_spelling_in_pinned_table"
+    },
+    {
+      "id": "ox-7dbbcc687ee64f-01",
+      "word": "make-up",
+      "reason": "no_exact_spelling_in_pinned_table"
+    },
+    {
+      "id": "ox-b032a8abd93a9c-01",
+      "word": "next to",
+      "reason": "multiword_or_alternatives_not_an_observed_phrase_frequency"
+    },
+    {
+      "id": "ox-04225201515016-01",
+      "word": "no one",
+      "reason": "multiword_or_alternatives_not_an_observed_phrase_frequency"
+    },
+    {
+      "id": "ox-f61fc65b2a7677-01",
+      "word": "non-profit",
+      "reason": "no_exact_spelling_in_pinned_table"
+    },
+    {
+      "id": "ox-ebcfb99f260478-01",
+      "word": "old-fashioned",
+      "reason": "no_exact_spelling_in_pinned_table"
+    },
+    {
+      "id": "ox-763545525fdf55-01",
+      "word": "part-time",
+      "reason": "no_exact_spelling_in_pinned_table"
+    },
+    {
+      "id": "ox-cff2fe22bf943d-01",
+      "word": "per cent",
+      "reason": "multiword_or_alternatives_not_an_observed_phrase_frequency"
+    },
+    {
+      "id": "ox-59ed1c90789bfc-01",
+      "word": "post-war",
+      "reason": "no_exact_spelling_in_pinned_table"
+    },
+    {
+      "id": "ox-56fc30b05846ef-01",
+      "word": "set-up",
+      "reason": "no_exact_spelling_in_pinned_table"
+    },
+    {
+      "id": "ox-2244674486d883-01",
+      "word": "short-term",
+      "reason": "no_exact_spelling_in_pinned_table"
+    },
+    {
+      "id": "ox-1ef4808791d17f-01",
+      "word": "so-called",
+      "reason": "no_exact_spelling_in_pinned_table"
+    },
+    {
+      "id": "ox-d977e091ea89c4-01",
+      "word": "T-shirt",
+      "reason": "no_exact_spelling_in_pinned_table"
+    },
+    {
+      "id": "ox-5ee23aea3d8c59-01",
+      "word": "thought-provoking",
+      "reason": "no_exact_spelling_in_pinned_table"
+    },
+    {
+      "id": "ox-1c009af3ff5717-01",
+      "word": "used to",
+      "reason": "multiword_or_alternatives_not_an_observed_phrase_frequency"
+    },
+    {
+      "id": "pv-wake-up-stop-sleeping-01",
+      "word": "wake up",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-get-up-leave-bed-01",
+      "word": "get up",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-lie-down-rest-flat-01",
+      "word": "lie down",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-sit-down-take-seat-01",
+      "word": "sit down",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-stand-up-rise-to-feet-01",
+      "word": "stand up",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-go-out-leave-for-leisure-01",
+      "word": "go out",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-come-back-return-here-01",
+      "word": "come back",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-go-back-return-there-01",
+      "word": "go back",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-come-in-enter-01",
+      "word": "come in",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-get-in-enter-car-01",
+      "word": "get in",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-get-out-leave-car-01",
+      "word": "get out",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-get-on-board-transport-01",
+      "word": "get on",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-get-off-leave-transport-01",
+      "word": "get off",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-take-off-remove-clothing-01",
+      "word": "take off",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-put-on-wear-clothing-01",
+      "word": "put on",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-try-on-test-clothing-01",
+      "word": "try on",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-dress-up-wear-special-clothes-01",
+      "word": "dress up",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-turn-on-start-device-01",
+      "word": "turn on",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-turn-off-stop-device-01",
+      "word": "turn off",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-turn-up-increase-volume-01",
+      "word": "turn up",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-turn-down-decrease-volume-01",
+      "word": "turn down",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-plug-in-connect-power-01",
+      "word": "plug in",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-log-in-access-account-01",
+      "word": "log in",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-log-out-leave-account-01",
+      "word": "log out",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-sign-up-register-01",
+      "word": "sign up",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-fill-in-complete-form-01",
+      "word": "fill in",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-write-down-record-writing-01",
+      "word": "write down",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-look-up-consult-reference-01",
+      "word": "look up",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-read-through-read-completely-01",
+      "word": "read through",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-go-over-review-01",
+      "word": "go over",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-hand-in-submit-01",
+      "word": "hand in",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-hand-out-distribute-01",
+      "word": "hand out",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-give-back-return-item-01",
+      "word": "give back",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-take-back-return-purchase-01",
+      "word": "take back",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-pick-up-lift-01",
+      "word": "pick up",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-put-down-place-on-surface-01",
+      "word": "put down",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-put-away-store-01",
+      "word": "put away",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-throw-away-discard-01",
+      "word": "throw away",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-tidy-up-make-orderly-01",
+      "word": "tidy up",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-clean-up-remove-dirt-01",
+      "word": "clean up",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-wash-up-wash-dishes-01",
+      "word": "wash up",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-eat-out-restaurant-meal-01",
+      "word": "eat out",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-cut-down-on-reduce-consumption-01",
+      "word": "cut down on",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-give-up-stop-habit-01",
+      "word": "give up",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-take-up-start-hobby-01",
+      "word": "take up",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-keep-up-with-maintain-level-01",
+      "word": "keep up with",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-catch-up-on-finish-backlog-01",
+      "word": "catch up on",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-catch-up-with-reach-same-level-01",
+      "word": "catch up with",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-fall-behind-make-slow-progress-01",
+      "word": "fall behind",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-carry-on-continue-activity-01",
+      "word": "carry on",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-keep-on-repeat-persist-01",
+      "word": "keep on",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-work-out-solve-01",
+      "word": "work out",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-figure-out-understand-01",
+      "word": "figure out",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-find-out-discover-information-01",
+      "word": "find out",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-come-up-with-produce-idea-01",
+      "word": "come up with",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-point-out-draw-attention-01",
+      "word": "point out",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-bring-up-introduce-topic-01",
+      "word": "bring up",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-talk-over-discuss-before-decision-01",
+      "word": "talk over",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-think-over-consider-carefully-01",
+      "word": "think over",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-make-up-invent-story-01",
+      "word": "make up",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-make-up-for-compensate-01",
+      "word": "make up for",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-deal-with-handle-problem-01",
+      "word": "deal with",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-sort-out-resolve-problem-01",
+      "word": "sort out",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-carry-out-perform-task-01",
+      "word": "carry out",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-set-up-establish-01",
+      "word": "set up",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-put-off-postpone-01",
+      "word": "put off",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-call-off-cancel-01",
+      "word": "call off",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-put-up-with-tolerate-01",
+      "word": "put up with",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-run-out-of-exhaust-supply-01",
+      "word": "run out of",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-use-up-consume-all-01",
+      "word": "use up",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-break-down-machine-fail-01",
+      "word": "break down",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-break-up-end-relationship-01",
+      "word": "break up",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-get-along-with-have-good-relationship-01",
+      "word": "get along with",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-fall-out-quarrel-01",
+      "word": "fall out",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-make-up-reconcile-01",
+      "word": "make up",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-look-after-care-for-01",
+      "word": "look after",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-get-over-recover-01",
+      "word": "get over",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-look-for-search-01",
+      "word": "look for",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-look-forward-to-anticipate-pleasure-01",
+      "word": "look forward to",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-look-into-investigate-01",
+      "word": "look into",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-look-out-be-alert-01",
+      "word": "look out",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-watch-out-take-care-01",
+      "word": "watch out",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-look-back-on-recall-past-01",
+      "word": "look back on",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-look-down-on-consider-inferior-01",
+      "word": "look down on",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-look-up-to-admire-01",
+      "word": "look up to",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-take-after-resemble-family-01",
+      "word": "take after",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-grow-up-become-adult-01",
+      "word": "grow up",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-bring-up-raise-child-01",
+      "word": "bring up",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-move-in-start-living-01",
+      "word": "move in",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-move-out-leave-home-01",
+      "word": "move out",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-settle-down-become-quiet-01",
+      "word": "settle down",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-calm-down-become-less-upset-01",
+      "word": "calm down",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-cheer-up-become-happier-01",
+      "word": "cheer up",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-slow-down-reduce-speed-01",
+      "word": "slow down",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-hurry-up-act-faster-01",
+      "word": "hurry up",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-show-up-arrive-01",
+      "word": "show up",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-pass-out-faint-01",
+      "word": "pass out",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-hold-on-wait-01",
+      "word": "hold on",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-hang-up-end-call-01",
+      "word": "hang up",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "pv-call-back-return-call-01",
+      "word": "call back",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-chill-relax-01",
+      "word": "chill",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-hangry-hungry-angry-01",
+      "word": "hangry",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-ghost-stop-contact-01",
+      "word": "ghost",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-low-key-quietly-somewhat-01",
+      "word": "low-key",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-flex-show-off-01",
+      "word": "flex",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-cringe-embarrassing-01",
+      "word": "cringe",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-awesome-excellent-01",
+      "word": "awesome",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-bummer-disappointment-01",
+      "word": "bummer",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-no-worries-reassurance-01",
+      "word": "no worries",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-my-bad-admit-mistake-01",
+      "word": "my bad",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-legit-genuine-01",
+      "word": "legit",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-vibes-atmosphere-01",
+      "word": "vibes",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-cool-good-01",
+      "word": "cool",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-dope-excellent-01",
+      "word": "dope",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-lit-exciting-01",
+      "word": "lit",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-fire-excellent-01",
+      "word": "fire",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-goat-greatest-01",
+      "word": "GOAT",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-salty-resentful-01",
+      "word": "salty",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-shady-dishonest-01",
+      "word": "shady",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-sketchy-suspicious-01",
+      "word": "sketchy",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-sus-suspicious-01",
+      "word": "sus",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-crush-romantic-person-01",
+      "word": "crush",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-crush-it-perform-well-01",
+      "word": "crush it",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-nailed-it-succeeded-01",
+      "word": "nailed it",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-sick-impressive-01",
+      "word": "sick",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-sweet-pleasing-01",
+      "word": "sweet",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-savage-cutting-01",
+      "word": "savage",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-meh-indifference-01",
+      "word": "meh",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-yikes-dismay-01",
+      "word": "yikes",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-duh-obvious-01",
+      "word": "duh",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-nope-no-01",
+      "word": "nope",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-yep-yes-01",
+      "word": "yep",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-gotcha-understood-01",
+      "word": "gotcha",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-what-s-up-greeting-01",
+      "word": "what's up",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-hit-me-up-contact-me-01",
+      "word": "hit me up",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-crash-sleep-temporarily-01",
+      "word": "crash",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-couch-potato-inactive-tv-watcher-01",
+      "word": "couch potato",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-loaded-wealthy-01",
+      "word": "loaded",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-broke-without-money-01",
+      "word": "broke",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-bucks-dollars-01",
+      "word": "bucks",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-quid-pounds-01",
+      "word": "quid",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-mate-friend-01",
+      "word": "mate",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-dude-man-01",
+      "word": "dude",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-bro-friendly-address-01",
+      "word": "bro",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-bestie-best-friend-01",
+      "word": "bestie",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-fam-close-circle-01",
+      "word": "fam",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-squad-friend-group-01",
+      "word": "squad",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-bff-best-friend-01",
+      "word": "BFF",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-fomo-fear-missing-out-01",
+      "word": "FOMO",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-lol-typed-laughter-01",
+      "word": "LOL",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-tbh-honest-introduction-01",
+      "word": "TBH",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-irl-offline-01",
+      "word": "IRL",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-dm-private-message-01",
+      "word": "DM",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-nerd-enthusiast-01",
+      "word": "nerd",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-newbie-beginner-01",
+      "word": "newbie",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-hype-public-excitement-01",
+      "word": "hype",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-hyped-excited-01",
+      "word": "hyped",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-stan-devoted-fan-01",
+      "word": "stan",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-ship-support-romance-01",
+      "word": "ship",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-tea-gossip-01",
+      "word": "tea",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-spill-the-tea-share-gossip-01",
+      "word": "spill the tea",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-throw-shade-indirect-criticism-01",
+      "word": "throw shade",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-clapback-sharp-response-01",
+      "word": "clapback",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-roast-mock-humorously-01",
+      "word": "roast",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-troll-online-provoker-01",
+      "word": "troll",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-catfish-fake-online-identity-01",
+      "word": "catfish",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-green-flag-positive-relationship-sign-01",
+      "word": "green flag",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-the-ick-romantic-aversion-01",
+      "word": "the ick",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-extra-overdramatic-01",
+      "word": "extra",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-basic-unoriginal-01",
+      "word": "basic",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-bougie-fancy-pretentious-01",
+      "word": "bougie",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-slay-perform-impressively-01",
+      "word": "slay",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-glow-up-positive-transformation-01",
+      "word": "glow-up",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-adulting-adult-responsibilities-01",
+      "word": "adulting",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-hot-take-provocative-opinion-01",
+      "word": "hot take",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-side-eye-skeptical-look-01",
+      "word": "side-eye",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-facepalm-embarrassed-reaction-01",
+      "word": "facepalm",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-rip-off-overpriced-purchase-01",
+      "word": "rip-off",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-freebie-free-item-01",
+      "word": "freebie",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "slang-stoked-very-excited-01",
+      "word": "stoked",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "idiom-feel-like-a-million-bucks-01",
+      "word": "feel like a million bucks",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "idiom-the-elephant-in-the-room-01",
+      "word": "the elephant in the room",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "idiom-kick-the-can-down-the-road-01",
+      "word": "kick the can down the road",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "idiom-with-a-grain-of-salt-01",
+      "word": "with a grain of salt",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "idiom-the-tip-of-the-iceberg-01",
+      "word": "the tip of the iceberg",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "idiom-back-to-the-drawing-board-01",
+      "word": "back to the drawing board",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "idiom-out-of-the-woods-01",
+      "word": "out of the woods",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "idiom-weather-the-storm-01",
+      "word": "weather the storm",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "idiom-read-between-the-lines-01",
+      "word": "read between the lines",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "idiom-on-the-same-page-01",
+      "word": "on the same page",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "idiom-get-the-ball-rolling-01",
+      "word": "get the ball rolling",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "idiom-go-the-extra-mile-01",
+      "word": "go the extra mile",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "idiom-a-silver-lining-01",
+      "word": "a silver lining",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "idiom-on-thin-ice-01",
+      "word": "on thin ice",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "idiom-between-a-rock-and-a-hard-place-01",
+      "word": "between a rock and a hard place",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "idiom-at-the-end-of-the-day-01",
+      "word": "at the end of the day",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "idiom-up-in-the-air-01",
+      "word": "up in the air",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "idiom-bite-the-bullet-01",
+      "word": "bite the bullet",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "idiom-move-the-goalposts-01",
+      "word": "move the goalposts",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "idiom-the-ball-is-in-your-court-01",
+      "word": "the ball is in your court",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "idiom-walk-a-tightrope-01",
+      "word": "walk a tightrope",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "idiom-a-double-edged-sword-01",
+      "word": "a double-edged sword",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "idiom-a-drop-in-the-bucket-01",
+      "word": "a drop in the bucket",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "idiom-see-the-writing-on-the-wall-01",
+      "word": "see the writing on the wall",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "idiom-put-all-your-eggs-in-one-basket-01",
+      "word": "put all your eggs in one basket",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "idiom-a-level-playing-field-01",
+      "word": "a level playing field",
+      "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "idiom-pull-the-plug-01",
+      "word": "pull the plug",
+      "reason": "outside_oxford_headwords"
+    }
+  ],
+  "outputAfterAttachingMetadata": {
+    "filename": "vocabulary.txt",
+    "sha256": "8ced54ea9f49e335cb21a42a8cb6924a7eef74401d69af2af787a141c0557c40"
+  }
+}

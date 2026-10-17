@@ -1,0 +1,836 @@
+id: idiom-feel-like-a-million-bucks-01
+word: feel like a million bucks
+part_of_speech: verb phrase
+meaning_vi: cảm thấy cực kỳ khỏe khoắn, sảng khoái hoặc vui vẻ
+definition_en: To feel very healthy, happy, or full of energy.
+ipa: 
+level: 
+topics: slang,news,health,daily-life
+collections: slang,idioms,news-expressions
+collocation: feel like a million bucks after a good rest
+example_en: After a good night's sleep, I feel like a million bucks.
+example_vi: Sau một đêm ngủ ngon, tôi thấy khỏe khoắn và sảng khoái vô cùng.
+audio_word: 
+audio_example: 
+accepted_answers: feel like a million bucks
+source: Đối chiếu cách dùng thực tế: AP via PBS News (2025-02-11), https://www.pbs.org/newshour/politics/trump-ally-steve-bannon-pleads-guilty-to-fraund-avoids-jail-time-in-border-wall-fraud-case. Nghĩa và ví dụ luyện tập do Jeongyeon tự biên soạn; không phải định nghĩa của nhà xuất bản.
+note: Thành ngữ thân mật diễn tả cảm giác rất khỏe hoặc rất vui, không nói về việc có một triệu đô la. Dùng feel like khi nói về cảm giác; look like a million bucks khen vẻ ngoài. Phù hợp hội thoại hơn bài viết học thuật.
+content_status: reviewed
+example_type: authored
+register: thành ngữ / thân mật
+region: Mỹ (nguồn đối chiếu)
+case_sensitive: 
+expression_type: idiom
+news_source: AP via PBS News
+news_title: Trump ally Steve Bannon pleads guilty to fraud, avoids jail time in border wall fraud case | PBS News
+news_url: https://www.pbs.org/newshour/politics/trump-ally-steve-bannon-pleads-guilty-to-fraund-avoids-jail-time-in-border-wall-fraud-case
+news_date: 2025-02-11
+news_excerpt: felt like a million bucks.
+news_context_vi: Steve Bannon nói mình cảm thấy rất tốt sau khi nhận thỏa thuận nhận tội giúp tránh án tù.
+news_source_type: reporting
+---
+id: idiom-the-elephant-in-the-room-01
+word: the elephant in the room
+part_of_speech: noun phrase
+meaning_vi: vấn đề lớn ai cũng biết nhưng mọi người tránh nhắc đến
+definition_en: An obvious and important problem that people avoid discussing.
+ipa: 
+level: 
+topics: slang,news,society,politics
+collections: slang,idioms,news-expressions
+collocation: address the elephant in the room
+example_en: Before approving the budget, we need to discuss the elephant in the room: our growing debt.
+example_vi: Trước khi duyệt ngân sách, chúng ta cần bàn về vấn đề ai cũng né tránh: khoản nợ đang tăng.
+audio_word: 
+audio_example: 
+accepted_answers: the elephant in the room
+source: Đối chiếu cách dùng thực tế: VOA Learning English (2015-04-19), https://learningenglish.voanews.com/a/us-japan-relationship-strong-and-getting-stronger/2722341.html. Nghĩa và ví dụ luyện tập do Jeongyeon tự biên soạn; không phải định nghĩa của nhà xuất bản.
+note: Dùng như cụm danh từ, thường đi với address hoặc discuss. Nghĩa này nhấn mạnh việc né tránh một vấn đề rõ ràng; không phải bất kỳ vấn đề lớn nào cũng là elephant in the room.
+content_status: reviewed
+example_type: authored
+register: thành ngữ / hội thoại và bình luận
+region: Mỹ (nguồn đối chiếu)
+case_sensitive: 
+expression_type: idiom
+news_source: VOA Learning English
+news_title: US-Japan Relationship: Strong and Getting Stronger
+news_url: https://learningenglish.voanews.com/a/us-japan-relationship-strong-and-getting-stronger/2722341.html
+news_date: 2015-04-19
+news_excerpt: It’s kind of the elephant in the room , if you will.
+news_context_vi: Một chuyên gia nói về vai trò của Trung Quốc trong quan hệ Mỹ–Nhật.
+news_source_type: reporting
+---
+id: idiom-kick-the-can-down-the-road-01
+word: kick the can down the road
+part_of_speech: verb phrase
+meaning_vi: trì hoãn việc xử lý một vấn đề khó sang sau
+definition_en: To delay dealing with a difficult problem instead of solving it now.
+ipa: 
+level: 
+topics: slang,news,politics,economy
+collections: slang,idioms,news-expressions
+collocation: continue to kick the can down the road
+example_en: Another temporary budget would only kick the can down the road.
+example_vi: Một ngân sách tạm thời nữa sẽ chỉ đẩy việc giải quyết vấn đề sang sau.
+audio_word: 
+audio_example: 
+accepted_answers: kick the can down the road
+source: Đối chiếu cách dùng thực tế: VOA Learning English (2011-01-10), https://learningenglish.voanews.com/a/obama-boehner-and-americas-newly-divided-government--113163529/112502.html. Nghĩa và ví dụ luyện tập do Jeongyeon tự biên soạn; không phải định nghĩa của nhà xuất bản.
+note: Thường mang ý chê trách cách trì hoãn quyết định khó, nhất là trong bình luận chính trị hoặc kinh tế. Không dùng cho mọi sự chậm trễ không chủ ý. Động từ kick chia theo chủ ngữ và thì.
+content_status: reviewed
+example_type: authored
+register: thành ngữ / bình luận, thường mang ý phê phán
+region: Mỹ (nguồn đối chiếu)
+case_sensitive: 
+expression_type: idiom
+news_source: VOA Learning English
+news_title: Obama, Boehner and America's Newly Divided Government
+news_url: https://learningenglish.voanews.com/a/obama-boehner-and-americas-newly-divided-government--113163529/112502.html
+news_date: 2011-01-10
+news_excerpt: No longer can we kick the can down the road.
+news_context_vi: Bài tin trích phát biểu của Chủ tịch Hạ viện John Boehner về nợ và chi tiêu công.
+news_source_type: reporting
+---
+id: idiom-with-a-grain-of-salt-01
+word: with a grain of salt
+part_of_speech: prepositional phrase
+meaning_vi: với thái độ dè dặt, không hoàn toàn tin ngay
+definition_en: With some doubt about whether information is fully true or reliable.
+ipa: 
+level: 
+topics: slang,news,media,information
+collections: slang,idioms,news-expressions
+collocation: take a claim with a grain of salt
+example_en: We should take that early estimate with a grain of salt.
+example_vi: Chúng ta nên dè dặt với ước tính ban đầu đó, đừng vội tin hoàn toàn.
+audio_word: 
+audio_example: 
+accepted_answers: with a grain of salt
+source: Đối chiếu cách dùng thực tế: VOA Learning English (2016-07-19), https://learningenglish.voanews.com/a/senators-alliance-with-south-korea/3424549.html. Nghĩa và ví dụ luyện tập do Jeongyeon tự biên soạn; không phải định nghĩa của nhà xuất bản.
+note: Cấu trúc thường gặp là take something with a grain of salt; phần something là thông tin cần xem xét. Không có nghĩa bác bỏ hoàn toàn. With a pinch of salt là biến thể tương đương, thường gặp trong tiếng Anh Anh.
+content_status: reviewed
+example_type: authored
+register: thành ngữ / hội thoại và bình luận
+region: Mỹ (nguồn đối chiếu)
+case_sensitive: 
+expression_type: idiom
+news_source: VOA Learning English
+news_title: US Senators Say Alliance with South Korea ‘Will Never Waver'
+news_url: https://learningenglish.voanews.com/a/senators-alliance-with-south-korea/3424549.html
+news_date: 2016-07-19
+news_excerpt: should be taken with a grain of salt on both sides of the Pacific.
+news_context_vi: Hai thượng nghị sĩ Mỹ khuyên không nên vội tin các tuyên bố về rút cam kết với Hàn Quốc.
+news_source_type: reporting
+---
+id: idiom-the-tip-of-the-iceberg-01
+word: the tip of the iceberg
+part_of_speech: noun phrase
+meaning_vi: phần nhỏ có thể thấy của một vấn đề lớn hơn nhiều
+definition_en: A small visible part of a much larger situation or problem.
+ipa: 
+level: 
+topics: slang,news,society,investigation
+collections: slang,idioms,news-expressions
+collocation: only the tip of the iceberg
+example_en: These complaints may be only the tip of the iceberg.
+example_vi: Những lời khiếu nại này có thể chỉ là phần nổi của một vấn đề lớn hơn nhiều.
+audio_word: 
+audio_example: 
+accepted_answers: the tip of the iceberg
+source: Đối chiếu cách dùng thực tế: VOA Learning English (2024-05-15), https://learningenglish.voanews.com/a/migration-group-says-76-million-displaced-in-2023/7613161.html. Nghĩa và ví dụ luyện tập do Jeongyeon tự biên soạn; không phải định nghĩa của nhà xuất bản.
+note: Dùng như cụm danh từ, thường đi với only hoặc just. Hàm ý còn nhiều phần chưa được phát hiện hoặc chưa được phản ánh; không khẳng định quy mô chính xác của phần còn lại.
+content_status: reviewed
+example_type: authored
+register: thành ngữ / bình luận và tường thuật
+region: Mỹ (nguồn đối chiếu)
+case_sensitive: 
+expression_type: idiom
+news_source: VOA Learning English
+news_title: Migration Group Says 76 Million Displaced in 2023
+news_url: https://learningenglish.voanews.com/a/migration-group-says-76-million-displaced-in-2023/7613161.html
+news_date: 2024-05-15
+news_excerpt: people forced to flee in 2023 was the “ tip of the iceberg .”
+news_context_vi: Bài tin dẫn giám đốc một tổ chức theo dõi người phải rời bỏ nơi ở.
+news_source_type: reporting
+---
+id: idiom-back-to-the-drawing-board-01
+word: back to the drawing board
+part_of_speech: phrase
+meaning_vi: quay lại bước lập kế hoạch từ đầu sau khi phương án cũ thất bại
+definition_en: Back to planning a new approach because the previous one did not work.
+ipa: 
+level: 
+topics: slang,news,science,work
+collections: slang,idioms,news-expressions
+collocation: go back to the drawing board
+example_en: The prototype failed, so we had to go back to the drawing board.
+example_vi: Mẫu thử thất bại nên chúng tôi phải quay lại bước lập phương án mới.
+audio_word: 
+audio_example: 
+accepted_answers: back to the drawing board
+source: Đối chiếu cách dùng thực tế: VOA Learning English (2023-02-22), https://learningenglish.voanews.com/a/space-scientists-face-big-job-explaining-extreme-star-explosion/6967791.html. Nghĩa và ví dụ luyện tập do Jeongyeon tự biên soạn; không phải định nghĩa của nhà xuất bản.
+note: Thường dùng sau go hoặc send someone. Nhấn mạnh phải thiết kế hoặc tính lại cách làm vì phương án trước không thành công, không chỉ là sửa một lỗi nhỏ.
+content_status: reviewed
+example_type: authored
+register: thành ngữ / hội thoại và bình luận
+region: Mỹ (nguồn đối chiếu)
+case_sensitive: 
+expression_type: idiom
+news_source: VOA Learning English
+news_title: Space Scientists Face Big Job Explaining Extreme Star Explosion
+news_url: https://learningenglish.voanews.com/a/space-scientists-face-big-job-explaining-extreme-star-explosion/6967791.html
+news_date: 2023-02-22
+news_excerpt: we are really going back to the drawing board with this
+news_context_vi: Một nhà nghiên cứu nói cần xem lại mô hình giải thích vụ nổ sao neutron.
+news_source_type: reporting
+---
+id: idiom-out-of-the-woods-01
+word: out of the woods
+part_of_speech: prepositional phrase
+meaning_vi: đã thoát khỏi giai đoạn nguy hiểm hoặc khó khăn
+definition_en: No longer facing the main danger or difficulty in a situation.
+ipa: 
+level: 
+topics: slang,news,health,economy
+collections: slang,idioms,news-expressions
+collocation: not out of the woods yet
+example_en: Sales are improving, but the company is not out of the woods yet.
+example_vi: Doanh số đang cải thiện nhưng công ty vẫn chưa vượt qua giai đoạn khó khăn.
+audio_word: 
+audio_example: 
+accepted_answers: out of the woods
+source: Đối chiếu cách dùng thực tế: VOA Learning English (2020-10-05), https://learningenglish.voanews.com/a/trump-to-leave-hospital-after-covid-19-treatments/5609809.html. Nghĩa và ví dụ luyện tập do Jeongyeon tự biên soạn; không phải định nghĩa của nhà xuất bản.
+note: Thường xuất hiện trong cấu trúc phủ định not out of the woods yet: tình hình khá hơn nhưng rủi ro còn đó. Phân biệt với nghĩa đen đi ra khỏi khu rừng. Không tự suy ra tiên lượng y khoa từ thành ngữ này.
+content_status: reviewed
+example_type: authored
+register: thành ngữ / hội thoại và bình luận
+region: Mỹ (nguồn đối chiếu)
+case_sensitive: 
+expression_type: idiom
+news_source: VOA Learning English
+news_title: Trump Leaves Hospital after COVID-19 Treatments
+news_url: https://learningenglish.voanews.com/a/trump-to-leave-hospital-after-covid-19-treatments/5609809.html
+news_date: 2020-10-05
+news_excerpt: though he may not be entirely out of the woods yet
+news_context_vi: Bác sĩ của Tổng thống Trump nói ông chưa hoàn toàn hết nguy hiểm khi rời viện sau điều trị COVID-19.
+news_source_type: reporting
+---
+id: idiom-weather-the-storm-01
+word: weather the storm
+part_of_speech: verb phrase
+meaning_vi: trụ vững và vượt qua một giai đoạn khó khăn
+definition_en: To survive or cope with a difficult period.
+ipa: 
+level: 
+topics: slang,news,economy,work
+collections: slang,idioms,news-expressions
+collocation: help a business weather the storm
+example_en: Emergency savings helped the shop weather the storm.
+example_vi: Khoản tiết kiệm dự phòng đã giúp cửa hàng trụ vững qua giai đoạn khó khăn.
+audio_word: 
+audio_example: 
+accepted_answers: weather the storm
+source: Đối chiếu cách dùng thực tế: VOA Learning English (2016-05-19), https://learningenglish.voanews.com/a/chinese-businesses-wholesale-capital-struggle-economy-slows/3329646.html. Nghĩa và ví dụ luyện tập do Jeongyeon tự biên soạn; không phải định nghĩa của nhà xuất bản.
+note: Weather ở đây là động từ, không phải danh từ thời tiết. Thành ngữ nói về việc chịu đựng được khủng hoảng hoặc khó khăn; không đảm bảo mọi tổn thất đã được khắc phục.
+content_status: reviewed
+example_type: authored
+register: thành ngữ / bình luận và tường thuật
+region: Mỹ (nguồn đối chiếu)
+case_sensitive: 
+expression_type: idiom
+news_source: VOA Learning English
+news_title: Chinese Businesses Struggle as Economy Slows
+news_url: https://learningenglish.voanews.com/a/chinese-businesses-wholesale-capital-struggle-economy-slows/3329646.html
+news_date: 2016-05-19
+news_excerpt: they also are finding ways to weather the storm .
+news_context_vi: Bài tin nói các doanh nghiệp Trung Quốc tìm cách tồn tại khi kinh tế chậm lại.
+news_source_type: reporting
+---
+id: idiom-read-between-the-lines-01
+word: read between the lines
+part_of_speech: verb phrase
+meaning_vi: hiểu hàm ý không được nói hoặc viết ra trực tiếp
+definition_en: To infer a meaning that is suggested rather than directly stated.
+ipa: 
+level: 
+topics: slang,news,media,communication
+collections: slang,idioms,news-expressions
+collocation: learn to read between the lines
+example_en: If you read between the lines, the message suggests that the deal is uncertain.
+example_vi: Nếu đọc để hiểu hàm ý, bạn sẽ thấy thông điệp cho thấy thỏa thuận vẫn chưa chắc chắn.
+audio_word: 
+audio_example: 
+accepted_answers: read between the lines
+source: Đối chiếu cách dùng thực tế: VOA Learning English (2018-05-06), https://learningenglish.voanews.com/a/german-students-protest-unfair-english-exam/4378236.html. Nghĩa và ví dụ luyện tập do Jeongyeon tự biên soạn; không phải định nghĩa của nhà xuất bản.
+note: Dùng cho cả lời nói và văn bản khi suy ra hàm ý. Đây vẫn là suy luận theo ngữ cảnh, không biến điều người đọc đoán thành sự thật đã được xác nhận.
+content_status: reviewed
+example_type: authored
+register: thành ngữ / hội thoại và phân tích
+region: Mỹ (nguồn đối chiếu)
+case_sensitive: 
+expression_type: idiom
+news_source: VOA Learning English
+news_title: German Students Protest ‘Unfair’ English Exam
+news_url: https://learningenglish.voanews.com/a/german-students-protest-unfair-english-exam/4378236.html
+news_date: 2018-05-06
+news_excerpt: required a lot of time to try to “read between the lines.”
+news_context_vi: Học sinh Đức cho rằng đề thi tiếng Anh đòi hỏi suy luận quá nhiều về cảm xúc và quan hệ nhân vật.
+news_source_type: reporting
+---
+id: idiom-on-the-same-page-01
+word: on the same page
+part_of_speech: prepositional phrase
+meaning_vi: có cùng cách hiểu hoặc thống nhất về việc đang bàn
+definition_en: Sharing an understanding or agreement about a situation or plan.
+ipa: 
+level: 
+topics: slang,news,work,communication
+collections: slang,idioms,news-expressions
+collocation: make sure everyone is on the same page
+example_en: Before we begin, let's make sure we are on the same page about the deadline.
+example_vi: Trước khi bắt đầu, hãy bảo đảm chúng ta hiểu thống nhất về hạn chót.
+audio_word: 
+audio_example: 
+accepted_answers: on the same page
+source: Đối chiếu cách dùng thực tế: VOA Learning English (2014-12-19), https://learningenglish.voanews.com/a/tips-for-applying-to-us-colleges-part-three/2560083.html. Nghĩa và ví dụ luyện tập do Jeongyeon tự biên soạn; không phải định nghĩa của nhà xuất bản.
+note: Cấu trúc be on the same page about something thường dùng để kiểm tra cách hiểu hoặc sự phối hợp. Không nhất thiết có nghĩa đồng ý với nhau về tất cả mọi việc.
+content_status: reviewed
+example_type: authored
+register: thành ngữ / hội thoại, công việc
+region: Mỹ (nguồn đối chiếu)
+case_sensitive: 
+expression_type: idiom
+news_source: VOA Learning English
+news_title: Tips for Applying to US Colleges, Part Three
+news_url: https://learningenglish.voanews.com/a/tips-for-applying-to-us-colleges-part-three/2560083.html
+news_date: 2014-12-19
+news_excerpt: we would say “on the same page.”
+news_context_vi: Một chuyên gia tuyển sinh bàn về việc bạn cùng phòng cần trao đổi để hiểu kỳ vọng của nhau.
+news_source_type: reporting
+---
+id: idiom-get-the-ball-rolling-01
+word: get the ball rolling
+part_of_speech: verb phrase
+meaning_vi: khởi động một công việc hoặc quá trình
+definition_en: To start an activity or process so that it can continue.
+ipa: 
+level: 
+topics: slang,news,work,community
+collections: slang,idioms,news-expressions
+collocation: get the ball rolling on a project
+example_en: A small donation can get the ball rolling on the project.
+example_vi: Một khoản quyên góp nhỏ có thể giúp dự án bắt đầu được triển khai.
+audio_word: 
+audio_example: 
+accepted_answers: get the ball rolling
+source: Đối chiếu cách dùng thực tế: VOA Learning English (2020-12-27), https://learningenglish.voanews.com/a/saw-many-successes-in-space-exploration/5705247.html. Nghĩa và ví dụ luyện tập do Jeongyeon tự biên soạn; không phải định nghĩa của nhà xuất bản.
+note: Thành ngữ có thể đi với on something để nêu việc được khởi động. Nhấn mạnh tạo bước khởi đầu, không có nghĩa dự án đã hoàn thành hay chắc chắn thành công.
+content_status: reviewed
+example_type: authored
+register: thành ngữ / hội thoại và công việc
+region: Mỹ (nguồn đối chiếu)
+case_sensitive: 
+expression_type: idiom
+news_source: VOA Learning English
+news_title: 2020 Saw Many Successes in Space Exploration
+news_url: https://learningenglish.voanews.com/a/saw-many-successes-in-space-exploration/5705247.html
+news_date: 2020-12-27
+news_excerpt: get the ball rolling toward multiple private missions to orbit per year
+news_context_vi: Bài tổng kết không gian trích lời Michael Lopez-Alegria về sự mở đầu của các chuyến bay tư nhân.
+news_source_type: reporting
+---
+id: idiom-go-the-extra-mile-01
+word: go the extra mile
+part_of_speech: verb phrase
+meaning_vi: nỗ lực nhiều hơn mức thông thường hoặc mức được yêu cầu
+definition_en: To make more effort than is normally expected or required.
+ipa: 
+level: 
+topics: slang,news,work,community
+collections: slang,idioms,news-expressions
+collocation: go the extra mile for a customer
+example_en: Our volunteers go the extra mile to help new residents settle in.
+example_vi: Các tình nguyện viên của chúng tôi nỗ lực hơn mức thông thường để giúp cư dân mới ổn định cuộc sống.
+audio_word: 
+audio_example: 
+accepted_answers: go the extra mile
+source: Đối chiếu cách dùng thực tế: VOA Learning English (2022-05-31), https://learningenglish.voanews.com/a/after-school-program-teaches-teens-how-to-fix-earn-a-bike-/6587004.html. Nghĩa và ví dụ luyện tập do Jeongyeon tự biên soạn; không phải định nghĩa của nhà xuất bản.
+note: Thường dùng để khen sự tận tâm, với for someone hoặc to do something. Mile ở đây là hình ảnh ẩn dụ, không yêu cầu đi thêm đúng một dặm.
+content_status: reviewed
+example_type: authored
+register: thành ngữ / hội thoại và tường thuật
+region: Mỹ (nguồn đối chiếu)
+case_sensitive: 
+expression_type: idiom
+news_source: VOA Learning English
+news_title: After-School Program Teaches Teens How to Fix, ‘Earn a Bike’
+news_url: https://learningenglish.voanews.com/a/after-school-program-teaches-teens-how-to-fix-earn-a-bike-/6587004.html
+news_date: 2022-05-31
+news_excerpt: I was willing to go the extra mile to fix it.
+news_context_vi: Một học sinh nói sẵn sàng bỏ thêm công sức để sửa chiếc xe đạp của mình.
+news_source_type: reporting
+---
+id: idiom-a-silver-lining-01
+word: a silver lining
+part_of_speech: noun phrase
+meaning_vi: điểm tích cực trong một hoàn cảnh không thuận lợi
+definition_en: A positive aspect of an otherwise difficult or disappointing situation.
+ipa: 
+level: 
+topics: slang,news,economy,daily-life
+collections: slang,idioms,news-expressions
+collocation: find a silver lining in a setback
+example_en: The delay had a silver lining: we had more time to check the design.
+example_vi: Sự trì hoãn cũng có một điểm tích cực: chúng tôi có thêm thời gian kiểm tra bản thiết kế.
+audio_word: 
+audio_example: 
+accepted_answers: a silver lining
+source: Đối chiếu cách dùng thực tế: VOA Learning English (2022-07-17), https://learningenglish.voanews.com/a/which-online-services-will-stay-after-the-pandemic-/6657106.html. Nghĩa và ví dụ luyện tập do Jeongyeon tự biên soạn; không phải định nghĩa của nhà xuất bản.
+note: Cụm danh từ mang nghĩa ẩn dụ. Thừa nhận một mặt tích cực của hoàn cảnh xấu, không phủ nhận thiệt hại hay khẳng định mọi chuyện đều tốt. Có thể dùng the silver lining khi nói một điểm tích cực đã xác định.
+content_status: reviewed
+example_type: authored
+register: thành ngữ / hội thoại và bình luận
+region: Mỹ (nguồn đối chiếu)
+case_sensitive: 
+expression_type: idiom
+news_source: VOA Learning English
+news_title: Which Online Services Will Stay after the Pandemic?
+news_url: https://learningenglish.voanews.com/a/which-online-services-will-stay-after-the-pandemic-/6657106.html
+news_date: 2022-07-17
+news_excerpt: The silver lining , of course, is that these services are now available.
+news_context_vi: Một nhà nghiên cứu nói sự tồn tại của các dịch vụ trực tuyến là mặt tích cực sau đại dịch.
+news_source_type: reporting
+---
+id: idiom-on-thin-ice-01
+word: on thin ice
+part_of_speech: prepositional phrase
+meaning_vi: đang ở tình thế bấp bênh, có nguy cơ gặp rắc rối hoặc hậu quả xấu
+definition_en: In a risky or insecure position where trouble may come soon.
+ipa: 
+level: 
+topics: slang,news,work,politics
+collections: slang,idioms,news-expressions
+collocation: be on thin ice after repeated mistakes
+example_en: After missing two deadlines, I know I am on thin ice with my supervisor.
+example_vi: Sau hai lần trễ hạn, tôi biết mình đang ở tình thế dễ bị cấp trên xử lý nếu lại mắc lỗi.
+audio_word: 
+audio_example: 
+accepted_answers: on thin ice
+source: Đối chiếu cách dùng thực tế: VOA Learning English (2023-03-20), https://learningenglish.voanews.com/a/climate-report-warns-world-is-close-to-last-chance/7013281.html. Nghĩa và ví dụ luyện tập do Jeongyeon tự biên soạn; không phải định nghĩa của nhà xuất bản.
+note: Thường dùng be hoặc skate on thin ice. Trong giao tiếp có thể nói về nguy cơ bị xử lý vì mắc lỗi; trong nguồn khí hậu, cụm này diễn tả tình thế nguy hiểm rộng hơn. Phân biệt nghĩa bóng với bản tin cảnh báo lớp băng mỏng thật.
+content_status: reviewed
+example_type: authored
+register: thành ngữ / hội thoại và bình luận
+region: Mỹ (nguồn đối chiếu)
+case_sensitive: 
+expression_type: idiom
+news_source: VOA Learning English
+news_title: Climate Report Warns World Is Close to Last Chance
+news_url: https://learningenglish.voanews.com/a/climate-report-warns-world-is-close-to-last-chance/7013281.html
+news_date: 2023-03-20
+news_excerpt: Humanity is on thin ice — and that ice is melting fast
+news_context_vi: Tổng thư ký Liên Hợp Quốc dùng hình ảnh băng mỏng để cảnh báo rủi ro khí hậu cho nhân loại.
+news_source_type: reporting
+---
+id: idiom-between-a-rock-and-a-hard-place-01
+word: between a rock and a hard place
+part_of_speech: prepositional phrase
+meaning_vi: mắc kẹt giữa hai lựa chọn đều khó khăn hoặc bất lợi
+definition_en: Facing a choice between two difficult or undesirable options.
+ipa: 
+level: 
+topics: slang,news,economy,politics
+collections: slang,idioms,news-expressions
+collocation: be caught between a rock and a hard place
+example_en: Caught between a rock and a hard place, the owner must either raise prices and risk losing customers or keep prices low and lose money.
+example_vi: Bị mắc kẹt giữa hai lựa chọn đều bất lợi, chủ cửa hàng phải tăng giá và có nguy cơ mất khách, hoặc giữ giá thấp và chịu lỗ.
+audio_word: 
+audio_example: 
+accepted_answers: between a rock and a hard place
+source: Đối chiếu cách dùng thực tế: VOA Learning English (2018-12-06), https://learningenglish.voanews.com/a/from-honduras-to-the-us-a-migrant-story/4686817.html. Nghĩa và ví dụ luyện tập do Jeongyeon tự biên soạn; không phải định nghĩa của nhà xuất bản.
+note: Thường đứng sau be hoặc be caught. Nhấn mạnh cả hai hướng lựa chọn đều bất lợi, mạnh hơn việc chỉ cảm thấy khó quyết định.
+content_status: reviewed
+example_type: authored
+register: thành ngữ / hội thoại và bình luận
+region: Mỹ (nguồn đối chiếu)
+case_sensitive: 
+expression_type: idiom
+news_source: VOA Learning English
+news_title: From Honduras to the US, a Migrant Story
+news_url: https://learningenglish.voanews.com/a/from-honduras-to-the-us-a-migrant-story/4686817.html
+news_date: 2018-12-06
+news_excerpt: I am between a rock and a hard place
+news_context_vi: Một người mẹ nói về tình cảnh không biết người con di cư còn sống hay đã chết.
+news_source_type: reporting
+---
+id: idiom-at-the-end-of-the-day-01
+word: at the end of the day
+part_of_speech: prepositional phrase
+meaning_vi: xét cho cùng; sau khi cân nhắc mọi điều
+definition_en: When all the relevant facts or considerations are taken into account.
+ipa: 
+level: 
+topics: slang,news,politics,work
+collections: slang,idioms,news-expressions
+collocation: at the end of the day, what matters is ...
+example_en: What matters, at the end of the day, is public safety.
+example_vi: Xét cho cùng, điều quan trọng là sự an toàn của công chúng.
+audio_word: 
+audio_example: 
+accepted_answers: at the end of the day
+source: Đối chiếu cách dùng thực tế: VOA Learning English (2024-12-10), https://learningenglish.voanews.com/a/saving-sea-turtles-on-northeastern-us-coast/7890185.html. Nghĩa và ví dụ luyện tập do Jeongyeon tự biên soạn; không phải định nghĩa của nhà xuất bản.
+note: Mục này ghi nghĩa bóng xét cho cùng, không phải thời điểm cuối ngày. Thường mở đầu câu kết luận; có thể trở nên sáo mòn nếu lặp nhiều. Trong viết học thuật, nên nêu kết luận trực tiếp khi có thể.
+content_status: reviewed
+example_type: authored
+register: thành ngữ / hội thoại và bình luận
+region: Mỹ (nguồn đối chiếu)
+case_sensitive: 
+expression_type: idiom
+news_source: VOA Learning English
+news_title: Saving Sea Turtles on Northeastern US Coast
+news_url: https://learningenglish.voanews.com/a/saving-sea-turtles-on-northeastern-us-coast/7890185.html
+news_date: 2024-12-10
+news_excerpt: “At the end of the day," Kennedy said, "getting these turtles back to the wild is what we are doing and what we want.
+news_context_vi: Nhân viên cứu hộ nhấn mạnh mục tiêu cuối cùng là đưa rùa biển trở lại tự nhiên.
+news_source_type: reporting
+---
+id: idiom-up-in-the-air-01
+word: up in the air
+part_of_speech: prepositional phrase
+meaning_vi: vẫn chưa được quyết định hoặc còn chưa chắc chắn
+definition_en: Not yet decided or settled.
+ipa: 
+level: 
+topics: slang,news,work,politics
+collections: slang,idioms,news-expressions
+collocation: plans are still up in the air
+example_en: The date of the next meeting is still up in the air.
+example_vi: Ngày tổ chức cuộc họp tiếp theo vẫn chưa được quyết định.
+audio_word: 
+audio_example: 
+accepted_answers: up in the air
+source: Đối chiếu cách dùng thực tế: PBS NewsHour (2010-05-05), https://www.pbs.org/newshour/world/election-still-up-in-the-air-in-britain. Nghĩa và ví dụ luyện tập do Jeongyeon tự biên soạn; không phải định nghĩa của nhà xuất bản.
+note: Thường đứng sau be hoặc remain khi nói về kế hoạch, quyết định hay tương lai chưa rõ. Đây là nghĩa bóng; up in the air cũng có nghĩa đen là ở trên không.
+content_status: reviewed
+example_type: authored
+register: thành ngữ / hội thoại và bình luận
+region: Mỹ (nguồn đối chiếu)
+case_sensitive: 
+expression_type: idiom
+news_source: PBS NewsHour
+news_title: With One Day to Go, Election Still Up in the Air in Britain | PBS News
+news_url: https://www.pbs.org/newshour/world/election-still-up-in-the-air-in-britain
+news_date: 2010-05-05
+news_excerpt: Election Still Up in the Air in Britain
+news_context_vi: Tiêu đề một bản tin trước bầu cử Anh năm 2010 nói kết quả vẫn chưa thể đoán chắc.
+news_source_type: reporting
+---
+id: idiom-bite-the-bullet-01
+word: bite the bullet
+part_of_speech: verb phrase
+meaning_vi: chấp nhận làm một việc khó hoặc khó chịu nhưng cần thiết
+definition_en: To make yourself do something unpleasant or difficult that needs to be done.
+ipa: 
+level: 
+topics: slang,news,work,daily-life
+collections: slang,idioms,news-expressions
+collocation: decide to bite the bullet
+example_en: We need to bite the bullet and replace the broken heating system.
+example_vi: Chúng ta cần chấp nhận việc khó tránh và thay hệ thống sưởi đã hỏng.
+audio_word: 
+audio_example: 
+accepted_answers: bite the bullet
+source: Đối chiếu cách dùng thực tế: PBS NewsHour (2024-11-21), https://www.pbs.org/newshour/show/osprey-aircraft-back-in-service-as-families-of-crash-victims-question-its-safety. Nghĩa và ví dụ luyện tập do Jeongyeon tự biên soạn; không phải định nghĩa của nhà xuất bản.
+note: Dùng khi quyết tâm đối mặt với việc không dễ chịu thay vì trì hoãn. Động từ quá khứ là bit the bullet. Đây là nghĩa thành ngữ, không phải hành động cắn viên đạn thật.
+content_status: reviewed
+example_type: authored
+register: thành ngữ / hội thoại và bình luận
+region: Mỹ (nguồn đối chiếu)
+case_sensitive: 
+expression_type: idiom
+news_source: PBS NewsHour
+news_title: Osprey aircraft back in service as families of crash victims question its safety | PBS News
+news_url: https://www.pbs.org/newshour/show/osprey-aircraft-back-in-service-as-families-of-crash-victims-question-its-safety
+news_date: 2024-11-21
+news_excerpt: We will bite the bullet for the next year or so until we get this clutch figured out.
+news_context_vi: Dân biểu Stephen Lynch kêu gọi tạm dừng bay Osprey, chấp nhận khó khăn trong lúc sửa vấn đề bộ ly hợp.
+news_source_type: reporting
+---
+id: idiom-move-the-goalposts-01
+word: move the goalposts
+part_of_speech: verb phrase
+meaning_vi: thay đổi tiêu chí hoặc luật chơi giữa chừng, khiến người khác khó đáp ứng hơn
+definition_en: To change the rules or requirements after someone has begun trying to meet them.
+ipa: 
+level: 
+topics: slang,news,politics,work
+collections: slang,idioms,news-expressions
+collocation: keep trying to move the goalposts
+example_en: It is unfair to move the goalposts after applicants have submitted their work.
+example_vi: Thật không công bằng khi đổi tiêu chí sau khi các ứng viên đã nộp bài.
+audio_word: 
+audio_example: 
+accepted_answers: move the goalposts
+source: Đối chiếu cách dùng thực tế: PBS NewsHour (2010-04-07), https://www.pbs.org/newshour/show/future-of-net-neutrality-debated-after-ruling. Nghĩa và ví dụ luyện tập do Jeongyeon tự biên soạn; không phải định nghĩa của nhà xuất bản.
+note: Ẩn dụ từ thể thao, thường dùng để phê phán việc đổi điều kiện giữa chừng. Trong ngữ cảnh thành ngữ, không chỉ việc di chuyển khung thành thật. Có biến thể goal posts viết thành hai từ.
+content_status: reviewed
+example_type: authored
+register: thành ngữ / hội thoại và bình luận
+region: Mỹ (nguồn đối chiếu)
+case_sensitive: 
+expression_type: idiom
+news_source: PBS NewsHour
+news_title: Future of Net Neutrality Debated After Ruling | PBS News
+news_url: https://www.pbs.org/newshour/show/future-of-net-neutrality-debated-after-ruling
+news_date: 2010-04-07
+news_excerpt: you change the rules mid-game, you move the goalposts mid-game.
+news_context_vi: Trong phỏng vấn về trung lập mạng, khách mời ví việc đổi chính sách giữa chừng như thay đổi luật chơi.
+news_source_type: reporting
+---
+id: idiom-the-ball-is-in-your-court-01
+word: the ball is in your court
+part_of_speech: clause
+meaning_vi: đến lượt bạn quyết định hoặc thực hiện bước tiếp theo
+definition_en: It is your responsibility to decide or act next.
+ipa: 
+level: 
+topics: slang,news,politics,work
+collections: slang,idioms,news-expressions
+collocation: now the ball is in your court
+example_en: I have sent you our proposal, so the ball is in your court.
+example_vi: Tôi đã gửi đề xuất của chúng tôi, vậy giờ đến lượt bạn phản hồi hoặc quyết định.
+audio_word: 
+audio_example: 
+accepted_answers: the ball is in your court
+source: Đối chiếu cách dùng thực tế: PBS NewsHour (2021-03-09), https://www.pbs.org/newshour/show/irans-top-nuclear-scientist-discusses-the-potential-for-a-nuclear-deal-with-the-u-s. Nghĩa và ví dụ luyện tập do Jeongyeon tự biên soạn; không phải định nghĩa của nhà xuất bản.
+note: Đây là một mệnh đề hoàn chỉnh. Đổi your theo người chịu trách nhiệm: the ball is in their court. Câu nói giao bước tiếp theo cho người kia; mức độ thúc giục tùy ngữ cảnh.
+content_status: reviewed
+example_type: authored
+register: thành ngữ / hội thoại và đàm phán
+region: Mỹ (nguồn đối chiếu)
+case_sensitive: 
+expression_type: idiom
+news_source: PBS NewsHour
+news_title: Iran's top nuclear scientist discusses the potential for a nuclear deal with the U.S. | PBS News
+news_url: https://www.pbs.org/newshour/show/irans-top-nuclear-scientist-discusses-the-potential-for-a-nuclear-deal-with-the-u-s
+news_date: 2021-03-09
+news_excerpt: It is your move. The ball is in your court.
+news_context_vi: Trong phân tích về đàm phán hạt nhân Iran, đặc phái viên mô tả quan điểm Tehran rằng Washington cần đi bước tiếp theo.
+news_source_type: reporting
+---
+id: idiom-walk-a-tightrope-01
+word: walk a tightrope
+part_of_speech: verb phrase
+meaning_vi: xoay xở thận trọng giữa các yêu cầu hoặc rủi ro khó dung hòa
+definition_en: To handle a delicate situation by carefully balancing competing demands or risks.
+ipa: 
+level: 
+topics: slang,news,politics,work
+collections: slang,idioms,news-expressions
+collocation: walk a tightrope between two competing demands
+example_en: Small firms often walk a tightrope between keeping prices low and paying fair wages.
+example_vi: Các doanh nghiệp nhỏ thường phải xoay xở thận trọng giữa việc giữ giá thấp và trả lương công bằng.
+audio_word: 
+audio_example: 
+accepted_answers: walk a tightrope
+source: Đối chiếu cách dùng thực tế: PBS NewsHour (2024-10-28), https://www.pbs.org/newshour/show/tamara-keith-and-jasmine-wright-on-the-closing-messages-from-harris-and-trump. Nghĩa và ví dụ luyện tập do Jeongyeon tự biên soạn; không phải định nghĩa của nhà xuất bản.
+note: Nghĩa bóng là phải cân bằng khéo léo trong tình huống dễ gặp rắc rối; thường đi với between. Không phải nghĩa đen biểu diễn đi trên dây. Quá khứ của walk là walked.
+content_status: reviewed
+example_type: authored
+register: thành ngữ / bình luận và tường thuật
+region: Mỹ (nguồn đối chiếu)
+case_sensitive: 
+expression_type: idiom
+news_source: PBS NewsHour
+news_title: Tamara Keith and Jasmine Wright on the closing messages from Harris and Trump
+news_url: https://www.pbs.org/newshour/show/tamara-keith-and-jasmine-wright-on-the-closing-messages-from-harris-and-trump
+news_date: 2024-10-28
+news_excerpt: you're seeing the Harris campaign kind of walk a tightrope between whether they should be talking about the economy
+news_context_vi: Jasmine Wright phân tích lựa chọn thông điệp tranh cử của chiến dịch Harris giữa kinh tế và dân chủ.
+news_source_type: reporting
+---
+id: idiom-a-double-edged-sword-01
+word: a double-edged sword
+part_of_speech: noun phrase
+meaning_vi: một thứ hoặc tình huống vừa đem lại lợi ích vừa có thể gây hại
+definition_en: Something that can have both helpful and harmful effects.
+ipa: 
+level: 
+topics: slang,news,economy,technology
+collections: slang,idioms,news-expressions
+collocation: technology can be a double-edged sword
+example_en: Instant communication is a double-edged sword: it connects us but can interrupt our work.
+example_vi: Giao tiếp tức thời là con dao hai lưỡi: nó kết nối chúng ta nhưng cũng có thể làm gián đoạn công việc.
+audio_word: 
+audio_example: 
+accepted_answers: a double-edged sword
+source: Đối chiếu cách dùng thực tế: PBS NewsHour (2025-02-03), https://www.pbs.org/newshour/show/a-look-at-how-tariffs-work-and-the-impact-they-have-on-the-economy. Nghĩa và ví dụ luyện tập do Jeongyeon tự biên soạn; không phải định nghĩa của nhà xuất bản.
+note: Cụm danh từ nói về hai mặt lợi và hại của cùng một điều. Double-edged viết có dấu gạch nối khi đứng trước sword. Không nhất thiết hai tác động có mức độ ngang nhau.
+content_status: reviewed
+example_type: authored
+register: thành ngữ / bình luận và phân tích
+region: Mỹ (nguồn đối chiếu)
+case_sensitive: 
+expression_type: idiom
+news_source: PBS NewsHour
+news_title: A look at how tariffs work and the impact they have on the economy
+news_url: https://www.pbs.org/newshour/show/a-look-at-how-tariffs-work-and-the-impact-they-have-on-the-economy
+news_date: 2025-02-03
+news_excerpt: Well, here, it's a double-edged sword. We'd help some industries, but we'd hurt others.
+news_context_vi: Trong phóng sự về thuế quan, nhà kinh tế Douglas Irwin nói chính sách giúp một số ngành nhưng làm hại ngành khác.
+news_source_type: reporting
+---
+id: idiom-a-drop-in-the-bucket-01
+word: a drop in the bucket
+part_of_speech: noun phrase
+meaning_vi: một lượng rất nhỏ so với quy mô hoặc nhu cầu thực tế
+definition_en: An amount that is very small compared with what is needed or with the whole.
+ipa: 
+level: 
+topics: slang,news,health,economy
+collections: slang,idioms,news-expressions
+collocation: only a drop in the bucket
+example_en: The grant is welcome, but it is a drop in the bucket compared with the repair bill.
+example_vi: Khoản tài trợ rất đáng quý, nhưng chỉ là một phần rất nhỏ so với chi phí sửa chữa.
+audio_word: 
+audio_example: 
+accepted_answers: a drop in the bucket
+source: Đối chiếu cách dùng thực tế: PBS NewsHour (2023-11-20), https://www.pbs.org/newshour/show/how-nurses-overcome-challenges-while-treating-patients-with-limited-english-proficiency. Nghĩa và ví dụ luyện tập do Jeongyeon tự biên soạn; không phải định nghĩa của nhà xuất bản.
+note: Cụm danh từ so sánh một phần đóng góp với tổng nhu cầu. Không nhất thiết có nghĩa phần đóng góp hoàn toàn vô ích. A drop in the ocean là một biến thể tương đương.
+content_status: reviewed
+example_type: authored
+register: thành ngữ / hội thoại và bình luận
+region: Mỹ (nguồn đối chiếu)
+case_sensitive: 
+expression_type: idiom
+news_source: PBS NewsHour
+news_title: How nurses overcome challenges while treating patients with limited English proficiency
+news_url: https://www.pbs.org/newshour/show/how-nurses-overcome-challenges-while-treating-patients-with-limited-english-proficiency
+news_date: 2023-11-20
+news_excerpt: What we are doing here at La Clinica is just a drop in the bucket.
+news_context_vi: Melissa Marinelarena nói công việc hỗ trợ bệnh nhân ở La Clinica chỉ đáp ứng một phần rất nhỏ nhu cầu.
+news_source_type: reporting
+---
+id: idiom-see-the-writing-on-the-wall-01
+word: see the writing on the wall
+part_of_speech: verb phrase
+meaning_vi: nhận ra những dấu hiệu rõ ràng về điều sắp xảy ra, thường là một thay đổi bất lợi
+definition_en: To recognize clear signs of what is likely to happen, often an unwelcome change.
+ipa: 
+level: 
+topics: slang,news,energy,work
+collections: slang,idioms,news-expressions
+collocation: begin to see the writing on the wall
+example_en: When orders kept falling, we could see the writing on the wall and began to change our plans.
+example_vi: Khi đơn hàng liên tục giảm, chúng tôi nhận ra dấu hiệu bất lợi sắp tới và bắt đầu thay đổi kế hoạch.
+audio_word: 
+audio_example: 
+accepted_answers: see the writing on the wall
+source: Đối chiếu cách dùng thực tế: PBS NewsHour (2025-07-01), https://www.pbs.org/newshour/show/rooftop-solar-industry-fears-demand-will-collapse-as-gop-rolls-back-tax-credits. Nghĩa và ví dụ luyện tập do Jeongyeon tự biên soạn; không phải định nghĩa của nhà xuất bản.
+note: Thành ngữ thường liên quan dấu hiệu rắc rối sắp đến, nhưng giọng điệu còn tùy người nói. Trong nguồn, người được phỏng vấn nói họ đã nhận ra xu hướng chuyển sang năng lượng tái tạo; không nên tự diễn giải rằng người đó xem xu hướng này là xấu. Có thể dùng the writing is on the wall.
+content_status: reviewed
+example_type: authored
+register: thành ngữ / hội thoại và bình luận
+region: Mỹ (nguồn đối chiếu)
+case_sensitive: 
+expression_type: idiom
+news_source: PBS NewsHour
+news_title: Rooftop solar industry fears demand will collapse as GOP rolls back tax credits
+news_url: https://www.pbs.org/newshour/show/rooftop-solar-industry-fears-demand-will-collapse-as-gop-rolls-back-tax-credits
+news_date: 2025-07-01
+news_excerpt: we could all see the writing on the wall that renewables were going to be taking over the world.
+news_context_vi: Dan Conant nói ông nhận ra sớm xu hướng chuyển dịch sang năng lượng tái tạo.
+news_source_type: reporting
+---
+id: idiom-put-all-your-eggs-in-one-basket-01
+word: put all your eggs in one basket
+part_of_speech: verb phrase
+meaning_vi: dồn mọi nguồn lực hoặc hy vọng vào một lựa chọn duy nhất, tạo rủi ro nếu lựa chọn đó thất bại
+definition_en: To depend entirely on a single plan, opportunity, or investment, risking everything if it fails.
+ipa: 
+level: 
+topics: slang,news,economy,politics
+collections: slang,idioms,news-expressions
+collocation: do not put all your eggs in one basket
+example_en: Do not put all your eggs in one basket when planning your investments.
+example_vi: Khi lập kế hoạch đầu tư, đừng dồn toàn bộ nguồn lực vào một lựa chọn duy nhất.
+audio_word: 
+audio_example: 
+accepted_answers: put all your eggs in one basket
+source: Đối chiếu cách dùng thực tế: PBS NewsHour (2020-07-09), https://www.pbs.org/newshour/show/what-the-latest-supreme-court-rulings-mean-for-trump-and-future-presidents. Nghĩa và ví dụ luyện tập do Jeongyeon tự biên soạn; không phải định nghĩa của nhà xuất bản.
+note: Thường dùng trong lời khuyên phủ định để tránh lệ thuộc một phương án. Đổi your theo chủ ngữ; nguồn dùng put all of his eggs in one basket, cũng là cấu trúc này. Dạng quá khứ và quá khứ phân từ đều là put.
+content_status: reviewed
+example_type: authored
+register: thành ngữ / hội thoại và bình luận
+region: Mỹ (nguồn đối chiếu)
+case_sensitive: 
+expression_type: idiom
+news_source: PBS NewsHour
+news_title: What the latest Supreme Court rulings mean for Trump -- and future presidents
+news_url: https://www.pbs.org/newshour/show/what-the-latest-supreme-court-rulings-mean-for-trump-and-future-presidents
+news_date: 2020-07-09
+news_excerpt: the president had, again, put all of his eggs in one basket when he brought this case
+news_context_vi: Mary McCord phân tích việc Tổng thống Trump dựa vào một lập luận miễn trừ trong vụ tranh chấp trát đòi tài liệu.
+news_source_type: reporting
+---
+id: idiom-a-level-playing-field-01
+word: a level playing field
+part_of_speech: noun phrase
+meaning_vi: điều kiện cạnh tranh hoặc tham gia công bằng cho các bên
+definition_en: A situation in which people or groups have a fair chance to compete or participate.
+ipa: 
+level: 
+topics: slang,news,economy,work
+collections: slang,idioms,news-expressions
+collocation: create a level playing field for workers
+example_en: Transparent rules can help create a level playing field for smaller companies.
+example_vi: Các quy định minh bạch có thể giúp tạo điều kiện cạnh tranh công bằng cho những công ty nhỏ hơn.
+audio_word: 
+audio_example: 
+accepted_answers: a level playing field
+source: Đối chiếu cách dùng thực tế: PBS NewsHour (2013-09-03), https://www.pbs.org/newshour/show/perez-level-playing-field-needed-for-american-workers. Nghĩa và ví dụ luyện tập do Jeongyeon tự biên soạn; không phải định nghĩa của nhà xuất bản.
+note: Cụm danh từ nói về điều kiện tham gia công bằng, không đảm bảo mọi bên đạt kết quả như nhau. Thường đi với create, ensure hoặc provide và for someone. Phân biệt với sân chơi bằng phẳng theo nghĩa đen.
+content_status: reviewed
+example_type: authored
+register: thành ngữ / bình luận, công việc
+region: Mỹ (nguồn đối chiếu)
+case_sensitive: 
+expression_type: idiom
+news_source: PBS NewsHour
+news_title: Labor Secretary Perez: 'Level Playing Field' Needed for American Workers
+news_url: https://www.pbs.org/newshour/show/perez-level-playing-field-needed-for-american-workers
+news_date: 2013-09-03
+news_excerpt: I would like to see a level playing field, so that workers can make a full and fair choice
+news_context_vi: Bộ trưởng Lao động Thomas Perez nói người lao động cần điều kiện công bằng để lựa chọn việc thành lập công đoàn.
+news_source_type: reporting
+---
+id: idiom-pull-the-plug-01
+word: pull the plug
+part_of_speech: verb phrase
+meaning_vi: chấm dứt một dự án hoặc hoạt động, thường bằng cách ngừng hỗ trợ
+definition_en: To end a project or activity, often by stopping the support that keeps it going.
+ipa: 
+level: 
+topics: slang,news,energy,work
+collections: slang,idioms,news-expressions
+collocation: pull the plug on a project
+example_en: The company decided to pull the plug on the project after funding ran out.
+example_vi: Công ty quyết định chấm dứt dự án sau khi nguồn tài trợ cạn kiệt.
+audio_word: 
+audio_example: 
+accepted_answers: pull the plug
+source: Đối chiếu cách dùng thực tế: PBS NewsHour (2026-01-15), https://www.pbs.org/newshour/show/how-trumps-attack-on-wind-power-is-impacting-the-energy-industry. Nghĩa và ví dụ luyện tập do Jeongyeon tự biên soạn; không phải định nghĩa của nhà xuất bản.
+note: Trong nghĩa này thường dùng pull the plug on something. Nhấn mạnh quyết định dừng một hoạt động đang diễn ra hoặc được hỗ trợ, không chỉ sự cố gián đoạn tạm thời. Mục này dùng nghĩa bóng về dự án, khác với nghĩa đen rút phích cắm.
+content_status: reviewed
+example_type: authored
+register: thành ngữ / hội thoại và bình luận
+region: Mỹ (nguồn đối chiếu)
+case_sensitive: 
+expression_type: idiom
+news_source: PBS NewsHour
+news_title: How Trump's attack on wind power is impacting the energy industry
+news_url: https://www.pbs.org/newshour/show/how-trumps-attack-on-wind-power-is-impacting-the-energy-industry
+news_date: 2026-01-15
+news_excerpt: the Trump administration's order to pull the plug on the Revolution Wind project, which was nearly 80 percent complete.
+news_context_vi: Miles O’Brien thuật lại lệnh dừng dự án điện gió Revolution Wind khi dự án gần hoàn thành.
+news_source_type: reporting

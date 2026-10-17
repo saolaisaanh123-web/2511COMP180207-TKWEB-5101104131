@@ -88,7 +88,49 @@ export const fields = [
   "register",
   "region",
   "case_sensitive",
+  "frequency_zipf",
+  "frequency_source",
+  "expression_type",
+  "news_source",
+  "news_title",
+  "news_url",
+  "news_date",
+  "news_excerpt",
+  "news_context_vi",
+  "news_source_type",
 ];
+
+const cefrOrder = ["A1", "A2", "B1", "B2", "C1", "C2"];
+const englishOrder = new Intl.Collator("en", { sensitivity: "base" });
+export function frequencyScore(word: Word): number | undefined {
+  const value = word.frequency_zipf?.trim();
+  if (!value) return undefined;
+  const score = Number(value);
+  return Number.isFinite(score) && score >= 0 && score <= 9 ? score : undefined;
+}
+
+// Sort a copy so library order cannot change stored entries, sessions or history.
+export function sortForLearning(entries: Entry[]): Entry[] {
+  const levelRank = (word: Word) => {
+    const rank = cefrOrder.indexOf((word.level || "").trim().toUpperCase());
+    return rank < 0 ? cefrOrder.length : rank;
+  };
+  return entries.slice().sort((a, b) => {
+    const level = levelRank(a.word) - levelRank(b.word);
+    if (level) return level;
+    const aScore = frequencyScore(a.word);
+    const bScore = frequencyScore(b.word);
+    if (aScore !== bScore) {
+      if (aScore === undefined) return 1;
+      if (bScore === undefined) return -1;
+      return bScore - aScore;
+    }
+    return (
+      englishOrder.compare(a.word.word, b.word.word) ||
+      a.word.id.localeCompare(b.word.id, "en")
+    );
+  });
+}
 export function parse(text: string): Word[] {
   const blocks = text
     .replace(/^\uFEFF/, "")

@@ -103,12 +103,12 @@ aside {
   z-index: 5;
 }
 .brand {
-  font-size: 39px;
+  font-size: 24px;
   font-weight: 750;
-  letter-spacing: -2px;
+  letter-spacing: -0.9px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   line-height: 1;
 }
 .brand-icon {
@@ -1160,6 +1160,9 @@ hr {
   aside {
     width: 210px;
     padding: 30px 19px;
+  }
+  .brand {
+    font-size: 21px;
   }
   .workspace {
     margin-left: 210px;

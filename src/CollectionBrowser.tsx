@@ -21,6 +21,13 @@ type CollectionBrowserProps = {
 };
 
 const PAGE_SIZE = 24;
+const expressionLabels: Record<string, string> = {
+  idiom: "Thành ngữ",
+  slang: "Tiếng lóng",
+  colloquialism: "Cách nói đời thường",
+  abbreviation: "Từ viết tắt",
+  term: "Thuật ngữ",
+};
 const formatCount = (count: number) => count.toLocaleString("vi-VN");
 const searchable = (value: string) =>
   value
@@ -51,6 +58,8 @@ export default function CollectionBrowser({
 }: CollectionBrowserProps) {
   const [query, setQuery] = useState("");
   const [sort, setSort] = useState("asc");
+  const [expressionType, setExpressionType] = useState("all");
+  const [contextSource, setContextSource] = useState("all");
   const [pagination, setPagination] = useState({ key: "", page: 1 });
   const isSlang = kind === "slang";
   const title = isSlang ? "Slang" : "Cụm động từ";
@@ -72,20 +81,33 @@ export default function CollectionBrowser({
     return collectionEntries
       .filter(
         ({ word, notes }) =>
-          !search ||
-          searchable(
-            [
-              word.word,
-              word.meaning_vi,
-              word.definition_en,
-              word.note,
-              word.register,
-              word.region,
-              notes,
-            ]
-              .filter(Boolean)
-              .join(" "),
-          ).includes(search),
+          (!isSlang ||
+            expressionType === "all" ||
+            word.expression_type === expressionType) &&
+          (!isSlang ||
+            contextSource === "all" ||
+            (contextSource === "none"
+              ? !word.news_source_type
+              : word.news_source_type === contextSource)) &&
+          (!search ||
+            searchable(
+              [
+                word.word,
+                word.meaning_vi,
+                word.definition_en,
+                word.note,
+                word.register,
+                word.region,
+                expressionLabels[word.expression_type],
+                word.news_source,
+                word.news_title,
+                word.news_excerpt,
+                word.news_context_vi,
+                notes,
+              ]
+                .filter(Boolean)
+                .join(" "),
+            ).includes(search)),
       )
       .sort((a, b) => {
         const order =
@@ -94,9 +116,17 @@ export default function CollectionBrowser({
           }) || a.word.id.localeCompare(b.word.id);
         return sort === "asc" ? order : -order;
       });
-  }, [collectionEntries, query, sort]);
+  }, [collectionEntries, query, sort, expressionType, contextSource, isSlang]);
   // A search, sort, or collection change starts at page 1, including on the first render.
-  const paginationKey = `${kind}\u0000${query}\u0000${sort}`;
+  const paginationKey = `${kind}\u0000${query}\u0000${sort}\u0000${expressionType}\u0000${contextSource}`;
+  const hasFilters =
+    !!query.trim() ||
+    (isSlang && (expressionType !== "all" || contextSource !== "all"));
+  const clearFilters = () => {
+    setQuery("");
+    setExpressionType("all");
+    setContextSource("all");
+  };
   const pageCount = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const page =
     pagination.key === paginationKey ? Math.min(pagination.page, pageCount) : 1;
@@ -120,7 +150,7 @@ export default function CollectionBrowser({
           <h1 id={headingId}>{title}</h1>
           <p className="coll-intro-description">
             {isSlang
-              ? "Hiểu cách nói thân mật, biết dùng đúng người và đúng tình huống."
+              ? "Học tiếng lóng, thành ngữ và cách nói đời thường qua nghĩa, cách dùng và ngữ cảnh có nguồn."
               : "Học nghĩa của cả cụm, cấu trúc đi kèm và vị trí của tân ngữ."}
           </p>
         </div>
@@ -141,12 +171,12 @@ export default function CollectionBrowser({
         <p>
           {isSlang ? (
             <>
-              <strong>Slang, khẩu ngữ và từ viết tắt.</strong> Kiểm tra sắc thái
-              của từng mục. Slang thân mật thường không phù hợp IELTS Writing
-              trang trọng; thuật ngữ có thể dùng khi chủ đề và cách giải thích
-              phù hợp ngữ cảnh. Chú ý nhãn vùng miền và sắc thái ở từng mục. Đây
-              là bộ sưu tập riêng, không mặc định thuộc Oxford 5000 hoặc có mức
-              CEFR.
+              <strong>Thành ngữ không nhất thiết là tiếng lóng.</strong> Xem
+              nhãn loại cách nói và sắc thái trước khi dùng. Ngữ cảnh từ bản
+              tin, phỏng vấn được tách riêng với chuyên mục học tiếng Anh và ví
+              dụ biên soạn. Một bài có dùng cụm từ chưa chứng minh cụm đó xuất
+              hiện thường xuyên. Các mục này không mặc định có mức CEFR; cách
+              nói thân mật thường không phù hợp IELTS Writing trang trọng.
             </>
           ) : (
             <>
@@ -198,6 +228,49 @@ export default function CollectionBrowser({
         </label>
       </div>
 
+      {isSlang && (
+        <div
+          className="coll-filters"
+          aria-label="Lọc cách nói và nguồn ngữ cảnh"
+        >
+          <label htmlFor="coll-slang-type">
+            <span>Loại cách nói</span>
+            <select
+              id="coll-slang-type"
+              value={expressionType}
+              onChange={(event) => setExpressionType(event.target.value)}
+              aria-controls={resultsId}
+            >
+              <option value="all">Tất cả loại</option>
+              {Object.entries(expressionLabels).map(([value, label]) => (
+                <option key={value} value={value}>
+                  {label}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label htmlFor="coll-slang-context">
+            <span>Nguồn ngữ cảnh</span>
+            <select
+              id="coll-slang-context"
+              value={contextSource}
+              onChange={(event) => setContextSource(event.target.value)}
+              aria-controls={resultsId}
+            >
+              <option value="all">Tất cả nguồn</option>
+              <option value="reporting">Bản tin / phỏng vấn</option>
+              <option value="language-lesson">Chuyên mục học tiếng Anh</option>
+              <option value="none">Chưa gắn ngữ cảnh nguồn</option>
+            </select>
+          </label>
+          {hasFilters && (
+            <button type="button" onClick={clearFilters}>
+              Xóa bộ lọc
+            </button>
+          )}
+        </div>
+      )}
+
       <p
         className="coll-results-summary"
         role="status"
@@ -209,9 +282,9 @@ export default function CollectionBrowser({
             Hiển thị {formatCount(start + 1)}–
             {formatCount(Math.min(start + PAGE_SIZE, filtered.length))} /{" "}
             {formatCount(filtered.length)} mục nghĩa
-            {query.trim() ? " phù hợp" : ""}.
+            {hasFilters ? " phù hợp" : ""}.
           </>
-        ) : query.trim() ? (
+        ) : hasFilters ? (
           "Không tìm thấy mục phù hợp."
         ) : (
           "Chưa có mục từ trong bộ sưu tập này."
@@ -234,8 +307,16 @@ export default function CollectionBrowser({
                     </span>
                   )}
                 </div>
-                {(word.register || word.region) && (
+                {(word.expression_type ||
+                  word.register ||
+                  word.region ||
+                  word.news_source) && (
                   <div className="coll-tags">
+                    {expressionLabels[word.expression_type] && (
+                      <span className="coll-expression-type">
+                        {expressionLabels[word.expression_type]}
+                      </span>
+                    )}
                     {word.register && (
                       <span>
                         <span className="coll-sr-only">Sắc thái: </span>
@@ -246,6 +327,14 @@ export default function CollectionBrowser({
                       <span>
                         <span className="coll-sr-only">Vùng miền: </span>
                         {word.region}
+                      </span>
+                    )}
+                    {word.news_source && (
+                      <span className="coll-source-tag">
+                        {word.news_source_type === "language-lesson"
+                          ? "Bài học"
+                          : "Ngữ cảnh"}
+                        : {word.news_source}
                       </span>
                     )}
                   </div>
@@ -294,18 +383,18 @@ export default function CollectionBrowser({
           <div className="coll-empty">
             <Search size={28} aria-hidden="true" />
             <h2>
-              {query.trim()
+              {hasFilters
                 ? "Chưa tìm thấy từ bạn cần"
                 : "Bộ sưu tập chưa có dữ liệu"}
             </h2>
             <p>
-              {query.trim()
-                ? "Thử từ ngắn hơn, nghĩa tiếng Việt hoặc một từ trong ghi chú."
+              {hasFilters
+                ? "Thử từ ngắn hơn, nghĩa tiếng Việt hoặc bỏ bớt bộ lọc."
                 : "Vào Kho từ để kiểm tra và xác nhận bản cập nhật dữ liệu trên thiết bị này."}
             </p>
-            {query.trim() && (
-              <button type="button" onClick={() => setQuery("")}>
-                Xóa bộ lọc tìm kiếm
+            {hasFilters && (
+              <button type="button" onClick={clearFilters}>
+                Xóa bộ lọc
               </button>
             )}
           </div>
