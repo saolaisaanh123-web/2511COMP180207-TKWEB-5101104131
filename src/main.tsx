@@ -521,7 +521,7 @@ function App() {
   return (
     <div className="app">
       <aside>
-        <a className="brand" href="#" onClick={() => setPage("today")}>
+        <a className="brand" aria-label="Lexi IELTS — Hôm nay" href="#" onClick={() => setPage("today")}>
           <span className="brand-icon">
             <Leaf size={24} />
           </span>

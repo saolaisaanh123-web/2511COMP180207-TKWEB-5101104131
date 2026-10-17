@@ -1,4 +1,4 @@
-# Lexi — Góc học từ vựng IELTS cá nhân
+# Lexi IELTS — Góc học từ vựng IELTS cá nhân
 
 Ứng dụng React + TypeScript + Vite, giao diện tiếng Việt, không cần tài khoản/backend/API trả phí. Thay thế trang ảnh cũ; Git vẫn giữ lịch sử cũ.
 
@@ -60,7 +60,7 @@ Dữ liệu chưa tự đồng bộ giữa thiết bị và có thể mất khi 
 Đã có workflow `.github/workflows/pages.yml`, build/test và triển khai khi push lên `main`.
 
 1. Trong repository, vào **Settings → Pages → Build and deployment → Source**, chọn **GitHub Actions** (cần quyền quản trị repository).
-2. Push lên `main`, hoặc chạy workflow **Deploy Lexi to GitHub Pages** thủ công từ Actions.
+2. Push lên `main`, hoặc chạy workflow **Deploy Lexi IELTS to GitHub Pages** thủ công từ Actions.
 3. Khi job deploy thành công, lấy địa chỉ thật tại **Settings → Pages** hoặc kết quả workflow.
 
 Vite dùng `base: './'`; nội dung lấy theo `import.meta.env.BASE_URL`. Điều hướng nội bộ không thêm đường dẫn nên tải lại trên GitHub Pages không gây 404. Không đưa thư mục `dist` hoặc `node_modules` lên Git.
