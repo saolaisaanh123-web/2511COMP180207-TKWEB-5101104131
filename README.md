@@ -1,6 +1,6 @@
 # Lexi IELTS — Góc học từ vựng IELTS cá nhân
 
-Ứng dụng React + TypeScript + Vite, giao diện tiếng Việt, không cần tài khoản/backend/API trả phí. Thay thế trang ảnh cũ; Git vẫn giữ lịch sử cũ.
+Ứng dụng React + TypeScript + Vite, giao diện tiếng Việt, không cần tài khoản/backend/API trả phí.
 
 ## Chạy trên máy
 
