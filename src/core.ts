@@ -142,7 +142,11 @@ export function diff(state: State, words: Word[], origin: string) {
     changed: words.filter(
       (w) =>
         state.entries[w.id] &&
-        JSON.stringify(state.entries[w.id].word) !== JSON.stringify(w),
+        !(origin === "default" && state.entries[w.id].origin !== origin) &&
+        fields.some(
+          (field) =>
+            (state.entries[w.id].word[field] || "") !== (w[field] || ""),
+        ),
     ).length,
     archived: Object.values(state.entries).filter(
       (e) => e.origin === origin && !e.archived && !incoming.has(e.word.id),

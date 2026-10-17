@@ -1,4 +1,7 @@
 import { test, expect } from "@playwright/test";
+import { readFileSync } from "node:fs";
+import { parse, merge, empty, record } from "../src/core";
+const corpus = parse(readFileSync("public/data/vocabulary.txt", "utf8"));
 test("dashboard, scheduled study, persistence, evidence and backup", async ({
   page,
 }) => {
@@ -116,7 +119,9 @@ test("source refresh adds and archives without erasing study evidence", async ({
     }),
   );
   await page.getByRole("button", { name: "↻ Cập nhật kho mặc định" }).click();
-  await expect(page.locator(".preview-counts")).toContainText("19");
+  await expect(page.locator(".preview-counts")).toContainText(
+    String(corpus.length - 1),
+  );
   await page.getByRole("button", { name: "Xác nhận cập nhật" }).click();
   await expect(page.locator(".word-card")).toHaveCount(2);
   const snapshot = await page.evaluate(
@@ -166,4 +171,95 @@ test("audio fallback and unavailable voices do not crash or count a skipped test
   await expect(
     page.getByText("Chưa đủ dữ liệu để kết luận.", { exact: false }),
   ).toBeVisible();
+});
+
+test("existing learner previews Oxford corpus update without losing progress or private edits", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await expect(
+    page.getByRole("heading", { name: "Hôm nay, mình học gì?" }),
+  ).toBeVisible();
+  const sample = parse(
+    readFileSync("public/data/vocabulary.sample.txt", "utf8"),
+  );
+  let old = merge(empty(), sample, "default");
+  old = record(
+    old,
+    {
+      id: "old-review",
+      wordId: "commute-01",
+      time: Date.now() - 86400000,
+      skill: 1,
+      answer: "commute",
+      correct: true,
+      hint: false,
+      method: "rule",
+      elapsed: 2000,
+      session: "old-session",
+      review: "old-review",
+      gap: 0,
+      first: true,
+    },
+    true,
+  );
+  old.entries["achieve-01"].origin = "personal";
+  old.entries["achieve-01"].word.meaning_vi = "bản sửa riêng của tôi";
+  await page.evaluate(async (saved) => {
+    await new Promise<void>((resolve, reject) => {
+      const q = indexedDB.open("lexi-learning", 1);
+      q.onsuccess = () => {
+        const tx = q.result.transaction("state", "readwrite");
+        tx.objectStore("state").put(saved, "main");
+        tx.oncomplete = () => resolve();
+        tx.onerror = () => reject(tx.error);
+      };
+    });
+  }, old);
+  await page.reload();
+  await page.getByRole("button", { name: "Xem bản cập nhật" }).click();
+  await expect(page.locator(".preview-counts")).toContainText("2Lưu trữ");
+  await page.getByRole("button", { name: "Xác nhận cập nhật" }).click();
+  await page.getByRole("button", { name: "Kho từ", exact: true }).click();
+  await expect(page.locator(".word-card")).toHaveCount(corpus.length);
+  await page
+    .getByRole("textbox", { name: "Tìm từ và nghĩa" })
+    .fill("bản sửa riêng của tôi");
+  await expect(page.locator(".word-card")).toHaveCount(1);
+  await page.getByRole("textbox", { name: "Tìm từ và nghĩa" }).fill("avoid");
+  await page.locator(".word-card").click();
+  await expect(page.locator(".dict-headword")).toHaveText("avoid");
+  await expect(page.locator(".dict-level")).toHaveText("A2");
+  await expect(page.locator(".dict-header")).toHaveCSS("display", "block");
+  const headwordBox = await page.locator(".dict-headword").boundingBox();
+  expect(headwordBox!.width).toBeGreaterThan(200);
+  await expect(page.getByText("IPA chưa đối chiếu")).toBeVisible();
+  await expect(
+    page.getByText("Giải nghĩa biên soạn", { exact: true }),
+  ).toBeVisible();
+  await page.screenshot({ path: "/tmp/lexi-dictionary.png", fullPage: true });
+  await page.getByRole("button", { name: "Đóng", exact: true }).click();
+  await page.reload();
+  await expect(
+    page.getByRole("button", { name: "Xem bản cập nhật" }),
+  ).toHaveCount(0);
+  const saved = await page.evaluate(
+    async () =>
+      new Promise<any>((resolve) => {
+        const req = indexedDB.open("lexi-learning", 1);
+        req.onsuccess = () => {
+          const q = req.result
+            .transaction("state")
+            .objectStore("state")
+            .get("main");
+          q.onsuccess = () => resolve(q.result);
+        };
+      }),
+  );
+  expect(saved.history).toHaveLength(1);
+  expect(saved.schedules["commute-01:1"]).toEqual(
+    old.schedules["commute-01:1"],
+  );
+  expect(saved.entries["commute-01"].archived).toBe(true);
+  expect(saved.entries["take-part-in-01"].archived).toBe(true);
 });

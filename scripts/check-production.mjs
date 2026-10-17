@@ -5,6 +5,9 @@ import { resolve, extname, sep } from "node:path";
 import assert from "node:assert/strict";
 import { chromium } from "@playwright/test";
 const root = resolve("dist");
+const expectedCount = (
+  await readFile("public/data/vocabulary.txt", "utf8")
+).match(/^id: /gm).length;
 const mime = {
   ".html": "text/html",
   ".js": "text/javascript",
@@ -51,14 +54,14 @@ try {
       .getByRole("heading", { name: "Hôm nay, mình học gì?" })
       .waitFor();
     await page.getByRole("button", { name: "Kho từ", exact: true }).click();
-    assert.equal(await page.locator(".word-card").count(), 20);
+    assert.equal(await page.locator(".word-card").count(), expectedCount);
     await page.reload();
     await page
       .getByRole("heading", { name: "Hôm nay, mình học gì?" })
       .waitFor();
     assert.deepEqual(errors, []);
     console.log(
-      `PASS: production ${path} renders, loads 20 entries, reloads without error`,
+      `PASS: production ${path} renders, loads ${expectedCount} entries, reloads without error`,
     );
     await page.close();
   }

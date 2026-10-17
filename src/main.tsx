@@ -39,6 +39,7 @@ import {
 } from "./core";
 import "./style.css";
 import ErrorBoundary from "./ErrorBoundary";
+import WordDetail from "./DictionaryEntry";
 const uid = () => crypto.randomUUID();
 function download(name: string, text: string, type = "text/plain") {
   const url = URL.createObjectURL(
@@ -63,6 +64,7 @@ function App() {
     [detail, setDetail] = useState<string>(),
     [editor, setEditor] = useState<string>(),
     [pending, setPending] = useState<{ words: Word[]; origin: string }>(),
+    [availableWords, setAvailableWords] = useState<Word[]>(),
     [backup, setBackup] = useState<State>(),
     [replace, setReplace] = useState(false),
     [settings, setSettings] = useState(false),
@@ -132,17 +134,36 @@ function App() {
     (async () => {
       try {
         let s = await read();
-        if (!Object.keys(s.entries).length) {
+        const isEmpty = !Object.keys(s.entries).length;
+        if (!isEmpty) {
+          setState(s);
+          setLoaded(true);
+        }
+        try {
           const res = await fetch(
             import.meta.env.BASE_URL + "data/vocabulary.txt",
             { cache: "no-store" },
           );
           if (!res.ok) throw Error("Không tải được vocabulary.txt");
-          s = merge(s, parse(await res.text()), "default");
-          await save(s);
+          const incoming = parse(await res.text());
+          if (isEmpty) {
+            s = merge(s, incoming, "default");
+            await save(s);
+          } else if (
+            Object.values(diff(s, incoming, "default")).some((n) => n > 0)
+          )
+            setAvailableWords(incoming);
+        } catch (error) {
+          if (isEmpty) throw error;
+          setNotice(
+            "Đang dùng kho đã lưu; chưa kiểm tra được bản mới: " +
+              String(error),
+          );
         }
-        setState(s);
-        setLoaded(true);
+        if (isEmpty) {
+          setState(s);
+          setLoaded(true);
+        }
       } catch (e) {
         setNotice("Không thể mở dữ liệu: " + String(e));
       }
@@ -621,6 +642,21 @@ function App() {
               </button>
             </div>
           )}
+          {availableWords && !hasModal && (
+            <div className="notice source-update" role="status">
+              <span>
+                Kho mặc định có bản cập nhật. Xem trước để nhận từ mới và giữ
+                lịch sử theo ID.
+              </span>
+              <button
+                onClick={() =>
+                  setPending({ words: availableWords, origin: "default" })
+                }
+              >
+                Xem bản cập nhật
+              </button>
+            </div>
+          )}
           {page === "today" && (
             <>
               <div className="greeting">
@@ -903,8 +939,18 @@ function App() {
                   <h1>Kho từ của bạn</h1>
                   <p>
                     {new Set(active.map((e) => e.word.word.toLowerCase())).size}{" "}
-                    từ/cụm từ · {active.length} mục nghĩa · Dữ liệu minh họa tự
-                    biên soạn
+                    từ/cụm từ · {active.length} mục nghĩa
+                  </p>
+                  <p className="fineprint">
+                    Kho mặc định đối chiếu từ/loại từ/CEFR theo bản lưu PDF
+                    Oxford. Nghĩa và ví dụ do ứng dụng biên soạn.{" "}
+                    <a
+                      href={import.meta.env.BASE_URL + "data/SOURCES.md"}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Nguồn và phạm vi đối chiếu ↗
+                    </a>
                   </p>
                 </div>
                 <button
@@ -1604,6 +1650,8 @@ function App() {
                 commit(merge(state, pending.words, pending.origin))
                   .then(() => {
                     setPending(undefined);
+                    if (pending.origin === "default")
+                      setAvailableWords(undefined);
                     setNotice(
                       "Đã cập nhật kho từ, giữ nguyên tiến độ theo ID.",
                     );
@@ -1757,133 +1805,6 @@ function App() {
           () => setBackup(undefined),
         )}
     </div>
-  );
-}
-function WordDetail({
-  entry: e,
-  state,
-  speak,
-  edit,
-  change,
-}: {
-  entry: State["entries"][string];
-  state: State;
-  speak: (s: string, url?: string) => void;
-  edit: () => void;
-  change: (e: State["entries"][string]) => void;
-}) {
-  const w = e.word;
-  return (
-    <>
-      <span className="eyebrow">{w.topics || "TỪ CÁ NHÂN"}</span>
-      <h2>
-        {w.word}{" "}
-        <button
-          className="icon"
-          aria-label="Nghe từ"
-          onClick={() => speak(w.word, w.audio_word)}
-        >
-          <Volume2 />
-        </button>
-      </h2>
-      <p>
-        {w.part_of_speech} {w.ipa}
-      </p>
-      <h3>{w.meaning_vi}</h3>
-      <p>{w.collocation}</p>
-      <blockquote>
-        {w.example_en}
-        <button
-          className="icon"
-          aria-label="Nghe câu"
-          onClick={() => speak(w.example_en, w.audio_example)}
-        >
-          <Volume2 size={18} />
-        </button>
-        <small>{w.example_vi}</small>
-      </blockquote>
-      <p className="fineprint">
-        {w.audio_word
-          ? "Âm thanh từ URL; giọng tổng hợp dự phòng nếu lỗi."
-          : "Phát âm bằng giọng tổng hợp của trình duyệt."}
-      </p>
-      <label className="setting-row">
-        Mục tiêu
-        <select
-          value={e.goal || "active"}
-          onChange={(ev) => change({ ...e, goal: ev.target.value })}
-        >
-          <option value="active">Sử dụng chủ động</option>
-          <option value="recognition">Nhận biết</option>
-        </select>
-      </label>
-      <label>
-        <input
-          type="checkbox"
-          checked={!!e.known}
-          onChange={(ev) => change({ ...e, known: ev.target.checked })}
-        />{" "}
-        Tôi đã biết từ này (tự đánh dấu, chưa kiểm tra)
-      </label>
-      <p>
-        Câu của bạn: {e.notes || "Chưa có câu tự viết."}{" "}
-        {e.notes && "— Chưa được chấm"}
-      </p>
-      <details>
-        <summary>Thông tin bổ sung & lịch sử</summary>
-        <p>
-          CEFR: {w.level || "Chưa gán"} · Nguồn: {w.source || "Chưa khai báo"}
-        </p>
-        <p>{w.note}</p>
-        {skills.map((s, i) => (
-          <p key={s}>
-            {s}: {strength(state, w.id, i)} · Ôn tiếp:{" "}
-            {state.schedules[w.id + ":" + i]
-              ? new Date(state.schedules[w.id + ":" + i].due).toLocaleString(
-                  "vi-VN",
-                )
-              : "Chưa có lịch"}
-          </p>
-        ))}
-        <div className="history-list">
-          {state.history
-            .filter((h) => h.wordId === w.id)
-            .slice()
-            .reverse()
-            .map((h) => (
-              <p key={h.id}>
-                {new Date(h.time).toLocaleString("vi-VN")} · {skills[h.skill]} ·{" "}
-                {h.method === "ungraded"
-                  ? "Chưa chấm"
-                  : h.correct
-                    ? "Đúng / tự nhớ"
-                    : "Quên / sai"}{" "}
-                ·{" "}
-                {h.method === "self"
-                  ? "Tự đánh giá"
-                  : h.method === "rule"
-                    ? "Chấm quy tắc"
-                    : "Tự viết"}
-                {h.hint ? " · Có hỗ trợ" : ""}
-                <br />
-                Trả lời: {h.answer || "(tự đánh giá)"} ·{" "}
-                {Math.round(h.elapsed / 1000)}s · cách lần trước{" "}
-                {(h.gap / 86400000).toFixed(1)} ngày
-              </p>
-            ))}
-        </div>
-      </details>
-      <div className="file-actions">
-        <button onClick={edit}>Sửa mục từ</button>
-        <button
-          onClick={() => {
-            change({ ...e, archived: true });
-          }}
-        >
-          Lưu trữ (giữ lịch sử)
-        </button>
-      </div>
-    </>
   );
 }
 createRoot(document.getElementById("root")!).render(

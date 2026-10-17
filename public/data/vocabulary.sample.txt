@@ -1,0 +1,359 @@
+id: avoid-01
+word: avoid
+part_of_speech:
+meaning_vi: tránh
+definition_en:
+ipa:
+level:
+topics: study
+collections: foundation,ielts
+collocation: avoid doing something
+example_en: I avoid using my phone while studying.
+example_vi: Tôi tránh dùng điện thoại khi học.
+audio_word:
+audio_example:
+accepted_answers: avoid
+source: Ví dụ tự biên soạn — dữ liệu minh họa
+note: Không phải danh sách Oxford/Cambridge chính thức; chưa gán CEFR hoặc IPA.
+---
+id: achieve-01
+word: achieve
+part_of_speech:
+meaning_vi: đạt được
+definition_en:
+ipa:
+level:
+topics: study
+collections: foundation,ielts
+collocation: achieve a goal
+example_en: Small daily steps help me achieve my goals.
+example_vi: Những bước nhỏ mỗi ngày giúp tôi đạt mục tiêu.
+audio_word:
+audio_example:
+accepted_answers: achieve
+source: Ví dụ tự biên soạn — dữ liệu minh họa
+note: Không phải danh sách Oxford/Cambridge chính thức; chưa gán CEFR hoặc IPA.
+---
+id: benefit-01
+word: benefit
+part_of_speech:
+meaning_vi: lợi ích
+definition_en:
+ipa:
+level:
+topics: health
+collections: foundation,ielts
+collocation: a clear benefit
+example_en: Walking has a clear benefit for my health.
+example_vi: Đi bộ mang lại một lợi ích rõ rệt cho sức khỏe của tôi.
+audio_word:
+audio_example:
+accepted_answers: benefit
+source: Ví dụ tự biên soạn — dữ liệu minh họa
+note: Không phải danh sách Oxford/Cambridge chính thức; chưa gán CEFR hoặc IPA.
+---
+id: environment-01
+word: environment
+part_of_speech:
+meaning_vi: môi trường
+definition_en:
+ipa:
+level:
+topics: environment
+collections: foundation,ielts
+collocation: protect the environment
+example_en: We can protect the environment by using less plastic.
+example_vi: Chúng ta có thể bảo vệ môi trường bằng cách dùng ít nhựa hơn.
+audio_word:
+audio_example:
+accepted_answers: environment
+source: Ví dụ tự biên soạn — dữ liệu minh họa
+note: Không phải danh sách Oxford/Cambridge chính thức; chưa gán CEFR hoặc IPA.
+---
+id: improve-01
+word: improve
+part_of_speech:
+meaning_vi: cải thiện
+definition_en:
+ipa:
+level:
+topics: study
+collections: foundation,ielts
+collocation: improve a skill
+example_en: I practise every day to improve my writing.
+example_vi: Tôi luyện tập hằng ngày để cải thiện kỹ năng viết.
+audio_word:
+audio_example:
+accepted_answers: improve
+source: Ví dụ tự biên soạn — dữ liệu minh họa
+note: Không phải danh sách Oxford/Cambridge chính thức; chưa gán CEFR hoặc IPA.
+---
+id: opportunity-01
+word: opportunity
+part_of_speech:
+meaning_vi: cơ hội
+definition_en:
+ipa:
+level:
+topics: work
+collections: foundation,ielts
+collocation: an opportunity to learn
+example_en: The course gives me an opportunity to meet new people.
+example_vi: Khóa học cho tôi cơ hội gặp những người mới.
+audio_word:
+audio_example:
+accepted_answers: opportunity
+source: Ví dụ tự biên soạn — dữ liệu minh họa
+note: Không phải danh sách Oxford/Cambridge chính thức; chưa gán CEFR hoặc IPA.
+---
+id: sustainable-01
+word: sustainable
+part_of_speech:
+meaning_vi: bền vững
+definition_en:
+ipa:
+level:
+topics: environment
+collections: foundation,ielts
+collocation: sustainable development
+example_en: The city needs a sustainable transport system.
+example_vi: Thành phố cần một hệ thống giao thông bền vững.
+audio_word:
+audio_example:
+accepted_answers: sustainable
+source: Ví dụ tự biên soạn — dữ liệu minh họa
+note: Không phải danh sách Oxford/Cambridge chính thức; chưa gán CEFR hoặc IPA.
+---
+id: reduce-01
+word: reduce
+part_of_speech:
+meaning_vi: giảm
+definition_en:
+ipa:
+level:
+topics: transport
+collections: foundation,ielts
+collocation: reduce traffic
+example_en: Taking the bus can reduce traffic in the city.
+example_vi: Đi xe buýt có thể giảm lượng xe lưu thông trong thành phố.
+audio_word:
+audio_example:
+accepted_answers: reduce
+source: Ví dụ tự biên soạn — dữ liệu minh họa
+note: Không phải danh sách Oxford/Cambridge chính thức; chưa gán CEFR hoặc IPA.
+---
+id: reliable-01
+word: reliable
+part_of_speech:
+meaning_vi: đáng tin cậy
+definition_en:
+ipa:
+level:
+topics: technology
+collections: foundation,ielts
+collocation: reliable information
+example_en: Students need reliable information for their research.
+example_vi: Sinh viên cần thông tin đáng tin cậy cho nghiên cứu.
+audio_word:
+audio_example:
+accepted_answers: reliable
+source: Ví dụ tự biên soạn — dữ liệu minh họa
+note: Không phải danh sách Oxford/Cambridge chính thức; chưa gán CEFR hoặc IPA.
+---
+id: community-01
+word: community
+part_of_speech:
+meaning_vi: cộng đồng
+definition_en:
+ipa:
+level:
+topics: society
+collections: foundation,ielts
+collocation: local community
+example_en: Our community has a small public library.
+example_vi: Cộng đồng của chúng tôi có một thư viện công cộng nhỏ.
+audio_word:
+audio_example:
+accepted_answers: community
+source: Ví dụ tự biên soạn — dữ liệu minh họa
+note: Không phải danh sách Oxford/Cambridge chính thức; chưa gán CEFR hoặc IPA.
+---
+id: develop-01
+word: develop
+part_of_speech:
+meaning_vi: phát triển
+definition_en:
+ipa:
+level:
+topics: study
+collections: ielts
+collocation: develop skills
+example_en: Group projects help students develop new skills.
+example_vi: Dự án nhóm giúp sinh viên phát triển kỹ năng mới.
+audio_word:
+audio_example:
+accepted_answers: develop
+source: Ví dụ tự biên soạn — dữ liệu minh họa
+note: Không phải danh sách Oxford/Cambridge chính thức; chưa gán CEFR hoặc IPA.
+---
+id: research-01
+word: research
+part_of_speech:
+meaning_vi: nghiên cứu
+definition_en:
+ipa:
+level:
+topics: study
+collections: ielts
+collocation: conduct research
+example_en: This research explores how people learn languages.
+example_vi: Nghiên cứu này tìm hiểu cách con người học ngôn ngữ.
+audio_word:
+audio_example:
+accepted_answers: research
+source: Ví dụ tự biên soạn — dữ liệu minh họa
+note: Không phải danh sách Oxford/Cambridge chính thức; chưa gán CEFR hoặc IPA.
+---
+id: challenge-01
+word: challenge
+part_of_speech:
+meaning_vi: thử thách
+definition_en:
+ipa:
+level:
+topics: study
+collections: ielts
+collocation: face a challenge
+example_en: Learning a new language is an exciting challenge.
+example_vi: Học một ngôn ngữ mới là một thử thách thú vị.
+audio_word:
+audio_example:
+accepted_answers: challenge
+source: Ví dụ tự biên soạn — dữ liệu minh họa
+note: Không phải danh sách Oxford/Cambridge chính thức; chưa gán CEFR hoặc IPA.
+---
+id: balance-01
+word: balance
+part_of_speech:
+meaning_vi: sự cân bằng
+definition_en:
+ipa:
+level:
+topics: health
+collections: ielts
+collocation: a balance between
+example_en: I try to keep a balance between work and rest.
+example_vi: Tôi cố giữ sự cân bằng giữa công việc và nghỉ ngơi.
+audio_word:
+audio_example:
+accepted_answers: balance
+source: Ví dụ tự biên soạn — dữ liệu minh họa
+note: Không phải danh sách Oxford/Cambridge chính thức; chưa gán CEFR hoặc IPA.
+---
+id: access-01
+word: access
+part_of_speech:
+meaning_vi: khả năng tiếp cận
+definition_en:
+ipa:
+level:
+topics: society
+collections: ielts
+collocation: access to education
+example_en: Every child should have access to education.
+example_vi: Mọi trẻ em nên có khả năng tiếp cận giáo dục.
+audio_word:
+audio_example:
+accepted_answers: access
+source: Ví dụ tự biên soạn — dữ liệu minh họa
+note: Không phải danh sách Oxford/Cambridge chính thức; chưa gán CEFR hoặc IPA.
+---
+id: affordable-01
+word: affordable
+part_of_speech:
+meaning_vi: có giá phải chăng
+definition_en:
+ipa:
+level:
+topics: society
+collections: ielts
+collocation: affordable housing
+example_en: The town needs more affordable housing.
+example_vi: Thị trấn cần thêm nhà ở có giá phải chăng.
+audio_word:
+audio_example:
+accepted_answers: affordable
+source: Ví dụ tự biên soạn — dữ liệu minh họa
+note: Không phải danh sách Oxford/Cambridge chính thức; chưa gán CEFR hoặc IPA.
+---
+id: commute-01
+word: commute
+part_of_speech:
+meaning_vi: đi lại giữa nhà và nơi làm việc
+definition_en:
+ipa:
+level:
+topics: transport
+collections: ielts
+collocation: commute by train
+example_en: I commute by train to save time.
+example_vi: Tôi đi làm bằng tàu để tiết kiệm thời gian.
+audio_word:
+audio_example:
+accepted_answers: commute
+source: Ví dụ tự biên soạn — dữ liệu minh họa
+note: Không phải danh sách Oxford/Cambridge chính thức; chưa gán CEFR hoặc IPA.
+---
+id: device-01
+word: device
+part_of_speech:
+meaning_vi: thiết bị
+definition_en:
+ipa:
+level:
+topics: technology
+collections: ielts
+collocation: a useful device
+example_en: This device helps me track my daily exercise.
+example_vi: Thiết bị này giúp tôi theo dõi việc tập luyện hằng ngày.
+audio_word:
+audio_example:
+accepted_answers: device
+source: Ví dụ tự biên soạn — dữ liệu minh họa
+note: Không phải danh sách Oxford/Cambridge chính thức; chưa gán CEFR hoặc IPA.
+---
+id: well-being-01
+word: well-being
+part_of_speech:
+meaning_vi: sức khỏe thể chất và tinh thần
+definition_en:
+ipa:
+level:
+topics: health
+collections: ielts
+collocation: support well-being
+example_en: Regular breaks support our well-being.
+example_vi: Nghỉ giải lao đều đặn hỗ trợ sức khỏe thể chất và tinh thần của chúng ta.
+audio_word:
+audio_example:
+accepted_answers: well-being
+source: Ví dụ tự biên soạn — dữ liệu minh họa
+note: Không phải danh sách Oxford/Cambridge chính thức; chưa gán CEFR hoặc IPA.
+---
+id: take-part-in-01
+word: take part in
+part_of_speech:
+meaning_vi: tham gia
+definition_en:
+ipa:
+level:
+topics: daily-life
+collections: ielts
+collocation: take part in an activity
+example_en: I want to take part in a local reading club.
+example_vi: Tôi muốn tham gia một câu lạc bộ đọc sách địa phương.
+audio_word:
+audio_example:
+accepted_answers: take part in
+source: Ví dụ tự biên soạn — dữ liệu minh họa
+note: Không phải danh sách Oxford/Cambridge chính thức; chưa gán CEFR hoặc IPA.

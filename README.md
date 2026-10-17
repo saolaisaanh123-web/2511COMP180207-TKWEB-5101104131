@@ -25,8 +25,8 @@ Các trường bắt buộc: `id`, `word`, `meaning_vi`, `example_en`, `example_
 
 - Giữ nguyên ID khi sửa cách diễn đạt để giữ lịch sử. Một nghĩa mới nên có ID mới.
 - Bộ từ: `foundation`, `ielts`, `personal`; một mục có thể có nhiều nhãn.
-- Trình độ CEFR và IPA chỉ điền khi có căn cứ. Mẫu gồm 20 mục nghĩa với ví dụ tự biên soạn, không phải Oxford/Cambridge chính thức; chưa gán CEFR/IPA.
-- Sửa file repository rồi triển khai lại. Chọn **Kho từ → Cập nhật kho mặc định** để xem trước và áp dụng phiên bản mới. Tải lại trang không tự thay thế bản chỉnh sửa cá nhân.
+- Kho mặc định gồm **259 mục nghĩa**, A1–C1, chọn theo đầu từ/loại từ/CEFR trong bản lưu PDF Oxford 3000/5000. Nguồn và giới hạn được ghi rõ trong [SOURCES.md](public/data/SOURCES.md); nghĩa Việt, giải nghĩa và ví dụ là nội dung tự biên soạn. IPA/âm thanh Oxford chưa đối chiếu nên để trống. File `vocabulary.sample.txt` giữ 20 mục minh họa định dạng ban đầu.
+- Sửa file repository rồi triển khai lại. Chọn **Kho từ → Cập nhật kho mặc định** để xem trước và áp dụng phiên bản mới. Khi tải lại, ứng dụng báo nếu có bản mới và cho xem trước; không tự thay thế bản chỉnh sửa cá nhân.
 - Hoặc chọn **Nhập .txt**, kiểm tra số thêm/sửa/lưu trữ rồi xác nhận. File lỗi bị từ chối toàn bộ với số dòng/mục; không ghi đè im lặng.
 - Mỗi nguồn cập nhật lưu trữ những mục không còn xuất hiện trong cùng nguồn; lịch sử và lịch ôn vẫn còn. File cá nhân có ưu tiên so với mặc định khi trùng ID. Phần xem trước liệt kê thay đổi nội dung, những xung đột mặc định/cá nhân được giữ bản cá nhân.
 - Sửa qua giao diện lưu tại trình duyệt, không sửa repository. **Tải kho .txt** xuất các mục đang hoạt động theo cùng định dạng. Trình duyệt không tự ghi đè file gốc.
@@ -71,6 +71,7 @@ Vite dùng `base: './'`; nội dung lấy theo `import.meta.env.BASE_URL`. Đi�
 - `public/data/vocabulary.txt`: toàn bộ dữ liệu từ vựng mẫu, độc lập mã nguồn.
 - `src/core.ts`: parser/serializer, hợp nhất, chấm đáp án, lịch ôn, đánh giá bằng chứng, kiểm tra backup và IndexedDB.
 - `src/main.tsx`: bốn trang chính, phiên học, âm thanh, nhập/xuất, các hộp thoại.
+- `src/DictionaryEntry.tsx`: trình bày mục từ kiểu từ điển, phân biệt nguồn Oxford và phần biên soạn.
 - `src/style.css`: thiết kế responsive, thanh bên desktop/thanh dưới mobile.
 - `src/core.test.ts`: kiểm thử quy tắc dữ liệu và bằng chứng.
 - `e2e/app.spec.ts`: luồng Chromium, lưu bền, nhập kho, phục hồi, âm thanh không khả dụng, bố cục điện thoại.
@@ -78,7 +79,7 @@ Vite dùng `base: './'`; nội dung lấy theo `import.meta.env.BASE_URL`. Đi�
 ## Giới hạn được biết
 
 - Không có dịch vụ chấm ngữ nghĩa/câu viết hoặc đồng bộ; nghe nhớ nghĩa là tự đánh giá.
-- Không có dữ liệu CEFR chính thức; lọc CEFR hoạt động khi bạn khai báo trường `level`.
+- CEFR của kho mặc định đối chiếu đầu từ/loại từ trong bản lưu PDF Oxford, không xác nhận riêng mọi nghĩa. Chưa đối chiếu byte với PDF hiện tại trên host nhà xuất bản. Xem nguồn, commit, SHA256 và từng dòng đối chiếu trong `public/data/oxford-provenance.json`.
 - Trong cùng một phiên và lần ôn, thử lại không được tính như bằng chứng lần đầu. Nên dùng bài ngữ cảnh có đáp án duy nhất; dùng nút báo câu hỏi nếu ví dụ chưa đủ rõ.
 - Kiểm thử trình duyệt kiểm tra đường đi giọng đọc không khả dụng, không xác nhận chất lượng âm thanh thực tế hoặc giọng của mọi thiết bị. Thử phát từ/câu trên thiết bị cá nhân trước bài nghe.
 - Việc push mã nguồn không tự chứng minh GitHub Pages đã triển khai; cần Source GitHub Actions và workflow thành công.
