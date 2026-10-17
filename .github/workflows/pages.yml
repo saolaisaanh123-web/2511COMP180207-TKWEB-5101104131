@@ -21,7 +21,10 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm test
-      - run: npm run build
+      - name: Install browser for production verification
+        run: npx playwright install --with-deps chromium
+      - name: Verify built site before publishing
+        run: npm run test:production
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

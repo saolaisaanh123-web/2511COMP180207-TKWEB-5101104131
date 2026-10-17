@@ -38,6 +38,7 @@ import {
   validateBackup,
 } from "./core";
 import "./style.css";
+import ErrorBoundary from "./ErrorBoundary";
 const uid = () => crypto.randomUUID();
 function download(name: string, text: string, type = "text/plain") {
   const url = URL.createObjectURL(
@@ -521,7 +522,12 @@ function App() {
   return (
     <div className="app">
       <aside>
-        <a className="brand" aria-label="Lexi IELTS — Hôm nay" href="#" onClick={() => setPage("today")}>
+        <a
+          className="brand"
+          aria-label="Lexi IELTS — Hôm nay"
+          href="#"
+          onClick={() => setPage("today")}
+        >
           <span className="brand-icon">
             <Leaf size={24} />
           </span>
@@ -1880,4 +1886,8 @@ function WordDetail({
     </>
   );
 }
-createRoot(document.getElementById("root")!).render(<App />);
+createRoot(document.getElementById("root")!).render(
+  <ErrorBoundary>
+    <App />
+  </ErrorBoundary>,
+);

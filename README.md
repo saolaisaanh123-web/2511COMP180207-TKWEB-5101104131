@@ -11,6 +11,7 @@ npm ci
 npm run dev
 npm test
 npm run build
+npm run test:production
 npm run preview
 ```
 
@@ -81,3 +82,5 @@ Vite dùng `base: './'`; nội dung lấy theo `import.meta.env.BASE_URL`. Đi�
 - Trong cùng một phiên và lần ôn, thử lại không được tính như bằng chứng lần đầu. Nên dùng bài ngữ cảnh có đáp án duy nhất; dùng nút báo câu hỏi nếu ví dụ chưa đủ rõ.
 - Kiểm thử trình duyệt kiểm tra đường đi giọng đọc không khả dụng, không xác nhận chất lượng âm thanh thực tế hoặc giọng của mọi thiết bị. Thử phát từ/câu trên thiết bị cá nhân trước bài nghe.
 - Việc push mã nguồn không tự chứng minh GitHub Pages đã triển khai; cần Source GitHub Actions và workflow thành công.
+
+`npm run test:production` kiểm tra bản `dist` bằng Chromium trên máy chủ tĩnh ở cả đường dẫn gốc và đường dẫn con tương tự GitHub Pages; kiểm tra kho từ, tải lại và thông báo khi JavaScript không tải được. Workflow chạy kiểm tra này trước khi xuất bản. Nếu gặp lỗi ứng dụng, trang hiện thông báo khôi phục thay vì khoảng trắng và không xóa dữ liệu học.
