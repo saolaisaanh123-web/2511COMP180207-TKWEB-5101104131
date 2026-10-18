@@ -225,14 +225,14 @@
 
 .dict-entry .dict-example-en {
   color: #304c37;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.85;
   margin: 0 0 9px;
 }
 
 .dict-entry .dict-example-vi {
   color: #596a50;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.85;
   margin: 0;
 }
@@ -309,7 +309,7 @@
 .dict-entry .dict-news blockquote p,
 .dict-entry .dict-news-context > p:last-child {
   color: #3b5b68;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.9;
   margin: 0;
   white-space: pre-wrap;
@@ -532,4 +532,86 @@
   .dict-actions button {
     width: 100%;
   }
+}
+
+.dict-entry button,
+.dict-entry select,
+.dict-entry summary {
+  min-height: 44px;
+}
+.dict-entry summary {
+  display: flex;
+  align-items: center;
+}
+.dict-reference-list a,
+.dict-news-link,
+.dict-news-media {
+  min-height: 44px;
+  overflow-wrap: anywhere;
+  max-width: 100%;
+}
+.dict-entry .dict-audio {
+  min-height: 44px;
+  font-size: 12px;
+}
+.dict-review {
+  border: 1px solid #d8e2cc;
+  border-radius: 9px;
+  padding: 16px;
+  margin: 18px 0;
+  background: #f4f7ee;
+}
+.dict-review label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.8;
+  padding: 8px 0;
+}
+.dict-review input {
+  flex: 0 0 auto;
+  margin-top: 6px;
+}
+.dict-entry .dict-review p,
+.dict-entry .dict-reports p,
+.dict-reports li {
+  font-size: 13px;
+  color: #465d3d;
+  line-height: 1.8;
+}
+.dict-reports {
+  margin: 18px 0;
+  border-left: 3px solid #ad8b43;
+  padding-left: 14px;
+}
+.dict-reports ul {
+  padding-left: 20px;
+}
+.dict-reports li {
+  white-space: pre-wrap;
+}
+.dict-news-media {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  color: #2f6076;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.dict-entry .dict-user-sentence p:last-child {
+  font-size: 14px;
+}
+.dict-source-text,
+.dict-source-note,
+.dict-news-link span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.dict-entry .dict-learning-note {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #5e4b25;
 }

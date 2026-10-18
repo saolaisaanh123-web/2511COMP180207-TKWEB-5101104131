@@ -292,7 +292,7 @@
 
 .coll-browser .coll-meaning {
   color: #41583b;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.9;
   margin: 0 0 17px;
 }
@@ -306,23 +306,23 @@
 
 .coll-label {
   display: block;
-  color: #82916f;
-  font-size: 8px;
+  color: #526443;
+  font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.7px;
   margin-bottom: 7px;
 }
 
 .coll-browser .coll-example p {
-  color: #4a6342;
-  font-size: 11px;
+  color: #3e5737;
+  font-size: 14px;
   line-height: 1.9;
   margin: 0;
 }
 
 .coll-browser .coll-example .coll-example-vi {
-  color: #7a886b;
-  font-size: 10px;
+  color: #536149;
+  font-size: 14px;
   margin-top: 7px;
 }
 
@@ -333,8 +333,8 @@
 }
 
 .coll-browser .coll-usage p {
-  color: #748363;
-  font-size: 10px;
+  color: #526443;
+  font-size: 13px;
   line-height: 1.9;
   margin: 0;
   white-space: pre-wrap;
@@ -355,7 +355,7 @@
   border-color: #dfe8d8;
   font-size: 10px;
   padding: 10px 11px;
-  min-height: 40px;
+  min-height: 44px;
 }
 
 .coll-browser .coll-actions .coll-practice {
@@ -482,5 +482,47 @@
 
   .coll-pagination > span {
     font-size: 10px;
+  }
+}
+
+.coll-browser .coll-clear {
+  min-width: 44px;
+  min-height: 44px;
+}
+.coll-results-summary:focus {
+  outline-offset: 5px;
+}
+.coll-results-summary > span {
+  color: #59684f;
+}
+.coll-browser .coll-clear-filters {
+  min-height: 44px;
+  font-size: 12px;
+}
+.coll-browser .coll-readiness {
+  color: #526443;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.coll-browser .coll-filters > button:disabled {
+  opacity: 0.65;
+}
+@media (max-width: 600px) {
+  .coll-browser input,
+  .coll-browser select {
+    font-size: 16px !important;
+  }
+  .coll-sort,
+  .coll-filters label {
+    max-width: 100%;
+  }
+  .coll-browser .coll-sort select {
+    min-width: 0;
+  }
+  .coll-pagination {
+    flex-wrap: wrap;
+  }
+  .coll-browser .coll-actions button {
+    font-size: 12px;
   }
 }

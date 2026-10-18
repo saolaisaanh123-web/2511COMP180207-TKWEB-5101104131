@@ -21,6 +21,10 @@ export type Entry = {
   known?: boolean;
   goal?: string;
   notes?: string;
+  reports?: string[];
+  archivedReason?: "user" | "source";
+  enrolled?: boolean;
+  enrolledAt?: number;
 };
 export type Result = {
   id: string;
@@ -36,6 +40,11 @@ export type Result = {
   review: string;
   gap: number;
   first: boolean;
+  independent?: boolean;
+  audioPlayed?: boolean;
+  evidenceVersion?: 2;
+  scheduled?: boolean;
+  contentVersion?: string;
 };
 export type Schedule = { due: number; last: number; step: number };
 export type Session = {
@@ -45,6 +54,7 @@ export type Session = {
   started: number;
   scheduled: boolean;
   count: number;
+  draft?: { key: string; answer: string; hint: boolean; revealed: boolean };
 };
 export type State = {
   version: 1;
@@ -55,6 +65,9 @@ export type State = {
   voice: string;
   rate: number;
   session?: Session;
+  pausedScheduled?: Session;
+  exposures?: Record<string, number>;
+  sourceVersion?: string;
 };
 export const empty = (): State => ({
   version: 1,
@@ -90,6 +103,7 @@ export const fields = [
   "case_sensitive",
   "frequency_zipf",
   "frequency_source",
+  "frequency_note",
   "expression_type",
   "news_source",
   "news_title",
@@ -98,6 +112,12 @@ export const fields = [
   "news_excerpt",
   "news_context_vi",
   "news_source_type",
+  "news_media_url",
+  "news_media_start",
+  "news_media_note",
+  "learning_status",
+  "learning_note",
+  "source_fact_index",
 ];
 
 const cefrOrder = ["A1", "A2", "B1", "B2", "C1", "C2"];
@@ -172,7 +192,7 @@ export function parse(text: string): Word[] {
     if (!match) throw Error(`Dòng ${i + 1}: cần định dạng trường: nội dung`);
     if (!fields.includes(match[1]))
       throw Error(`Dòng ${i + 1}: trường không hỗ trợ ${match[1]}`);
-    if (match[1] in current)
+    if (Object.hasOwn(current, match[1]))
       throw Error(`Dòng ${i + 1}: trường ${match[1]} bị lặp`);
     current[match[1]] = match[2];
   });
@@ -191,10 +211,10 @@ export const serialize = (words: Word[]) =>
 export function diff(state: State, words: Word[], origin: string) {
   const incoming = new Set(words.map((w) => w.id));
   return {
-    added: words.filter((w) => !state.entries[w.id]).length,
+    added: words.filter((w) => !Object.hasOwn(state.entries, w.id)).length,
     changed: words.filter(
       (w) =>
-        state.entries[w.id] &&
+        Object.hasOwn(state.entries, w.id) &&
         !(origin === "default" && state.entries[w.id].origin !== origin) &&
         fields.some(
           (field) =>
@@ -204,22 +224,48 @@ export function diff(state: State, words: Word[], origin: string) {
     archived: Object.values(state.entries).filter(
       (e) => e.origin === origin && !e.archived && !incoming.has(e.word.id),
     ).length,
+    revived: words.filter((w) => {
+      const old = Object.hasOwn(state.entries, w.id)
+        ? state.entries[w.id]
+        : undefined;
+      return (
+        old?.origin === origin &&
+        old.archived &&
+        old.archivedReason === "source"
+      );
+    }).length,
   };
 }
 export function merge(state: State, words: Word[], origin: string): State {
   const next = structuredClone(state);
   const ids = new Set(words.map((w) => w.id));
   Object.values(next.entries).forEach((e) => {
-    if (e.origin === origin && !ids.has(e.word.id)) e.archived = true;
+    if (e.origin === origin && !ids.has(e.word.id) && !e.archived) {
+      e.archived = true;
+      e.archivedReason = "source";
+    }
   });
   words.forEach((word) => {
-    const old = next.entries[word.id];
+    if (["__proto__", "constructor", "prototype"].includes(word.id))
+      throw Error("ID mục từ không được hỗ trợ");
+    const old = Object.hasOwn(next.entries, word.id)
+      ? next.entries[word.id]
+      : undefined;
     if (old && old.origin !== origin && origin === "default") return;
+    if (old) {
+      for (let skill = 0; skill < skills.length; skill++)
+        if (contentKey(old.word, skill) !== contentKey(word, skill))
+          delete next.schedules[`${word.id}:${skill}`];
+    }
     next.entries[word.id] = {
       ...old,
       word: { ...word },
       origin,
-      archived: false,
+      // A pre-migration archived entry has no reason: preserve it as a user
+      // choice rather than silently restoring something they hid.
+      archived: !!old?.archived && old.archivedReason !== "source",
+      archivedReason:
+        old?.archived && old.archivedReason !== "source" ? "user" : undefined,
     };
   });
   return next;
@@ -248,9 +294,22 @@ export function cloze(w: Word) {
   }
   return text;
 }
+export function validLearningMeaning(meaning: string): boolean {
+  return (
+    /\p{L}/u.test(meaning || "") &&
+    !/^\s*(?:\(\s*như\s*\)|xem thêm|xem mục|see also|see|→|=>|=)\s+\S/iu.test(
+      meaning,
+    )
+  );
+}
 export const canPractice = (w: Word, skill: number) =>
-  w.content_status !== "reference" &&
-  !!w.meaning_vi?.trim() &&
+  Number.isInteger(skill) &&
+  skill >= 0 &&
+  skill < skills.length &&
+  !["blocked", "lookup", "review"].includes(w.learning_status) &&
+  (!["dictionary", "reference"].includes(w.content_status) ||
+    w.learning_status === "ready") &&
+  validLearningMeaning(w.meaning_vi) &&
   (skill !== 4 ||
     (w.example_type !== "no-cloze" &&
       !!w.example_en &&
@@ -258,6 +317,139 @@ export const canPractice = (w: Word, skill: number) =>
       cloze(w) !== w.example_en));
 export const isSlang = (w: Word) =>
   (w.collections || "").split(",").includes("slang");
+// A change of meaning or teaching context must not reuse mastery or schedules
+// earned for the previous sense. Keep the old results for an honest history.
+export const contentKey = (w: Word, skill = 0) =>
+  JSON.stringify([
+    w.word,
+    w.part_of_speech || "",
+    w.meaning_vi,
+    ...([1, 3, 4].includes(skill)
+      ? [w.accepted_answers || "", w.case_sensitive || ""]
+      : []),
+    ...(skill === 4 ? [w.example_en || "", w.example_vi || ""] : []),
+  ]);
+export function expose(state: State, id: string, time = Date.now()): State {
+  if (!Object.hasOwn(state.entries, id)) return state;
+  return {
+    ...state,
+    exposures: {
+      ...state.exposures,
+      [id]: Math.max(state.exposures?.[id] || 0, time),
+    },
+  };
+}
+export function independence(
+  state: State,
+  id: string,
+  time = Date.now(),
+): boolean {
+  let last = state.exposures?.[id] || 0;
+  for (const r of state.history)
+    if (r.wordId === id) last = Math.max(last, r.time);
+  return !last || time - last >= 86400000;
+}
+export function interleaveQueue<T extends { id: string }>(tasks: T[]): T[] {
+  const groups = new Map<string, T[]>();
+  for (const task of tasks) {
+    const group = groups.get(task.id) || [];
+    group.push(task);
+    groups.set(task.id, group);
+  }
+  const result: T[] = [];
+  for (let round = 0; ; round++) {
+    let added = false;
+    for (const group of groups.values())
+      if (group[round]) {
+        result.push(group[round]);
+        added = true;
+      }
+    if (!added) return result;
+  }
+}
+function enrolledIds(state: State): Set<string> {
+  const ids = new Set(
+    Object.values(state.entries)
+      .filter((e) => e.enrolled)
+      .map((e) => e.word.id),
+  );
+  for (const key of Object.keys(state.schedules))
+    ids.add(key.slice(0, key.lastIndexOf(":")));
+  return ids;
+}
+export function collectFresh(state: State, entries: Entry[]): Entry[] {
+  const enrolled = enrolledIds(state);
+  return entries.filter(
+    (e) =>
+      !e.archived &&
+      !e.known &&
+      !enrolled.has(e.word.id) &&
+      canPractice(e.word, 0) &&
+      !isSlang(e.word),
+  );
+}
+export function pendingScheduledTasks(
+  state: State,
+  entries: Entry[],
+): { id: string; skill: number }[] {
+  const enrolled = enrolledIds(state);
+  const done = new Set(
+    state.history
+      .filter(
+        (r) =>
+          r.scheduled &&
+          (r.skill === 5 || r.method !== "ungraded") &&
+          Object.hasOwn(state.entries, r.wordId) &&
+          r.contentVersion ===
+            contentKey(state.entries[r.wordId].word, r.skill),
+      )
+      .map((r) => `${r.wordId}:${r.skill}`),
+  );
+  const tasks: { id: string; skill: number }[] = [];
+  for (const e of entries) {
+    if (!enrolled.has(e.word.id) || e.archived || e.known) continue;
+    for (let skill = 0; skill < skills.length; skill++) {
+      if (e.goal === "recognition" && ![0, 2].includes(skill)) continue;
+      const key = `${e.word.id}:${skill}`;
+      if (
+        canPractice(e.word, skill) &&
+        !Object.hasOwn(state.schedules, key) &&
+        !done.has(key)
+      )
+        tasks.push({ id: e.word.id, skill });
+    }
+  }
+  return interleaveQueue(tasks);
+}
+export function selectFreePractice(
+  state: State,
+  entries: Entry[],
+  limit = 20,
+): Entry[] {
+  const latest = new Map<string, number>();
+  const skillLatest = new Map<string, Result>();
+  const weak = new Set<string>();
+  for (const r of state.history) {
+    latest.set(r.wordId, Math.max(latest.get(r.wordId) || 0, r.time));
+    const key = `${r.wordId}:${r.skill}`;
+    if (r.method !== "ungraded" && r.time >= (skillLatest.get(key)?.time || 0))
+      skillLatest.set(key, r);
+  }
+  for (const r of skillLatest.values())
+    if (!r.correct || r.hint) weak.add(r.wordId);
+  return entries
+    .filter((e) => !e.archived)
+    .slice()
+    .sort((a, b) => {
+      const aLast = latest.get(a.word.id) || 0,
+        bLast = latest.get(b.word.id) || 0;
+      if (!aLast || !bLast) return aLast - bLast;
+      if (weak.has(a.word.id) !== weak.has(b.word.id))
+        return weak.has(a.word.id) ? -1 : 1;
+      return aLast - bLast;
+    })
+    .slice(0, Math.max(0, Math.floor(limit)));
+}
 export const day = (n: number) => {
   const d = new Date(n);
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
@@ -276,8 +468,19 @@ export function strength(state: State, id: string, skill: number) {
     groupedHistory.set(state, groups);
   }
   const h = groups.get(id + ":" + skill) || [];
+  const currentContent = Object.hasOwn(state.entries, id)
+    ? contentKey(state.entries[id].word, skill)
+    : undefined;
   const clean = h.filter(
-    (r) => r.correct && !r.hint && r.method === "rule" && r.first,
+    (r) =>
+      r.correct &&
+      !r.hint &&
+      r.method === "rule" &&
+      r.first &&
+      r.evidenceVersion === 2 &&
+      r.independent === true &&
+      r.contentVersion === currentContent &&
+      (![2, 3].includes(skill) || r.audioPlayed === true),
   );
   if (!h.length) return "Chưa đủ dữ liệu";
   if (h.slice(-2).some((r) => !r.correct && r.method !== "ungraded"))
@@ -291,15 +494,59 @@ export function strength(state: State, id: string, skill: number) {
 }
 export function record(state: State, r: Result, scheduled: boolean) {
   if (state.history.some((x) => x.id === r.id)) return state;
+  if (!Object.hasOwn(state.entries, r.wordId)) return state;
+  if (!canPractice(state.entries[r.wordId].word, r.skill)) return state;
+  const version = contentKey(state.entries[r.wordId].word, r.skill);
+  let previous = 0;
+  for (const old of state.history)
+    if (
+      old.wordId === r.wordId &&
+      old.skill === r.skill &&
+      old.contentVersion === version &&
+      old.time <= r.time
+    )
+      previous = Math.max(previous, old.time);
+  const audioUnavailable =
+    r.evidenceVersion === 2 &&
+    [2, 3].includes(r.skill) &&
+    r.audioPlayed !== true;
+  r = {
+    ...r,
+    scheduled,
+    contentVersion: version,
+    gap: previous ? r.time - previous : 0,
+    ...(r.evidenceVersion === 2
+      ? {
+          independent:
+            r.independent === true &&
+            !r.hint &&
+            r.first &&
+            independence(state, r.wordId, r.time),
+        }
+      : {}),
+    ...(audioUnavailable
+      ? { correct: false, method: "ungraded" as const, independent: false }
+      : {}),
+  };
   const next: State = {
     ...state,
     entries: { ...state.entries },
     history: [...state.history, r],
     schedules: { ...state.schedules },
+    exposures: {
+      ...state.exposures,
+      [r.wordId]: Math.max(state.exposures?.[r.wordId] || 0, r.time),
+    },
     session: state.session
       ? { ...state.session, queue: [...state.session.queue] }
       : undefined,
   };
+  if (scheduled)
+    next.entries[r.wordId] = {
+      ...next.entries[r.wordId],
+      enrolled: true,
+      enrolledAt: next.entries[r.wordId].enrolledAt ?? r.time,
+    };
   const key = `${r.wordId}:${r.skill}`;
   if (
     scheduled &&
@@ -307,34 +554,28 @@ export function record(state: State, r: Result, scheduled: boolean) {
     !next.history.slice(0, -1).some((x) => x.review === r.review)
   ) {
     const old = next.schedules[key];
-    const step = r.correct && !r.hint ? Math.min((old?.step ?? -1) + 1, 4) : 0;
+    const independentSuccess =
+      r.correct &&
+      !r.hint &&
+      (r.evidenceVersion !== 2 || r.independent === true);
+    const step = independentSuccess ? Math.min((old?.step ?? -1) + 1, 4) : 0;
     const due = new Date(r.time);
     due.setDate(due.getDate() + (r.correct ? [1, 3, 7, 14, 30][step] : 1));
     next.schedules[key] = { last: r.time, due: due.getTime(), step };
   }
   return next;
 }
-let db: IDBDatabase;
+export { subscribeStoredState as subscribeStorage } from "./storage";
+import { readStoredState, saveStoredState } from "./storage";
 export async function read(): Promise<State> {
-  db = await new Promise((resolve, reject) => {
-    const req = indexedDB.open("lexi-learning", 1);
-    req.onupgradeneeded = () => req.result.createObjectStore("state");
-    req.onsuccess = () => resolve(req.result);
-    req.onerror = () => reject(req.error);
-  });
-  return new Promise((resolve, reject) => {
-    const req = db.transaction("state").objectStore("state").get("main");
-    req.onsuccess = () => resolve(req.result || empty());
-    req.onerror = () => reject(req.error);
-  });
+  return readStoredState(empty);
 }
-export async function save(state: State) {
-  return new Promise<void>((resolve, reject) => {
-    const tx = db.transaction("state", "readwrite");
-    tx.objectStore("state").put(state, "main");
-    tx.oncomplete = () => resolve();
-    tx.onerror = () => reject(tx.error);
-  });
+export async function save(
+  state: State,
+  base?: State,
+  options?: { replace?: boolean },
+): Promise<State> {
+  return saveStoredState(state, base, options);
 }
 export function validateBackup(x: unknown): State {
   const s = x as State;
@@ -347,15 +588,27 @@ export function validateBackup(x: unknown): State {
     !Array.isArray(s.history) ||
     !s.schedules ||
     typeof s.schedules !== "object" ||
+    Array.isArray(s.schedules) ||
     !Number.isInteger(s.daily) ||
     s.daily < 1 ||
     s.daily > 30 ||
     typeof s.voice !== "string" ||
     !Number.isFinite(s.rate) ||
     s.rate < 0.1 ||
-    s.rate > 2
+    s.rate > 2 ||
+    (s.sourceVersion !== undefined && typeof s.sourceVersion !== "string") ||
+    (s.exposures !== undefined &&
+      (!s.exposures ||
+        typeof s.exposures !== "object" ||
+        Array.isArray(s.exposures)))
   )
     throw Error("Bản sao lưu không hợp lệ.");
+  if (
+    [s.session, s.pausedScheduled].some(
+      (v) => v !== undefined && (!v || typeof v !== "object"),
+    )
+  )
+    throw Error("Phiên học sao lưu không hợp lệ.");
   for (const [id, e] of Object.entries(s.entries)) {
     if (
       !e?.word ||
@@ -363,6 +616,17 @@ export function validateBackup(x: unknown): State {
       typeof e.origin !== "string" ||
       typeof e.archived !== "boolean" ||
       (e.notes !== undefined && typeof e.notes !== "string") ||
+      (e.known !== undefined && typeof e.known !== "boolean") ||
+      (e.goal !== undefined &&
+        !["recognition", "active", "all"].includes(e.goal)) ||
+      (e.reports !== undefined &&
+        (!Array.isArray(e.reports) ||
+          e.reports.some((v) => typeof v !== "string"))) ||
+      (e.archivedReason !== undefined &&
+        !["user", "source"].includes(e.archivedReason)) ||
+      (e.enrolled !== undefined && typeof e.enrolled !== "boolean") ||
+      (e.enrolledAt !== undefined &&
+        (!Number.isFinite(e.enrolledAt) || e.enrolledAt < 0)) ||
       Object.values(e.word).some((v) => typeof v !== "string")
     )
       throw Error("Mục từ sao lưu không hợp lệ.");
@@ -373,9 +637,12 @@ export function validateBackup(x: unknown): State {
     if (
       !r ||
       typeof r.id !== "string" ||
+      !r.id ||
       ids.has(r.id) ||
-      !s.entries[r.wordId] ||
+      typeof r.wordId !== "string" ||
+      !Object.hasOwn(s.entries, r.wordId) ||
       !Number.isFinite(r.time) ||
+      r.time < 0 ||
       !Number.isInteger(r.skill) ||
       r.skill < 0 ||
       r.skill > 5 ||
@@ -387,7 +654,18 @@ export function validateBackup(x: unknown): State {
       typeof r.session !== "string" ||
       typeof r.review !== "string" ||
       !Number.isFinite(r.elapsed) ||
-      !Number.isFinite(r.gap)
+      r.elapsed < 0 ||
+      !Number.isFinite(r.gap) ||
+      r.gap < 0 ||
+      (r.independent !== undefined && typeof r.independent !== "boolean") ||
+      (r.audioPlayed !== undefined && typeof r.audioPlayed !== "boolean") ||
+      (r.evidenceVersion !== undefined && r.evidenceVersion !== 2) ||
+      (r.evidenceVersion === 2 && typeof r.independent !== "boolean") ||
+      (r.evidenceVersion === 2 &&
+        [2, 3].includes(r.skill) &&
+        typeof r.audioPlayed !== "boolean") ||
+      (r.scheduled !== undefined && typeof r.scheduled !== "boolean") ||
+      (r.contentVersion !== undefined && typeof r.contentVersion !== "string")
     )
       throw Error("Lịch sử sao lưu không hợp lệ.");
     ids.add(r.id);
@@ -395,18 +673,25 @@ export function validateBackup(x: unknown): State {
   for (const [key, v] of Object.entries(s.schedules)) {
     const cut = key.lastIndexOf(":");
     if (
-      !s.entries[key.slice(0, cut)] ||
+      !Object.hasOwn(s.entries, key.slice(0, cut)) ||
       !/^[0-5]$/.test(key.slice(cut + 1)) ||
+      !v ||
       !Number.isFinite(v.due) ||
       !Number.isFinite(v.last) ||
+      v.last < 0 ||
+      v.due < v.last ||
       !Number.isInteger(v.step) ||
       v.step < 0 ||
       v.step > 4
     )
       throw Error("Lịch ôn không hợp lệ.");
   }
-  if (s.session) {
-    const v = s.session;
+  for (const [id, time] of Object.entries(s.exposures || {})) {
+    if (!Object.hasOwn(s.entries, id) || !Number.isFinite(time) || time < 0)
+      throw Error("Lần tiếp xúc sao lưu không hợp lệ.");
+  }
+  for (const v of [s.session, s.pausedScheduled]) {
+    if (!v) continue;
     if (
       typeof v.id !== "string" ||
       !Array.isArray(v.queue) ||
@@ -415,9 +700,21 @@ export function validateBackup(x: unknown): State {
       v.index >= v.queue.length ||
       typeof v.scheduled !== "boolean" ||
       !Number.isFinite(v.started) ||
+      v.started < 0 ||
+      !Number.isInteger(v.count) ||
+      v.count < 0 ||
+      v.count > v.queue.length ||
+      (v === s.pausedScheduled && !v.scheduled) ||
+      (v.draft !== undefined &&
+        (!v.draft ||
+          typeof v.draft.key !== "string" ||
+          typeof v.draft.answer !== "string" ||
+          typeof v.draft.hint !== "boolean" ||
+          typeof v.draft.revealed !== "boolean")) ||
       v.queue.some(
         (t) =>
-          !s.entries[t.id] ||
+          !t ||
+          !Object.hasOwn(s.entries, t.id) ||
           !Number.isInteger(t.skill) ||
           t.skill < 0 ||
           t.skill > 5 ||

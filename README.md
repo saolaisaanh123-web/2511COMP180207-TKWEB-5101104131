@@ -15,7 +15,7 @@ npm run test:production
 npm run preview
 ```
 
-Kiểm thử trình duyệt: `npm run test:e2e`. Cấu hình mặc định sử dụng `/usr/bin/chromium` trong môi trường đám mây. Trên máy khác, cài Chromium rồi đặt `CHROMIUM_PATH` thành đường dẫn trình duyệt. Có thể dùng Playwright Chromium sau khi `npx playwright install chromium` và chỉ định đường dẫn tương ứng. Không cần trình duyệt để chạy unit test/build.
+Kiểm thử trình duyệt: `npm run test:e2e`. Cấu hình ưu tiên `CHROMIUM_PATH`, sau đó Chromium hệ thống `/usr/bin/chromium`, cuối cùng trình duyệt đã cài bằng Playwright. Trên máy khác, cài Chromium rồi đặt `CHROMIUM_PATH` thành đường dẫn trình duyệt. Có thể dùng Playwright Chromium sau khi `npx playwright install chromium` và chỉ định đường dẫn tương ứng. Không cần trình duyệt để chạy unit test/build.
 
 ## Thêm và sửa từ mà không sửa code
 
@@ -27,8 +27,9 @@ Các trường bắt buộc: `id`, `word`, `meaning_vi`, `example_en`, `example_
 - Bộ từ: `foundation`, `ielts`, `personal`; một mục có thể có nhiều nhãn.
 - Kho mặc định gồm **toàn bộ 4.955 đầu từ/cách viết trong hai PDF Oxford 3000/5000** (5.323 dòng nguồn/từ loại/CEFR), cộng **100 mục nghĩa cụm động từ** và **107 mục Slang/thành ngữ/khẩu ngữ**; tổng 5.162 bản ghi. Có 27 thành ngữ đối chiếu với bài báo/chương trình Mỹ. Phân biệt nội dung đã rà soát, nghĩa nhập từ từ điển mở chưa rà soát từng mục, và 1 mục chỉ tra cứu có xung đột nguồn. Không gán mọi nghĩa/âm thanh cho Oxford. Xem [SOURCES.md](public/data/SOURCES.md) và giấy phép dữ liệu nhập.
 - Các trường mở rộng: `content_status` (`reviewed`, `dictionary`, `reference`), `example_type`, `register`, `region`, `case_sensitive`. Mục nhập thông thường vẫn bắt buộc nghĩa và ví dụ. `dictionary` cho phép thiếu ví dụ khi nguồn không cung cấp, phải có nghĩa và nguồn; `reference` chỉ tra cứu và bắt buộc ID/từ/nguồn, không tạo bài kiểm tra. Không dùng giá trị giả để qua kiểm tra.
+- Mặc định **674 mục được phép học**; **4.488 mục chỉ tra cứu** vẫn được giữ trong Kho từ. `learning_status: ready` cho phép dùng trong bài học; `lookup` chặn bài học. Không tự coi toàn bộ danh sách Oxford là nội dung đã rà. Người dùng có thể đối chiếu, bổ sung ví dụ, xác nhận để học và lưu bản cá nhân trong trang chi tiết.
 - Kho từ phân trang 60 mục, Slang/cụm động từ phân trang 24 mục. Slang có trang riêng và không tự chen vào kế hoạch từ mới Oxford. Cụm từ không được gán CEFR khi chưa có căn cứ.
-- Kho từ và danh sách từ mới xếp theo CEFR A1–C2, rồi tần suất giảm dần trong cùng trình độ, rồi A–Z. Mục chưa có CEFR nằm cuối; chưa có điểm nằm sau mục có điểm trong cùng trình độ. `frequency_zipf` và `frequency_source` ghi ước lượng cách viết tổng hợp từ wordfreq 3.1.1 cho 4.925 mục; không phân biệt nghĩa/từ loại/chữ hoa, không phải điểm Oxford hay tần suất riêng của thời sự Mỹ. Xem [phương pháp và giấy phép](data/frequency/README.md).
+- Kho từ và danh sách từ mới xếp theo CEFR A1–C2, rồi tần suất giảm dần trong cùng trình độ, rồi A–Z. Mục chưa có CEFR nằm cuối; chưa có điểm nằm sau mục có điểm trong cùng trình độ. `frequency_zipf` và `frequency_source` ghi ước lượng cách viết tổng hợp từ wordfreq 3.1.1 cho 4.921 mục; không phân biệt nghĩa/từ loại/chữ hoa, không phải điểm Oxford hay tần suất riêng của thời sự Mỹ. Xem [phương pháp và giấy phép](data/frequency/README.md).
 - Trong Slang, lọc **Loại cách nói → Thành ngữ** và **Nguồn ngữ cảnh → Bản tin / phỏng vấn** để tìm các cụm dài. `expression_type` phân biệt `idiom`, `slang`, `colloquialism`, `abbreviation`, `term`. Các trường `news_source`, `news_title`, `news_url`, `news_date`, `news_excerpt`, `news_context_vi`, `news_source_type` lưu ngữ cảnh có nguồn; `news_source_type` là `reporting` hoặc `language-lesson`, không gộp bài dạy tiếng Anh thành tin thời sự. Trích dẫn và ví dụ luyện tập được trình bày riêng. Xem [dấu vết đối chiếu 27 bài nguồn](public/data/news-provenance.json). Không tự tải tin mới khi người học mở web.
 - Sửa file repository rồi triển khai lại. Chọn **Kho từ → Cập nhật kho mặc định** để xem trước và áp dụng phiên bản mới. Khi tải lại, ứng dụng báo nếu có bản mới và cho xem trước; không tự thay thế bản chỉnh sửa cá nhân.
 - Hoặc chọn **Nhập .txt**, kiểm tra số thêm/sửa/lưu trữ rồi xác nhận. File lỗi bị từ chối toàn bộ với số dòng/mục; không ghi đè im lặng.
@@ -41,13 +42,13 @@ Các trường bắt buộc: `id`, `word`, `meaning_vi`, `example_en`, `example_
 
 Mỗi kỹ năng có lịch riêng: 1–3–7–14–30 ngày, sai quay về 1 ngày. Lượt dùng hỗ trợ không tăng bậc. Quên được hỏi lại sau tối đa ba câu xen kẽ nếu hàng đợi đủ dài; nếu không đủ thì nằm cuối hàng đợi. Ôn quá hạn không tự tính là quên. Ngày dùng múi giờ địa phương của trình duyệt.
 
-Phiên học và các lượt đã gửi được lưu trong IndexedDB. Tải lại và tiếp tục không gửi lại kết quả đã lưu. Một lần ôn chỉ cập nhật lịch một lần; lượt luyện tự do lưu bằng chứng nhưng không thay đổi lịch. Mục tự đánh dấu đã biết được bỏ khỏi danh sách từ mới, không coi là đã kiểm tra.
+Phiên học và các lượt đã gửi được lưu trong IndexedDB. Tải lại và tiếp tục không gửi lại kết quả đã lưu. Một lần ôn chỉ cập nhật lịch một lần; lượt luyện tự do lưu bằng chứng nhưng không thay đổi lịch. Mục tự đánh dấu đã biết được bỏ khỏi danh sách từ mới, không coi là đã kiểm tra. Luyện tự do không loại từ khỏi lần giới thiệu theo lịch; các phiên ôn đang dở được giữ riêng khi chuyển sang luyện tự do. Câu đang gõ được lưu nháp và phục hồi; kết quả đã gửi không bị gửi trùng.
 
 Sáu kỹ năng được lưu riêng. Hiểu nghĩa và nghe nhớ nghĩa dùng tự đánh giá **Quên / Nhớ khó / Nhớ rõ**; tự đánh giá không được xem như kiểm tra khách quan. Nhớ để viết, nghe chính tả, điền ngữ cảnh được chấm theo đáp án khai báo, bỏ khoảng trắng thừa và không phân biệt hoa thường. Câu tự viết chỉ được lưu, **chưa được chấm**; ứng dụng không đánh giá ngữ pháp/phát âm hoặc giả lập AI.
 
-“Nhớ khá vững” cho từng kỹ năng cần ít nhất 3 lần kiểm tra đúng lần đầu, không hỗ trợ, ở 3 ngày khác nhau, có một lần cách lần trước ít nhất 7 ngày. Kỹ năng chỉ tự đánh giá chưa đủ điều kiện này. Đây là quy tắc của ứng dụng, không phải chứng nhận ngôn ngữ; không quy đổi số từ thành band IELTS. Chỉ số luôn kèm số lượt làm cơ sở; chưa có dữ liệu không tạo kết quả giả.
+“Nhớ khá vững” cho từng kỹ năng cần ít nhất 3 lần kiểm tra đúng lần đầu, không hỗ trợ, ở 3 ngày khác nhau, có một lần cách lần trước ít nhất 7 ngày, và chưa tiếp xúc lại đáp án ở bất kỳ kỹ năng nào trong 24 giờ trước. Kết quả phải khớp nghĩa hiện tại; dữ liệu lịch sử cũ vẫn giữ nhưng chưa tự được coi là bằng chứng độc lập theo quy tắc mới. Kỹ năng chỉ tự đánh giá chưa đủ điều kiện này. Đây là quy tắc của ứng dụng, không phải chứng nhận ngôn ngữ; không quy đổi số từ thành band IELTS. Chỉ số luôn kèm số lượt làm cơ sở; chưa có dữ liệu không tạo kết quả giả.
 
-Phát âm dùng URL nếu có, giọng tổng hợp tiếng Anh của thiết bị là dự phòng, chỉ phát khi bấm. Có ưu tiên Anh–Anh/Anh–Mỹ và tốc độ. Giọng thật phụ thuộc hệ điều hành; không có giọng sẽ thông báo và cho bỏ qua bài nghe mà không lưu điểm.
+Bài nghe chỉ cho ghi nhận sau khi âm thanh kết thúc thành công; lỗi hoặc chưa phát không tạo điểm nghe. Phát âm dùng URL nếu có, giọng tổng hợp tiếng Anh của thiết bị là dự phòng, chỉ phát khi bấm. Có ưu tiên Anh–Anh/Anh–Mỹ và tốc độ. Giọng thật phụ thuộc hệ điều hành; không có giọng sẽ thông báo và cho bỏ qua bài nghe mà không lưu điểm.
 
 ## Sao lưu
 
@@ -57,6 +58,8 @@ Khôi phục JSON có xem trước và hai cách:
 
 - **Hợp nhất**: lịch sử gộp theo ID lượt, không cộng trùng; mục và lịch trùng ID giữ bản hiện tại; giữ phiên hiện tại.
 - **Thay thế**: ghi đè toàn bộ sau xác nhận rõ ràng. Hãy tải bản sao hiện tại trước.
+
+IndexedDB v2 tách nội dung từ vựng khỏi tiến độ, nâng cấp từ dữ liệu v1 mà không xóa lịch sử. Các tab cùng thiết bị đồng bộ thay đổi; giao dịch phát hiện xung đột cùng phiên và từ chối ghi đè thay vì mất tiến độ. Nếu còn tab chạy bản rất cũ giữ kết nối v1, đóng tab đó rồi tải lại để nâng cấp nơi lưu.
 
 Dữ liệu chưa tự đồng bộ giữa thiết bị và có thể mất khi xóa dữ liệu trình duyệt, dùng chế độ riêng tư hoặc thay đổi địa chỉ website. Nên sao lưu thường xuyên và trước khi đổi miền. Font được đóng gói cục bộ, không yêu cầu Google Fonts.
 
@@ -73,7 +76,8 @@ Vite dùng `base: './'`; nội dung lấy theo `import.meta.env.BASE_URL`. Đi�
 ## Cấu trúc
 
 - `public/data/vocabulary.txt`: toàn bộ dữ liệu từ vựng mẫu, độc lập mã nguồn.
-- `src/core.ts`: parser/serializer, hợp nhất, chấm đáp án, lịch ôn, đánh giá bằng chứng, kiểm tra backup và IndexedDB.
+- `src/core.ts`: parser/serializer, hợp nhất, chấm đáp án, lịch ôn, đánh giá bằng chứng và kiểm tra backup.
+- `src/storage.ts`: giao dịch IndexedDB v2, nâng cấp v1, tách nội dung/tiến độ và chống ghi đè giữa tab.
 - `src/main.tsx`: bốn trang chính, phiên học, âm thanh, nhập/xuất, các hộp thoại.
 - `src/DictionaryEntry.tsx`: trình bày mục từ kiểu từ điển, phân biệt nguồn Oxford và phần biên soạn.
 - `src/style.css`: thiết kế responsive, thanh bên desktop/thanh dưới mobile.
@@ -91,3 +95,22 @@ Vite dùng `base: './'`; nội dung lấy theo `import.meta.env.BASE_URL`. Đi�
 `npm run test:production` kiểm tra bản `dist` bằng Chromium trên máy chủ tĩnh ở cả đường dẫn gốc và đường dẫn con tương tự GitHub Pages; kiểm tra kho từ, tải lại và thông báo khi JavaScript không tải được. Workflow chạy kiểm tra này trước khi xuất bản. Nếu gặp lỗi ứng dụng, trang hiện thông báo khôi phục thay vì khoảng trắng và không xóa dữ liệu học.
 
 `npm run test:e2e` bao gồm phân trang kho hơn 5.000 mục, trang Slang/cụm động từ, cập nhật giữ tiến độ và bản sửa cá nhân. Các mục không có ngữ liệu không được tạo bài điền câu; mạo từ gộp a/an không tạo bài điền thiếu ngữ cảnh. Những từ phân biệt hoa/thường như May/may dùng quy tắc riêng khi chấm.
+
+## Kiểm tra và tạo lại dữ liệu
+
+`public/data/vocabulary.txt` là bản nội dung chuẩn có thể sửa trực tiếp. Build và dev tự tạo `vocabulary-version.json`; trình duyệt kiểm tra hash nhỏ trước khi tải lại toàn bộ kho. Tải lại hoặc cập nhật có xem trước, không áp dụng nguồn mới lên bản cá nhân im lặng.
+
+`npm run test:data` dùng Python 3 thư viện chuẩn để kiểm tra các lỗi dữ liệu đã sửa, phạm vi và hash nguồn. CI chạy kiểm tra này, unit, toàn bộ E2E và production trước triển khai. Python không cần để chạy ứng dụng hoặc build thông thường.
+
+38 mục đã được sửa bằng `data/authoring/content-review-2026-10.txt`, gồm nghĩa cơ bản, bản dịch/ví dụ và ghép đúng homograph `lie` (nói dối, B1). Xem `public/data/content-review-provenance.json`; không tuyên bố đã rà thủ công toàn bộ 5.162 mục.
+
+Các lệnh tạo dữ liệu mặc định chỉ xuất xem trước ra `/tmp`, không ghi đè TXT:
+
+```sh
+python3 scripts/apply-content-review.py
+python3 scripts/build-full-corpus.py /workspace/scratch
+```
+
+Chỉ thêm `--write` sau khi duyệt diff. Công cụ giữ nội dung, ID, trường bổ sung và sửa tay của mọi mục hiện có. Full rebuild cần các extract nguồn đã đối chiếu ngoài checkout; phát triển/build web thông thường chỉ cần TXT đã commit.
+
+Chín mục thành ngữ có liên kết video PBS do bài nguồn khai báo. Chưa xác minh phát trực tiếp hoặc timestamp của cụm từ, nên không tự tạo mốc thời gian hay biến liên kết đó thành âm thanh bài kiểm tra. Giao diện đã kiểm tra 320–430 px, 768 px và xoay ngang 844×390 bằng Chromium; chưa chứng nhận mọi thiết bị hay Safari iOS thật.

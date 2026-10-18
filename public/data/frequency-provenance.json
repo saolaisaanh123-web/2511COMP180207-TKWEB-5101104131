@@ -23,8 +23,8 @@
     "lookup": "Exact casefolded headword lookup in get_frequency_dict; no token-product phrase estimates, lemmatization, synonym substitution or estimated missing values.",
     "metric": "Zipf = 9 + log10(proportion), rounded to 0.01 as quantized by the source. Higher means more frequent; ties have no additional frequency distinction.",
     "unknown": "Empty frequency_zipf and frequency_source; never zero or an invented score.",
-    "case": "Case-insensitive spelling-level estimate: May/may, March/march and IT/it share the spelling frequency. This is not a proper-name or abbreviation-specific frequency.",
-    "scope": "Oxford headwords only. Unscored multiword expressions, alternate spellings in one record, or exact forms absent from the source stay unscored."
+    "case": "Casefolded spelling frequency. Known case/lemma-sense conflations IT, May, March and found are explicitly unscored; other values still do not distinguish senses or POS.",
+    "scope": "Exact Oxford spellings only, excluding multiword/alternative forms, missing source forms and explicitly documented known conflations."
   },
   "limitations": [
     "Frequency belongs to a spelling, not a particular meaning, grammatical part of speech, or inflectional lemma family.",
@@ -39,37 +39,16 @@
   },
   "coverage": {
     "records": 5162,
-    "scored": 4925,
-    "unscored": 237,
+    "scored": 4921,
+    "unscored": 241,
     "unscoredByReason": {
       "no_exact_spelling_in_pinned_table": 20,
       "multiword_or_alternatives_not_an_observed_phrase_frequency": 10,
+      "known_case_or_lemma_sense_conflation": 4,
       "outside_oxford_headwords": 207
     },
-    "caseNormalizedScoredHeadwords": 27,
-    "caseConflationGroupsPresentInApp": [
-      {
-        "lookup": "it",
-        "headwords": [
-          "IT",
-          "it"
-        ]
-      },
-      {
-        "lookup": "march",
-        "headwords": [
-          "March",
-          "march"
-        ]
-      },
-      {
-        "lookup": "may",
-        "headwords": [
-          "May",
-          "may"
-        ]
-      }
-    ]
+    "caseNormalizedScoredHeadwords": 24,
+    "caseConflationGroupsPresentInApp": []
   },
   "caseNormalizedScoredHeadwords": [
     {
@@ -123,11 +102,6 @@
       "lookup": "id"
     },
     {
-      "id": "ox-f415bf7b07a9b2-01",
-      "word": "IT",
-      "lookup": "it"
-    },
-    {
       "id": "ox-37082e68df858e-01",
       "word": "January",
       "lookup": "january"
@@ -141,16 +115,6 @@
       "id": "ox-d5808c0e0a4798-01",
       "word": "June",
       "lookup": "june"
-    },
-    {
-      "id": "ox-9d95a2cf0d7180-01",
-      "word": "March",
-      "lookup": "march"
-    },
-    {
-      "id": "ox-8c78fe5b993648-01",
-      "word": "May",
-      "lookup": "may"
     },
     {
       "id": "ox-6a00dfc1dc867e-01",
@@ -245,6 +209,12 @@
       "reason": "no_exact_spelling_in_pinned_table"
     },
     {
+      "id": "ox-bcc649cfdb8cc5-01",
+      "word": "found",
+      "reason": "known_case_or_lemma_sense_conflation",
+      "note": "Không xếp hạng: tần suất cách viết found không tách nghĩa thành lập khỏi quá khứ hoặc phân từ của find."
+    },
+    {
       "id": "ox-612546d7f1fb07-01",
       "word": "full-time",
       "reason": "no_exact_spelling_in_pinned_table"
@@ -263,6 +233,12 @@
       "id": "ox-e971c330aab874-01",
       "word": "ice cream",
       "reason": "multiword_or_alternatives_not_an_observed_phrase_frequency"
+    },
+    {
+      "id": "ox-f415bf7b07a9b2-01",
+      "word": "IT",
+      "reason": "known_case_or_lemma_sense_conflation",
+      "note": "Không xếp hạng: dữ liệu phân biệt chữ hoa chưa có; điểm của it chủ yếu phản ánh đại từ, không riêng ngành công nghệ thông tin."
     },
     {
       "id": "ox-06d65378901e35-01",
@@ -293,6 +269,18 @@
       "id": "ox-7dbbcc687ee64f-01",
       "word": "make-up",
       "reason": "no_exact_spelling_in_pinned_table"
+    },
+    {
+      "id": "ox-9d95a2cf0d7180-01",
+      "word": "March",
+      "reason": "known_case_or_lemma_sense_conflation",
+      "note": "Không xếp hạng: tần suất cách viết march không tách tháng Ba khỏi động từ hoặc danh từ march."
+    },
+    {
+      "id": "ox-8c78fe5b993648-01",
+      "word": "May",
+      "reason": "known_case_or_lemma_sense_conflation",
+      "note": "Không xếp hạng: tần suất cách viết may không tách tháng Năm khỏi trợ động từ may."
     },
     {
       "id": "ox-b032a8abd93a9c-01",
@@ -1398,5 +1386,28 @@
   "outputAfterAttachingMetadata": {
     "filename": "vocabulary.txt",
     "sha256": "8ced54ea9f49e335cb21a42a8cb6924a7eef74401d69af2af787a141c0557c40"
-  }
+  },
+  "knownConflationExclusions": [
+    {
+      "word": "IT",
+      "note": "Không xếp hạng: dữ liệu phân biệt chữ hoa chưa có; điểm của it chủ yếu phản ánh đại từ, không riêng ngành công nghệ thông tin."
+    },
+    {
+      "word": "May",
+      "note": "Không xếp hạng: tần suất cách viết may không tách tháng Năm khỏi trợ động từ may."
+    },
+    {
+      "word": "March",
+      "note": "Không xếp hạng: tần suất cách viết march không tách tháng Ba khỏi động từ hoặc danh từ march."
+    },
+    {
+      "word": "found",
+      "note": "Không xếp hạng: tần suất cách viết found không tách nghĩa thành lập khỏi quá khứ hoặc phân từ của find."
+    }
+  ],
+  "currentCanonicalVocabulary": {
+    "filename": "vocabulary.txt",
+    "sha256": "420e5cf8eb072e6db069a79cb9c851c172ea60b232e79ee5f999b4cbe1687521"
+  },
+  "historicalExportNote": "inputBeforeAttachingMetadata and outputAfterAttachingMetadata describe the original pinned frequency export, before later editorial corrections; currentCanonicalVocabulary identifies the current canonical TXT."
 }

@@ -1,0 +1,263 @@
+{
+  "reviewId": "2026-10-learning-quality",
+  "date": "2026-10-18",
+  "method": "Targeted editorial review of audit findings. Definitions and bilingual practice examples are original app-authored content. Oxford sourceFactIndex identifies the exact pinned headword/POS/homograph fact, not publisher approval of the authored definition.",
+  "overlay": "data/authoring/content-review-2026-10.txt",
+  "overlaySha256": "85577b9ab62aa1ed2090dee3ad12bbbfc18daf4edd900e23012605d23d96e9b5",
+  "canonicalVocabularySha256": "420e5cf8eb072e6db069a79cb9c851c172ea60b232e79ee5f999b4cbe1687521",
+  "reviewedCorrections": [
+    {
+      "id": "ox-f86b1f62a85542-01",
+      "word": "should",
+      "sourceFactIndex": 686,
+      "meaningVi": "nên; dùng để đưa ra lời khuyên"
+    },
+    {
+      "id": "ox-9523d9fbe79bcf-01",
+      "word": "yesterday",
+      "sourceFactIndex": 895,
+      "meaningVi": "hôm qua"
+    },
+    {
+      "id": "ox-bc16f5825a9daf-01",
+      "word": "will",
+      "sourceFactIndex": 873,
+      "meaningVi": "sẽ; dùng để nói một dự đoán hoặc quyết định về tương lai"
+    },
+    {
+      "id": "ox-7d72fa8065e24a-01",
+      "word": "jail",
+      "sourceFactIndex": 3666,
+      "meaningVi": "nhà tù; nơi giam giữ người theo quyết định pháp luật"
+    },
+    {
+      "id": "ox-cac787df74af31-01",
+      "word": "consist",
+      "sourceFactIndex": 1917,
+      "meaningVi": "gồm có; được cấu thành từ"
+    },
+    {
+      "id": "ox-9bf86920ceaf83-01",
+      "word": "characterize",
+      "sourceFactIndex": 4186,
+      "meaningVi": "là đặc trưng của; tạo nên đặc điểm nổi bật của"
+    },
+    {
+      "id": "ox-be385d45dcaf7b-01",
+      "word": "cite",
+      "sourceFactIndex": 2681,
+      "meaningVi": "trích dẫn hoặc dẫn một nguồn làm bằng chứng"
+    },
+    {
+      "id": "ox-d80c9bf910f144-01",
+      "word": "address",
+      "sourceFactIndex": 9,
+      "meaningVi": "địa chỉ; thông tin xác định nơi ở hoặc nơi nhận thư"
+    },
+    {
+      "id": "ox-d0607f7ad2628b-01",
+      "word": "film",
+      "sourceFactIndex": 282,
+      "meaningVi": "bộ phim"
+    },
+    {
+      "id": "ox-28720365c5e747-01",
+      "word": "top",
+      "sourceFactIndex": 1701,
+      "meaningVi": "phần trên cùng; đỉnh của một vật hoặc địa điểm"
+    },
+    {
+      "id": "ox-3379feb6ae9fed-01",
+      "word": "guy",
+      "sourceFactIndex": 1252,
+      "meaningVi": "anh chàng; người đàn ông (cách nói thân mật)"
+    },
+    {
+      "id": "ox-5d5766cf2d7870-01",
+      "word": "whole",
+      "sourceFactIndex": 1754,
+      "meaningVi": "toàn bộ; trọn vẹn, không thiếu phần nào"
+    },
+    {
+      "id": "ox-f3d1701e1d575e-01",
+      "word": "battery",
+      "sourceFactIndex": 1834,
+      "meaningVi": "pin hoặc ắc quy; thiết bị cung cấp điện"
+    },
+    {
+      "id": "ox-1562206543da76-01",
+      "word": "staff",
+      "sourceFactIndex": 2450,
+      "meaningVi": "đội ngũ nhân viên của một tổ chức"
+    },
+    {
+      "id": "ox-fe6d3468cf5c74-01",
+      "word": "standard",
+      "sourceFactIndex": 2451,
+      "meaningVi": "tiêu chuẩn; mức chất lượng dùng làm cơ sở đánh giá"
+    },
+    {
+      "id": "ox-81b6b2c874b787-01",
+      "word": "potential",
+      "sourceFactIndex": 3068,
+      "meaningVi": "tiềm năng; khả năng phát triển hoặc đạt được điều gì"
+    },
+    {
+      "id": "ox-c2e0c347e274d2-01",
+      "word": "league",
+      "sourceFactIndex": 2956,
+      "meaningVi": "liên đoàn hoặc hệ thống giải đấu gồm các đội thi đấu với nhau"
+    },
+    {
+      "id": "ox-226f9e95eca788-01",
+      "word": "majority",
+      "sourceFactIndex": 2974,
+      "meaningVi": "đa số; phần lớn hơn một nửa của một nhóm"
+    },
+    {
+      "id": "ox-586acb3c6bac48-01",
+      "word": "gay",
+      "sourceFactIndex": 3584,
+      "meaningVi": "đồng tính; thường chỉ nam giới bị thu hút về tình cảm hoặc tình dục bởi nam giới"
+    },
+    {
+      "id": "ox-a21dfce2c27396-01",
+      "word": "bay",
+      "sourceFactIndex": 4125,
+      "meaningVi": "vịnh; vùng biển ăn sâu vào đất liền"
+    },
+    {
+      "id": "ox-59cc3cb8a42973-01",
+      "word": "rape",
+      "sourceFactIndex": 4963,
+      "meaningVi": "tội hiếp dâm; hành vi xâm hại tình dục nghiêm trọng không có sự đồng thuận"
+    },
+    {
+      "id": "ox-b9776d7ddf459c-01",
+      "word": "the",
+      "sourceFactIndex": 774,
+      "meaningVi": "mạo từ xác định; đứng trước danh từ chỉ người hoặc vật đã xác định trong ngữ cảnh"
+    },
+    {
+      "id": "ox-663ea1bfffe503-01",
+      "word": "to",
+      "sourceFactIndex": 796,
+      "meaningVi": "đến; về phía một địa điểm hoặc đích đến"
+    },
+    {
+      "id": "ox-10c22bcf4c768b-01",
+      "word": "for",
+      "sourceFactIndex": 300,
+      "meaningVi": "cho; dành cho người nhận hoặc đối tượng được hưởng"
+    },
+    {
+      "id": "ox-2ad8a7049d7c55-01",
+      "word": "it",
+      "sourceFactIndex": 400,
+      "meaningVi": "nó; đại từ thay cho một vật, sự việc hoặc con vật đã được nhắc đến"
+    },
+    {
+      "id": "ox-b8d31e852725af-01",
+      "word": "on",
+      "sourceFactIndex": 542,
+      "meaningVi": "trên; chỉ vị trí tiếp xúc hoặc được đỡ bởi một bề mặt"
+    },
+    {
+      "id": "ox-a7e2d26e8d1581-01",
+      "word": "by",
+      "sourceFactIndex": 113,
+      "meaningVi": "bằng; chỉ phương tiện hoặc cách di chuyển"
+    },
+    {
+      "id": "ox-c8b1a1a3e6bcee-01",
+      "word": "lie",
+      "sourceFactIndex": 2175,
+      "meaningVi": "nói dối; cố ý nói điều không đúng sự thật"
+    },
+    {
+      "id": "ox-441349e1ec2f7f-01",
+      "word": "bass",
+      "sourceFactIndex": 4122,
+      "meaningVi": "âm trầm; phần âm hoặc giọng thấp trong âm nhạc"
+    },
+    {
+      "id": "ox-e326cff641fb95-01",
+      "word": "gym",
+      "sourceFactIndex": 339,
+      "meaningVi": "phòng tập thể dục; nơi có thiết bị tập luyện"
+    },
+    {
+      "id": "ox-7aa4f5c396342c-01",
+      "word": "blonde",
+      "sourceFactIndex": 85,
+      "meaningVi": "có tóc vàng hoặc vàng nhạt"
+    },
+    {
+      "id": "ox-90c332f4df1ce9-01",
+      "word": "backwards",
+      "sourceFactIndex": 1826,
+      "meaningVi": "về phía sau; theo chiều ngược lại"
+    },
+    {
+      "id": "ox-6a19f0fb4be545-01",
+      "word": "commitment",
+      "sourceFactIndex": 2692,
+      "meaningVi": "sự cam kết; việc nhận trách nhiệm và quyết tâm thực hiện"
+    },
+    {
+      "id": "ox-f45b59736bd986-01",
+      "word": "transparency",
+      "sourceFactIndex": 5236,
+      "meaningVi": "sự minh bạch; việc công khai và rõ ràng về thông tin hoặc quyết định"
+    },
+    {
+      "id": "ox-b5293f2894ae49-01",
+      "word": "whilst",
+      "sourceFactIndex": 5306,
+      "meaningVi": "trong khi; trong khoảng thời gian một việc khác đang xảy ra"
+    },
+    {
+      "id": "ox-0e031e954a4320-01",
+      "word": "could",
+      "sourceFactIndex": 170,
+      "meaningVi": "có thể; dùng để nói một điều có khả năng xảy ra"
+    },
+    {
+      "id": "ox-97519f7c288b36-01",
+      "word": "anyway",
+      "sourceFactIndex": 938,
+      "meaningVi": "dù vậy; bất chấp điều vừa được nhắc đến"
+    },
+    {
+      "id": "ox-bcc649cfdb8cc5-01",
+      "word": "found",
+      "sourceFactIndex": 2864,
+      "meaningVi": "thành lập; bắt đầu một tổ chức hoặc cơ sở"
+    }
+  ],
+  "coverage": {
+    "oxfordHeadwords": 4955,
+    "entryCount": 5162,
+    "reviewed": 674,
+    "dictionary": 4487,
+    "reference": 1,
+    "phrasalSenses": 100,
+    "slangSenses": 107,
+    "withBilingualContext": 3631,
+    "missingContext": 1531,
+    "referenceWords": [
+      {
+        "word": "diplomatic",
+        "part_of_speech": "noun"
+      }
+    ],
+    "learningReady": 674,
+    "lookupOnly": 4488
+  },
+  "limitations": [
+    "Reviewed means an app editorial check, not external certification or an accuracy guarantee.",
+    "Only one selected sense is taught per current Oxford spelling group; additional source facts remain in oxford-provenance.json.",
+    "Unreviewed historical-source meanings stay searchable with learning_status lookup and are excluded from practice.",
+    "No IPA or recorded audio was invented or added by this review."
+  ]
+}

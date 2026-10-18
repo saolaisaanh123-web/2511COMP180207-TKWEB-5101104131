@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   ArrowDownAZ,
   ArrowRight,
@@ -10,7 +10,7 @@ import {
   Search,
   X,
 } from "lucide-react";
-import type { Entry } from "./core";
+import { canPractice, frequencyScore, type Entry } from "./core";
 import "./collection-browser.css";
 
 type CollectionBrowserProps = {
@@ -18,6 +18,7 @@ type CollectionBrowserProps = {
   kind: "slang" | "phrasal-verbs";
   onOpen: (id: string) => void;
   onPractice: (id: string) => void;
+  onExpose?: (ids: string[]) => void;
 };
 
 const PAGE_SIZE = 24;
@@ -55,7 +56,12 @@ export default function CollectionBrowser({
   kind,
   onOpen,
   onPractice,
+  onExpose,
 }: CollectionBrowserProps) {
+  const exposeRef = useRef(onExpose);
+  exposeRef.current = onExpose;
+  const resultsRef = useRef<HTMLParagraphElement>(null);
+  const focusAfterPagination = useRef(false);
   const [query, setQuery] = useState("");
   const [sort, setSort] = useState("asc");
   const [expressionType, setExpressionType] = useState("all");
@@ -132,8 +138,20 @@ export default function CollectionBrowser({
     pagination.key === paginationKey ? Math.min(pagination.page, pageCount) : 1;
   const start = (page - 1) * PAGE_SIZE;
   const visible = filtered.slice(start, start + PAGE_SIZE);
-  const setPage = (nextPage: number) =>
+  const visibleIdsKey = visible.map(({ word }) => word.id).join("\u0000");
+  useEffect(() => {
+    if (visibleIdsKey) exposeRef.current?.(visibleIdsKey.split("\u0000"));
+  }, [visibleIdsKey]);
+  const setPage = (nextPage: number) => {
+    focusAfterPagination.current = true;
     setPagination({ key: paginationKey, page: nextPage });
+  };
+  useEffect(() => {
+    if (!focusAfterPagination.current) return;
+    focusAfterPagination.current = false;
+    resultsRef.current?.focus({ preventScroll: true });
+    resultsRef.current?.scrollIntoView({ block: "start", behavior: "instant" });
+  }, [page, paginationKey]);
 
   return (
     <section className="coll-browser" aria-labelledby={headingId}>
@@ -147,7 +165,9 @@ export default function CollectionBrowser({
             )}
             {isSlang ? "TIẾNG ANH ĐỜI THƯỜNG" : "HỌC THEO NGỮ CẢNH"}
           </span>
-          <h1 id={headingId}>{title}</h1>
+          <h1 id={headingId} tabIndex={-1}>
+            {title}
+          </h1>
           <p className="coll-intro-description">
             {isSlang
               ? "Học tiếng lóng, thành ngữ và cách nói đời thường qua nghĩa, cách dùng và ngữ cảnh có nguồn."
@@ -226,6 +246,14 @@ export default function CollectionBrowser({
             <option value="desc">Từ Z đến A</option>
           </select>
         </label>
+        <button
+          type="button"
+          className="coll-clear-filters"
+          onClick={clearFilters}
+          disabled={!hasFilters}
+        >
+          Xóa mọi bộ lọc
+        </button>
       </div>
 
       {isSlang && (
@@ -263,15 +291,12 @@ export default function CollectionBrowser({
               <option value="none">Chưa gắn ngữ cảnh nguồn</option>
             </select>
           </label>
-          {hasFilters && (
-            <button type="button" onClick={clearFilters}>
-              Xóa bộ lọc
-            </button>
-          )}
         </div>
       )}
 
       <p
+        ref={resultsRef}
+        tabIndex={-1}
         className="coll-results-summary"
         role="status"
         aria-live="polite"
@@ -339,6 +364,26 @@ export default function CollectionBrowser({
                     )}
                   </div>
                 )}
+                <div
+                  className="coll-tags"
+                  aria-label="Trình độ và trạng thái học"
+                >
+                  {word.level && <span>CEFR {word.level}</span>}
+                  {frequencyScore(word) !== undefined && (
+                    <span title="Tần suất theo cách viết, không phải tần suất riêng của nghĩa này">
+                      Zipf{" "}
+                      {frequencyScore(word)?.toLocaleString("vi-VN", {
+                        maximumFractionDigits: 2,
+                      })}{" "}
+                      · cách viết
+                    </span>
+                  )}
+                  <span>
+                    {canPractice(word, 0)
+                      ? "Có thể đưa vào học"
+                      : "Chỉ tra cứu · cần rà soát"}
+                  </span>
+                </div>
                 <p className="coll-meaning" lang="vi">
                   {word.meaning_vi}
                 </p>
@@ -359,6 +404,12 @@ export default function CollectionBrowser({
                     <p>{word.note}</p>
                   </div>
                 )}
+                {!canPractice(word, 0) && (
+                  <p className="coll-readiness">
+                    Mở chi tiết để đối chiếu nguồn và kiểm tra nghĩa cùng ví dụ
+                    trước khi đưa vào bài học.
+                  </p>
+                )}
                 <div className="coll-actions">
                   <button
                     type="button"
@@ -370,6 +421,12 @@ export default function CollectionBrowser({
                   <button
                     type="button"
                     className="coll-practice"
+                    disabled={!canPractice(word, 0)}
+                    title={
+                      canPractice(word, 0)
+                        ? undefined
+                        : "Mở chi tiết để kiểm tra và xác nhận nghĩa cùng ví dụ trước khi học"
+                    }
                     onClick={() => onPractice(word.id)}
                     aria-label={`Luyện ${word.word}`}
                   >
@@ -394,7 +451,7 @@ export default function CollectionBrowser({
             </p>
             {hasFilters && (
               <button type="button" onClick={clearFilters}>
-                Xóa bộ lọc
+                Xóa mọi bộ lọc
               </button>
             )}
           </div>

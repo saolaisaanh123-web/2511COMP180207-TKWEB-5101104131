@@ -66,9 +66,9 @@ Xem `news-provenance.json` để biết từng nguồn, phạm vi đối chiếu
 
 Kho từ xếp **A1 → A2 → B1 → B2 → C1 → C2**, rồi theo tần suất tiếng Anh giảm dần trong cùng trình độ; cùng điểm thì A–Z và ID ổn định. Mục chưa có CEFR nằm cuối; mục thiếu điểm nằm sau các mục có điểm trong cùng trình độ. Từ mới trong kế hoạch học dùng cùng thứ tự; lượt ôn đến hạn vẫn đi trước. Slang/cụm động từ ở trang riêng vẫn mặc định A–Z.
 
-Điểm `frequency_zipf` lấy từ **wordfreq 3.1.1, bảng English large** của Robyn Speer và các nguồn được ghi công, gồm dữ liệu tổng hợp ở nhiều miền ngữ liệu. Đã kiểm tra hash gói và bảng nguồn. **4.925 đầu mục Oxford** có điểm trực tiếp; 30 đầu mục khác giữ trống vì thiếu cách viết chính xác hoặc là cụm/đầu mục gộp. Không ước lượng tần suất thành ngữ bằng tích tần suất các từ thành phần, và không gán điểm của nghĩa đen cho slang.
+Điểm `frequency_zipf` lấy từ **wordfreq 3.1.1, bảng English large** của Robyn Speer và các nguồn được ghi công, gồm dữ liệu tổng hợp ở nhiều miền ngữ liệu. Đã kiểm tra hash gói và bảng nguồn. **4.921 đầu mục Oxford** có điểm trực tiếp; 34 đầu mục khác giữ trống vì thiếu cách viết chính xác hoặc là cụm/đầu mục gộp. Không ước lượng tần suất thành ngữ bằng tích tần suất các từ thành phần, và không gán điểm của nghĩa đen cho slang.
 
-Đây là ước lượng tần suất **cách viết không phân biệt hoa/thường**, gộp các nghĩa/từ loại; `May/may`, `March/march`, `IT/it` dùng chung ước lượng cách viết. Không phải điểm Oxford, độ khó IELTS hay tần suất riêng trong thời sự Mỹ. Nguồn là bản chụp lịch sử, không phải đo lường thời gian thực. Điểm cao hơn chỉ biểu thị tần suất tổng hợp cao hơn; thiếu dữ liệu không có nghĩa là từ hiếm.
+Đây là ước lượng tần suất **cách viết không phân biệt hoa/thường**, gộp các nghĩa/từ loại; nguồn gốc gộp `May/may`, `March/march`, `IT/it`. Kho hiện giữ trống điểm của `May`, `March`, `IT` và `found` (thành lập), có ghi chú vì tần suất nghĩa khác sẽ gây hiểu nhầm. Không phải điểm Oxford, độ khó IELTS hay tần suất riêng trong thời sự Mỹ. Nguồn là bản chụp lịch sử, không phải đo lường thời gian thực. Điểm cao hơn chỉ biểu thị tần suất tổng hợp cao hơn; thiếu dữ liệu không có nghĩa là từ hiếm.
 
 Các giá trị chọn lọc từ wordfreq theo **CC BY-SA 4.0**; giữ giấy phép, `licenses/wordfreq-NOTICE.txt` và `licenses/wordfreq-upstream-attribution.txt` khi phân phối lại. Xem `frequency-provenance.json` cho phương pháp, hash và phạm vi từng mục; `data/frequency/README.md` hướng dẫn tái tạo. Cài Python/wordfreq chỉ cần khi chủ ý tạo lại dữ liệu, không cần cho chạy/build web thông thường.
 
@@ -82,12 +82,22 @@ ID của 259 mục đã có được giữ nguyên. Bản sửa cá nhân không
 
 - oxfordHeadwords: 4955
 - entryCount: 5162
-- reviewed: 637
-- dictionary: 4524
+- reviewed: 674
+- dictionary: 4487
 - reference: 1
 - phrasalSenses: 100
 - slangSenses: 107
 - newsIdioms: 27
-- frequencyScored: 4925
-- withBilingualContext: 3617
-- missingContext: 1545
+- frequencyScored: 4921
+- withBilingualContext: 3631
+- missingContext: 1531
+
+## Chất lượng bài học sau rà soát 2026-10
+
+Giữ đủ 5.162 ID; **674 mục `learning_status: ready`** dùng được trong bài học và **4.488 mục `lookup`** giữ để tra cứu, không tự vào quiz. Nhãn `content_status` vẫn mô tả nguồn/độ rà nội dung, không đồng nhất với người học đã nhớ. Chỉ xác nhận cá nhân sau khi kiểm tra đúng nghĩa/từ loại và ví dụ Anh–Việt; bản cá nhân được giữ khi cập nhật mặc định.
+
+Đã biên soạn lại 38 mục lỗi hoặc nghĩa chính không phù hợp, có nghĩa Việt, giải nghĩa Anh, ví dụ, collocation và chủ đề cụ thể. `lie` nghĩa nói dối được gắn đúng sourceFactIndex 2175, B1; dòng `lie1` A1 vẫn giữ trong dấu vết nguồn. Các nghĩa lịch sử chưa rà khác không bị giả thành nội dung đã kiểm chứng. Xem `content-review-provenance.json` và `data/authoring/content-review-2026-10.txt`.
+
+Chín mục có `news_media_url` theo VideoObject của bài PBS đã đối chiếu. URL được ghi như liên kết nhà xuất bản khai báo, chưa chứng minh phát trực tiếp thành công và chưa xác minh thời điểm cụm từ; `news_media_start` để trống. Không sao chép video hoặc tự thêm timestamp.
+
+TXT đã commit là nội dung chuẩn; sửa trực tiếp không cần viết lại ứng dụng. Các script tạo corpus/áp dụng review mặc định chỉ tạo bản xem trước, `--write` mới cập nhật; full builder bảo toàn mọi mục và trường đã có trong TXT. Kiểm tra `npm run test:data` bảo vệ các sửa lỗi, ID, phạm vi nguồn và hash. Không cần chạy full builder để dùng web.

@@ -36250,15 +36250,15 @@
     {
       "id": "ox-c8b1a1a3e6bcee-01",
       "word": "lie",
-      "headword": "lie",
-      "homograph": "lie1",
-      "sense": null,
-      "pos": "v.",
-      "cefr": "A1",
+      "headword": "lie (tell a lie)",
+      "homograph": "lie2 (tell a lie)",
+      "sense": "tell a lie",
+      "pos": "v., n.",
+      "cefr": "B1",
       "list": "Oxford 3000",
-      "page": 2,
-      "source_row": "lie1 v.",
-      "sourceFactIndex": 433,
+      "page": 8,
+      "source_row": "lie2 (tell a lie) v., n.",
+      "sourceFactIndex": 2175,
       "canonicalWord": "lie"
     },
     {
@@ -69687,6 +69687,18 @@
       "sourceFactIndex": 363
     },
     {
+      "word": "lie",
+      "headword": "lie",
+      "homograph": "lie1",
+      "sense": null,
+      "pos": "v.",
+      "cefr": "A1",
+      "list": "Oxford 3000",
+      "page": 2,
+      "source_row": "lie1 v.",
+      "sourceFactIndex": 433
+    },
+    {
       "word": "like",
       "headword": "like (find sb/sth pleasant)",
       "homograph": "like (find sb/sth pleasant)",
@@ -71221,18 +71233,6 @@
       "page": 8,
       "source_row": "level adj.",
       "sourceFactIndex": 2174
-    },
-    {
-      "word": "lie",
-      "headword": "lie (tell a lie)",
-      "homograph": "lie2 (tell a lie)",
-      "sense": "tell a lie",
-      "pos": "v., n.",
-      "cefr": "B1",
-      "list": "Oxford 3000",
-      "page": 8,
-      "source_row": "lie2 (tell a lie) v., n.",
-      "sourceFactIndex": 2175
     },
     {
       "word": "like",
@@ -74116,18 +74116,26 @@
   "coverage": {
     "oxfordHeadwords": 4955,
     "entryCount": 5162,
-    "reviewed": 637,
-    "dictionary": 4524,
+    "reviewed": 674,
+    "dictionary": 4487,
     "reference": 1,
     "phrasalSenses": 100,
     "slangSenses": 107,
-    "withBilingualContext": 3617,
-    "missingContext": 1545,
+    "withBilingualContext": 3631,
+    "missingContext": 1531,
     "referenceWords": [
       {
         "word": "diplomatic",
         "part_of_speech": "noun"
       }
-    ]
+    ],
+    "learningReady": 674,
+    "lookupOnly": 4488
+  },
+  "contentReview": {
+    "overlay": "../../data/authoring/content-review-2026-10.txt",
+    "entries": 38,
+    "scope": "Targeted modern-meaning corrections and authored bilingual contexts; not an assertion that all Oxford meanings have been reviewed.",
+    "canonicalVocabularySha256": "420e5cf8eb072e6db069a79cb9c851c172ea60b232e79ee5f999b4cbe1687521"
   }
 }

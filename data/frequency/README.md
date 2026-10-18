@@ -11,14 +11,14 @@ PYTHONPATH=/tmp/lexi-wordfreq-package python scripts/add-frequency.py --output /
 
 The script checks the package version and the SHA256 of `large_en.msgpack.gz`. By default it does not change `vocabulary.txt`. The exported object maps each existing stable ID to `frequency_zipf` and `frequency_source`; both are empty for an unscored entry. An empty score is **unknown**, not an assertion that a word is rare. Its provenance includes coverage and every unscored entry.
 
-After regenerating the complete corpus from the pinned source extracts in `/workspace/scratch`, attach frequency metadata with this pipeline:
+The committed TXT is canonical. A full-source command now creates a non-destructive preview; only use `--write` after reviewing its diff. Frequency export is optional preparation:
 
 ```sh
 python scripts/build-full-corpus.py /workspace/scratch
 PYTHONPATH=/tmp/lexi-wordfreq-package python scripts/add-frequency.py --output /workspace/scratch/lexi-frequency-map.json --apply
 ```
 
-`--apply` adds or replaces only `frequency_zipf` and `frequency_source` in the input TXT. It preserves stable IDs, record order, existing field order and all other field lines. Output uses UTF-8 with LF line endings and a final newline. Repeating the command produces identical TXT bytes. Corpus generation must come first because it rebuilds the TXT from its source inputs. Application builds use the committed TXT directly and do not need these preparation commands.
+`--apply` adds or replaces only `frequency_zipf` and `frequency_source` in the input TXT. It preserves stable IDs, record order, existing field order and all other field lines. Output uses UTF-8 with LF line endings and a final newline. Repeating the command produces identical TXT bytes. Full corpus generation preserves canonical edits and does not write by default. Known homograph exclusions (`IT`, `May`, `March`, `found`) stay unscored with an explanation; the frequency exporter preserves this policy. Application builds use the committed TXT directly and do not need these preparation commands.
 
 The score is `9 + log10(proportion)` to two decimal places, the same quantized Zipf scale provided by wordfreq. A score of 6 means an aggregate estimate around one occurrence per thousand tokens; higher scores indicate greater frequency. Exact ties do not imply a meaningful difference and may be sorted alphabetically. The score applies to the spelling across all senses, not necessarily the particular sense taught in Jeongyeon.
 

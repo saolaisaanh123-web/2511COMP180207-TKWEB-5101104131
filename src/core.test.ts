@@ -34,15 +34,18 @@ const result = (overrides: Partial<Result> = {}): Result => ({
   review: "v",
   gap: 0,
   first: true,
+  evidenceVersion: 2,
+  independent: true,
+  audioPlayed: true,
   ...overrides,
 });
 describe("Vocabulary file", () => {
   it("loads the curated corpus and roundtrips UTF-8 BOM and Windows newlines", () => {
     expect(words).toHaveLength(proof.coverage.entryCount);
     expect(words.length).toBeGreaterThanOrEqual(5000);
-    expect(parse("\uFEFF" + serialize(words).replace(/\n/g, "\r\n"))).toEqual(
-      words,
-    );
+    expect(
+      serialize(parse("\uFEFF" + serialize(words).replace(/\n/g, "\r\n"))),
+    ).toBe(serialize(words));
   });
   it("reports duplicate IDs, fields, missing fields and invalid lines", () => {
     expect(() => parse(source + "\n---\n" + serialize([words[0]]))).toThrow(
@@ -210,8 +213,14 @@ describe("Large dictionary learning safeguards", () => {
       parse(serialize([{ ...base, content_status: "dictionary" }])),
     ).toHaveLength(1);
     expect(canPractice({ ...base, content_status: "dictionary" }, 1)).toBe(
-      true,
+      false,
     );
+    expect(
+      canPractice(
+        { ...base, content_status: "dictionary", learning_status: "ready" },
+        1,
+      ),
+    ).toBe(true);
     expect(canPractice({ ...base, content_status: "dictionary" }, 4)).toBe(
       false,
     );

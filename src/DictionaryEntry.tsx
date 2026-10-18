@@ -1,5 +1,12 @@
+import { useEffect, useState } from "react";
 import { BookOpen, ExternalLink, Volume2 } from "lucide-react";
-import { type State, frequencyScore, skills, strength } from "./core";
+import {
+  type State,
+  canPractice,
+  frequencyScore,
+  skills,
+  strength,
+} from "./core";
 import "./dictionary.css";
 
 type DictionaryEntryProps = {
@@ -59,6 +66,12 @@ export default function DictionaryEntry({
   change,
 }: DictionaryEntryProps) {
   const w = entry.word;
+  const [confirmedMeaning, setConfirmedMeaning] = useState(false);
+  const [confirmedExamples, setConfirmedExamples] = useState(false);
+  useEffect(() => {
+    setConfirmedMeaning(false);
+    setConfirmedExamples(false);
+  }, [w.id, w.meaning_vi, w.example_en, w.example_vi]);
   const imported = w.content_status === "dictionary";
   const reference = w.content_status === "reference";
   const sources = referenceLinks(w.source || "");
@@ -76,6 +89,21 @@ export default function DictionaryEntry({
   const wordAudio = safeHttpsUrl(w.audio_word);
   const exampleAudio = safeHttpsUrl(w.audio_example);
   const newsUrl = safeHttpsUrl(w.news_url);
+  const newsMediaUrl = safeHttpsUrl(w.news_media_url);
+  const declaredMediaSeconds = Number(w.news_media_start);
+  const newsMediaSeconds =
+    /^\d+$/.test(w.news_media_start || "") &&
+    Number.isSafeInteger(declaredMediaSeconds)
+      ? declaredMediaSeconds
+      : undefined;
+  const newsMediaTime =
+    newsMediaSeconds === undefined
+      ? undefined
+      : `${Math.floor(newsMediaSeconds / 60)}:${String(newsMediaSeconds % 60).padStart(2, "0")}`;
+  const hasBilingualExample = !!w.example_en?.trim() && !!w.example_vi?.trim();
+  const canConfirmReady =
+    hasBilingualExample && canPractice({ ...w, learning_status: "ready" }, 0);
+  const readyForLearning = canPractice(w, 0);
   const hasNewsContext = !!(w.news_source || w.news_title || w.news_excerpt);
   const frequency = frequencyScore(w);
   const history = state.history
@@ -216,6 +244,7 @@ export default function DictionaryEntry({
               <button
                 className="dict-audio"
                 aria-label="Nghe câu"
+                disabled={!w.example_en?.trim()}
                 title={
                   exampleAudio
                     ? "Phát câu từ URL; dùng giọng tổng hợp nếu phát thất bại"
@@ -281,6 +310,29 @@ export default function DictionaryEntry({
           ) : w.news_title ? (
             <p className="dict-news-title">{w.news_title}</p>
           ) : null}
+          {newsMediaUrl && (
+            <a
+              className="dict-news-media"
+              href={newsMediaUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Volume2 size={16} aria-hidden="true" />
+              Xem / nghe video nguồn
+              {newsMediaTime ? ` · xem từ ${newsMediaTime}` : ""}
+              <ExternalLink size={14} aria-hidden="true" />
+            </a>
+          )}
+          {newsMediaUrl && (
+            <p className="dict-muted">
+              {newsMediaTime
+                ? `Mốc bắt đầu đã đối chiếu: ${newsMediaTime}.`
+                : "Chưa đối chiếu mốc thời gian của cụm từ."}
+              {w.news_media_note && ` ${w.news_media_note}`} Mở trình phát của
+              đơn vị xuất bản; bài nghe trong ứng dụng vẫn dùng âm thanh riêng
+              hoặc giọng tổng hợp như nhãn nút.
+            </p>
+          )}
           {w.news_excerpt && (
             <div className="dict-news-quotation">
               <p className="dict-label">Trích ngắn nguyên văn</p>
@@ -332,11 +384,115 @@ export default function DictionaryEntry({
         <div className="notice">
           {reference
             ? "Mục nguồn có xung đột hoặc thiếu nghĩa đã đối chiếu; chưa dùng để kiểm tra."
-            : "Nội dung từ điển mở chưa rà soát từng mục. Kiểm tra nguồn và sửa nghĩa/ví dụ nếu cần trước khi học chuyên sâu."}
+            : "Nội dung từ điển mở chưa rà soát từng mục. Các mục chưa xác nhận chỉ dùng để tra cứu; đối chiếu nghĩa và ví dụ trước khi đưa vào bài học."}
         </div>
       )}
       <section className="dict-learning" aria-label="Việc học của bạn">
         <h3>Việc học của bạn</h3>
+        {w.learning_note && (
+          <p className="dict-learning-note">
+            Lưu ý về việc học: {w.learning_note}
+          </p>
+        )}
+        {(imported || reference) && (
+          <div className="dict-review">
+            <h3>
+              {readyForLearning
+                ? "Đã xác nhận để học trên thiết bị này"
+                : "Kiểm tra trước khi đưa vào bài học"}
+            </h3>
+            <p>
+              {readyForLearning
+                ? "Bạn đã cho phép dùng mục này trong bài học. Xác nhận được lưu như bản cá nhân để cập nhật mặc định không ghi đè. Nhãn nguồn từ điển mở vẫn được giữ; đây không phải chứng nhận của Oxford."
+                : "Đối chiếu đúng nghĩa, từ loại và bản dịch trong nguồn. Chỉ xác nhận khi cả hai ví dụ diễn đạt cùng nghĩa đang học. Nếu có lỗi, dùng Sửa mục từ trước."}
+            </p>
+            {readyForLearning ? (
+              <button
+                type="button"
+                onClick={() =>
+                  change({
+                    ...entry,
+                    origin: "personal",
+                    word: { ...w, learning_status: "lookup" },
+                  })
+                }
+              >
+                Chuyển lại thành chỉ tra cứu
+              </button>
+            ) : (
+              <>
+                <label>
+                  <input
+                    type="checkbox"
+                    checked={confirmedMeaning}
+                    onChange={(event) =>
+                      setConfirmedMeaning(event.target.checked)
+                    }
+                  />
+                  <span>
+                    Tôi đã đối chiếu nghĩa và từ loại của mục này với nguồn.
+                  </span>
+                </label>
+                <label>
+                  <input
+                    type="checkbox"
+                    checked={confirmedExamples}
+                    onChange={(event) =>
+                      setConfirmedExamples(event.target.checked)
+                    }
+                  />
+                  <span>
+                    Tôi đã kiểm tra ví dụ tiếng Anh và bản dịch tiếng Việt đúng,
+                    cùng nghĩa đang học.
+                  </span>
+                </label>
+                {!canConfirmReady && (
+                  <p>
+                    Cần sửa nghĩa hợp lệ và bổ sung đủ ví dụ Anh–Việt trước khi
+                    xác nhận. Mục có xung đột nguồn cần được sửa và đối chiếu
+                    trước.
+                  </p>
+                )}
+                <button
+                  type="button"
+                  disabled={
+                    !confirmedMeaning || !confirmedExamples || !canConfirmReady
+                  }
+                  onClick={() => {
+                    if (
+                      !confirmedMeaning ||
+                      !confirmedExamples ||
+                      !canConfirmReady
+                    )
+                      return;
+                    change({
+                      ...entry,
+                      origin: "personal",
+                      word: { ...w, learning_status: "ready" },
+                    });
+                    setConfirmedMeaning(false);
+                    setConfirmedExamples(false);
+                  }}
+                >
+                  Xác nhận đã kiểm tra · cho phép học
+                </button>
+              </>
+            )}
+          </div>
+        )}
+        {entry.reports && entry.reports.length > 0 && (
+          <section className="dict-reports" aria-label="Báo lỗi của bạn">
+            <h3>Báo lỗi của bạn</h3>
+            <p>
+              Được lưu riêng với nội dung nguồn và giữ lại khi cập nhật kho.
+            </p>
+            <ul>
+              {entry.reports.map((report, index) => (
+                <li key={index}>{report}</li>
+              ))}
+            </ul>
+          </section>
+        )}
         <label className="dict-goal">
           <span>Mục tiêu</span>
           <select
@@ -419,7 +575,11 @@ export default function DictionaryEntry({
 
       <div className="dict-actions">
         <button onClick={edit}>Sửa mục từ</button>
-        <button onClick={() => change({ ...entry, archived: true })}>
+        <button
+          onClick={() =>
+            change({ ...entry, archived: true, archivedReason: "user" })
+          }
+        >
           Lưu trữ (giữ lịch sử)
         </button>
       </div>

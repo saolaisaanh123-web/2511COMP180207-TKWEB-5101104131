@@ -42,7 +42,15 @@ import {
   cloze,
   isSlang,
   sortForLearning,
+  expose,
+  independence,
+  interleaveQueue,
+  selectFreePractice,
+  collectFresh,
+  pendingScheduledTasks,
+  contentKey,
 } from "./core";
+import { StorageConflictError, subscribeStoredState } from "./storage";
 import "./style.css";
 import ErrorBoundary from "./ErrorBoundary";
 import WordDetail from "./DictionaryEntry";
@@ -58,6 +66,24 @@ function download(name: string, text: string, type = "text/plain") {
   a.click();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
+function storeBrowserDraft(draft?: Session["draft"]) {
+  try {
+    if (draft)
+      sessionStorage.setItem("jeongyeon-session-draft", JSON.stringify(draft));
+    else sessionStorage.removeItem("jeongyeon-session-draft");
+  } catch {
+    /* IndexedDB remains the durable draft when browser session storage is unavailable. */
+  }
+}
+async function corpusVersion(text: string) {
+  const digest = await crypto.subtle.digest(
+    "SHA-256",
+    new TextEncoder().encode(text),
+  );
+  return Array.from(new Uint8Array(digest), (b) =>
+    b.toString(16).padStart(2, "0"),
+  ).join("");
+}
 function App() {
   const [state, setState] = useState<State>(empty),
     [loaded, setLoaded] = useState(false),
@@ -71,8 +97,16 @@ function App() {
     [libraryPage, setLibraryPage] = useState(1),
     [detail, setDetail] = useState<string>(),
     [editor, setEditor] = useState<string>(),
-    [pending, setPending] = useState<{ words: Word[]; origin: string }>(),
+    [pending, setPending] = useState<{
+      words: Word[];
+      origin: string;
+      version?: string;
+    }>(),
     [availableWords, setAvailableWords] = useState<Word[]>(),
+    [sourceVersion, setSourceVersion] = useState<string>(),
+    [loadAttempt, setLoadAttempt] = useState(0),
+    [audioPlayed, setAudioPlayed] = useState(false),
+    [audioPlaying, setAudioPlaying] = useState(false),
     [backup, setBackup] = useState<State>(),
     [replace, setReplace] = useState(false),
     [settings, setSettings] = useState(false),
@@ -129,72 +163,255 @@ function App() {
       document.removeEventListener("keydown", handle);
       previous?.focus();
     };
-  }, [hasModal]);
+  }, [hasModal, detail, editor !== undefined, !!pending, !!backup, settings]);
   const lock = useRef(false),
     started = useRef(Date.now()),
-    current = useRef(state);
+    lastLibraryPage = useRef(1),
+    current = useRef(state),
+    audioRef = useRef<HTMLAudioElement | undefined>(undefined),
+    playbackToken = useRef(0),
+    draftTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined),
+    draftWrites = useRef<Promise<void>>(Promise.resolve()),
+    answerDraft = useRef<Session["draft"]>(undefined);
   current.current = state;
-  const commit = async (next: State) => {
-    await save(next);
-    current.current = next;
-    setState(next);
+  const commit = async (
+    next: State,
+    options?: { replace?: boolean },
+    base: State = state,
+  ) => {
+    const persisted = await save(next, base, options);
+    current.current = persisted;
+    setState(persisted);
+    return persisted;
+  };
+  const taskKey = state.session
+    ? `${state.session.id}:${state.session.index}`
+    : "";
+  const stopAudio = () => {
+    playbackToken.current++;
+    audioRef.current?.pause();
+    audioRef.current = undefined;
+    if ("speechSynthesis" in window) speechSynthesis.cancel();
+    setAudioPlaying(false);
+  };
+  const persistDraft = (draft = answerDraft.current): Promise<void> => {
+    draftWrites.current = draftWrites.current
+      .catch(() => {})
+      .then(async () => {
+        if (!draft) return;
+        const base = current.current;
+        if (
+          !base.session ||
+          `${base.session.id}:${base.session.index}` !== draft.key
+        )
+          return;
+        await commit(
+          { ...base, session: { ...base.session, draft } },
+          undefined,
+          base,
+        );
+      });
+    return draftWrites.current;
+  };
+  const updateDraft = (value: string, shown = revealed, helped = hint) => {
+    setAnswer(value);
+    const draft = {
+      key: taskKey,
+      answer: value,
+      revealed: shown,
+      hint: helped,
+    };
+    answerDraft.current = draft;
+    storeBrowserDraft(draft);
+    clearTimeout(draftTimer.current);
+    draftTimer.current = setTimeout(
+      () => persistDraft(draft).catch(notifyError),
+      180,
+    );
+  };
+  const pause = async () => {
+    clearTimeout(draftTimer.current);
+    await persistDraft();
+    stopAudio();
+    setPage("today");
+    setNotice(
+      "Đã lưu phiên và câu trả lời đang viết. Bạn có thể tiếp tục sau.",
+    );
+  };
+  const resetFilters = () => {
+    setSearch("");
+    setTopic("");
+    setCollection("");
+    setLevel("");
+    setStatus("");
+  };
+  const exposeIds = (ids: string[]) => {
+    if (!ids.length) return;
+    const base = current.current;
+    const exposures = { ...base.exposures };
+    const time = Date.now();
+    ids.forEach((id) => {
+      exposures[id] = time;
+    });
+    commit({ ...base, exposures }, undefined, base).catch(notifyError);
+  };
+  const openDetail = (id: string) => {
+    setDetail(id);
+    const base = current.current;
+    commit(expose(base, id), undefined, base).catch(notifyError);
   };
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+    requestAnimationFrame(() =>
+      document
+        .querySelector<HTMLElement>(
+          "main [data-page-heading], .workspace main h1",
+        )
+        ?.focus({ preventScroll: true }),
+    );
+    if (page !== "learn") {
+      stopAudio();
+      persistDraft().catch(notifyError);
+    }
+  }, [page]);
+  useEffect(() => {
+    if (page !== "library") return;
+    requestAnimationFrame(() => {
+      const results = document.querySelector<HTMLElement>(".word-grid");
+      if (libraryPage !== lastLibraryPage.current)
+        results?.scrollIntoView({ block: "start" });
+      lastLibraryPage.current = libraryPage;
+      results?.focus({ preventScroll: true });
+    });
+  }, [libraryPage]);
+  useEffect(() => {
+    let alive = true;
     (async () => {
       try {
         let s = await read();
         const isEmpty = !Object.keys(s.entries).length;
+        if (!alive) return;
         if (!isEmpty) {
+          current.current = s;
           setState(s);
           setLoaded(true);
         }
         try {
+          let version: string | undefined;
+          try {
+            const manifest = await fetch(
+              import.meta.env.BASE_URL + "data/vocabulary-version.json",
+              { cache: "no-cache" },
+            );
+            if (manifest.ok) {
+              const data = await manifest.json();
+              version =
+                typeof data.version === "string" ? data.version : undefined;
+            }
+          } catch {
+            /* Old deployments and imported test files can omit the manifest. */
+          }
+          if (alive) setSourceVersion(version);
+          if (!isEmpty && version && s.sourceVersion === version) return;
           const res = await fetch(
             import.meta.env.BASE_URL + "data/vocabulary.txt",
-            { cache: "no-store" },
+            { cache: "no-cache" },
           );
           if (!res.ok) throw Error("Không tải được vocabulary.txt");
-          const incoming = parse(await res.text());
+          const text = await res.text();
+          const incoming = parse(text);
+          version = await corpusVersion(text);
+          if (alive) setSourceVersion(version);
           if (isEmpty) {
-            s = merge(s, incoming, "default");
-            await save(s);
+            const base = s;
+            s = await save(
+              { ...merge(s, incoming, "default"), sourceVersion: version },
+              base,
+            );
           } else if (
             Object.values(diff(s, incoming, "default")).some((n) => n > 0)
-          )
-            setAvailableWords(incoming);
+          ) {
+            if (alive) setAvailableWords(incoming);
+          } else if (version) {
+            s = await save({ ...s, sourceVersion: version }, s);
+            if (alive) {
+              current.current = s;
+              setState(s);
+            }
+          }
         } catch (error) {
           if (isEmpty) throw error;
-          setNotice(
-            "Đang dùng kho đã lưu; chưa kiểm tra được bản mới: " +
-              String(error),
-          );
+          if (alive)
+            setNotice(
+              "Đang dùng kho đã lưu; chưa kiểm tra được bản mới: " +
+                String(error),
+            );
         }
-        if (isEmpty) {
+        if (alive && isEmpty) {
+          current.current = s;
           setState(s);
           setLoaded(true);
         }
       } catch (e) {
-        setNotice("Không thể mở dữ liệu: " + String(e));
+        if (alive) setNotice("Không thể mở dữ liệu: " + String(e));
       }
     })();
-  }, []);
+    return () => {
+      alive = false;
+    };
+  }, [loadAttempt]);
+  useEffect(
+    () =>
+      subscribeStoredState(() => {
+        read()
+          .then((next) => {
+            current.current = next;
+            setState(next);
+            setNotice("Đã đồng bộ thay đổi từ tab khác trên thiết bị này.");
+          })
+          .catch(notifyError);
+      }),
+    [],
+  );
   useEffect(() => {
-    setAnswer("");
-    setRevealed(false);
-    setHint(false);
+    stopAudio();
+    setAudioPlayed(false);
     const session = current.current.session;
     const saved = session
       ? current.current.history.find(
-          (r) => r.id === session.id + ":" + session.index,
+          (r) => r.id === `${session.id}:${session.index}`,
         )
       : undefined;
+    let draft = session?.draft?.key === taskKey ? session.draft : undefined;
+    try {
+      const local = JSON.parse(
+        sessionStorage.getItem("jeongyeon-session-draft") || "null",
+      );
+      if (
+        local?.key === taskKey &&
+        typeof local.answer === "string" &&
+        typeof local.hint === "boolean" &&
+        typeof local.revealed === "boolean"
+      )
+        draft = local;
+    } catch {
+      /* Ignore an incomplete browser draft. */
+    }
+    answerDraft.current = draft;
+    setAnswer(saved?.answer ?? draft?.answer ?? "");
+    setHint(draft?.hint ?? false);
+    setRevealed(!!saved || !!draft?.revealed);
     setFeedback(
       saved ? "Lượt này đã được lưu. Tiếp tục để tránh tính trùng." : undefined,
     );
-    setRevealed(!!saved);
     started.current = Date.now();
     lock.current = !!saved;
-  }, [state.session?.index, state.session?.id]);
+    const question = session?.queue[session.index];
+    if (question && [0, 5].includes(question.skill)) {
+      const base = current.current;
+      commit(expose(base, question.id), undefined, base).catch(notifyError);
+    }
+  }, [taskKey]);
   const active = useMemo(
       () =>
         sortForLearning(
@@ -221,27 +438,15 @@ function App() {
       .map(([k]) => k.slice(0, k.lastIndexOf(":"))),
   ).size;
   const studiedIds = new Set(state.history.map((h) => h.wordId));
-  const fresh = active.filter(
-    (e) =>
-      !e.known &&
-      !studiedIds.has(e.word.id) &&
-      canPractice(e.word, 0) &&
-      !isSlang(e.word),
+  const fresh = collectFresh(state, active).filter(
+    (e) => !isSlang(e.word) && (!level || e.word.level === level),
   );
   const studiedToday = new Set(
     state.history.filter((h) => day(h.time) === day(now)).map((h) => h.wordId),
   );
-  const newToday = new Set(
-    state.history
-      .filter(
-        (h) =>
-          day(h.time) === day(now) &&
-          !state.history.some(
-            (p) => p.wordId === h.wordId && day(p.time) < day(now),
-          ),
-      )
-      .map((h) => h.wordId),
-  ).size;
+  const newToday = active.filter(
+    (e) => e.enrolled && e.enrolledAt && day(e.enrolledAt) === day(now),
+  ).length;
   const planned = Math.min(
     fresh.length,
     Math.max(0, state.daily - newToday),
@@ -263,12 +468,35 @@ function App() {
             ? !studiedIds.has(e.word.id)
             : studiedIds.has(e.word.id))),
   );
+  const practiceEligible = filtered.filter((e) =>
+    canPractice(e.word, practice),
+  );
+  const filterSummary =
+    [
+      search && `Tìm: ${search}`,
+      topic && `Chủ đề: ${topic}`,
+      collection && `Bộ: ${collection}`,
+      level && `CEFR: ${level}`,
+      status && `Trạng thái: ${status}`,
+    ]
+      .filter(Boolean)
+      .join(" · ") || "Toàn bộ Kho từ";
+  const readyCount = active.filter((e) => canPractice(e.word, 0)).length;
   const pageCount = Math.max(1, Math.ceil(filtered.length / 60));
   const currentLibraryPage = Math.min(libraryPage, pageCount);
   const visibleWords = filtered.slice(
     (currentLibraryPage - 1) * 60,
     currentLibraryPage * 60,
   );
+  const visibleWordIds = visibleWords.map((e) => e.word.id).join("\n");
+  useEffect(() => {
+    if (page === "library" && visibleWordIds)
+      exposeIds(visibleWordIds.split("\n"));
+  }, [page, visibleWordIds]);
+  const heroWordId = fresh[0]?.word.id;
+  useEffect(() => {
+    if (page === "today" && heroWordId) exposeIds([heroWordId]);
+  }, [page, heroWordId]);
   useEffect(
     () => setLibraryPage(1),
     [search, topic, collection, level, status],
@@ -279,6 +507,13 @@ function App() {
     ),
   ];
   const notifyError = (e: unknown) => {
+    if (e instanceof StorageConflictError)
+      read()
+        .then((next) => {
+          current.current = next;
+          setState(next);
+        })
+        .catch(() => {});
     setNotice(String(e));
     setBusy(false);
     lock.current = false;
@@ -289,7 +524,12 @@ function App() {
         cache: "no-store",
       });
       if (!r.ok) throw Error("Không tải được kho mặc định");
-      setPending({ words: parse(await r.text()), origin: "default" });
+      const text = await r.text();
+      setPending({
+        words: parse(text),
+        origin: "default",
+        version: await corpusVersion(text),
+      });
     } catch (e) {
       notifyError(e);
     }
@@ -315,6 +555,24 @@ function App() {
     skillOverride?: number,
   ) {
     try {
+      clearTimeout(draftTimer.current);
+      await persistDraft();
+      stopAudio();
+      const base = current.current;
+      if (scheduled && (base.pausedScheduled || base.session?.scheduled)) {
+        if (base.pausedScheduled)
+          await commit(
+            {
+              ...base,
+              session: base.pausedScheduled,
+              pausedScheduled: undefined,
+            },
+            undefined,
+            base,
+          );
+        setPage("learn");
+        return;
+      }
       let queue: Session["queue"] = [];
       if (scheduled) {
         queue = due
@@ -324,6 +582,26 @@ function App() {
             skill: Number(k.slice(k.lastIndexOf(":") + 1)),
             review: uid(),
           }));
+        pendingScheduledTasks(base, active)
+          .filter(
+            (item) =>
+              base.entries[item.id]?.goal !== "recognition" ||
+              [0, 2].includes(item.skill),
+          )
+          .forEach((item) => {
+            if (!queue.some((q) => q.id === item.id && q.skill === item.skill))
+              queue.push({ ...item, review: uid() });
+          });
+        const groups = new Map<string, Session["queue"]>();
+        queue.forEach((item) =>
+          groups.set(item.id, [...(groups.get(item.id) || []), item]),
+        );
+        const priority = [1, 3, 4, 0, 2, 5];
+        queue = [...groups.values()].flatMap((items) =>
+          items.sort(
+            (a, b) => priority.indexOf(a.skill) - priority.indexOf(b.skill),
+          ),
+        );
         fresh.slice(0, planned).forEach((e) =>
           (e.goal === "recognition" ? [0, 2] : [0, 1, 2, 3, 4, 5]).forEach(
             (skill) => {
@@ -333,32 +611,42 @@ function App() {
           ),
         );
       } else {
-        queue = (only ? [state.entries[only]] : filtered)
-          .filter((e) => !!e && canPractice(e.word, skillOverride ?? practice))
-          .slice(0, 20)
-          .map((e) => ({
-            id: e.word.id,
-            skill: skillOverride ?? practice,
-            review: uid(),
-          }));
+        const eligible = (only ? [base.entries[only]] : filtered).filter(
+          (e) => !!e && canPractice(e.word, skillOverride ?? practice),
+        );
+        queue = selectFreePractice(base, eligible, 20).map((e) => ({
+          id: e.word.id,
+          skill: skillOverride ?? practice,
+          review: uid(),
+        }));
       }
       if (!queue.length) {
         setNotice(
-          "Chưa có mục phù hợp. Bạn có thể luyện tự do hoặc thêm từ mới.",
+          "Chưa có mục đủ điều kiện cho dạng bài này. Mục chưa rà chất lượng vẫn tra cứu được trong Kho từ; hãy đổi bộ lọc hoặc chọn dạng bài khác.",
         );
         return;
       }
-      await commit({
-        ...state,
-        session: {
-          id: uid(),
-          queue,
-          index: 0,
-          started: Date.now(),
-          scheduled,
-          count: queue.length,
+      await commit(
+        {
+          ...base,
+          pausedScheduled:
+            !scheduled && base.session?.scheduled
+              ? base.session
+              : base.pausedScheduled,
+          session: {
+            id: uid(),
+            queue: interleaveQueue(queue),
+            index: 0,
+            started: Date.now(),
+            scheduled,
+            count: queue.length,
+          },
         },
-      });
+        undefined,
+        base,
+      );
+      answerDraft.current = undefined;
+      storeBrowserDraft();
       setSummary(undefined);
       setPage("learn");
     } catch (e) {
@@ -368,33 +656,57 @@ function App() {
   const task = state.session?.queue[state.session.index],
     entry = task ? state.entries[task.id] : undefined,
     w = entry?.word;
-  function speak(text: string, url?: string) {
+  function speak(text: string, url?: string, forTask = false) {
+    if (!text.trim()) return;
+    stopAudio();
+    const token = playbackToken.current;
+    const key = taskKey;
     setNotice("");
+    if (forTask) {
+      setAudioPlayed(false);
+      setAudioPlaying(true);
+    }
+    const valid = () =>
+      playbackToken.current === token &&
+      (!forTask ||
+        (current.current.session &&
+          `${current.current.session.id}:${current.current.session.index}` ===
+            key));
+    const complete = () => {
+      if (!valid()) return;
+      setAudioPlaying(false);
+      if (forTask) setAudioPlayed(true);
+    };
+    const fail = () => {
+      if (!valid()) return;
+      setAudioPlaying(false);
+      if (forTask) setAudioPlayed(false);
+      setNotice(
+        "Không phát được âm thanh. Bài nghe chưa được đánh giá; hãy thử lại hoặc bỏ qua lượt này.",
+      );
+    };
     const synth = () => {
+      if (!valid()) return;
       if (!("speechSynthesis" in window)) {
-        setNotice(
-          "Thiết bị không hỗ trợ giọng tổng hợp. Bạn có thể tiếp tục dạng bài đọc/viết.",
-        );
+        fail();
         return;
       }
       const voices = speechSynthesis
         .getVoices()
         .filter((v) => v.lang.startsWith("en"));
       if (!voices.length) {
+        fail();
         setNotice(
           "Chưa có giọng tiếng Anh trên thiết bị. Hãy cài giọng đọc hoặc chọn bài đọc/viết; bài nghe chưa được đánh giá.",
         );
         return;
       }
-      speechSynthesis.cancel();
       const u = new SpeechSynthesisUtterance(text);
       u.voice = voices.find((v) => v.lang === state.voice) || voices[0];
       u.lang = u.voice.lang;
       u.rate = state.rate;
-      u.onerror = () =>
-        setNotice(
-          "Không phát được giọng đọc. Kết quả nghe chưa được xác nhận.",
-        );
+      u.onend = complete;
+      u.onerror = fail;
       speechSynthesis.speak(u);
     };
     if (url) {
@@ -402,10 +714,17 @@ function App() {
         const u = new URL(url, location.href);
         if (!["http:", "https:"].includes(u.protocol)) throw Error();
         const a = new Audio(u.href);
-        a.play().catch(() => {
-          setNotice("Âm thanh URL lỗi; chuyển sang giọng tổng hợp nếu có.");
+        audioRef.current = a;
+        let usedFallback = false;
+        const fallback = () => {
+          if (usedFallback || !valid()) return;
+          usedFallback = true;
+          setNotice("Âm thanh URL lỗi; đang thử giọng tổng hợp.");
           synth();
-        });
+        };
+        a.onended = complete;
+        a.onerror = fallback;
+        a.play().catch(fallback);
       } catch {
         synth();
       }
@@ -413,16 +732,35 @@ function App() {
   }
   async function submit(result?: boolean, hintOverride?: boolean) {
     if (!task || !w || !state.session || lock.current) return;
+    if (entry?.archived || !canPractice(w, task.skill)) {
+      setNotice(
+        "Nội dung lượt này chưa đủ điều kiện luyện hoặc đã lưu trữ. Chọn bỏ qua để tiếp tục; không ghi kết quả và không thay đổi lịch ôn.",
+      );
+      return;
+    }
+    if ([2, 3].includes(task.skill) && !audioPlayed) {
+      setNotice(
+        "Hãy nghe hết âm thanh trước khi ghi nhận bài nghe. Nếu không phát được, chọn bỏ qua; lượt này không bị tính sai.",
+      );
+      return;
+    }
     lock.current = true;
     setBusy(true);
     try {
+      clearTimeout(draftTimer.current);
+      await persistDraft();
+      const base = current.current;
       const self = [0, 2].includes(task.skill),
         ungraded = task.skill === 5;
       const correct = ungraded ? false : self ? !!result : grade(answer, w);
       const prior = state.history.filter(
         (h) => h.wordId === w.id && h.skill === task.skill,
       );
+      const independent = independence(base, w.id);
       const r = {
+        evidenceVersion: 2 as const,
+        independent,
+        audioPlayed: [2, 3].includes(task.skill) ? audioPlayed : undefined,
         id: state.session.id + ":" + state.session.index,
         wordId: w.id,
         time: Date.now(),
@@ -446,9 +784,7 @@ function App() {
             h.skill === task.skill,
         ),
       };
-      let next = record(state, r, state.session.scheduled);
-      if (ungraded)
-        next.entries[w.id] = { ...next.entries[w.id], notes: answer };
+      let next = record(base, r, state.session.scheduled);
       if (
         !correct &&
         !ungraded &&
@@ -459,7 +795,9 @@ function App() {
           0,
           { ...task },
         );
-      await commit(next);
+      await commit(next, undefined, base);
+      answerDraft.current = undefined;
+      storeBrowserDraft();
       setRevealed(true);
       setFeedback(
         ungraded
@@ -470,7 +808,9 @@ function App() {
               : "Chính xác! " +
                 (hint
                   ? "Có hỗ trợ — chưa tính là tự nhớ."
-                  : "Đã ghi nhận kết quả kiểm tra.")
+                  : independent
+                    ? "Đã ghi nhận kết quả kiểm tra độc lập."
+                    : "Kết quả vừa học/tiếp xúc; chưa tính là bằng chứng nhớ sau khoảng cách.")
             : "Cần củng cố. Mục này sẽ xuất hiện lại sau vài câu.",
       );
     } catch (e) {
@@ -481,6 +821,10 @@ function App() {
   }
   async function next() {
     if (!state.session) return;
+    stopAudio();
+    clearTimeout(draftTimer.current);
+    answerDraft.current = undefined;
+    storeBrowserDraft();
     const s = state.session;
     if (s.index + 1 >= s.queue.length) {
       const h = state.history.filter((r) => r.session === s.id);
@@ -492,7 +836,11 @@ function App() {
       );
       await commit({ ...state, session: undefined });
       setPage("today");
-    } else await commit({ ...state, session: { ...s, index: s.index + 1 } });
+    } else
+      await commit({
+        ...state,
+        session: { ...s, index: s.index + 1, draft: undefined },
+      });
   }
   const history = state.history.filter(
     (h) => range === 0 || h.time >= now - range * 86400000,
@@ -500,7 +848,9 @@ function App() {
   const tested = history.filter(
       (h) => h.first && h.method === "rule" && !h.hint,
     ),
-    delayed = tested.filter((h) => h.gap >= 86400000);
+    delayed = tested.filter(
+      (h) => h.evidenceVersion === 2 && h.independent && h.gap >= 86400000,
+    );
   const ratio = (h: typeof history) =>
     h.length
       ? `${Math.round((h.filter((r) => r.correct).length / h.length) * 100)}% · ${h.length} lượt`
@@ -561,6 +911,17 @@ function App() {
         className="modal"
         role="dialog"
         aria-modal="true"
+        aria-label={
+          backup
+            ? "Khôi phục bản sao lưu"
+            : pending
+              ? "Xem trước cập nhật kho"
+              : editor !== undefined
+                ? "Biên tập mục từ"
+                : settings
+                  ? "Cài đặt và sao lưu"
+                  : "Chi tiết mục từ"
+        }
         onClick={(e) => e.stopPropagation()}
       >
         <button className="close icon" aria-label="Đóng" onClick={close}>
@@ -588,6 +949,50 @@ function App() {
         <Leaf />
         <h2>Đang chuẩn bị góc học của bạn…</h2>
         <p role="alert">{notice}</p>
+        {notice && (
+          <>
+            <button
+              onClick={() => {
+                setNotice("");
+                setLoadAttempt((n) => n + 1);
+              }}
+            >
+              Thử tải lại
+            </button>
+            <label className="button">
+              Khôi phục từ JSON đã sao lưu
+              <input
+                type="file"
+                accept=".json,application/json"
+                hidden
+                onChange={(e) => file(e, true)}
+              />
+            </label>
+            {backup && (
+              <section>
+                <h3>Xem trước bản sao lưu</h3>
+                <p>
+                  {Object.keys(backup.entries).length} mục ·{" "}
+                  {backup.history.length} lượt học
+                </p>
+                <button
+                  onClick={() =>
+                    commit(backup, { replace: true })
+                      .then(() => {
+                        setBackup(undefined);
+                        setLoaded(true);
+                        setPage("today");
+                        setNotice("Đã khôi phục bản sao lưu.");
+                      })
+                      .catch(notifyError)
+                  }
+                >
+                  Khôi phục bản sao lưu này
+                </button>
+              </section>
+            )}
+          </>
+        )}
       </main>
     );
   return (
@@ -606,7 +1011,7 @@ function App() {
         </a>
         <div className="brand-caption">MỖI TỪ, MỘT BƯỚC TIẾN</div>
         <div className="nav-label">GÓC HỌC CỦA BẠN</div>
-        <nav>
+        <nav aria-label="Điều hướng học tập">
           {[
             ["today", "Hôm nay", CalendarDays],
             ["library", "Kho từ", BookOpen],
@@ -618,6 +1023,8 @@ function App() {
             <button
               key={String(key)}
               className={page === key ? "selected" : ""}
+              aria-label={String(label)}
+              aria-current={page === key ? "page" : undefined}
               onClick={() => setPage(String(key))}
             >
               {React.createElement(Icon as typeof Leaf, { size: 20 })}
@@ -704,7 +1111,11 @@ function App() {
               </span>
               <button
                 onClick={() =>
-                  setPending({ words: availableWords, origin: "default" })
+                  setPending({
+                    words: availableWords,
+                    origin: "default",
+                    version: sourceVersion,
+                  })
                 }
               >
                 Xem bản cập nhật
@@ -718,7 +1129,7 @@ function App() {
                   <div className="eyebrow">
                     MỘT CHÚT MỖI NGÀY, MỘT CHẶNG ĐƯỜNG DÀI
                   </div>
-                  <h1>
+                  <h1 tabIndex={-1}>
                     Hôm nay, mình học gì? <span className="wave">☀</span>
                   </h1>
                   <p>
@@ -755,6 +1166,14 @@ function App() {
                     {state.session ? "Tiếp tục phiên học" : "Bắt đầu học"}
                     <ArrowRight size={18} />
                   </button>
+                  {state.pausedScheduled && (
+                    <button
+                      className="primary light"
+                      onClick={() => start(true)}
+                    >
+                      Tiếp tục phiên ôn theo lịch <ArrowRight size={18} />
+                    </button>
+                  )}
                   <small>
                     Ưu tiên ôn từ cũ trước · Khoảng{" "}
                     {Math.max(1, Math.ceil((due.length + planned * 4) * 0.6))}{" "}
@@ -773,13 +1192,13 @@ function App() {
                   <div className="floating-card front-card">
                     <span className="card-label">YOUR NEXT CHAPTER</span>
                     <div className="plant">🌱</div>
-                    <strong>{active[0]?.word.word || "Sẵn sàng học"}</strong>
+                    <strong>{fresh[0]?.word.word || "Sẵn sàng học"}</strong>
                     <span className="phonetic">
-                      {active[0]?.word.ipa || "một từ mới, một khởi đầu"}
+                      {fresh[0]?.word.ipa || "một từ mới, một khởi đầu"}
                     </span>
                     <div className="art-line" />
                     <small>
-                      {active[0]?.word.meaning_vi || "Thêm từ để bắt đầu"}
+                      {fresh[0]?.word.meaning_vi || "Thêm từ để bắt đầu"}
                     </small>
                   </div>
                   <div className="art-chip">
@@ -831,6 +1250,27 @@ function App() {
                     <em>Mỗi lần nhớ lại đều có ý nghĩa</em>
                   </span>
                 </div>
+              </div>
+              <div className="panel">
+                <label>
+                  Trình độ của từ mới trong kế hoạch hôm nay{" "}
+                  <select
+                    aria-label="Trình độ từ mới hôm nay"
+                    value={level}
+                    onChange={(e) => setLevel(e.target.value)}
+                  >
+                    <option value="">Mọi trình độ, ưu tiên dễ trước</option>
+                    {["A1", "A2", "B1", "B2", "C1", "C2"].map((v) => (
+                      <option key={v}>{v}</option>
+                    ))}
+                  </select>
+                </label>
+                <p className="fineprint">
+                  {readyCount.toLocaleString("vi-VN")} mục đủ điều kiện luyện ·{" "}
+                  {(active.length - readyCount).toLocaleString("vi-VN")} mục còn
+                  lại vẫn tra cứu được, chưa tự đưa vào bài học. Bộ lọc trình độ
+                  chỉ giới hạn từ mới; các mục đến hạn vẫn được ôn.
+                </p>
               </div>
               {summary && <div className="notice success">{summary}</div>}
               {due.length > 20 && (
@@ -960,6 +1400,7 @@ function App() {
                       className="collection-card"
                       key={key}
                       onClick={() => {
+                        resetFilters();
                         setCollection(key);
                         setPage("library");
                       }}
@@ -990,7 +1431,7 @@ function App() {
               <div className="page-title">
                 <div>
                   <div className="eyebrow">KHÔNG GIAN TỪ VỰNG</div>
-                  <h1>Kho từ của bạn</h1>
+                  <h1 tabIndex={-1}>Kho từ của bạn</h1>
                   <p>
                     {
                       new Set(
@@ -1005,7 +1446,7 @@ function App() {
                         (e) => e.word.content_status === "reference",
                       ).length
                     }{" "}
-                    mục chỉ tra cứu
+                    mục thiếu nghĩa phù hợp
                   </p>
                   <p className="fineprint">
                     Kho mặc định đối chiếu từ/loại từ/CEFR theo bản lưu PDF
@@ -1050,7 +1491,9 @@ function App() {
                       e.word.content_status !== "reference",
                   )
                   .length.toLocaleString("vi-VN")}{" "}
-                mục. Nội dung từ từ điển mở được ghi nguồn và nhãn chưa rà soát.
+                mục. {readyCount.toLocaleString("vi-VN")} mục đủ điều kiện
+                luyện. Mục chưa rà chất lượng chỉ để tra cứu, không tự đưa vào
+                học hoặc chấm bài.
               </div>
               <p className="fineprint" data-testid="library-order">
                 Thứ tự: A1 → A2 → B1 → B2 → C1 → C2; trong cùng trình độ, từ
@@ -1113,6 +1556,10 @@ function App() {
                   <option value="known">Tự đánh dấu đã biết</option>
                 </select>
               </div>
+              <p className="fineprint">
+                Phạm vi hiện tại: {filterSummary}{" "}
+                <button onClick={resetFilters}>Xóa mọi bộ lọc</button>
+              </p>
               <div className="file-actions">
                 <label className="button">
                   <Upload size={16} /> Nhập .txt
@@ -1136,12 +1583,17 @@ function App() {
                 <button onClick={source}>↻ Cập nhật kho mặc định</button>
                 <span>Chỉnh sửa được lưu trên trình duyệt.</span>
               </div>
-              <div className="word-grid" data-total-items={filtered.length}>
+              <div
+                className="word-grid"
+                data-total-items={filtered.length}
+                tabIndex={-1}
+                aria-label="Kết quả Kho từ"
+              >
                 {visibleWords.map((e) => (
                   <button
                     className="word-card"
                     key={e.word.id}
-                    onClick={() => setDetail(e.word.id)}
+                    onClick={() => openDetail(e.word.id)}
                   >
                     <div>
                       <span className="word-topic">
@@ -1162,7 +1614,9 @@ function App() {
                     )}
                     {e.word.content_status === "dictionary" && (
                       <small className="content-status">
-                        Nghĩa từ từ điển mở · chưa rà soát thủ công
+                        {canPractice(e.word, 0)
+                          ? "Đã rà để luyện"
+                          : "Chỉ tra cứu · chưa rà chất lượng"}
                       </small>
                     )}
                     <footer>
@@ -1223,7 +1677,11 @@ function App() {
                             ...state,
                             entries: {
                               ...state.entries,
-                              [e.word.id]: { ...e, archived: false },
+                              [e.word.id]: {
+                                ...e,
+                                archived: false,
+                                archivedReason: undefined,
+                              },
                             },
                           }).catch(notifyError)
                         }
@@ -1240,14 +1698,15 @@ function App() {
               key={page}
               kind={page}
               entries={active}
-              onOpen={setDetail}
+              onOpen={openDetail}
+              onExpose={exposeIds}
               onPractice={(id) => start(false, id, 1)}
             />
           )}
           {page === "practice" && (
             <>
               <div className="eyebrow">CHỦ ĐỘNG NHỚ LẠI</div>
-              <h1>Luyện một chút, nhớ lâu hơn.</h1>
+              <h1 tabIndex={-1}>Luyện một chút, nhớ lâu hơn.</h1>
               <p>Luyện tự do có lưu bằng chứng nhưng không thay đổi lịch ôn.</p>
               <div className="practice-grid">
                 {skills.map((s, i) => (
@@ -1282,210 +1741,292 @@ function App() {
                   </button>
                 ))}
               </div>
-              <button className="primary" onClick={() => start(false)}>
-                Bắt đầu luyện · {Math.min(filtered.length, 20)} mục{" "}
+              <p>
+                Phạm vi hiện tại: {filterSummary}{" "}
+                <button onClick={resetFilters}>Xóa mọi bộ lọc</button>{" "}
+                <button onClick={() => setPage("library")}>
+                  Chọn bộ lọc trong Kho từ
+                </button>
+              </p>
+              <button
+                className="primary"
+                disabled={!practiceEligible.length}
+                onClick={() => start(false)}
+              >
+                Bắt đầu luyện · {Math.min(practiceEligible.length, 20)} mục{" "}
                 <ArrowRight size={18} />
               </button>
               <p className="fineprint">
-                Dùng các mục phù hợp với bộ lọc hiện tại trong Kho từ. Bài nghe
-                cần âm thanh hoạt động trên thiết bị.
+                {practiceEligible.length.toLocaleString("vi-VN")} mục đủ điều
+                kiện cho dạng bài đang chọn trong{" "}
+                {filtered.length.toLocaleString("vi-VN")} mục khớp bộ lọc. Ưu
+                tiên mục chưa luyện, cần củng cố và lâu chưa luyện; mỗi phiên
+                tối đa 20 mục. Bài nghe cần âm thanh hoạt động trên thiết bị.
               </p>
             </>
           )}
-          {page === "learn" && w && task && state.session && (
-            <>
-              <div className="study-top">
-                <button onClick={() => setPage("today")}>
-                  ← Lưu & tạm dừng
-                </button>
-                <span>
-                  {state.session.scheduled ? "Ôn theo lịch" : "Luyện tự do"} ·{" "}
-                  {state.session.index + 1}/{state.session.queue.length}
-                </span>
-              </div>
-              <progress
-                value={state.session.index}
-                max={state.session.queue.length}
-              />
-              <section className="study panel">
-                <span className="eyebrow">{skills[task.skill]}</span>
-                <h2>
-                  {[2, 3].includes(task.skill)
-                    ? "Lắng nghe và thử nhớ lại"
-                    : task.skill === 0 || task.skill === 5
-                      ? w.word
-                      : w.meaning_vi}
-                </h2>
-                {[2, 3].includes(task.skill) && (
-                  <>
-                    <button
-                      className="audio-big"
-                      onClick={() => speak(w.word, w.audio_word)}
-                    >
-                      <Volume2 size={28} /> Nghe từ
-                    </button>
-                    <p className="fineprint">
-                      {w.audio_word
-                        ? "Âm thanh khai báo; có thể dùng giọng tổng hợp dự phòng."
-                        : "Giọng tổng hợp của trình duyệt"}
-                    </p>
-                    <button
-                      className="text-button"
-                      onClick={() => {
-                        setNotice(
-                          "Đã bỏ qua bài nghe, không ghi nhận kết quả và không thay đổi lịch ôn.",
-                        );
-                        next().catch(notifyError);
-                      }}
-                    >
-                      Không nghe được? Bỏ qua lượt này
-                    </button>
-                  </>
-                )}
-                {[1, 4].includes(task.skill) && w.example_en && (
-                  <p className="context">{cloze(w)}</p>
-                )}
-                {task.skill === 5 && (
-                  <p>
-                    Viết một câu sử dụng từ này. Câu được lưu, chưa được chấm.
-                  </p>
-                )}
-                {![0, 2].includes(task.skill) && (
-                  <textarea
-                    aria-label="Câu trả lời"
-                    autoFocus
-                    placeholder={
-                      task.skill === 5 ? "Câu của bạn…" : "Gõ câu trả lời…"
-                    }
-                    value={answer}
-                    disabled={!!feedback}
-                    onChange={(e) => setAnswer(e.target.value)}
-                  />
-                )}{" "}
-                {!feedback && !revealed && (
-                  <div className="study-actions">
-                    {![0, 2].includes(task.skill) && (
-                      <button
-                        className="primary"
-                        disabled={!answer.trim() || busy}
-                        onClick={() => submit()}
-                      >
-                        {" "}
-                        {task.skill === 5 ? "Lưu câu" : "Kiểm tra"}{" "}
-                        <Check size={18} />
-                      </button>
-                    )}
-                    <button
-                      onClick={() => {
-                        setHint(![0, 2].includes(task.skill));
-                        setRevealed(true);
-                      }}
-                    >
-                      Mở đáp án{" "}
-                      {[0, 2].includes(task.skill)
-                        ? "để tự đánh giá"
-                        : "(có gợi ý)"}
-                    </button>
-                  </div>
-                )}
-                {revealed && (
-                  <div className="answer">
-                    <h3>
-                      {w.word}{" "}
-                      <button
-                        className="icon"
-                        aria-label="Nghe từ"
-                        onClick={() => speak(w.word, w.audio_word)}
-                      >
-                        <Volume2 size={19} />
-                      </button>
-                    </h3>
-                    <p>{w.meaning_vi}</p>
-                    {w.example_en && <p>{w.example_en}</p>}
-                    <small>{w.example_vi}</small>
-                    {!feedback &&
-                      ([0, 2].includes(task.skill) ? (
-                        <div className="study-actions">
-                          <button
-                            onClick={() => {
-                              submit(false, false);
-                            }}
-                          >
-                            Quên
-                          </button>
-                          <button
-                            onClick={() => {
-                              submit(true, true);
-                            }}
-                          >
-                            Nhớ khó
-                          </button>
-                          <button
-                            className="primary"
-                            onClick={() => {
-                              submit(true, false);
-                            }}
-                          >
-                            Nhớ rõ
-                          </button>
-                        </div>
-                      ) : (
-                        <button
-                          className="primary"
-                          disabled={busy || !answer.trim()}
-                          onClick={() => submit()}
-                        >
-                          Lưu lượt có hỗ trợ
-                        </button>
-                      ))}
-                  </div>
-                )}
-                {feedback && (
-                  <div className="notice success">
-                    {feedback}
-                    <button
-                      className="primary"
-                      onClick={() => next().catch(notifyError)}
-                    >
-                      Tiếp tục <ArrowRight size={17} />
-                    </button>
-                  </div>
-                )}
+          {page === "learn" &&
+            w &&
+            task &&
+            state.session &&
+            (entry?.archived || !canPractice(w, task.skill)) && (
+              <section className="panel study">
+                <h2>Nội dung này chưa đủ điều kiện luyện</h2>
+                <p>
+                  Mục đã lưu trữ hoặc chưa được rà chất lượng. Bạn vẫn có thể
+                  tra cứu trong Kho từ; lượt này không được chấm hoặc thay đổi
+                  lịch ôn.
+                </p>
                 <button
-                  className="text-button report"
-                  onClick={() => {
-                    const note = prompt("Mô tả điểm chưa rõ trong câu hỏi:");
-                    if (note)
-                      commit({
-                        ...state,
-                        entries: {
-                          ...state.entries,
-                          [w.id]: {
-                            ...entry!,
-                            word: {
-                              ...w,
-                              note: (w.note || "") + " | Báo câu hỏi: " + note,
-                            },
-                          },
-                        },
-                      })
-                        .then(() =>
-                          setNotice("Đã lưu báo cáo trong ghi chú mục từ."),
-                        )
-                        .catch(notifyError);
-                  }}
+                  className="primary"
+                  onClick={() => next().catch(notifyError)}
                 >
-                  Báo câu hỏi chưa rõ
+                  Bỏ qua và tiếp tục
+                </button>
+                <button onClick={() => pause().catch(notifyError)}>
+                  Lưu & tạm dừng
                 </button>
               </section>
-            </>
-          )}
+            )}
+          {page === "learn" &&
+            w &&
+            task &&
+            state.session &&
+            !entry?.archived &&
+            canPractice(w, task.skill) && (
+              <>
+                <div className="study-top">
+                  <button onClick={() => pause().catch(notifyError)}>
+                    ← Lưu & tạm dừng
+                  </button>
+                  <span>
+                    {state.session.scheduled ? "Ôn theo lịch" : "Luyện tự do"} ·{" "}
+                    {state.session.index + 1}/{state.session.queue.length}
+                  </span>
+                </div>
+                <progress
+                  value={state.session.index}
+                  max={state.session.queue.length}
+                />
+                <section className="study panel">
+                  <span className="eyebrow">{skills[task.skill]}</span>
+                  <h2>
+                    {[2, 3].includes(task.skill)
+                      ? "Lắng nghe và thử nhớ lại"
+                      : task.skill === 0 || task.skill === 5
+                        ? w.word
+                        : task.skill === 4
+                          ? "Điền từ phù hợp vào ngữ cảnh"
+                          : w.meaning_vi}
+                  </h2>
+                  {[2, 3].includes(task.skill) && (
+                    <>
+                      <button
+                        className="audio-big"
+                        onClick={() => speak(w.word, w.audio_word, true)}
+                      >
+                        <Volume2 size={28} /> Nghe từ
+                      </button>
+                      <p className="fineprint" aria-live="polite">
+                        {audioPlaying
+                          ? "Đang phát — hãy nghe hết âm thanh."
+                          : audioPlayed
+                            ? "Đã phát xong âm thanh cho lượt này."
+                            : "Chưa phát xong âm thanh; chưa thể ghi nhận kết quả nghe."}
+                      </p>
+                      <p className="fineprint">
+                        {w.audio_word
+                          ? "Âm thanh khai báo; có thể dùng giọng tổng hợp dự phòng."
+                          : "Giọng tổng hợp của trình duyệt"}
+                      </p>
+                      <button
+                        className="text-button"
+                        onClick={() => {
+                          setNotice(
+                            "Đã bỏ qua bài nghe, không ghi nhận kết quả và không thay đổi lịch ôn.",
+                          );
+                          next().catch(notifyError);
+                        }}
+                      >
+                        Không nghe được? Bỏ qua lượt này
+                      </button>
+                    </>
+                  )}
+                  {task.skill === 4 && w.example_en && (
+                    <>
+                      <p className="context">{cloze(w)}</p>
+                      <p className="fineprint">
+                        Điền từ vào ví dụ đã lưu; kết quả chưa chứng minh khả
+                        năng dùng từ trong ngữ cảnh mới.
+                      </p>
+                    </>
+                  )}
+                  {task.skill === 5 && (
+                    <p>
+                      Viết một câu sử dụng từ này. Câu được lưu, chưa được chấm.
+                    </p>
+                  )}
+                  {![0, 2].includes(task.skill) && (
+                    <textarea
+                      aria-label="Câu trả lời"
+                      autoFocus
+                      placeholder={
+                        task.skill === 5 ? "Câu của bạn…" : "Gõ câu trả lời…"
+                      }
+                      value={answer}
+                      disabled={!!feedback}
+                      onChange={(e) => updateDraft(e.target.value)}
+                    />
+                  )}{" "}
+                  {!feedback && !revealed && (
+                    <div className="study-actions">
+                      {![0, 2].includes(task.skill) && (
+                        <button
+                          className="primary"
+                          disabled={
+                            !answer.trim() ||
+                            busy ||
+                            ([2, 3].includes(task.skill) && !audioPlayed)
+                          }
+                          onClick={() => submit()}
+                        >
+                          {" "}
+                          {task.skill === 5 ? "Lưu câu" : "Kiểm tra"}{" "}
+                          <Check size={18} />
+                        </button>
+                      )}
+                      <button
+                        disabled={[2, 3].includes(task.skill) && !audioPlayed}
+                        onClick={() => {
+                          if ([2, 3].includes(task.skill) && !audioPlayed)
+                            return;
+                          const helped = ![0, 2].includes(task.skill);
+                          setHint(helped);
+                          setRevealed(true);
+                          updateDraft(answer, true, helped);
+                          const base = current.current;
+                          commit(expose(base, w.id), undefined, base)
+                            .then(() => persistDraft())
+                            .catch(notifyError);
+                        }}
+                      >
+                        Mở đáp án{" "}
+                        {[0, 2].includes(task.skill)
+                          ? "để tự đánh giá"
+                          : "(có gợi ý)"}
+                      </button>
+                    </div>
+                  )}
+                  {revealed && (
+                    <div className="answer">
+                      <h3>
+                        {w.word}{" "}
+                        <button
+                          className="icon"
+                          aria-label="Nghe từ"
+                          onClick={() => speak(w.word, w.audio_word)}
+                        >
+                          <Volume2 size={19} />
+                        </button>
+                      </h3>
+                      <p>{w.meaning_vi}</p>
+                      {w.example_en && <p>{w.example_en}</p>}
+                      <small>{w.example_vi}</small>
+                      {!feedback &&
+                        ([0, 2].includes(task.skill) ? (
+                          <div className="study-actions">
+                            <button
+                              disabled={
+                                busy || (task.skill === 2 && !audioPlayed)
+                              }
+                              onClick={() => {
+                                submit(false, false);
+                              }}
+                            >
+                              Quên
+                            </button>
+                            <button
+                              disabled={
+                                busy || (task.skill === 2 && !audioPlayed)
+                              }
+                              onClick={() => {
+                                submit(true, true);
+                              }}
+                            >
+                              Nhớ khó
+                            </button>
+                            <button
+                              className="primary"
+                              disabled={
+                                busy || (task.skill === 2 && !audioPlayed)
+                              }
+                              onClick={() => {
+                                submit(true, false);
+                              }}
+                            >
+                              Nhớ rõ
+                            </button>
+                          </div>
+                        ) : (
+                          <button
+                            className="primary"
+                            disabled={
+                              busy ||
+                              !answer.trim() ||
+                              ([2, 3].includes(task.skill) && !audioPlayed)
+                            }
+                            onClick={() => submit()}
+                          >
+                            Lưu lượt có hỗ trợ
+                          </button>
+                        ))}
+                    </div>
+                  )}
+                  {feedback && (
+                    <div className="notice success">
+                      {feedback}
+                      <button
+                        className="primary"
+                        onClick={() => next().catch(notifyError)}
+                      >
+                        Tiếp tục <ArrowRight size={17} />
+                      </button>
+                    </div>
+                  )}
+                  <button
+                    className="text-button report"
+                    onClick={() => {
+                      const note = prompt("Mô tả điểm chưa rõ trong câu hỏi:");
+                      if (note)
+                        commit({
+                          ...state,
+                          entries: {
+                            ...state.entries,
+                            [w.id]: {
+                              ...entry!,
+                              reports: [...(entry!.reports || []), note],
+                            },
+                          },
+                        })
+                          .then(() =>
+                            setNotice(
+                              "Đã lưu báo cáo riêng; cập nhật nguồn không xóa báo cáo của bạn.",
+                            ),
+                          )
+                          .catch(notifyError);
+                    }}
+                  >
+                    Báo câu hỏi chưa rõ
+                  </button>
+                </section>
+              </>
+            )}
           {page === "progress" && (
             <>
               <div className="page-title">
                 <div>
                   <div className="eyebrow">TIẾN BỘ CÓ BẰNG CHỨNG</div>
-                  <h1>Bạn thực sự nhớ được gì?</h1>
+                  <h1 tabIndex={-1}>Bạn thực sự nhớ được gì?</h1>
                   <p>
                     Số từ không quy đổi thành band IELTS. Mỗi kỹ năng có bằng
                     chứng riêng.
@@ -1583,7 +2124,7 @@ function App() {
                   <div className="weak-row" key={e.word.id}>
                     <button
                       className="text-button"
-                      onClick={() => setDetail(e.word.id)}
+                      onClick={() => openDetail(e.word.id)}
                     >
                       {e.word.word}
                     </button>
@@ -1628,6 +2169,40 @@ function App() {
                 )}
               </section>
               <section className="panel">
+                <h3>Câu của bạn để tự rà lại</h3>
+                <p className="fineprint">
+                  Các câu dưới đây do bạn viết, chưa được chấm ngữ pháp hoặc xác
+                  nhận cách dùng. Đọc lại và đối chiếu với nghĩa, cấu trúc của
+                  mục từ.
+                </p>
+                {history
+                  .filter(
+                    (r) =>
+                      r.skill === 5 &&
+                      r.method === "ungraded" &&
+                      r.answer?.trim(),
+                  )
+                  .slice(-30)
+                  .reverse()
+                  .map((r) => (
+                    <article key={r.id}>
+                      <button
+                        className="text-button"
+                        onClick={() => openDetail(r.wordId)}
+                      >
+                        {state.entries[r.wordId]?.word.word || r.wordId}
+                      </button>
+                      <p>{r.answer}</p>
+                      <small>
+                        {new Date(r.time).toLocaleString("vi-VN")} · Chưa chấm
+                      </small>
+                    </article>
+                  ))}
+                {!history.some((r) => r.skill === 5 && r.answer?.trim()) && (
+                  <p>Chưa có câu đã lưu trong khoảng thời gian này.</p>
+                )}
+              </section>
+              <section className="panel">
                 <h3>Lượng ôn sắp tới</h3>
                 {[0, 1, 2, 3, 4, 5, 6].map((i) => {
                   const d = new Date();
@@ -1655,10 +2230,13 @@ function App() {
                 <summary>Cách ứng dụng xác định “nhớ khá vững”</summary>
                 <p>
                   Với từng kỹ năng: ít nhất 3 lần kiểm tra đúng, không gợi ý,
-                  lần thử đầu ở 3 ngày địa phương khác nhau; ít nhất một lần
-                  cách lần trước từ 7 ngày. Đây là quy tắc của ứng dụng, không
-                  phải chuẩn chứng nhận ngôn ngữ. Tự đánh giá không đủ để kết
-                  luận kỹ năng vững. Ôn trễ không đồng nghĩa với quên.
+                  lần thử đầu ở 3 ngày địa phương khác nhau, chưa xem lại đáp án
+                  hoặc luyện cùng từ trong ít nhất 24 giờ; ít nhất một lần cách
+                  lần trước từ 7 ngày. Đây là quy tắc của ứng dụng, không phải
+                  chuẩn chứng nhận ngôn ngữ. Chỉ bằng chứng có kiểm tra điều
+                  kiện độc lập của bản hiện tại được dùng; lịch sử cũ vẫn được
+                  giữ. Tự đánh giá không đủ để kết luận kỹ năng vững. Ôn trễ
+                  không đồng nghĩa với quên.
                 </p>
                 <p>
                   Lịch riêng cho mỗi kỹ năng: 1–3–7–14–30 ngày; sai quay về 1
@@ -1698,7 +2276,10 @@ function App() {
         modal(
           <>
             <h2>Biên tập mục từ</h2>
-            <p>Giữ nguyên ID để giữ lịch sử. Nếu đổi hẳn nghĩa, tạo ID mới.</p>
+            <p>
+              Giữ nguyên ID để giữ lịch sử. Đổi nghĩa hoặc đáp án sẽ đặt lại
+              lịch ôn liên quan; nếu tạo nghĩa riêng, dùng ID mới.
+            </p>
             <textarea
               className="editor"
               aria-label="Nội dung mục từ"
@@ -1713,8 +2294,18 @@ function App() {
                   if (words.length !== 1)
                     throw Error("Chỉ chỉnh sửa một mục mỗi lần.");
                   const word = words[0];
+                  const schedules = { ...state.schedules };
+                  const old = state.entries[word.id];
+                  if (old)
+                    skills.forEach((_, skill) => {
+                      if (
+                        contentKey(old.word, skill) !== contentKey(word, skill)
+                      )
+                        delete schedules[`${word.id}:${skill}`];
+                    });
                   commit({
                     ...state,
+                    schedules,
                     entries: {
                       ...state.entries,
                       [word.id]: {
@@ -1722,6 +2313,7 @@ function App() {
                         word,
                         origin: "personal",
                         archived: false,
+                        archivedReason: undefined,
                       },
                     },
                   })
@@ -1763,6 +2355,7 @@ function App() {
                           added: "Thêm mới",
                           changed: "Nội dung thay đổi",
                           archived: "Lưu trữ",
+                          revived: "Khôi phục từ nguồn",
                         } as Record<string, string>
                       )[key]
                     }
@@ -1791,7 +2384,13 @@ function App() {
             <button
               className="primary"
               onClick={() =>
-                commit(merge(state, pending.words, pending.origin))
+                commit({
+                  ...merge(state, pending.words, pending.origin),
+                  sourceVersion:
+                    pending.origin === "default"
+                      ? pending.version
+                      : state.sourceVersion,
+                })
                   .then(() => {
                     setPending(undefined);
                     if (pending.origin === "default")
@@ -1818,11 +2417,15 @@ function App() {
                 type="number"
                 min={1}
                 max={30}
+                step={1}
                 value={state.daily}
                 onChange={(e) => {
                   const n = Number(e.target.value);
-                  if (n >= 1 && n <= 30)
-                    commit({ ...state, daily: n }).catch(notifyError);
+                  if (Number.isFinite(n))
+                    commit({
+                      ...state,
+                      daily: Math.min(30, Math.max(1, Math.round(n))),
+                    }).catch(notifyError);
                 }}
               />
             </label>
@@ -1926,6 +2529,20 @@ function App() {
                       ...state,
                       entries: { ...backup.entries, ...state.entries },
                       schedules: { ...backup.schedules, ...state.schedules },
+                      exposures: Object.fromEntries(
+                        [
+                          ...new Set([
+                            ...Object.keys(backup.exposures || {}),
+                            ...Object.keys(state.exposures || {}),
+                          ]),
+                        ].map((id) => [
+                          id,
+                          Math.max(
+                            backup.exposures?.[id] || 0,
+                            state.exposures?.[id] || 0,
+                          ),
+                        ]),
+                      ),
                       history: [
                         ...new Map(
                           [...backup.history, ...state.history].map((h) => [
@@ -1935,9 +2552,14 @@ function App() {
                         ).values(),
                       ].sort((a, b) => a.time - b.time),
                     };
-                commit(combined)
+                commit(combined, { replace })
                   .then(() => {
                     setBackup(undefined);
+                    if (replace) {
+                      setPage("today");
+                      answerDraft.current = undefined;
+                      storeBrowserDraft();
+                    }
                     setNotice("Đã khôi phục dữ liệu.");
                   })
                   .catch(notifyError);

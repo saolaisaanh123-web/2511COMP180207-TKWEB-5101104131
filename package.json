@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
-    "build": "tsc && vite build",
+    "dev": "node scripts/build-vocabulary-manifest.mjs && vite --host 0.0.0.0",
+    "build": "node scripts/build-vocabulary-manifest.mjs && tsc && vite build",
     "test": "vitest run src",
     "preview": "vite preview --host 0.0.0.0",
     "test:e2e": "playwright test",
-    "test:production": "npm run build && node scripts/check-production.mjs"
+    "test:production": "npm run build && node scripts/check-production.mjs",
+    "test:data": "python3 scripts/test-content-quality.py"
   },
   "dependencies": {
     "@fontsource/be-vietnam-pro": "^5.3.0",

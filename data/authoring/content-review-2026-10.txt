@@ -1,0 +1,608 @@
+id: ox-f86b1f62a85542-01
+word: should
+part_of_speech: modal verb
+source_fact_index: 686
+meaning_vi: nên; dùng để đưa ra lời khuyên
+definition_en: used to say what is a good or sensible thing to do
+example_en: You should check the timetable before you leave.
+example_vi: Bạn nên kiểm tra lịch trình trước khi đi.
+collocation: should + động từ nguyên thể
+topics: study-skills,daily-life
+note: Không thêm to sau should; đây là nghĩa khuyên nhủ, không bao quát mọi cách dùng của should.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-9523d9fbe79bcf-01
+word: yesterday
+part_of_speech: adverb
+source_fact_index: 895
+meaning_vi: hôm qua
+definition_en: on the day before today
+example_en: I sent the application yesterday morning.
+example_vi: Tôi đã gửi đơn vào sáng hôm qua.
+collocation: yesterday morning; yesterday afternoon
+topics: daily-life,work
+note: Yesterday morning là sáng hôm qua, không phải sáng hôm sau.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-bc16f5825a9daf-01
+word: will
+part_of_speech: modal verb
+source_fact_index: 873
+meaning_vi: sẽ; dùng để nói một dự đoán hoặc quyết định về tương lai
+definition_en: used when making a prediction or expressing a decision about the future
+example_en: I will send you the report tomorrow.
+example_vi: Tôi sẽ gửi báo cáo cho bạn vào ngày mai.
+collocation: will + động từ nguyên thể
+topics: work,daily-life
+note: Will ở đây là trợ động từ; phân biệt với danh từ ý chí và động từ will (để lại bằng di chúc, muốn điều gì xảy ra).
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-7d72fa8065e24a-01
+word: jail
+part_of_speech: noun
+source_fact_index: 3666
+meaning_vi: nhà tù; nơi giam giữ người theo quyết định pháp luật
+definition_en: a place where people are held as prisoners
+example_en: The report describes conditions in the local jail.
+example_vi: Báo cáo mô tả điều kiện trong nhà tù địa phương.
+collocation: in jail; a jail sentence
+topics: law,society
+note: Không dùng tham chiếu lỗi (như) goal làm nghĩa Việt.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-cac787df74af31-01
+word: consist
+part_of_speech: verb
+source_fact_index: 1917
+meaning_vi: gồm có; được cấu thành từ
+definition_en: to be made up of particular parts or members
+example_en: The course will consist of six weekly lessons.
+example_vi: Khóa học sẽ gồm sáu buổi học hằng tuần.
+collocation: consist of something
+topics: education
+note: Thường học theo cấu trúc consist of; không dùng dạng bị động be consisted of.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-9bf86920ceaf83-01
+word: characterize
+part_of_speech: verb
+source_fact_index: 4186
+meaning_vi: là đặc trưng của; tạo nên đặc điểm nổi bật của
+definition_en: to be a typical or distinguishing feature of something
+example_en: Long dry summers characterize the climate of this region.
+example_vi: Mùa hè khô kéo dài là đặc trưng của khí hậu vùng này.
+collocation: characterize something; be characterized by something
+topics: environment,geography
+note: Ví dụ minh họa nghĩa là đặc trưng của; be characterized by cần có by.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-be385d45dcaf7b-01
+word: cite
+part_of_speech: verb
+source_fact_index: 2681
+meaning_vi: trích dẫn hoặc dẫn một nguồn làm bằng chứng
+definition_en: to refer to a source as evidence or support
+example_en: Please cite the original study in your essay.
+example_vi: Hãy trích dẫn nghiên cứu gốc trong bài luận của bạn.
+collocation: cite a source; cite evidence; cite a study
+topics: education,research
+note: Cần ghi nguồn đủ rõ để người đọc tìm lại tài liệu.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-d80c9bf910f144-01
+word: address
+part_of_speech: noun
+source_fact_index: 9
+meaning_vi: địa chỉ; thông tin xác định nơi ở hoặc nơi nhận thư
+definition_en: details that identify where a person or organization can be found or contacted
+example_en: Please write your home address on this form.
+example_vi: Hãy viết địa chỉ nhà của bạn vào mẫu này.
+collocation: home address; postal address; email address
+topics: daily-life,communication
+note: Đây là nghĩa địa chỉ của danh từ; address còn có các nghĩa và từ loại khác.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-d0607f7ad2628b-01
+word: film
+part_of_speech: noun
+source_fact_index: 282
+meaning_vi: bộ phim
+definition_en: a story or other moving-image work shown on a screen
+example_en: We watched a film about life in a small coastal town.
+example_vi: Chúng tôi đã xem một bộ phim về cuộc sống ở một thị trấn ven biển nhỏ.
+collocation: watch a film; a documentary film
+topics: culture,media
+note: Film cũng có nghĩa vật liệu chụp ảnh và lớp màng; bài này chọn nghĩa bộ phim.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-28720365c5e747-01
+word: top
+part_of_speech: noun
+source_fact_index: 1701
+meaning_vi: phần trên cùng; đỉnh của một vật hoặc địa điểm
+definition_en: the highest part of something
+example_en: There is a small café at the top of the hill.
+example_vi: Có một quán cà phê nhỏ ở trên đỉnh đồi.
+collocation: at the top of; the top of the page
+topics: geography,daily-life
+note: Không dùng nghĩa con quay làm nghĩa nền tảng duy nhất của đầu từ top.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-3379feb6ae9fed-01
+word: guy
+part_of_speech: noun
+source_fact_index: 1252
+meaning_vi: anh chàng; người đàn ông (cách nói thân mật)
+definition_en: an informal word for a man
+example_en: The guy at the reception desk helped us find the room.
+example_vi: Anh chàng ở quầy lễ tân đã giúp chúng tôi tìm phòng.
+collocation: a nice guy; that guy
+topics: people,daily-life
+note: Thân mật; trong văn viết trang trọng nên chọn man, person hoặc chức danh phù hợp. Guys đôi khi gọi một nhóm người, nhưng bài này chỉ dạy nghĩa số ít.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-5d5766cf2d7870-01
+word: whole
+part_of_speech: adjective
+source_fact_index: 1754
+meaning_vi: toàn bộ; trọn vẹn, không thiếu phần nào
+definition_en: complete, with no part left out
+example_en: We spent the whole afternoon preparing for the presentation.
+example_vi: Chúng tôi dành cả buổi chiều để chuẩn bị cho bài thuyết trình.
+collocation: the whole day; the whole family
+topics: daily-life,education
+note: Thường dùng the whole + danh từ đếm được số ít; phân biệt với all trong từng cấu trúc.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-f3d1701e1d575e-01
+word: battery
+part_of_speech: noun
+source_fact_index: 1834
+meaning_vi: pin hoặc ắc quy; thiết bị cung cấp điện
+definition_en: a device that stores energy and supplies electricity
+example_en: The battery in my phone needs to be replaced.
+example_vi: Pin trong điện thoại của tôi cần được thay.
+collocation: a phone battery; charge a battery
+topics: technology,daily-life
+note: Bài này chọn nghĩa thiết bị cung cấp điện, không phải các nghĩa chuyên biệt khác.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-1562206543da76-01
+word: staff
+part_of_speech: noun
+source_fact_index: 2450
+meaning_vi: đội ngũ nhân viên của một tổ chức
+definition_en: the people who work for an organization
+example_en: The hospital staff receive regular safety training.
+example_vi: Đội ngũ nhân viên bệnh viện được tập huấn an toàn thường xuyên.
+collocation: teaching staff; hospital staff; a member of staff
+topics: work,health
+note: Danh từ tập hợp; có thể đi với động từ số ít hoặc số nhiều tùy biến thể tiếng Anh và cách nhìn tập thể. Một nhân viên là a staff member hoặc a member of staff.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-fe6d3468cf5c74-01
+word: standard
+part_of_speech: noun
+source_fact_index: 2451
+meaning_vi: tiêu chuẩn; mức chất lượng dùng làm cơ sở đánh giá
+definition_en: a level of quality used to judge or compare things
+example_en: The new filters help the factory meet a higher safety standard.
+example_vi: Các bộ lọc mới giúp nhà máy đáp ứng một tiêu chuẩn an toàn cao hơn.
+collocation: meet a standard; safety standards
+topics: work,environment
+note: Đây là danh từ tiêu chuẩn; không dạy nghĩa cờ hiệu làm nghĩa cơ bản.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-81b6b2c874b787-01
+word: potential
+part_of_speech: noun
+source_fact_index: 3068
+meaning_vi: tiềm năng; khả năng phát triển hoặc đạt được điều gì
+definition_en: the ability to develop or achieve something in the future
+example_en: The town has great potential for sustainable tourism.
+example_vi: Thị trấn có tiềm năng lớn để phát triển du lịch bền vững.
+collocation: have potential; reach your full potential
+topics: economy,education
+note: Danh từ không đếm được trong nghĩa này; potential còn là tính từ có thể xảy ra.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-c2e0c347e274d2-01
+word: league
+part_of_speech: noun
+source_fact_index: 2956
+meaning_vi: liên đoàn hoặc hệ thống giải đấu gồm các đội thi đấu với nhau
+definition_en: a group of sports teams that compete against one another
+example_en: Our school team has joined a local football league.
+example_vi: Đội của trường chúng tôi đã tham gia một giải bóng đá địa phương.
+collocation: a football league; a league match
+topics: sport
+note: Không chọn đơn vị chiều dài cổ làm nghĩa đầu tiên cho bài học thể thao.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-226f9e95eca788-01
+word: majority
+part_of_speech: noun
+source_fact_index: 2974
+meaning_vi: đa số; phần lớn hơn một nửa của một nhóm
+definition_en: more than half of the people or things in a group
+example_en: A clear majority of residents support the new bus service.
+example_vi: Đa số rõ rệt cư dân ủng hộ dịch vụ xe buýt mới.
+collocation: the majority of; a clear majority
+topics: society,government
+note: Majority là hơn một nửa, không đồng nghĩa với plurality (nhóm lớn nhất khi chưa chắc quá nửa).
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-586acb3c6bac48-01
+word: gay
+part_of_speech: adjective
+source_fact_index: 3584
+meaning_vi: đồng tính; thường chỉ nam giới bị thu hút về tình cảm hoặc tình dục bởi nam giới
+definition_en: describing someone attracted romantically or sexually to people of the same sex, especially a man
+example_en: The survey asked whether gay employees felt safe at work.
+example_vi: Khảo sát hỏi liệu nhân viên đồng tính có cảm thấy an toàn tại nơi làm việc hay không.
+collocation: a gay man; gay rights
+topics: people,society
+note: Từ chỉ xu hướng tính dục, không phải từ xúc phạm khi dùng trung tính. Nghĩa vui vẻ là cách dùng cũ; không dùng làm nghĩa hiện đại mặc định.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-a21dfce2c27396-01
+word: bay
+part_of_speech: noun
+source_fact_index: 4125
+meaning_vi: vịnh; vùng biển ăn sâu vào đất liền
+definition_en: an area of sea that curves into the land
+example_en: The fishing village lies beside a sheltered bay.
+example_vi: Làng chài nằm cạnh một vịnh kín gió.
+collocation: a sheltered bay; a coastal bay
+topics: geography,environment
+note: Bài này chọn nghĩa địa lý; bay còn có các nghĩa khác, gồm màu lông ngựa.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-59cc3cb8a42973-01
+word: rape
+part_of_speech: noun
+source_fact_index: 4963
+meaning_vi: tội hiếp dâm; hành vi xâm hại tình dục nghiêm trọng không có sự đồng thuận
+definition_en: a serious sexual crime involving penetration without consent
+example_en: The report calls for better support for survivors of rape.
+example_vi: Báo cáo kêu gọi hỗ trợ tốt hơn cho những người sống sót sau hành vi hiếp dâm.
+collocation: report a rape; survivors of rape
+topics: law,society
+note: Từ nhạy cảm thường gặp trong tin pháp luật. Chi tiết cấu thành tội danh phụ thuộc hệ thống pháp luật; ví dụ không mô tả hành vi cụ thể.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-b9776d7ddf459c-01
+word: the
+part_of_speech: article
+source_fact_index: 774
+meaning_vi: mạo từ xác định; đứng trước danh từ chỉ người hoặc vật đã xác định trong ngữ cảnh
+definition_en: the definite article, used before a noun whose reference is identifiable in context
+example_en: Please close the door next to your desk.
+example_vi: Hãy đóng cánh cửa cạnh bàn của bạn.
+collocation: the door; the same; the first
+topics: grammar,daily-life
+note: Tiếng Việt không có một từ tương đương dùng được cho mọi trường hợp; cần học qua ngữ cảnh. Không đặt the trước mọi danh từ.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-663ea1bfffe503-01
+word: to
+part_of_speech: preposition
+source_fact_index: 796
+meaning_vi: đến; về phía một địa điểm hoặc đích đến
+definition_en: in the direction of a place or destination
+example_en: We walked to the station after breakfast.
+example_vi: Chúng tôi đi bộ đến nhà ga sau bữa sáng.
+collocation: go to; walk to; a ticket to
+topics: grammar,transport
+note: Bài này chọn to là giới từ chỉ đích đến; phân biệt to đánh dấu động từ nguyên thể.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-10c22bcf4c768b-01
+word: for
+part_of_speech: preposition
+source_fact_index: 300
+meaning_vi: cho; dành cho người nhận hoặc đối tượng được hưởng
+definition_en: intended to be given to or used by someone
+example_en: This seat is reserved for passengers with reduced mobility.
+example_vi: Ghế này được dành cho hành khách bị hạn chế khả năng di chuyển.
+collocation: a gift for someone; reserved for
+topics: grammar,daily-life
+note: Đây là một cách dùng của for; giới từ này còn chỉ mục đích, thời lượng và nhiều quan hệ khác.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-2ad8a7049d7c55-01
+word: it
+part_of_speech: pronoun
+source_fact_index: 400
+meaning_vi: nó; đại từ thay cho một vật, sự việc hoặc con vật đã được nhắc đến
+definition_en: a pronoun referring to a thing, situation or animal already identified
+example_en: I bought a new laptop because it was lighter than my old one.
+example_vi: Tôi đã mua một máy tính xách tay mới vì nó nhẹ hơn máy cũ.
+collocation: it is; it has; use it
+topics: grammar,technology
+note: Bài này dạy đại từ quy chiếu; phân biệt it trong cấu trúc thời tiết, thời gian hoặc chủ ngữ giả.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-b8d31e852725af-01
+word: on
+part_of_speech: preposition
+source_fact_index: 542
+meaning_vi: trên; chỉ vị trí tiếp xúc hoặc được đỡ bởi một bề mặt
+definition_en: in a position touching or supported by a surface
+example_en: Your notebook is on the kitchen table.
+example_vi: Vở của bạn ở trên bàn bếp.
+collocation: on the table; on the wall
+topics: grammar,daily-life
+note: Đây là giới từ chỉ vị trí; on còn có cách dùng về ngày tháng, thiết bị và chủ đề.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-a7e2d26e8d1581-01
+word: by
+part_of_speech: preposition
+source_fact_index: 113
+meaning_vi: bằng; chỉ phương tiện hoặc cách di chuyển
+definition_en: using a particular means of transport
+example_en: Many students travel to school by bus.
+example_vi: Nhiều học sinh đến trường bằng xe buýt.
+collocation: by bus; by train; by bike
+topics: grammar,transport
+note: Trong cấu trúc chỉ phương tiện thường dùng by bus, không phải by a bus. Đây không phải nghĩa bên cạnh hoặc tác nhân trong câu bị động.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-c8b1a1a3e6bcee-01
+word: lie
+part_of_speech: verb
+source_fact_index: 2175
+meaning_vi: nói dối; cố ý nói điều không đúng sự thật
+definition_en: to deliberately say something that is not true
+example_en: Please do not lie about your qualifications on the application.
+example_vi: Đừng nói dối về trình độ của bạn trong đơn đăng ký.
+collocation: lie about something; lie to someone
+topics: communication,work
+note: Nghĩa nói dối thuộc lie2 (tell a lie), B1 trong bản nguồn đã ghim. Phân biệt lie1 (nằm), A1. Quá khứ của nói dối là lied; giữ ID để lưu lịch sử nhưng cần đánh giá lại nội dung đã sửa.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-441349e1ec2f7f-01
+word: bass
+part_of_speech: noun
+source_fact_index: 4122
+meaning_vi: âm trầm; phần âm hoặc giọng thấp trong âm nhạc
+definition_en: the low range of notes in music
+example_en: The bass sounds too loud through these headphones.
+example_vi: Âm trầm nghe quá lớn qua chiếc tai nghe này.
+collocation: bass notes; turn down the bass
+topics: music,technology
+note: Bài này chọn bass1 trong ngữ cảnh âm nhạc; bass còn là tên một số loài cá. Chưa gắn IPA hoặc bản thu vì hai từ đồng hình có cách phát âm khác nhau.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-e326cff641fb95-01
+word: gym
+part_of_speech: noun
+source_fact_index: 339
+meaning_vi: phòng tập thể dục; nơi có thiết bị tập luyện
+definition_en: a place equipped for physical exercise
+example_en: I go to the gym twice a week after work.
+example_vi: Tôi đến phòng tập hai lần mỗi tuần sau giờ làm.
+collocation: go to the gym; a gym membership
+topics: health,sport
+note: Cách nói rút gọn thông dụng của gymnasium; không để nghĩa Việt chỉ là một tham chiếu sang từ khác.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-7aa4f5c396342c-01
+word: blonde
+part_of_speech: adjective
+source_fact_index: 85
+meaning_vi: có tóc vàng hoặc vàng nhạt
+definition_en: having pale yellow or golden hair
+example_en: My sister has blonde hair and green eyes.
+example_vi: Chị gái tôi có tóc vàng và mắt xanh lá.
+collocation: blonde hair; naturally blonde
+topics: people
+note: Blond cũng là một cách viết; blond/blonde khác nhau theo thói quen và biến thể sử dụng. Bài này giữ cách viết đầu mục nguồn là blonde.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-90c332f4df1ce9-01
+word: backwards
+part_of_speech: adverb
+source_fact_index: 1826
+meaning_vi: về phía sau; theo chiều ngược lại
+definition_en: towards the back or in the reverse direction
+example_en: She took one step backwards to let the passengers leave.
+example_vi: Cô ấy lùi một bước để hành khách đi ra.
+collocation: walk backwards; move backwards
+topics: daily-life,transport
+note: Backward cũng dùng như trạng từ trong nhiều ngữ cảnh; học backwards theo đầu mục hiện tại.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-6a19f0fb4be545-01
+word: commitment
+part_of_speech: noun
+source_fact_index: 2692
+meaning_vi: sự cam kết; việc nhận trách nhiệm và quyết tâm thực hiện
+definition_en: a promise or firm decision to give time or effort to something
+example_en: The school has made a commitment to reduce food waste.
+example_vi: Nhà trường đã cam kết giảm lãng phí thực phẩm.
+collocation: make a commitment; a commitment to something
+topics: education,environment
+note: Commitment to + danh từ hoặc V-ing trong cách dùng này; không dịch chỉ bằng một từ tham chiếu committal.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-f45b59736bd986-01
+word: transparency
+part_of_speech: noun
+source_fact_index: 5236
+meaning_vi: sự minh bạch; việc công khai và rõ ràng về thông tin hoặc quyết định
+definition_en: openness that allows people to understand decisions and information
+example_en: Publishing the budget would improve transparency in local government.
+example_vi: Công bố ngân sách sẽ cải thiện tính minh bạch của chính quyền địa phương.
+collocation: improve transparency; greater transparency
+topics: government,society
+note: Đây là nghĩa minh bạch về thông tin; transparency cũng có nghĩa tính trong suốt của vật liệu.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-b5293f2894ae49-01
+word: whilst
+part_of_speech: conjunction
+source_fact_index: 5306
+meaning_vi: trong khi; trong khoảng thời gian một việc khác đang xảy ra
+definition_en: while; during the time that something else happens
+example_en: Please keep your phone silent whilst the interview is taking place.
+example_vi: Hãy để điện thoại ở chế độ im lặng trong khi cuộc phỏng vấn diễn ra.
+collocation: whilst + mệnh đề
+topics: grammar,work
+note: Thường gặp trong tiếng Anh Anh, ít phổ biến hơn while trong tiếng Anh Mỹ. Không phải slang; đây là nghĩa thời gian.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-0e031e954a4320-01
+word: could
+part_of_speech: modal verb
+source_fact_index: 170
+meaning_vi: có thể; dùng để nói một điều có khả năng xảy ra
+definition_en: used to say that something is possible
+example_en: Heavy rain could delay the flight this evening.
+example_vi: Mưa lớn có thể làm chuyến bay tối nay bị chậm.
+collocation: could + động từ nguyên thể
+topics: transport,weather
+note: Đây là nghĩa khả năng; could còn diễn đạt khả năng trong quá khứ và yêu cầu lịch sự.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-97519f7c288b36-01
+word: anyway
+part_of_speech: adverb
+source_fact_index: 938
+meaning_vi: dù vậy; bất chấp điều vừa được nhắc đến
+definition_en: despite a fact or problem that has just been mentioned
+example_en: The forecast predicted rain, but we went for a walk anyway.
+example_vi: Dự báo nói trời sẽ mưa, nhưng chúng tôi vẫn đi dạo.
+collocation: do something anyway
+topics: daily-life,communication
+note: Bài này chọn nghĩa bất chấp điều đó; anyway còn dùng để chuyển hoặc quay lại chủ đề trong hội thoại.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+---
+id: ox-bcc649cfdb8cc5-01
+word: found
+part_of_speech: verb
+source_fact_index: 2864
+meaning_vi: thành lập; bắt đầu một tổ chức hoặc cơ sở
+definition_en: to start an organization or institution
+example_en: The researchers plan to found a new environmental charity.
+example_vi: Các nhà nghiên cứu dự định thành lập một tổ chức từ thiện mới về môi trường.
+collocation: found a company; found an organization
+topics: work,environment
+note: Động từ thành lập có quá khứ founded; phân biệt found là quá khứ hoặc phân từ của find. Không dùng tần suất chung của cách viết found để xếp hạng riêng nghĩa thành lập.
+content_status: reviewed
+example_type: authored
+learning_status: ready
+learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+

@@ -57,6 +57,11 @@ test("library orders by CEFR then frequency and new study uses that order", asyn
     .selectOption("A2");
   await expect(page.locator(".word-card h3")).toHaveText(["higher-level"]);
   await page.getByRole("button", { name: "Hôm nay", exact: true }).click();
+  const dailyLevel = page.getByRole("combobox", {
+    name: "Trình độ từ mới hôm nay",
+  });
+  await expect(dailyLevel).toHaveValue("A2");
+  await dailyLevel.selectOption("");
   await page.getByRole("button", { name: "Bắt đầu học", exact: true }).click();
   await expect(page.locator(".study h2")).toHaveText("a-common");
 });
@@ -124,6 +129,12 @@ test("dashboard, scheduled study, persistence, evidence and backup", async ({
 }) => {
   const errors: string[] = [];
   page.on("pageerror", (e) => errors.push(e.message));
+  await page.route("**/data/vocabulary.txt", (route) =>
+    route.fulfill({
+      contentType: "text/plain;charset=utf-8",
+      body: serialize([firstNewWord]),
+    }),
+  );
   await page.goto("/");
   await expect(page).toHaveTitle(/^Jeongyeon/);
   await expect(
@@ -150,6 +161,7 @@ test("dashboard, scheduled study, persistence, evidence and backup", async ({
     );
   await page.getByRole("button", { name: "Kiểm tra", exact: true }).dblclick();
   await expect(page.getByText(/Chính xác!/)).toBeVisible();
+  await expect(page.getByText(/Kết quả vừa học\/tiếp xúc/)).toBeVisible();
   await page.getByRole("button", { name: "Tiến độ", exact: true }).click();
   await expect(page.getByText("100% · 1 lượt").first()).toBeVisible();
   await page.getByRole("button", { name: "Cài đặt & sao lưu" }).click();
@@ -246,19 +258,10 @@ test("source refresh adds and archives without erasing study evidence", async ({
   );
   await page.getByRole("button", { name: "Xác nhận cập nhật" }).click();
   await expect(page.locator(".word-card")).toHaveCount(2);
-  const snapshot = await page.evaluate(
-    async () =>
-      new Promise<any>((resolve) => {
-        const req = indexedDB.open("lexi-learning", 1);
-        req.onsuccess = () => {
-          const q = req.result
-            .transaction("state")
-            .objectStore("state")
-            .get("main");
-          q.onsuccess = () => resolve(q.result);
-        };
-      }),
-  );
+  const snapshot = await page.evaluate(async () => {
+    const core = await import("/src/core.ts");
+    return core.read();
+  });
   expect(snapshot.history).toHaveLength(1);
   expect(snapshot.entries["achieve-01"].archived).toBe(true);
   expect(snapshot.entries["avoid-01"].word.example_en).toBe(
@@ -282,9 +285,9 @@ test("audio fallback and unavailable voices do not crash or count a skipped test
   );
   await expect(page.locator(".study")).not.toContainText("avoid");
   await page.getByRole("button", { name: "Nghe từ", exact: true }).click();
-  await expect(page.getByRole("status")).toContainText(
-    "Chưa có giọng tiếng Anh",
-  );
+  await expect(
+    page.getByRole("status").filter({ hasText: "Chưa có giọng tiếng Anh" }),
+  ).toBeVisible();
   await page
     .getByRole("button", { name: "Không nghe được? Bỏ qua lượt này" })
     .click();
@@ -328,15 +331,9 @@ test("existing learner previews Oxford corpus update without losing progress or 
   old.entries["achieve-01"].origin = "personal";
   old.entries["achieve-01"].word.meaning_vi = "bản sửa riêng của tôi";
   await page.evaluate(async (saved) => {
-    await new Promise<void>((resolve, reject) => {
-      const q = indexedDB.open("lexi-learning", 1);
-      q.onsuccess = () => {
-        const tx = q.result.transaction("state", "readwrite");
-        tx.objectStore("state").put(saved, "main");
-        tx.oncomplete = () => resolve();
-        tx.onerror = () => reject(tx.error);
-      };
-    });
+    const core = await import("/src/core.ts");
+    const base = await core.read();
+    await core.save(saved, base, { replace: true });
   }, old);
   await page.reload();
   await page.getByRole("button", { name: "Xem bản cập nhật" }).click();
@@ -369,19 +366,10 @@ test("existing learner previews Oxford corpus update without losing progress or 
   await expect(
     page.getByRole("button", { name: "Xem bản cập nhật" }),
   ).toHaveCount(0);
-  const saved = await page.evaluate(
-    async () =>
-      new Promise<any>((resolve) => {
-        const req = indexedDB.open("lexi-learning", 1);
-        req.onsuccess = () => {
-          const q = req.result
-            .transaction("state")
-            .objectStore("state")
-            .get("main");
-          q.onsuccess = () => resolve(q.result);
-        };
-      }),
-  );
+  const saved = await page.evaluate(async () => {
+    const core = await import("/src/core.ts");
+    return core.read();
+  });
   expect(saved.history).toHaveLength(1);
   expect(saved.schedules["commute-01:1"]).toEqual(
     old.schedules["commute-01:1"],

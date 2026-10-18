@@ -20,6 +20,8 @@ from pathlib import Path
 
 import wordfreq
 
+from corpus_policy import KNOWN_FREQUENCY_CONFLATIONS
+
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE_ID = "wordfreq-3.1.1-en-large"
@@ -53,7 +55,7 @@ def parse_records(text):
 def attach_frequency(text, values):
     """Preserve record/field order and non-frequency lines; use UTF-8/LF output."""
     blocks = []
-    frequency_fields = ("frequency_zipf", "frequency_source")
+    frequency_fields = ("frequency_zipf", "frequency_source", "frequency_note")
     for block in text.lstrip("\ufeff").replace("\r\n", "\n").split("\n---\n"):
         if not block.strip():
             continue
@@ -67,7 +69,7 @@ def attach_frequency(text, values):
                 lines[index] = f"{key}: {fields[key]}".rstrip()
                 found.add(key)
         for key in frequency_fields:
-            if key not in found:
+            if key not in found and (key != "frequency_note" or fields[key]):
                 lines.append(f"{key}: {fields[key]}".rstrip())
         blocks.append("\n".join(lines))
     updated = "\n---\n".join(blocks) + "\n"
@@ -83,9 +85,15 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--vocabulary", type=Path, default=ROOT / "public/data/vocabulary.txt")
     parser.add_argument("--output", type=Path, required=True)
-    parser.add_argument("--provenance", type=Path, default=ROOT / "public/data/frequency-provenance.json")
+    parser.add_argument("--provenance", type=Path, help="Metadata output; defaults beside --output for previews, or public metadata with --apply")
     parser.add_argument("--apply", action="store_true", help="Attach the exported frequency fields to --vocabulary, preserving all other fields and record order")
     args = parser.parse_args()
+    if args.output.resolve() == args.vocabulary.resolve():
+        parser.error("Frequency JSON output cannot replace the canonical vocabulary TXT")
+    if args.provenance is None:
+        args.provenance = ROOT / "public/data/frequency-provenance.json" if args.apply else args.output.with_suffix(".provenance.json")
+    if not args.apply and args.provenance.resolve() == (ROOT / "public/data/frequency-provenance.json").resolve():
+        parser.error("Changing public frequency provenance requires --apply; use a preview metadata path instead")
     if metadata.version("wordfreq") != "3.1.1":
         raise SystemExit("Use wordfreq==3.1.1; changing the source requires a new audit.")
     data_path = Path(wordfreq.__file__).parent / "data/large_en.msgpack.gz"
@@ -108,16 +116,19 @@ def main():
         reason = ""
         if not is_oxford:
             reason = "outside_oxford_headwords"
+        elif headword in KNOWN_FREQUENCY_CONFLATIONS:
+            reason = "known_case_or_lemma_sense_conflation"
         elif any(char.isspace() for char in headword) or "," in headword or "/" in headword:
             reason = "multiword_or_alternatives_not_an_observed_phrase_frequency"
         elif lookup not in frequencies:
             reason = "no_exact_spelling_in_pinned_table"
         if reason:
-            result[record["id"]] = {"frequency_zipf": "", "frequency_source": ""}
-            unscored.append({"id": record["id"], "word": headword, "reason": reason})
+            note = KNOWN_FREQUENCY_CONFLATIONS.get(headword, record.get("frequency_note", ""))
+            result[record["id"]] = {"frequency_zipf": "", "frequency_source": "", "frequency_note": note}
+            unscored.append({"id": record["id"], "word": headword, "reason": reason, **({"note": note} if note else {})})
             continue
         score = round(9 + math.log10(frequencies[lookup]), 2)
-        result[record["id"]] = {"frequency_zipf": f"{score:.2f}", "frequency_source": SOURCE_ID}
+        result[record["id"]] = {"frequency_zipf": f"{score:.2f}", "frequency_source": SOURCE_ID, "frequency_note": record.get("frequency_note", "")}
         spellings[lookup].append(headword)
         if headword != lookup:
             case_normalized.append({"id": record["id"], "word": headword, "lookup": lookup})
@@ -144,8 +155,8 @@ def main():
             "lookup": "Exact casefolded headword lookup in get_frequency_dict; no token-product phrase estimates, lemmatization, synonym substitution or estimated missing values.",
             "metric": "Zipf = 9 + log10(proportion), rounded to 0.01 as quantized by the source. Higher means more frequent; ties have no additional frequency distinction.",
             "unknown": "Empty frequency_zipf and frequency_source; never zero or an invented score.",
-            "case": "Case-insensitive spelling-level estimate: May/may, March/march and IT/it share the spelling frequency. This is not a proper-name or abbreviation-specific frequency.",
-            "scope": "Oxford headwords only. Unscored multiword expressions, alternate spellings in one record, or exact forms absent from the source stay unscored.",
+            "case": "Casefolded spelling frequency. Known case/lemma-sense conflations IT, May, March and found are explicitly unscored; other values still do not distinguish senses or POS.",
+            "scope": "Oxford headwords only. Multiword expressions, alternatives, missing forms and documented known conflations stay unscored.",
         },
         "limitations": [
             "Frequency belongs to a spelling, not a particular meaning, grammatical part of speech, or inflectional lemma family.",
@@ -168,10 +179,12 @@ def main():
         },
         "caseNormalizedScoredHeadwords": case_normalized,
         "unscoredEntries": unscored,
+        "knownConflationExclusions": [{"word": word, "note": note} for word, note in KNOWN_FREQUENCY_CONFLATIONS.items()],
     }
     updated = attach_frequency(original_bytes.decode("utf-8"), result) if args.apply else None
     if updated is not None:
         provenance["outputAfterAttachingMetadata"] = {"filename": args.vocabulary.name, "sha256": sha256(updated.encode("utf-8"))}
+        provenance["currentCanonicalVocabulary"] = provenance["outputAfterAttachingMetadata"].copy()
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.provenance.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

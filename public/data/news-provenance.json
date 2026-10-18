@@ -6,7 +6,8 @@
     "A single attestation does not establish how often an expression is used.",
     "Source dates are historical publication dates, not a claim of current news or current popularity.",
     "Reporting can quote interviewees or political figures; their words are not an editorial endorsement or an independent factual finding.",
-    "Broadcast transcripts may contain transcription errors and do not replace listening to the original recording."
+    "Broadcast transcripts may contain transcription errors and do not replace listening to the original recording.",
+    "Nine PBS video URLs are declared by VideoObject metadata in the publisher pages; the player was inaccessible to the verification environment. Video playback and phrase timestamps have not been verified. No clip recording or timestamp is invented."
   ],
   "coverage": {
     "expressions": 27,
@@ -15,7 +16,10 @@
       "AP via PBS News": 1,
       "VOA Learning English": 15,
       "PBS NewsHour": 11
-    }
+    },
+    "publisherDeclaredVideoReferences": 9,
+    "playbackVerified": 0,
+    "phraseTimestampsVerified": 0
   },
   "entries": [
     {
@@ -304,7 +308,17 @@
       "excerpt": "We will bite the bullet for the next year or so until we get this clutch figured out.",
       "verifiedOn": "2026-10-17",
       "retrievedAt": "2026-10-17T22:48:10+00:00",
-      "retrievedHtmlSha256": "e8246377a7f1f74e3f4f64ff36195abb4e769213df21dd13d958e88320fe001b"
+      "retrievedHtmlSha256": "e8246377a7f1f74e3f4f64ff36195abb4e769213df21dd13d958e88320fe001b",
+      "mediaReference": {
+        "url": "https://player.pbs.org/viralplayer/3096623648",
+        "publisherDeclaredDuration": "PT10M28S",
+        "sourceEvidence": "VideoObject.embedUrl in verified publisher HTML",
+        "retrievedPublisherHtmlSha256": "e8246377a7f1f74e3f4f64ff36195abb4e769213df21dd13d958e88320fe001b",
+        "metadataVerifiedOn": "2026-10-18",
+        "playbackVerified": false,
+        "phraseTimestampVerified": false,
+        "note": "Liên kết video do bài nguồn khai báo; chưa kiểm chứng phát trực tiếp hoặc mốc thời gian của cụm từ."
+      }
     },
     {
       "id": "idiom-move-the-goalposts-01",
@@ -336,7 +350,17 @@
       "excerpt": "It is your move. The ball is in your court.",
       "verifiedOn": "2026-10-17",
       "retrievedAt": "2026-10-17T22:48:10+00:00",
-      "retrievedHtmlSha256": "104a3147ed7e42a068f0f8f73f95067cf6f1a86126773138ab1f7cad803d0777"
+      "retrievedHtmlSha256": "104a3147ed7e42a068f0f8f73f95067cf6f1a86126773138ab1f7cad803d0777",
+      "mediaReference": {
+        "url": "https://player.pbs.org/viralplayer/3052837481",
+        "publisherDeclaredDuration": "PT10M5S",
+        "sourceEvidence": "VideoObject.embedUrl in verified publisher HTML",
+        "retrievedPublisherHtmlSha256": "104a3147ed7e42a068f0f8f73f95067cf6f1a86126773138ab1f7cad803d0777",
+        "metadataVerifiedOn": "2026-10-18",
+        "playbackVerified": false,
+        "phraseTimestampVerified": false,
+        "note": "Liên kết video do bài nguồn khai báo; chưa kiểm chứng phát trực tiếp hoặc mốc thời gian của cụm từ."
+      }
     },
     {
       "id": "idiom-walk-a-tightrope-01",
@@ -352,7 +376,17 @@
       "excerpt": "you're seeing the Harris campaign kind of walk a tightrope between whether they should be talking about the economy",
       "verifiedOn": "2026-10-17",
       "retrievedAt": "2026-10-17T22:48:46.590517+00:00",
-      "retrievedHtmlSha256": "e1500cff16eddad8b9149641c73a891d19c29d2f996c07cba2fb886bcc6e1f1b"
+      "retrievedHtmlSha256": "e1500cff16eddad8b9149641c73a891d19c29d2f996c07cba2fb886bcc6e1f1b",
+      "mediaReference": {
+        "url": "https://player.pbs.org/viralplayer/3095891853",
+        "publisherDeclaredDuration": "PT9M6S",
+        "sourceEvidence": "VideoObject.embedUrl in verified publisher HTML",
+        "retrievedPublisherHtmlSha256": "e1500cff16eddad8b9149641c73a891d19c29d2f996c07cba2fb886bcc6e1f1b",
+        "metadataVerifiedOn": "2026-10-18",
+        "playbackVerified": false,
+        "phraseTimestampVerified": false,
+        "note": "Liên kết video do bài nguồn khai báo; chưa kiểm chứng phát trực tiếp hoặc mốc thời gian của cụm từ."
+      }
     },
     {
       "id": "idiom-a-double-edged-sword-01",
@@ -368,7 +402,17 @@
       "excerpt": "Well, here, it's a double-edged sword. We'd help some industries, but we'd hurt others.",
       "verifiedOn": "2026-10-17",
       "retrievedAt": "2026-10-17T22:48:46.597239+00:00",
-      "retrievedHtmlSha256": "30183db2f5335e2abee9e55710b9f001d5bf36a1d71f189d859b79e88970026e"
+      "retrievedHtmlSha256": "30183db2f5335e2abee9e55710b9f001d5bf36a1d71f189d859b79e88970026e",
+      "mediaReference": {
+        "url": "https://player.pbs.org/viralplayer/3098401840",
+        "publisherDeclaredDuration": "PT5M54S",
+        "sourceEvidence": "VideoObject.embedUrl in verified publisher HTML",
+        "retrievedPublisherHtmlSha256": "30183db2f5335e2abee9e55710b9f001d5bf36a1d71f189d859b79e88970026e",
+        "metadataVerifiedOn": "2026-10-18",
+        "playbackVerified": false,
+        "phraseTimestampVerified": false,
+        "note": "Liên kết video do bài nguồn khai báo; chưa kiểm chứng phát trực tiếp hoặc mốc thời gian của cụm từ."
+      }
     },
     {
       "id": "idiom-a-drop-in-the-bucket-01",
@@ -384,7 +428,17 @@
       "excerpt": "What we are doing here at La Clinica is just a drop in the bucket.",
       "verifiedOn": "2026-10-17",
       "retrievedAt": "2026-10-17T22:48:46.603964+00:00",
-      "retrievedHtmlSha256": "7570cb55d64e24a5658f43c4bce8cd97b0233fe508b87439dee919f5242529f5"
+      "retrievedHtmlSha256": "7570cb55d64e24a5658f43c4bce8cd97b0233fe508b87439dee919f5242529f5",
+      "mediaReference": {
+        "url": "https://player.pbs.org/viralplayer/3086317082",
+        "publisherDeclaredDuration": "PT8M33S",
+        "sourceEvidence": "VideoObject.embedUrl in verified publisher HTML",
+        "retrievedPublisherHtmlSha256": "7570cb55d64e24a5658f43c4bce8cd97b0233fe508b87439dee919f5242529f5",
+        "metadataVerifiedOn": "2026-10-18",
+        "playbackVerified": false,
+        "phraseTimestampVerified": false,
+        "note": "Liên kết video do bài nguồn khai báo; chưa kiểm chứng phát trực tiếp hoặc mốc thời gian của cụm từ."
+      }
     },
     {
       "id": "idiom-see-the-writing-on-the-wall-01",
@@ -400,7 +454,17 @@
       "excerpt": "we could all see the writing on the wall that renewables were going to be taking over the world.",
       "verifiedOn": "2026-10-17",
       "retrievedAt": "2026-10-17T22:48:46.610384+00:00",
-      "retrievedHtmlSha256": "1584200ef2cee31291fe46e299393f145a3782056c6246bb0bea8575e2db6014"
+      "retrievedHtmlSha256": "1584200ef2cee31291fe46e299393f145a3782056c6246bb0bea8575e2db6014",
+      "mediaReference": {
+        "url": "https://player.pbs.org/viralplayer/3102761492",
+        "publisherDeclaredDuration": "PT5M45S",
+        "sourceEvidence": "VideoObject.embedUrl in verified publisher HTML",
+        "retrievedPublisherHtmlSha256": "1584200ef2cee31291fe46e299393f145a3782056c6246bb0bea8575e2db6014",
+        "metadataVerifiedOn": "2026-10-18",
+        "playbackVerified": false,
+        "phraseTimestampVerified": false,
+        "note": "Liên kết video do bài nguồn khai báo; chưa kiểm chứng phát trực tiếp hoặc mốc thời gian của cụm từ."
+      }
     },
     {
       "id": "idiom-put-all-your-eggs-in-one-basket-01",
@@ -416,7 +480,17 @@
       "excerpt": "the president had, again, put all of his eggs in one basket when he brought this case",
       "verifiedOn": "2026-10-17",
       "retrievedAt": "2026-10-17T22:48:46.617566+00:00",
-      "retrievedHtmlSha256": "a0145db0cb357c3e008ac18f8d8ad8dc6df9cfdff0cfdeede3d7c7feea1617c2"
+      "retrievedHtmlSha256": "a0145db0cb357c3e008ac18f8d8ad8dc6df9cfdff0cfdeede3d7c7feea1617c2",
+      "mediaReference": {
+        "url": "https://player.pbs.org/viralplayer/3044563707",
+        "publisherDeclaredDuration": "PT15M51S",
+        "sourceEvidence": "VideoObject.embedUrl in verified publisher HTML",
+        "retrievedPublisherHtmlSha256": "a0145db0cb357c3e008ac18f8d8ad8dc6df9cfdff0cfdeede3d7c7feea1617c2",
+        "metadataVerifiedOn": "2026-10-18",
+        "playbackVerified": false,
+        "phraseTimestampVerified": false,
+        "note": "Liên kết video do bài nguồn khai báo; chưa kiểm chứng phát trực tiếp hoặc mốc thời gian của cụm từ."
+      }
     },
     {
       "id": "idiom-a-level-playing-field-01",
@@ -432,7 +506,17 @@
       "excerpt": "I would like to see a level playing field, so that workers can make a full and fair choice",
       "verifiedOn": "2026-10-17",
       "retrievedAt": "2026-10-17T22:48:46.623505+00:00",
-      "retrievedHtmlSha256": "6d8207b8af497bdc509cf82ef74ec7593fd3e0cd8b64faed010aa6d8c6ee8ae5"
+      "retrievedHtmlSha256": "6d8207b8af497bdc509cf82ef74ec7593fd3e0cd8b64faed010aa6d8c6ee8ae5",
+      "mediaReference": {
+        "url": "https://player.pbs.org/viralplayer/2365073396",
+        "publisherDeclaredDuration": "",
+        "sourceEvidence": "VideoObject.embedUrl in verified publisher HTML",
+        "retrievedPublisherHtmlSha256": "6d8207b8af497bdc509cf82ef74ec7593fd3e0cd8b64faed010aa6d8c6ee8ae5",
+        "metadataVerifiedOn": "2026-10-18",
+        "playbackVerified": false,
+        "phraseTimestampVerified": false,
+        "note": "Liên kết video do bài nguồn khai báo; chưa kiểm chứng phát trực tiếp hoặc mốc thời gian của cụm từ."
+      }
     },
     {
       "id": "idiom-pull-the-plug-01",
@@ -448,7 +532,17 @@
       "excerpt": "the Trump administration's order to pull the plug on the Revolution Wind project, which was nearly 80 percent complete.",
       "verifiedOn": "2026-10-17",
       "retrievedAt": "2026-10-17T22:48:46.630035+00:00",
-      "retrievedHtmlSha256": "9ccd222ce7c41368ef9736d0a4b4d3000a98d61ab792009289b03e348b2f34c4"
+      "retrievedHtmlSha256": "9ccd222ce7c41368ef9736d0a4b4d3000a98d61ab792009289b03e348b2f34c4",
+      "mediaReference": {
+        "url": "https://player.pbs.org/viralplayer/3107593283",
+        "publisherDeclaredDuration": "PT8M4S",
+        "sourceEvidence": "VideoObject.embedUrl in verified publisher HTML",
+        "retrievedPublisherHtmlSha256": "9ccd222ce7c41368ef9736d0a4b4d3000a98d61ab792009289b03e348b2f34c4",
+        "metadataVerifiedOn": "2026-10-18",
+        "playbackVerified": false,
+        "phraseTimestampVerified": false,
+        "note": "Liên kết video do bài nguồn khai báo; chưa kiểm chứng phát trực tiếp hoặc mốc thời gian của cụm từ."
+      }
     }
   ]
 }
