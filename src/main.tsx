@@ -45,16 +45,40 @@ import {
   expose,
   independence,
   interleaveQueue,
-  selectFreePractice,
-  collectFresh,
   pendingScheduledTasks,
   contentKey,
 } from "./core";
-import { StorageConflictError, subscribeStoredState } from "./storage";
+import {
+  StorageConflictError,
+  subscribeStoredState,
+  rebaseState,
+} from "./storage";
 import "./style.css";
 import ErrorBoundary from "./ErrorBoundary";
 import WordDetail from "./DictionaryEntry";
 import CollectionBrowser from "./CollectionBrowser";
+import {
+  rankNewWords,
+  recommendWords,
+  selectionModes,
+} from "./recommendations";
+import { analyzeLearning } from "./analytics";
+import { LearningInsights } from "./LearningInsights";
+import ConversationPractice from "./ConversationPractice";
+import WritingFeedback from "./WritingFeedback";
+import SyncSettings from "./SyncSettings";
+import { clearSyncBinding } from "./sync";
+import {
+  registerOffline,
+  getOfflineStatus,
+  offlineStatusEvent,
+} from "./offline";
+import {
+  validatePracticeCollections,
+  type ConversationAttempt,
+  type WritingAttempt,
+  type LearningMode,
+} from "./practice-data";
 const uid = () => crypto.randomUUID();
 function download(name: string, text: string, type = "text/plain") {
   const url = URL.createObjectURL(
@@ -114,6 +138,13 @@ function App() {
     [focus, setFocus] = useState("studied"),
     [evidenceLimit, setEvidenceLimit] = useState(100),
     [practice, setPractice] = useState(1),
+    [conversationOpen, setConversationOpen] = useState(false),
+    [offlineStatus, setOfflineStatus] = useState(getOfflineStatus),
+    [writingReview, setWritingReview] = useState<{
+      wordId: string;
+      text?: string;
+      parentId?: string;
+    }>(),
     [answer, setAnswer] = useState(""),
     [revealed, setRevealed] = useState(false),
     [hint, setHint] = useState(false),
@@ -123,13 +154,25 @@ function App() {
   const hasModal =
     !!detail || editor !== undefined || !!pending || !!backup || settings;
   useEffect(() => {
+    const update = () => setOfflineStatus(getOfflineStatus());
+    window.addEventListener(offlineStatusEvent, update);
+    update();
+    return () => window.removeEventListener(offlineStatusEvent, update);
+  }, []);
+  useEffect(() => {
     if (!hasModal) return;
     const previous = document.activeElement as HTMLElement;
     requestAnimationFrame(() =>
-      document.querySelector<HTMLElement>(".modal button")?.focus(),
+      Array.from(document.querySelectorAll<HTMLElement>(".modal"))
+        .filter((d) => d.getClientRects().length > 0)
+        .at(-1)
+        ?.querySelector<HTMLElement>("button,input,textarea,select")
+        ?.focus(),
     );
     const handle = (e: KeyboardEvent) => {
-      const dialogs = document.querySelectorAll<HTMLElement>(".modal");
+      const dialogs = Array.from(
+        document.querySelectorAll<HTMLElement>(".modal"),
+      ).filter((d) => d.getClientRects().length > 0);
       const dialog = dialogs[dialogs.length - 1];
       if (!dialog) return;
       if (e.key === "Escape") {
@@ -438,9 +481,26 @@ function App() {
       .map(([k]) => k.slice(0, k.lastIndexOf(":"))),
   ).size;
   const studiedIds = new Set(state.history.map((h) => h.wordId));
-  const fresh = collectFresh(state, active).filter(
-    (e) => !isSlang(e.word) && (!level || e.word.level === level),
+  const learningMode = state.learningMode || "smart";
+  const freshRecommendations = useMemo(
+    () =>
+      rankNewWords(
+        state,
+        active.filter((e) => !level || e.word.level === level),
+        learningMode,
+        now,
+      ),
+    [
+      state.entries,
+      state.history,
+      state.schedules,
+      state.exposures,
+      learningMode,
+      level,
+      day(now),
+    ],
   );
+  const fresh = freshRecommendations.map((r) => r.entry);
   const studiedToday = new Set(
     state.history.filter((h) => day(h.time) === day(now)).map((h) => h.wordId),
   );
@@ -471,6 +531,49 @@ function App() {
   const practiceEligible = filtered.filter((e) =>
     canPractice(e.word, practice),
   );
+  const practiceRecommendations = useMemo(
+    () =>
+      recommendWords(state, practiceEligible, {
+        mode: learningMode,
+        intent: "practice",
+        skill: practice,
+        limit: 20,
+        now,
+      }),
+    [
+      state.entries,
+      state.history,
+      state.exposures,
+      learningMode,
+      practice,
+      search,
+      topic,
+      collection,
+      level,
+      status,
+      day(now),
+    ],
+  );
+  const learningReport = useMemo(
+    () => analyzeLearning(state, now),
+    [
+      state.entries,
+      state.history,
+      state.schedules,
+      state.exposures,
+      state.writing,
+      state.conversations,
+      day(now),
+    ],
+  );
+  const reviewWordId =
+    writingReview?.wordId ||
+    state.writing?.at(-1)?.wordId ||
+    state.history
+      .slice()
+      .reverse()
+      .find((r) => r.skill === 5)?.wordId ||
+    active.find((e) => canPractice(e.word, 5))?.word.id;
   const filterSummary =
     [
       search && `Tìm: ${search}`,
@@ -549,9 +652,42 @@ function App() {
       notifyError(e);
     }
   }
+  const changeLearningMode = (mode: LearningMode) => {
+    const base = current.current;
+    commit({ ...base, learningMode: mode }, undefined, base).catch(notifyError);
+  };
+  const saveWriting = async (attempt: WritingAttempt) => {
+    const base = current.current;
+    if (base.writing?.some((a) => a.id === attempt.id)) return;
+    const next = { ...base, writing: [...(base.writing || []), attempt] };
+    validatePracticeCollections(next);
+    await commit(next, undefined, base);
+  };
+  const saveConversation = async (attempt: ConversationAttempt) => {
+    const base = current.current;
+    if (base.conversations?.some((a) => a.id === attempt.id)) return;
+    const next = {
+      ...base,
+      conversations: [...(base.conversations || []), attempt],
+    };
+    validatePracticeCollections(next);
+    await commit(next, undefined, base);
+  };
+  const openConversation = () => {
+    setConversationOpen(true);
+    setPage("practice");
+  };
+  const openWritingReview = () => {
+    setPage("progress");
+    requestAnimationFrame(() =>
+      document
+        .getElementById("writing-review")
+        ?.scrollIntoView({ block: "start" }),
+    );
+  };
   async function start(
     scheduled = true,
-    only?: string,
+    only?: string | string[],
     skillOverride?: number,
   ) {
     try {
@@ -602,19 +738,34 @@ function App() {
             (a, b) => priority.indexOf(a.skill) - priority.indexOf(b.skill),
           ),
         );
+        queue = interleaveQueue(queue);
+        const introductions: Session["queue"] = [];
         fresh.slice(0, planned).forEach((e) =>
           (e.goal === "recognition" ? [0, 2] : [0, 1, 2, 3, 4, 5]).forEach(
             (skill) => {
               if (canPractice(e.word, skill))
-                queue.push({ id: e.word.id, skill, review: uid() });
+                introductions.push({ id: e.word.id, skill, review: uid() });
             },
           ),
         );
+        queue.push(...interleaveQueue(introductions));
       } else {
-        const eligible = (only ? [base.entries[only]] : filtered).filter(
-          (e) => !!e && canPractice(e.word, skillOverride ?? practice),
-        );
-        queue = selectFreePractice(base, eligible, 20).map((e) => ({
+        const eligible = (
+          only
+            ? (Array.isArray(only) ? only : [only]).map(
+                (id) => base.entries[id],
+              )
+            : filtered
+        ).filter((e) => !!e && canPractice(e.word, skillOverride ?? practice));
+        const selected = only
+          ? eligible.slice(0, 20)
+          : recommendWords(base, eligible, {
+              mode: base.learningMode || "smart",
+              intent: "practice",
+              skill: skillOverride ?? practice,
+              limit: 20,
+            }).map((r) => r.entry);
+        queue = selected.map((e) => ({
           id: e.word.id,
           skill: skillOverride ?? practice,
           review: uid(),
@@ -635,7 +786,7 @@ function App() {
               : base.pausedScheduled,
           session: {
             id: uid(),
-            queue: interleaveQueue(queue),
+            queue: scheduled ? queue : interleaveQueue(queue),
             index: 0,
             started: Date.now(),
             scheduled,
@@ -976,7 +1127,8 @@ function App() {
                   {backup.history.length} lượt học
                 </p>
                 <button
-                  onClick={() =>
+                  onClick={() => {
+                    clearSyncBinding();
                     commit(backup, { replace: true })
                       .then(() => {
                         setBackup(undefined);
@@ -984,8 +1136,8 @@ function App() {
                         setPage("today");
                         setNotice("Đã khôi phục bản sao lưu.");
                       })
-                      .catch(notifyError)
-                  }
+                      .catch(notifyError);
+                  }}
                 >
                   Khôi phục bản sao lưu này
                 </button>
@@ -1252,6 +1404,29 @@ function App() {
                 </div>
               </div>
               <div className="panel">
+                <label className="setting-row">
+                  Cách chọn từ cho phiên mới
+                  <select
+                    aria-label="Chế độ chọn từ"
+                    value={learningMode}
+                    onChange={(e) =>
+                      changeLearningMode(e.target.value as LearningMode)
+                    }
+                  >
+                    {selectionModes.map((m) => (
+                      <option key={m.value} value={m.value}>
+                        {m.label}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+                <p className="fineprint">
+                  {
+                    selectionModes.find((m) => m.value === learningMode)
+                      ?.description
+                  }{" "}
+                  Lịch ôn đến hạn và phiên đang dở được giữ nguyên.
+                </p>
                 <label>
                   Trình độ của từ mới trong kế hoạch hôm nay{" "}
                   <select
@@ -1259,7 +1434,7 @@ function App() {
                     value={level}
                     onChange={(e) => setLevel(e.target.value)}
                   >
-                    <option value="">Mọi trình độ, ưu tiên dễ trước</option>
+                    <option value="">Mọi trình độ, theo chế độ đã chọn</option>
                     {["A1", "A2", "B1", "B2", "C1", "C2"].map((v) => (
                       <option key={v}>{v}</option>
                     ))}
@@ -1271,7 +1446,52 @@ function App() {
                   lại vẫn tra cứu được, chưa tự đưa vào bài học. Bộ lọc trình độ
                   chỉ giới hạn từ mới; các mục đến hạn vẫn được ôn.
                 </p>
+                {freshRecommendations[0] && (
+                  <p className="fineprint" data-testid="recommendation-reason">
+                    <strong>
+                      Gợi ý tiếp: {freshRecommendations[0].entry.word.word}.
+                    </strong>{" "}
+                    {freshRecommendations[0].reason}
+                  </p>
+                )}
+                {learningMode === "weak" && !fresh.length && (
+                  <p>
+                    Chưa có từ yếu chưa ghi danh để giới thiệu.{" "}
+                    <button onClick={() => setPage("practice")}>
+                      Đến luyện củng cố
+                    </button>
+                    . Lượt đến hạn vẫn được ôn bình thường.
+                  </p>
+                )}
               </div>
+              {learningReport.recommendations[0] && (
+                <section className="panel">
+                  <h3>Hôm nay tôi nên tập trung vào đâu?</h3>
+                  <p>{learningReport.recommendations[0].reason}</p>
+                  <button
+                    onClick={() => {
+                      const r = learningReport.recommendations[0];
+                      if (r.action === "writing") openWritingReview();
+                      else if (r.action === "conversation") openConversation();
+                      else start(false, r.ids, r.skill);
+                    }}
+                  >
+                    Luyện ngay
+                  </button>{" "}
+                  <button
+                    className="text-button"
+                    onClick={() => setPage("progress")}
+                  >
+                    Xem phân tích tiến độ
+                  </button>
+                  {due.length > 0 && (
+                    <p className="fineprint">
+                      Ưu tiên {due.length} lượt kỹ năng đến hạn ở nút Bắt đầu
+                      học; luyện tự do không dời lịch ôn.
+                    </p>
+                  )}
+                </section>
+              )}
               {summary && <div className="notice success">{summary}</div>}
               {due.length > 20 && (
                 <div className="notice">
@@ -1708,6 +1928,46 @@ function App() {
               <div className="eyebrow">CHỦ ĐỘNG NHỚ LẠI</div>
               <h1 tabIndex={-1}>Luyện một chút, nhớ lâu hơn.</h1>
               <p>Luyện tự do có lưu bằng chứng nhưng không thay đổi lịch ôn.</p>
+              <section className="panel">
+                <h3>Hội thoại thực tế</h3>
+                <p>
+                  Đưa từ đã học vào đoạn hội thoại có hai người nói. Nội dung
+                  biên soạn sẵn, dùng được ngoại tuyến; đọc hoặc nghe không tự
+                  tạo bằng chứng thành thạo.
+                </p>
+                <button
+                  className="primary"
+                  onClick={() => setConversationOpen((v) => !v)}
+                >
+                  {conversationOpen
+                    ? "Thu gọn hội thoại"
+                    : "Mở luyện hội thoại"}
+                </button>
+              </section>
+              {conversationOpen && (
+                <ConversationPractice
+                  state={state}
+                  onSave={saveConversation}
+                  onExpose={exposeIds}
+                  onClose={() => setConversationOpen(false)}
+                />
+              )}
+              <label className="setting-row">
+                Cách chọn từ luyện
+                <select
+                  aria-label="Chế độ luyện từ"
+                  value={learningMode}
+                  onChange={(e) =>
+                    changeLearningMode(e.target.value as LearningMode)
+                  }
+                >
+                  {selectionModes.map((m) => (
+                    <option key={m.value} value={m.value}>
+                      {m.label}
+                    </option>
+                  ))}
+                </select>
+              </label>
               <div className="practice-grid">
                 {skills.map((s, i) => (
                   <button
@@ -1727,7 +1987,7 @@ function App() {
                           "Nghe từ → tự nhớ nghĩa.",
                           "Nghe từ → gõ lại chính tả.",
                           "Điền từ còn thiếu trong câu.",
-                          "Viết câu của riêng bạn, lưu để tự xem lại.",
+                          "Viết câu, kiểm tra cấu trúc đã hỗ trợ và lưu bản sửa.",
                         ][i]
                       }
                     </p>
@@ -1735,7 +1995,7 @@ function App() {
                       {[0, 2].includes(i)
                         ? "Tự đánh giá"
                         : i === 5
-                          ? "Chưa chấm tự động"
+                          ? "Phản hồi cấu trúc tại máy"
                           : "Chấm theo đáp án khai báo"}
                     </span>
                   </button>
@@ -1750,19 +2010,30 @@ function App() {
               </p>
               <button
                 className="primary"
-                disabled={!practiceEligible.length}
+                disabled={!practiceRecommendations.length}
                 onClick={() => start(false)}
               >
-                Bắt đầu luyện · {Math.min(practiceEligible.length, 20)} mục{" "}
+                Bắt đầu luyện · {practiceRecommendations.length} mục{" "}
                 <ArrowRight size={18} />
               </button>
               <p className="fineprint">
                 {practiceEligible.length.toLocaleString("vi-VN")} mục đủ điều
                 kiện cho dạng bài đang chọn trong{" "}
                 {filtered.length.toLocaleString("vi-VN")} mục khớp bộ lọc. Ưu
-                tiên mục chưa luyện, cần củng cố và lâu chưa luyện; mỗi phiên
-                tối đa 20 mục. Bài nghe cần âm thanh hoạt động trên thiết bị.
+                tiên theo chế độ đang chọn; mỗi phiên tối đa 20 mục. Bài nghe
+                cần âm thanh hoạt động trên thiết bị.
               </p>
+              {practiceRecommendations[0] ? (
+                <p className="fineprint">
+                  <strong>{practiceRecommendations[0].entry.word.word}:</strong>{" "}
+                  {practiceRecommendations[0].reason}
+                </p>
+              ) : (
+                <p>
+                  Chưa có mục phù hợp với chế độ này. Bạn có thể đổi chế độ hoặc
+                  xóa bộ lọc.
+                </p>
+              )}
             </>
           )}
           {page === "learn" &&
@@ -1863,10 +2134,23 @@ function App() {
                   )}
                   {task.skill === 5 && (
                     <p>
-                      Viết một câu sử dụng từ này. Câu được lưu, chưa được chấm.
+                      Viết một câu sử dụng từ này. Kiểm tra cấu trúc tại máy
+                      không xác nhận toàn bộ nghĩa hoặc độ tự nhiên; lưu câu vẫn
+                      giữ lịch sử như trước.
                     </p>
                   )}
-                  {![0, 2].includes(task.skill) && (
+                  {task.skill === 5 && (
+                    <WritingFeedback
+                      key={taskKey}
+                      state={state}
+                      wordId={w.id}
+                      initialText={answer}
+                      onTextChange={(value) => updateDraft(value)}
+                      disabled={!!feedback}
+                      onSave={saveWriting}
+                    />
+                  )}
+                  {![0, 2, 5].includes(task.skill) && (
                     <textarea
                       aria-label="Câu trả lời"
                       autoFocus
@@ -2042,6 +2326,17 @@ function App() {
                   <option value={0}>Toàn bộ</option>
                 </select>
               </div>
+              <LearningInsights
+                state={state}
+                onPractice={(skill, ids) => {
+                  start(false, ids, skill);
+                }}
+                onWritingReview={openWritingReview}
+                onConversation={openConversation}
+                onReviewDue={() => {
+                  start(true);
+                }}
+              />
               <div className="stats">
                 <div className="stat">
                   <span>
@@ -2170,6 +2465,36 @@ function App() {
               </section>
               <section className="panel">
                 <h3>Câu của bạn để tự rà lại</h3>
+                <div id="writing-review">
+                  <label className="setting-row">
+                    Từ để luyện viết
+                    <select
+                      aria-label="Từ để luyện viết"
+                      value={reviewWordId || ""}
+                      onChange={(e) =>
+                        setWritingReview({ wordId: e.target.value })
+                      }
+                    >
+                      {active
+                        .filter((e) => canPractice(e.word, 5))
+                        .map((e) => (
+                          <option key={e.word.id} value={e.word.id}>
+                            {e.word.word}
+                          </option>
+                        ))}
+                    </select>
+                  </label>
+                  {reviewWordId && state.entries[reviewWordId] && (
+                    <WritingFeedback
+                      key={reviewWordId + (writingReview?.parentId || "review")}
+                      state={state}
+                      wordId={reviewWordId}
+                      initialText={writingReview?.text || ""}
+                      parentId={writingReview?.parentId}
+                      onSave={saveWriting}
+                    />
+                  )}
+                </div>
                 <p className="fineprint">
                   Các câu dưới đây do bạn viết, chưa được chấm ngữ pháp hoặc xác
                   nhận cách dùng. Đọc lại và đối chiếu với nghĩa, cấu trúc của
@@ -2193,6 +2518,21 @@ function App() {
                         {state.entries[r.wordId]?.word.word || r.wordId}
                       </button>
                       <p>{r.answer}</p>
+                      <button
+                        onClick={() => {
+                          setWritingReview({
+                            wordId: r.wordId,
+                            text: r.answer,
+                          });
+                          requestAnimationFrame(() =>
+                            document
+                              .getElementById("writing-review")
+                              ?.scrollIntoView({ block: "start" }),
+                          );
+                        }}
+                      >
+                        Kiểm tra cấu trúc / viết lại
+                      </button>
                       <small>
                         {new Date(r.time).toLocaleString("vi-VN")} · Chưa chấm
                       </small>
@@ -2231,12 +2571,12 @@ function App() {
                 <p>
                   Với từng kỹ năng: ít nhất 3 lần kiểm tra đúng, không gợi ý,
                   lần thử đầu ở 3 ngày địa phương khác nhau, chưa xem lại đáp án
-                  hoặc luyện cùng từ trong ít nhất 24 giờ; ít nhất một lần cách
-                  lần trước từ 7 ngày. Đây là quy tắc của ứng dụng, không phải
-                  chuẩn chứng nhận ngôn ngữ. Chỉ bằng chứng có kiểm tra điều
-                  kiện độc lập của bản hiện tại được dùng; lịch sử cũ vẫn được
-                  giữ. Tự đánh giá không đủ để kết luận kỹ năng vững. Ôn trễ
-                  không đồng nghĩa với quên.
+                  hoặc luyện cùng từ trong ít nhất 24 giờ; ít nhất một lần sau 7
+                  ngày không tiếp xúc với từ đã được ghi nhận. Đây là quy tắc
+                  của ứng dụng, không phải chuẩn chứng nhận ngôn ngữ. Chỉ bằng
+                  chứng có kiểm tra điều kiện độc lập của bản hiện tại được
+                  dùng; lịch sử cũ vẫn được giữ. Tự đánh giá không đủ để kết
+                  luận kỹ năng vững. Ôn trễ không đồng nghĩa với quên.
                 </p>
                 <p>
                   Lịch riêng cho mỗi kỹ năng: 1–3–7–14–30 ngày; sai quay về 1
@@ -2249,7 +2589,7 @@ function App() {
         </main>
         <footer className="app-footer">
           Jeongyeon. <span>Một góc nhỏ cho những bước tiến lớn.</span>
-          <span>Riêng tư · Không tài khoản · Không đồng bộ</span>
+          <span>Riêng tư · Lưu tại máy · Đồng bộ tùy chọn</span>
         </footer>
       </div>
       {detail &&
@@ -2407,10 +2747,15 @@ function App() {
           </>,
           () => setPending(undefined),
         )}
-      {settings &&
-        modal(
+      <div hidden={!settings}>
+        {modal(
           <>
             <h2>Góc học của bạn</h2>
+            <p className="fineprint" aria-live="polite">
+              {import.meta.env.PROD
+                ? offlineStatus.message
+                : "Bản phát triển lưu dữ liệu tại máy; tải lại ngoại tuyến được bật và kiểm tra trong bản build production."}
+            </p>
             <label className="setting-row">
               Từ mới / ngày
               <input
@@ -2462,8 +2807,9 @@ function App() {
             <hr />
             <h3>Sao lưu dữ liệu</h3>
             <p>
-              IndexedDB lưu trên trình duyệt này. Dữ liệu chưa đồng bộ giữa
-              thiết bị và có thể mất khi xóa dữ liệu trình duyệt.
+              IndexedDB lưu trên trình duyệt này. Đồng bộ chỉ hoạt động sau khi
+              cấu hình và liên kết tài khoản bên dưới. JSON luôn là bản sao dự
+              phòng, không chứa thông tin đăng nhập.
             </p>
             <div className="file-actions">
               <button
@@ -2491,9 +2837,29 @@ function App() {
               JSON chứa kho từ, phiên học, lịch ôn và lịch sử. File .txt chỉ
               chứa nội dung học.
             </p>
+            <SyncSettings
+              state={state}
+              onMerge={async (incoming, expectedBase) => {
+                const base = current.current;
+                const before = expectedBase || base;
+                const next = rebaseState(
+                  before,
+                  {
+                    ...incoming,
+                    session: before.session,
+                    pausedScheduled: before.pausedScheduled,
+                    sourceVersion: before.sourceVersion,
+                  },
+                  base,
+                );
+                validateBackup(next);
+                await commit(next, undefined, base);
+              }}
+            />
           </>,
           () => setSettings(false),
         )}
+      </div>
       {backup &&
         modal(
           <>
@@ -2523,6 +2889,7 @@ function App() {
               onClick={() => {
                 if (replace && !confirm("Thay thế toàn bộ dữ liệu hiện tại?"))
                   return;
+                if (replace) clearSyncBinding();
                 const combined = replace
                   ? backup
                   : {
@@ -2551,6 +2918,22 @@ function App() {
                           ]),
                         ).values(),
                       ].sort((a, b) => a.time - b.time),
+                      writing: [
+                        ...new Map(
+                          [
+                            ...(backup.writing || []),
+                            ...(state.writing || []),
+                          ].map((a) => [a.id, a]),
+                        ).values(),
+                      ].sort((a, b) => a.time - b.time),
+                      conversations: [
+                        ...new Map(
+                          [
+                            ...(backup.conversations || []),
+                            ...(state.conversations || []),
+                          ].map((a) => [a.id, a]),
+                        ).values(),
+                      ].sort((a, b) => a.time - b.time),
                     };
                 commit(combined, { replace })
                   .then(() => {
@@ -2573,6 +2956,7 @@ function App() {
     </div>
   );
 }
+registerOffline();
 createRoot(document.getElementById("root")!).render(
   <ErrorBoundary>
     <App />

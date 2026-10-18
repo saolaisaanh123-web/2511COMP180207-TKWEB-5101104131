@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { empty, type Result, type State } from "./core";
 import { rebaseState, StorageConflictError } from "./storage";
+import type { ConversationAttempt, WritingAttempt } from "./practice-data";
 
 function fixture(): State {
   const state = empty();
@@ -32,6 +33,48 @@ const answer = (id = "session:0", time = 1000): Result => ({
   review: id,
   gap: 0,
   first: true,
+});
+
+const writing = (id = "writing:1", time = 1000): WritingAttempt => ({
+  id,
+  wordId: "apple",
+  time,
+  text: "I ate an apple.",
+  source: "local",
+  status: "ungraded",
+  issues: [],
+  summary: "Chưa thể chấm tự động toàn bộ câu.",
+  assessment: {
+    grammar: "uncertain",
+    usage: "uncertain",
+    naturalness: "uncertain",
+  },
+  contentVersion: "apple:meaning:1",
+});
+
+const conversation = (
+  id = "conversation:1",
+  time = 1000,
+): ConversationAttempt => ({
+  id,
+  dialogueId: "market",
+  dialogueVersion: "1",
+  time,
+  targetIds: ["apple"],
+  targetContentVersions: { apple: "apple:meaning:1" },
+  answers: [
+    {
+      questionId: "market:reply",
+      kind: "reply",
+      answer: "Two apples, please.",
+      targetIds: ["apple"],
+      explanation: "Câu trả lời tự viết chưa được chấm.",
+      hint: false,
+    },
+  ],
+  read: true,
+  listenedLineIds: ["market:a"],
+  listenedComplete: false,
 });
 
 describe("concurrent state rebasing", () => {
@@ -157,5 +200,152 @@ describe("concurrent state rebasing", () => {
     expect(
       rebaseState(base, { ...base, voice: "en-US" }, empty()).entries,
     ).toEqual({});
+  });
+});
+
+describe("append-only writing and conversation evidence", () => {
+  it("adds collections to an older state without changing its existing progress", () => {
+    const base = fixture();
+    base.history.push(answer());
+    base.schedules["apple:1"] = { last: 1000, due: 30000, step: 1 };
+    const edit = {
+      ...base,
+      writing: [writing()],
+      conversations: [conversation()],
+      learningMode: "mixed" as const,
+    };
+    const saved = rebaseState(base, edit, base);
+    expect(saved).toEqual(edit);
+    expect(base).not.toHaveProperty("writing");
+    expect(base).not.toHaveProperty("conversations");
+    expect(rebaseState(base, { ...base, rate: 1 }, base)).not.toHaveProperty(
+      "writing",
+    );
+  });
+
+  it("unions concurrent attempts once and deterministically sorts them", () => {
+    const base = fixture();
+    const latest = {
+      ...base,
+      writing: [writing("b", 2000)],
+      conversations: [conversation("d", 3000)],
+    };
+    const edit = {
+      ...base,
+      writing: [writing("a", 2000)],
+      conversations: [conversation("c", 1000)],
+    };
+    const saved = rebaseState(base, edit, latest);
+    expect(saved.writing?.map((a) => a.id)).toEqual(["a", "b"]);
+    expect(saved.conversations?.map((a) => a.id)).toEqual(["c", "d"]);
+    expect(rebaseState(base, edit, saved)).toEqual(saved);
+    expect(latest.writing).toHaveLength(1);
+    edit.writing[0].text = "Changed in memory after save";
+    expect(saved.writing?.[0].text).toBe("I ate an apple.");
+  });
+
+  it("ordinary saves cannot erase evidence or lose it during a settings edit", () => {
+    const base = {
+      ...fixture(),
+      writing: [writing()],
+      conversations: [conversation()],
+    };
+    const next = { ...base, writing: [], conversations: [], voice: "en-US" };
+    const saved = rebaseState(base, next, base);
+    expect(saved.writing).toEqual(base.writing);
+    expect(saved.conversations).toEqual(base.conversations);
+    expect(saved.voice).toBe("en-US");
+    const absent: State = { ...base };
+    delete absent.writing;
+    delete absent.conversations;
+    expect(rebaseState(base, absent, saved).writing).toEqual(base.writing);
+    expect(rebaseState(base, absent, saved).conversations).toEqual(
+      base.conversations,
+    );
+  });
+
+  it.each(["writing", "conversations"] as const)(
+    "rejects changed content for an existing %s ID",
+    (collection) => {
+      const base = {
+        ...fixture(),
+        writing: [writing()],
+        conversations: [conversation()],
+      };
+      const edit = structuredClone(base);
+      edit[collection][0].time = 4000;
+      expect(() => rebaseState(base, edit, base)).toThrow(StorageConflictError);
+      // This also protects against a duplicate ID introduced independently.
+      const original = fixture();
+      expect(() => rebaseState(original, edit, base)).toThrow(
+        StorageConflictError,
+      );
+      expect(base[collection][0].time).toBe(1000);
+    },
+  );
+
+  it("rejects different duplicate IDs inside an incoming collection", () => {
+    const base = fixture();
+    const edit = {
+      ...base,
+      writing: [writing(), { ...writing(), text: "Another sentence." }],
+    };
+    expect(() => rebaseState(base, edit, base)).toThrow(StorageConflictError);
+    expect(() =>
+      rebaseState(
+        base,
+        {
+          ...base,
+          conversations: [conversation(), { ...conversation(), read: false }],
+        },
+        base,
+      ),
+    ).toThrow(StorageConflictError);
+  });
+
+  it("rejects practice records whose word disappeared and keeps the latest state intact", () => {
+    const base = fixture();
+    for (const edit of [
+      { ...base, writing: [writing()] },
+      { ...base, conversations: [conversation()] },
+    ])
+      expect(() => rebaseState(base, edit, empty())).toThrow(
+        StorageConflictError,
+      );
+    const latest = {
+      ...base,
+      writing: [writing()],
+      conversations: [conversation()],
+    };
+    expect(() =>
+      rebaseState(latest, { ...latest, entries: {} }, latest),
+    ).toThrow(StorageConflictError);
+    expect(latest.entries).toHaveProperty("apple");
+    expect(latest.writing).toHaveLength(1);
+    expect(latest.conversations).toHaveLength(1);
+  });
+
+  it("does not resurrect unchanged evidence after another tab explicitly restored a backup", () => {
+    const base = {
+      ...fixture(),
+      writing: [writing()],
+      conversations: [conversation()],
+    };
+    const latest = fixture();
+    const saved = rebaseState(base, { ...base, voice: "en-US" }, latest);
+    expect(saved.writing).toEqual([]);
+    expect(saved.conversations).toEqual([]);
+    expect(saved.voice).toBe("en-US");
+  });
+
+  it("treats the chosen learning mode as a normal three-way setting", () => {
+    const base = { ...fixture(), learningMode: "smart" as const };
+    const latest = { ...base, learningMode: "common" as const };
+    expect(rebaseState(base, { ...base, rate: 1 }, latest).learningMode).toBe(
+      "common",
+    );
+    expect(() =>
+      rebaseState(base, { ...base, learningMode: "weak" }, latest),
+    ).toThrow(StorageConflictError);
   });
 });

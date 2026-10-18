@@ -1,3 +1,10 @@
+import type {
+  ConversationAttempt,
+  WritingAttempt,
+  LearningMode,
+} from "./practice-data";
+import { validatePracticeCollections } from "./practice-data";
+
 export const skills = [
   "Hiểu nghĩa",
   "Nhớ để viết",
@@ -45,6 +52,7 @@ export type Result = {
   evidenceVersion?: 2;
   scheduled?: boolean;
   contentVersion?: string;
+  exposureGap?: number;
 };
 export type Schedule = { due: number; last: number; step: number };
 export type Session = {
@@ -68,6 +76,9 @@ export type State = {
   pausedScheduled?: Session;
   exposures?: Record<string, number>;
   sourceVersion?: string;
+  learningMode?: LearningMode;
+  writing?: WritingAttempt[];
+  conversations?: ConversationAttempt[];
 };
 export const empty = (): State => ({
   version: 1,
@@ -487,7 +498,7 @@ export function strength(state: State, id: string, skill: number) {
     return "Cần củng cố";
   if (
     new Set(clean.map((r) => day(r.time))).size >= 3 &&
-    clean.some((r) => r.gap >= 7 * 86400000)
+    clean.some((r) => (r.exposureGap ?? 0) >= 7 * 86400000)
   )
     return "Nhớ khá vững";
   return clean.length ? "Chưa ổn định" : "Đang làm quen";
@@ -498,7 +509,10 @@ export function record(state: State, r: Result, scheduled: boolean) {
   if (!canPractice(state.entries[r.wordId].word, r.skill)) return state;
   const version = contentKey(state.entries[r.wordId].word, r.skill);
   let previous = 0;
-  for (const old of state.history)
+  let lastExposure = state.exposures?.[r.wordId] || 0;
+  for (const old of state.history) {
+    if (old.wordId === r.wordId && old.time <= r.time)
+      lastExposure = Math.max(lastExposure, old.time);
     if (
       old.wordId === r.wordId &&
       old.skill === r.skill &&
@@ -506,6 +520,7 @@ export function record(state: State, r: Result, scheduled: boolean) {
       old.time <= r.time
     )
       previous = Math.max(previous, old.time);
+  }
   const audioUnavailable =
     r.evidenceVersion === 2 &&
     [2, 3].includes(r.skill) &&
@@ -515,6 +530,7 @@ export function record(state: State, r: Result, scheduled: boolean) {
     scheduled,
     contentVersion: version,
     gap: previous ? r.time - previous : 0,
+    exposureGap: lastExposure ? Math.max(0, r.time - lastExposure) : undefined,
     ...(r.evidenceVersion === 2
       ? {
           independent:
@@ -665,7 +681,10 @@ export function validateBackup(x: unknown): State {
         [2, 3].includes(r.skill) &&
         typeof r.audioPlayed !== "boolean") ||
       (r.scheduled !== undefined && typeof r.scheduled !== "boolean") ||
-      (r.contentVersion !== undefined && typeof r.contentVersion !== "string")
+      (r.contentVersion !== undefined &&
+        typeof r.contentVersion !== "string") ||
+      (r.exposureGap !== undefined &&
+        (!Number.isFinite(r.exposureGap) || r.exposureGap < 0))
     )
       throw Error("Lịch sử sao lưu không hợp lệ.");
     ids.add(r.id);
@@ -723,5 +742,6 @@ export function validateBackup(x: unknown): State {
     )
       throw Error("Phiên học sao lưu không hợp lệ.");
   }
+  validatePracticeCollections(s);
   return s;
 }

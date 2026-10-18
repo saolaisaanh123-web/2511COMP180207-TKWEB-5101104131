@@ -71,6 +71,83 @@ try {
     console.log(
       `PASS: production ${path} renders, loads ${expectedCount} entries, reloads without error`,
     );
+    await page.waitForFunction(() => !!navigator.serviceWorker?.controller);
+    const offlineAvailable = await page.evaluate(
+      () =>
+        new Promise((resolve, reject) => {
+          const timer = setTimeout(
+            () => reject(Error("Offline corpus was not prepared")),
+            15000,
+          );
+          const receive = (event) => {
+            if (event.data?.type !== "jeongyeon-offline-status") return;
+            clearTimeout(timer);
+            navigator.serviceWorker.removeEventListener("message", receive);
+            resolve(event.data.available);
+          };
+          navigator.serviceWorker.addEventListener("message", receive);
+          navigator.serviceWorker.controller.postMessage({
+            type: "jeongyeon-offline-status",
+          });
+        }),
+    );
+    assert.equal(
+      offlineAvailable,
+      true,
+      "Complete shell and verified corpus must be cached",
+    );
+    await page.evaluate(async () => {
+      await fetch("./private-sync?account=test", {
+        headers: { Authorization: "Bearer test-only" },
+      });
+      await fetch("./data/vocabulary-version.json?private-test=1");
+      await fetch("./data/vocabulary-version.json", {
+        method: "POST",
+        body: "private-test-only",
+      });
+    });
+    const cachedURLs = await page.evaluate(async () => {
+      const urls = [];
+      for (const name of await caches.keys()) {
+        if (!name.startsWith("jeongyeon-offline:")) continue;
+        for (const request of await (await caches.open(name)).keys()) {
+          if (request.method !== "GET")
+            throw Error("Private request entered the offline cache");
+          urls.push(request.url);
+        }
+      }
+      return urls;
+    });
+    const appURL = `http://127.0.0.1:${port}${path}`;
+    assert.ok(cachedURLs.length > 3);
+    assert.ok(
+      cachedURLs.every((href) => {
+        const url = new URL(href);
+        return (
+          href.startsWith(appURL) &&
+          !url.search &&
+          (href === appURL ||
+            href === `${appURL}data/vocabulary.txt` ||
+            href === `${appURL}data/vocabulary-version.json` ||
+            href.startsWith(`${appURL}assets/`))
+        );
+      }),
+      "Only scoped public static files may enter the offline cache",
+    );
+    await page.context().setOffline(true);
+    await page.reload();
+    await page
+      .getByRole("heading", { name: "Hôm nay, mình học gì?" })
+      .waitFor();
+    await page.getByRole("button", { name: "Kho từ", exact: true }).click();
+    assert.equal(
+      Number(await page.locator(".word-grid").getAttribute("data-total-items")),
+      expectedCount,
+    );
+    assert.deepEqual(errors, []);
+    console.log(
+      `PASS: production ${path} reloads offline with ${expectedCount} entries; private/API requests are not cached`,
+    );
     await page.close();
   }
   const page = await browser.newPage();

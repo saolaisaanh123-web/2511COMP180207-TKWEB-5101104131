@@ -50,6 +50,18 @@ const result = (time: number, extra: Partial<Result> = {}): Result => ({
   ...extra,
 });
 describe("Independent learning evidence", () => {
+  it("requires a real quiet seven-day interval rather than a same-skill gap", () => {
+    let s = initial();
+    for (const d of [1, 9, 17]) {
+      if (d > 1) s = expose(s, word.id, (d - 2) * day);
+      s = record(s, result(d * day), true);
+    }
+    expect(s.history.at(-1)?.gap).toBe(8 * day);
+    expect(s.history.at(-1)?.exposureGap).toBe(2 * day);
+    expect(strength(s, word.id, 1)).not.toBe("Nhớ khá vững");
+    s = record(s, result(25 * day), true);
+    expect(strength(s, word.id, 1)).toBe("Nhớ khá vững");
+  });
   it("does not certify recall immediately after seeing the answer in another skill", () => {
     let s = initial();
     s = record(s, result(day), true);

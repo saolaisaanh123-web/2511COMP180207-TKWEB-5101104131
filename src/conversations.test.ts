@@ -1,0 +1,203 @@
+import { readFileSync } from "node:fs";
+import { describe, expect, it } from "vitest";
+import { contentKey, empty, merge, parse, type Result } from "./core";
+import {
+  availableDialogues,
+  dialogues,
+  evaluateDialogueAnswer,
+  makeConversationAttempt,
+  recommendDialogues,
+} from "./conversations";
+import { validatePracticeCollections } from "./practice-data";
+
+const source = () =>
+  merge(
+    empty(),
+    parse(readFileSync("public/data/vocabulary.txt", "utf8")),
+    "default",
+  );
+const sample = dialogues.find((d) => d.id === "assignment-feedback")!;
+const result = (wordId: string, overrides: Partial<Result> = {}): Result => ({
+  id: "r-" + wordId,
+  wordId,
+  time: 10,
+  skill: 0,
+  answer: "test",
+  correct: false,
+  hint: false,
+  method: "rule",
+  elapsed: 2000,
+  session: "test",
+  review: "test",
+  gap: 0,
+  first: true,
+  ...overrides,
+});
+
+describe("Authored contextual conversation practice", () => {
+  it("maps all 12 authored dialogues to reviewed corpus senses and actual English occurrences", () => {
+    const state = source();
+    expect(availableDialogues(state)).toHaveLength(12);
+    expect(new Set(dialogues.map((d) => d.id)).size).toBe(12);
+    for (const d of dialogues) {
+      expect(d.targets.length).toBeGreaterThanOrEqual(3);
+      expect(d.targets.length).toBeLessThanOrEqual(7);
+      expect(
+        new Set(d.lines.map((l) => l.speaker)).size,
+      ).toBeGreaterThanOrEqual(2);
+      expect(d.lines.every((l) => l.vi && l.en)).toBe(true);
+      for (const target of d.targets)
+        expect(
+          d.lines.some((l) => l.en.toLowerCase().includes(target.lemma)),
+        ).toBe(true);
+      expect(d.questions).toHaveLength(3);
+      for (const q of d.questions) {
+        expect(
+          q.targetIds.every((id) => d.targets.some((t) => t.id === id)),
+        ).toBe(true);
+        if (q.options)
+          expect(q.accepted.every((a) => q.options!.includes(a))).toBe(true);
+      }
+    }
+    expect(new Set(dialogues.map((d) => d.lines.length))).toEqual(
+      new Set([6, 8]),
+    );
+  });
+
+  it("declines archived, lookup-only, missing or changed-sense targets", () => {
+    for (const kind of ["archive", "lookup", "missing", "sense"] as const) {
+      const state = source();
+      const id = sample.targets[0].id;
+      if (kind === "archive") state.entries[id].archived = true;
+      if (kind === "lookup") state.entries[id].word.learning_status = "lookup";
+      if (kind === "missing") delete state.entries[id];
+      if (kind === "sense")
+        state.entries[id].word.meaning_vi = "một nghĩa cá nhân khác";
+      expect(availableDialogues(state).some((d) => d.id === sample.id)).toBe(
+        false,
+      );
+    }
+  });
+
+  it("gives an honest fallback without history and deterministic ordering after reload", () => {
+    const state = source();
+    state.exposures = Object.fromEntries(
+      sample.targets.map((target) => [target.id, Date.now()]),
+    );
+    const before = JSON.stringify(state);
+    const first = recommendDialogues(state);
+    expect(first[0].personalized).toBe(false);
+    expect(first[0].reason).toContain("chưa có lịch sử");
+    expect(recommendDialogues(JSON.parse(JSON.stringify(state)))).toEqual(
+      first,
+    );
+    expect(JSON.stringify(state)).toBe(before);
+  });
+
+  it("prioritizes a true three-word overlap before a partial two-word match", () => {
+    const state = source();
+    sample.targets.slice(0, 3).forEach((t) => {
+      state.entries[t.id].enrolled = true;
+    });
+    const other = dialogues.find((d) => d.id === "buying-a-desk")!;
+    state.history = other.targets
+      .slice(0, 2)
+      .map((t) =>
+        result(t.id, { contentVersion: contentKey(state.entries[t.id].word) }),
+      );
+    const list = recommendDialogues(state);
+    expect(list[0].dialogue.id).toBe(sample.id);
+    expect(list[0].personalized).toBe(true);
+    expect(list[0].studied).toBe(3);
+    expect(list.find((r) => r.dialogue.id === other.id)?.weak).toBe(2);
+  });
+
+  it("filters genuine difficulty and length variants and does not invent weak results", () => {
+    const state = source();
+    expect(
+      recommendDialogues(state, { level: "B2", length: "long" }).every(
+        (r) => r.dialogue.level === "B2" && r.dialogue.lines.length === 8,
+      ),
+    ).toBe(true);
+    expect(recommendDialogues(state, { weakOnly: true })).toEqual([]);
+    const t = sample.targets[0];
+    state.history = [result(t.id, { contentVersion: "previous sense" })];
+    expect(
+      recommendDialogues(state).find((r) => r.dialogue.id === sample.id)?.weak,
+    ).toBe(0);
+    state.history[0].contentVersion = contentKey(state.entries[t.id].word);
+    expect(recommendDialogues(state, { weakOnly: true })[0].dialogue.id).toBe(
+      sample.id,
+    );
+  });
+
+  it("normalizes only declared bounded answers, never grades arbitrary prose by similarity", () => {
+    const gap = sample.questions.find((q) => q.kind === "cloze")!;
+    expect(evaluateDialogueAnswer(gap, "  DEADLINE ").correct).toBe(true);
+    expect(evaluateDialogueAnswer(gap, "deadline tomorrow").correct).toBe(
+      false,
+    );
+    expect(evaluateDialogueAnswer(gap, "due date").correct).toBe(false);
+    expect(evaluateDialogueAnswer(gap, "deadline").hint).toBe(true);
+  });
+
+  it("records supported answers and open writing separately without changing SRS or old history", () => {
+    const state = source();
+    const before = JSON.stringify(state);
+    const values = Object.fromEntries(
+      sample.questions.map((q) => [q.id, q.accepted[0]]),
+    );
+    values.reply = "Thanks, Ben. Could we meet at three tomorrow?";
+    const attempt = makeConversationAttempt(state, sample, values, {
+      lines: ["line-0"],
+      complete: false,
+    });
+    expect(attempt.answers.filter((a) => a.correct)).toHaveLength(3);
+    expect(
+      attempt.answers.find((a) => a.kind === "reply")?.correct,
+    ).toBeUndefined();
+    expect(attempt.targetContentVersions).toEqual(
+      Object.fromEntries(
+        sample.targets.map((t) => [t.id, contentKey(state.entries[t.id].word)]),
+      ),
+    );
+    expect(attempt.listenedComplete).toBe(false);
+    expect(JSON.stringify(state)).toBe(before);
+    expect(() =>
+      validatePracticeCollections({ ...state, conversations: [attempt] }),
+    ).not.toThrow();
+  });
+
+  it("distinguishes exposure, listening and an actual wrong answer when proposing retries", () => {
+    const state = source();
+    const values = Object.fromEntries(
+      sample.questions.map((q) => [q.id, q.accepted[0]]),
+    );
+    values.understand = "wrong option";
+    const first = makeConversationAttempt(state, sample, values, {
+      lines: [],
+      complete: false,
+    });
+    first.time = 10;
+    state.conversations = [first];
+    const recommended = recommendDialogues(state).find(
+      (r) => r.dialogue.id === sample.id,
+    )!;
+    expect(recommended.studied).toBe(4);
+    expect(recommended.weak).toBe(2);
+    const corrected = makeConversationAttempt(
+      state,
+      sample,
+      Object.fromEntries(sample.questions.map((q) => [q.id, q.accepted[0]])),
+      { lines: [], complete: true },
+      first.id,
+    );
+    corrected.time = 20;
+    state.conversations.push(corrected);
+    expect(
+      recommendDialogues(state).find((r) => r.dialogue.id === sample.id)?.weak,
+    ).toBe(0);
+    expect(state.history).toEqual([]);
+    expect(state.schedules).toEqual({});
+  });
+});

@@ -49,6 +49,57 @@ function changedObject<T extends object>(
   return result as T;
 }
 
+/** Append-only practice evidence merges by ID rather than replacing a device's list. */
+function mergePracticeEvidence<T extends { id: string; time: number }>(
+  base: readonly T[] | undefined,
+  next: readonly T[] | undefined,
+  latest: readonly T[] | undefined,
+  label: string,
+  wordIds: (item: T) => readonly string[],
+  entries: State["entries"],
+): T[] | undefined {
+  if (base === undefined && next === undefined && latest === undefined)
+    return undefined;
+  const result: T[] = [];
+  const known = new Map<string, T>();
+  const before = new Map<string, T>();
+  for (const item of base || []) {
+    const existing = before.get(item.id);
+    if (existing && !same(existing, item))
+      throw new StorageConflictError(`${label}: ID trùng có nội dung khác`);
+    before.set(item.id, item);
+  }
+  for (const item of latest || []) {
+    const existing = known.get(item.id);
+    if (existing && !same(existing, item))
+      throw new StorageConflictError(`${label}: ID trùng có nội dung khác`);
+    if (!existing) {
+      result.push(item);
+      known.set(item.id, item);
+    }
+  }
+  for (const item of next || []) {
+    const original = before.get(item.id);
+    // A rewrite is not a new attempt. Corrections must receive a new record ID.
+    if (original && !same(original, item))
+      throw new StorageConflictError(`${label}: bản ghi đã lưu không thể sửa`);
+    const existing = known.get(item.id);
+    if (existing && !same(existing, item))
+      throw new StorageConflictError(`${label}: ID trùng có nội dung khác`);
+    // An explicit restore in another tab can remove old evidence. A stale,
+    // unchanged record must not resurrect the replaced backup's history.
+    if (!existing && !original) {
+      const added = clone(item);
+      result.push(added);
+      known.set(item.id, added);
+    }
+  }
+  for (const item of result)
+    if (wordIds(item).some((id) => !Object.hasOwn(entries, id)))
+      throw new StorageConflictError(`${label}: kho từ đã được thay thế`);
+  return result.sort((a, b) => a.time - b.time || a.id.localeCompare(b.id));
+}
+
 /** Three-way merge: a stale settings edit must never replace newer learning. */
 export function rebaseState(base: State, next: State, latest: State): State {
   const result: State = {
@@ -136,6 +187,25 @@ export function rebaseState(base: State, next: State, latest: State): State {
   }
   result.history.sort((a, b) => a.time - b.time || a.id.localeCompare(b.id));
 
+  const writing = mergePracticeEvidence(
+    base.writing,
+    next.writing,
+    latest.writing,
+    "lịch sử câu viết",
+    (item) => [item.wordId],
+    result.entries,
+  );
+  const conversations = mergePracticeEvidence(
+    base.conversations,
+    next.conversations,
+    latest.conversations,
+    "lịch sử hội thoại",
+    (item) => item.targetIds,
+    result.entries,
+  );
+  if (writing !== undefined) result.writing = writing;
+  if (conversations !== undefined) result.conversations = conversations;
+
   for (const key of new Set([
     ...Object.keys(base.schedules),
     ...Object.keys(next.schedules),
@@ -180,6 +250,8 @@ export function rebaseState(base: State, next: State, latest: State): State {
     "schedules",
     "session",
     "exposures",
+    "writing",
+    "conversations",
   ]);
   const a = base as unknown as Record<string, unknown>;
   const b = next as unknown as Record<string, unknown>;

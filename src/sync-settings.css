@@ -1,0 +1,80 @@
+.sync-settings {
+  min-width: 0;
+}
+.sync-settings p {
+  overflow-wrap: anywhere;
+}
+.sync-settings label {
+  display: grid;
+  gap: 0.4rem;
+  margin-block: 0.8rem;
+}
+.sync-settings input,
+.sync-settings select {
+  width: 100%;
+  min-width: 0;
+}
+.sync-settings details {
+  margin-block: 1rem;
+}
+.sync-settings summary {
+  cursor: pointer;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+.sync-login,
+.sync-actions {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  align-items: end;
+}
+.sync-login label {
+  flex: 1 1 220px;
+}
+.sync-login .fineprint {
+  flex-basis: 100%;
+}
+.sync-settings button {
+  min-height: 44px;
+  white-space: normal;
+}
+.sync-status {
+  padding: 0.65rem 0.85rem;
+  border-radius: 0.7rem;
+  background: #f2edf5;
+  color: #4e3d61;
+}
+.sync-synced {
+  background: #e8f3ed;
+  color: #22573b;
+}
+.sync-error,
+.sync-conflict,
+.sync-notice {
+  color: #74401c;
+}
+.sync-notice {
+  padding: 0.7rem;
+  border-left: 3px solid #ad733f;
+  background: #fff8ef;
+}
+.sync-conflicts article {
+  border-top: 1px solid #ded5e4;
+  padding-block: 0.8rem;
+}
+.sync-conflicts article strong,
+.sync-conflicts article span {
+  overflow-wrap: anywhere;
+}
+.sync-conflicts article p {
+  max-height: 9rem;
+  overflow-y: auto;
+}
+@media (max-width: 480px) {
+  .sync-actions > button,
+  .sync-login > button {
+    width: 100%;
+  }
+}

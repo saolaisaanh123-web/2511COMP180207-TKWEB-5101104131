@@ -15,7 +15,7 @@ const firstNewWord = sortForLearning(
   Object.values(merge(empty(), corpus, "default").entries),
 ).find((e) => canPractice(e.word, 0) && !isSlang(e.word))!.word;
 
-test("library orders by CEFR then frequency and new study uses that order", async ({
+test("library keeps CEFR ordering while common study prioritizes frequency", async ({
   page,
 }) => {
   const fixture = [
@@ -62,8 +62,11 @@ test("library orders by CEFR then frequency and new study uses that order", asyn
   });
   await expect(dailyLevel).toHaveValue("A2");
   await dailyLevel.selectOption("");
+  await page
+    .getByRole("combobox", { name: "Chế độ chọn từ", exact: true })
+    .selectOption("common");
   await page.getByRole("button", { name: "Bắt đầu học", exact: true }).click();
-  await expect(page.locator(".study h2")).toHaveText("a-common");
+  await expect(page.locator(".study h2")).toHaveText("higher-level");
 });
 
 test("news idioms filter and display attributed context separately from practice examples", async ({

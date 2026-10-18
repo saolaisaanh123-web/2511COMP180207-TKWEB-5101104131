@@ -1,0 +1,251 @@
+.learning-insights {
+  min-width: 0;
+}
+.learning-insights h3 {
+  margin-bottom: 12px;
+}
+.learning-insights h4 {
+  margin-bottom: 7px;
+}
+.learning-insights p,
+.learning-insights small,
+.learning-insights li {
+  color: #526657;
+}
+.learning-insights small {
+  font-size: 12px;
+  line-height: 1.7;
+}
+.learning-insights p {
+  font-size: 13px;
+}
+.learning-insights button,
+.learning-insights select {
+  min-height: 44px;
+}
+.insight-note {
+  margin: 10px 0;
+  font-size: 12px !important;
+  line-height: 1.8;
+}
+.insight-priority {
+  border-color: #ceddc8;
+}
+.insight-due {
+  padding: 12px 14px;
+  background: #f1f5ec;
+  border-radius: 8px;
+  margin-bottom: 13px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.insight-due p {
+  margin-bottom: 0;
+  flex: 1;
+}
+.insight-recommendation {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 14px 0;
+  border-top: 1px solid #e7ece5;
+}
+.insight-recommendation div {
+  flex: 1;
+  min-width: 0;
+}
+.insight-recommendation p {
+  margin-bottom: 0;
+}
+.insight-recommendation button {
+  flex: 0 0 auto;
+}
+.insight-status-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 16px;
+}
+.insight-status {
+  flex-direction: column;
+  gap: 6px;
+  padding: 15px 9px;
+  font-size: 12px;
+}
+.insight-status strong {
+  font-size: 23px;
+}
+.insight-status[aria-expanded="true"] {
+  outline: 2px solid #78926c;
+  outline-offset: 1px;
+}
+.insight-status-weak {
+  background: #fff4e9;
+}
+.insight-status-retained,
+.insight-status-active {
+  background: #f0f5e9;
+}
+.insight-word-list {
+  padding: 16px;
+  margin-top: 16px;
+  background: #f7f9f5;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+.insight-word-list p {
+  margin-bottom: 10px;
+}
+.insight-method {
+  margin-top: 18px;
+}
+.insight-method summary,
+.insight-detail > summary {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: #354f3c;
+  min-height: 44px;
+  align-content: center;
+}
+.insight-method ul {
+  padding-left: 20px;
+}
+.insight-method li {
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 9px 0;
+}
+.insight-retention {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 18px 0;
+}
+.insight-retention article {
+  border: 1px solid #e4eae1;
+  border-radius: 8px;
+  padding: 15px;
+  min-width: 0;
+}
+.insight-retention h4 {
+  font-size: 13px;
+}
+.insight-retention article > small {
+  display: block;
+  margin-top: 11px;
+}
+.insight-metric {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.insight-metric strong {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.insight-metric small {
+  font-size: 11px;
+}
+.insight-skill {
+  border-top: 1px solid #e4eae1;
+  padding: 16px 0 8px;
+}
+.insight-skill h4 {
+  margin-bottom: 12px;
+}
+.insight-skill-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+}
+.insight-skill-metrics > div > span:first-child {
+  display: block;
+  margin-bottom: 7px;
+  color: #526657;
+  font-size: 12px;
+}
+.insight-patterns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 15px;
+}
+.insight-patterns div {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.insight-period-picker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  font-size: 13px;
+}
+.insight-period {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr) 175px;
+  gap: 12px;
+  align-items: center;
+  margin: 12px 0;
+  font-size: 12px;
+  color: #405d48;
+}
+.insight-bars {
+  position: relative;
+  height: 18px;
+  border-radius: 4px;
+  background: #f3f6ef;
+  overflow: hidden;
+}
+.insight-bars span,
+.insight-bars b {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: #d4e0cb;
+}
+.insight-bars b {
+  background: #6c875e;
+  height: 8px;
+  top: 5px;
+}
+@media (max-width: 700px) {
+  .insight-retention,
+  .insight-skill-metrics,
+  .insight-patterns {
+    grid-template-columns: 1fr;
+  }
+  .insight-skill-metrics {
+    gap: 13px;
+  }
+  .insight-retention {
+    gap: 9px;
+  }
+  .insight-period {
+    grid-template-columns: 95px minmax(0, 1fr);
+    gap: 7px;
+  }
+  .insight-period > span:last-child {
+    grid-column: 2;
+  }
+  .insight-recommendation,
+  .insight-due {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 11px;
+  }
+}
+@media (max-width: 380px) {
+  .insight-status-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .insight-period-picker {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+}

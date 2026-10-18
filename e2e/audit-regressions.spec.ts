@@ -216,13 +216,15 @@ test("save and pause preserves an unfinished sentence across a reload", async ({
   await openFixture(page);
   await startPractice(page, 5);
   const draft = "I brought an apple to share with my friend after class.";
-  await page.getByRole("textbox", { name: "Câu trả lời" }).fill(draft);
+  await page
+    .getByRole("textbox", { name: "Câu tiếng Anh của bạn" })
+    .fill(draft);
   await page.getByRole("button", { name: /Lưu & tạm dừng/ }).click();
   await page.reload();
   await page.getByRole("button", { name: "Tiếp tục phiên học" }).click();
-  await expect(page.getByRole("textbox", { name: "Câu trả lời" })).toHaveValue(
-    draft,
-  );
+  await expect(
+    page.getByRole("textbox", { name: "Câu tiếng Anh của bạn" }),
+  ).toHaveValue(draft);
   expect((await snapshot(page)).history).toHaveLength(0);
 });
 
