@@ -1,0 +1,149 @@
+[
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/question-forms",
+    "title": "Question forms",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "c253551eb3b214bceceb2700b6a0c13d4c2bbd812b1eaeda7ba6ddce0d3be1f5"
+  },
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/question-tags",
+    "title": "Question tags",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "bd4639821ca52803a7df6782ed9f90aab433b1174d1afcf65849d4d9347d05a1"
+  },
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/comparative-adjectives",
+    "title": "Comparative adjectives",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "77c4278bbec1d1879469d8fc080fd30950ff92f494b8bf3db78c60b384e6fe91"
+  },
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/modifying-comparatives",
+    "title": "Modifying comparatives",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "90688c9709e0c497972d244704d74f503774cb9084528c41c460094d29782121"
+  },
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/intensifiers-so-such",
+    "title": "Intensifiers: 'so' and 'such'",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "c0534b5f42c3d5e468215459c9f69e6ffa468a67e6659ac17ab36fe2da76d197"
+  },
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/using-enough",
+    "title": "Using 'enough'",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "056d51351c285cbdcc7623dbd65665df7723dc0b37b0bb7f905b3be798bb597b"
+  },
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/prepositions-place",
+    "title": "Prepositions of place: 'in', 'on', 'at'",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "43d1eeaeff333e87f94524c4c6323e89a72f3a65a79256bb68e7a4af1c1dcdf0"
+  },
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2-grammar/prepositions-of-time-at-in-on",
+    "title": "Prepositions of time: 'at', 'in', 'on'",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "97c17b7147c657a9a1898d0ba2e5a0b5741088fa8ff8f528786284dd89955a5e"
+  },
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/verbs-prepositions",
+    "title": "Verbs and prepositions",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "03482d951ed80cd62d67ceddf65e641d5fcd830e6f487d6662e93c2294ef01db"
+  },
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/adjectives-prepositions",
+    "title": "Adjectives and prepositions",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "ec7e321d8927ef5245f246b8e0a10d56ecf793e9ced3196b3b5b657eccdd5651"
+  },
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/contrasting-ideas-although-despite-others",
+    "title": "Contrasting ideas: 'although', 'despite' and others",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "08430d9abb3236e60483ba0e750f626566b4ece30715d5a3b80b90bf1f93291d"
+  },
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/clause-structure-verb-patterns",
+    "title": "Clause structure and verb patterns",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "ca8b22493e2c2a1428aad4e010c189ea522c7a216a3f199de15ef9b2af3ec3a5"
+  },
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/questions-negatives",
+    "title": "Questions and negatives",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "8021d125d67d0a2f2d5bebd89cd45d279193b2eb9d5ab4ba9d5e03f83db037a0"
+  },
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/where-adjectives-go-sentence",
+    "title": "Where adjectives go in a sentence",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "4e127fe964224a7b00f67874f105c7f26ffa576ad856e5fb93f6cfc8109a2bc6"
+  },
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/adjective-order",
+    "title": "Adjective order",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "e757d9d3a6fbe4cbe4103af6916f5b808ef40959909f78b6dce8d06955dcae94"
+  },
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/how-we-make-adverbials",
+    "title": "How we make adverbials",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "70367de994be228bcf61568eea764f1c60f649b83ecc9f0cda6df372e1ac206b"
+  },
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/where-adverbials-go-sentence",
+    "title": "Where adverbials go in a sentence",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "2543cfd4439bc02182a6631eeac00140dfed033388ec064669e97b44b255451b"
+  },
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/comparative-superlative-adverbs",
+    "title": "Comparative and superlative adverbs",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "70a1dbf1ed362c5cb7ae6a3f2edbf7abaf65555d3da4972fc48192a52ee07a15"
+  },
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/comparative-superlative-adjectives",
+    "title": "Comparative and superlative adjectives",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "b3c7934096eeeb85f0bd8e6366908910a6b56f7ab46ca72389d9e6ac3b0d2f2d"
+  },
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/noun-phrases",
+    "title": "Noun phrases",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "fbd59711edf04d3dbb5241470e3b13280b18d8cbc49786c19438c3c66f222fdc"
+  },
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases",
+    "title": "Verb phrases",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "cf7502b1cade767de3c970a5b0713a89267c2e9657ffd89dfb4d48b77ffa309a"
+  }
+]

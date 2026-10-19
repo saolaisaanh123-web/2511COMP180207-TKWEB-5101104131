@@ -1,0 +1,1152 @@
+[
+  {
+    "id": "sentence-parts",
+    "groupId": "foundations",
+    "title": "Thành phần câu và trật tự cơ bản",
+    "aliases": [
+      "sentence structure",
+      "word order",
+      "SVO",
+      "subject verb object",
+      "chủ ngữ",
+      "tân ngữ",
+      "bổ ngữ",
+      "cấu trúc câu"
+    ],
+    "summary": "Câu trần thuật thường đặt chủ ngữ trước cụm động từ. Phần theo sau phụ thuộc vào động từ: có thể là tân ngữ, bổ ngữ hoặc trạng ngữ; không phải câu nào cũng theo đủ S–V–O.",
+    "whenToUse": [
+      "Khi muốn kiểm tra câu có đủ thành phần hay chưa và đặt từ mới vào đúng vị trí.",
+      "Khi phân biệt người thực hiện hành động, đối tượng chịu tác động và phần mô tả chủ ngữ."
+    ],
+    "structures": [
+      "S + V: chủ ngữ + động từ nội động.",
+      "S + V + O: động từ ngoại động cần tân ngữ.",
+      "S + linking verb + C: động từ nối + bổ ngữ.",
+      "S + V + O + trạng ngữ: một số động từ cần thêm thông tin về vị trí."
+    ],
+    "examples": [
+      {
+        "en": "The audience laughed.",
+        "vi": "Khán giả bật cười."
+      },
+      {
+        "en": "Mai checked the appointment.",
+        "vi": "Mai kiểm tra lịch hẹn."
+      },
+      {
+        "en": "The explanation sounds clear.",
+        "vi": "Lời giải thích nghe có vẻ rõ ràng."
+      },
+      {
+        "en": "Please put the folder on my desk.",
+        "vi": "Hãy đặt tập tài liệu lên bàn tôi."
+      }
+    ],
+    "notes": [
+      "S là subject, V là verb, O là object, C là complement. Chủ ngữ có thể là cả cụm từ, không chỉ một danh từ.",
+      "Câu mệnh lệnh thường không nêu you. Khi không có chủ ngữ mang nghĩa cụ thể, tiếng Anh dùng it hoặc there trong những cấu trúc thích hợp.",
+      "Trạng ngữ thời gian có thể lên đầu câu để tạo trọng tâm. Không suy từ thứ tự linh hoạt của tiếng Việt sang việc tùy ý đảo mọi thành phần."
+    ],
+    "mistakes": [
+      {
+        "wrong": "Is very useful for revision.",
+        "correct": "It is very useful for revision.",
+        "explanation": "Câu trần thuật này cần chủ ngữ; không lược it chỉ vì tiếng Việt có thể nói “rất hữu ích”."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Tân ngữ và bổ ngữ",
+        "explanation": "Trong Mai checked the appointment, tân ngữ chỉ thứ được kiểm tra. Trong The explanation sounds clear, clear mô tả chủ ngữ, không phải đối tượng của hành động.",
+        "examples": []
+      }
+    ],
+    "details": [
+      {
+        "title": "Chọn mẫu theo động từ",
+        "paragraphs": [
+          "Hãy tra cả mẫu dùng của động từ. Arrive thường không nhận tân ngữ trực tiếp, còn enjoy cần đối tượng trong cách dùng ngoại động. Một động từ như read có thể dùng có hoặc không có tân ngữ.",
+          "Với động từ có tân ngữ, trạng ngữ cách thức thường đứng sau tân ngữ; cũng có những vị trí khác để nhấn mạnh. Khi viết, trước hết xác định cụm chủ ngữ và cụm động từ rồi mới thêm thông tin phụ."
+        ],
+        "examples": []
+      }
+    ],
+    "sources": [
+      {
+        "title": "British Council — Clause structure and verb patterns",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/clause-structure-verb-patterns",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "British Council — Where adverbials go in a sentence",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/where-adverbials-go-sentence",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "word-classes",
+    "groupId": "foundations",
+    "title": "Từ loại: nhận diện theo chức năng trong câu",
+    "aliases": [
+      "parts of speech",
+      "word classes",
+      "noun verb adjective adverb",
+      "danh từ động từ tính từ trạng từ",
+      "từ loại"
+    ],
+    "summary": "Từ loại cho biết một từ đang làm nhiệm vụ gì. Cần nhìn cả ngữ cảnh và mẫu kết hợp; hình thức hoặc bản dịch tiếng Việt riêng lẻ chưa đủ để xác định.",
+    "whenToUse": [
+      "Khi chọn dạng từ để hoàn thành một câu hoặc ghi từ mới cùng cách dùng.",
+      "Khi phân biệt loại từ với vai trò chủ ngữ, tân ngữ hay trạng ngữ."
+    ],
+    "structures": [
+      "Danh từ/cụm danh từ có thể làm chủ ngữ hoặc tân ngữ.",
+      "Động từ chính cùng trợ động từ tạo thành cụm động từ.",
+      "Tính từ thường đứng trước danh từ hoặc sau động từ nối.",
+      "Trạng ngữ có thể là trạng từ, cụm giới từ, cụm danh từ hoặc mệnh đề."
+    ],
+    "examples": [
+      {
+        "en": "This is a useful reference.",
+        "vi": "Đây là một tài liệu tham khảo hữu ích."
+      },
+      {
+        "en": "She explained the rule clearly.",
+        "vi": "Cô ấy giải thích quy tắc một cách rõ ràng."
+      },
+      {
+        "en": "They work at home.",
+        "vi": "Họ làm việc ở nhà."
+      },
+      {
+        "en": "Their work is demanding.",
+        "vi": "Công việc của họ đòi hỏi nhiều công sức."
+      }
+    ],
+    "notes": [
+      "Danh từ gọi người/vật/khái niệm; đại từ như they thay cho cụm danh từ. Từ hạn định như this, my, the giúp xác định danh từ.",
+      "Giới từ như in, on, with mở đầu cụm giới từ. Liên từ như because nối ý hoặc mệnh đề. Cách nhận diện này dựa vào chức năng, không phải danh sách nghĩa cố định.",
+      "Đuôi -ly thường gợi ý trạng từ nhưng không phải quy tắc tuyệt đối. Không tự suy ra từ loại hay nghĩa chỉ bằng hậu tố."
+    ],
+    "mistakes": [
+      {
+        "wrong": "She explained the rule clear.",
+        "correct": "She explained the rule clearly.",
+        "explanation": "Ở đây cần trạng từ chỉ cách giải thích, thay vì tính từ clear. Không áp dụng thành quy tắc rằng mọi từ sau động từ đều phải là trạng từ."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Từ loại và thành phần câu",
+        "explanation": "Noun là loại từ; subject là chức năng. Một cụm danh từ có thể làm chủ ngữ trong câu này và tân ngữ trong câu khác. Một trạng ngữ cũng có thể gồm nhiều từ.",
+        "examples": []
+      }
+    ],
+    "details": [
+      {
+        "title": "Một hình thức, nhiều cách dùng",
+        "paragraphs": [
+          "Work trong They work là động từ; work trong Their work là danh từ. Vì vậy khi học từ, hãy ghi một câu minh họa đúng nghĩa đang học và mẫu đi kèm.",
+          "Trong cụm have been studying, have và been giúp biểu đạt thể/thời; studying mang nội dung hành động chính. Phân tích cả cụm sẽ hữu ích hơn việc dịch từng từ rời."
+        ],
+        "examples": []
+      }
+    ],
+    "sources": [
+      {
+        "title": "British Council — Noun phrases",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/noun-phrases",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "British Council — Verb phrases",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "British Council — Where adjectives go in a sentence",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/where-adjectives-go-sentence",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "British Council — How we make adverbials",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/how-we-make-adverbials",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "clause-types",
+    "groupId": "foundations",
+    "title": "Mệnh đề chính, phụ và cách ghép câu",
+    "aliases": [
+      "clauses",
+      "main clause",
+      "subordinate clause",
+      "independent dependent clause",
+      "simple compound complex sentences",
+      "câu đơn",
+      "câu ghép",
+      "câu phức",
+      "mệnh đề"
+    ],
+    "summary": "Mệnh đề có cụm động từ và thường có chủ ngữ. Mệnh đề chính có thể đứng thành câu; mệnh đề phụ bổ sung một vai trò hoặc quan hệ, thường cần gắn với mệnh đề chính.",
+    "whenToUse": [
+      "Khi câu dài có nhiều động từ và cần xác định ý chính.",
+      "Khi nối lý do, thời gian, điều kiện hoặc phần giải thích mà vẫn giữ câu rõ nghĩa."
+    ],
+    "structures": [
+      "Mệnh đề chính + because/when/although + mệnh đề phụ.",
+      "Because/When/Although + mệnh đề phụ, mệnh đề chính.",
+      "S + reporting verb + (that) + mệnh đề nội dung."
+    ],
+    "examples": [
+      {
+        "en": "I stayed home because the road was flooded.",
+        "vi": "Tôi ở nhà vì đường bị ngập."
+      },
+      {
+        "en": "When the meeting ends, I will call you.",
+        "vi": "Khi cuộc họp kết thúc, tôi sẽ gọi cho bạn."
+      },
+      {
+        "en": "Lan said that the room was available.",
+        "vi": "Lan nói rằng phòng còn trống."
+      }
+    ],
+    "notes": [
+      "Câu đơn có một mệnh đề chính; câu ghép nối các mệnh đề chính; câu phức có mệnh đề chính cùng mệnh đề phụ. Đây là cách phân tích cấu trúc, không phải thang chất lượng bài viết.",
+      "Một câu có nhiều động từ chưa chắc có nhiều mệnh đề chính: trợ động từ và động từ chính có thể nằm trong cùng một cụm.",
+      "Mệnh đề không chia như to-infinitive hoặc -ing cũng tồn tại. Không áp dụng mô tả chủ ngữ + động từ đã chia cho mọi cấu trúc rút gọn."
+    ],
+    "mistakes": [
+      {
+        "wrong": "Because the road was flooded.",
+        "correct": "I stayed home because the road was flooded.",
+        "explanation": "Trong văn viết độc lập, cụm bắt đầu bằng because này chưa diễn đạt trọn ý chính. Trong hội thoại, nó vẫn có thể là câu trả lời rút gọn cho Why?"
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Mệnh đề và cụm từ",
+        "explanation": "Because the road was flooded chứa một mệnh đề; because of the flood là cụm giới từ. Hai cách thể hiện lý do nhưng phần theo sau khác cấu trúc.",
+        "examples": []
+      }
+    ],
+    "details": [
+      {
+        "title": "Nhìn quan hệ giữa các ý",
+        "paragraphs": [
+          "Mệnh đề phụ có thể đóng vai trò thông tin thời gian/lý do, mô tả danh từ trong mệnh đề quan hệ, hoặc làm nội dung sau động từ như say. Chọn từ nối theo quan hệ ý nghĩa rồi kiểm tra cấu trúc đi sau.",
+          "Khi một mệnh đề trạng ngữ đứng đầu câu, thường dùng dấu phẩy ngăn với mệnh đề chính. Khi đứng sau, cách dùng dấu phẩy còn tùy quan hệ và mức độ gắn kết; không có mẹo “thấy liên từ là thêm dấu phẩy”."
+        ],
+        "examples": []
+      }
+    ],
+    "sources": [
+      {
+        "title": "British Council — Clause structure and verb patterns",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/clause-structure-verb-patterns",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "British Council — How we make adverbials",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/how-we-make-adverbials",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "British Council — Contrasting ideas: 'although', 'despite' and others",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/contrasting-ideas-although-despite-others",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "questions",
+    "groupId": "foundations",
+    "title": "Câu hỏi: trực tiếp, chủ ngữ và gián tiếp",
+    "aliases": [
+      "questions",
+      "question forms",
+      "wh questions",
+      "yes no questions",
+      "subject object questions",
+      "indirect questions",
+      "câu hỏi gián tiếp"
+    ],
+    "summary": "Câu hỏi trực tiếp thường đưa trợ động từ hoặc be lên trước chủ ngữ. Câu hỏi về chủ ngữ và phần câu hỏi gián tiếp có trật tự khác, nên không đảo máy móc.",
+    "whenToUse": [
+      "Khi hỏi thông tin, xác nhận có/không hoặc hỏi lịch sự bằng Can you tell me…?",
+      "Khi phân biệt hỏi ai thực hiện hành động với hỏi hành động tác động đến ai."
+    ],
+    "structures": [
+      "(Wh-word) + trợ động từ/be/modal + S + phần còn lại?",
+      "Hiện tại/quá khứ đơn với động từ thường: do/does/did + S + V nguyên mẫu?",
+      "Who/What/Which + V…? khi từ hỏi là chủ ngữ.",
+      "Can you tell me + wh-word/if + S + V…?"
+    ],
+    "examples": [
+      {
+        "en": "When does the library close?",
+        "vi": "Thư viện đóng cửa khi nào?"
+      },
+      {
+        "en": "Who booked the room?",
+        "vi": "Ai đã đặt phòng?"
+      },
+      {
+        "en": "Who did you invite?",
+        "vi": "Bạn đã mời ai?"
+      },
+      {
+        "en": "Do you know where the entrance is?",
+        "vi": "Bạn có biết lối vào ở đâu không?"
+      }
+    ],
+    "notes": [
+      "Nếu có nhiều trợ động từ, chỉ đưa trợ động từ đầu tiên lên trước chủ ngữ: Has she been waiting?",
+      "Sau does/did, động từ chính trở về nguyên mẫu; dấu hiệu thì/ngôi đã nằm ở trợ động từ.",
+      "Câu hỏi chủ ngữ khẳng định thông thường không thêm do/did. Câu hỏi phủ định hoặc nhấn mạnh có thể dùng trợ động từ; không biến mẹo cơ bản thành lệnh cấm tuyệt đối."
+    ],
+    "mistakes": [
+      {
+        "wrong": "Where did she went?",
+        "correct": "Where did she go?",
+        "explanation": "Did đã thể hiện quá khứ; dùng go thay vì went."
+      },
+      {
+        "wrong": "Can you tell me where is the entrance?",
+        "correct": "Can you tell me where the entrance is?",
+        "explanation": "Phần câu hỏi gián tiếp dùng trật tự chủ ngữ trước động từ."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Hỏi chủ ngữ và tân ngữ",
+        "explanation": "Who booked the room? hỏi người đặt phòng; Who did you invite? hỏi người được mời. Xác định vai trò của who trước khi chọn cấu trúc.",
+        "examples": []
+      }
+    ],
+    "details": [
+      {
+        "title": "Câu hỏi gián tiếp",
+        "paragraphs": [
+          "Đặt lời dẫn như Do you know hoặc Can you tell me trước một mệnh đề có trật tự câu trần thuật. Với câu hỏi có/không, dùng if; không đưa do/does/did của câu hỏi trực tiếp vào mệnh đề này.",
+          "Không phải câu có I wonder đều kết thúc bằng dấu hỏi: I wonder where she lives. là một lời bày tỏ sự thắc mắc."
+        ],
+        "examples": []
+      }
+    ],
+    "sources": [
+      {
+        "title": "British Council — Question forms",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/question-forms",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "British Council — Questions and negatives",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/questions-negatives",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "negation",
+    "groupId": "foundations",
+    "title": "Phủ định: not, no, never và từ phủ định",
+    "aliases": [
+      "negation",
+      "negatives",
+      "not no never",
+      "negative sentences",
+      "phủ định kép",
+      "câu phủ định"
+    ],
+    "summary": "Not thường phủ định cụm động từ; no đứng trước danh từ, còn nobody/nothing đã mang nghĩa phủ định. Trong tiếng Anh chuẩn, tránh thêm phủ định thứ hai nếu chỉ muốn nói một ý phủ định.",
+    "whenToUse": [
+      "Khi phủ định hành động, số lượng hoặc người/vật hiện diện.",
+      "Khi cần giữ đúng thì và tránh dùng đồng thời not với một từ đã phủ định."
+    ],
+    "structures": [
+      "S + be/trợ động từ/modal + not + phần còn lại.",
+      "S + do/does/did + not + V nguyên mẫu.",
+      "no + danh từ; not … any + danh từ.",
+      "not + to-infinitive: ask someone not to do something."
+    ],
+    "examples": [
+      {
+        "en": "She has not confirmed the booking.",
+        "vi": "Cô ấy chưa xác nhận việc đặt chỗ."
+      },
+      {
+        "en": "We do not have any spare tickets.",
+        "vi": "Chúng tôi không có vé dư."
+      },
+      {
+        "en": "Nobody answered my message.",
+        "vi": "Không ai trả lời tin nhắn của tôi."
+      },
+      {
+        "en": "I have never visited that museum.",
+        "vi": "Tôi chưa từng đến bảo tàng đó."
+      }
+    ],
+    "notes": [
+      "Never có nghĩa “không bao giờ/chưa từng” và tự mang nghĩa phủ định; trong cách dùng thông thường không thêm not.",
+      "Trong câu chuẩn mang nghĩa “không ai đến”, dùng Nobody came hoặc No one came, không dùng Nobody did not come. Phủ định kép xuất hiện trong một số phương ngữ nhưng không phải mẫu mặc định để luyện văn viết chuẩn.",
+      "Các dạng rút gọn như isn’t, don’t, haven’t thông dụng trong hội thoại. Phủ định của will là won’t; am not thường rút thành I’m not."
+    ],
+    "mistakes": [
+      {
+        "wrong": "She does not knows the answer.",
+        "correct": "She does not know the answer.",
+        "explanation": "Does đã mang dấu hiệu ngôi; động từ chính giữ nguyên mẫu."
+      },
+      {
+        "wrong": "Nobody did not reply.",
+        "correct": "Nobody replied.",
+        "explanation": "Khi ý muốn nói không ai trả lời, nobody đã phủ định chủ ngữ; không thêm did not."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "No và not any",
+        "explanation": "We have no tickets và We do not have any tickets đều có thể nói hết vé; no đi trực tiếp với cụm danh từ, not nằm trong cụm động từ. Mức nhấn mạnh tùy ngữ cảnh và giọng nói.",
+        "examples": []
+      }
+    ],
+    "details": [
+      {
+        "title": "Vị trí và phạm vi phủ định",
+        "paragraphs": [
+          "Đặt not sau trợ động từ đầu tiên: She might not have received it. Với to-infinitive, mẫu thường gặp là not to: Please remember not to lock this door.",
+          "Không coi mọi câu có hai yếu tố phủ định là sai. Chúng có thể tạo nghĩa khẳng định dè dặt hoặc phủ định các thành phần khác nhau; cần xét ý định và toàn câu."
+        ],
+        "examples": []
+      }
+    ],
+    "sources": [
+      {
+        "title": "British Council — Questions and negatives",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/questions-negatives",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "British Council — Question tags",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/question-tags",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "British Council — Indefinite pronouns",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/indefinite-pronouns",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "British Council — Quantifiers",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/quantifiers",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "question-tags",
+    "groupId": "foundations",
+    "title": "Câu hỏi đuôi",
+    "aliases": [
+      "question tags",
+      "tag questions",
+      "isn’t it",
+      "aren’t I",
+      "câu hỏi đuôi"
+    ],
+    "summary": "Câu hỏi đuôi thường dùng trong hội thoại để kiểm tra điều người nói nghĩ là đúng hoặc tìm sự đồng tình. Mẫu quen thuộc đảo tính khẳng định/phủ định giữa câu chính và phần đuôi.",
+    "whenToUse": [
+      "Khi muốn người nghe xác nhận thông tin một cách tự nhiên.",
+      "Khi cần phân biệt đuôi khẳng định sau câu có never/nobody với đuôi phủ định sau câu khẳng định."
+    ],
+    "structures": [
+      "Câu khẳng định, trợ động từ/be/modal phủ định + đại từ?",
+      "Câu phủ định, trợ động từ/be/modal khẳng định + đại từ?",
+      "Không có trợ động từ ở hiện tại/quá khứ đơn: dùng do/does/did."
+    ],
+    "examples": [
+      {
+        "en": "The office closes at six, doesn’t it?",
+        "vi": "Văn phòng đóng cửa lúc sáu giờ, đúng không?"
+      },
+      {
+        "en": "You haven’t sent the invoice, have you?",
+        "vi": "Bạn chưa gửi hóa đơn, phải không?"
+      },
+      {
+        "en": "She never skips lunch, does she?",
+        "vi": "Cô ấy không bao giờ bỏ bữa trưa, đúng không?"
+      },
+      {
+        "en": "I’m on the guest list, aren’t I?",
+        "vi": "Tôi có tên trong danh sách khách, đúng không?"
+      }
+    ],
+    "notes": [
+      "Dùng trợ động từ đầu tiên của câu chính và đại từ tương ứng với chủ ngữ. Nếu động từ chính là be, dùng chính be.",
+      "Never và nobody làm câu mang nghĩa phủ định, nên phần đuôi thường khẳng định. Nobody thường được quy chiếu bằng they trong đuôi.",
+      "Với I am khẳng định, đuôi phủ định thông dụng là aren’t I? Với I’m not, dùng am I? Không suy ra amn’t I từ công thức chung."
+    ],
+    "mistakes": [
+      {
+        "wrong": "She can drive, doesn’t she?",
+        "correct": "She can drive, can’t she?",
+        "explanation": "Câu chính có can nên phần đuôi dùng can, không dùng does."
+      },
+      {
+        "wrong": "They never complain, don’t they?",
+        "correct": "They never complain, do they?",
+        "explanation": "Never đã mang nghĩa phủ định, nên mẫu xác nhận thông thường dùng đuôi khẳng định."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Ngữ điệu xuống và lên",
+        "explanation": "Đuôi xuống thường thể hiện người nói khá chắc và mong đồng tình; đuôi lên thường thể hiện sự chưa chắc. Đây là xu hướng giao tiếp, không phải phép đo chính xác mức chắc chắn.",
+        "examples": []
+      }
+    ],
+    "details": [
+      {
+        "title": "Không chỉ là bài thay dấu",
+        "paragraphs": [
+          "Các đuôi cùng cực tính và những đuôi sau lời mời/mệnh lệnh có cách dùng riêng. Bài này tập trung mẫu xác nhận phổ biến, không khẳng định mọi câu hỏi đuôi đều phải đảo dấu.",
+          "Trong văn viết trang trọng, một câu hỏi trực tiếp rõ ràng có thể phù hợp hơn việc thêm đuôi. Khi nghe, chú ý cả tình huống và ngữ điệu để hiểu người nói đang hỏi thật hay tìm sự đồng tình."
+        ],
+        "examples": []
+      }
+    ],
+    "sources": [
+      {
+        "title": "British Council — Question tags",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/question-tags",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "adjectives-adverbs",
+    "groupId": "modifiers",
+    "title": "Tính từ, trạng từ và vị trí bổ nghĩa",
+    "aliases": [
+      "adjectives",
+      "adverbs",
+      "adverbials",
+      "adjective order",
+      "tính từ trạng từ",
+      "trật tự tính từ"
+    ],
+    "summary": "Tính từ thường mô tả danh từ hoặc chủ ngữ sau động từ nối. Trạng từ có thể bổ nghĩa cho hành động hay mức độ; trạng ngữ còn có thể là cả cụm từ hoặc mệnh đề.",
+    "whenToUse": [
+      "Khi chọn clear/clearly hoặc đặt trạng từ vào câu có tân ngữ.",
+      "Khi thêm nhiều tính từ mà vẫn giữ cụm danh từ tự nhiên và dễ đọc."
+    ],
+    "structures": [
+      "adjective + noun; linking verb + adjective.",
+      "Động từ + tân ngữ + trạng ngữ cách thức (vị trí thường gặp).",
+      "Trạng từ tần suất thường đứng trước động từ chính.",
+      "Tính từ ý kiến thường đứng trước tính từ mô tả."
+    ],
+    "examples": [
+      {
+        "en": "The instructions are clear.",
+        "vi": "Các hướng dẫn rõ ràng."
+      },
+      {
+        "en": "She explained the process clearly.",
+        "vi": "Cô ấy giải thích quy trình một cách rõ ràng."
+      },
+      {
+        "en": "We usually review our notes after dinner.",
+        "vi": "Chúng tôi thường ôn ghi chép sau bữa tối."
+      },
+      {
+        "en": "He bought a lovely blue notebook.",
+        "vi": "Anh ấy mua một cuốn sổ màu xanh rất đẹp."
+      }
+    ],
+    "notes": [
+      "Không phải mọi từ theo sau động từ đều là trạng từ: look, seem, feel trong cách dùng nối thường nhận tính từ mô tả chủ ngữ.",
+      "Trạng ngữ thời gian có thể ở cuối hoặc đầu câu để đặt bối cảnh. Vị trí phụ thuộc loại trạng ngữ và trọng tâm, không chỉ một công thức duy nhất.",
+      "Trật tự nhiều tính từ là xu hướng thông dụng. Đừng chất quá nhiều tính từ hoặc coi mọi thay đổi trật tự là sai trong mọi ngữ cảnh."
+    ],
+    "mistakes": [
+      {
+        "wrong": "The explanation seems clearly.",
+        "correct": "The explanation seems clear.",
+        "explanation": "Sau seems ở đây, cần tính từ mô tả explanation."
+      },
+      {
+        "wrong": "She completed the task successful.",
+        "correct": "She completed the task successfully.",
+        "explanation": "Trong câu này cần trạng từ successfully mô tả cách hoàn thành công việc, thay vì tính từ successful."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Trạng từ và trạng ngữ",
+        "explanation": "Quickly là trạng từ; in a careful way là cụm giới từ. Cả hai có thể làm trạng ngữ cách thức. Đừng dùng tên từ loại để thay cho mọi cách bổ nghĩa trong câu.",
+        "examples": []
+      }
+    ],
+    "details": [
+      {
+        "title": "Tra vị trí cùng cách dùng",
+        "paragraphs": [
+          "Tính từ thường đứng trước danh từ, nhưng một số từ như asleep hoặc afraid thường đứng sau động từ nối. Kiểm tra từng từ thay vì tự ghép vào mọi vị trí.",
+          "Tính từ ý kiến thường đi trước màu sắc, nguồn gốc hay chất liệu. Danh sách trật tự dài chỉ giúp định hướng; với câu thực tế nên ưu tiên một hoặc hai tính từ cần thiết."
+        ],
+        "examples": []
+      }
+    ],
+    "sources": [
+      {
+        "title": "British Council — Where adjectives go in a sentence",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/where-adjectives-go-sentence",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "British Council — Adjective order",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/adjective-order",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "British Council — How we make adverbials",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/how-we-make-adverbials",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "British Council — Where adverbials go in a sentence",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/where-adverbials-go-sentence",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "comparison",
+    "groupId": "modifiers",
+    "title": "So sánh hơn, nhất, bằng và mức chênh lệch",
+    "aliases": [
+      "comparison",
+      "comparative superlative",
+      "as as",
+      "more most",
+      "so sánh hơn",
+      "so sánh nhất",
+      "so sánh bằng",
+      "càng càng"
+    ],
+    "summary": "So sánh hơn nêu sự khác biệt hoặc thay đổi; so sánh nhất đặt một đối tượng trong một nhóm; as…as diễn tả mức tương đương. Chọn dạng theo tính từ/trạng từ và ý nghĩa cần nói.",
+    "whenToUse": [
+      "Khi mô tả tiến bộ, lựa chọn phương án hoặc so sánh số liệu.",
+      "Khi cần nói khác biệt lớn/nhỏ thay vì chỉ dùng more."
+    ],
+    "structures": [
+      "Tính từ ngắn thường: -er / the -est; dài thường: more / the most.",
+      "as + adjective/adverb + as; not as + adjective/adverb + as.",
+      "much/far/a lot hoặc slightly/a little + comparative.",
+      "The + comparative…, the + comparative… diễn tả quan hệ thay đổi."
+    ],
+    "examples": [
+      {
+        "en": "This route is slightly safer than the old one.",
+        "vi": "Tuyến này an toàn hơn tuyến cũ một chút."
+      },
+      {
+        "en": "This is the most useful chapter in the guide.",
+        "vi": "Đây là chương hữu ích nhất trong sách hướng dẫn."
+      },
+      {
+        "en": "She reads as quickly as her brother.",
+        "vi": "Cô ấy đọc nhanh bằng anh trai mình."
+      },
+      {
+        "en": "The more you practise, the more confident you become.",
+        "vi": "Bạn càng luyện tập thì càng tự tin."
+      }
+    ],
+    "notes": [
+      "Good/well → better → best; bad/badly → worse → worst; far có farther/further. Không tự thêm more trước một dạng đã có -er.",
+      "Một số tính từ hai âm tiết có cả hai dạng, như simpler/more simple. Quy tắc số âm tiết là hướng dẫn, không thay thế việc tra dạng của từ cụ thể.",
+      "So sánh nhất của tính từ thường có the hoặc một từ hạn định phù hợp; không suy rằng mọi so sánh nhất của trạng từ đều bắt buộc có the."
+    ],
+    "mistakes": [
+      {
+        "wrong": "This explanation is more clearer.",
+        "correct": "This explanation is clearer.",
+        "explanation": "Clearer đã là dạng so sánh hơn; không thêm more."
+      },
+      {
+        "wrong": "This book is very better.",
+        "correct": "This book is much better.",
+        "explanation": "Dùng much, far hoặc a lot để nhấn mạnh so sánh hơn, không dùng very theo mẫu này."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Less và not as…as",
+        "explanation": "Less expensive than và not as expensive as đều có thể nói mức giá thấp hơn. Với tính từ ngắn, not as…as thường là lựa chọn tự nhiên, như not as tall as.",
+        "examples": []
+      }
+    ],
+    "details": [
+      {
+        "title": "Đặt phạm vi so sánh rõ ràng",
+        "paragraphs": [
+          "Nêu rõ nhóm hoặc mốc đang so sánh khi ngữ cảnh chưa xác định. The best không cho biết “tốt nhất trên mọi phương diện”; nó cần một phạm vi hay tiêu chí ngầm hiểu.",
+          "Bigger and bigger hoặc more and more useful nhấn mạnh sự tăng dần. Cấu trúc the more…, the more… diễn tả hai thay đổi liên quan, không phải phép chứng minh quan hệ nhân quả."
+        ],
+        "examples": []
+      }
+    ],
+    "sources": [
+      {
+        "title": "British Council — Comparative adjectives",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/comparative-adjectives",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "British Council — Comparative and superlative adjectives",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/comparative-superlative-adjectives",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "British Council — Comparative and superlative adverbs",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/comparative-superlative-adverbs",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "British Council — Modifying comparatives",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/modifying-comparatives",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "degree-enough-so-such",
+    "groupId": "modifiers",
+    "title": "Mức độ: enough, so và such",
+    "aliases": [
+      "enough so such",
+      "degree",
+      "intensifiers",
+      "đủ",
+      "so that",
+      "such that"
+    ],
+    "summary": "Enough nói mức đủ cho một nhu cầu; so và such nhấn mạnh mức độ và có thể dẫn đến một kết quả được nêu trong câu. Chọn cấu trúc theo thành phần đang được bổ nghĩa.",
+    "whenToUse": [
+      "Khi giải thích vì sao một việc có thể/không thể làm được.",
+      "Khi nhấn mạnh tính chất hoặc nêu kết quả của mức độ đó."
+    ],
+    "structures": [
+      "adjective/adverb + enough; enough + noun.",
+      "so + adjective/adverb; such + (a/an) + adjective + noun.",
+      "so much/many/little/few + noun; so/such … that + clause."
+    ],
+    "examples": [
+      {
+        "en": "The room is quiet enough to record a lesson.",
+        "vi": "Phòng đủ yên tĩnh để thu một bài học."
+      },
+      {
+        "en": "We have enough time to check the sources.",
+        "vi": "Chúng ta có đủ thời gian kiểm tra nguồn."
+      },
+      {
+        "en": "It was such a clear explanation that I understood immediately.",
+        "vi": "Lời giải thích rõ đến mức tôi hiểu ngay."
+      }
+    ],
+    "notes": [
+      "Enough đứng sau tính từ/trạng từ nhưng trước danh từ. Big enough rooms nói phòng đủ lớn; enough big rooms nói đủ số phòng lớn.",
+      "Such đi với cụm danh từ; danh từ đếm được số ít cần a/an trong mẫu thông thường. So dùng với tính từ/trạng từ, nhưng so many/much + danh từ là mẫu riêng.",
+      "Không mặc định rằng mọi tính từ đều kết hợp tự nhiên với cùng một từ nhấn mạnh. Cần kiểm tra nghĩa của tính từ và cách kết hợp trong ngữ cảnh."
+    ],
+    "mistakes": [
+      {
+        "wrong": "The room is enough quiet.",
+        "correct": "The room is quiet enough.",
+        "explanation": "Enough đứng sau tính từ quiet trong cấu trúc nói mức độ đủ yên tĩnh."
+      },
+      {
+        "wrong": "It was so a useful guide.",
+        "correct": "It was such a useful guide.",
+        "explanation": "Cụm có a useful guide là cụm danh từ nên dùng such."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "So…that và enough to",
+        "explanation": "So…that nêu mức độ và kết quả được nêu trong câu; enough to đánh giá mức đủ cho việc gì. Không chuyển đổi máy móc nếu làm đổi ý hoặc bỏ mất chủ thể của hành động.",
+        "examples": []
+      }
+    ],
+    "details": [
+      {
+        "title": "Tránh dịch từng từ",
+        "paragraphs": [
+          "Trong such good advice không dùng a vì advice không đếm được; trong so much advice, so bổ nghĩa cho much. Khi không có danh từ, enough cũng có thể đứng một mình nếu người nghe hiểu đối tượng.",
+          "Enough có thể đi với tính từ, trạng từ, động từ hoặc danh từ, hoặc đứng một mình khi đối tượng đã rõ. Khi có cả tính từ và danh từ, vị trí của enough sẽ quyết định đang nói đủ về tính chất hay đủ về số lượng."
+        ],
+        "examples": []
+      }
+    ],
+    "sources": [
+      {
+        "title": "British Council — Using 'enough'",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/using-enough",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "British Council — Intensifiers: 'so' and 'such'",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/intensifiers-so-such",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "prepositions-time",
+    "groupId": "prepositions-linking",
+    "title": "Giới từ thời gian: at, on, in",
+    "aliases": [
+      "prepositions of time",
+      "at on in time",
+      "giới từ thời gian",
+      "at night",
+      "on Monday"
+    ],
+    "summary": "At thường chỉ giờ hoặc một số dịp; on thường chỉ ngày/ngày tháng; in thường chỉ tháng, năm, mùa hoặc phần ngày. Đây là các mẫu kết hợp thường gặp, có ngoại lệ và khác biệt vùng miền.",
+    "whenToUse": [
+      "Khi hẹn giờ, nói ngày diễn ra sự kiện hoặc mô tả lịch sinh hoạt.",
+      "Khi cần phân biệt một khoảng thời gian với một ngày cụ thể."
+    ],
+    "structures": [
+      "at + giờ/bữa ăn: at 7.30, at lunchtime.",
+      "on + ngày/ngày tháng: on Tuesday, on 12 May.",
+      "in + tháng/năm/mùa/phần ngày: in June, in 2027, in the evening."
+    ],
+    "examples": [
+      {
+        "en": "The appointment is at half past nine.",
+        "vi": "Cuộc hẹn lúc chín giờ rưỡi."
+      },
+      {
+        "en": "We will review the plan on Thursday.",
+        "vi": "Chúng ta sẽ xem lại kế hoạch vào thứ Năm."
+      },
+      {
+        "en": "She started the course in September.",
+        "vi": "Cô ấy bắt đầu khóa học vào tháng Chín."
+      },
+      {
+        "en": "I usually read in the evening.",
+        "vi": "Tôi thường đọc sách vào buổi tối."
+      }
+    ],
+    "notes": [
+      "At night là cụm thông dụng khi nói hoạt động vào ban đêm. In the night có thể nói một thời điểm xảy ra trong đêm.",
+      "At the weekend/at weekends phổ biến ở Anh; on the weekend/on weekends phổ biến ở Mỹ. Không chấm một biến thể vùng miền hợp lệ thành lỗi.",
+      "At Christmas nói dịp lễ kéo dài; on Christmas Day chỉ riêng ngày lễ. Chọn giới từ theo cách đang nhìn thời gian, không chỉ theo từ Christmas."
+    ],
+    "mistakes": [
+      {
+        "wrong": "The interview starts on 10 a.m.",
+        "correct": "The interview starts at 10 a.m.",
+        "explanation": "Với giờ cụ thể, mẫu thông thường là at."
+      },
+      {
+        "wrong": "We moved here at 2024.",
+        "correct": "We moved here in 2024.",
+        "explanation": "Với năm, dùng in trong cách nói thời gian thông thường."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "In the evening và at night",
+        "explanation": "Đây là hai cách kết hợp khác nhau; không suy rằng vì đều là phần ngày nên phải cùng giới từ. Học cả cụm sẽ đáng tin cậy hơn dịch từ “vào”.",
+        "examples": []
+      }
+    ],
+    "details": [
+      {
+        "title": "Dùng như mẫu tra nhanh",
+        "paragraphs": [
+          "Ba giới từ này không bao phủ mọi quan hệ thời gian. Since, for, during, until, by cần xét nghĩa riêng; không dùng bảng at/on/in để suy ra toàn bộ hệ thống giới từ.",
+          "Một số danh ngữ thời gian dùng không có giới từ tùy cấu trúc. Khi chưa chắc, hãy kiểm tra cả cụm trong nguồn thay vì tự thêm at/on/in trước mọi cách nói về thời gian."
+        ],
+        "examples": []
+      }
+    ],
+    "sources": [
+      {
+        "title": "British Council — Prepositions of time: 'at', 'in', 'on'",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2-grammar/prepositions-of-time-at-in-on",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "prepositions-place",
+    "groupId": "prepositions-linking",
+    "title": "Giới từ nơi chốn: in, on, at",
+    "aliases": [
+      "prepositions of place",
+      "location",
+      "in on at place",
+      "giới từ vị trí",
+      "giới từ nơi chốn"
+    ],
+    "summary": "In thường nhìn địa điểm như không gian bao quanh; on thường nói bề mặt; at thường xem địa điểm như một điểm hoặc nơi diễn ra hoạt động. Cách nhìn và cụm cố định quan trọng hơn kích thước nơi chốn.",
+    "whenToUse": [
+      "Khi mô tả vị trí của người/vật hoặc nơi gặp nhau.",
+      "Khi chọn giữa vị trí bên trong, trên bề mặt và địa điểm hoạt động."
+    ],
+    "structures": [
+      "in + không gian/phòng/thành phố/quốc gia.",
+      "on + bề mặt/tầng hoặc một số phương tiện công cộng.",
+      "at + địa điểm hoạt động/địa chỉ cụ thể/vị trí chính xác."
+    ],
+    "examples": [
+      {
+        "en": "The dictionary is in my bag.",
+        "vi": "Cuốn từ điển ở trong túi tôi."
+      },
+      {
+        "en": "There is a note on the fridge.",
+        "vi": "Có một tờ ghi chú trên tủ lạnh."
+      },
+      {
+        "en": "I will meet you at the entrance.",
+        "vi": "Tôi sẽ gặp bạn ở lối vào."
+      },
+      {
+        "en": "She is on the bus, but he is in a taxi.",
+        "vi": "Cô ấy đang trên xe buýt, còn anh ấy đang ở trong taxi."
+      }
+    ],
+    "notes": [
+      "In a car/in a taxi nhưng on a bus/on a train/on a plane là các mẫu thông dụng. Không suy theo nghĩa tiếng Việt “trên xe” cho mọi phương tiện.",
+      "At school/at work/at home thường xem nơi chốn theo hoạt động hoặc địa điểm. In the school có thể nhấn mạnh bên trong tòa nhà.",
+      "Một nơi có thể đi với nhiều giới từ khi góc nhìn thay đổi. Không quy định cứng rằng địa điểm lớn luôn dùng in, địa điểm nhỏ luôn dùng at."
+    ],
+    "mistakes": [
+      {
+        "wrong": "The keys are on of the table.",
+        "correct": "The keys are on the table.",
+        "explanation": "Khi nói chìa khóa nằm trên mặt bàn, dùng on trực tiếp trước cụm danh từ; không thêm of theo cấu trúc này."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "At the station và in the station",
+        "explanation": "At xác định điểm gặp/địa điểm; in nhấn mạnh ở bên trong. Hai câu có thể đều đúng nhưng trả lời hai câu hỏi vị trí với mức chi tiết khác nhau.",
+        "examples": []
+      },
+      {
+        "title": "Trên mặt bàn và trong bàn",
+        "explanation": "The keys are on the table nói vị trí trên bề mặt. In the table có thể hợp nghĩa khi chìa khóa nằm bên trong một phần của đồ vật, nhưng diễn đạt vị trí khác; cần nêu rõ ngữ cảnh trước khi sửa giới từ."
+      }
+    ],
+    "details": [
+      {
+        "title": "Tra cùng danh từ và ý định",
+        "paragraphs": [
+          "On cũng dùng với một số đường, biên giới, sông và đảo. Đây là các mẫu kết hợp thực tế, không phải mọi cách dùng đều giải thích được bằng hình ảnh “bề mặt”.",
+          "Khi sửa một câu về vị trí, hãy hỏi người nói muốn chỉ nơi nào và theo góc nhìn nào. Không tự coi một giới từ khác đáp án mẫu là sai nếu nó tạo nghĩa hợp lý."
+        ],
+        "examples": []
+      }
+    ],
+    "sources": [
+      {
+        "title": "British Council — Prepositions of place: 'in', 'on', 'at'",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/prepositions-place",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "verb-adjective-prepositions",
+    "groupId": "prepositions-linking",
+    "title": "Giới từ đi với động từ và tính từ",
+    "aliases": [
+      "dependent prepositions",
+      "verbs and prepositions",
+      "adjectives and prepositions",
+      "collocation",
+      "giới từ sau động từ",
+      "giới từ sau tính từ"
+    ],
+    "summary": "Nhiều động từ và tính từ có giới từ đi kèm theo nghĩa cụ thể. Cách học đáng tin cậy là lưu cả cụm và câu ví dụ; không có một quy tắc dịch chung để chọn mọi giới từ.",
+    "whenToUse": [
+      "Khi dùng từ mới trong câu hoặc phân biệt interested in với interested to theo cấu trúc.",
+      "Khi giới từ thay đổi tùy người nhận, nguyên nhân hoặc nội dung hành động."
+    ],
+    "structures": [
+      "verb + preposition + noun/pronoun/-ing.",
+      "adjective + preposition + noun/pronoun/-ing.",
+      "apologise to someone for something/doing something.",
+      "be good at a skill; be responsible for a task; be interested in a topic."
+    ],
+    "examples": [
+      {
+        "en": "I apologised to Lan for missing the meeting.",
+        "vi": "Tôi xin lỗi Lan vì bỏ lỡ cuộc họp."
+      },
+      {
+        "en": "The final decision depends on the results.",
+        "vi": "Quyết định cuối cùng phụ thuộc vào kết quả."
+      },
+      {
+        "en": "She is interested in learning more about the project.",
+        "vi": "Cô ấy muốn tìm hiểu thêm về dự án."
+      },
+      {
+        "en": "He is responsible for checking the figures.",
+        "vi": "Anh ấy chịu trách nhiệm kiểm tra số liệu."
+      }
+    ],
+    "notes": [
+      "Một số nhóm giúp ghi nhớ, như good at nói kỹ năng, nhưng không suy rộng sang mọi tính từ gần nghĩa. Phải tra cụm cụ thể.",
+      "Sau giới từ thường dùng danh từ, đại từ hoặc dạng -ing, không tự thêm to-infinitive. Tuy nhiên to cũng có thể là dấu hiệu nguyên mẫu, cần nhận diện cấu trúc trước.",
+      "Một động từ có thể đi với nhiều giới từ theo vai trò: agree with someone, agree on a plan. Việc đổi giới từ có thể đổi trọng tâm, không nhất thiết chỉ là lỗi hình thức."
+    ],
+    "mistakes": [
+      {
+        "wrong": "The answer depends of the context.",
+        "correct": "The answer depends on the context.",
+        "explanation": "Cụm chuẩn theo nghĩa “phụ thuộc vào” là depend on."
+      },
+      {
+        "wrong": "She is interested in to learn more.",
+        "correct": "She is interested in learning more.",
+        "explanation": "Sau giới từ in trong cấu trúc này, dùng learning."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Giới từ và tiểu từ trong cụm động từ",
+        "explanation": "Không phải mọi từ nhỏ sau động từ đều hoạt động giống nhau. Các mẫu như depend on cần giới từ trước bổ ngữ; cụm động từ có tiểu từ có thể có quy tắc vị trí khác. Tra cả mẫu, không chỉ dịch từ đơn.",
+        "examples": []
+      }
+    ],
+    "details": [
+      {
+        "title": "Ghi chú để dùng được",
+        "paragraphs": [
+          "Khi thêm một từ vào kho cá nhân, hãy ghi người/vật theo sau và giới từ theo đúng nghĩa. Với apologise, ghi cả to người và for việc sẽ hữu ích hơn chỉ ghi “apologise + for”.",
+          "Có thể nhóm những cụm hay nhầm vào cùng một ghi chú, nhưng ví dụ cần giữ ngữ cảnh tự nhiên. Không tạo danh sách “mọi động từ cảm xúc đều đi với…” vì những mẫu này có ngoại lệ và khác nghĩa."
+        ],
+        "examples": []
+      }
+    ],
+    "sources": [
+      {
+        "title": "British Council — Verbs and prepositions",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/verbs-prepositions",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "British Council — Adjectives and prepositions",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/adjectives-prepositions",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "linking-words",
+    "groupId": "prepositions-linking",
+    "title": "Liên từ và từ nối: lý do, đối lập, điều kiện",
+    "aliases": [
+      "conjunctions",
+      "linking words",
+      "because because of",
+      "although though despite",
+      "liên từ",
+      "từ nối",
+      "mặc dù",
+      "bởi vì"
+    ],
+    "summary": "Chọn từ nối theo quan hệ giữa hai ý và cấu trúc theo sau. Although nối với mệnh đề; despite nối với danh từ hoặc -ing. Hai từ có thể diễn đạt sự tương phản nhưng không dùng cùng mẫu.",
+    "whenToUse": [
+      "Khi nối nguyên nhân, kết quả, sự đối lập hoặc một điều kiện.",
+      "Khi muốn viết câu dài hơn mà không ghép hai công thức không tương thích."
+    ],
+    "structures": [
+      "because + S + V; although/even though + S + V.",
+      "despite/in spite of + noun/pronoun/-ing.",
+      "despite/in spite of the fact that + S + V."
+    ],
+    "examples": [
+      {
+        "en": "I took notes because the explanation was detailed.",
+        "vi": "Tôi ghi chú vì lời giải thích có nhiều chi tiết."
+      },
+      {
+        "en": "Although the file was large, it opened quickly.",
+        "vi": "Mặc dù tệp lớn, nó mở rất nhanh."
+      },
+      {
+        "en": "Despite the noise, I finished the report.",
+        "vi": "Mặc dù ồn ào, tôi vẫn hoàn thành báo cáo."
+      },
+      {
+        "en": "The room was small. It was comfortable, though.",
+        "vi": "Phòng nhỏ. Tuy vậy, nó khá thoải mái."
+      }
+    ],
+    "notes": [
+      "Even though nhấn mạnh sự tương phản hơn although. Chọn từ nối theo điều người nói muốn thể hiện, thay vì chỉ thay từ để câu có vẻ trang trọng hơn.",
+      "Though có thể đứng cuối một phát ngôn để thêm ý tương phản, đặc biệt trong hội thoại. Although không thay thế tự do ở vị trí cuối như vậy.",
+      "Despite không có of; in spite of cần đủ ba từ. Có thể dùng the fact that để đưa một mệnh đề theo sau."
+    ],
+    "mistakes": [
+      {
+        "wrong": "Despite it was noisy, I concentrated.",
+        "correct": "Although it was noisy, I concentrated.",
+        "explanation": "Despite không trực tiếp đi với mệnh đề này; cũng có thể nói Despite the noise hoặc Despite the fact that it was noisy."
+      },
+      {
+        "wrong": "In spite the delay, we arrived on time.",
+        "correct": "In spite of the delay, we arrived on time.",
+        "explanation": "Cụm giới từ đầy đủ là in spite of."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Although và despite",
+        "explanation": "Although she was tired và despite being tired đều có thể chỉ cùng hoàn cảnh, nhưng cách nối và chủ thể ngầm của -ing phải phù hợp với câu chính.",
+        "examples": []
+      }
+    ],
+    "details": [
+      {
+        "title": "Ghép ý trước, ghép công thức sau",
+        "paragraphs": [
+          "Because đưa lý do; although và despite đưa một hoàn cảnh khiến kết quả có vẻ trái dự đoán. Nếu dùng sai quan hệ ý nghĩa, câu vẫn có thể đúng hình thức nhưng truyền đạt điều khác.",
+          "Không thay mọi từ nối bằng however hoặc therefore: những từ nối này không có cùng cấu trúc cú pháp với although/because. Khi nối hai câu độc lập, cần dùng dấu câu thích hợp, thay vì chỉ đặt một dấu phẩy giữa hai câu dài."
+        ],
+        "examples": []
+      }
+    ],
+    "sources": [
+      {
+        "title": "British Council — Contrasting ideas: 'although', 'despite' and others",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/contrasting-ideas-although-despite-others",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "British Council — How we make adverbials",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/how-we-make-adverbials",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  }
+]

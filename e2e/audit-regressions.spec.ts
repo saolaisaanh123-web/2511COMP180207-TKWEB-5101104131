@@ -122,7 +122,7 @@ test("listening cannot be graded before playback or after failed playback", asyn
     page.getByRole("button", { name: "Kiểm tra", exact: true }),
   ).toBeDisabled();
   expect((await snapshot(page)).history).toHaveLength(0);
-  await page.getByRole("button", { name: "Nghe từ", exact: true }).click();
+  await page.getByRole("button", { name: "Nghe câu", exact: true }).click();
   await expect(
     page.getByRole("status").filter({ hasText: "Chưa có giọng tiếng Anh" }),
   ).toBeVisible();

@@ -53,6 +53,7 @@ export type Result = {
   scheduled?: boolean;
   contentVersion?: string;
   exposureGap?: number;
+  assessmentNote?: string;
 };
 export type Schedule = { due: number; last: number; step: number };
 export type Session = {
@@ -105,6 +106,7 @@ export const fields = [
   "audio_word",
   "audio_example",
   "accepted_answers",
+  "spelling_variants",
   "source",
   "note",
   "content_status",
@@ -215,6 +217,7 @@ export const serialize = (words: Word[]) =>
   words
     .map((w) =>
       fields
+        .filter((f) => f !== "spelling_variants" || !!w[f])
         .map((f) => `${f}: ${(w[f] || "").replace(/[\r\n]+/g, " ")}`)
         .join("\n"),
     )
@@ -283,18 +286,22 @@ export function merge(state: State, words: Word[], origin: string): State {
 }
 export const normalize = (s: string) =>
   s.trim().replace(/[’‘]/g, "'").replace(/\s+/g, " ").toLocaleLowerCase();
+export const answerForms = (w: Word) =>
+  [
+    w.word,
+    ...(w.accepted_answers || "").split("|"),
+    ...(w.spelling_variants || "").split("|"),
+  ]
+    .map((a) => a.trim())
+    .filter(Boolean);
 export const grade = (answer: string, w: Word) =>
-  [w.word, ...(w.accepted_answers || "").split("|")]
-    .filter(Boolean)
-    .some((a) =>
-      w.case_sensitive === "true"
-        ? a.trim().replace(/\s+/g, " ") === answer.trim().replace(/\s+/g, " ")
-        : normalize(a) === normalize(answer),
-    );
+  answerForms(w).some((a) =>
+    w.case_sensitive === "true"
+      ? a.trim().replace(/\s+/g, " ") === answer.trim().replace(/\s+/g, " ")
+      : normalize(a) === normalize(answer),
+  );
 export function cloze(w: Word) {
-  const answers = [w.word, ...(w.accepted_answers || "").split("|")]
-    .filter(Boolean)
-    .sort((a, b) => b.length - a.length);
+  const answers = answerForms(w).sort((a, b) => b.length - a.length);
   let text = w.example_en || "";
   for (const answer of answers) {
     const escaped = answer.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -330,6 +337,8 @@ export const isSlang = (w: Word) =>
   (w.collections || "").split(",").includes("slang");
 // A change of meaning or teaching context must not reuse mastery or schedules
 // earned for the previous sense. Keep the old results for an honest history.
+// Reviewed spelling variants do not change the taught sense: adding a regional
+// spelling must preserve existing content keys, history and review schedules.
 export const contentKey = (w: Word, skill = 0) =>
   JSON.stringify([
     w.word,
@@ -570,14 +579,28 @@ export function record(state: State, r: Result, scheduled: boolean) {
     !next.history.slice(0, -1).some((x) => x.review === r.review)
   ) {
     const old = next.schedules[key];
-    const independentSuccess =
-      r.correct &&
-      !r.hint &&
-      (r.evidenceVersion !== 2 || r.independent === true);
-    const step = independentSuccess ? Math.min((old?.step ?? -1) + 1, 4) : 0;
-    const due = new Date(r.time);
-    due.setDate(due.getDate() + (r.correct ? [1, 3, 7, 14, 30][step] : 1));
-    next.schedules[key] = { last: r.time, due: due.getTime(), step };
+    const dueForReview = !old || r.time >= old.due;
+    // Scheduling and objective mastery answer different questions. Revealing
+    // a self-assessed answer or seeing the word in another skill must not trap
+    // the remaining skills at a one-day interval. Due dates and first attempts
+    // control advancement here; independent rule-graded evidence alone can
+    // establish mastery elsewhere.
+    const canAdvance = r.correct && !r.hint && r.first;
+    // A correct early check must not repeatedly postpone or inflate a future
+    // schedule. A real failure still warrants a short review, even if early.
+    if (!r.correct || dueForReview) {
+      const step = !r.correct
+        ? 0
+        : canAdvance
+          ? Math.min((old?.step ?? -1) + 1, 4)
+          : (old?.step ?? 0);
+      // Hinted recall holds its stage and asks for a fresh check tomorrow;
+      // it is neither evidence of forgetting nor a reason to advance stages.
+      const interval = canAdvance && r.correct ? [1, 3, 7, 14, 30][step] : 1;
+      const due = new Date(r.time);
+      due.setDate(due.getDate() + interval);
+      next.schedules[key] = { last: r.time, due: due.getTime(), step };
+    }
   }
   return next;
 }
@@ -683,6 +706,8 @@ export function validateBackup(x: unknown): State {
       (r.scheduled !== undefined && typeof r.scheduled !== "boolean") ||
       (r.contentVersion !== undefined &&
         typeof r.contentVersion !== "string") ||
+      (r.assessmentNote !== undefined &&
+        typeof r.assessmentNote !== "string") ||
       (r.exposureGap !== undefined &&
         (!Number.isFinite(r.exposureGap) || r.exposureGap < 0))
     )

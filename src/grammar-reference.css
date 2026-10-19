@@ -1,0 +1,571 @@
+.grammar-reference {
+  color: #2b4436;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding-bottom: 32px;
+  overflow-wrap: anywhere;
+}
+
+.grammar-reference p,
+.grammar-reference li {
+  color: #526357;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.grammar-reference button,
+.grammar-reference input {
+  font-size: 14px;
+}
+
+.grammar-reference button {
+  min-height: 44px;
+}
+
+.grammar-reference :focus-visible {
+  outline: 3px solid #729951;
+  outline-offset: 4px;
+}
+
+.grammar-intro {
+  background: #eaf1e5;
+  border: 1px solid #dce8d6;
+  border-radius: 16px;
+  padding: 26px 30px;
+}
+
+.grammar-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #4d6c3e;
+  font-size: 11px;
+  line-height: 1.8;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+}
+
+.grammar-reference h1 {
+  color: #2d5b40;
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: -0.6px;
+  margin: 11px 0 10px;
+}
+
+.grammar-intro > p {
+  max-width: 690px;
+  margin: 0;
+}
+
+.grammar-reference .grammar-provenance {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #d1dfc8;
+  font-size: 12px;
+  color: #4b6345;
+}
+
+.grammar-tools {
+  margin-top: 25px;
+}
+
+.grammar-search {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-width: 0;
+  background: #fff;
+  border: 1px solid #cddbcf;
+  border-radius: 10px;
+  padding-left: 14px;
+  color: #61775e;
+}
+
+.grammar-search > svg {
+  flex: 0 0 auto;
+}
+
+.grammar-reference .grammar-search input {
+  flex: 1;
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  border-radius: 5px;
+  padding: 14px 8px 14px 0;
+  color: #344c3d;
+  background: transparent;
+}
+
+.grammar-search input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.grammar-search input::placeholder {
+  color: #667a6b;
+  opacity: 1;
+}
+
+.grammar-search > button {
+  border: 0;
+  margin-right: 3px;
+  padding: 10px;
+  flex: 0 0 44px;
+}
+
+.grammar-tools > p {
+  margin: 9px 0 20px;
+  font-size: 12px;
+}
+
+.grammar-groups {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+.grammar-groups legend {
+  margin-bottom: 12px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.grammar-reference .grammar-groups button {
+  justify-content: flex-start;
+  padding: 10px 12px;
+  border-color: #d9e3d7;
+  font-size: 12px;
+  text-align: left;
+  max-width: 100%;
+}
+
+.grammar-groups button.selected {
+  background: #e4efdd;
+  border-color: #9fba87;
+  color: #315b3a;
+  font-weight: 600;
+}
+
+.grammar-groups button > span {
+  color: #53654f;
+  font-size: 11px;
+  background: #f1f5ee;
+  border-radius: 5px;
+  padding: 2px 5px;
+  min-width: 22px;
+  text-align: center;
+}
+
+.grammar-result-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 20px 0 10px;
+}
+
+.grammar-result-heading p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.grammar-result-heading > button {
+  font-size: 12px;
+  flex: 0 0 auto;
+  padding: 8px 10px;
+}
+
+.grammar-catalog-group {
+  margin: 20px 0 30px;
+}
+
+.grammar-reference .grammar-group-intro h2 {
+  font-size: 19px;
+  color: #345b41;
+  margin: 0 0 7px;
+}
+
+.grammar-group-intro > p {
+  margin: 0 0 14px;
+  font-size: 13px;
+}
+
+.grammar-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.grammar-reference .grammar-card {
+  width: 100%;
+  min-width: 0;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  text-align: left;
+  padding: 18px;
+  border-color: #dfe7dc;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.grammar-reference .grammar-card:hover {
+  background: #f1f6ed;
+  border-color: #b7caa9;
+}
+
+.grammar-card-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.grammar-card-copy > strong {
+  color: #365b41;
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+.grammar-card-copy > span {
+  color: #526357;
+  font-size: 12px;
+  line-height: 1.85;
+}
+
+.grammar-card > svg {
+  flex: 0 0 auto;
+  margin-top: 3px;
+  color: #668254;
+}
+
+.grammar-empty {
+  text-align: center;
+  border: 1px dashed #cddbc6;
+  border-radius: 12px;
+  background: #f1f5ec;
+  padding: 35px 20px;
+  margin-top: 12px;
+}
+
+.grammar-empty > svg {
+  color: #64864d;
+  margin-bottom: 14px;
+}
+
+.grammar-reference .grammar-empty h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.grammar-empty p {
+  margin-bottom: 16px;
+}
+
+.grammar-back {
+  margin-bottom: 19px;
+}
+
+.grammar-article {
+  max-width: 790px;
+  margin: 0 auto;
+}
+
+.grammar-article-intro {
+  padding-bottom: 20px;
+}
+
+.grammar-reference .grammar-article-intro h1 {
+  scroll-margin-top: 24px;
+  line-height: 1.5;
+  margin-bottom: 13px;
+}
+
+.grammar-reference .grammar-summary {
+  color: #405b48;
+  font-size: 15px;
+  line-height: 1.95;
+  margin-bottom: 0;
+}
+
+.grammar-quick-reference {
+  background: #fff;
+  border: 1px solid #dce6d5;
+  border-radius: 14px;
+  padding: 22px 24px;
+}
+
+.grammar-section-label {
+  display: inline-block;
+  color: #4e713e;
+  background: #eaf2e3;
+  border-radius: 6px;
+  padding: 5px 9px;
+  margin-bottom: 21px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.grammar-reference .grammar-quick-reference h2,
+.grammar-reference .grammar-sources h2 {
+  color: #345a40;
+  font-size: 17px;
+  margin: 0 0 12px;
+}
+
+.grammar-quick-reference > section + section {
+  margin-top: 25px;
+}
+
+.grammar-reference ul {
+  margin: 0;
+  padding-left: 23px;
+}
+
+.grammar-reference li + li {
+  margin-top: 9px;
+}
+
+.grammar-reference .grammar-structures {
+  list-style: none;
+  padding: 0;
+}
+
+.grammar-reference .grammar-structures li {
+  border-left: 3px solid #9cb884;
+  border-radius: 0 7px 7px 0;
+  padding: 10px 13px;
+  color: #33563d;
+  background: #f0f5eb;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.grammar-examples {
+  display: grid;
+  gap: 12px;
+}
+
+.grammar-example {
+  border-left: 2px solid #cfddc7;
+  padding-left: 13px;
+}
+
+.grammar-reference .grammar-example p {
+  margin: 0;
+}
+
+.grammar-reference .grammar-example p[lang="en"] {
+  color: #2f4d3b;
+  font-weight: 500;
+}
+
+.grammar-reference .grammar-example p + p {
+  color: #60705f;
+  margin-top: 4px;
+  font-size: 13px;
+}
+
+.grammar-expanded-reference {
+  margin-top: 20px;
+}
+
+.grammar-detail {
+  border: 1px solid #dfe7dc;
+  background: #fff;
+  border-radius: 11px;
+  margin-top: 11px;
+}
+
+.grammar-detail > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 17px 19px;
+  color: #38583f;
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  min-height: 52px;
+  touch-action: manipulation;
+}
+
+.grammar-detail > summary::-webkit-details-marker {
+  display: none;
+}
+
+.grammar-detail > summary > svg {
+  flex: 0 0 auto;
+  color: #668253;
+}
+
+.grammar-detail[open] > summary > svg {
+  transform: rotate(180deg);
+}
+
+.grammar-detail-body {
+  border-top: 1px solid #e7ede3;
+  padding: 18px 19px 20px;
+}
+
+.grammar-detail-body > p:last-child,
+.grammar-detail-body > div > p:last-child {
+  margin-bottom: 0;
+}
+
+.grammar-mistakes {
+  display: grid;
+  gap: 18px;
+}
+
+.grammar-mistake + .grammar-mistake {
+  border-top: 1px solid #e6ece1;
+  padding-top: 18px;
+}
+
+.grammar-mistake p {
+  margin-bottom: 8px;
+}
+
+.grammar-reference .grammar-incorrect {
+  color: #8d483f;
+}
+
+.grammar-reference .grammar-correct {
+  color: #326447;
+}
+
+.grammar-reference .grammar-mistake-context {
+  padding: 10px 12px;
+  background: #f0f4eb;
+  border-radius: 7px;
+  color: #4e6348;
+}
+
+.grammar-incorrect strong,
+.grammar-correct strong {
+  font-weight: 600;
+}
+
+.grammar-sources {
+  background: #edf3e8;
+  border: 1px solid #dbe5d3;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 25px;
+}
+
+.grammar-reference .grammar-sources > p {
+  font-size: 12px;
+  margin-bottom: 14px;
+}
+
+.grammar-sources li {
+  padding-bottom: 4px;
+}
+
+.grammar-sources a {
+  display: inline;
+  color: #315c3b;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.grammar-sources a > svg {
+  display: inline-block;
+  vertical-align: -2px;
+  margin-left: 6px;
+}
+
+.grammar-source-date {
+  display: block;
+  color: #566b4f;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.grammar-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 760px) {
+  .grammar-cards {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grammar-intro {
+    padding: 20px 17px;
+  }
+
+  .grammar-reference h1 {
+    font-size: 25px;
+  }
+
+  .grammar-eyebrow {
+    font-size: 10px;
+    letter-spacing: 0.3px;
+  }
+
+  .grammar-search {
+    gap: 8px;
+    padding-left: 10px;
+  }
+
+  .grammar-reference .grammar-search input {
+    /* A 16px input also avoids automatic page zoom when focusing on iOS. */
+    font-size: 16px;
+  }
+
+  .grammar-groups {
+    gap: 8px;
+  }
+
+  .grammar-reference .grammar-groups button {
+    padding: 9px 10px;
+    font-size: 12px;
+  }
+
+  .grammar-result-heading {
+    align-items: flex-start;
+  }
+
+  .grammar-reference .grammar-card {
+    padding: 16px;
+  }
+
+  .grammar-quick-reference {
+    padding: 19px 16px;
+  }
+
+  .grammar-detail > summary {
+    padding: 15px;
+  }
+
+  .grammar-detail-body {
+    padding: 15px;
+  }
+
+  .grammar-sources {
+    padding: 17px 15px;
+  }
+}

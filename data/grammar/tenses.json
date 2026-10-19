@@ -1,0 +1,1017 @@
+[
+  {
+    "id": "present-simple",
+    "groupId": "tenses",
+    "title": "Hiện tại đơn",
+    "aliases": [
+      "present simple",
+      "simple present",
+      "thì hiện tại đơn",
+      "thói quen",
+      "sự thật",
+      "do does"
+    ],
+    "summary": "Diễn tả thói quen, tình trạng hiện tại hoặc điều được xem là đúng nói chung. Tên “hiện tại” không có nghĩa mọi câu đều chỉ việc xảy ra ngay lúc nói.",
+    "whenToUse": [
+      "Nói về sinh hoạt lặp lại, công việc, sở thích và các tình trạng tương đối ổn định.",
+      "Nêu sự thật chung; trình bày nội dung sách hoặc phim.",
+      "Nói về lịch trình cố định; dùng trong nhiều mệnh đề thời gian và điều kiện mang nghĩa tương lai."
+    ],
+    "structures": [
+      "Khẳng định với động từ thường: I/you/we/they + V; he/she/it + V-s/es.",
+      "Phủ định: S + do/does not + V. Câu hỏi: Do/Does + S + V?",
+      "Với be: S + am/is/are; phủ định thêm not; câu hỏi đảo am/is/are lên trước chủ ngữ."
+    ],
+    "examples": [
+      {
+        "en": "Linh reviews her vocabulary on the bus every morning.",
+        "vi": "Linh ôn từ vựng trên xe buýt mỗi sáng."
+      },
+      {
+        "en": "Does this dictionary include American spellings?",
+        "vi": "Từ điển này có bao gồm cách viết Anh–Mỹ không?"
+      },
+      {
+        "en": "The workshop starts at nine tomorrow.",
+        "vi": "Buổi hội thảo bắt đầu lúc chín giờ ngày mai."
+      }
+    ],
+    "notes": [
+      "Sau does/does not, động từ chính về dạng nguyên mẫu: does she study, không phải does she studies.",
+      "Who làm chủ ngữ thường không cần do/does: Who checks the examples? Khác với Who do you ask?",
+      "Usually, often, every day là gợi ý về thói quen, không phải dấu hiệu quyết định thì trong mọi ngữ cảnh."
+    ],
+    "mistakes": [
+      {
+        "wrong": "My sister check new words each evening.",
+        "correct": "My sister checks new words each evening.",
+        "explanation": "Chủ ngữ ngôi thứ ba số ít cần dạng checks trong câu khẳng định."
+      },
+      {
+        "wrong": "Does Minh studies here?",
+        "correct": "Does Minh study here?",
+        "explanation": "Does đã thể hiện ngôi và thì; không thêm -s vào study."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Hiện tại đơn và hiện tại tiếp diễn",
+        "explanation": "Dạng đơn nhìn hoạt động như thói quen hoặc tình trạng chung; dạng tiếp diễn nhìn hoạt động như đang diễn ra hoặc tạm thời. Hai dạng có thể đều đúng nhưng khác góc nhìn.",
+        "examples": [
+          {
+            "en": "I work from home on Fridays.",
+            "vi": "Tôi làm việc ở nhà vào các thứ Sáu."
+          },
+          {
+            "en": "I am working from home this week.",
+            "vi": "Tuần này tôi đang làm việc ở nhà."
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "title": "Không chỉ dùng cho hiện tại",
+        "paragraphs": [
+          "Với lịch trình, câu hiện tại đơn có thể nói về ngày mai. Trong mệnh đề thời gian nói về tương lai, thường dùng dạng hiện tại: I will check the meaning when I get home. Không chọn will chỉ vì thấy mốc tương lai.",
+          "Trong tóm tắt truyện/phim, hiện tại đơn giúp kể diễn biến như một chuỗi sự kiện. Đây là cách trình bày, không phải khẳng định câu chuyện đang xảy ra ngoài đời."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Present simple",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/present-simple",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Talking about the future",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/talking-about-future",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "present-continuous",
+    "groupId": "tenses",
+    "title": "Hiện tại tiếp diễn",
+    "aliases": [
+      "present continuous",
+      "present progressive",
+      "thì hiện tại tiếp diễn",
+      "đang làm",
+      "am is are ing"
+    ],
+    "summary": "Nhìn một hoạt động như đang diễn ra quanh hiện tại, tạm thời hoặc đang thay đổi. Cũng dùng để nói về một sắp xếp tương lai đã hình thành.",
+    "whenToUse": [
+      "Mô tả việc đang diễn ra lúc nói hoặc một dự án đang làm trong giai đoạn hiện tại.",
+      "Nói về tình huống tạm thời, xu hướng phát triển và thay đổi.",
+      "Nói về kế hoạch đã sắp xếp; đôi khi mô tả hành vi lặp lại kèm thái độ của người nói."
+    ],
+    "structures": [
+      "Khẳng định: S + am/is/are + V-ing.",
+      "Phủ định: S + am/is/are not + V-ing.",
+      "Câu hỏi: Am/Is/Are + S + V-ing?"
+    ],
+    "examples": [
+      {
+        "en": "Please wait; I am checking the pronunciation.",
+        "vi": "Đợi chút nhé; tôi đang kiểm tra cách phát âm."
+      },
+      {
+        "en": "She is staying with her aunt while her flat is being repaired.",
+        "vi": "Cô ấy đang ở nhờ nhà dì trong thời gian căn hộ được sửa."
+      },
+      {
+        "en": "We are meeting our tutor outside the library tomorrow.",
+        "vi": "Ngày mai chúng tôi đã hẹn gặp gia sư ở ngoài thư viện."
+      }
+    ],
+    "notes": [
+      "Không bỏ am/is/are trước V-ing.",
+      "Các động từ trạng thái như know, own, believe thường dùng dạng đơn. Không biến điều này thành lệnh cấm tuyệt đối cho mọi nghĩa của động từ.",
+      "Now, these days hoặc always chỉ là gợi ý; always còn có thể đi với tiếp diễn để nhấn mạnh hành vi lặp lại, không chỉ để phàn nàn."
+    ],
+    "mistakes": [
+      {
+        "wrong": "They studying in the quiet room.",
+        "correct": "They are studying in the quiet room.",
+        "explanation": "Thể tiếp diễn cần trợ động từ be."
+      },
+      {
+        "wrong": "I am knowing the answer to this question.",
+        "correct": "I know the answer to this question.",
+        "explanation": "Ở nghĩa biết một thông tin, know thường là trạng thái và dùng dạng đơn."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Cùng một từ, khác nghĩa",
+        "explanation": "Think mang nghĩa “có ý kiến” thường ở dạng đơn; khi nói đến quá trình suy nghĩ đang diễn ra có thể dùng tiếp diễn. Tương tự, have chỉ sở hữu khác với have a break chỉ hoạt động.",
+        "examples": [
+          {
+            "en": "I think this explanation is clear.",
+            "vi": "Tôi nghĩ lời giải thích này rõ ràng."
+          },
+          {
+            "en": "I am thinking about a better example.",
+            "vi": "Tôi đang suy nghĩ về một ví dụ tốt hơn."
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "title": "“Đang” không nhất thiết là đúng giây này",
+        "paragraphs": [
+          "I am reading a novel có thể nói về cuốn sách đang đọc dở trong tuần, ngay cả khi lúc nói bạn không cầm sách. Điểm quan trọng là hoạt động nằm trong giai đoạn hiện tại và được nhìn như chưa kết thúc.",
+          "Khi nói về tương lai, thêm thời gian hoặc ngữ cảnh để tránh hiểu nhầm là hoạt động đang xảy ra. Một dự định chưa sắp xếp thường phù hợp với be going to hơn, nhưng các dạng có thể giao nhau tùy cách người nói nhìn kế hoạch."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Present continuous",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/present-continuous",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Stative verbs",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/stative-verbs",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Future forms: 'will', 'be going to' and present continuous",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/future-forms-will-be-going-present-continuous",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "past-simple",
+    "groupId": "tenses",
+    "title": "Quá khứ đơn",
+    "aliases": [
+      "past simple",
+      "simple past",
+      "thì quá khứ đơn",
+      "did",
+      "was were",
+      "quá khứ đã kết thúc"
+    ],
+    "summary": "Kể sự kiện, thói quen hoặc trạng thái trong một khoảng quá khứ đã kết thúc. Mốc thời gian có thể được nói rõ hoặc đã được hiểu từ ngữ cảnh.",
+    "whenToUse": [
+      "Kể một sự kiện đã xảy ra hoặc một chuỗi sự kiện theo thứ tự.",
+      "Mô tả thói quen và tình trạng kéo dài trong một giai đoạn quá khứ đã kết thúc.",
+      "Ngoài nghĩa thời gian, dạng quá khứ còn xuất hiện trong giả định về hiện tại hoặc tương lai; xem nhóm Điều kiện và mong ước."
+    ],
+    "structures": [
+      "Khẳng định: S + V-ed/dạng quá khứ bất quy tắc.",
+      "Phủ định: S + did not + V. Câu hỏi: Did + S + V?",
+      "Với be: I/he/she/it + was; you/we/they + were. Phủ định: was/were not; câu hỏi đảo was/were."
+    ],
+    "examples": [
+      {
+        "en": "I saved the new expressions after dinner yesterday.",
+        "vi": "Tôi đã lưu các cách diễn đạt mới sau bữa tối hôm qua."
+      },
+      {
+        "en": "Did you hear that announcement?",
+        "vi": "Bạn có nghe thông báo đó không?"
+      },
+      {
+        "en": "We lived near the station during my final year at university.",
+        "vi": "Chúng tôi sống gần nhà ga trong năm cuối đại học của tôi."
+      }
+    ],
+    "notes": [
+      "Sau did/did not dùng nguyên mẫu, kể cả động từ bất quy tắc: did she go, không phải did she went.",
+      "Câu hỏi có who làm chủ ngữ thường không cần did: Who sent the message?",
+      "Yesterday, last week, ago thường đi cùng quá khứ đơn khi chỉ một thời điểm đã kết thúc; đó là gợi ý trong ngữ cảnh, không phải quy tắc nhận diện mọi câu."
+    ],
+    "mistakes": [
+      {
+        "wrong": "We did not understood the final sentence.",
+        "correct": "We did not understand the final sentence.",
+        "explanation": "Did not đã mang dấu hiệu quá khứ; dùng understand ở dạng nguyên mẫu."
+      },
+      {
+        "wrong": "The instructions was clear.",
+        "correct": "The instructions were clear.",
+        "explanation": "Instructions là chủ ngữ số nhiều nên dùng were."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Quá khứ đơn và hiện tại hoàn thành",
+        "explanation": "Quá khứ đơn đặt sự việc vào giai đoạn đã khép lại; hiện tại hoàn thành nhìn từ quá khứ đến hiện tại. Không đổi thì chỉ vì sự việc vẫn có ý nghĩa với bạn.",
+        "examples": [
+          {
+            "en": "I read that article last night.",
+            "vi": "Tôi đã đọc bài đó tối qua."
+          },
+          {
+            "en": "I have read three articles so far today.",
+            "vi": "Tính đến giờ hôm nay tôi đã đọc ba bài."
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "title": "Thói quen và thời gian kéo dài",
+        "paragraphs": [
+          "Quá khứ đơn không chỉ dành cho việc xảy ra trong chốc lát. Một tình trạng kéo dài nhiều năm vẫn dùng được nếu người nói xem giai đoạn ấy là đã kết thúc. Dùng for không bắt buộc phải dùng thì hoàn thành.",
+          "Khi kể chuyện, chuỗi động từ quá khứ đơn thường đưa câu chuyện tiến lên: mở cửa, bước vào rồi ngồi xuống. Quá khứ tiếp diễn phù hợp hơn khi dựng bối cảnh đang diễn ra quanh một sự kiện."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Past simple",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/past-simple",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "past-continuous",
+    "groupId": "tenses",
+    "title": "Quá khứ tiếp diễn",
+    "aliases": [
+      "past continuous",
+      "past progressive",
+      "thì quá khứ tiếp diễn",
+      "was were ing",
+      "đang trong quá khứ"
+    ],
+    "summary": "Nhìn hoạt động như đang diễn ra quanh một thời điểm hoặc sự kiện quá khứ. Người nói tập trung vào quá trình, không nhất thiết cho biết lúc bắt đầu hay kết thúc.",
+    "whenToUse": [
+      "Dựng bối cảnh khi một sự kiện khác xảy ra; hoạt động đang diễn ra có thể tiếp tục hoặc bị gián đoạn.",
+      "Mô tả việc đang diễn ra tại một mốc quá khứ hoặc hai quá trình diễn ra đồng thời.",
+      "Nói về tình huống tạm thời, sự thay đổi hoặc hành vi lặp lại trong giai đoạn quá khứ."
+    ],
+    "structures": [
+      "Khẳng định: S + was/were + V-ing.",
+      "Phủ định: S + was/were not + V-ing.",
+      "Câu hỏi: Was/Were + S + V-ing?"
+    ],
+    "examples": [
+      {
+        "en": "I was taking notes when the connection failed.",
+        "vi": "Tôi đang ghi chép thì kết nối bị ngắt."
+      },
+      {
+        "en": "At ten last night, they were still discussing the results.",
+        "vi": "Lúc mười giờ tối qua, họ vẫn đang thảo luận kết quả."
+      },
+      {
+        "en": "While Lan was preparing dinner, I was reviewing my notes.",
+        "vi": "Trong lúc Lan chuẩn bị bữa tối, tôi đang ôn lại ghi chép."
+      }
+    ],
+    "notes": [
+      "When không bắt buộc đi với quá khứ đơn, và while không tự động bắt buộc quá khứ tiếp diễn; chọn theo quan hệ ý nghĩa.",
+      "Một hoạt động “dài” không đương nhiên cần tiếp diễn. Có thể dùng quá khứ đơn để nhìn trọn một hoạt động đã xong.",
+      "Động từ trạng thái như know, need thường dùng dạng đơn trong nghĩa trạng thái."
+    ],
+    "mistakes": [
+      {
+        "wrong": "They was waiting beside the entrance.",
+        "correct": "They were waiting beside the entrance.",
+        "explanation": "They cần were trong quá khứ tiếp diễn."
+      },
+      {
+        "wrong": "I was write a summary when she called.",
+        "correct": "I was writing a summary when she called.",
+        "explanation": "Sau was trong cấu trúc tiếp diễn cần dạng V-ing."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Bối cảnh đang diễn ra và sự kiện tiếp theo",
+        "explanation": "I was reading when she arrived cho biết việc đọc đã diễn ra quanh lúc cô ấy đến; I read the message when she arrived có thể được hiểu là lúc cô ấy đến tôi mới đọc tin. Đây là khác biệt về cách kể, không phải cứ gặp when là một đáp án duy nhất.",
+        "examples": [
+          {
+            "en": "I was reading the message when Mai arrived.",
+            "vi": "Tôi đang đọc tin nhắn thì Mai đến."
+          },
+          {
+            "en": "I read the message when Mai arrived.",
+            "vi": "Khi Mai đến, tôi đọc tin nhắn."
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "title": "Sự lặp lại và cảm xúc",
+        "paragraphs": [
+          "Quá khứ tiếp diễn có thể nói về việc lặp lại trong một giai đoạn, đặc biệt khi người nói nhấn mạnh tính kéo dài hoặc kèm thái độ: He was always leaving his notes on my desk. Không nên hiểu every day chỉ có thể dùng với dạng đơn.",
+          "Trong câu giả định, dạng quá khứ tiếp diễn còn có thể nói về tình huống tưởng tượng ở hiện tại. Cần đọc cả mệnh đề điều kiện thay vì suy ra thời gian chỉ từ was/were."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Past continuous",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/past-continuous",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Continuous aspect",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/continuous-aspect",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "present-perfect",
+    "groupId": "tenses",
+    "title": "Hiện tại hoàn thành",
+    "aliases": [
+      "present perfect",
+      "present perfect simple",
+      "thì hiện tại hoàn thành",
+      "have has V3",
+      "since for",
+      "been gone"
+    ],
+    "summary": "Nhìn lại từ hiện tại: trải nghiệm tính đến nay, trạng thái bắt đầu trước đây còn tiếp tục, hoặc việc đã xảy ra có kết quả/liên hệ với hiện tại.",
+    "whenToUse": [
+      "Nói về trải nghiệm hoặc số lần tính đến hiện tại, không đặt sự kiện vào một mốc quá khứ đã kết thúc.",
+      "Mô tả tình trạng kéo dài đến nay; nêu kết quả hiện tại của một việc đã xảy ra.",
+      "Nói về sự việc trong một khoảng thời gian người nói xem là vẫn mở, như so far today."
+    ],
+    "structures": [
+      "Khẳng định: S + have/has + V3 (quá khứ phân từ).",
+      "Phủ định: S + have/has not + V3.",
+      "Câu hỏi: Have/Has + S + V3?"
+    ],
+    "examples": [
+      {
+        "en": "I have saved the document, so you can close this window.",
+        "vi": "Tôi đã lưu tài liệu rồi, nên bạn có thể đóng cửa sổ này."
+      },
+      {
+        "en": "We have known our neighbours for six years.",
+        "vi": "Chúng tôi quen hàng xóm được sáu năm rồi."
+      },
+      {
+        "en": "Have you ever spoken at a conference?",
+        "vi": "Bạn đã từng phát biểu tại hội nghị chưa?"
+      }
+    ],
+    "notes": [
+      "V3 có thể khác dạng quá khứ đơn: write → wrote → written. Không dùng have/has + V2 theo một công thức chung.",
+      "For chỉ khoảng thời gian; since chỉ điểm bắt đầu. Cả hai không phải dấu hiệu độc quyền của hiện tại hoàn thành.",
+      "Không ghép cách dùng này với mốc quá khứ đã kết thúc như yesterday hoặc in 2021. Just, already, yet là gợi ý, không thay thế việc xét ngữ cảnh."
+    ],
+    "mistakes": [
+      {
+        "wrong": "She has wrote two explanations today.",
+        "correct": "She has written two explanations today.",
+        "explanation": "Sau has cần quá khứ phân từ written."
+      },
+      {
+        "wrong": "I have met the editor yesterday.",
+        "correct": "I met the editor yesterday.",
+        "explanation": "Trong câu này yesterday đặt cuộc gặp vào ngày đã kết thúc, nên dùng quá khứ đơn."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Have been và have gone",
+        "explanation": "Have been to thường nói đã đến và trở về, hoặc trải nghiệm từng đến. Have gone to trong cách dùng chỉ chuyến đi cho biết người đó đã đi và chưa trở lại.",
+        "examples": [
+          {
+            "en": "Nhi has been to the bank; she is back at her desk.",
+            "vi": "Nhi đã đi ngân hàng về; cô ấy đang ở bàn làm việc."
+          },
+          {
+            "en": "Nhi has gone to the bank; she will return soon.",
+            "vi": "Nhi đã đi ngân hàng; cô ấy sẽ sớm quay lại."
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "title": "Liên hệ với hiện tại là cách người nói đặt sự việc",
+        "paragraphs": [
+          "Hiện tại hoàn thành không có nghĩa mọi hành động đều còn diễn ra: I have sent the email nói việc gửi đã xong. Một trạng thái như have known có thể kéo dài; một hành động như have sent có thể đã hoàn tất.",
+          "Với today hoặc this week, lựa chọn còn phụ thuộc cách người nói nhìn khoảng thời gian và sự kiện. Đừng chỉ nhìn thấy tên khoảng thời gian rồi ép một thì."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Present perfect",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/present-perfect",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Present perfect simple and continuous",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/present-perfect-simple-continuous",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-continuous",
+    "groupId": "tenses",
+    "title": "Hiện tại hoàn thành tiếp diễn",
+    "aliases": [
+      "present perfect continuous",
+      "present perfect progressive",
+      "thì hiện tại hoàn thành tiếp diễn",
+      "have has been ing"
+    ],
+    "summary": "Nhấn mạnh quá trình hoặc độ dài của hoạt động nối quá khứ với hiện tại. Hoạt động có thể còn tiếp tục hoặc vừa dừng nhưng để lại dấu hiệu hiện tại.",
+    "whenToUse": [
+      "Nói hoạt động đã diễn ra bao lâu tính đến hiện tại, kể cả hoạt động lặp lại.",
+      "Giải thích dấu hiệu của một hoạt động mới xảy ra, như mệt, ướt hoặc tay dính màu.",
+      "Nhấn mạnh một tình huống tạm thời trong giai đoạn gần đây."
+    ],
+    "structures": [
+      "Khẳng định: S + have/has been + V-ing.",
+      "Phủ định: S + have/has not been + V-ing.",
+      "Câu hỏi: Have/Has + S + been + V-ing?"
+    ],
+    "examples": [
+      {
+        "en": "I have been practising these sounds for twenty minutes.",
+        "vi": "Tôi đã luyện các âm này được hai mươi phút rồi."
+      },
+      {
+        "en": "Your hands are covered in flour. Have you been baking?",
+        "vi": "Tay bạn dính đầy bột. Bạn vừa làm bánh à?"
+      },
+      {
+        "en": "She has been using the small library while the main one is closed.",
+        "vi": "Cô ấy dùng thư viện nhỏ trong thời gian thư viện chính đóng cửa."
+      }
+    ],
+    "notes": [
+      "Không nhất thiết hoạt động vẫn đang diễn ra đúng lúc nói; dấu hiệu hiện tại có thể là hệ quả của hoạt động vừa dừng.",
+      "Các động từ trạng thái như know, own thường dùng hiện tại hoàn thành đơn: have known, không phải have been knowing.",
+      "For, since, how long thường xuất hiện nhưng không tự quyết định phải dùng tiếp diễn; cần xét loại động từ và điều muốn nhấn mạnh."
+    ],
+    "mistakes": [
+      {
+        "wrong": "She has been practise every evening.",
+        "correct": "She has been practising every evening.",
+        "explanation": "Sau has been trong thể hoàn thành tiếp diễn phải có V-ing."
+      },
+      {
+        "wrong": "I have been knowing this teacher since 2020.",
+        "correct": "I have known this teacher since 2020.",
+        "explanation": "Know trong nghĩa quen/biết người là trạng thái; thường dùng hoàn thành đơn."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Quá trình và kết quả đếm được",
+        "explanation": "Dạng tiếp diễn thường trả lời “bao lâu/đang làm gì”; dạng đơn thường nêu kết quả hoặc số lượng đã hoàn tất. Không dùng dạng tiếp diễn để khẳng định đã hoàn thành một số lượng chỉ bằng bản thân cấu trúc.",
+        "examples": [
+          {
+            "en": "I have been writing practice sentences all morning.",
+            "vi": "Tôi đã viết câu luyện tập suốt buổi sáng."
+          },
+          {
+            "en": "I have written eight practice sentences this morning.",
+            "vi": "Sáng nay tôi đã viết xong tám câu luyện tập."
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "title": "Không luôn có một lựa chọn duy nhất",
+        "paragraphs": [
+          "Với một số hoạt động kéo dài như live, work, teach, cả dạng đơn và tiếp diễn đều có thể phù hợp. Dạng tiếp diễn làm nổi quá trình, độ dài hoặc tính tạm thời; không nên coi mọi câu dùng dạng đơn là thiếu ý kéo dài.",
+          "Khi muốn hỏi tổng số kết quả đã đạt, chọn câu hỏi dạng đơn, chẳng hạn How many pages have you read? Khi muốn hỏi thời gian dành cho hoạt động, có thể dùng How long have you been reading?"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Present perfect simple and continuous",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/present-perfect-simple-continuous",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Present perfect",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/present-perfect",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Stative verbs",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/stative-verbs",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "past-perfect",
+    "groupId": "tenses",
+    "title": "Quá khứ hoàn thành",
+    "aliases": [
+      "past perfect",
+      "past perfect simple",
+      "thì quá khứ hoàn thành",
+      "had V3",
+      "quá khứ trước một mốc quá khứ"
+    ],
+    "summary": "Nhìn ngược từ một mốc quá khứ để nói về việc xảy ra trước đó hoặc tình trạng kéo dài đến mốc ấy. Mốc nhìn là quá khứ, không phải hiện tại.",
+    "whenToUse": [
+      "Làm rõ một việc đã xảy ra trước một sự kiện hoặc thời điểm quá khứ khác.",
+      "Nói về trải nghiệm, kết quả hoặc trạng thái tính đến một mốc quá khứ.",
+      "Dùng trong nhiều câu gián tiếp và giả định trái thực ở quá khứ; xem bài tương ứng để hiểu nghĩa cụ thể."
+    ],
+    "structures": [
+      "Khẳng định: S + had + V3.",
+      "Phủ định: S + had not + V3.",
+      "Câu hỏi: Had + S + V3? Had dùng với mọi chủ ngữ."
+    ],
+    "examples": [
+      {
+        "en": "When I opened the app, the download had already finished.",
+        "vi": "Khi tôi mở ứng dụng, quá trình tải đã hoàn tất trước đó."
+      },
+      {
+        "en": "We had never met the speaker before that workshop.",
+        "vi": "Trước buổi hội thảo ấy, chúng tôi chưa từng gặp diễn giả."
+      },
+      {
+        "en": "By the time she moved, she had lived there for twelve years.",
+        "vi": "Đến lúc chuyển đi, cô ấy đã sống ở đó được mười hai năm."
+      }
+    ],
+    "notes": [
+      "Cần một mốc quá khứ rõ hoặc đã hiểu trong ngữ cảnh. Không dùng had chỉ vì sự việc xảy ra rất lâu rồi.",
+      "Không phải cứ có hai hành động quá khứ là bắt buộc dùng quá khứ hoàn thành; xem trình tự và điều muốn nhấn mạnh.",
+      "Already, before, by the time giúp hiểu quan hệ thời gian nhưng không phải dấu hiệu máy móc cho mọi câu."
+    ],
+    "mistakes": [
+      {
+        "wrong": "The guest had spoke to the organiser before I arrived.",
+        "correct": "The guest had spoken to the organiser before I arrived.",
+        "explanation": "Sau had cần quá khứ phân từ spoken, không phải spoke."
+      },
+      {
+        "wrong": "Had she finished the report before you arrive yesterday?",
+        "correct": "Had she finished the report before you arrived yesterday?",
+        "explanation": "Trong ngữ cảnh cả hai việc đều thuộc ngày hôm qua, mệnh đề before cần dạng quá khứ arrived."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Quá khứ đơn và quá khứ hoàn thành",
+        "explanation": "Quá khứ đơn kể các sự kiện; quá khứ hoàn thành lùi về trước mốc đang kể. So sánh hai câu dưới: câu thứ nhất đặt việc xe rời đi trước lúc đến; câu thứ hai đặt việc xe rời đi vào lúc hoặc ngay sau khi người nói đến.",
+        "examples": [
+          {
+            "en": "When I reached the stop, the bus had left.",
+            "vi": "Khi tôi đến trạm thì xe buýt đã đi mất."
+          },
+          {
+            "en": "When I reached the stop, the bus left.",
+            "vi": "Khi tôi đến trạm, xe buýt rời đi."
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "title": "Kết quả và trạng thái tại một mốc quá khứ",
+        "paragraphs": [
+          "Giống hiện tại hoàn thành nhưng điểm nhìn đã lùi về quá khứ: I could not open the file because I had forgotten the password. Việc quên giải thích khó khăn tại lúc ấy, không trực tiếp khẳng định hiện tại vẫn quên.",
+          "Với trạng thái kéo dài như know hoặc be married, dạng hoàn thành đơn thường phù hợp. Với hoạt động cần nhấn mạnh quá trình, có thể dùng quá khứ hoàn thành tiếp diễn thay vì tự động chọn dạng đơn vì “xảy ra trước”."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Past perfect",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/past-perfect",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Perfect aspect",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/perfect-aspect",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-continuous",
+    "groupId": "tenses",
+    "title": "Quá khứ hoàn thành tiếp diễn",
+    "aliases": [
+      "past perfect continuous",
+      "past perfect progressive",
+      "thì quá khứ hoàn thành tiếp diễn",
+      "had been ing"
+    ],
+    "summary": "Nhấn mạnh quá trình hoặc độ dài của hoạt động diễn ra trước và kéo tới một mốc quá khứ, hoặc vừa kết thúc và để lại dấu hiệu tại mốc đó.",
+    "whenToUse": [
+      "Nói một hoạt động đã diễn ra bao lâu trước một sự kiện quá khứ.",
+      "Giải thích tình trạng tại một lúc trong quá khứ bằng hoạt động diễn ra trước đó.",
+      "Nhấn mạnh một chuỗi hoạt động lặp lại tính đến một thời điểm đang kể."
+    ],
+    "structures": [
+      "Khẳng định: S + had been + V-ing.",
+      "Phủ định: S + had not been + V-ing.",
+      "Câu hỏi: Had + S + been + V-ing?"
+    ],
+    "examples": [
+      {
+        "en": "We had been waiting for forty minutes when the doors finally opened.",
+        "vi": "Chúng tôi đã chờ được bốn mươi phút thì cửa cuối cùng cũng mở."
+      },
+      {
+        "en": "His shoes were muddy because he had been walking through the fields.",
+        "vi": "Giày anh ấy dính bùn vì trước đó anh đã đi qua những cánh đồng."
+      },
+      {
+        "en": "Before the course ended, she had been recording a short diary every night.",
+        "vi": "Trước khi khóa học kết thúc, cô ấy vẫn ghi âm một đoạn nhật ký ngắn mỗi tối."
+      }
+    ],
+    "notes": [
+      "Dạng tiếp diễn không tự cho biết hoạt động có tiếp tục sau mốc quá khứ hay không; phần còn lại của ngữ cảnh mới làm rõ.",
+      "Động từ trạng thái thường dùng quá khứ hoàn thành đơn: had known, had owned.",
+      "For/since có thể dùng ở cả dạng đơn và tiếp diễn; câu hỏi cần trả lời là nhấn mạnh trạng thái/kết quả hay quá trình."
+    ],
+    "mistakes": [
+      {
+        "wrong": "They had been wait outside for an hour.",
+        "correct": "They had been waiting outside for an hour.",
+        "explanation": "Cấu trúc cần had been + V-ing."
+      },
+      {
+        "wrong": "I had been known her for years before we worked together.",
+        "correct": "I had known her for years before we worked together.",
+        "explanation": "Muốn nói “tôi đã quen cô ấy”, dùng had known; had been known là một cấu trúc bị động mang nghĩa khác, không diễn đạt ý này."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Kéo dài quanh mốc và kéo dài trước mốc",
+        "explanation": "Quá khứ tiếp diễn đặt bạn bên trong hoạt động ở một mốc quá khứ. Quá khứ hoàn thành tiếp diễn nhìn từ mốc ấy về quá trình trước đó, thường làm rõ đã diễn ra bao lâu.",
+        "examples": [
+          {
+            "en": "At noon, I was studying in the library.",
+            "vi": "Lúc trưa, tôi đang học trong thư viện."
+          },
+          {
+            "en": "By noon, I had been studying for three hours.",
+            "vi": "Đến trưa, tôi đã học được ba giờ."
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "title": "Khác dạng hoàn thành đơn ở trọng tâm",
+        "paragraphs": [
+          "Had written five pages cho biết số trang đã hoàn thành. Had been writing nhấn mạnh hoạt động viết, không tự xác nhận đã viết xong một bản cụ thể. Đừng dùng thời lượng như tiêu chí duy nhất, vì dạng đơn cũng có thể đi với for.",
+          "Khi người kể nói ai đó mệt ở thời điểm quá khứ, had been working có thể giải thích nguyên nhân dù công việc vừa dừng. Do đó, cách dịch không luôn cần chèn “vẫn đang” vào câu tiếng Việt."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Past perfect",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/past-perfect",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Perfect aspect",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/perfect-aspect",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Continuous aspect",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/continuous-aspect",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "future-forms",
+    "groupId": "tenses",
+    "title": "Nói về tương lai: will, going to và các dạng hiện tại",
+    "aliases": [
+      "future forms",
+      "future simple",
+      "simple future",
+      "tương lai đơn",
+      "will",
+      "be going to",
+      "sắp",
+      "dự định",
+      "lịch trình"
+    ],
+    "summary": "Tiếng Anh dùng nhiều dạng để nói về tương lai. Chọn theo dự đoán, quyết định, ý định, sắp xếp hay lịch trình; không phải câu tương lai nào cũng cần will.",
+    "whenToUse": [
+      "Will: dự đoán/niềm tin; quyết định lúc nói, lời hứa, đề nghị hoặc sự sẵn lòng.",
+      "Be going to: ý định đã có trước; dự đoán dựa trên bằng chứng hiện tại.",
+      "Hiện tại tiếp diễn: sắp xếp đã hình thành. Hiện tại đơn: lịch trình hoặc sự kiện ấn định."
+    ],
+    "structures": [
+      "Will: S + will/will not + V; câu hỏi Will + S + V?",
+      "Going to: S + am/is/are (not) going to + V; câu hỏi đảo am/is/are.",
+      "Sắp xếp: S + am/is/are + V-ing + mốc tương lai. Lịch trình: dạng hiện tại đơn."
+    ],
+    "examples": [
+      {
+        "en": "The room is cold. I will close the window.",
+        "vi": "Phòng lạnh quá. Tôi sẽ đóng cửa sổ."
+      },
+      {
+        "en": "I am going to revise the chapter tonight; that was my plan this morning.",
+        "vi": "Tối nay tôi định ôn lại chương đó; tôi đã lên kế hoạch từ sáng."
+      },
+      {
+        "en": "We are meeting the adviser at two tomorrow.",
+        "vi": "Chúng tôi đã hẹn gặp cố vấn lúc hai giờ ngày mai."
+      },
+      {
+        "en": "The next train leaves at 6.15.",
+        "vi": "Chuyến tàu tiếp theo rời ga lúc 6 giờ 15."
+      }
+    ],
+    "notes": [
+      "Ranh giới các dạng có thể giao nhau; chọn khác đi thường làm đổi trọng tâm, không tự động thành lỗi ngữ pháp.",
+      "Tomorrow, next week là mốc tương lai, không phải dấu hiệu bắt buộc dùng will.",
+      "Trong mệnh đề thời gian bắt đầu bằng when/after/until, thường dùng dạng hiện tại để nói tương lai. Đây không phải lệnh cấm mọi cách dùng will: ý sẵn lòng là một trường hợp khác."
+    ],
+    "mistakes": [
+      {
+        "wrong": "She will attends the meeting.",
+        "correct": "She will attend the meeting.",
+        "explanation": "Sau will dùng động từ nguyên mẫu không to."
+      },
+      {
+        "wrong": "We going to update the notes tonight.",
+        "correct": "We are going to update the notes tonight.",
+        "explanation": "Be going to cần dạng be phù hợp với chủ ngữ."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Ý định và sắp xếp",
+        "explanation": "Going to có thể nêu ý định trước khi mọi chi tiết được xác nhận. Hiện tại tiếp diễn thường trình bày việc đã sắp xếp; không cần biến sự phân biệt này thành bài toán chỉ có một đáp án trong mọi cuộc hội thoại."
+      }
+    ],
+    "details": [
+      {
+        "title": "Mệnh đề thời gian và mức độ chắc chắn",
+        "paragraphs": [
+          "Có thể nói I will message you when the lesson ends. Mệnh đề when dùng hiện tại dù cả hai việc đều ở tương lai. Cũng có thể dùng hiện tại hoàn thành để nhấn mạnh việc đã hoàn tất: when I have finished.",
+          "May, might, could diễn tả khả năng; should có thể diễn tả điều dự kiến có khả năng xảy ra. Không gán phần trăm chắc chắn cố định cho các từ này. Hãy xét bằng chứng và ngữ cảnh, thay vì coi mọi tương lai là một “thì will”."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Future forms: 'will', 'be going to' and present continuous",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/future-forms-will-be-going-present-continuous",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Talking about the future",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/talking-about-future",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "future-continuous",
+    "groupId": "tenses",
+    "title": "Tương lai tiếp diễn",
+    "aliases": [
+      "future continuous",
+      "future progressive",
+      "thì tương lai tiếp diễn",
+      "will be ing",
+      "đang ở một mốc tương lai"
+    ],
+    "summary": "Đặt điểm nhìn vào một thời điểm tương lai và hình dung hoạt động đang diễn ra quanh mốc ấy. Cũng dùng để trình bày hoạt động dự kiến hoặc tình huống tạm thời.",
+    "whenToUse": [
+      "Nói một việc sẽ đang diễn ra tại một thời điểm hoặc khi một sự kiện tương lai khác xảy ra.",
+      "Nói về hoạt động tương lai được dự kiến theo kế hoạch hoặc hoàn cảnh.",
+      "Mô tả tình huống mới hoặc tạm thời trong một giai đoạn tương lai."
+    ],
+    "structures": [
+      "Khẳng định: S + will be + V-ing.",
+      "Phủ định: S + will not be + V-ing.",
+      "Câu hỏi: Will + S + be + V-ing?"
+    ],
+    "examples": [
+      {
+        "en": "At this time tomorrow, I will be travelling to Da Nang.",
+        "vi": "Giờ này ngày mai, tôi sẽ đang trên đường đến Đà Nẵng."
+      },
+      {
+        "en": "When you arrive, we will be preparing the equipment.",
+        "vi": "Khi bạn đến, chúng tôi sẽ đang chuẩn bị thiết bị."
+      },
+      {
+        "en": "She will be working at the smaller office next month.",
+        "vi": "Tháng tới cô ấy sẽ làm việc ở văn phòng nhỏ hơn."
+      }
+    ],
+    "notes": [
+      "Không thêm dạng be theo chủ ngữ sau will: luôn là will be, không phải will is/are.",
+      "Không phải cứ có at eight tomorrow là bắt buộc tiếp diễn; dùng khi muốn nhìn hoạt động như đang diễn ra quanh mốc đó.",
+      "Động từ trạng thái thường dùng dạng đơn theo nghĩa cụ thể của động từ. Thời lượng dài không tự buộc dùng tiếp diễn."
+    ],
+    "mistakes": [
+      {
+        "wrong": "We will waiting near the lift.",
+        "correct": "We will be waiting near the lift.",
+        "explanation": "Cần be giữa will và V-ing."
+      },
+      {
+        "wrong": "Will she be work late tomorrow?",
+        "correct": "Will she be working late tomorrow?",
+        "explanation": "Trong cấu trúc tương lai tiếp diễn, động từ chính phải ở dạng V-ing."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Hoạt động quanh mốc và việc hoàn thành trước mốc",
+        "explanation": "Will be doing nhìn vào quá trình đang diễn ra tại mốc; will have done nhìn ngược từ mốc tương lai về kết quả đã hoàn thành.",
+        "examples": [
+          {
+            "en": "At six, I will be editing the report.",
+            "vi": "Lúc sáu giờ, tôi sẽ đang chỉnh sửa báo cáo."
+          },
+          {
+            "en": "By six, I will have edited the report.",
+            "vi": "Đến sáu giờ, tôi sẽ chỉnh sửa xong báo cáo."
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "title": "Kế hoạch và góc nhìn của người nói",
+        "paragraphs": [
+          "Tương lai tiếp diễn có thể nói về việc được xem là sẽ diễn ra theo tiến trình dự kiến, chứ không chỉ là hành động bị chen ngang. Vì vậy, không cần luôn có một hành động thứ hai trong câu.",
+          "Will you be using the desk tomorrow? hỏi về kế hoạch sử dụng bàn. Không nên suy ra rằng mọi câu hỏi will be V-ing đều lịch sự hơn mọi dạng khác; mức độ lịch sự còn phụ thuộc ngữ điệu, tình huống và nội dung.",
+          "Trong mệnh đề when nói thời gian tương lai, thường dùng hiện tại: when you arrive. Phần will be preparing nằm ở mệnh đề chính."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Future continuous and future perfect",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/future-continuous-future-perfect",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Talking about the future",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/talking-about-future",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Continuous aspect",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/continuous-aspect",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "future-perfect",
+    "groupId": "tenses",
+    "title": "Tương lai hoàn thành và hoàn thành tiếp diễn",
+    "aliases": [
+      "future perfect",
+      "future perfect simple",
+      "future perfect continuous",
+      "future perfect progressive",
+      "thì tương lai hoàn thành",
+      "tương lai hoàn thành tiếp diễn",
+      "will have V3",
+      "will have been ing"
+    ],
+    "summary": "Nhìn ngược từ một mốc tương lai: dạng đơn nêu kết quả hoặc trạng thái tính đến mốc đó; dạng tiếp diễn nhấn mạnh quá trình và thời lượng đã diễn ra đến mốc ấy.",
+    "whenToUse": [
+      "Hoàn thành đơn: nói việc sẽ xong trước hoặc muộn nhất vào một mốc tương lai.",
+      "Hoàn thành đơn còn diễn tả trạng thái đạt một thời lượng tính đến mốc tương lai.",
+      "Hoàn thành tiếp diễn: nhấn mạnh hoạt động đã kéo dài bao lâu đến một thời điểm tương lai."
+    ],
+    "structures": [
+      "Dạng đơn: S + will (not) have + V3. Câu hỏi: Will + S + have + V3?",
+      "Dạng tiếp diễn: S + will (not) have been + V-ing.",
+      "Câu hỏi tiếp diễn: Will + S + have been + V-ing?"
+    ],
+    "examples": [
+      {
+        "en": "By Friday, we will have checked every example in this chapter.",
+        "vi": "Đến thứ Sáu, chúng tôi sẽ kiểm tra xong mọi ví dụ trong chương này."
+      },
+      {
+        "en": "In July, they will have been married for ten years.",
+        "vi": "Đến tháng Bảy, họ sẽ kết hôn được mười năm."
+      },
+      {
+        "en": "By noon, I will have been studying for three hours.",
+        "vi": "Tính đến trưa, tôi sẽ học được ba giờ."
+      }
+    ],
+    "notes": [
+      "By nói giới hạn “đến/không muộn hơn”; không có nghĩa hành động nhất thiết chỉ hoàn thành đúng giây đó.",
+      "Dạng tiếp diễn không tự xác nhận hoạt động sẽ dừng tại mốc. Không dùng nó chỉ vì thấy for.",
+      "Will have been married là hoàn thành đơn của be married; không phải hoàn thành tiếp diễn vì không có V-ing."
+    ],
+    "mistakes": [
+      {
+        "wrong": "I will have finish the draft by Monday.",
+        "correct": "I will have finished the draft by Monday.",
+        "explanation": "Sau will have cần quá khứ phân từ finished."
+      },
+      {
+        "wrong": "By then, she will have been teach for twenty years.",
+        "correct": "By then, she will have been teaching for twenty years.",
+        "explanation": "Dạng hoàn thành tiếp diễn cần been + V-ing."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Kết quả và quá trình",
+        "explanation": "Will have written three pages nêu số trang hoàn tất; will have been writing for an hour nhấn mạnh thời gian viết. Một số hoạt động kéo dài cho phép cả hai góc nhìn; với trạng thái như know thường chọn dạng đơn."
+      }
+    ],
+    "details": [
+      {
+        "title": "Mốc tương lai phải rõ trong câu hoặc ngữ cảnh",
+        "paragraphs": [
+          "Mốc có thể là by Friday, in two years hoặc một sự kiện: By the time you return, I will have finished. Trong mệnh đề thời gian này, return ở hiện tại; không tự thêm will vì sự việc chưa xảy ra.",
+          "Thể hoàn thành luôn có một điểm nhìn để nhìn lại. Với tương lai hoàn thành, điểm nhìn nằm trong tương lai; vì vậy câu không khẳng định công việc đã hoàn thành vào hiện tại.",
+          "By the time chỉ giúp thiết lập mốc, không phải “tín hiệu” bắt buộc mọi câu phải dùng hoàn thành. Chọn cấu trúc theo ý muốn nói là đang diễn ra, đã xong hay đã kéo dài."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Future continuous and future perfect",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/future-continuous-future-perfect",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Perfect aspect",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/perfect-aspect",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Continuous aspect",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/continuous-aspect",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  }
+]

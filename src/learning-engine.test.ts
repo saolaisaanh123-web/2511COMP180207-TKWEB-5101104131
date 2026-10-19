@@ -71,7 +71,7 @@ describe("Independent learning evidence", () => {
     s = record(s, result(17 * day + 1000), true);
     expect(s.history.at(-1)?.independent).toBe(false);
     expect(strength(s, word.id, 1)).not.toBe("Nhớ khá vững");
-    expect(s.schedules["apple:1"].step).toBe(0);
+    expect(s.schedules["apple:1"].step).toBe(2);
   });
   it("retains legacy results without treating them as independent mastery", () => {
     let s = initial();

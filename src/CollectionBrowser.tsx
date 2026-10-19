@@ -11,6 +11,7 @@ import {
   X,
 } from "lucide-react";
 import { canPractice, frequencyScore, type Entry } from "./core";
+import { useVisibleExposure } from "./useVisibleExposure";
 import "./collection-browser.css";
 
 type CollectionBrowserProps = {
@@ -58,8 +59,6 @@ export default function CollectionBrowser({
   onPractice,
   onExpose,
 }: CollectionBrowserProps) {
-  const exposeRef = useRef(onExpose);
-  exposeRef.current = onExpose;
   const resultsRef = useRef<HTMLParagraphElement>(null);
   const focusAfterPagination = useRef(false);
   const [query, setQuery] = useState("");
@@ -139,9 +138,10 @@ export default function CollectionBrowser({
   const start = (page - 1) * PAGE_SIZE;
   const visible = filtered.slice(start, start + PAGE_SIZE);
   const visibleIdsKey = visible.map(({ word }) => word.id).join("\u0000");
-  useEffect(() => {
-    if (visibleIdsKey) exposeRef.current?.(visibleIdsKey.split("\u0000"));
-  }, [visibleIdsKey]);
+  const exposureRef = useVisibleExposure(
+    onExpose,
+    `${kind}\u0000${visibleIdsKey}`,
+  );
   const setPage = (nextPage: number) => {
     focusAfterPagination.current = true;
     setPagination({ key: paginationKey, page: nextPage });
@@ -319,7 +319,7 @@ export default function CollectionBrowser({
         )}
       </p>
 
-      <div id={resultsId} className="coll-results">
+      <div id={resultsId} className="coll-results" ref={exposureRef}>
         {visible.length ? (
           <div className="coll-grid">
             {visible.map(({ word }) => (
@@ -384,7 +384,11 @@ export default function CollectionBrowser({
                       : "Chỉ tra cứu · cần rà soát"}
                   </span>
                 </div>
-                <p className="coll-meaning" lang="vi">
+                <p
+                  className="coll-meaning"
+                  lang="vi"
+                  data-exposure-id={word.id}
+                >
                   {word.meaning_vi}
                 </p>
                 {word.example_en && (

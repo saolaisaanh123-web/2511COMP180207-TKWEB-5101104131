@@ -1,0 +1,763 @@
+[
+  {
+    "id": "modal-ability",
+    "groupId": "verbs",
+    "title": "Khả năng: can, could, be able to",
+    "aliases": [
+      "ability",
+      "past ability",
+      "can could",
+      "khả năng hiện tại",
+      "khả năng quá khứ",
+      "managed to",
+      "động từ khuyết thiếu chỉ khả năng"
+    ],
+    "summary": "Can nói về khả năng hiện tại; could thường nói về khả năng nói chung trong quá khứ. Với một lần đã làm thành công trong quá khứ, thường dùng was/were able to hoặc managed to.",
+    "whenToUse": [
+      "Mô tả kỹ năng, khả năng làm một việc hoặc điều kiện cho phép thực hiện việc đó.",
+      "Phân biệt khả năng đã có trong một giai đoạn với một thành công cụ thể đã xảy ra."
+    ],
+    "structures": [
+      "S + can/could + động từ nguyên mẫu không to",
+      "S + cannot/can’t/couldn’t + động từ nguyên mẫu không to",
+      "Can/Could + S + động từ nguyên mẫu không to?",
+      "S + was/were able to + động từ nguyên mẫu",
+      "S + managed to / didn’t manage to + động từ nguyên mẫu"
+    ],
+    "examples": [
+      {
+        "en": "Linh can explain the results clearly.",
+        "vi": "Linh có thể giải thích kết quả một cách rõ ràng."
+      },
+      {
+        "en": "At twelve, I could already read short novels in English.",
+        "vi": "Năm mười hai tuổi, tôi đã có thể đọc tiểu thuyết ngắn bằng tiếng Anh."
+      },
+      {
+        "en": "Despite the weak signal, we managed to send the report.",
+        "vi": "Dù tín hiệu yếu, chúng tôi vẫn gửi được báo cáo."
+      }
+    ],
+    "notes": [
+      "Sau can/could không thêm to và không chia động từ theo ngôi; phủ định và câu hỏi không cần do/does/did.",
+      "Một lần không làm được trong quá khứ có thể dùng couldn’t, wasn’t/weren’t able to hoặc didn’t manage to.",
+      "Could còn dùng cho khả năng có thể xảy ra, lời đề nghị và yêu cầu lịch sự; không phải lần nào cũng mang nghĩa quá khứ."
+    ],
+    "mistakes": [
+      {
+        "wrong": "She can speaks clearly.",
+        "correct": "She can speak clearly.",
+        "explanation": "Động từ sau can giữ dạng nguyên mẫu, không thêm -s."
+      },
+      {
+        "wrong": "Did you could attend the meeting?",
+        "correct": "Could you attend the meeting?",
+        "explanation": "Could tự làm trợ động từ; không dùng thêm did."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Could và managed to",
+        "explanation": "Could thường mô tả năng lực nói chung. Managed to nhấn mạnh đã làm được, thường sau khó khăn; was/were able to trung tính hơn."
+      }
+    ],
+    "details": [
+      {
+        "title": "Chọn theo ý định diễn đạt",
+        "paragraphs": [
+          "Khi kể một lần thành công cụ thể, was/were able to và managed to thường rõ nghĩa hơn could. Đây là xu hướng sử dụng, không phải lệnh cấm mọi câu có could và mốc quá khứ.",
+          "Can cũng có thể nói đến khả năng làm được vào một thời điểm tương lai đã xác định. Không suy ra thì chỉ từ riêng chữ can."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Ability | LearnEnglish",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/ability",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Past ability | LearnEnglish",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/past-ability",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "'can' and 'could' | LearnEnglish",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/can-could",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "modal-permission-obligation",
+    "groupId": "verbs",
+    "title": "Xin phép, nghĩa vụ và lời khuyên",
+    "aliases": [
+      "permission obligation",
+      "must have to",
+      "mustn’t don’t have to",
+      "can may could",
+      "should",
+      "sự cho phép",
+      "bắt buộc",
+      "cấm đoán",
+      "không cần thiết",
+      "lời khuyên",
+      "modal verbs"
+    ],
+    "summary": "Can/could/may dùng để xin phép. Must và have to diễn đạt nghĩa vụ; mustn’t là không được làm, còn don’t have to là không bắt buộc. Should thường đưa lời khuyên.",
+    "whenToUse": [
+      "Xin hoặc cho phép, nêu quy định và phân biệt việc bắt buộc với việc tùy chọn.",
+      "Khuyên ai nên làm gì mà không biến lời khuyên thành một lệnh cấm hay nghĩa vụ tuyệt đối."
+    ],
+    "structures": [
+      "Can/Could/May + I/we + động từ nguyên mẫu?",
+      "S + must / must not / should / shouldn’t + động từ nguyên mẫu",
+      "S + have/has/had to + động từ nguyên mẫu",
+      "S + don’t/doesn’t/didn’t have to + động từ nguyên mẫu"
+    ],
+    "examples": [
+      {
+        "en": "Could I move our appointment to Thursday?",
+        "vi": "Tôi có thể chuyển cuộc hẹn của chúng ta sang thứ Năm được không?"
+      },
+      {
+        "en": "You mustn’t share this password.",
+        "vi": "Bạn không được chia sẻ mật khẩu này."
+      },
+      {
+        "en": "You don’t have to print the form; a digital copy is fine.",
+        "vi": "Bạn không cần in mẫu đơn; bản điện tử cũng được."
+      },
+      {
+        "en": "You should check the address before leaving.",
+        "vi": "Bạn nên kiểm tra địa chỉ trước khi đi."
+      }
+    ],
+    "notes": [
+      "Could lịch sự hơn can khi xin phép; dùng can hoặc may để cho phép, không dùng could theo cách cho phép trực tiếp đó. May trang trọng hơn.",
+      "Have to thường nhấn mạnh yêu cầu bên ngoài; must thường thể hiện sự cần thiết do người nói hoặc cơ quan đặt ra. Hai cách dùng có thể giao nhau; đây không phải ranh giới tuyệt đối.",
+      "Nghĩa vụ quá khứ thường dùng had to; không dùng must như một dạng quá khứ của nghĩa vụ."
+    ],
+    "mistakes": [
+      {
+        "wrong": "Visitors mustn’t to enter this room.",
+        "correct": "Visitors mustn’t enter this room.",
+        "explanation": "Sau mustn’t không có to."
+      },
+      {
+        "wrong": "She don’t have to attend.",
+        "correct": "She doesn’t have to attend.",
+        "explanation": "Have to tạo phủ định bằng trợ động từ phù hợp với chủ ngữ."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Mustn’t và don’t have to",
+        "explanation": "Mustn’t cấm thực hiện; don’t have to để người nghe lựa chọn. Thay hai cấu trúc cho nhau có thể làm đổi hẳn yêu cầu."
+      },
+      {
+        "title": "Should và must",
+        "explanation": "Should thường là lời khuyên hoặc điều nên làm. Must diễn đạt sự cần thiết mạnh hơn; độ mạnh còn phụ thuộc tình huống."
+      }
+    ],
+    "details": [
+      {
+        "title": "Tránh dịch từng chữ",
+        "paragraphs": [
+          "Trước khi chọn dạng phủ định, hãy xác định người nghe bị cấm hay chỉ được miễn nghĩa vụ. Không dịch cả hai thành một nhãn mơ hồ “không phải”.",
+          "Should đi cùng động từ nguyên mẫu không to; không thêm -s theo chủ ngữ. Nội dung ở đây phục vụ tra cứu cách dùng, không quy đổi độ lịch sự thành một thang điểm cố định."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Modals: permission and obligation | LearnEnglish",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/modals-permission-obligation",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Suggestions and obligations | LearnEnglish",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/suggestions-obligations",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "modal-deduction",
+    "groupId": "verbs",
+    "title": "Suy đoán: must, might, may, could, can’t",
+    "aliases": [
+      "modals deduction",
+      "deductions about the past",
+      "deductions about the present",
+      "must have",
+      "can’t have",
+      "might have",
+      "suy luận",
+      "phỏng đoán",
+      "động từ khuyết thiếu suy đoán"
+    ],
+    "summary": "Dùng modal để thể hiện mức độ tin vào suy luận: must là tin chắc có căn cứ; may/might/could là có thể; can’t là tin rằng không thể. Quá khứ dùng modal + have + phân từ quá khứ.",
+    "whenToUse": [
+      "Suy luận từ dấu hiệu đang có, không trình bày suy đoán như một sự thật đã xác minh.",
+      "Nói về khả năng một việc đã xảy ra hoặc không thể đã xảy ra trong quá khứ."
+    ],
+    "structures": [
+      "Hiện tại: S + must/may/might/could/can’t + động từ nguyên mẫu",
+      "Quá khứ: S + must/may/might/could + have + phân từ quá khứ",
+      "Phủ định suy đoán quá khứ: S + can’t/couldn’t have + phân từ quá khứ"
+    ],
+    "examples": [
+      {
+        "en": "The office lights are off. Everyone might be at lunch.",
+        "vi": "Đèn văn phòng đã tắt. Có thể mọi người đang đi ăn trưa."
+      },
+      {
+        "en": "Nora must have left early; her desk is already empty.",
+        "vi": "Hẳn Nora đã về sớm; bàn của cô ấy đã trống rồi."
+      },
+      {
+        "en": "That can’t be my parcel; I haven’t ordered anything.",
+        "vi": "Đó không thể là bưu kiện của tôi; tôi chưa đặt thứ gì."
+      },
+      {
+        "en": "He couldn’t have sent the email at noon; the network was down.",
+        "vi": "Anh ấy không thể đã gửi email lúc trưa; lúc đó mạng bị mất."
+      }
+    ],
+    "notes": [
+      "Những mức độ này là ý nghĩa trong giao tiếp, không phải phần trăm xác suất cố định. May thường trang trọng hơn might/could trong cách suy đoán này.",
+      "Have trong must have left không chia thành has theo chủ ngữ. Phân từ quá khứ phải đúng: gone, written, seen…",
+      "Could have còn có thể chỉ cơ hội đã không thực hiện; cần đọc ngữ cảnh để phân biệt với suy đoán."
+    ],
+    "mistakes": [
+      {
+        "wrong": "She must has forgotten the date.",
+        "correct": "She must have forgotten the date.",
+        "explanation": "Sau modal dùng have nguyên mẫu."
+      },
+      {
+        "wrong": "They might have went home.",
+        "correct": "They might have gone home.",
+        "explanation": "Sau have trong cấu trúc này cần phân từ quá khứ, không dùng went."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Can’t và mustn’t",
+        "explanation": "Đối lập thông dụng với must trong suy đoán chắc chắn là can’t: hẳn là… / không thể là…. Mustn’t thường diễn đạt cấm đoán; không học như công thức phủ định suy đoán tương đương can’t."
+      },
+      {
+        "title": "Must have và had to",
+        "explanation": "Must have + phân từ là suy đoán quá khứ; had to + động từ nguyên mẫu là nghĩa vụ đã có trong quá khứ."
+      }
+    ],
+    "details": [
+      {
+        "title": "Suy đoán không tự xác nhận sự việc",
+        "paragraphs": [
+          "Người nói chọn must khi thấy suy luận rất thuyết phục, nhưng vẫn có thể suy luận sai. Một dấu hiệu như đèn tắt không tự chứng minh tất cả mọi người đã về.",
+          "Để nói “không thể đã xảy ra”, chọn can’t have hoặc couldn’t have. Không máy móc thêm not vào must have để đảo mức độ chắc chắn."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Modals: deductions about the present | LearnEnglish",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/modals-deductions-about-present",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Modals: deductions about the past | LearnEnglish",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/modals-deductions-about-past",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "'can' and 'could' | LearnEnglish",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/can-could",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "passive",
+    "groupId": "verbs",
+    "title": "Chủ động và bị động",
+    "aliases": [
+      "passive",
+      "passive voice",
+      "active voice",
+      "active and passive",
+      "câu bị động",
+      "thể bị động",
+      "be past participle",
+      "bị động tường thuật"
+    ],
+    "summary": "Chủ động thường đặt người/vật thực hiện làm chủ ngữ. Bị động đưa đối tượng chịu tác động lên làm chủ ngữ để đổi trọng tâm; cấu trúc chính là be + phân từ quá khứ.",
+    "whenToUse": [
+      "Tập trung vào việc gì đã xảy ra với đối tượng, khi người thực hiện không rõ, đã rõ hoặc không cần nêu.",
+      "Giữ mạch thông tin trong văn bản; bị động thường gặp trong báo cáo và mô tả quy trình nhưng không bắt buộc phải dùng để viết trang trọng."
+    ],
+    "structures": [
+      "Hiện tại đơn: S + am/is/are + phân từ quá khứ",
+      "Quá khứ đơn: S + was/were + phân từ quá khứ",
+      "Tiếp diễn: S + am/is/are/was/were + being + phân từ quá khứ",
+      "Hoàn thành: S + have/has/had + been + phân từ quá khứ",
+      "Modal: S + can/should/must/will + be + phân từ quá khứ",
+      "Tác nhân nếu cần: by + người/vật thực hiện"
+    ],
+    "examples": [
+      {
+        "en": "The technician checks the equipment every week.",
+        "vi": "Kỹ thuật viên kiểm tra thiết bị hằng tuần."
+      },
+      {
+        "en": "The equipment is checked every week.",
+        "vi": "Thiết bị được kiểm tra hằng tuần."
+      },
+      {
+        "en": "Our booking has been confirmed.",
+        "vi": "Việc đặt chỗ của chúng tôi đã được xác nhận."
+      },
+      {
+        "en": "The bridge is being repaired this month.",
+        "vi": "Cây cầu đang được sửa trong tháng này."
+      }
+    ],
+    "notes": [
+      "Chia be theo thì và chủ ngữ; phân từ quá khứ không đổi theo ngôi. Dùng being cho bị động tiếp diễn, been sau have trong bị động hoàn thành.",
+      "Không phải mọi động từ đều chuyển sang bị động: cách chuyển cơ bản cần có tân ngữ trong câu chủ động. Động từ không có tân ngữ như arrive không dùng theo kiểu “was arrived”.",
+      "Không cần thêm by nếu tác nhân không quan trọng. Get + phân từ cũng có thể tạo bị động trong cách nói thân mật."
+    ],
+    "mistakes": [
+      {
+        "wrong": "The documents have sent.",
+        "correct": "The documents have been sent.",
+        "explanation": "Khi muốn nói tài liệu đã được gửi, cần been để tạo bị động hoàn thành."
+      },
+      {
+        "wrong": "The train was arrived at six.",
+        "correct": "The train arrived at six.",
+        "explanation": "Arrive không dùng bị động theo cấu trúc này."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Trọng tâm khác nhau",
+        "explanation": "“Mai wrote the summary” nêu người viết; “The summary was written by Mai” lấy bản tóm tắt làm chủ đề. Không phải cứ có nghĩa “được” trong tiếng Việt là phải dùng bị động tiếng Anh."
+      }
+    ],
+    "details": [
+      {
+        "title": "Bị động tường thuật",
+        "paragraphs": [
+          "Với say, believe, report…, có thể dùng It is believed that + mệnh đề hoặc S + is believed to + động từ. Dạng to have + phân từ đặt sự việc được nói đến trước thời điểm tường thuật."
+        ],
+        "examples": [
+          {
+            "en": "The painting is believed to have disappeared in 1998.",
+            "vi": "Người ta tin rằng bức tranh đã biến mất vào năm 1998."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Passives | LearnEnglish",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/passives",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Active and passive voice | LearnEnglish",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/active-passive-voice",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Advanced passives review | LearnEnglish",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/c1/advanced-passives-review",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "gerunds-infinitives",
+    "groupId": "verbs",
+    "title": "Danh động từ (-ing) và động từ nguyên mẫu",
+    "aliases": [
+      "gerund",
+      "gerunds",
+      "infinitive",
+      "infinitives",
+      "danh động từ",
+      "động từ nguyên mẫu",
+      "verb patterns",
+      "verb ing",
+      "to infinitive",
+      "make let",
+      "infinitive of purpose"
+    ],
+    "summary": "Dạng động từ thứ hai phụ thuộc cấu trúc của động từ đứng trước: enjoy doing nhưng decide to do. Một số động từ cần tân ngữ; make và let thường đi với tân ngữ + động từ không to.",
+    "whenToUse": [
+      "Nối hai hành động trong câu hoặc diễn đạt mong muốn, kế hoạch, lời yêu cầu và mục đích.",
+      "Tra cả mẫu đi kèm từ mới thay vì chỉ ghi một nghĩa tiếng Việt."
+    ],
+    "structures": [
+      "enjoy/avoid/finish/mind/suggest + V-ing",
+      "want/decide/hope/plan/offer + to + động từ nguyên mẫu",
+      "ask/tell/want/encourage + tân ngữ + to + động từ nguyên mẫu",
+      "make/let + tân ngữ + động từ nguyên mẫu không to",
+      "Chỉ mục đích: to / in order to + động từ nguyên mẫu"
+    ],
+    "examples": [
+      {
+        "en": "I enjoy discussing books with my sister.",
+        "vi": "Tôi thích thảo luận về sách với chị tôi."
+      },
+      {
+        "en": "We decided to postpone the trip.",
+        "vi": "Chúng tôi quyết định hoãn chuyến đi."
+      },
+      {
+        "en": "Please remind me to confirm the booking.",
+        "vi": "Hãy nhắc tôi xác nhận đặt chỗ."
+      },
+      {
+        "en": "I opened the window to let some fresh air in.",
+        "vi": "Tôi mở cửa sổ để không khí trong lành vào phòng."
+      }
+    ],
+    "notes": [
+      "Like và love có thể đi với cả -ing lẫn to-infinitive; không coi một dạng là sai chỉ vì đáp án mẫu dùng dạng kia. Would like thường theo sau bằng to-infinitive.",
+      "Học riêng cấu trúc đầy đủ: tell someone to do, không bỏ tân ngữ khi ý là bảo ai làm gì.",
+      "Trong bị động, make có to: was made to wait. Với nghĩa cho phép ở đây, dùng was allowed to thay cho việc chuyển let sang bị động máy móc."
+    ],
+    "mistakes": [
+      {
+        "wrong": "I enjoy to read biographies.",
+        "correct": "I enjoy reading biographies.",
+        "explanation": "Enjoy đi với dạng -ing khi động từ khác theo sau."
+      },
+      {
+        "wrong": "They made us to wait outside.",
+        "correct": "They made us wait outside.",
+        "explanation": "Make ở thể chủ động đi với tân ngữ + động từ không to."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Từ nguyên mẫu chỉ mục đích",
+        "explanation": "“I called to confirm the time” trả lời vì sao gọi. Đây khác với “I decided to call”, trong đó to call là mẫu đi sau decide."
+      }
+    ],
+    "details": [
+      {
+        "title": "Dạng -ing dùng như danh từ",
+        "paragraphs": [
+          "Một cụm -ing có thể làm chủ ngữ, tân ngữ hoặc đứng sau giới từ. Cụm này vẫn có thể mang tân ngữ riêng, chẳng hạn reading the report.",
+          "Không phải mọi dạng -ing đều là danh động từ: trong an interesting discussion, interesting là tính từ. Hãy nhìn chức năng trong câu thay vì chỉ nhìn đuôi từ."
+        ],
+        "examples": [
+          {
+            "en": "Comparing the two plans takes time.",
+            "vi": "Việc so sánh hai kế hoạch mất thời gian."
+          },
+          {
+            "en": "She is interested in improving the process.",
+            "vi": "Cô ấy quan tâm đến việc cải thiện quy trình."
+          }
+        ]
+      },
+      {
+        "title": "Không có một mẹo bao trùm mọi động từ",
+        "paragraphs": [
+          "Không thể chọn -ing hay to chỉ bằng cách dịch sang tiếng Việt. Các danh sách trong bài là nhóm thông dụng, không phải toàn bộ động từ tiếng Anh.",
+          "Khi tra từ mới, nên ghi một cụm ví dụ có cả phần bổ ngữ. Một số động từ đổi nghĩa theo dạng đi sau; xem bài riêng về stop, try, remember và forget."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Verbs followed by '-ing' or infinitive | LearnEnglish",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/verbs-followed-ing-or-infinitive",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Verbs followed by the infinitive | LearnEnglish",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verbs-followed-infinitive",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "'to'-infinitives | LearnEnglish",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/infinitives",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "'-ing' forms | LearnEnglish",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/ing-forms",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "gerund-infinitive-meaning",
+    "groupId": "verbs",
+    "title": "Đổi nghĩa với -ing và to: stop, try, remember, forget",
+    "aliases": [
+      "stop doing stop to do",
+      "try doing try to do",
+      "remember doing remember to do",
+      "forget doing forget to do",
+      "gerund infinitive meaning",
+      "đổi nghĩa ing to",
+      "quên làm nhớ đã làm"
+    ],
+    "summary": "Cả hai dạng có thể đúng nhưng diễn đạt khác nhau: stop doing là dừng việc đó; stop to do là dừng một việc khác để làm việc này. Remember/forget phân biệt ký ức đã có với việc cần thực hiện.",
+    "whenToUse": [
+      "Chọn đúng ý khi một động từ chấp nhận cả -ing và to-infinitive.",
+      "Kiểm tra sự việc là trải nghiệm trước đó, nhiệm vụ chưa làm hay một hành động đang cố thực hiện."
+    ],
+    "structures": [
+      "stop + V-ing: ngừng hành động đang nói đến",
+      "stop + to V: dừng lại để làm việc khác",
+      "try + V-ing: thử một cách làm; try + to V: cố làm",
+      "remember/forget + V-ing: nhớ/quên một trải nghiệm đã xảy ra",
+      "remember/forget + to V: nhớ/quên thực hiện việc cần làm"
+    ],
+    "examples": [
+      {
+        "en": "We stopped talking when the film began.",
+        "vi": "Chúng tôi ngừng nói chuyện khi bộ phim bắt đầu."
+      },
+      {
+        "en": "We stopped to buy water on the way home.",
+        "vi": "Chúng tôi dừng lại để mua nước trên đường về."
+      },
+      {
+        "en": "Try moving your desk closer to the window.",
+        "vi": "Hãy thử chuyển bàn lại gần cửa sổ hơn."
+      },
+      {
+        "en": "I remembered to send the invitation.",
+        "vi": "Tôi đã nhớ gửi lời mời."
+      },
+      {
+        "en": "I remember sending the invitation yesterday.",
+        "vi": "Tôi nhớ là đã gửi lời mời hôm qua."
+      }
+    ],
+    "notes": [
+      "Try to do nhấn mạnh nỗ lực, không tự khẳng định thành công. Try doing gợi ý thử một giải pháp xem có hiệu quả không.",
+      "Remember doing nói đến ký ức về việc xảy ra trước lúc nhớ; remember to do nói đến việc nhớ nhiệm vụ trước khi thực hiện. Đây là quan hệ thời gian, không phải quy tắc nhận diện chỉ dựa vào yesterday/tomorrow.",
+      "Forgot to lock nghĩa là quên khóa và không làm việc đó; never forget meeting diễn đạt không quên được một lần gặp."
+    ],
+    "mistakes": [
+      {
+        "context": "Bạn đang nhắc người khác mua sữa tối nay; việc mua chưa xảy ra.",
+        "wrong": "Please remember buying milk on your way home tonight.",
+        "correct": "Please remember to buy milk on your way home tonight.",
+        "explanation": "Trong lời nhắc mua sữa tối nay, việc mua chưa xảy ra; dùng remember to buy. Remember buying có thể đúng trong ngữ cảnh hồi tưởng khác."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Hai câu đúng, hai ý khác",
+        "explanation": "“I stopped drinking coffee” là tôi đã ngừng uống cà phê. “I stopped to drink coffee” là tôi dừng hoạt động khác để uống cà phê."
+      }
+    ],
+    "details": [
+      {
+        "title": "Đọc ý nghĩa trước khi đổi dạng",
+        "paragraphs": [
+          "Đổi -ing thành to không phải lúc nào cũng là sửa lỗi. Nếu câu gốc đúng ngữ pháp nhưng sai ý định, cần ghi rõ ý muốn nói rồi mới chọn cấu trúc.",
+          "Chẳng hạn “I tried calling her” gợi ý tôi đã thử gọi như một cách giải quyết. “I tried to call her” tập trung vào nỗ lực gọi, có thể gặp trở ngại."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Verbs followed by '-ing' or infinitive to change meaning | LearnEnglish",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/verbs-followed-ing-or-infinitive-change-meaning",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "stative-verbs",
+    "groupId": "verbs",
+    "title": "Động từ trạng thái và cách dùng tiếp diễn",
+    "aliases": [
+      "stative verbs",
+      "state verbs",
+      "dynamic verbs",
+      "động từ trạng thái",
+      "động từ hành động",
+      "think have see be taste",
+      "không dùng tiếp diễn"
+    ],
+    "summary": "Động từ trạng thái mô tả điều biết, tin, thích, sở hữu hoặc cảm nhận; thường không dùng tiếp diễn ở nghĩa đó. Cùng một từ có thể dùng tiếp diễn khi chuyển sang nghĩa hoạt động hay hành vi tạm thời.",
+    "whenToUse": [
+      "Chọn dạng đơn hay tiếp diễn theo nghĩa của động từ trong câu.",
+      "Tránh học danh sách “cấm tiếp diễn” như quy tắc bất biến cho mọi nghĩa của một từ."
+    ],
+    "structures": [
+      "Trạng thái: S + know/believe/like/own… ở dạng phù hợp",
+      "Hoạt động đang diễn ra: S + am/is/are + V-ing",
+      "think + mệnh đề: có ý kiến; be thinking about: đang suy nghĩ",
+      "have + đồ vật: sở hữu; be having + một hoạt động: đang thực hiện hoạt động đó"
+    ],
+    "examples": [
+      {
+        "en": "I know the answer, but I can’t explain it yet.",
+        "vi": "Tôi biết đáp án, nhưng chưa giải thích được."
+      },
+      {
+        "en": "I think this plan is realistic.",
+        "vi": "Tôi nghĩ kế hoạch này thực tế."
+      },
+      {
+        "en": "I’m thinking about a different approach.",
+        "vi": "Tôi đang suy nghĩ về một cách tiếp cận khác."
+      },
+      {
+        "en": "The soup tastes salty, so the chef is tasting it again.",
+        "vi": "Món súp có vị mặn nên đầu bếp đang nếm lại."
+      }
+    ],
+    "notes": [
+      "Các nhóm thường gặp gồm nhận thức (know, understand), cảm xúc (like, want), sở hữu (own, belong) và cảm nhận (seem, taste). Cần kiểm tra nghĩa cụ thể.",
+      "Be being có thể mô tả cách cư xử tạm thời, không phải mọi đặc điểm của người đó: “He is being impatient” nói về hành vi lúc này.",
+      "Không suy ra tiếp diễn chỉ vì có now hoặc at the moment: một trạng thái vẫn có thể đang đúng ở thời điểm hiện tại."
+    ],
+    "mistakes": [
+      {
+        "wrong": "I am knowing your address.",
+        "correct": "I know your address.",
+        "explanation": "Với nghĩa biết thông tin, know thường dùng dạng đơn, không dùng am knowing."
+      },
+      {
+        "wrong": "This bag is belonging to my aunt.",
+        "correct": "This bag belongs to my aunt.",
+        "explanation": "Belong ở nghĩa thuộc về là trạng thái, thường không dùng tiếp diễn."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Have và be having",
+        "explanation": "“She has a bicycle” nói về sở hữu; “She is having lunch” nói về hoạt động. Có từ have không đồng nghĩa với cấm tiếp diễn."
+      },
+      {
+        "title": "See và be seeing",
+        "explanation": "See có thể mô tả nhận thức/quan điểm; be seeing có thể mang nghĩa gặp ai theo lịch hẹn. Nghĩa thay đổi quyết định cấu trúc."
+      }
+    ],
+    "details": [
+      {
+        "title": "Ưu tiên nghĩa thay vì nhãn cố định",
+        "paragraphs": [
+          "Một từ không nhất thiết luôn là động từ trạng thái trong mọi câu. Think, have, see, be, taste và smell cần được đọc cùng phần bổ nghĩa.",
+          "Nếu gặp cách nói tiếp diễn khác thông thường, đừng vội kết luận người viết sai chỉ từ danh sách. Trước hết xem họ đang nhấn mạnh hoạt động, hành vi nhất thời hay một cách dùng đặc biệt."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Stative verbs | LearnEnglish",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/stative-verbs",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "used-to",
+    "groupId": "verbs",
+    "title": "Used to, would và be/get used to",
+    "aliases": [
+      "used to",
+      "be used to",
+      "get used to",
+      "past habits",
+      "thói quen quá khứ",
+      "đã từng",
+      "quen với",
+      "would past habit"
+    ],
+    "summary": "Used to + động từ nói về thói quen/trạng thái quá khứ đã thay đổi. Be used to là đã quen; get used to là quá trình làm quen. Sau be/get used to dùng danh từ hoặc -ing.",
+    "whenToUse": [
+      "Kể sự khác nhau giữa trước đây và hiện tại.",
+      "Diễn tả đã quen hay đang thích nghi với một điều kiện; không nhầm với hành động đã từng làm."
+    ],
+    "structures": [
+      "S + used to + động từ nguyên mẫu",
+      "S + didn’t use to + động từ nguyên mẫu; Did + S + use to + động từ nguyên mẫu?",
+      "S + would + động từ nguyên mẫu: hành động lặp lại trong bối cảnh quá khứ",
+      "S + be/get used to + danh từ/đại từ/V-ing"
+    ],
+    "examples": [
+      {
+        "en": "I used to study late at night, but now I start early.",
+        "vi": "Trước đây tôi hay học khuya, nhưng giờ tôi bắt đầu sớm."
+      },
+      {
+        "en": "I’m used to reading on the train.",
+        "vi": "Tôi đã quen với việc đọc sách trên tàu."
+      },
+      {
+        "en": "I’m getting used to the new timetable.",
+        "vi": "Tôi đang làm quen với thời khóa biểu mới."
+      },
+      {
+        "en": "During our summer visits, my uncle would tell us stories after dinner.",
+        "vi": "Trong những lần về thăm vào mùa hè, chú tôi thường kể chuyện cho chúng tôi sau bữa tối."
+      }
+    ],
+    "notes": [
+      "Used to dùng được với trạng thái như live, know, like; would chỉ thói quen quá khứ thường dùng cho hành động lặp lại, không dùng máy móc thay used to cho trạng thái.",
+      "Với didn’t và did, cách viết chuẩn tra cứu ở đây là use to. Động từ theo sau vẫn ở dạng nguyên mẫu.",
+      "To trong be/get used to là giới từ; vì vậy dùng studying, không dùng study. Be/get có thể chia ở quá khứ, hiện tại hoặc tương lai."
+    ],
+    "mistakes": [
+      {
+        "wrong": "I’m used to wake up early.",
+        "correct": "I’m used to waking up early.",
+        "explanation": "Với ý đã quen, sau be used to là -ing."
+      },
+      {
+        "wrong": "Did you used to work here?",
+        "correct": "Did you use to work here?",
+        "explanation": "Khi đã có did, dùng use to trong dạng chuẩn được trình bày ở đây."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Used to và quá khứ đơn",
+        "explanation": "Quá khứ đơn kể được cả sự kiện một lần lẫn thói quen, nhưng tự nó không nhấn mạnh sự thay đổi đến hiện tại như used to. Sự kiện xảy ra một lần thường dùng quá khứ đơn."
+      },
+      {
+        "title": "Be used to và get used to",
+        "explanation": "Be used to nhấn mạnh trạng thái đã quen; get used to nhấn mạnh quá trình dần thích nghi, chưa nhất thiết đã thấy dễ chịu."
+      }
+    ],
+    "details": [
+      {
+        "title": "Không dịch tất cả thành “quen”",
+        "paragraphs": [
+          "“I used to work here” nghĩa là trước đây tôi làm ở đây. “I am used to working here” nghĩa là tôi đã quen làm việc ở đây; hai câu không thay thế nhau.",
+          "Would kể thói quen cần ngữ cảnh quá khứ rõ. Đứng riêng, would còn có các nghĩa khác nên không tự động hiểu là “đã từng”."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Different uses of 'used to' | LearnEnglish",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2-grammar/different-uses-of-used-to",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Past habits: 'used to', 'would' and the past simple | LearnEnglish",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2-grammar/past-habits-used-to-would-past-simple",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  }
+]

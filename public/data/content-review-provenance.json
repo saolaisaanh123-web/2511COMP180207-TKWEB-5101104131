@@ -4,7 +4,7 @@
   "method": "Targeted editorial review of audit findings. Definitions and bilingual practice examples are original app-authored content. Oxford sourceFactIndex identifies the exact pinned headword/POS/homograph fact, not publisher approval of the authored definition.",
   "overlay": "data/authoring/content-review-2026-10.txt",
   "overlaySha256": "85577b9ab62aa1ed2090dee3ad12bbbfc18daf4edd900e23012605d23d96e9b5",
-  "canonicalVocabularySha256": "420e5cf8eb072e6db069a79cb9c851c172ea60b232e79ee5f999b4cbe1687521",
+  "canonicalVocabularySha256": "b6f7f03d076425de1763975835266588780ab34032ca1c9148ab8f98594ee9a6",
   "reviewedCorrections": [
     {
       "id": "ox-f86b1f62a85542-01",
@@ -259,5 +259,92 @@
     "Only one selected sense is taught per current Oxford spelling group; additional source facts remain in oxford-provenance.json.",
     "Unreviewed historical-source meanings stay searchable with learning_status lookup and are excluded from practice.",
     "No IPA or recorded audio was invented or added by this review."
-  ]
+  ],
+  "spellingReview": {
+    "date": "2026-10-20",
+    "method": "Explicit editorial spelling alternatives for the existing reviewed sense and part of speech, including regional spellings and established compound-word spellings. No fuzzy matching, synonyms, inflections or additional senses are implied; not publisher certification.",
+    "policy": "scripts/corpus_policy.py:REVIEWED_SPELLING_VARIANTS",
+    "entries": [
+      {
+        "id": "neighbour-01",
+        "word": "neighbour",
+        "partOfSpeech": "noun",
+        "alternatives": [
+          "neighbor"
+        ]
+      },
+      {
+        "id": "practise-01",
+        "word": "practise",
+        "partOfSpeech": "verb",
+        "alternatives": [
+          "practice"
+        ]
+      },
+      {
+        "id": "ox-9bf86920ceaf83-01",
+        "word": "characterize",
+        "partOfSpeech": "verb",
+        "alternatives": [
+          "characterise"
+        ]
+      },
+      {
+        "id": "well-being-01",
+        "word": "well-being",
+        "partOfSpeech": "noun",
+        "alternatives": [
+          "wellbeing"
+        ]
+      },
+      {
+        "id": "healthcare-01",
+        "word": "healthcare",
+        "partOfSpeech": "noun",
+        "alternatives": [
+          "health care"
+        ]
+      },
+      {
+        "id": "ox-cbbeb3cc2d482a-01",
+        "word": "coordination",
+        "partOfSpeech": "noun",
+        "alternatives": [
+          "co-ordination"
+        ]
+      },
+      {
+        "id": "ox-91e1620ca8e28e-01",
+        "word": "film-maker",
+        "partOfSpeech": "noun",
+        "alternatives": [
+          "filmmaker"
+        ]
+      },
+      {
+        "id": "ox-65fc87903cb2ce-01",
+        "word": "fundraising",
+        "partOfSpeech": "noun",
+        "alternatives": [
+          "fund-raising"
+        ]
+      },
+      {
+        "id": "ox-04225201515016-01",
+        "word": "no one",
+        "partOfSpeech": "pronoun",
+        "alternatives": [
+          "no-one"
+        ]
+      },
+      {
+        "id": "ox-f61fc65b2a7677-01",
+        "word": "non-profit",
+        "partOfSpeech": "adjective",
+        "alternatives": [
+          "nonprofit"
+        ]
+      }
+    ]
+  }
 }

@@ -6,6 +6,10 @@ Website: [Jeongyeon](https://saolaisaanh123-web.github.io/WebHocTuVungTiengAnh/)
 
 Nâng cấp hiện tại: bốn chế độ chọn từ, phân tích bằng chứng ghi nhớ, 12 hội thoại biên soạn sẵn, kiểm tra cấu trúc viết ngoại tuyến, tải lại offline và đồng bộ có xử lý xung đột. Xem [báo cáo chi tiết](docs/nang-cap-jeongyeon-2026-10-19.md) và [thiết lập Supabase Free](docs/services-setup.md). Không có AI chấm câu tổng quát hoặc cơ chế phát sinh phí.
 
+**Tra cứu ngữ pháp** có 52 bài thuộc 8 nhóm: cấu trúc câu/từ loại; danh từ/đại từ; mạo từ/lượng từ; thì/thể; động từ; mệnh đề; so sánh; giới từ/liên từ. Tìm bằng tiếng Việt có/không dấu, tiếng Anh hoặc tên gọi tương đương. Mỗi bài có tóm tắt, cách dùng, cấu trúc, ví dụ Anh–Việt tự viết, phần chi tiết mở rộng và link nguồn đã đọc. Đây là mục đọc lại kiến thức, không thêm bài kiểm tra hay điểm số.
+
+Nguồn chính là **British Council LearnEnglish**, theo lựa chọn của người dùng ngày 20/10/2026; Cambridge English Grammar Today chưa truy cập được do Cloudflare nên không được ghi là đã đối chiếu. Nội dung nằm trong [data/grammar](data/grammar/README.md), tách khỏi giao diện và dữ liệu học riêng. Không cần tài khoản/API, không phát sinh phí; nội dung tra cứu được đóng gói để đọc offline, còn trang nguồn bên ngoài cần mạng.
+
 ## Chạy trên máy
 
 Cần Node.js 22 trở lên và npm:
@@ -25,7 +29,7 @@ Kiểm thử trình duyệt: `npm run test:e2e`. Cấu hình ưu tiên `CHROMIUM
 
 Sửa file UTF-8 `public/data/vocabulary.txt`. Mỗi mục cách nhau bởi một dòng `---`; mỗi trường trên một dòng `tên_trường: nội dung`. Hỗ trợ CRLF của Windows, BOM và tiếng Việt. Không dùng dòng xuống hàng bên trong giá trị trường.
 
-Các trường bắt buộc: `id`, `word`, `meaning_vi`, `example_en`, `example_vi`. Những trường khác xem trong file mẫu. `topics` và `collections` dùng dấu phẩy; `accepted_answers` dùng dấu `|` giữa các đáp án hợp lệ. Không tự chấp nhận từ đồng nghĩa ngoài danh sách này. `audio_word` và `audio_example` nhận URL HTTP/HTTPS; hãy chỉ dùng nội dung có quyền sử dụng.
+Các trường bắt buộc: `id`, `word`, `meaning_vi`, `example_en`, `example_vi`. Những trường khác xem trong file mẫu. `topics` và `collections` dùng dấu phẩy; `accepted_answers` dùng dấu `|` giữa các đáp án hợp lệ. Trường tùy chọn `spelling_variants` cũng dùng `|`, chỉ dành cho cách viết tương đương đã rà theo nghĩa/từ loại (như `neighbour`/`neighbor`); thêm biến thể này không làm đổi phiên bản nghĩa hay xóa lịch ôn. Không dùng nó cho từ đồng nghĩa hoặc nghĩa mới. `audio_word` và `audio_example` nhận URL HTTP/HTTPS; hãy chỉ dùng nội dung có quyền sử dụng.
 
 - Giữ nguyên ID khi sửa cách diễn đạt để giữ lịch sử. Một nghĩa mới nên có ID mới.
 - Bộ từ: `foundation`, `ielts`, `personal`; một mục có thể có nhiều nhãn.
@@ -44,11 +48,15 @@ Các trường bắt buộc: `id`, `word`, `meaning_vi`, `example_en`, `example_
 
 **Hôm nay** ưu tiên lượt kỹ năng đến hạn trước các mục mới. Mặc định 5 mục mới/ngày, chỉnh được trong cài đặt; giảm đề xuất còn 2 khi tồn hơn 20 lượt ôn. Số mục đến hạn được đếm theo ID, khác số lượt kỹ năng.
 
-Mỗi kỹ năng có lịch riêng: 1–3–7–14–30 ngày, sai quay về 1 ngày. Lượt dùng hỗ trợ không tăng bậc. Quên được hỏi lại sau tối đa ba câu xen kẽ nếu hàng đợi đủ dài; nếu không đủ thì nằm cuối hàng đợi. Ôn quá hạn không tự tính là quên. Ngày dùng múi giờ địa phương của trình duyệt.
+Mỗi kỹ năng có lịch riêng: 1–3–7–14–30 ngày, sai quay về 1 ngày. Lượt đúng lần đầu, không gợi ý và đã đến hạn được tăng bậc, gồm cả tự đánh giá Nhớ rõ; không cần đủ điều kiện bằng chứng nhớ độc lập để điều chỉnh lịch. Lượt đúng có hỗ trợ giữ bậc và hẹn kiểm tra lại ngày mai; đúng trước hạn giữ nguyên lịch. Điều chỉnh lịch không tự chứng nhận thành thạo. Quên được hỏi lại sau tối đa ba câu xen kẽ nếu hàng đợi đủ dài; nếu không đủ thì nằm cuối hàng đợi. Ôn quá hạn không tự tính là quên. Ngày dùng múi giờ địa phương của trình duyệt.
 
 Phiên học và các lượt đã gửi được lưu trong IndexedDB. Tải lại và tiếp tục không gửi lại kết quả đã lưu. Một lần ôn chỉ cập nhật lịch một lần; lượt luyện tự do lưu bằng chứng nhưng không thay đổi lịch. Mục tự đánh dấu đã biết được bỏ khỏi danh sách từ mới, không coi là đã kiểm tra. Luyện tự do không loại từ khỏi lần giới thiệu theo lịch; các phiên ôn đang dở được giữ riêng khi chuyển sang luyện tự do. Câu đang gõ được lưu nháp và phục hồi; kết quả đã gửi không bị gửi trùng.
 
 Sáu kỹ năng được lưu riêng. Hiểu nghĩa và nghe nhớ nghĩa dùng tự đánh giá **Quên / Nhớ khó / Nhớ rõ**; tự đánh giá không được xem như kiểm tra khách quan. Nhớ để viết, nghe chính tả, điền ngữ cảnh được chấm theo đáp án khai báo, bỏ khoảng trắng thừa và không phân biệt hoa thường. Câu tự viết được lưu như trước, có thêm phản hồi về bảy nhóm cấu trúc giới hạn với tô lỗi, giải thích, gợi ý và lưu các bản sửa. Không phát hiện mẫu sai không có nghĩa câu đúng; nghĩa/ngữ cảnh/độ tự nhiên ghi rõ **Chưa thể chấm tự động**. Không có yêu cầu đến dịch vụ ngữ pháp hoặc AI.
+
+Đợt sửa 20/10/2026 bổ sung từ loại/giải nghĩa cho bài nhớ từ và nghe chính tả bằng cả câu khi có ngữ cảnh phù hợp. Một số đáp án mơ hồ đã rà (cùng nghĩa Việt/từ loại, câu che từ cụ thể, nhóm đồng âm) được lưu là **chưa chấm**, kèm lý do; không tính đúng/sai, không đổi lịch hay tạo lượt sai lặp lại. Đây là bài nhớ từ mục tiêu, không phải bộ chấm mọi từ đồng nghĩa/câu tiếng Anh. Các mục phân biệt hoa/thường vẫn theo `case_sensitive`.
+
+Kho từ, bộ sưu tập và thẻ từ trang chủ chỉ ghi tiếp xúc khi chính phần nghĩa hiện ít nhất 60% trong màn hình liên tục 700 ms, tab đang hiển thị và không bị che; không ghi hàng loạt vì tải một trang. Mở đáp án/chi tiết vẫn ghi tiếp xúc. Xem [tiến độ sửa và việc còn lại](docs/NEXT-SESSION.md).
 
 Trong **Luyện tập → Hội thoại thực tế**, chọn nội dung B1/B2, dài 6 hoặc 8 lượt lời. Mỗi đoạn có hai nhân vật và bốn mục từ, bản dịch tùy chọn, nghe từng câu/toàn đoạn, câu hỏi hiểu–điền–nghĩa và trả lời mở chưa chấm. Chỉ ghi “phù hợp từ đã học” khi có ít nhất ba từ khớp dữ liệu học thực tế; trường hợp khác là bài mẫu, không giả cá nhân hóa. Ngữ cảnh đang hiện là hỗ trợ, không được gán bằng chứng nhớ độc lập.
 
@@ -86,7 +94,7 @@ Vite dùng `base: './'`; nội dung lấy theo `import.meta.env.BASE_URL`. Đi�
 - `public/data/vocabulary.txt`: toàn bộ dữ liệu từ vựng mẫu, độc lập mã nguồn.
 - `src/core.ts`: parser/serializer, hợp nhất, chấm đáp án, lịch ôn, đánh giá bằng chứng và kiểm tra backup.
 - `src/storage.ts`: giao dịch IndexedDB v2, nâng cấp v1, tách nội dung/tiến độ và chống ghi đè giữa tab.
-- `src/main.tsx`: sáu mục điều hướng hiện có, phiên học, âm thanh, nhập/xuất và tích hợp các nâng cấp.
+- `src/main.tsx`: bảy mục điều hướng hiện có, phiên học, âm thanh, nhập/xuất và tích hợp các nâng cấp.
 - `src/recommendations.ts`, `src/analytics.ts`: chọn từ và phân tích bằng chứng riêng với thứ tự Kho từ.
 - `src/conversations.ts`, `src/ConversationPractice.tsx`: nội dung hội thoại và bài luyện có kết quả thật.
 - `src/writing.ts`, `src/WritingFeedback.tsx`: kiểm tra cấu trúc tại máy, phản hồi và các bản sửa.

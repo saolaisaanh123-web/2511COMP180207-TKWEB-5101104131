@@ -1407,7 +1407,7 @@
   ],
   "currentCanonicalVocabulary": {
     "filename": "vocabulary.txt",
-    "sha256": "420e5cf8eb072e6db069a79cb9c851c172ea60b232e79ee5f999b4cbe1687521"
+    "sha256": "b6f7f03d076425de1763975835266588780ab34032ca1c9148ab8f98594ee9a6"
   },
   "historicalExportNote": "inputBeforeAttachingMetadata and outputAfterAttachingMetadata describe the original pinned frequency export, before later editorial corrections; currentCanonicalVocabulary identifies the current canonical TXT."
 }

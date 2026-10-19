@@ -645,6 +645,7 @@ news_source_type:
 learning_status: ready
 learning_note: Nội dung bài học do ứng dụng biên soạn và rà lại; không phải toàn bộ nghĩa của đầu từ.
 source_fact_index: 5303
+spelling_variants: wellbeing
 ---
 id: home-01
 word: home
@@ -789,6 +790,7 @@ news_source_type:
 learning_status: ready
 learning_note: Nội dung bài học do ứng dụng biên soạn và rà lại; không phải toàn bộ nghĩa của đầu từ.
 source_fact_index: 508
+spelling_variants: neighbor
 ---
 id: parent-01
 word: parent
@@ -3417,6 +3419,7 @@ news_source_type:
 learning_status: ready
 learning_note: Nội dung bài học do ứng dụng biên soạn và rà lại; không phải toàn bộ nghĩa của đầu từ.
 source_fact_index: 610
+spelling_variants: practice
 ---
 id: repeat-01
 word: repeat
@@ -6765,6 +6768,7 @@ news_source_type:
 learning_status: ready
 learning_note: Nội dung bài học do ứng dụng biên soạn và rà lại; không phải toàn bộ nghĩa của đầu từ.
 source_fact_index: 3609
+spelling_variants: health care
 ---
 id: infection-01
 word: infection
@@ -32685,6 +32689,7 @@ news_source_type:
 source_fact_index: 4186
 learning_status: ready
 learning_note: Nghĩa hiện đại và ví dụ song ngữ được biên soạn, rà lại cho bài học này; không phải định nghĩa hoặc ví dụ của Oxford.
+spelling_variants: characterise
 ---
 id: ox-97488fbab32821-01
 word: charge
@@ -43161,6 +43166,7 @@ news_source_type:
 learning_status: ready
 learning_note: Nội dung bài học do ứng dụng biên soạn và rà lại; không phải toàn bộ nghĩa của đầu từ.
 source_fact_index: 4288
+spelling_variants: co-ordination
 ---
 id: ox-bf243850984103-01
 word: coordinator
@@ -69477,6 +69483,7 @@ news_source_type:
 learning_status: ready
 learning_note: Nội dung bài học do ứng dụng biên soạn và rà lại; không phải toàn bộ nghĩa của đầu từ.
 source_fact_index: 4512
+spelling_variants: filmmaker
 ---
 id: ox-dfc3376b8266c6-01
 word: filter
@@ -74482,6 +74489,7 @@ news_source_type:
 learning_status: ready
 learning_note: Nội dung bài học do ứng dụng biên soạn và rà lại; không phải toàn bộ nghĩa của đầu từ.
 source_fact_index: 4541
+spelling_variants: fund-raising
 ---
 id: ox-60e04706c43421-01
 word: funeral
@@ -109585,6 +109593,7 @@ news_source_type:
 learning_status: ready
 learning_note: Nội dung bài học do ứng dụng biên soạn và rà lại; không phải toàn bộ nghĩa của đầu từ.
 source_fact_index: 521
+spelling_variants: no-one
 ---
 id: ox-d3a61c684446b2-01
 word: noble
@@ -109909,6 +109918,7 @@ news_source_type:
 learning_status: ready
 learning_note: Nội dung bài học do ứng dụng biên soạn và rà lại; không phải toàn bộ nghĩa của đầu từ.
 source_fact_index: 4813
+spelling_variants: nonprofit
 ---
 id: ox-140bedbf9c3f6d-01
 word: none

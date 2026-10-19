@@ -1,5 +1,5 @@
 import { createServer } from "node:http";
-import { readFile, stat } from "node:fs/promises";
+import { readFile, stat, readdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { resolve, extname, sep } from "node:path";
 import assert from "node:assert/strict";
@@ -8,6 +8,57 @@ const root = resolve("dist");
 const expectedCount = (
   await readFile("public/data/vocabulary.txt", "utf8")
 ).match(/^id: /gm).length;
+const grammarFiles = (await readdir("data/grammar")).filter((name) =>
+  name.endsWith(".json"),
+);
+const expectedGrammarCount = (
+  await Promise.all(
+    grammarFiles.map(
+      async (name) =>
+        JSON.parse(await readFile("data/grammar/" + name, "utf8")).length,
+    ),
+  )
+).reduce((total, count) => total + count, 0);
+async function checkGrammar(page) {
+  await page
+    .getByRole("button", { name: "Tra cứu ngữ pháp", exact: true })
+    .click();
+  await page
+    .getByRole("heading", { name: "Tra cứu ngữ pháp", exact: true })
+    .waitFor();
+  assert.equal(
+    await page.locator(".grammar-card").count(),
+    expectedGrammarCount,
+  );
+  await page
+    .getByRole("searchbox", { name: "Tìm chủ điểm ngữ pháp" })
+    .fill("bi dong");
+  await page.locator('.grammar-card[data-grammar-id="passive"]').click();
+  assert.match(
+    await page.locator(".grammar-article h1").innerText(),
+    /bị động/i,
+  );
+  assert.ok((await page.locator(".grammar-summary").innerText()).length > 35);
+  const sources = await page
+    .locator(".grammar-sources a")
+    .evaluateAll((links) => links.map((link) => link.href));
+  assert.ok(sources.length > 0);
+  assert.ok(
+    sources.every((href) =>
+      href.startsWith(
+        "https://learnenglish.britishcouncil.org/free-resources/grammar/",
+      ),
+    ),
+  );
+  await page
+    .locator("details")
+    .filter({ has: page.locator("summary", { hasText: "Lỗi thường gặp" }) })
+    .locator("summary")
+    .click();
+  assert.ok(
+    (await page.locator(".grammar-mistakes").innerText()).includes("Nên dùng"),
+  );
+}
 const mime = {
   ".html": "text/html",
   ".js": "text/javascript",
@@ -67,6 +118,7 @@ try {
     await page
       .getByRole("heading", { name: "Hôm nay, mình học gì?" })
       .waitFor();
+    await checkGrammar(page);
     assert.deepEqual(errors, []);
     console.log(
       `PASS: production ${path} renders, loads ${expectedCount} entries, reloads without error`,
@@ -144,9 +196,10 @@ try {
       Number(await page.locator(".word-grid").getAttribute("data-total-items")),
       expectedCount,
     );
+    await checkGrammar(page);
     assert.deepEqual(errors, []);
     console.log(
-      `PASS: production ${path} reloads offline with ${expectedCount} entries; private/API requests are not cached`,
+      `PASS: production ${path} reloads offline with ${expectedCount} entries and grammar lookup; private/API requests are not cached`,
     );
     await page.close();
   }

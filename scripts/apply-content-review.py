@@ -14,7 +14,11 @@ import json
 from pathlib import Path
 
 from corpus_io import parse_records, read_records, serialize_records
-from corpus_policy import KNOWN_FREQUENCY_CONFLATIONS as CONFLATED
+from corpus_policy import (
+    KNOWN_FREQUENCY_CONFLATIONS as CONFLATED,
+    REVIEWED_SPELLING_VARIANTS,
+    apply_reviewed_spelling_variants,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -70,6 +74,7 @@ def main():
             row["frequency_zipf"] = ""
             row["frequency_source"] = ""
             row["frequency_note"] = CONFLATED[row["word"]]
+    apply_reviewed_spelling_variants(records)
     text = serialize_records(records)
     # Structural and semantic invariants matter more than a forced round count.
     assert [row["id"] for row in records] == [row["id"] for row in parse_records(original.decode("utf-8"))]
@@ -105,6 +110,15 @@ def main():
         "reviewedCorrections": [{"id": row["id"], "word": row["word"], "sourceFactIndex": int(row["source_fact_index"]), "meaningVi": row["meaning_vi"]} for row in overrides],
         "coverage": metadata["coverage"],
         "limitations": ["Reviewed means an app editorial check, not external certification or an accuracy guarantee.", "Only one selected sense is taught per current Oxford spelling group; additional source facts remain in oxford-provenance.json.", "Unreviewed historical-source meanings stay searchable with learning_status lookup and are excluded from practice.", "No IPA or recorded audio was invented or added by this review."],
+        "spellingReview": {
+            "date": "2026-10-20",
+            "method": "Explicit editorial spelling alternatives for the existing reviewed sense and part of speech, including regional spellings and established compound-word spellings. No fuzzy matching, synonyms, inflections or additional senses are implied; not publisher certification.",
+            "policy": "scripts/corpus_policy.py:REVIEWED_SPELLING_VARIANTS",
+            "entries": [
+                {"id": entry_id, "word": headword, "partOfSpeech": part_of_speech, "alternatives": list(alternatives)}
+                for entry_id, (headword, part_of_speech, alternatives) in REVIEWED_SPELLING_VARIANTS.items()
+            ],
+        },
     }
     frequency_path = ROOT / "public/data/frequency-provenance.json"
     frequency = json.loads(frequency_path.read_text(encoding="utf-8"))

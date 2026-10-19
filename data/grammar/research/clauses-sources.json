@@ -1,0 +1,65 @@
+[
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/reported-speech-statements",
+    "title": "Reported speech: statements",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "fdb78e8e8c460fa23be0939c3ecd582215a4eb2bd7817f219cf4ac1e7cbd5398"
+  },
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/reported-speech-questions",
+    "title": "Reported speech: questions",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "510f69dc69afa14ac8b0414f319e520c7829726e3ef9fbbc33b17841c067da48"
+  },
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/reported-speech-reporting-verbs",
+    "title": "Reported speech: reporting verbs",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "d4b27a60fb18835ad84644db396a6a12f62014e9683e44664c66640158be365e"
+  },
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/conditionals-zero-first-second",
+    "title": "Conditionals: zero, first and second",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "931dc4a773a777e7382f5cb9bf257e9b357717068b8eea6cbee1c56fa7b075a5"
+  },
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/conditionals-third-mixed",
+    "title": "Conditionals: third and mixed",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "a6896bdd7ef6e3f18de53bd0fc6da6258b6d60f1a00f57c7b7e198f09688ed02"
+  },
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/wishes-wish-if-only",
+    "title": "Wishes: 'wish' and 'if only'",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "da7b939264221e54f0239bebfa090727913e1fa1eaacffc29c094eb2cbeedaa1"
+  },
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/relative-clauses-defining-relative-clauses",
+    "title": "Relative clauses: defining relative clauses",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "906840a3552cca682f8ca5106f493d4ec910e20a555e70d115aa9132d3d2ba81"
+  },
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/relative-clauses-non-defining-relative-clauses",
+    "title": "Relative clauses: non-defining relative clauses",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "c17f8bdbee16d8328f881ad90137f00f5903840fd2cca3b66c5738427721406c"
+  },
+  {
+    "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/c1/participle-clauses",
+    "title": "Participle clauses",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "sha256": "fb84a5496354d08c94f48f4599ca7d4c4c3bf7a3941a4ed825011fda02243315"
+  }
+]

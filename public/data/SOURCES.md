@@ -101,3 +101,9 @@ Giữ đủ 5.162 ID; **674 mục `learning_status: ready`** dùng được tron
 Chín mục có `news_media_url` theo VideoObject của bài PBS đã đối chiếu. URL được ghi như liên kết nhà xuất bản khai báo, chưa chứng minh phát trực tiếp thành công và chưa xác minh thời điểm cụm từ; `news_media_start` để trống. Không sao chép video hoặc tự thêm timestamp.
 
 TXT đã commit là nội dung chuẩn; sửa trực tiếp không cần viết lại ứng dụng. Các script tạo corpus/áp dụng review mặc định chỉ tạo bản xem trước, `--write` mới cập nhật; full builder bảo toàn mọi mục và trường đã có trong TXT. Kiểm tra `npm run test:data` bảo vệ các sửa lỗi, ID, phạm vi nguồn và hash. Không cần chạy full builder để dùng web.
+
+### Biến thể chính tả được chấp nhận
+
+Trường tùy chọn `spelling_variants` ghi các cách viết tương đương đã rà riêng theo nghĩa và từ loại, phân cách bằng `|`. Hiện có 10 mục, gồm `neighbour` → `neighbor`, động từ `practise` → `practice`, `characterize` → `characterise` và các cách ghép từ như `healthcare` → `health care`. Danh từ `practice` không nhận `practise`. Không suy ra tự động biến thể `-ise/-ize`, bỏ dấu gạch nối, từ đồng nghĩa hay cách chia động từ.
+
+Danh sách biên tập nằm trong `scripts/corpus_policy.py`, được áp dụng lại qua `scripts/apply-content-review.py`; full builder giữ trường này như các chỉnh sửa canonical khác. Đây là phần rà chính tả của ứng dụng, không phải sự chứng nhận của Oxford. `accepted_answers`, ID, nghĩa, lịch sử nội dung và các quyết định `lookup`/`ready` không đổi chỉ vì bổ sung trường này. Chỉ 10 mục có biến thể mới xuất trường mới; định dạng TXT cũ vẫn được hỗ trợ.

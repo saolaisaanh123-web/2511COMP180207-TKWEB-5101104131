@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import {
   ArrowRight,
   BookOpen,
+  BookText,
   CalendarDays,
   ChartNoAxesCombined,
   Check,
@@ -34,7 +35,6 @@ import {
   diff,
   skills,
   strength,
-  grade,
   record,
   day,
   validateBackup,
@@ -67,6 +67,10 @@ import { LearningInsights } from "./LearningInsights";
 import ConversationPractice from "./ConversationPractice";
 import WritingFeedback from "./WritingFeedback";
 import SyncSettings from "./SyncSettings";
+import { useVisibleExposure } from "./useVisibleExposure";
+import { assessLearningAnswer } from "./assessment";
+import GrammarReference from "./GrammarReference";
+import { grammarArticles, grammarGroups } from "./grammar-data";
 import { clearSyncBinding } from "./sync";
 import {
   registerOffline,
@@ -291,9 +295,11 @@ function App() {
   const exposeIds = (ids: string[]) => {
     if (!ids.length) return;
     const base = current.current;
+    const existing = ids.filter((id) => Object.hasOwn(base.entries, id));
+    if (!existing.length) return;
     const exposures = { ...base.exposures };
     const time = Date.now();
-    ids.forEach((id) => {
+    existing.forEach((id) => {
       exposures[id] = time;
     });
     commit({ ...base, exposures }, undefined, base).catch(notifyError);
@@ -445,12 +451,15 @@ function App() {
     setHint(draft?.hint ?? false);
     setRevealed(!!saved || !!draft?.revealed);
     setFeedback(
-      saved ? "Lượt này đã được lưu. Tiếp tục để tránh tính trùng." : undefined,
+      saved
+        ? (saved.assessmentNote ? saved.assessmentNote + " " : "") +
+            "Lượt này đã được lưu. Tiếp tục để tránh tính trùng."
+        : undefined,
     );
     started.current = Date.now();
     lock.current = !!saved;
     const question = session?.queue[session.index];
-    if (question && [0, 5].includes(question.skill)) {
+    if (question?.skill === 5) {
       const base = current.current;
       commit(expose(base, question.id), undefined, base).catch(notifyError);
     }
@@ -592,14 +601,17 @@ function App() {
     currentLibraryPage * 60,
   );
   const visibleWordIds = visibleWords.map((e) => e.word.id).join("\n");
-  useEffect(() => {
-    if (page === "library" && visibleWordIds)
-      exposeIds(visibleWordIds.split("\n"));
-  }, [page, visibleWordIds]);
+  const libraryExposureRef = useVisibleExposure(
+    exposeIds,
+    visibleWordIds,
+    page === "library" && !hasModal,
+  );
   const heroWordId = fresh[0]?.word.id;
-  useEffect(() => {
-    if (page === "today" && heroWordId) exposeIds([heroWordId]);
-  }, [page, heroWordId]);
+  const heroExposureRef = useVisibleExposure(
+    exposeIds,
+    heroWordId || "",
+    page === "today" && !hasModal,
+  );
   useEffect(
     () => setLibraryPage(1),
     [search, topic, collection, level, status],
@@ -901,16 +913,32 @@ function App() {
       clearTimeout(draftTimer.current);
       await persistDraft();
       const base = current.current;
-      const self = [0, 2].includes(task.skill),
-        ungraded = task.skill === 5;
-      const correct = ungraded ? false : self ? !!result : grade(answer, w);
+      const self = [0, 2].includes(task.skill);
+      const assessment =
+        !self && task.skill !== 5
+          ? assessLearningAnswer(
+              answer,
+              w,
+              task.skill,
+              Object.values(base.entries).map((e) => e.word),
+            )
+          : undefined;
+      const ungraded = task.skill === 5 || assessment?.outcome === "ungraded";
+      const correct = ungraded
+        ? false
+        : self
+          ? !!result
+          : assessment?.outcome === "correct";
       const prior = state.history.filter(
         (h) => h.wordId === w.id && h.skill === task.skill,
       );
-      const independent = independence(base, w.id);
+      const independent = !ungraded && independence(base, w.id);
       const r = {
         evidenceVersion: 2 as const,
         independent,
+        ...(assessment?.outcome === "ungraded"
+          ? { assessmentNote: assessment.message }
+          : {}),
         audioPlayed: [2, 3].includes(task.skill) ? audioPlayed : undefined,
         id: state.session.id + ":" + state.session.index,
         wordId: w.id,
@@ -952,7 +980,8 @@ function App() {
       setRevealed(true);
       setFeedback(
         ungraded
-          ? "Đã lưu câu. Chưa được chấm ngữ pháp hoặc mức độ sử dụng."
+          ? assessment?.message ||
+              "Đã lưu câu. Chưa được chấm ngữ pháp hoặc mức độ sử dụng."
           : correct
             ? self
               ? "Đã lưu tự đánh giá."
@@ -1171,6 +1200,7 @@ function App() {
             ["slang", "Slang", MessageCircle],
             ["practice", "Luyện tập", Headphones],
             ["progress", "Tiến độ", ChartNoAxesCombined],
+            ["grammar", "Tra cứu ngữ pháp", BookText],
           ].map(([key, label, Icon]) => (
             <button
               key={String(key)}
@@ -1180,7 +1210,7 @@ function App() {
               onClick={() => setPage(String(key))}
             >
               {React.createElement(Icon as typeof Leaf, { size: 20 })}
-              <span>{String(label)}</span>
+              <span>{key === "grammar" ? "Ngữ pháp" : String(label)}</span>
               {key === "today" && due.length > 0 && <b>{due.length}</b>}
             </button>
           ))}
@@ -1224,6 +1254,7 @@ function App() {
                   slang: "Slang",
                   practice: "Luyện tập",
                   progress: "Tiến độ",
+                  grammar: "Tra cứu ngữ pháp",
                   learn: "Phiên học",
                 }[page]
               }
@@ -1332,7 +1363,11 @@ function App() {
                     phút
                   </small>
                 </div>
-                <div className="hero-art" aria-hidden="true">
+                <div
+                  className="hero-art"
+                  aria-hidden="true"
+                  ref={heroExposureRef}
+                >
                   <div className="orbit orbit-one" />
                   <div className="orbit orbit-two" />
                   <span className="art-star star-one">✧</span>
@@ -1349,7 +1384,7 @@ function App() {
                       {fresh[0]?.word.ipa || "một từ mới, một khởi đầu"}
                     </span>
                     <div className="art-line" />
-                    <small>
+                    <small data-exposure-id={heroWordId}>
                       {fresh[0]?.word.meaning_vi || "Thêm từ để bắt đầu"}
                     </small>
                   </div>
@@ -1805,6 +1840,7 @@ function App() {
               </div>
               <div
                 className="word-grid"
+                ref={libraryExposureRef}
                 data-total-items={filtered.length}
                 tabIndex={-1}
                 aria-label="Kết quả Kho từ"
@@ -1822,7 +1858,7 @@ function App() {
                       <Volume2 size={17} />
                     </div>
                     <h3>{e.word.word}</h3>
-                    <p>{e.word.meaning_vi}</p>
+                    <p data-exposure-id={e.word.id}>{e.word.meaning_vi}</p>
                     <small>
                       {e.word.example_en ||
                         "Nguồn chưa có ví dụ; bài điền ngữ cảnh sẽ không được tạo."}
@@ -1919,7 +1955,7 @@ function App() {
               kind={page}
               entries={active}
               onOpen={openDetail}
-              onExpose={exposeIds}
+              onExpose={hasModal ? undefined : exposeIds}
               onPractice={(id) => start(false, id, 1)}
             />
           )}
@@ -1985,7 +2021,7 @@ function App() {
                           "Nhìn từ → tự nhớ nghĩa, rồi mở đáp án.",
                           "Nhìn nghĩa → gõ từ tiếng Anh.",
                           "Nghe từ → tự nhớ nghĩa.",
-                          "Nghe từ → gõ lại chính tả.",
+                          "Nghe câu → gõ từ còn thiếu trong ngữ cảnh.",
                           "Điền từ còn thiếu trong câu.",
                           "Viết câu, kiểm tra cấu trúc đã hỗ trợ và lưu bản sửa.",
                         ][i]
@@ -2087,16 +2123,49 @@ function App() {
                       : task.skill === 0 || task.skill === 5
                         ? w.word
                         : task.skill === 4
-                          ? "Điền từ phù hợp vào ngữ cảnh"
+                          ? "Điền từ đang học vào ngữ cảnh"
                           : w.meaning_vi}
                   </h2>
+                  {task.skill === 1 && (
+                    <div className="recall-cues">
+                      <p>
+                        {w.part_of_speech
+                          ? "Từ loại: " + w.part_of_speech
+                          : "Chưa khai báo từ loại."}
+                      </p>
+                      {w.definition_en && (
+                        <p lang="en">
+                          {cloze({ ...w, example_en: w.definition_en })}
+                        </p>
+                      )}
+                      <p className="fineprint">
+                        Đây là bài nhớ từ mục tiêu. Xem từ loại và giải nghĩa để
+                        phân biệt các từ có cùng nghĩa tiếng Việt.
+                      </p>
+                    </div>
+                  )}
+                  {task.skill === 3 && canPractice(w, 4) && (
+                    <>
+                      <p className="context" lang="en">
+                        {cloze(w)}
+                      </p>
+                      <p>Nghe cả câu rồi gõ từ hoặc cụm từ còn thiếu.</p>
+                    </>
+                  )}
                   {[2, 3].includes(task.skill) && (
                     <>
                       <button
                         className="audio-big"
-                        onClick={() => speak(w.word, w.audio_word, true)}
+                        onClick={() =>
+                          task.skill === 3 && canPractice(w, 4)
+                            ? speak(w.example_en, w.audio_example, true)
+                            : speak(w.word, w.audio_word, true)
+                        }
                       >
-                        <Volume2 size={28} /> Nghe từ
+                        <Volume2 size={28} />{" "}
+                        {task.skill === 3 && canPractice(w, 4)
+                          ? "Nghe câu"
+                          : "Nghe từ"}
                       </button>
                       <p className="fineprint" aria-live="polite">
                         {audioPlaying
@@ -2106,7 +2175,11 @@ function App() {
                             : "Chưa phát xong âm thanh; chưa thể ghi nhận kết quả nghe."}
                       </p>
                       <p className="fineprint">
-                        {w.audio_word
+                        {(
+                          task.skill === 3 && canPractice(w, 4)
+                            ? w.audio_example
+                            : w.audio_word
+                        )
                           ? "Âm thanh khai báo; có thể dùng giọng tổng hợp dự phòng."
                           : "Giọng tổng hợp của trình duyệt"}
                       </p>
@@ -2214,6 +2287,12 @@ function App() {
                         </button>
                       </h3>
                       <p>{w.meaning_vi}</p>
+                      {w.spelling_variants && (
+                        <p>
+                          Biến thể chính tả được chấp nhận:{" "}
+                          {w.spelling_variants.split("|").join(", ")}.
+                        </p>
+                      )}
                       {w.example_en && <p>{w.example_en}</p>}
                       <small>{w.example_vi}</small>
                       {!feedback &&
@@ -2305,6 +2384,12 @@ function App() {
                 </section>
               </>
             )}
+          {page === "grammar" && (
+            <GrammarReference
+              articles={grammarArticles}
+              groups={grammarGroups}
+            />
+          )}
           {page === "progress" && (
             <>
               <div className="page-title">

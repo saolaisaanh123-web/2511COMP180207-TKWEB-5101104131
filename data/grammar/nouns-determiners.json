@@ -1,0 +1,1120 @@
+[
+  {
+    "id": "nouns-countability",
+    "groupId": "nouns-pronouns",
+    "title": "Danh từ đếm được và không đếm được",
+    "aliases": [
+      "countable nouns",
+      "uncountable nouns",
+      "count nouns",
+      "uncount nouns",
+      "tính đếm được",
+      "advice information equipment"
+    ],
+    "summary": "Chọn dạng danh từ và lượng từ theo nghĩa đang dùng: một từ có thể đếm được ở nghĩa này nhưng không đếm được ở nghĩa khác.",
+    "whenToUse": [
+      "Khi chọn a/an, số đếm, số nhiều hoặc các lượng từ như many và much.",
+      "Khi dịch những từ tiếng Việt dễ đếm thành tiếng Anh, đặc biệt advice, information, equipment và furniture."
+    ],
+    "structures": [
+      "a/an + danh từ đếm được số ít; số đếm + danh từ đếm được số nhiều",
+      "some/much/a little + danh từ không đếm được",
+      "a piece of advice; two items of equipment"
+    ],
+    "examples": [
+      {
+        "en": "We need three chairs for the meeting.",
+        "vi": "Chúng ta cần ba chiếc ghế cho cuộc họp."
+      },
+      {
+        "en": "Mai gave me some useful advice about the interview.",
+        "vi": "Mai cho tôi một vài lời khuyên hữu ích về buổi phỏng vấn."
+      },
+      {
+        "en": "Could we order two coffees to take away?",
+        "vi": "Chúng tôi gọi hai suất cà phê mang đi được không?"
+      }
+    ],
+    "notes": [
+      "Danh từ đếm được số ít trong cách dùng thông thường cần từ hạn định: a chair, the chair, my chair; không để trơ một mình.",
+      "Không đếm được không có nghĩa là ngoài đời không thể đo hay chia: có thể dùng một đơn vị phù hợp. Không phải danh từ nào cũng đi tự nhiên với piece.",
+      "Đồ uống/chất liệu có thể trở thành danh từ đếm được khi nói một suất hoặc một loại. Hãy tra đúng nghĩa, không học nhãn đếm được như thuộc tính bất biến."
+    ],
+    "mistakes": [
+      {
+        "wrong": "I found a useful information.",
+        "correct": "I found some useful information.",
+        "explanation": "Information không đếm được ở nghĩa thông tin; không dùng a/an và không thêm -s. Cũng có thể nói a useful piece of information."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Coffee và a coffee",
+        "explanation": "Coffee nói về đồ uống nói chung; a coffee có thể chỉ một suất/cốc trong tình huống gọi món. Vì vậy không kết luận mọi a coffee đều sai."
+      },
+      {
+        "title": "Glass và a glass",
+        "explanation": "Glass có thể là chất liệu thủy tinh không đếm được; a glass là một cái cốc đếm được. Sự thay đổi đi cùng nghĩa chứ không chỉ hình thức."
+      }
+    ],
+    "details": [
+      {
+        "title": "Cách quyết định nhanh",
+        "paragraphs": [
+          "Xác định bạn đang nói đến đồ vật riêng lẻ, chất liệu, hoạt động hay khái niệm. Sau đó kiểm tra nhãn và ví dụ cho đúng nghĩa trong từ điển. Với từ nhiều nghĩa như work, paper và time, không áp dụng một đáp án cho tất cả ngữ cảnh.",
+          "Khi nói chung, danh từ đếm được số nhiều và danh từ không đếm được thường không dùng mạo từ: chairs, advice. Nếu nói nhóm hay lượng đã xác định, có thể dùng the: the chairs in this room, the advice you gave me."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Count nouns",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/count-nouns",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Uncount nouns",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/uncount-nouns",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Common problems with count and uncount nouns",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/common-problems-count-uncount-nouns",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "noun-plurals",
+    "groupId": "nouns-pronouns",
+    "title": "Số nhiều và những danh từ có hình thức đặc biệt",
+    "aliases": [
+      "plural nouns",
+      "irregular plurals",
+      "số ít số nhiều",
+      "scissors trousers news physics"
+    ],
+    "summary": "Phần lớn danh từ đếm được có số nhiều bằng -s hoặc -es, nhưng dạng tận cùng -s chưa đủ để quyết định động từ số nhiều.",
+    "whenToUse": [
+      "Khi viết nhiều hơn một người/vật hoặc chọn is/are cho một danh từ.",
+      "Khi gặp số nhiều bất quy tắc, danh từ chỉ đồ vật hai bộ phận hoặc tên môn học."
+    ],
+    "structures": [
+      "book → books; box → boxes; city → cities; day → days",
+      "child → children; person → people; foot → feet",
+      "These scissors are …; A pair of scissors is …; Two pairs are …"
+    ],
+    "examples": [
+      {
+        "en": "Two children are waiting outside the office.",
+        "vi": "Hai đứa trẻ đang đợi bên ngoài văn phòng."
+      },
+      {
+        "en": "These trousers are too short for me.",
+        "vi": "Chiếc quần này quá ngắn đối với tôi."
+      },
+      {
+        "en": "A pair of scissors is on the top shelf.",
+        "vi": "Một chiếc kéo nằm trên kệ trên cùng."
+      },
+      {
+        "en": "The news is better than we expected.",
+        "vi": "Tin tức tốt hơn chúng tôi dự đoán."
+      }
+    ],
+    "notes": [
+      "Sau phụ âm + y thường đổi y thành -ies; sau nguyên âm + y thường chỉ thêm -s. Các mẫu chính tả có ngoại lệ, đặc biệt nhóm tận cùng -o: hãy kiểm tra từ lạ thay vì thêm -es máy móc.",
+      "Scissors, trousers và glasses ở nghĩa kính mắt dùng như số nhiều. Muốn đếm từng món, dùng a pair/two pairs; động từ khi đó theo pair/pairs.",
+      "News, physics và economics ở nghĩa tên môn học dùng như số ít dù có -s. Đừng suy ngược rằng mọi danh từ -s đều không đếm được."
+    ],
+    "mistakes": [
+      {
+        "wrong": "The childs are playing outside.",
+        "correct": "The children are playing outside.",
+        "explanation": "Child có số nhiều bất quy tắc children, không phải childs."
+      },
+      {
+        "wrong": "My scissors is blunt.",
+        "correct": "My scissors are blunt.",
+        "explanation": "Scissors ở nghĩa cái kéo có hình thức số nhiều; nếu dùng a pair of scissors thì chia is."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Danh từ và cụm đo đếm",
+        "explanation": "These glasses are new nói về kính; this pair of glasses is new lấy pair làm trung tâm số ít. Số lượng vật ngoài đời không quyết định trực tiếp hình thức ngữ pháp."
+      }
+    ],
+    "details": [
+      {
+        "title": "Học dạng từ cùng ví dụ",
+        "paragraphs": [
+          "Khi ghi một danh từ mới, lưu cả dạng số nhiều bất quy tắc hoặc cách dùng đặc biệt nếu có. Với từ có nhiều nghĩa, kiểm tra nghĩa đang dùng trước khi áp dụng hình thức.",
+          "Không cần đoán mọi số nhiều bằng một công thức. Một số nhóm thông dụng có thể nhận ra bằng mẫu chính tả, còn các dạng ngoại lệ nên học như một phần của mục từ."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Count nouns",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/count-nouns",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Common problems with count and uncount nouns",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/common-problems-count-uncount-nouns",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Things with two parts",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/things-two-parts",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "noun-phrases-possessives",
+    "groupId": "nouns-pronouns",
+    "title": "Cụm danh từ và sở hữu",
+    "aliases": [
+      "noun phrases",
+      "possessive nouns",
+      "possessive apostrophe",
+      "sở hữu cách",
+      "dấu nháy đơn",
+      "head noun"
+    ],
+    "summary": "Cụm danh từ có một thành phần trung tâm và các phần bổ nghĩa. Dấu sở hữu và vị trí bổ nghĩa giúp làm rõ đang nói đến người/vật nào.",
+    "whenToUse": [
+      "Khi viết một cụm danh từ dài hoặc xác định trung tâm của chủ ngữ.",
+      "Khi biểu đạt sở hữu, quan hệ giữa người với người/vật và tránh lặp lại danh từ."
+    ],
+    "structures": [
+      "từ hạn định/lượng từ + số lượng + tính từ + danh từ trung tâm + phần bổ nghĩa sau",
+      "danh từ số ít + ’s; số nhiều tận cùng -s + ’; số nhiều bất quy tắc + ’s",
+      "Linh’s notebook; the students’ notebooks; the children’s notebooks"
+    ],
+    "examples": [
+      {
+        "en": "Those two small rooms at the back are empty.",
+        "vi": "Hai căn phòng nhỏ ở phía sau đó đang trống."
+      },
+      {
+        "en": "The students’ questions helped us improve the lesson.",
+        "vi": "Các câu hỏi của những học viên giúp chúng tôi cải thiện bài học."
+      },
+      {
+        "en": "This jacket is Nam’s; that one is mine.",
+        "vi": "Áo khoác này là của Nam; chiếc kia là của tôi."
+      }
+    ],
+    "notes": [
+      "Dấu ’s không phải đuôi số nhiều. Student’s chỉ quan hệ sở hữu của một học viên; students’ chỉ quan hệ của nhiều học viên.",
+      "Danh từ số nhiều bất quy tắc không tận cùng -s vẫn dùng ’s, như children’s. Đừng đặt dấu nháy chỉ dựa vào nghĩa “nhiều”.",
+      "Sau sở hữu có thể bỏ danh từ nếu người đọc đã biết: This is Lan’s. Không cần lặp lại vật đã nhắc."
+    ],
+    "mistakes": [
+      {
+        "wrong": "The childrens’ bags are here.",
+        "correct": "The children’s bags are here.",
+        "explanation": "Children đã là số nhiều bất quy tắc và không tận cùng -s, nên thêm ’s."
+      },
+      {
+        "wrong": "This is my brother car.",
+        "correct": "This is my brother’s car.",
+        "explanation": "Để diễn đạt chiếc xe thuộc về anh/em trai trong câu này, dùng sở hữu cách brother’s."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Bổ nghĩa trước và sau danh từ",
+        "explanation": "Trong the new book on the desk, new đứng trước book; on the desk đứng sau để xác định cuốn sách. Cả cụm vẫn lấy book làm trung tâm."
+      },
+      {
+        "title": "My và mine",
+        "explanation": "My cần danh từ theo sau: my jacket. Mine thay cho cả cụm: The jacket is mine. Chi tiết về dạng đại từ ở bài Đại từ nhân xưng và sở hữu."
+      }
+    ],
+    "details": [
+      {
+        "title": "Đọc từ trung tâm ra ngoài",
+        "paragraphs": [
+          "Các phần sau danh từ có thể là cụm giới từ, mệnh đề quan hệ, cụm -ing hoặc to-infinitive. Khi gặp cụm dài, tìm danh từ trung tâm trước, rồi gắn từng phần bổ nghĩa vào đúng danh từ.",
+          "Không phải mọi quan hệ giữa hai danh từ đều bắt buộc dùng ’s: cấu trúc cụm danh từ còn có nhiều dạng khác. Bài này tập trung vào cách biểu đạt sở hữu phổ biến, không biến ’s thành công thức dịch mọi chữ “của”."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Noun phrases",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/noun-phrases",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Possessives: nouns",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/possessives-nouns",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Possessives: adjectives",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/possessives-adjectives",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Possessives: pronouns",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/possessives-pronouns",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "personal-pronouns",
+    "groupId": "nouns-pronouns",
+    "title": "Đại từ nhân xưng và sở hữu",
+    "aliases": [
+      "personal pronouns",
+      "subject pronouns",
+      "object pronouns",
+      "possessive pronouns",
+      "possessive adjectives",
+      "I me my mine",
+      "singular they"
+    ],
+    "summary": "Chọn đại từ theo vai trò trong câu: chủ ngữ, tân ngữ hay sở hữu. My cần danh từ, còn mine thay cả cụm danh từ.",
+    "whenToUse": [
+      "Khi thay tên người/vật đã nhắc hoặc tránh lặp danh từ.",
+      "Khi chọn dạng sau động từ, giới từ hoặc biểu đạt vật thuộc về ai."
+    ],
+    "structures": [
+      "Chủ ngữ: I, you, he, she, it, we, they",
+      "Tân ngữ: me, you, him, her, it, us, them",
+      "Trước danh từ: my, your, his, her, its, our, their",
+      "Thay cụm danh từ: mine, yours, his, hers, ours, theirs"
+    ],
+    "examples": [
+      {
+        "en": "She sent the notes to me after lunch.",
+        "vi": "Cô ấy gửi ghi chú cho tôi sau bữa trưa."
+      },
+      {
+        "en": "Your desk is near the window; mine is by the door.",
+        "vi": "Bàn của bạn gần cửa sổ; bàn của tôi ở cạnh cửa ra vào."
+      },
+      {
+        "en": "If a visitor calls, ask them to leave a message.",
+        "vi": "Nếu có khách gọi, hãy nhờ người đó để lại lời nhắn."
+      }
+    ],
+    "notes": [
+      "Dùng dạng tân ngữ sau giới từ như to me, for her, with us; không đổi sang dạng chủ ngữ chỉ vì người đó cũng thực hiện hành động ở câu khác.",
+      "They/them có thể chỉ một người chưa xác định giới tính. Không mặc định phải sửa thành he/him; động từ đi cùng vẫn theo dạng they are/they have.",
+      "Its là sở hữu không có dấu nháy; it’s là dạng rút gọn của it is hoặc it has. Đại từ sở hữu yours/hers/ours/theirs cũng không thêm dấu nháy."
+    ],
+    "mistakes": [
+      {
+        "wrong": "Please send the document to I.",
+        "correct": "Please send the document to me.",
+        "explanation": "Sau giới từ to, dùng đại từ tân ngữ me."
+      },
+      {
+        "wrong": "This umbrella is her’s.",
+        "correct": "This umbrella is hers.",
+        "explanation": "Hers là đại từ sở hữu hoàn chỉnh, không có dấu nháy."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Her và hers",
+        "explanation": "Her có thể là tân ngữ (I called her) hoặc đứng trước danh từ (her bag). Hers thay cả cụm danh từ (The bag is hers)."
+      },
+      {
+        "title": "It và tên người",
+        "explanation": "It còn dùng để nhận diện người qua điện thoại hoặc khi chưa nhìn thấy: It’s Linh. Không nên học quy tắc “it chỉ đồ vật” như tuyệt đối."
+      }
+    ],
+    "details": [
+      {
+        "title": "Giữ rõ đối tượng quy chiếu",
+        "paragraphs": [
+          "Đại từ giúp câu gọn nhưng cần biết đang thay cho ai/cái gì. Nếu hai người cùng giới tính xuất hiện và he/she có thể chỉ cả hai, lặp tên để tránh hiểu nhầm.",
+          "Mệnh đề trần thuật hữu hạn thông thường cần chủ ngữ rõ ràng; không lược she trong She is ready theo thói quen tiếng Việt. Câu mệnh lệnh như Please wait là một ngoại lệ quen thuộc."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Personal pronouns",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/personal-pronouns",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Possessives: adjectives",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/possessives-adjectives",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Possessives: pronouns",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/possessives-pronouns",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "reflexive-reciprocal",
+    "groupId": "nouns-pronouns",
+    "title": "Đại từ phản thân và tương hỗ",
+    "aliases": [
+      "reflexive pronouns",
+      "reciprocal pronouns",
+      "myself yourself themselves",
+      "each other",
+      "one another",
+      "by myself",
+      "lẫn nhau"
+    ],
+    "summary": "Phản thân hướng hành động về chính chủ thể; tương hỗ diễn tả các bên tác động qua lại. Hai cách này có thể làm thay đổi nghĩa rõ rệt.",
+    "whenToUse": [
+      "Khi chủ ngữ và tân ngữ chỉ cùng một người/vật hoặc muốn nhấn mạnh người tự thực hiện.",
+      "Khi diễn đạt tự làm, một mình hoặc các thành viên giúp/nhìn/nói chuyện với nhau."
+    ],
+    "structures": [
+      "myself, yourself, himself, herself, itself, ourselves, yourselves, themselves",
+      "chủ ngữ + động từ + đại từ phản thân phù hợp",
+      "by + đại từ phản thân; each other / one another; each other’s / one another’s"
+    ],
+    "examples": [
+      {
+        "en": "I taught myself to repair simple furniture.",
+        "vi": "Tôi tự học cách sửa đồ nội thất đơn giản."
+      },
+      {
+        "en": "The two neighbours help each other with shopping.",
+        "vi": "Hai người hàng xóm giúp nhau mua sắm."
+      },
+      {
+        "en": "We checked the final version ourselves.",
+        "vi": "Chính chúng tôi kiểm tra bản cuối cùng."
+      },
+      {
+        "en": "Hoa lives by herself near the station.",
+        "vi": "Hoa sống một mình gần nhà ga."
+      }
+    ],
+    "notes": [
+      "By myself có thể là không ai giúp hoặc không có ai cùng, tùy ngữ cảnh; không nên dịch cố định một cách.",
+      "Wash, shave và dress thường không cần phản thân khi hành động tự chăm sóc đã rõ. Có thể thêm để nhấn mạnh tự làm được, chẳng hạn sau chấn thương.",
+      "Với beside him hoặc with her theo nghĩa đi cùng, dùng đại từ tân ngữ bình thường. Không tự chuyển mọi đại từ cùng chỉ chủ ngữ thành phản thân."
+    ],
+    "mistakes": [
+      {
+        "wrong": "I taught me to cook.",
+        "correct": "I taught myself to cook.",
+        "explanation": "Trong ý tôi tự dạy chính mình, tân ngữ trùng với chủ ngữ nên dùng myself."
+      },
+      {
+        "wrong": "They repaired the door by theirselves.",
+        "correct": "They repaired the door by themselves.",
+        "explanation": "Dạng chuẩn tương ứng với they là themselves, không phải theirselves."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Themselves và each other",
+        "explanation": "They criticised themselves là mỗi người/nhóm tự phê bình mình; They criticised each other là các bên phê bình lẫn nhau. Cả hai đều đúng ngữ pháp nhưng khác ý."
+      },
+      {
+        "title": "Each other và one another",
+        "explanation": "Cả hai có thể dùng cho từ hai người trở lên. Không coi mẹo “each other chỉ đúng với hai người” là quy tắc bắt buộc."
+      }
+    ],
+    "details": [
+      {
+        "title": "Nhấn mạnh hay phản thân bắt buộc?",
+        "paragraphs": [
+          "Trong I made it myself, myself nhấn mạnh tôi tự làm; bỏ đi vẫn còn mệnh đề đầy đủ. Trong I hurt myself, myself là tân ngữ xác định người bị thương. Phân biệt vai trò này giúp tránh thêm phản thân cho trang trọng một cách không cần thiết."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Reflexive pronouns",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/reflexive-pronouns",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Reciprocal pronouns",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/reciprocal-pronouns",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "indefinite-pronouns",
+    "groupId": "nouns-pronouns",
+    "title": "Đại từ bất định, chỉ định và one/ones",
+    "aliases": [
+      "indefinite pronouns",
+      "demonstratives",
+      "everybody everyone nobody",
+      "this that these those",
+      "one ones",
+      "đại từ chỉ định",
+      "someone something else"
+    ],
+    "summary": "Đại từ bất định chỉ người/vật chưa nêu cụ thể; this/that và one/ones giúp chỉ hoặc thay đối tượng đã rõ trong ngữ cảnh.",
+    "whenToUse": [
+      "Khi nói ai đó, mọi người, không ai hoặc một vật chưa xác định.",
+      "Khi chỉ đối tượng gần/xa hoặc tránh lặp danh từ đếm được vừa nhắc."
+    ],
+    "structures": [
+      "some-/any-/every-/no- + body/one/thing",
+      "everybody/everyone/everything + động từ số ít; khi nhắc lại người có thể dùng they/their, còn everything thường được nhắc lại bằng it/its",
+      "this/that + dạng số ít; these/those + dạng số nhiều",
+      "the blue one; the newer ones; someone else; someone else’s"
+    ],
+    "examples": [
+      {
+        "en": "Everyone has their own way of learning.",
+        "vi": "Mỗi người đều có cách học riêng."
+      },
+      {
+        "en": "Nobody knew where the spare key was.",
+        "vi": "Không ai biết chìa khóa dự phòng ở đâu."
+      },
+      {
+        "en": "These are my notes, and those are yours.",
+        "vi": "Đây là ghi chú của tôi, còn những cái kia là của bạn."
+      },
+      {
+        "en": "I prefer the larger ones near the entrance.",
+        "vi": "Tôi thích những cái lớn hơn ở gần lối vào."
+      }
+    ],
+    "notes": [
+      "Everybody/everyone chỉ nhiều người về nghĩa nhưng dùng động từ số ít. Khi nhắc lại, they/their vẫn hợp lệ; đây không phải mâu thuẫn.",
+      "Nobody/no one/nothing đã có nghĩa phủ định. Trong tiếng Anh chuẩn, không thêm not để diễn đạt cùng một phủ định.",
+      "This/these thường chỉ gần và that/those thường chỉ xa; that cũng có thể phản hồi một ý vừa nghe, như That sounds useful. Gần/xa không bao quát mọi cách dùng."
+    ],
+    "mistakes": [
+      {
+        "wrong": "Everybody have a different opinion.",
+        "correct": "Everybody has a different opinion.",
+        "explanation": "Everybody làm chủ ngữ đi với động từ số ít has."
+      },
+      {
+        "wrong": "I need else something.",
+        "correct": "I need something else.",
+        "explanation": "Else đứng sau đại từ bất định: something else, somebody else."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "One và ones",
+        "explanation": "One thay danh từ đếm được số ít; ones thay số nhiều. Chọn theo danh từ đang được thay, không phải số từ trong câu."
+      },
+      {
+        "title": "Nobody và not … anybody",
+        "explanation": "Nobody called và I didn’t hear anybody đều có thể diễn đạt phủ định. Đừng biến ghi nhớ no- thành lệnh cấm any- trong mọi câu phủ định."
+      }
+    ],
+    "details": [
+      {
+        "title": "Thêm sở hữu và tránh lặp",
+        "paragraphs": [
+          "Có thể dùng somebody’s hoặc somebody else’s để nói quan hệ sở hữu. Với this/that/these/those, có thể theo sau bằng danh từ hoặc dùng độc lập khi đối tượng đã rõ.",
+          "One/ones thường xuất hiện sau tính từ, the hoặc which: the quiet one, which ones. Nếu không rõ đang thay danh từ nào, dùng lại danh từ đầy đủ thay vì buộc người đọc đoán."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Indefinite pronouns",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/indefinite-pronouns",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Demonstratives",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/demonstratives",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "'one' and 'ones'",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/one-ones",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "dummy-it-there",
+    "groupId": "nouns-pronouns",
+    "title": "Chủ ngữ giả it và there",
+    "aliases": [
+      "dummy subjects",
+      "dummy it",
+      "existential there",
+      "there is there are",
+      "it is",
+      "chủ ngữ hình thức",
+      "có tồn tại"
+    ],
+    "summary": "There giới thiệu sự tồn tại/có mặt; it dùng cho thời gian, thời tiết và một số cách đánh giá. Không dịch hai từ này máy móc thành “nó” hay “ở đó”.",
+    "whenToUse": [
+      "Khi câu tiếng Việt không nêu chủ thể nhưng tiếng Anh thông thường vẫn cần chủ ngữ.",
+      "Khi thông báo có một người/vật/sự việc hoặc đưa nhận xét về một hành động."
+    ],
+    "structures": [
+      "There is/was + danh từ số ít hoặc không đếm được",
+      "There are/were + danh từ số nhiều; There will be + danh từ",
+      "It is/was + thời gian/thời tiết; It is + tính từ + to-infinitive / dạng -ing"
+    ],
+    "examples": [
+      {
+        "en": "There is a quiet café behind the library.",
+        "vi": "Có một quán cà phê yên tĩnh phía sau thư viện."
+      },
+      {
+        "en": "There were several messages on my phone.",
+        "vi": "Có vài tin nhắn trên điện thoại của tôi."
+      },
+      {
+        "en": "It is getting colder outside.",
+        "vi": "Ngoài trời đang lạnh dần."
+      },
+      {
+        "en": "It is helpful to read the instructions twice.",
+        "vi": "Đọc hướng dẫn hai lần là việc hữu ích."
+      }
+    ],
+    "notes": [
+      "There trong cấu trúc tồn tại không có nghĩa vị trí “ở đó”. Có thể thêm vị trí riêng: There is a table over there.",
+      "Dùng is/are theo danh từ được giới thiệu trong cách viết chuẩn, thay vì dựa vào việc there có hình thức bất biến.",
+      "It trong It is raining không thay cho một vật cụ thể. Không bỏ it vì không tìm thấy “nó” trong bản dịch tiếng Việt."
+    ],
+    "mistakes": [
+      {
+        "wrong": "Is very cold this morning.",
+        "correct": "It is very cold this morning.",
+        "explanation": "Trong câu trần thuật đầy đủ này cần chủ ngữ it cho thời tiết."
+      },
+      {
+        "wrong": "There are a problem with the file.",
+        "correct": "There is a problem with the file.",
+        "explanation": "A problem là danh từ số ít, nên dùng is trong cấu trúc đang xét."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "There is a problem và It is a problem",
+        "explanation": "Câu đầu giới thiệu rằng có vấn đề. Câu sau nhận định một điều/đối tượng đã rõ là vấn đề. Cả hai đúng nhưng chức năng khác nhau."
+      },
+      {
+        "title": "There và have",
+        "explanation": "There is a charger in the drawer nói về sự có mặt; I have a charger nói chủ thể có một bộ sạc. Không dùng have thiếu chủ ngữ để dịch mọi chữ “có”."
+      }
+    ],
+    "details": [
+      {
+        "title": "Chọn chủ ngữ theo việc muốn nói",
+        "paragraphs": [
+          "Trước tiên hỏi bạn đang giới thiệu một điều tồn tại, mô tả thời tiết/thời gian hay nói về đối tượng đã nhắc. Câu trả lời giúp chọn there, it hoặc chủ ngữ mang nghĩa thực.",
+          "Mệnh lệnh như Close the window thường không nêu chủ ngữ. Đây là kiểu câu khác; không thêm it vào mọi câu chỉ vì đang học chủ ngữ giả."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "'it' and 'there' as dummy subjects",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/it-there-dummy-subjects",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Personal pronouns",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/personal-pronouns",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "subject-verb-agreement",
+    "groupId": "nouns-pronouns",
+    "title": "Hòa hợp chủ ngữ–động từ",
+    "aliases": [
+      "subject verb agreement",
+      "concord",
+      "chia động từ theo chủ ngữ",
+      "số ít số nhiều động từ",
+      "collective nouns",
+      "group nouns"
+    ],
+    "summary": "Chia động từ theo chủ ngữ và cách chủ ngữ được hiểu, không chỉ theo danh từ gần động từ nhất hay số người/vật ngoài đời.",
+    "whenToUse": [
+      "Khi chọn is/are, has/have hoặc đuôi -s của hiện tại đơn.",
+      "Khi chủ ngữ dài, có từ everyone, danh từ nhóm hoặc danh từ trông giống số nhiều."
+    ],
+    "structures": [
+      "chủ ngữ ngôi ba số ít (he/she/it hoặc danh từ/cụm danh từ số ít) + is/has/động từ hiện tại đơn thêm -s/-es",
+      "chủ ngữ số nhiều + are/have/dạng hiện tại đơn cơ bản",
+      "Everyone is …; The police are …; A pair of shoes is …"
+    ],
+    "examples": [
+      {
+        "en": "The box of old photographs is under my desk.",
+        "vi": "Hộp ảnh cũ nằm dưới bàn của tôi."
+      },
+      {
+        "en": "Each learner has a different goal.",
+        "vi": "Mỗi người học có một mục tiêu khác nhau."
+      },
+      {
+        "en": "The police are investigating the complaint.",
+        "vi": "Cảnh sát đang điều tra khiếu nại."
+      },
+      {
+        "en": "Our team is preparing a single report.",
+        "vi": "Đội của chúng tôi đang chuẩn bị một báo cáo chung."
+      }
+    ],
+    "notes": [
+      "I dùng am/have và dạng động từ cơ bản ở hiện tại đơn; you dùng are/have và dạng động từ cơ bản dù chỉ một người.",
+      "Trong the box of photographs, box là trung tâm chủ ngữ; photographs nằm trong phần bổ nghĩa không biến box thành số nhiều.",
+      "Everybody/everyone dùng động từ số ít; nhưng đại từ they quy chiếu lại vẫn có dạng they are/have.",
+      "Danh từ nhóm như family, team và committee có thể đi số ít khi coi là một đơn vị hoặc số nhiều khi nhấn mạnh các thành viên, đặc biệt trong cách dùng Anh Anh. Đừng chấm mọi team are là sai.",
+      "News và tên môn học như physics thường là số ít ở nghĩa tương ứng. The police dùng như số nhiều khi chỉ lực lượng cảnh sát."
+    ],
+    "mistakes": [
+      {
+        "wrong": "The list of available rooms are on the wall.",
+        "correct": "The list of available rooms is on the wall.",
+        "explanation": "Trung tâm chủ ngữ là list số ít; rooms chỉ bổ nghĩa cho list."
+      },
+      {
+        "wrong": "Every student need a notebook.",
+        "correct": "Every student needs a notebook.",
+        "explanation": "Every + danh từ số ít làm chủ ngữ; ở hiện tại đơn, need nhận -s."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Scissors và a pair of scissors",
+        "explanation": "The scissors are sharp lấy scissors số nhiều làm chủ ngữ. A pair of scissors is missing lấy pair số ít làm trung tâm."
+      },
+      {
+        "title": "Nhóm và thành viên",
+        "explanation": "Cùng một danh từ nhóm có thể được nhìn như toàn thể hoặc từng người. Giữ nhất quán ý nghĩa giữa động từ và đại từ trong đoạn văn, không chỉ đổi dạng theo mẹo."
+      }
+    ],
+    "details": [
+      {
+        "title": "Cách kiểm tra một câu dài",
+        "paragraphs": [
+          "Gạch riêng chủ ngữ đầy đủ, tìm thành phần trung tâm rồi tạm bỏ các phần bổ nghĩa. Kiểm tra thêm các từ chỉ phân bố như every/each và các danh từ có hình thức đặc biệt.",
+          "Đây là cách kiểm tra nhanh cho các cấu trúc phổ biến, không thay cho việc tra cứu cấu trúc nâng cao hoặc biến thể văn phong. Nếu có nhiều khả năng hợp lệ, xét nghĩa và ngữ cảnh thay vì kết luận chỉ một dạng đúng."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Count nouns",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/count-nouns",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Noun phrases",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/noun-phrases",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Group nouns",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/group-nouns",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Things with two parts",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/things-two-parts",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Common problems with count and uncount nouns",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/common-problems-count-uncount-nouns",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Indefinite pronouns",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/indefinite-pronouns",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Quantifiers",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/quantifiers",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "articles",
+    "groupId": "determiners",
+    "title": "Mạo từ a/an/the và không dùng mạo từ",
+    "aliases": [
+      "articles",
+      "indefinite article",
+      "definite article",
+      "zero article",
+      "mạo từ xác định",
+      "mạo từ bất định",
+      "a an the"
+    ],
+    "summary": "Dùng a/an khi giới thiệu một thành viên chưa xác định; the khi người nghe xác định được đối tượng. Nói chung bằng danh từ số nhiều/không đếm được thường không cần mạo từ.",
+    "whenToUse": [
+      "Khi viết danh từ đếm được số ít hoặc muốn phân biệt một vật bất kỳ với đối tượng đã rõ.",
+      "Khi nói chung về một loại, nhắc lại đối tượng hoặc dùng tên riêng/tên địa lý."
+    ],
+    "structures": [
+      "a/an + danh từ đếm được số ít; chọn theo âm đầu của từ đứng ngay sau",
+      "the + danh từ đã xác định (số ít/số nhiều/không đếm được)",
+      "Ø + danh từ số nhiều/không đếm được khi nói chung"
+    ],
+    "examples": [
+      {
+        "en": "I bought a notebook and left the notebook at work.",
+        "vi": "Tôi mua một quyển sổ rồi để quyển sổ đó ở chỗ làm."
+      },
+      {
+        "en": "We waited for an hour near a university.",
+        "vi": "Chúng tôi đợi một giờ gần một trường đại học."
+      },
+      {
+        "en": "Books can change how we see the world.",
+        "vi": "Sách có thể thay đổi cách chúng ta nhìn thế giới."
+      },
+      {
+        "en": "The books on this shelf belong to my sister.",
+        "vi": "Những quyển sách trên kệ này thuộc về chị/em gái tôi."
+      }
+    ],
+    "notes": [
+      "A/an phụ thuộc âm, không phải chữ cái: an hour bắt đầu bằng âm nguyên âm; a university bắt đầu bằng âm /j/.",
+      "The không chỉ dùng khi nhắc lần thứ hai. Có thể dùng ngay lần đầu nếu ngữ cảnh làm rõ vật nào: Please close the door.",
+      "Tên người và nhiều địa danh thường không có the, nhưng có các tên/quy ước như the United States và the Netherlands; tên sông, biển, dãy núi thường dùng the. Khi không chắc, tra tên chính thức."
+    ],
+    "mistakes": [
+      {
+        "wrong": "She is engineer.",
+        "correct": "She is an engineer.",
+        "explanation": "Engineer là danh từ đếm được số ít chỉ nghề của cô ấy, nên dùng an ở cách giới thiệu này."
+      },
+      {
+        "wrong": "Please give me an advice.",
+        "correct": "Please give me some advice.",
+        "explanation": "Advice không đếm được ở nghĩa lời khuyên, không đi trực tiếp với a/an."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Nói chung và nhóm cụ thể",
+        "explanation": "Students need rest nói chung về học viên; the students in this class chỉ nhóm đã xác định. Không quyết định chỉ dựa vào việc danh từ số nhiều."
+      },
+      {
+        "title": "Quy tắc thường gặp và ngoại lệ",
+        "explanation": "The + danh từ số ít có thể đại diện một loài; the + tính từ có thể chỉ một nhóm người như the elderly. Vì vậy “nói chung luôn bỏ the” chỉ là mẹo sai nếu coi tuyệt đối."
+      }
+    ],
+    "details": [
+      {
+        "title": "Xác định được nhờ ngữ cảnh",
+        "paragraphs": [
+          "Người nghe có thể xác định nhờ đã nhắc, có mô tả giới hạn, chỉ có một trong tình huống hoặc tri thức chung. The smallest room trong một nhóm cũng đã giới hạn đối tượng.",
+          "Nếu đã có my/this và các từ hạn định tương tự, không tự thêm a/the phía trước. Nên học mạo từ trong cụm danh từ và tình huống, tránh chỉ học danh sách dấu hiệu rời."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "The indefinite article: 'a' and 'an'",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/indefinite-article",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "The definite article: 'the'",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/definite-article",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Specific and general determiners",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/specific-general-determiners",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "quantifiers-some-any",
+    "groupId": "determiners",
+    "title": "Some, any, no và các cách dùng dễ nhầm",
+    "aliases": [
+      "some any no",
+      "some and any",
+      "lượng từ some any",
+      "bất kỳ",
+      "khẳng định phủ định câu hỏi"
+    ],
+    "summary": "Some và any có xu hướng xuất hiện trong những kiểu câu khác nhau, nhưng ý định giao tiếp quan trọng hơn mẹo “khẳng định/phủ định”.",
+    "whenToUse": [
+      "Khi nói một lượng hoặc một số người/vật chưa xác định.",
+      "Khi hỏi thông tin, phủ định, mời, yêu cầu hoặc diễn đạt sự lựa chọn bất kỳ."
+    ],
+    "structures": [
+      "some/any/no + danh từ số nhiều hoặc không đếm được trong các cách dùng phổ biến",
+      "not … any + danh từ; no + danh từ",
+      "Would you like some …?; Could I have some …?",
+      "any + danh từ số ít: bất kỳ thành viên nào"
+    ],
+    "examples": [
+      {
+        "en": "We have some spare chairs in the next room.",
+        "vi": "Chúng tôi có vài chiếc ghế dự phòng ở phòng bên."
+      },
+      {
+        "en": "I don’t have any cash with me.",
+        "vi": "Tôi không mang theo tiền mặt."
+      },
+      {
+        "en": "Would you like some warm soup?",
+        "vi": "Bạn dùng một ít súp nóng nhé?"
+      },
+      {
+        "en": "You can choose any seat in this row.",
+        "vi": "Bạn có thể chọn bất kỳ ghế nào trong hàng này."
+      }
+    ],
+    "notes": [
+      "Some thường gặp trong câu khẳng định; any thường gặp trong câu hỏi/phủ định. Đây là xu hướng để bắt đầu, không phải điều cấm tuyệt đối.",
+      "Trong lời mời/yêu cầu, some tự nhiên khi đề nghị một lượng cụ thể. Không sửa some thành any chỉ vì có dấu hỏi.",
+      "Any còn có nghĩa bất kỳ và xuất hiện trong câu khẳng định: Any visitor can ask for help. No đã mang nghĩa phủ định, không thêm not để diễn đạt cùng một ý phủ định đơn."
+    ],
+    "mistakes": [
+      {
+        "wrong": "We don’t have no clean cups.",
+        "correct": "We don’t have any clean cups.",
+        "explanation": "Theo cách phủ định chuẩn muốn nói không còn cốc sạch, dùng not … any hoặc We have no clean cups, không kết hợp cả hai phủ định."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "No và not any",
+        "explanation": "There is no milk và There isn’t any milk đều có thể diễn đạt không có sữa. Chọn một cấu trúc phủ định phù hợp."
+      },
+      {
+        "title": "Câu hỏi thật và lời mời",
+        "explanation": "Do you have any tea? hỏi xem có trà không; Would you like some tea? mời trà. Cả some và any đều có thể nằm trong câu hỏi tùy chức năng."
+      }
+    ],
+    "details": [
+      {
+        "title": "Đừng dùng công thức theo dấu câu",
+        "paragraphs": [
+          "Trước khi chọn, xác định câu đang hỏi số lượng, đề nghị, mời hay cho phép lựa chọn tự do. Sau đó xét danh từ đếm được/không đếm được và tình huống.",
+          "Nếu không còn danh từ vì đối tượng đã rõ, some/any cũng có thể đứng thay lượng được nhắc: I have some. Phải có ngữ cảnh đủ rõ để người đọc biết đang nói đến gì; không bỏ danh từ chỉ để né vấn đề đếm được."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Quantifiers",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/quantifiers",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Specific and general determiners",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/specific-general-determiners",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "quantifiers-amount",
+    "groupId": "determiners",
+    "title": "Many, much, few, little và lượng đủ",
+    "aliases": [
+      "quantifiers",
+      "many much",
+      "few a few",
+      "little a little",
+      "a lot of lots of",
+      "enough",
+      "lượng từ số lượng"
+    ],
+    "summary": "Chọn lượng từ theo loại danh từ và sắc thái: a few/a little nói có một ít; few/little thường nhấn mạnh ít hơn mong đợi hoặc không đủ.",
+    "whenToUse": [
+      "Khi mô tả nhiều/ít, hỏi số lượng hoặc nói lượng vừa đủ.",
+      "Khi muốn phân biệt một lượng nhỏ vẫn hữu ích với lượng nhỏ gây thiếu hụt."
+    ],
+    "structures": [
+      "many/(a) few/several + danh từ đếm được số nhiều",
+      "much/(a) little/a bit of + danh từ không đếm được",
+      "a lot of/lots of/enough + danh từ số nhiều hoặc không đếm được",
+      "how many + danh từ đếm được số nhiều; how much + không đếm được"
+    ],
+    "examples": [
+      {
+        "en": "We have a few options, so there is still hope.",
+        "vi": "Chúng ta có vài lựa chọn nên vẫn còn hy vọng."
+      },
+      {
+        "en": "Few buses run after midnight, so we should book a taxi.",
+        "vi": "Ít xe buýt chạy sau nửa đêm nên chúng ta nên đặt taxi."
+      },
+      {
+        "en": "There is a little time left to check the names.",
+        "vi": "Vẫn còn một chút thời gian để kiểm tra tên."
+      },
+      {
+        "en": "We don’t have enough chairs for everyone.",
+        "vi": "Chúng ta không có đủ ghế cho mọi người."
+      }
+    ],
+    "notes": [
+      "A few dùng với số nhiều đếm được; a little/a bit of dùng với không đếm được. Không chỉ bỏ hoặc thêm a mà nghĩ nghĩa hoàn toàn không đổi.",
+      "Few và little thường mang sắc thái ít/thiếu; a few và a little thường nhấn mạnh vẫn có một lượng. Đánh giá đủ hay thiếu còn tùy ngữ cảnh, không phải một ngưỡng số cố định.",
+      "Little không có very vẫn đúng nhưng có thể trang trọng hơn. Lots of thường thân mật; không vì thế mà sai ngữ pháp."
+    ],
+    "mistakes": [
+      {
+        "wrong": "How much chairs do we need?",
+        "correct": "How many chairs do we need?",
+        "explanation": "Chairs đếm được số nhiều, nên hỏi how many."
+      },
+      {
+        "wrong": "We have a few information about the route.",
+        "correct": "We have a little information about the route.",
+        "explanation": "Information không đếm được trong nghĩa này; dùng a little/some, không dùng a few."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "A few và few",
+        "explanation": "A few places are available nhấn mạnh vẫn có chỗ. Few places are available nhấn mạnh chỗ còn ít. Cả hai đúng nhưng không thể chấm một câu sai khi chưa rõ ý định."
+      },
+      {
+        "title": "Many/much và a lot of",
+        "explanation": "Many đi với đếm được số nhiều, much với không đếm được; a lot of dùng được với cả hai. Lựa chọn còn tùy kiểu câu và mức độ trang trọng."
+      }
+    ],
+    "details": [
+      {
+        "title": "Lượng chung và một nhóm đã xác định",
+        "paragraphs": [
+          "Nói most learners khi đề cập học viên nói chung; most of the learners khi nói phần lớn của nhóm đã xác định. Không thêm of trước một danh từ trần theo thói quen dịch.",
+          "Nếu một danh từ có thể đếm được hoặc không đếm được ở nghĩa khác nhau, chọn lượng từ sau khi xác định nghĩa. Many coffees có thể nói nhiều suất/loại cà phê, còn much coffee nói lượng đồ uống."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Quantifiers",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/quantifiers",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Quantifiers: 'few', 'a few', 'little' and 'a bit of'",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2-grammar/quantifiers-few-a-few-little-a-bit",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Common problems with count and uncount nouns",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/common-problems-count-uncount-nouns",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "distributives",
+    "groupId": "determiners",
+    "title": "Each, every, all, both, either và neither",
+    "aliases": [
+      "distributives",
+      "each every",
+      "all both",
+      "either neither",
+      "most of",
+      "phân bố",
+      "từng mỗi cả hai"
+    ],
+    "summary": "Each/every nhìn từng thành viên; all nhìn cả nhóm; both/either/neither dùng khi xét hai người/vật. Dạng danh từ và động từ đi cùng cần được kiểm tra.",
+    "whenToUse": [
+      "Khi nói mỗi thành viên, toàn bộ nhóm hoặc lựa chọn giữa hai đối tượng.",
+      "Khi phân biệt nhóm nói chung với các thành viên của một nhóm đã xác định."
+    ],
+    "structures": [
+      "each/every + danh từ đếm được số ít + động từ số ít",
+      "all/both + danh từ số nhiều; all (of) the …; both (of) the …",
+      "either/neither + danh từ số ít; either/neither of + nhóm đã xác định",
+      "most + danh từ; most of + the/these/my … + danh từ"
+    ],
+    "examples": [
+      {
+        "en": "Every room has a smoke alarm.",
+        "vi": "Mỗi phòng đều có thiết bị báo khói."
+      },
+      {
+        "en": "Both tickets are valid for tomorrow.",
+        "vi": "Cả hai vé đều có giá trị cho ngày mai."
+      },
+      {
+        "en": "Neither answer is complete.",
+        "vi": "Không câu trả lời nào trong hai câu là đầy đủ."
+      },
+      {
+        "en": "Most of the visitors arrived before noon.",
+        "vi": "Phần lớn khách trong nhóm đã đến trước buổi trưa."
+      }
+    ],
+    "notes": [
+      "Each và every đứng trực tiếp trước danh từ số ít; không viết the every room. Each thường giúp tập trung từng thành viên, every bao quát tất cả qua từng thành viên.",
+      "Both là cả hai; either là một trong hai/bên nào cũng được tùy câu; neither là không bên nào. All/any/none phù hợp khi xét một nhóm rộng hơn.",
+      "All the và all of the đều có thể đúng; both the và both of the cũng vậy. Không bỏ the ở most of the nếu muốn chỉ nhóm cụ thể.",
+      "Với either/neither + danh từ số ít, dùng động từ số ít. Cấu trúc có of cần xét riêng cả cụm và văn phong; không suy ra cách chia chỉ bằng cách nhìn danh từ số nhiều ngay trước động từ."
+    ],
+    "mistakes": [
+      {
+        "wrong": "Every students has a timetable.",
+        "correct": "Every student has a timetable.",
+        "explanation": "Every đứng trước danh từ đếm được số ít, dù nghĩa bao quát nhiều học viên."
+      },
+      {
+        "wrong": "Both ticket is refundable.",
+        "correct": "Both tickets are refundable.",
+        "explanation": "Both xét cả hai vé, nên dùng danh từ và động từ số nhiều."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Each và every",
+        "explanation": "Hai từ đều có thể nói tất cả thành viên. Each hướng sự chú ý vào từng người/vật; every thường nói cả nhóm qua từng thành viên. Không phải trong mọi câu đều thay nhau được."
+      },
+      {
+        "title": "Most và most of the",
+        "explanation": "Most books ở đây nói đa số sách nói chung; most of the books chỉ đa số của nhóm sách đã xác định trong tình huống."
+      }
+    ],
+    "details": [
+      {
+        "title": "Chọn theo quy mô nhóm và mục tiêu nói",
+        "paragraphs": [
+          "Trước hết đếm xem đang xét hai đối tượng hay một nhóm nhiều hơn. Sau đó quyết định muốn nói cả nhóm, từng thành viên, một lựa chọn hay không lựa chọn nào.",
+          "Những từ này không thay thế nhau chỉ vì bản dịch đều có chữ “mỗi”, “cả” hoặc “bất kỳ”. Hãy kiểm tra cả phạm vi nghĩa lẫn cấu trúc đi theo; với trường hợp nâng cao chưa chắc, mở nguồn để đối chiếu ngữ cảnh đầy đủ."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Quantifiers",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/quantifiers",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "Specific and general determiners",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/specific-general-determiners",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  }
+]

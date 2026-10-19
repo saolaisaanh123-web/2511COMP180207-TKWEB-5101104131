@@ -287,7 +287,7 @@ test("audio fallback and unavailable voices do not crash or count a skipped test
     "Lắng nghe và thử nhớ lại",
   );
   await expect(page.locator(".study")).not.toContainText("avoid");
-  await page.getByRole("button", { name: "Nghe từ", exact: true }).click();
+  await page.getByRole("button", { name: "Nghe câu", exact: true }).click();
   await expect(
     page.getByRole("status").filter({ hasText: "Chưa có giọng tiếng Anh" }),
   ).toBeVisible();

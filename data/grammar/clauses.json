@@ -1,0 +1,616 @@
+[
+  {
+    "id": "reported-statements",
+    "groupId": "clauses",
+    "title": "Lời nói trực tiếp và gián tiếp: câu kể",
+    "aliases": [
+      "reported speech",
+      "direct speech",
+      "indirect speech",
+      "reported statements",
+      "câu tường thuật",
+      "lùi thì",
+      "backshift",
+      "say tell"
+    ],
+    "summary": "Lời nói trực tiếp giữ lời người nói trong dấu trích dẫn. Lời nói gián tiếp thuật lại nội dung từ góc nhìn người kể, nên thì, đại từ và mốc thời gian có thể thay đổi.",
+    "whenToUse": [
+      "Kể lại thông tin, một lời thông báo hoặc điều người khác từng nói.",
+      "Chọn giữ thì hay lùi thì dựa vào thời điểm kể và việc thông tin còn đúng, còn liên quan hay không."
+    ],
+    "structures": [
+      "say + (that) + mệnh đề; tell + người nghe + (that) + mệnh đề",
+      "Khi lùi thì: present simple → past simple; present continuous → past continuous; present perfect → past perfect",
+      "Past simple thường → past perfect; past continuous thường → past perfect continuous; past perfect giữ nguyên"
+    ],
+    "examples": [
+      {
+        "en": "“I need more time,” Linh said. → Linh said that she needed more time.",
+        "vi": "Linh nói: “Tôi cần thêm thời gian.” → Linh nói rằng cô ấy cần thêm thời gian."
+      },
+      {
+        "en": "Nam told me that he works near the station.",
+        "vi": "Nam nói với tôi rằng anh ấy làm gần nhà ga. Người kể xem thông tin này vẫn đúng."
+      }
+    ],
+    "notes": [
+      "Lùi thì không bắt buộc trong mọi câu có động từ tường thuật ở quá khứ: thông tin còn đúng hoặc liên quan hiện tại có thể giữ thì.",
+      "Đổi I, we, my… theo đúng người được nói đến; không thay đại từ bằng một bảng máy móc.",
+      "Chỉ đổi today → that day, here → there, this → that… khi thời gian hoặc vị trí kể đã khác."
+    ],
+    "mistakes": [
+      {
+        "wrong": "Mai said me that she was tired.",
+        "correct": "Mai told me that she was tired.",
+        "explanation": "Khi nêu trực tiếp người nhận trong mẫu này, dùng tell + người nghe. Có thể dùng Mai said that she was tired hoặc Mai said to me that she was tired."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Giữ thì hay lùi thì?",
+        "explanation": "She said she lives nearby nhấn mạnh thông tin còn đúng; She said she lived nearby đặt thông tin trong lời kể quá khứ. Không được suy ra chỉ từ lived rằng hiện nay cô ấy chắc chắn đã chuyển nhà."
+      }
+    ],
+    "details": [
+      {
+        "title": "Đổi điểm nhìn trước, đổi hình thức sau",
+        "paragraphs": [
+          "Hãy xác định ai nói, nói với ai, và mình kể lại khi nào. Ví dụ, thứ Hai Minh nói I’m presenting tomorrow. Khi thuật vào thứ Ba, today có thể chỉ đúng ngày thuyết trình; the next day lại phù hợp trong mạch kể quá khứ lấy ngày nói làm mốc. Kiểm tra ngày sự kiện thay vì tự động đổi tomorrow theo một bảng.",
+          "That nối mệnh đề có thể lược trong nhiều câu kể. Lời gián tiếp không cần dấu trích dẫn quanh cả mệnh đề."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "British Council LearnEnglish — Reported speech: statements",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/reported-speech-statements",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "reported-questions-requests",
+    "groupId": "clauses",
+    "title": "Câu hỏi, yêu cầu và đề nghị gián tiếp",
+    "aliases": [
+      "reported questions",
+      "reported requests",
+      "reported commands",
+      "indirect questions",
+      "câu hỏi gián tiếp",
+      "tường thuật câu hỏi",
+      "mệnh lệnh gián tiếp",
+      "ask tell to"
+    ],
+    "summary": "Câu hỏi được thuật lại dùng trật tự câu kể trong mệnh đề gián tiếp. Yêu cầu hoặc mệnh lệnh thường được thuật bằng động từ phù hợp đi với người nghe và to-infinitive.",
+    "whenToUse": [
+      "Kể lại điều ai đó đã hỏi thay vì đặt lại nguyên câu hỏi.",
+      "Thuật lại yêu cầu, lời cảnh báo hoặc lời đề nghị theo mục đích giao tiếp."
+    ],
+    "structures": [
+      "ask + (người nghe) + if/whether + chủ ngữ + động từ",
+      "ask + (người nghe) + từ hỏi + chủ ngữ + động từ",
+      "ask/tell/warn + người nghe + (not) to + động từ; offer + to V; suggest + V-ing"
+    ],
+    "examples": [
+      {
+        "en": "“Where does the meeting start?” → He asked where the meeting started.",
+        "vi": "“Cuộc họp bắt đầu ở đâu?” → Anh ấy hỏi cuộc họp bắt đầu ở đâu."
+      },
+      {
+        "en": "“Can you check this file, please?” → She asked me to check the file.",
+        "vi": "“Bạn kiểm tra tệp này giúp tôi nhé?” → Cô ấy nhờ tôi kiểm tra tệp đó."
+      },
+      {
+        "en": "The guide warned us not to touch the equipment.",
+        "vi": "Hướng dẫn viên cảnh báo chúng tôi không chạm vào thiết bị."
+      }
+    ],
+    "notes": [
+      "Không giữ đảo trợ động từ trong mệnh đề gián tiếp: where I live, không phải where do I live.",
+      "Với câu hỏi who làm chủ ngữ, mẫu who called vốn đã có trật tự chủ ngữ–động từ.",
+      "Áp dụng thay đổi thì, đại từ và thời gian theo ngữ cảnh giống câu kể gián tiếp; không phải lúc nào cũng phải lùi thì."
+    ],
+    "mistakes": [
+      {
+        "wrong": "She asked me where did I live.",
+        "correct": "She asked me where I lived.",
+        "explanation": "Bỏ trợ động từ do ở câu hỏi trực tiếp và đưa động từ về dạng phù hợp trong mệnh đề kể."
+      },
+      {
+        "wrong": "He told me don’t open the window.",
+        "correct": "He told me not to open the window.",
+        "explanation": "Trong mẫu tường thuật mệnh lệnh này, dùng not to V thay cho don’t + V."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Thuật câu hỏi hay thuật ý định?",
+        "explanation": "He asked if I could help kể câu hỏi về khả năng/sự sẵn sàng; He asked me to help thuật lời nhờ giúp. Cùng một câu trực tiếp có thể được kể khác nhau tùy ý định cần nhấn mạnh."
+      }
+    ],
+    "details": [
+      {
+        "title": "Chọn động từ tường thuật đúng mẫu",
+        "paragraphs": [
+          "Offer to help nghĩa là đề nghị chính mình giúp; ask someone to help là nhờ người đó giúp. Suggest checking something là đề xuất việc kiểm tra, không dùng suggest someone to check trong nghĩa này."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "British Council LearnEnglish — Reported speech: questions",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/reported-speech-questions",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "British Council LearnEnglish — Reported speech: reporting verbs",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/reported-speech-reporting-verbs",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "British Council LearnEnglish — Reported speech: statements",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/reported-speech-statements",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "conditionals-real",
+    "groupId": "clauses",
+    "title": "Điều kiện có thật: loại 0 và loại 1",
+    "aliases": [
+      "zero conditional",
+      "first conditional",
+      "conditional type 0",
+      "conditional type 1",
+      "câu điều kiện loại 0",
+      "câu điều kiện loại 1",
+      "if when unless",
+      "điều kiện thực"
+    ],
+    "summary": "Loại 0 mô tả quan hệ thường đúng hoặc lặp lại. Loại 1 diễn tả một điều kiện và kết quả tương lai mà người nói xem là khả thi.",
+    "whenToUse": [
+      "Nêu quy luật, thói quen hoặc kết quả thường xảy ra khi một điều kiện được đáp ứng.",
+      "Lập kế hoạch hoặc nói kết quả dự kiến của một khả năng trong tương lai."
+    ],
+    "structures": [
+      "Loại 0 thường: if/when + hiện tại đơn, hiện tại đơn",
+      "Loại 1 thường: if/when + hiện tại đơn, will + động từ nguyên mẫu",
+      "Có thể đổi thứ tự: mệnh đề kết quả + if + điều kiện; dấu phẩy thường dùng khi mệnh đề if đứng trước"
+    ],
+    "examples": [
+      {
+        "en": "If I skip breakfast, I feel hungry before noon.",
+        "vi": "Nếu bỏ bữa sáng, tôi thường đói trước buổi trưa."
+      },
+      {
+        "en": "If the library is open tomorrow, we’ll study there.",
+        "vi": "Nếu thư viện mở cửa ngày mai, chúng ta sẽ học ở đó."
+      },
+      {
+        "en": "You can borrow my notes as long as you return them on Friday.",
+        "vi": "Bạn có thể mượn ghi chép của tôi miễn là trả lại vào thứ Sáu."
+      }
+    ],
+    "notes": [
+      "Đây là mẫu thường gặp, không phải mọi câu có if đều phải khớp một công thức duy nhất; kết quả có thể dùng can hoặc động từ khuyết thiếu phù hợp.",
+      "Trong mẫu điều kiện tương lai thông thường, dùng hiện tại đơn ở mệnh đề if, không tự thêm will vì có tomorrow.",
+      "Unless thường mang nghĩa “trừ khi/nếu không”; không thêm phủ định lần nữa khi ý nghĩa đã là “trừ khi điều đó xảy ra”."
+    ],
+    "mistakes": [
+      {
+        "wrong": "If it will rain tomorrow, we’ll stay inside.",
+        "correct": "If it rains tomorrow, we’ll stay inside.",
+        "explanation": "Với ý điều kiện dự báo thông thường này, mệnh đề if dùng hiện tại đơn."
+      },
+      {
+        "wrong": "Unless you don’t hurry, you’ll miss the bus.",
+        "correct": "Unless you hurry, you’ll miss the bus.",
+        "explanation": "Muốn nói “trừ khi bạn nhanh lên”, không thêm don’t. Câu gốc diễn đạt điều kiện khác với ý định này."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "If, when và in case",
+        "explanation": "If trình bày một khả năng; when thường xem sự việc sẽ xảy ra và tập trung thời điểm. In case diễn tả chuẩn bị phòng một khả năng, không thay if một cách máy móc.",
+        "examples": [
+          {
+            "en": "I’ll save a copy in case the connection fails.",
+            "vi": "Tôi sẽ lưu một bản để phòng khi kết nối bị lỗi."
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "title": "Chọn theo ý nghĩa, không theo từ khóa",
+        "paragraphs": [
+          "Tomorrow chỉ gợi thời gian; nó không quyết định thì của từng mệnh đề. Hãy hỏi: đây là điều thường đúng, hay một tình huống tương lai cụ thể? Cùng một động từ có thể xuất hiện trong cả hai loại tùy ý người nói."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "British Council LearnEnglish — Conditionals: zero, first and second",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/conditionals-zero-first-second",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "conditionals-unreal",
+    "groupId": "clauses",
+    "title": "Điều kiện không thực ở hiện tại/tương lai: loại 2",
+    "aliases": [
+      "second conditional",
+      "conditional type 2",
+      "câu điều kiện loại 2",
+      "điều kiện giả định",
+      "if I were you",
+      "unreal present"
+    ],
+    "summary": "Điều kiện loại 2 tưởng tượng tình huống hiện tại hoặc tương lai mà người nói xem là không có thật hoặc khó xảy ra. Dạng quá khứ ở đây biểu thị khoảng cách với thực tế, không nhất thiết chỉ thời gian đã qua.",
+    "whenToUse": [
+      "Tưởng tượng một hiện tại khác: có thêm thời gian, sống ở nơi khác, có kỹ năng khác.",
+      "Nói về khả năng tương lai khó xảy ra theo đánh giá của người nói hoặc đưa lời khuyên giả định."
+    ],
+    "structures": [
+      "If + chủ ngữ + quá khứ đơn, chủ ngữ + would + động từ nguyên mẫu",
+      "Có thể dùng could khi nhấn mạnh khả năng; would not/wouldn’t phủ định kết quả",
+      "Với be: if I/he/she/it were…; was cũng xuất hiện phổ biến, nhất là trong lời nói"
+    ],
+    "examples": [
+      {
+        "en": "If I had a quieter room, I would practise speaking more often.",
+        "vi": "Nếu có phòng yên tĩnh hơn, tôi sẽ luyện nói thường xuyên hơn. Hiện tại tôi chưa có phòng như vậy."
+      },
+      {
+        "en": "If I were you, I would check the meaning in context.",
+        "vi": "Nếu là bạn, tôi sẽ kiểm tra nghĩa trong ngữ cảnh."
+      },
+      {
+        "en": "If the tickets were cheaper, we could go together.",
+        "vi": "Nếu vé rẻ hơn, chúng ta có thể đi cùng nhau."
+      }
+    ],
+    "notes": [
+      "Không dùng would trong mệnh đề if ở mẫu giả định cơ bản này; would nằm ở mệnh đề kết quả.",
+      "Were là lựa chọn rõ ràng cho giả định, đặc biệt trong if I were you. Không coi mọi if she was là sai tuyệt đối.",
+      "Could và would không hoàn toàn cùng nghĩa: could thường nói khả năng/cơ hội, còn would trình bày kết quả tưởng tượng."
+    ],
+    "mistakes": [
+      {
+        "wrong": "If I would know the answer, I would tell you.",
+        "correct": "If I knew the answer, I would tell you.",
+        "explanation": "Với nghĩa “nếu hiện giờ tôi biết”, dùng quá khứ đơn trong mệnh đề if, không dùng would know."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Loại 1 hay loại 2?",
+        "explanation": "If I have time, I’ll join xem việc có thời gian là khả thi. If I had time, I’d join gợi rằng hiện giờ không có thời gian hoặc khả năng đó xa thực tế hơn. Đây là góc nhìn của người nói, không phải thang xác suất bằng số."
+      }
+    ],
+    "details": [
+      {
+        "title": "Tránh nhầm dạng quá khứ với sự kiện quá khứ",
+        "paragraphs": [
+          "If I lived nearer, I would visit more có thể nói khoảng cách hiện tại. Nếu muốn tưởng tượng thay đổi một sự kiện đã kết thúc, cần xem điều kiện loại 3 thay vì chỉ nhìn tên thì."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "British Council LearnEnglish — Conditionals: zero, first and second",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/conditionals-zero-first-second",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "conditionals-third-mixed",
+    "groupId": "clauses",
+    "title": "Điều kiện quá khứ và hỗn hợp: loại 3",
+    "aliases": [
+      "third conditional",
+      "mixed conditionals",
+      "conditional type 3",
+      "câu điều kiện loại 3",
+      "câu điều kiện hỗn hợp",
+      "past present conditional"
+    ],
+    "summary": "Loại 3 tưởng tượng một quá khứ khác và kết quả quá khứ khác. Điều kiện hỗn hợp nối điều kiện với kết quả ở hai thời điểm khác nhau, thường là quá khứ–hiện tại hoặc hiện tại–quá khứ.",
+    "whenToUse": [
+      "Nhìn lại một việc đã không xảy ra hoặc đã xảy ra khác với mong muốn.",
+      "Giải thích một quyết định quá khứ ảnh hưởng hiện tại, hoặc một đặc điểm hiện tại giúp lý giải kết quả quá khứ giả định."
+    ],
+    "structures": [
+      "Quá khứ → quá khứ: if + had + V3, would have + V3",
+      "Quá khứ → hiện tại: if + had + V3, would + động từ nguyên mẫu",
+      "Hiện tại → quá khứ: if + quá khứ đơn, would have + V3"
+    ],
+    "examples": [
+      {
+        "en": "If I had saved the document, I wouldn’t have lost my notes.",
+        "vi": "Nếu đã lưu tài liệu, tôi đã không mất phần ghi chép. Thực tế tôi không lưu và đã bị mất."
+      },
+      {
+        "en": "If I had accepted that job, I would live in Da Nang now.",
+        "vi": "Nếu ngày trước nhận công việc đó, bây giờ tôi sẽ sống ở Đà Nẵng."
+      },
+      {
+        "en": "If I were more organised, I wouldn’t have missed yesterday’s deadline.",
+        "vi": "Nếu tôi là người ngăn nắp hơn, tôi đã không lỡ hạn chót hôm qua. Giả định về đặc điểm hiện tại có liên hệ với quá khứ."
+      }
+    ],
+    "notes": [
+      "Cần đọc mốc thời gian của cả điều kiện lẫn kết quả; không chọn hỗn hợp chỉ vì có từ now hoặc yesterday.",
+      "Ở mẫu loại 3 cơ bản, dùng had + V3 sau if, không thay bằng would have + V3.",
+      "Có thể đổi thứ tự hai mệnh đề mà không đổi quan hệ giả định. Kết quả phủ định dùng wouldn’t have + V3."
+    ],
+    "mistakes": [
+      {
+        "wrong": "If I would have checked the address, I wouldn’t have got lost.",
+        "correct": "If I had checked the address, I wouldn’t have got lost.",
+        "explanation": "Trong điều kiện loại 3 thông thường này, mệnh đề if dùng quá khứ hoàn thành."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Kết quả quá khứ hay còn ở hiện tại?",
+        "explanation": "…would have lived there nói một kết quả giả định thuộc quá khứ; …would live there now hướng tới tình trạng hiện tại. Cả hai dạng có thể đúng nhưng không diễn đạt cùng thời gian."
+      }
+    ],
+    "details": [
+      {
+        "title": "Tự kiểm tra quan hệ thời gian",
+        "paragraphs": [
+          "Trước khi chọn dạng động từ, xác định rõ thời điểm của điều kiện và kết quả. Mẫu quá khứ–hiện tại giả định một quyết định trước đây dẫn tới hiện tại khác. Mẫu đặc điểm chung–quá khứ giả định một đặc điểm có liên hệ cả lúc sự kiện quá khứ xảy ra: nếu tôi vốn ngăn nắp hơn, hôm qua tôi đã không lỡ hạn. Không hiểu mẫu này là thay đổi hôm nay có thể gây lại kết quả hôm qua. Đây là gợi ý hiểu nghĩa, không thay cho ngữ cảnh thật."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "British Council LearnEnglish — Conditionals: third and mixed",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/conditionals-third-mixed",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "wishes",
+    "groupId": "clauses",
+    "title": "Câu ước: wish và if only",
+    "aliases": [
+      "wish",
+      "if only",
+      "câu ước",
+      "ước ở hiện tại",
+      "ước ở quá khứ",
+      "wish would",
+      "wish past perfect"
+    ],
+    "summary": "Wish và if only diễn tả mong muốn thực tế khác đi. Dạng quá khứ thường nói điều trái mong muốn ở hiện tại; quá khứ hoàn thành nói điều tiếc nuối trong quá khứ.",
+    "whenToUse": [
+      "Ước một tình trạng hiện tại khác đi hoặc có khả năng làm một việc.",
+      "Tiếc một hành động đã qua, hoặc bày tỏ mong muốn thay đổi và sự khó chịu về một hành vi/tình trạng."
+    ],
+    "structures": [
+      "wish/if only + chủ ngữ + dạng quá khứ: mong hiện tại khác đi",
+      "wish/if only + chủ ngữ + had + V3: tiếc quá khứ",
+      "wish + chủ ngữ + would/wouldn’t + động từ: muốn có thay đổi, thường kèm khó chịu"
+    ],
+    "examples": [
+      {
+        "en": "I wish I knew how to explain this word.",
+        "vi": "Ước gì tôi biết cách giải thích từ này. Hiện tôi chưa biết."
+      },
+      {
+        "en": "If only I had checked the date before booking.",
+        "vi": "Giá mà tôi đã kiểm tra ngày trước khi đặt chỗ."
+      },
+      {
+        "en": "I wish the neighbours would turn the music down.",
+        "vi": "Tôi ước hàng xóm chịu vặn nhỏ nhạc đi."
+      },
+      {
+        "en": "I wish I could stay a little longer.",
+        "vi": "Ước gì tôi có thể ở lại lâu hơn."
+      }
+    ],
+    "notes": [
+      "If only thường bộc lộ mong muốn mạnh hơn wish, không tạo một mốc thời gian riêng.",
+      "Knew trong câu ước hiện tại không có nghĩa việc biết nhất thiết thuộc quá khứ.",
+      "Wish + would không phải công thức chung cho mọi mong ước tương lai: nó thường hướng tới sự thay đổi mà người nói muốn thấy, đặc biệt hành vi gây khó chịu."
+    ],
+    "mistakes": [
+      {
+        "wrong": "I wish I know the answer.",
+        "correct": "I wish I knew the answer.",
+        "explanation": "Với ý hiện tại chưa biết và muốn biết, dùng dạng quá khứ sau wish."
+      },
+      {
+        "wrong": "I wish I studied harder last year.",
+        "correct": "I wish I had studied harder last year.",
+        "explanation": "Với ý tiếc rằng năm trước đã không học chăm hơn, dùng quá khứ hoàn thành. Dạng quá khứ đơn không diễn đạt đúng sự tiếc nuối quá khứ này."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Ước tình trạng hay muốn có thay đổi?",
+        "explanation": "I wish it wasn’t so noisy nhấn mạnh tình trạng hiện tại; I wish they would stop shouting mong người khác thay đổi hành vi. Không thay hai mẫu máy móc chỉ vì cả hai đều dịch là “ước”."
+      }
+    ],
+    "details": [
+      {
+        "title": "Xác định điều đang trái mong muốn",
+        "paragraphs": [
+          "Hãy phân biệt ba ý: hiện giờ tôi không có/không biết, trước kia tôi đã làm/không làm, hoặc tôi muốn điều gì thay đổi. Chọn mẫu theo ý ấy trước rồi mới biến đổi động từ; từ thời gian chỉ giúp kiểm tra thêm."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "British Council LearnEnglish — Wishes: 'wish' and 'if only'",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/wishes-wish-if-only",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "relative-clauses",
+    "groupId": "clauses",
+    "title": "Mệnh đề quan hệ: xác định và không xác định",
+    "aliases": [
+      "relative clauses",
+      "defining relative clauses",
+      "non-defining relative clauses",
+      "mệnh đề quan hệ",
+      "mệnh đề xác định",
+      "mệnh đề không xác định",
+      "who whom whose which that where when"
+    ],
+    "summary": "Mệnh đề quan hệ bổ sung thông tin về người, vật, nơi chốn hoặc thời gian. Loại xác định giúp nhận diện đối tượng; loại không xác định thêm thông tin về đối tượng đã rõ và được tách bằng dấu phẩy.",
+    "whenToUse": [
+      "Làm rõ đang nói người/vật nào mà không cần tách thành hai câu.",
+      "Thêm thông tin phụ về một đối tượng đã xác định."
+    ],
+    "structures": [
+      "Người: who/that; vật: which/that trong mệnh đề xác định",
+      "Sở hữu: whose + danh từ; nơi chốn: where; thời gian: when",
+      "Không xác định: , who/which/whose/where/when + mệnh đề, ; không dùng that"
+    ],
+    "examples": [
+      {
+        "en": "The student who lent me this dictionary is in my class.",
+        "vi": "Bạn học sinh cho tôi mượn từ điển này học cùng lớp với tôi."
+      },
+      {
+        "en": "The article (that) you recommended was useful.",
+        "vi": "Bài viết bạn giới thiệu rất hữu ích. That là tân ngữ nên có thể lược."
+      },
+      {
+        "en": "My aunt, who lives in Hue, is visiting us this weekend.",
+        "vi": "Dì tôi, người sống ở Huế, sẽ đến thăm chúng tôi cuối tuần này."
+      }
+    ],
+    "notes": [
+      "Chỉ thường lược who/which/that khi nó là tân ngữ trong mệnh đề xác định; không lược khi làm chủ ngữ.",
+      "Trong mệnh đề không xác định, giữ từ quan hệ và dấu phẩy; không thay bằng that.",
+      "Where và when diễn tả quan hệ nơi chốn/thời gian; danh từ chỉ nơi chốn không tự động buộc dùng where."
+    ],
+    "mistakes": [
+      {
+        "wrong": "The teacher teaches me is very patient.",
+        "correct": "The teacher who teaches me is very patient.",
+        "explanation": "Trong mệnh đề xác định này, who là chủ ngữ của teaches nên không được bỏ."
+      },
+      {
+        "wrong": "My phone, that I bought last month, is broken.",
+        "correct": "My phone, which I bought last month, is broken.",
+        "explanation": "Khi bổ sung thông tin trong mệnh đề không xác định có dấu phẩy, dùng which thay that."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "Where hay which?",
+        "explanation": "The room where we study: nơi diễn ra việc học. The room which we painted: căn phòng là tân ngữ của painted. Hãy xem chức năng trong mệnh đề, không chỉ xem room là một địa điểm."
+      }
+    ],
+    "details": [
+      {
+        "title": "Dấu phẩy có thể đổi phạm vi ý nghĩa",
+        "paragraphs": [
+          "My friends who live nearby… chỉ nhóm bạn sống gần. My friends, who live nearby, … trình bày việc sống gần như thông tin phụ về nhóm bạn đang nói. Chọn theo điều muốn diễn đạt, không thêm dấu phẩy chỉ để câu dễ thở."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "British Council LearnEnglish — Relative clauses: defining relative clauses",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/relative-clauses-defining-relative-clauses",
+        "accessedAt": "2026-10-20"
+      },
+      {
+        "title": "British Council LearnEnglish — Relative clauses: non-defining relative clauses",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/relative-clauses-non-defining-relative-clauses",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  },
+  {
+    "id": "participle-clauses",
+    "groupId": "clauses",
+    "title": "Mệnh đề phân từ và cách rút gọn",
+    "aliases": [
+      "participle clauses",
+      "present participle",
+      "past participle",
+      "perfect participle",
+      "mệnh đề phân từ",
+      "mệnh đề rút gọn",
+      "having V3",
+      "dangling participle"
+    ],
+    "summary": "Mệnh đề phân từ dùng V-ing, V3 hoặc having + V3 để diễn đạt gọn thêm lý do, thời gian, kết quả hoặc thông tin liên quan. Cách dùng này phổ biến trong văn viết hơn hội thoại hằng ngày.",
+    "whenToUse": [
+      "Gộp thông tin khi người thực hiện hoặc đối tượng được mô tả khớp với chủ ngữ mệnh đề chính.",
+      "Làm rõ hành động đã hoàn tất trước một hành động khác mà không viết thêm mệnh đề đầy đủ."
+    ],
+    "structures": [
+      "V-ing…, chủ ngữ + động từ: thường mang nghĩa chủ động",
+      "V3…, chủ ngữ + động từ: thường mang nghĩa bị động",
+      "Having + V3…: hoàn tất trước; having been + V3…: hoàn tất trước ở thể bị động",
+      "Có thể đi sau before, after, while, on, instead of… tùy quan hệ ý nghĩa"
+    ],
+    "examples": [
+      {
+        "en": "Waiting for the bus, I reviewed my vocabulary notes.",
+        "vi": "Trong lúc chờ xe buýt, tôi ôn lại ghi chép từ vựng."
+      },
+      {
+        "en": "Written in clear English, the guide is easy to follow.",
+        "vi": "Được viết bằng tiếng Anh rõ ràng, hướng dẫn này dễ làm theo."
+      },
+      {
+        "en": "Having finished the report, Lan sent it to her manager.",
+        "vi": "Sau khi hoàn thành báo cáo, Lan gửi nó cho quản lý."
+      }
+    ],
+    "notes": [
+      "Ở kiểu rút gọn cùng chủ ngữ này, chủ thể của phần phân từ phải khớp chủ ngữ mệnh đề chính.",
+      "Phân từ không tự có thì riêng: V-ing không đồng nghĩa chắc chắn hiện tại, V3 không đồng nghĩa chắc chắn quá khứ.",
+      "V-ing thường chủ động, V3 thường bị động; chọn theo vai trò của chủ ngữ, không chỉ theo đuôi từ."
+    ],
+    "mistakes": [
+      {
+        "wrong": "Walking to class, the rain soaked my notes.",
+        "correct": "While I was walking to class, the rain soaked my notes.",
+        "explanation": "Với ý “tôi đang đi”, phần Walking không thể gắn với the rain như chủ thể đi bộ. Dùng mệnh đề đầy đủ để tránh phân từ treo."
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "V-ing hay having + V3?",
+        "explanation": "V-ing có thể diễn tả hành động đồng thời hoặc quan hệ lý do/kết quả tùy ngữ cảnh. Having + V3 làm rõ hành động hoàn tất trước hành động chính; không phải cứ có hai việc là bắt buộc dùng having."
+      }
+    ],
+    "details": [
+      {
+        "title": "Ưu tiên rõ nghĩa hơn rút gọn",
+        "paragraphs": [
+          "Nếu hai mệnh đề có chủ ngữ khác nhau hoặc quan hệ thời gian chưa rõ, giữ while/because/after + mệnh đề đầy đủ thường dễ hiểu hơn. Không nên rút gọn mọi mệnh đề chỉ để câu trông nâng cao.",
+          "Cần đọc cả câu để xác định tác nhân. Với Written in clear English, chủ ngữ theo sau phải là thứ được viết, chẳng hạn the guide, không phải người đọc."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "British Council LearnEnglish — Participle clauses",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/c1/participle-clauses",
+        "accessedAt": "2026-10-20"
+      }
+    ]
+  }
+]

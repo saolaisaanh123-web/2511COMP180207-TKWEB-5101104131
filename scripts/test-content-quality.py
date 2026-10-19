@@ -12,7 +12,11 @@ import unittest
 from unittest.mock import patch
 
 from corpus_io import read_records
-from corpus_policy import KNOWN_FREQUENCY_CONFLATIONS
+from corpus_policy import (
+    KNOWN_FREQUENCY_CONFLATIONS,
+    REVIEWED_SPELLING_VARIANTS,
+    apply_reviewed_spelling_variants,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -77,6 +81,53 @@ class CorpusQualityTests(unittest.TestCase):
         self.assertIn("characterize the climate", self.by_word["characterize"]["example_en"])
         self.assertIn("cite the original study", self.by_word["cite"]["example_en"])
         self.assertIn("nhà tù", self.by_word["jail"]["meaning_vi"])
+
+    def test_reviewed_spelling_variants_are_explicit_and_pos_specific(self):
+        for entry_id, (headword, part_of_speech, alternatives) in REVIEWED_SPELLING_VARIANTS.items():
+            row = self.by_id[entry_id]
+            self.assertEqual(row["word"], headword)
+            self.assertEqual(row["part_of_speech"], part_of_speech)
+            self.assertEqual(row["learning_status"], "ready")
+            self.assertEqual(row["accepted_answers"], headword)
+            self.assertEqual(row["spelling_variants"].split("|"), list(alternatives))
+        # UK/US verb forms are interchangeable here; UK practise is never a noun.
+        self.assertIn("practice", self.by_word["practise"]["spelling_variants"].split("|"))
+        self.assertEqual(self.by_word["practice"]["accepted_answers"], "practice")
+        self.assertFalse(self.by_word["practice"].get("spelling_variants"))
+        # Misspellings and different words must not become spelling variants;
+        # this whitelist makes no blanket judgment about synonyms in context.
+        invalid = {
+            "neighbour": ["neigbour", "neighbourhood"],
+            "practise": ["practize", "exercise"],
+            "characterize": ["characterice", "characterization"],
+            "well-being": ["wellness"],
+            "healthcare": ["healthy care"],
+            "coordination": ["cooperation"],
+            "film-maker": ["filmmaking"],
+            "fundraising": ["fundraise"],
+            "no one": ["noone", "nobody"],
+            "non-profit": ["profitable", "charitable"],
+        }
+        for headword, rejected in invalid.items():
+            for answer in rejected:
+                row = self.by_word[headword]
+                self.assertNotIn(answer, [*row["accepted_answers"].split("|"), *row["spelling_variants"].split("|")])
+
+    def test_spelling_overlay_is_additive_idempotent_and_rejects_changed_senses(self):
+        records = [dict(row) for row in self.rows]
+        original = [dict(row) for row in records]
+        apply_reviewed_spelling_variants(records)
+        apply_reviewed_spelling_variants(records)
+        self.assertEqual(records, original)
+        # Existing canonical/manual alternatives must not disappear on review.
+        edited = next(row for row in records if row["id"] == "neighbour-01")
+        edited["spelling_variants"] += "|manual spelling"
+        apply_reviewed_spelling_variants(records)
+        self.assertIn("manual spelling", edited["spelling_variants"])
+        changed = next(row for row in records if row["id"] == "practise-01")
+        changed["part_of_speech"] = "noun"
+        with self.assertRaises(ValueError):
+            apply_reviewed_spelling_variants(records)
 
     def test_known_frequency_conflations_remain_unscored(self):
         for word in KNOWN_FREQUENCY_CONFLATIONS:
