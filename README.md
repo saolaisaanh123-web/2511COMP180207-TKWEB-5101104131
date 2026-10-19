@@ -1,5 +1,7 @@
 # Jeongyeon — Góc học từ vựng IELTS cá nhân
 
+Website: [Jeongyeon](https://saolaisaanh123-web.github.io/WebHocTuVungTiengAnh/).
+
 Ứng dụng React + TypeScript + Vite, giao diện tiếng Việt. Các phần học, hội thoại và phản hồi cấu trúc viết chạy tại máy, không cần tài khoản hoặc API trả phí. Đồng bộ tùy chọn dùng Supabase Free sau khi tự cấu hình.
 
 Nâng cấp hiện tại: bốn chế độ chọn từ, phân tích bằng chứng ghi nhớ, 12 hội thoại biên soạn sẵn, kiểm tra cấu trúc viết ngoại tuyến, tải lại offline và đồng bộ có xử lý xung đột. Xem [báo cáo chi tiết](docs/nang-cap-jeongyeon-2026-10-19.md) và [thiết lập Supabase Free](docs/services-setup.md). Không có AI chấm câu tổng quát hoặc cơ chế phát sinh phí.
