@@ -22,6 +22,17 @@ Cập nhật 20/10/2026. Nhóm sửa 1 và mục Tra cứu ngữ pháp đã hoà
 - Kiểm thử mới: 13 tìm kiếm/schema + 10 dữ liệu; 3 UI độc lập + 5 tích hợp. Tích hợp kiểm tra toàn bộ 52 bài/chi tiết/nguồn, dữ liệu học và phiên/nháp không đổi, offline và 320/390/768/1440 px. Kiểm tra production có mở/tìm bài tại đường dẫn gốc và đường dẫn con cả online/offline.
 - Nguồn được người dùng chấp thuận và ủy quyền xuất bản đã có; không hỏi lại. Báo cáo bàn giao và kết quả cuối ở docs/grammar-reference-2026-10-20.md.
 
+## Cập nhật nguồn từ vựng Anh–Mỹ — đã hoàn thành
+
+- Yêu cầu: Oxford 3000/5000 cho nền tảng, Cambridge/Oxford cho nghĩa, Cambridge Blog cho cách dùng hiện đại, YouGlish cho phát âm/giao tiếp và OPAL cho học thuật; ưu tiên Anh–Mỹ. Đã hoàn tất sau bản ngữ pháp 73a85dc. Báo cáo: docs/vocabulary-sources-2026-10-20.md.
+- Có 5.558 mục, 1.061 ready/4.497 lookup. Thêm 396 mục: 57 American Oxford, 316 OPAL theo từ loại, 23 Blog. Giữ 5.162 ID/thứ tự cũ. Bốn nghĩa sửa có chủ đích: hardly, sensible, execution, pants. 61 cách viết Mỹ cho mục cũ lưu preferred_us_spelling, không đổi contentKey/lịch; nội dung học khác có hash bảo vệ.
+- Hai PDF American Oxford chính thức đã đọc trực tiếp và bao phủ toàn bộ đầu từ. Bằng chứng Anh–Anh 5.323 dòng/4.955 cách viết giữ nguyên, không đổi CEFR/ID âm thầm. OPAL có 1.339 nhãn đầu từ/1.511 dòng từ loại: bổ sung phần thiếu, không coi khác POS là nghĩa cũ sai. OPAL spoken là ngữ liệu văn nói học thuật Anh–Anh, không phải tần suất Mỹ.
+- Có 454 URL với metadata phạm vi/ngày/HTTP/hash; raw HTML chỉ ở /tmp. Cambridge Dictionary còn 403, không tự nhận đã xác minh; Blog/Oxford/YouGlish đọc được. Thêm 316 IPA Mỹ trực tiếp từ nguồn. 12 thuật ngữ Blog mới/chuyên biệt và practical noun Anh–Anh giữ lookup. Ghi đúng nguồn ví dụ biên soạn; giữ ghi nguồn OVDP của a, an no-cloze.
+- Hồ sơ mới dùng en-US, giữ lựa chọn đã lưu. Hồ sơ cũ có thể chọn Anh–Mỹ trong Cài đặt. Tìm kiếm, hiển thị và TTS dùng cách viết ưu tiên; chấm nhận hai dạng. YouGlish là liên kết ngoài chọn giọng Mỹ, không embed/cache/chấm. Giữ ví dụ, IPA và audio theo dữ liệu nguồn.
+- Pipeline: data/authoring/source-update-2026-10.json và scripts/apply-source-update.py; preview mặc định, --write mới cập nhật. apply-content-review.py tương thích giữ overlay/cảnh báo mới. data/lexicons chứa dữ kiện PDF/OPAL. Không đổi IndexedDB hoặc dependency.
+- Kiểm thử cuối: 242 unit, 20 data, 75 E2E đạt; TypeScript/build, production root/subpath/offline tải 5.558 mục và 52 bài ngữ pháp đạt. SHA256 TXT: 19fb2f4dd2ffab355ac9fe59abf1442bfad79fbe036e7262d90197132667d004.
+- Chưa công bố toàn bộ nghĩa Việt cũ được rà. Chưa nhập toàn bộ mẫu cụm OPAL; chưa có tần suất đo cho mục mới; chưa xác minh từng video YouGlish, Safari hoặc Supabase thật. Giữ các nhóm sửa 2–5 bên dưới để tiếp tục.
+
 ## Thứ tự thực hiện
 
 ### 1. Chấm bài và lịch ôn — đã sửa, có hồi quy
@@ -42,10 +53,10 @@ Cập nhật 20/10/2026. Nhóm sửa 1 và mục Tra cứu ngữ pháp đã hoà
 
 ### 3. Nội dung chính xác và phù hợp trình độ
 
-- Có 5.162 mục nhưng chỉ 674 đủ điều kiện luyện: 467 Oxford + 100 phrasal verbs + 107 slang/cụm diễn đạt. B2–C1 chỉ 154/2.573 mục Oxford sẵn sàng. Giữ hàng rào chất lượng; ưu tiên rà lô B1–C1 hữu ích.
-- Lookup còn nghĩa lịch sử/ít dùng làm mặc định: hardly, sensible, execution. Cảnh báo phải đứng trước nghĩa chưa rà; sửa theo nghĩa hiện đại và nguồn đối chiếu. Danh sách Oxford không đồng nghĩa mọi giải nghĩa Việt được Oxford xác nhận.
+- Sau đợt nguồn Mỹ/OPAL: 5.558 mục, 1.061 ready/4.497 lookup. Giữ hàng rào chất lượng; còn nhiều nghĩa Việt nguồn mở lịch sử chưa rà. Ưu tiên tiếp tục những mục B1–C1 hữu ích thay vì đánh dấu toàn kho ready.
+- Đã sửa hardly, sensible, execution và nghĩa Mỹ của pants trong đợt nguồn20/10. Tiếp tục rà các nghĩa nguồn mở khác; danh sách Oxford không đồng nghĩa mọi giải nghĩa Việt được Oxford xác nhận.
 - Mỗi mục luyện hiện chỉ một ví dụ. Bổ sung 2–3 ngữ cảnh cho mục ưu tiên, kiểm tra bằng câu chưa gặp. Nghĩa mới dùng ID liên kết ổn định, không ghi đè lịch sử nghĩa cũ. Chưa đối chiếu độc lập từng nghĩa trong toàn kho.
-- Chưa có IPA/audio khai báo trong corpus; TTS cần tham chiếu cho từ đa cách phát âm. Không chế IPA hoặc tự nhận audio Oxford.
+- Có 316 IPA Mỹ được đối chiếu cho mục mới; phần lớn mục cũ vẫn chưa có IPA/audio. TTS cần tham chiếu cho từ đa cách phát âm. Không chế IPA hoặc tự nhận audio Oxford.
 
 ### 4. Năng suất và đề xuất đúng bài
 

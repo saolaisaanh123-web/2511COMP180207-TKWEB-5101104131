@@ -10,6 +10,20 @@ Nâng cấp hiện tại: bốn chế độ chọn từ, phân tích bằng ch�
 
 Nguồn chính là **British Council LearnEnglish**, theo lựa chọn của người dùng ngày 20/10/2026; Cambridge English Grammar Today chưa truy cập được do Cloudflare nên không được ghi là đã đối chiếu. Nội dung nằm trong [data/grammar](data/grammar/README.md), tách khỏi giao diện và dữ liệu học riêng. Không cần tài khoản/API, không phát sinh phí; nội dung tra cứu được đóng gói để đọc offline, còn trang nguồn bên ngoài cần mạng.
 
+## Cập nhật nguồn từ vựng, ưu tiên Anh–Mỹ
+
+Kho hiện có **5.558 mục theo nghĩa/từ loại**, trong đó **1.061 mục đủ điều kiện luyện**, 4.497 mục chỉ tra cứu. Đã bổ sung 396 mục, giữ nguyên toàn bộ 5.162 ID và thứ tự cũ; sửa nghĩa đang hiển thị của `hardly`, `sensible`, `execution` và `pants`. Các trường nội dung học khác của mục cũ được kiểm tra giữ nguyên.
+
+- Nền tảng: đã đọc trực tiếp hai PDF **American Oxford 3000/5000** chính thức; mọi đầu từ trong hai bản này có mặt qua mục từ, biến thể đã xác minh hoặc mục bổ sung. Giữ riêng bằng chứng Oxford Anh–Anh cũ, không ép số đếm thành 5.000 thẻ.
+- Học thuật: **Oxford OPAL**, phân biệt văn viết và văn nói học thuật. Đã bổ sung các đầu từ và từ loại còn thiếu; nhãn OPAL của mục cũ chỉ xác nhận đầu từ/từ loại, không tự chứng nhận nghĩa Việt đang hiển thị. OPAL spoken dựa trên ngữ liệu học thuật Anh–Anh.
+- Ngôn ngữ hiện đại: 23 mục từ **Cambridge Dictionary Blog**; cách dùng mới hoặc chuyên biệt của Word Watcher/New words giữ ở chế độ tra cứu, không tự coi là từ phổ biến tại Mỹ hay đã được nhận vào từ điển.
+- Nghĩa/cách dùng mới đối chiếu trực tiếp Oxford American/Academic. **Cambridge Dictionary vẫn trả trang chặn 403**, nên không gắn nhãn các nghĩa này đã được Cambridge xác minh.
+- Phát âm: hồ sơ mới ưu tiên **Anh–Mỹ**, 61 biến thể của mục cũ có cách viết Mỹ đã đối chiếu; thêm liên kết **YouGlish chọn giọng Mỹ** trong chi tiết từ. Giữ lựa chọn giọng đã lưu. Nếu hồ sơ cũ đang chọn Anh–Anh, có thể đổi trong Cài đặt. Không tự đổi IPA hoặc URL âm thanh chỉ vì đổi giọng tổng hợp.
+
+Trong Kho từ, chọn **Bộ từ** để lọc American Oxford 3000/5000, OPAL hoặc Cambridge Blog. Thiết bị đã có dữ liệu dùng **Cập nhật kho mặc định**, xem trước rồi áp dụng; không xóa dữ liệu học. Cách viết Mỹ mới được chấp nhận dưới ID cũ và không đổi khóa nội dung/lịch ôn. Khi thực sự sửa nghĩa, lịch sử được giữ nhưng bằng chứng của nghĩa cũ không được coi là bằng chứng cho nghĩa mới.
+
+Chi tiết nguồn, phạm vi kiểm tra và giới hạn: [báo cáo cập nhật nguồn](docs/vocabulary-sources-2026-10-20.md), [ghi nguồn kho từ](public/data/SOURCES.md). Không có API trả phí hoặc yêu cầu tài khoản mới.
+
 ## Chạy trên máy
 
 Cần Node.js 22 trở lên và npm:
@@ -109,7 +123,7 @@ Vite dùng `base: './'`; nội dung lấy theo `import.meta.env.BASE_URL`. Đi�
 ## Giới hạn được biết
 
 - Không chấm tổng quát ngữ nghĩa, độ tự nhiên hoặc phát âm; phản hồi viết chỉ nhận diện các cấu trúc đã hỗ trợ. Đồng bộ cần project Supabase Free; nghe nhớ nghĩa là tự đánh giá. Nội dung từ điển mở lịch sử chưa được rà soát thủ công toàn bộ; luôn xem nhãn nguồn trước khi học chuyên sâu.
-- CEFR của kho mặc định đối chiếu đầu từ/loại từ trong bản lưu PDF Oxford, không xác nhận riêng mọi nghĩa. Chưa đối chiếu byte với PDF hiện tại trên host nhà xuất bản. Xem nguồn, commit, SHA256 và từng dòng đối chiếu trong `public/data/oxford-provenance.json`.
+- CEFR đối chiếu đầu từ/loại từ, không xác nhận riêng mọi nghĩa. Bản Anh–Anh cũ được giữ theo PDF đã khóa phiên bản; đợt 20/10 bổ sung hai PDF American Oxford chính thức tải trực tiếp. Xem nguồn, commit, SHA256 và từng dòng đối chiếu trong `public/data/oxford-provenance.json`.
 - Trong cùng một phiên và lần ôn, thử lại không được tính như bằng chứng lần đầu. Nên dùng bài ngữ cảnh có đáp án duy nhất; dùng nút báo câu hỏi nếu ví dụ chưa đủ rõ.
 - Kiểm thử trình duyệt kiểm tra đường đi giọng đọc không khả dụng, không xác nhận chất lượng âm thanh thực tế hoặc giọng của mọi thiết bị. Thử phát từ/câu trên thiết bị cá nhân trước bài nghe.
 - Việc push mã nguồn không tự chứng minh GitHub Pages đã triển khai; cần Source GitHub Actions và workflow thành công.

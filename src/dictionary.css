@@ -40,6 +40,30 @@
   margin-bottom: 8px;
 }
 
+.dict-entry .dict-spelling-note {
+  color: #526d59;
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 0 0 12px;
+}
+
+.dict-youglish-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 44px;
+  color: #2b674b;
+  font-size: 13px;
+  line-height: 1.7;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  margin-top: 8px;
+}
+
+.dict-youglish-link svg {
+  flex: 0 0 auto;
+}
+
 .dict-pos {
   color: #5c6f62;
   font-size: 14px;
@@ -61,6 +85,24 @@
   flex-wrap: wrap;
   gap: 6px;
   margin: 12px 0;
+}
+
+.dict-opal {
+  border-left: 2px solid #b6c9a4;
+  background: #f3f6ed;
+  padding: 10px 12px;
+  margin: 13px 0;
+}
+
+.dict-entry .dict-opal h3 {
+  margin-bottom: 5px;
+}
+
+.dict-entry .dict-opal p {
+  color: #526b4b;
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 5px 0 0;
 }
 
 .dict-expression-tags > span {

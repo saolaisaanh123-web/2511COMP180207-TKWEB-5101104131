@@ -2,6 +2,7 @@
 
 import hashlib
 import json
+from copy import deepcopy
 from pathlib import Path
 import runpy
 import subprocess
@@ -21,23 +22,32 @@ from corpus_policy import (
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "public/data"
+SOURCE_UPDATE = runpy.run_path(str(ROOT / "scripts/apply-source-update.py"))
 
 
 class CorpusQualityTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.rows = read_records(DATA / "vocabulary.txt")
-        cls.by_word = {row["word"]: row for row in cls.rows}
+        cls.by_word = {}
+        for row in cls.rows:
+            cls.by_word.setdefault(row["word"], row)
         cls.by_id = {row["id"]: row for row in cls.rows}
         cls.metadata = json.loads((DATA / "oxford-provenance.json").read_text())
         cls.facts = {row["sourceFactIndex"]: row for row in cls.metadata["entries"] + cls.metadata["additionalFacts"]}
+        cls.source_update = SOURCE_UPDATE["load_source_update"](required=False)
 
     def test_coverage_and_original_ids_survive(self):
-        self.assertEqual(len(self.rows), 5162)
-        self.assertEqual(len(self.by_id), 5162)
+        additions = self.source_update.get("additions", []) if self.source_update else []
+        self.assertEqual(len(self.rows), 5162 + len(additions))
+        self.assertEqual(len(self.by_id), 5162 + len(additions))
+        if self.source_update:
+            self.assertEqual(self.source_update["baseline"]["entryCount"], 5162)
+            self.assertEqual(SOURCE_UPDATE["ids_digest"](self.rows[:5162]), self.source_update["baseline"]["idsSha256"])
+            self.assertEqual([row["id"] for row in self.rows[5162:]], [row["id"] for row in additions])
         self.assertEqual(sum("oxford-" in row.get("collections", "") for row in self.rows), 4955)
-        self.assertEqual(sum("phrasal-verbs" in row.get("collections", "").split(",") for row in self.rows), 100)
-        self.assertEqual(sum("slang" in row.get("collections", "").split(",") for row in self.rows), 107)
+        self.assertEqual(sum("phrasal-verbs" in row.get("collections", "").split(",") for row in self.rows), 100 + sum("phrasal-verbs" in row["collections"].split(",") for row in additions))
+        self.assertEqual(sum("slang" in row.get("collections", "").split(",") for row in self.rows), 107 + sum("slang" in row["collections"].split(",") for row in additions))
         for original in read_records(DATA / "reviewed-vocabulary.txt"):
             self.assertEqual(self.by_id[original["id"]]["word"], original["word"])
 
@@ -55,10 +65,12 @@ class CorpusQualityTests(unittest.TestCase):
     def test_curated_overlay_and_sense_source_are_reproducible(self):
         overlay = read_records(ROOT / "data/authoring/content-review-2026-10.txt")
         self.assertEqual(len(overlay), 38)
+        newer_corrections = {row["id"]: row for row in (self.source_update or {}).get("corrections", [])}
         for reviewed in overlay:
             actual = self.by_id[reviewed["id"]]
             for key, value in reviewed.items():
-                self.assertEqual(actual[key], value, (actual["word"], key))
+                expected = newer_corrections.get(reviewed["id"], {}).get(key, value)
+                self.assertEqual(actual[key], expected, (actual["word"], key))
             fact = self.facts[int(actual["source_fact_index"])]
             self.assertEqual(fact["word"], actual["word"])
             self.assertEqual(fact["cefr"], actual["level"])
@@ -159,6 +171,9 @@ class CorpusQualityTests(unittest.TestCase):
         self.assertEqual(self.metadata["contentReview"]["canonicalVocabularySha256"], digest)
         self.assertEqual(json.loads((DATA / "content-review-provenance.json").read_text())["canonicalVocabularySha256"], digest)
         self.assertEqual(json.loads((DATA / "frequency-provenance.json").read_text())["currentCanonicalVocabulary"]["sha256"], digest)
+        if self.source_update:
+            for filename in ("oxford-provenance.json", "frequency-provenance.json", "content-review-provenance.json"):
+                self.assertEqual(json.loads((DATA / filename).read_text())["sourceUpdateCanonicalHash"], digest)
 
     def test_content_preview_is_idempotent_and_does_not_write_canonical(self):
         original = (DATA / "vocabulary.txt").read_bytes()
@@ -173,6 +188,141 @@ class CorpusQualityTests(unittest.TestCase):
         self.assertEqual(diplomatic["content_status"], "reference")
         self.assertEqual(diplomatic["learning_status"], "lookup")
         self.assertFalse(diplomatic["meaning_vi"])
+
+    def test_source_update_is_exact_additive_and_replayable(self):
+        if not self.source_update:
+            self.skipTest("No additive source review is authored yet")
+        apply = SOURCE_UPDATE["apply_source_update"]
+        self.assertEqual(apply(self.rows, self.source_update), self.rows)
+        edited = deepcopy(self.rows)
+        edited[0]["manual_unmentioned_field"] = "preserve this field"
+        self.assertEqual(apply(edited, self.source_update), edited)
+        for correction in self.source_update.get("corrections", []):
+            for key, value in correction.items():
+                self.assertEqual(self.by_id[correction["id"]][key], value)
+        for spelling in self.source_update.get("americanSpellings", []):
+            self.assertEqual(self.by_id[spelling["id"]]["preferred_us_spelling"], spelling["preferred_us_spelling"])
+        for group in ("americanMembership", "opalMembership"):
+            for membership in self.source_update.get(group, []):
+                row = self.by_id[membership["id"]]
+                self.assertEqual(row["word"], membership["word"])
+                self.assertEqual(row["part_of_speech"], membership["part_of_speech"])
+                self.assertTrue(set(membership["collections"]) <= set(row["collections"].split(",")))
+
+    def test_source_update_provenance_matches_authored_input(self):
+        if not self.source_update:
+            self.skipTest("No additive source review is authored yet")
+        provenance = json.loads((DATA / "source-update-provenance.json").read_text())
+        self.assertEqual(provenance["baseline"], self.source_update["baseline"])
+        self.assertEqual(provenance["canonicalVocabularySha256"], hashlib.sha256((DATA / "vocabulary.txt").read_bytes()).hexdigest())
+        self.assertEqual(provenance["overlaySha256"], hashlib.sha256(SOURCE_UPDATE["UPDATE"].read_bytes()).hexdigest())
+        self.assertEqual(provenance["sources"], self.source_update["sources"])
+        for field, collection in [("addedEntries", "additions"), ("americanSpellings", "americanSpellings"), ("meaningCorrections", "corrections"), ("americanMembership", "americanMembership"), ("opalMembership", "opalMembership")]:
+            self.assertEqual(provenance["counts"][field], len(self.source_update.get(collection, [])))
+        self.assertEqual(provenance["counts"]["canonicalEntries"], len(self.rows))
+        frequency = json.loads((DATA / "frequency-provenance.json").read_text())
+        unscored = {row["id"]: row for row in frequency["unscoredEntries"]}
+        for addition in self.source_update.get("additions", []):
+            if not addition.get("frequency_zipf"):
+                self.assertEqual(unscored[addition["id"]]["reason"], "new_source_entry_not_measured_in_pinned_frequency_table")
+
+    def test_source_preview_is_idempotent_and_read_only(self):
+        if not self.source_update:
+            self.skipTest("No additive source review is authored yet")
+        original = (DATA / "vocabulary.txt").read_bytes()
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "preview.txt"
+            subprocess.run([sys.executable, str(ROOT / "scripts/apply-source-update.py"), "--output", str(output)], check=True, capture_output=True)
+            self.assertEqual(output.read_bytes(), original)
+        self.assertEqual((DATA / "vocabulary.txt").read_bytes(), original)
+
+
+class SourceOverlaySafetyTests(unittest.TestCase):
+    def setUp(self):
+        self.records = [{
+            "id": "stable-01", "word": "colour", "part_of_speech": "noun",
+            "meaning_vi": "màu sắc", "definition_en": "a visual quality", "level": "A1",
+            "collections": "foundation,oxford-3000", "accepted_answers": "colour",
+            "source": "historical pinned source", "content_status": "dictionary",
+            "learning_status": "lookup", "learning_note": "Not reviewed for practice.",
+            "source_fact_index": "1", "manual": "keep me",
+        }]
+        self.update = {
+            "date": "2026-10-20",
+            "baseline": {"entryCount": 1, "idsSha256": SOURCE_UPDATE["ids_digest"](self.records), "vocabularySha256": "a" * 64},
+            "sources": [{"url": "https://example.com/source", "title": "Pinned source", "status": 200, "checkedAt": "2026-10-20", "sha256": "b" * 64, "scope": "Spelling and membership only"}],
+            "americanSpellings": [{"id": "stable-01", "word": "colour", "part_of_speech": "noun", "preferred_us_spelling": "color", "sourceURL": "https://example.com/source"}],
+            "americanMembership": [{"id": "stable-01", "word": "colour", "part_of_speech": "noun", "collections": ["american-3000"]}],
+            "opalMembership": [{"id": "stable-01", "word": "colour", "part_of_speech": "noun", "collections": ["opal-written"]}],
+            "corrections": [], "additions": [],
+        }
+
+    def test_membership_and_display_spelling_cannot_change_content_or_readiness(self):
+        actual = SOURCE_UPDATE["apply_source_update"](self.records, self.update)
+        self.assertEqual(self.records[0]["collections"], "foundation,oxford-3000")
+        for key, value in self.records[0].items():
+            if key != "collections":
+                self.assertEqual(actual[0][key], value, key)
+        self.assertEqual(actual[0]["preferred_us_spelling"], "color")
+        self.assertEqual(actual[0]["collections"], "foundation,oxford-3000,american-3000,academic,opal-written")
+        self.assertEqual(SOURCE_UPDATE["apply_source_update"](actual, self.update), actual)
+
+    def test_changed_identity_pos_and_duplicate_or_foreign_membership_fail_closed(self):
+        for field, value in [("id", "renamed-01"), ("word", "different"), ("part_of_speech", "verb")]:
+            changed = deepcopy(self.records)
+            changed[0][field] = value
+            with self.assertRaises(ValueError, msg=field):
+                SOURCE_UPDATE["apply_source_update"](changed, self.update)
+        for field in ("americanSpellings", "americanMembership", "opalMembership"):
+            duplicate = deepcopy(self.update)
+            duplicate[field] *= 2
+            with self.assertRaises(ValueError, msg=field):
+                SOURCE_UPDATE["apply_source_update"](self.records, duplicate)
+        incorrect = deepcopy(self.update)
+        incorrect["americanMembership"][0]["collections"] = ["oxford-3000"]
+        with self.assertRaises(ValueError):
+            SOURCE_UPDATE["apply_source_update"](self.records, incorrect)
+
+    def test_additions_reject_collisions_and_conflicting_fields_without_deleting_manual_data(self):
+        addition = {**self.records[0], "id": "new-01", "word": "colorful", "part_of_speech": "adjective", "collections": "american-3000"}
+        update = deepcopy(self.update)
+        update["additions"] = [addition]
+        result = SOURCE_UPDATE["apply_source_update"](self.records, update)
+        self.assertEqual([row["id"] for row in result], ["stable-01", "new-01"])
+        result[-1]["extra_manual_field"] = "preserved"
+        self.assertEqual(SOURCE_UPDATE["apply_source_update"](result, update), result)
+        conflicting = deepcopy(result)
+        conflicting[-1]["meaning_vi"] = "conflicting meaning"
+        with self.assertRaises(ValueError):
+            SOURCE_UPDATE["apply_source_update"](conflicting, update)
+        update["additions"][0]["id"] = "stable-01"
+        with self.assertRaises(ValueError):
+            SOURCE_UPDATE["apply_source_update"](self.records, update)
+
+    def test_corrections_preserve_unmentioned_fields_and_pinned_source_identity(self):
+        update = deepcopy(self.update)
+        update["corrections"] = [{"id": "stable-01", "word": "colour", "part_of_speech": "noun", "meaning_vi": "màu sắc của vật"}]
+        result = SOURCE_UPDATE["apply_source_update"](self.records, update)
+        self.assertEqual(result[0]["meaning_vi"], "màu sắc của vật")
+        self.assertEqual(result[0]["manual"], "keep me")
+        self.assertEqual(result[0]["source_fact_index"], "1")
+        update["corrections"][0]["source_fact_index"] = "2"
+        with self.assertRaises(ValueError):
+            SOURCE_UPDATE["apply_source_update"](self.records, update)
+
+    def test_unknown_cefr_is_preserved_without_weakening_reviewed_context_checks(self):
+        update = deepcopy(self.update)
+        addition = {
+            **self.records[0], "id": "academic-01", "word": "finding", "level": "",
+            "collections": "academic,opal-written", "content_status": "reviewed",
+            "learning_status": "ready", "example_en": "We compared the findings.",
+            "example_vi": "Chúng tôi so sánh các kết quả nghiên cứu.",
+        }
+        update["additions"] = [addition]
+        self.assertEqual(SOURCE_UPDATE["apply_source_update"](self.records, update)[-1]["level"], "")
+        update["additions"][0]["example_vi"] = ""
+        with self.assertRaises(ValueError):
+            SOURCE_UPDATE["apply_source_update"](self.records, update)
 
 
 if __name__ == "__main__":

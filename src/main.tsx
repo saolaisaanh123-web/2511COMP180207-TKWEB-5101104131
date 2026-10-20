@@ -71,6 +71,11 @@ import { useVisibleExposure } from "./useVisibleExposure";
 import { assessLearningAnswer } from "./assessment";
 import GrammarReference from "./GrammarReference";
 import { grammarArticles, grammarGroups } from "./grammar-data";
+import {
+  headwordSearchText,
+  preferredHeadword,
+  selectEnglishVoice,
+} from "./american-english";
 import { clearSyncBinding } from "./sync";
 import {
   registerOffline,
@@ -84,6 +89,14 @@ import {
   type LearningMode,
 } from "./practice-data";
 const uid = () => crypto.randomUUID();
+const collectionLabels: Record<string, string> = {
+  academic: "Oxford OPAL · Học thuật",
+  "opal-written": "OPAL · Văn viết học thuật",
+  "opal-spoken": "OPAL · Văn nói học thuật",
+  "american-3000": "American Oxford 3000",
+  "american-5000": "American Oxford 5000 · Bổ sung",
+  "cambridge-blog": "Cambridge Blog · Ngôn ngữ hiện đại",
+};
 function download(name: string, text: string, type = "text/plain") {
   const url = URL.createObjectURL(
     new Blob([text], { type: type + ";charset=utf-8" }),
@@ -157,6 +170,8 @@ function App() {
     [summary, setSummary] = useState<string>();
   const hasModal =
     !!detail || editor !== undefined || !!pending || !!backup || settings;
+  const displayWord = (word?: Word) =>
+    word ? preferredHeadword(word, state.voice) : "";
   useEffect(() => {
     const update = () => setOfflineStatus(getOfflineStatus());
     window.addEventListener(offlineStatusEvent, update);
@@ -523,9 +538,7 @@ function App() {
   );
   const filtered = active.filter(
     (e) =>
-      (e.word.word + " " + e.word.meaning_vi)
-        .toLowerCase()
-        .includes(search.toLowerCase()) &&
+      headwordSearchText(e.word).includes(search.toLocaleLowerCase()) &&
       (!topic || (e.word.topics || "").split(",").includes(topic)) &&
       (!collection ||
         (e.word.collections || "").split(",").includes(collection)) &&
@@ -854,10 +867,11 @@ function App() {
         fail();
         return;
       }
-      const voices = speechSynthesis
-        .getVoices()
-        .filter((v) => v.lang.startsWith("en"));
-      if (!voices.length) {
+      const selectedVoice = selectEnglishVoice(
+        speechSynthesis.getVoices(),
+        state.voice,
+      );
+      if (!selectedVoice) {
         fail();
         setNotice(
           "Chưa có giọng tiếng Anh trên thiết bị. Hãy cài giọng đọc hoặc chọn bài đọc/viết; bài nghe chưa được đánh giá.",
@@ -865,8 +879,12 @@ function App() {
         return;
       }
       const u = new SpeechSynthesisUtterance(text);
-      u.voice = voices.find((v) => v.lang === state.voice) || voices[0];
+      u.voice = selectedVoice;
       u.lang = u.voice.lang;
+      if (u.lang.replace(/_/g, "-").toLowerCase() !== state.voice.toLowerCase())
+        setNotice(
+          `Thiết bị chưa có giọng ${state.voice === "en-US" ? "Anh–Mỹ" : "Anh–Anh"}; đang dùng giọng tiếng Anh ${u.lang}. Bạn có thể cài thêm giọng đọc trong thiết bị.`,
+        );
       u.rate = state.rate;
       u.onend = complete;
       u.onerror = fail;
@@ -1379,7 +1397,9 @@ function App() {
                   <div className="floating-card front-card">
                     <span className="card-label">YOUR NEXT CHAPTER</span>
                     <div className="plant">🌱</div>
-                    <strong>{fresh[0]?.word.word || "Sẵn sàng học"}</strong>
+                    <strong>
+                      {displayWord(fresh[0]?.word) || "Sẵn sàng học"}
+                    </strong>
                     <span className="phonetic">
                       {fresh[0]?.word.ipa || "một từ mới, một khởi đầu"}
                     </span>
@@ -1484,7 +1504,8 @@ function App() {
                 {freshRecommendations[0] && (
                   <p className="fineprint" data-testid="recommendation-reason">
                     <strong>
-                      Gợi ý tiếp: {freshRecommendations[0].entry.word.word}.
+                      Gợi ý tiếp:{" "}
+                      {displayWord(freshRecommendations[0].entry.word)}.
                     </strong>{" "}
                     {freshRecommendations[0].reason}
                   </p>
@@ -1785,7 +1806,9 @@ function App() {
                 >
                   <option value="">Mọi bộ từ</option>
                   {selectOptions("collections").map((t) => (
-                    <option key={t}>{t}</option>
+                    <option key={t} value={t}>
+                      {collectionLabels[t] || t}
+                    </option>
                   ))}
                 </select>
                 <select
@@ -1857,7 +1880,7 @@ function App() {
                       </span>
                       <Volume2 size={17} />
                     </div>
-                    <h3>{e.word.word}</h3>
+                    <h3>{displayWord(e.word)}</h3>
                     <p data-exposure-id={e.word.id}>{e.word.meaning_vi}</p>
                     <small>
                       {e.word.example_en ||
@@ -1926,7 +1949,7 @@ function App() {
                   .filter((e) => e.archived)
                   .map((e) => (
                     <p key={e.word.id}>
-                      {e.word.word}{" "}
+                      {displayWord(e.word)}{" "}
                       <button
                         onClick={() =>
                           commit({
@@ -2061,7 +2084,9 @@ function App() {
               </p>
               {practiceRecommendations[0] ? (
                 <p className="fineprint">
-                  <strong>{practiceRecommendations[0].entry.word.word}:</strong>{" "}
+                  <strong>
+                    {displayWord(practiceRecommendations[0].entry.word)}:
+                  </strong>{" "}
                   {practiceRecommendations[0].reason}
                 </p>
               ) : (
@@ -2121,7 +2146,7 @@ function App() {
                     {[2, 3].includes(task.skill)
                       ? "Lắng nghe và thử nhớ lại"
                       : task.skill === 0 || task.skill === 5
-                        ? w.word
+                        ? displayWord(w)
                         : task.skill === 4
                           ? "Điền từ đang học vào ngữ cảnh"
                           : w.meaning_vi}
@@ -2159,7 +2184,7 @@ function App() {
                         onClick={() =>
                           task.skill === 3 && canPractice(w, 4)
                             ? speak(w.example_en, w.audio_example, true)
-                            : speak(w.word, w.audio_word, true)
+                            : speak(displayWord(w), w.audio_word, true)
                         }
                       >
                         <Volume2 size={28} />{" "}
@@ -2277,16 +2302,22 @@ function App() {
                   {revealed && (
                     <div className="answer">
                       <h3>
-                        {w.word}{" "}
+                        {displayWord(w)}{" "}
                         <button
                           className="icon"
                           aria-label="Nghe từ"
-                          onClick={() => speak(w.word, w.audio_word)}
+                          onClick={() => speak(displayWord(w), w.audio_word)}
                         >
                           <Volume2 size={19} />
                         </button>
                       </h3>
                       <p>{w.meaning_vi}</p>
+                      {displayWord(w) !== w.word && (
+                        <p>
+                          Cách viết trong nguồn: <span lang="en">{w.word}</span>
+                          . Cả hai cách viết đều được chấp nhận.
+                        </p>
+                      )}
                       {w.spelling_variants && (
                         <p>
                           Biến thể chính tả được chấp nhận:{" "}
@@ -2506,7 +2537,7 @@ function App() {
                       className="text-button"
                       onClick={() => openDetail(e.word.id)}
                     >
-                      {e.word.word}
+                      {displayWord(e.word)}
                     </button>
                     <span>
                       {e.goal === "recognition"
@@ -2564,7 +2595,7 @@ function App() {
                         .filter((e) => canPractice(e.word, 5))
                         .map((e) => (
                           <option key={e.word.id} value={e.word.id}>
-                            {e.word.word}
+                            {displayWord(e.word)}
                           </option>
                         ))}
                     </select>
@@ -2600,7 +2631,7 @@ function App() {
                         className="text-button"
                         onClick={() => openDetail(r.wordId)}
                       >
-                        {state.entries[r.wordId]?.word.word || r.wordId}
+                        {displayWord(state.entries[r.wordId]?.word) || r.wordId}
                       </button>
                       <p>{r.answer}</p>
                       <button
@@ -2796,7 +2827,7 @@ function App() {
             <div className="preview-list">
               {pending.words.slice(0, 60).map((w) => (
                 <p key={w.id}>
-                  {w.word} — {w.meaning_vi}
+                  {displayWord(w)} — {w.meaning_vi}
                 </p>
               ))}
             </div>
@@ -2867,10 +2898,15 @@ function App() {
                   commit({ ...state, voice: e.target.value }).catch(notifyError)
                 }
               >
-                <option value="en-GB">Anh–Anh</option>
                 <option value="en-US">Anh–Mỹ</option>
+                <option value="en-GB">Anh–Anh</option>
               </select>
             </label>
+            <p className="fineprint">
+              Giọng ưu tiên cũng chọn cách viết Anh–Mỹ đã đối chiếu nếu có. Cài
+              đặt đã lưu được giữ nguyên; âm thanh URL và câu ví dụ theo dữ liệu
+              của mục từ.
+            </p>
             <label className="setting-row">
               Tốc độ đọc
               <select

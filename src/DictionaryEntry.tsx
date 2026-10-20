@@ -8,6 +8,7 @@ import {
   strength,
 } from "./core";
 import "./dictionary.css";
+import { preferredHeadword, youglishUsUrl } from "./american-english";
 
 type DictionaryEntryProps = {
   entry: State["entries"][string];
@@ -66,6 +67,8 @@ export default function DictionaryEntry({
   change,
 }: DictionaryEntryProps) {
   const w = entry.word;
+  const headword = preferredHeadword(w, state.voice);
+  const usHeadword = preferredHeadword(w, "en-US");
   const [confirmedMeaning, setConfirmedMeaning] = useState(false);
   const [confirmedExamples, setConfirmedExamples] = useState(false);
   useEffect(() => {
@@ -73,7 +76,20 @@ export default function DictionaryEntry({
     setConfirmedExamples(false);
   }, [w.id, w.meaning_vi, w.example_en, w.example_vi]);
   const imported = w.content_status === "dictionary";
+  // no-cloze describes exercise suitability, not authorship. The legacy
+  // OVDP article entry uses it for a quoted source phrase.
+  const legacyDictionarySource =
+    w.source_fact_index !== undefined &&
+    /Free Vietnamese Dictionary Project|anhviet\.dict/i.test(w.source || "");
+  const authoredReference =
+    imported &&
+    ["authored", "no-cloze"].includes(w.example_type) &&
+    !legacyDictionarySource;
+  const importedSource = imported && !authoredReference;
   const reference = w.content_status === "reference";
+  const collections = (w.collections || "").split(",");
+  const opalWritten = collections.includes("opal-written");
+  const opalSpoken = collections.includes("opal-spoken");
   const sources = referenceLinks(w.source || "");
   const isOxfordList =
     (w.collections || "")
@@ -119,8 +135,22 @@ export default function DictionaryEntry({
           <span>Jeongyeon · Sổ từ cá nhân</span>
         </div>
         <h2 className="dict-headword" lang="en">
-          {w.word}
+          {headword}
         </h2>
+        {usHeadword !== w.word && (
+          <p className="dict-spelling-note">
+            {headword !== w.word ? (
+              <>
+                Anh–Mỹ · Cách viết trong nguồn: <span lang="en">{w.word}</span>.
+              </>
+            ) : (
+              <>
+                Cách viết Anh–Mỹ: <span lang="en">{usHeadword}</span>.
+              </>
+            )}{" "}
+            Cả hai cách viết đều được chấp nhận khi luyện từ.
+          </p>
+        )}
         <div className="dict-grammar">
           <span className="dict-pos" lang={w.part_of_speech ? "en" : "vi"}>
             {reference
@@ -159,6 +189,24 @@ export default function DictionaryEntry({
                 : "Mức CEFR do nguồn của mục từ khai báo; chưa đối chiếu riêng từng nghĩa."
               : "Chưa đối chiếu mức CEFR."}
         </p>
+        {(opalWritten || opalSpoken) && (
+          <section className="dict-opal" aria-label="Phạm vi Oxford OPAL">
+            <h3>Oxford OPAL · Từ vựng học thuật</h3>
+            <p>
+              {opalWritten && "Văn viết học thuật"}
+              {opalWritten && opalSpoken && " · "}
+              {opalSpoken && "Văn nói học thuật"}. Đã đối chiếu đầu từ và từ
+              loại trong danh sách; nhãn này không xác nhận riêng nghĩa hoặc ví
+              dụ đang hiển thị.
+            </p>
+            {opalSpoken && (
+              <p>
+                OPAL spoken dựa trên ngữ liệu văn nói học thuật Anh–Anh, không
+                phải thước đo tần suất tiếng Anh–Mỹ.
+              </p>
+            )}
+          </section>
+        )}
         {frequency !== undefined && (
           <div className="dict-frequency" aria-label="Mức độ thông dụng">
             <p>
@@ -189,7 +237,7 @@ export default function DictionaryEntry({
                 ? "Phát âm thanh từ URL; dùng giọng tổng hợp nếu phát thất bại"
                 : "Phát từ bằng giọng tổng hợp của trình duyệt"
             }
-            onClick={() => speak(w.word, wordAudio)}
+            onClick={() => speak(headword, wordAudio)}
           >
             <Volume2 size={17} aria-hidden="true" />
             {wordAudio ? "Nghe từ · âm thanh URL" : "Nghe từ · giọng tổng hợp"}
@@ -200,6 +248,23 @@ export default function DictionaryEntry({
             ? "Âm thanh theo URL của mục từ; giọng tổng hợp dự phòng nếu không phát được."
             : "Giọng tổng hợp của trình duyệt; không phải bản ghi phát âm Oxford."}
         </p>
+        <p className="dict-muted">
+          IPA và âm thanh URL theo dữ liệu của mục từ; lựa chọn giọng tổng hợp
+          không tự xác nhận chúng là phát âm Anh–Mỹ.
+        </p>
+        <a
+          className="dict-youglish-link"
+          href={youglishUsUrl(w)}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Nghe người Mỹ dùng từ (YouGlish)
+          <ExternalLink size={15} aria-hidden="true" />
+        </a>
+        <p className="dict-muted">
+          Mở trang YouGlish bên ngoài, cần Internet. Nội dung và giọng nói tùy
+          từng video; đây không phải âm thanh đã được Jeongyeon kiểm chứng.
+        </p>
       </header>
 
       <section className="dict-meaning" aria-label="Nghĩa đang học">
@@ -208,13 +273,13 @@ export default function DictionaryEntry({
         </div>
         <div className="dict-sense-body">
           <p className="dict-label">
-            {imported ? "Giải nghĩa từ nguồn" : "Giải nghĩa biên soạn"}
+            {importedSource ? "Giải nghĩa từ nguồn" : "Giải nghĩa biên soạn"}
           </p>
           <p className="dict-definition" lang="en">
             {w.definition_en || "Chưa có giải nghĩa tiếng Anh trong dữ liệu."}
           </p>
           <p className="dict-label">
-            {imported
+            {importedSource
               ? "Nghĩa tiếng Việt · nguồn từ điển mở"
               : "Nghĩa tiếng Việt · biên soạn"}
           </p>
@@ -237,7 +302,7 @@ export default function DictionaryEntry({
           <div className="dict-example">
             <div className="dict-example-heading">
               <h3>
-                {imported
+                {importedSource
                   ? "Ngữ liệu từ nguồn (có thể là cụm từ)"
                   : "Ví dụ biên soạn"}
               </h3>
@@ -260,15 +325,19 @@ export default function DictionaryEntry({
             </div>
             <p className="dict-example-en" lang="en">
               {w.example_en ||
-                "Nguồn chưa cung cấp ví dụ; ứng dụng không tự tạo bài điền ngữ cảnh cho mục này."}
+                (authoredReference
+                  ? "Chưa có ví dụ biên soạn cho mục tham khảo này."
+                  : "Nguồn chưa cung cấp ví dụ; ứng dụng không tự tạo bài điền ngữ cảnh cho mục này.")}
             </p>
             <p className="dict-example-vi" lang="vi">
               {w.example_vi}
             </p>
             <p className="dict-muted">
-              {imported
-                ? "Nghĩa và ngữ liệu được nhập theo giấy phép của nguồn từ điển mở, chưa rà soát thủ công từng mục. Chúng không phải định nghĩa hoặc ví dụ Oxford."
-                : "Giải nghĩa, bản dịch và ví dụ do Jeongyeon/người nhập biên soạn; không phải nội dung trích nguyên văn từ Oxford."}
+              {authoredReference
+                ? "Giải nghĩa, bản dịch và ví dụ do Jeongyeon biên soạn theo phạm vi nguồn đã ghi; không phải nội dung trích nguyên văn hoặc toàn bộ mục từ của Cambridge/Oxford."
+                : importedSource
+                  ? "Nghĩa và ngữ liệu được nhập theo giấy phép của nguồn từ điển mở, chưa rà soát thủ công từng mục. Chúng không phải định nghĩa hoặc ví dụ Oxford."
+                  : "Giải nghĩa, bản dịch và ví dụ do Jeongyeon/người nhập biên soạn; không phải nội dung trích nguyên văn từ Oxford."}
             </p>
           </div>
         </div>
@@ -384,7 +453,11 @@ export default function DictionaryEntry({
         <div className="notice">
           {reference
             ? "Mục nguồn có xung đột hoặc thiếu nghĩa đã đối chiếu; chưa dùng để kiểm tra."
-            : "Nội dung từ điển mở chưa rà soát từng mục. Các mục chưa xác nhận chỉ dùng để tra cứu; đối chiếu nghĩa và ví dụ trước khi đưa vào bài học."}
+            : authoredReference
+              ? readyForLearning
+                ? "Bạn đã cho phép học mục tham khảo này trên thiết bị. Phạm vi nguồn tham khảo và mức xác nhận từ nhà xuất bản không thay đổi."
+                : "Mục tham khảo có giải nghĩa và ví dụ biên soạn, hiện chỉ để tra cứu. Cần đối chiếu nghĩa và cách dùng theo phạm vi nguồn trước khi tự xác nhận để học."
+              : "Nội dung từ điển mở chưa rà soát từng mục. Các mục chưa xác nhận chỉ dùng để tra cứu; đối chiếu nghĩa và ví dụ trước khi đưa vào bài học."}
         </div>
       )}
       <section className="dict-learning" aria-label="Việc học của bạn">
@@ -403,8 +476,12 @@ export default function DictionaryEntry({
             </h3>
             <p>
               {readyForLearning
-                ? "Bạn đã cho phép dùng mục này trong bài học. Xác nhận được lưu như bản cá nhân để cập nhật mặc định không ghi đè. Nhãn nguồn từ điển mở vẫn được giữ; đây không phải chứng nhận của Oxford."
-                : "Đối chiếu đúng nghĩa, từ loại và bản dịch trong nguồn. Chỉ xác nhận khi cả hai ví dụ diễn đạt cùng nghĩa đang học. Nếu có lỗi, dùng Sửa mục từ trước."}
+                ? authoredReference
+                  ? "Xác nhận học được lưu như bản cá nhân để cập nhật mặc định không ghi đè. Đây là lựa chọn của bạn, không phải xác nhận chất lượng hoặc công nhận mục từ bởi Cambridge/Oxford; phạm vi bài nguồn vẫn giữ nguyên."
+                  : "Bạn đã cho phép dùng mục này trong bài học. Xác nhận được lưu như bản cá nhân để cập nhật mặc định không ghi đè. Nhãn nguồn từ điển mở vẫn được giữ; đây không phải chứng nhận của Oxford."
+                : authoredReference
+                  ? "Đối chiếu nghĩa, từ loại và cách dùng trong đúng phạm vi bài nguồn. Ví dụ Anh–Việt do Jeongyeon biên soạn cần được kiểm tra riêng; nguồn có nhắc đến từ không đồng nghĩa nhà xuất bản đã công nhận mục từ đó. Nếu có lỗi, dùng Sửa mục từ trước."
+                  : "Đối chiếu đúng nghĩa, từ loại và bản dịch trong nguồn. Chỉ xác nhận khi cả hai ví dụ diễn đạt cùng nghĩa đang học. Nếu có lỗi, dùng Sửa mục từ trước."}
             </p>
             {readyForLearning ? (
               <button

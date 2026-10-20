@@ -80,6 +80,7 @@ const conversation = (
 describe("concurrent state rebasing", () => {
   it("a stale voice edit preserves a completed review, schedule and active session", () => {
     const base = fixture();
+    base.voice = "en-GB";
     const latest = structuredClone(base);
     latest.history.push(answer());
     latest.schedules["apple:1"] = { last: 1000, due: 10000, step: 0 };

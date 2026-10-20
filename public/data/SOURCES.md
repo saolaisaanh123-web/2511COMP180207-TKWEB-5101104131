@@ -1,8 +1,33 @@
 # Nguồn và phạm vi kho từ Jeongyeon
 
-Kho mặc định hiện chứa **toàn bộ phạm vi Oxford 3000 và phần bổ sung Oxford 5000 theo hai PDF đã đối chiếu**, cộng bộ **100 mục nghĩa cụm động từ (98 cụm)** và **107 mục Slang/thành ngữ/khẩu ngữ**, gồm 27 thành ngữ có ngữ cảnh báo chí. Tất cả nội dung học nằm trong file UTF-8 `vocabulary.txt`; không nhúng từ vựng vào mã giao diện.
+Kho mặc định hiện chứa **toàn bộ phạm vi Oxford 3000 và phần bổ sung Oxford 5000 theo hai PDF đã đối chiếu**, cộng bộ cụm động từ và Slang/thành ngữ/khẩu ngữ ban đầu, gồm 27 thành ngữ có ngữ cảnh báo chí. Tất cả nội dung học nằm trong file UTF-8 `vocabulary.txt`; không nhúng từ vựng vào mã giao diện.
 
-## Đếm đúng phạm vi Oxford
+## Nguồn ưu tiên từ ngày 20/10/2026
+
+| Mục đích | Nguồn và phạm vi đã kiểm tra |
+| --- | --- |
+| Nền tảng A1–C1 | American Oxford 3000/5000: hai PDF chính thức tải trực tiếp HTTP 200, 5.325 dòng dữ kiện, 4.954 cách viết khác nhau. Đối chiếu đầu từ/POS/CEFR; không đồng nhất với mọi nghĩa. Bằng chứng Anh–Anh cũ bên dưới giữ nguyên. |
+| Nghĩa, ví dụ, cách dùng | Các bài Oxford American/Academic được đọc trực tiếp cho phần bổ sung và bốn mục sửa. Nghĩa Việt, định nghĩa diễn giải và ví dụ Anh–Việt tự biên soạn. Cambridge Dictionary còn chặn HTTP 403, chưa được coi là nguồn đã đọc. |
+| Từ mới/cách dùng hiện đại | Sáu bài Cambridge Dictionary Blog đã đọc. Word Watcher/New words ghi nhận cách dùng, không phải chứng nhận đã vào từ điển hoặc phổ biến khắp nước Mỹ. |
+| Phát âm/giao tiếp | Liên kết YouGlish có bộ lọc American đã kiểm tra cấu trúc trang bằng URL thật. Không kiểm chứng từng video, không nhập audio hoặc dùng video làm bằng chứng chấm bài. |
+| Học thuật/IELTS | Oxford OPAL: danh sách và phương pháp chính thức; 1.511 dòng từ đơn/từ loại, 1.339 nhãn từ. Chỉ bổ sung phần thiếu sau khi đọc mục từ. OPAL spoken dùng ngữ liệu Anh–Anh, không gán tần suất Mỹ hay band IELTS. |
+
+Kho hiện tại: **5.558 mục theo nghĩa/từ loại**, **1.061 ready**, **4.497 lookup**. Thêm **396 mục** gồm 57 mục nền tảng Mỹ, 316 mục OPAL theo từ loại (không nhân đôi mục đã có cùng từ loại), 23 mục Cambridge Blog. 12 mục Blog mới/chuyên biệt và danh từ `practical` mang nhãn Anh–Anh được giữ chỉ tra cứu. Các mục cũ chưa rà nghĩa vẫn chỉ tra cứu.
+
+Giữ nguyên ID/thứ tự của 5.162 mục cũ. Chỉ bốn mục có nghĩa/ngữ cảnh được sửa có chủ đích: `hardly` → hầu như không; `sensible` → hợp lý/biết suy xét; `execution` → sự thực hiện/triển khai trong nghĩa đang luyện; `pants` → quần dài trong cách dùng Mỹ, kèm phân biệt Anh–Anh. 61 cách viết Mỹ của mục cũ được lưu ở `preferred_us_spelling`, không đổi đầu từ nguồn hoặc khóa nội dung đã dùng cho lịch học. Có thêm 316 IPA North American đối chiếu trực tiếp các mục mới; không tạo URL audio Oxford.
+
+Dữ liệu biên soạn: `data/authoring/source-update-2026-10.json`. Dữ kiện danh sách: `data/lexicons/american-oxford-2026-10.json`, `data/lexicons/opal-2026-10.json`. `source-update-provenance.json` ghi 454 URL kèm ngày/HTTP/hash/phạm vi kiểm tra; một số URL là tiểu mục cùng trang. Chỉ lưu dữ kiện/metadata, không phân phối HTML toàn văn. SHA ghi một snapshot đã đọc; HTML động có thể đổi byte trong những lần truy cập khác.
+
+Liên kết OPAL `latter` dẫn nhầm `become` đã được phát hiện; mục mới dùng đúng trang noun `https://www.oxfordlearnersdictionaries.com/definition/english/latter_2`. Với `many`, danh sách gắn nhãn adjective nhưng bài chi tiết dùng determiner/pronoun: giữ phân loại đúng cách dùng, không tạo tính từ giả để khớp bảng. Ghi chú khác biệt được giữ trong input biên soạn.
+
+Hai PDF Mỹ được phát hiện theo href thật từ trang Oxford:
+
+- https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/American_Oxford_3000_by_CEFR_level.pdf — SHA256 `393971c674d7eba72b40a77c84bc0b7b350dd4241b26154cfe30d0720f9d303e`.
+- https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/American_Oxford_5000_by_CEFR_level.pdf — SHA256 `bba5316d4aa23f0e5c3ac08fdb960576d5ab28b882e35075cfba0fe9f27ab571`.
+
+Đợt này không xác nhận thủ công mọi nghĩa của toàn kho, không tuyên bố hỗ trợ đủ mọi nghĩa của mỗi từ, và không nhập toàn bộ mẫu cụm học thuật OPAL khi chưa biên tập. Nội dung ngoại tuyến có sẵn trong TXT sau cập nhật; mở trang nguồn hoặc YouGlish cần Internet.
+
+## Đếm đúng phạm vi Oxford Anh–Anh đã lưu
 
 - Hai PDF có **5.323 dòng đầu mục/từ loại/CEFR**.
 - Gộp các từ trùng cách viết, giữ riêng May/may, March/march, IT/it: **4.955 đầu từ/cách viết**.
@@ -22,7 +47,7 @@ Nếu nguồn không có ví dụ, để trống và ghi rõ. Không dựng câu
 
 ## Nguồn đầu từ/loại từ/CEFR
 
-PDF có thương hiệu và © Oxford University Press, lấy qua mirror khóa theo commit. Đã kiểm tra SHA256 của bản lưu. Yêu cầu tải PDF trực tiếp từ Oxford trả HTTP403; chưa so sánh byte với bản hiện tại trên host nhà xuất bản. CEFR là dữ kiện đầu từ/loại từ, không chứng thực mọi nghĩa, cụm từ hoặc ví dụ ghép với đầu từ.
+PDF có thương hiệu và © Oxford University Press, lấy qua mirror khóa theo commit. Đã kiểm tra SHA256 của bản lưu. Trong lần nhập ban đầu, PDF trực tiếp trả HTTP 403. Ngày 20/10 đã tải được bản chính thức: PDF Anh–Anh 5000 có hash trùng bản lưu; PDF 3000 hiện tại khác hash. Giữ nguyên phiên bản và dữ kiện cũ để không thay ID/CEFR âm thầm; không dùng khác biệt byte làm bằng chứng mọi dòng nội dung đã đổi. CEFR là dữ kiện đầu từ/loại từ, không chứng thực mọi nghĩa, cụm từ hoặc ví dụ ghép với đầu từ.
 
 ### Oxford 3000
 

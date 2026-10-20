@@ -74115,27 +74115,34 @@
   ],
   "coverage": {
     "oxfordHeadwords": 4955,
-    "entryCount": 5162,
-    "reviewed": 674,
-    "dictionary": 4487,
+    "entryCount": 5558,
+    "reviewed": 1061,
+    "dictionary": 4496,
     "reference": 1,
-    "phrasalSenses": 100,
-    "slangSenses": 107,
-    "withBilingualContext": 3631,
-    "missingContext": 1531,
+    "phrasalSenses": 101,
+    "slangSenses": 129,
+    "withBilingualContext": 4028,
+    "missingContext": 1530,
     "referenceWords": [
       {
         "word": "diplomatic",
         "part_of_speech": "noun"
       }
     ],
-    "learningReady": 674,
-    "lookupOnly": 4488
+    "learningReady": 1061,
+    "lookupOnly": 4497
   },
   "contentReview": {
     "overlay": "../../data/authoring/content-review-2026-10.txt",
     "entries": 38,
     "scope": "Targeted modern-meaning corrections and authored bilingual contexts; not an assertion that all Oxford meanings have been reviewed.",
-    "canonicalVocabularySha256": "b6f7f03d076425de1763975835266588780ab34032ca1c9148ab8f98594ee9a6"
-  }
+    "canonicalVocabularySha256": "19fb2f4dd2ffab355ac9fe59abf1442bfad79fbe036e7262d90197132667d004",
+    "supplementalSourceReview": {
+      "date": "2026-10-20",
+      "overlay": "data/authoring/source-update-2026-10.json",
+      "canonicalVocabularySha256": "19fb2f4dd2ffab355ac9fe59abf1442bfad79fbe036e7262d90197132667d004",
+      "scope": "Additive source-checked American spelling and list membership, targeted original meaning corrections and selected new senses; not a verification of every historical definition or publisher certification."
+    }
+  },
+  "sourceUpdateCanonicalHash": "19fb2f4dd2ffab355ac9fe59abf1442bfad79fbe036e7262d90197132667d004"
 }

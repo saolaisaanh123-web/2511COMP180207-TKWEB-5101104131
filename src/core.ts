@@ -87,7 +87,7 @@ export const empty = (): State => ({
   history: [],
   schedules: {},
   daily: 5,
-  voice: "en-GB",
+  voice: "en-US",
   rate: 0.85,
 });
 export const fields = [
@@ -107,6 +107,7 @@ export const fields = [
   "audio_example",
   "accepted_answers",
   "spelling_variants",
+  "preferred_us_spelling",
   "source",
   "note",
   "content_status",
@@ -217,7 +218,11 @@ export const serialize = (words: Word[]) =>
   words
     .map((w) =>
       fields
-        .filter((f) => f !== "spelling_variants" || !!w[f])
+        .filter(
+          (f) =>
+            !["spelling_variants", "preferred_us_spelling"].includes(f) ||
+            !!w[f],
+        )
         .map((f) => `${f}: ${(w[f] || "").replace(/[\r\n]+/g, " ")}`)
         .join("\n"),
     )
@@ -291,6 +296,7 @@ export const answerForms = (w: Word) =>
     w.word,
     ...(w.accepted_answers || "").split("|"),
     ...(w.spelling_variants || "").split("|"),
+    w.preferred_us_spelling || "",
   ]
     .map((a) => a.trim())
     .filter(Boolean);
@@ -338,7 +344,8 @@ export const isSlang = (w: Word) =>
 // A change of meaning or teaching context must not reuse mastery or schedules
 // earned for the previous sense. Keep the old results for an honest history.
 // Reviewed spelling variants do not change the taught sense: adding a regional
-// spelling must preserve existing content keys, history and review schedules.
+// spelling (including preferred_us_spelling) must preserve existing content
+// keys, history and review schedules.
 export const contentKey = (w: Word, skill = 0) =>
   JSON.stringify([
     w.word,

@@ -248,7 +248,7 @@ describe("non-destructive cloud merge", () => {
 });
 
 describe("Supabase protocol and account boundaries", () => {
-  it("roundtrips all 5162 current vocabulary IDs through the bounded compressed transport", async () => {
+  it("roundtrips all current vocabulary IDs through the bounded compressed transport", async () => {
     const state = merge(
       empty(),
       parse(readFileSync("public/data/vocabulary.txt", "utf8")),
@@ -336,7 +336,7 @@ describe("Supabase protocol and account boundaries", () => {
         release = resolve;
       });
       vi.stubGlobal("CompressionStream", function () {
-      const wait = new TransformStream<BufferSource, BufferSource>({
+        const wait = new TransformStream<BufferSource, BufferSource>({
           async transform(chunk, controller) {
             entered = true;
             await gate;

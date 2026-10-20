@@ -12,6 +12,7 @@ from collections import Counter
 import hashlib
 import json
 from pathlib import Path
+import runpy
 
 from corpus_io import parse_records, read_records, serialize_records
 from corpus_policy import (
@@ -24,6 +25,7 @@ from corpus_policy import (
 ROOT = Path(__file__).resolve().parents[1]
 REVIEW = ROOT / "data/authoring/content-review-2026-10.txt"
 VOCABULARY = ROOT / "public/data/vocabulary.txt"
+SOURCE_UPDATE = runpy.run_path(str(ROOT / "scripts/apply-source-update.py"))
 
 
 def digest(data):
@@ -64,7 +66,7 @@ def main():
         ready = row.get("content_status") == "reviewed"
         row["learning_status"] = "ready" if ready else "lookup"
         row.setdefault("learning_note", "")
-        if not ready:
+        if not ready and not row["learning_note"]:
             row["learning_note"] = "Chỉ tra cứu, chưa đưa vào bài học: nghĩa hoặc ví dụ chưa được rà thủ công cho nghĩa đang hiển thị."
         elif not row["learning_note"]:
             row["learning_note"] = "Nội dung bài học do ứng dụng biên soạn và rà lại; không phải toàn bộ nghĩa của đầu từ."
@@ -75,10 +77,17 @@ def main():
             row["frequency_source"] = ""
             row["frequency_note"] = CONFLATED[row["word"]]
     apply_reviewed_spelling_variants(records)
+    source_update = SOURCE_UPDATE["load_source_update"](required=False)
+    if source_update:
+        # Reapply the newer additive review after the historical 38 corrections,
+        # so previewing the older overlay cannot undo explicit newer decisions.
+        records = SOURCE_UPDATE["apply_source_update"](records, source_update)
+        by_id = {row["id"]: row for row in records}
     text = serialize_records(records)
     # Structural and semantic invariants matter more than a forced round count.
-    assert [row["id"] for row in records] == [row["id"] for row in parse_records(original.decode("utf-8"))]
-    assert len(records) == 5162
+    original_rows = parse_records(original.decode("utf-8"))
+    assert [row["id"] for row in records[:len(original_rows)]] == [row["id"] for row in original_rows]
+    assert len(records) == 5162 + (len(source_update.get("additions", [])) if source_update else 0)
     assert len(all_facts) == 5323
     assert sum("oxford-" in row.get("collections", "") for row in records) == 4955
     assert all(any(char.isalpha() for char in row.get("meaning_vi", "")) for row in records if row["learning_status"] == "ready")
@@ -126,7 +135,11 @@ def main():
     for row in records:
         if row["word"] in CONFLATED:
             old_unscored[row["id"]] = {"id": row["id"], "word": row["word"], "reason": "known_case_or_lemma_sense_conflation", "note": CONFLATED[row["word"]]}
-    frequency["unscoredEntries"] = [old_unscored[row["id"]] for row in records if not row.get("frequency_zipf")]
+    frequency["unscoredEntries"] = [old_unscored.get(row["id"], {
+        "id": row["id"], "word": row["word"],
+        "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+        "note": "No frequency estimate was invented for an additive source-review entry.",
+    }) for row in records if not row.get("frequency_zipf")]
     frequency["coverage"]["scored"] = sum(bool(row.get("frequency_zipf")) for row in records)
     frequency["coverage"]["unscored"] = len(frequency["unscoredEntries"])
     frequency["coverage"]["unscoredByReason"] = dict(Counter(item["reason"] for item in frequency["unscoredEntries"]))
@@ -138,12 +151,19 @@ def main():
     frequency["historicalExportNote"] = "inputBeforeAttachingMetadata and outputAfterAttachingMetadata describe the original pinned frequency export, before later editorial corrections; currentCanonicalVocabulary identifies the current canonical TXT."
     frequency["method"]["case"] = "Casefolded spelling frequency. Known case/lemma-sense conflations IT, May, March and found are explicitly unscored; other values still do not distinguish senses or POS."
     frequency["method"]["scope"] = "Exact Oxford spellings only, excluding multiword/alternative forms, missing source forms and explicitly documented known conflations."
+    documents = {
+        "oxford-provenance.json": metadata,
+        "frequency-provenance.json": frequency,
+        "content-review-provenance.json": provenance,
+    }
+    if source_update:
+        documents = SOURCE_UPDATE["update_provenance"](records, text, source_update, metadata, frequency, provenance)
     if args.write:
         if VOCABULARY.read_bytes() != original:
             raise RuntimeError("Canonical TXT changed while previewing; rerun against the latest file")
         VOCABULARY.write_text(text, encoding="utf-8", newline="\n")
-        for path, value in [(metadata_path, metadata), (frequency_path, frequency), (ROOT / "public/data/content-review-provenance.json", provenance)]:
-            path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        for filename, value in documents.items():
+            (ROOT / "public/data" / filename).write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     else:
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(text, encoding="utf-8", newline="\n")

@@ -1,6 +1,7 @@
 import { useEffect, useId, useRef, useState } from "react";
 import { Check, RotateCcw } from "lucide-react";
 import type { State } from "./core";
+import { preferredHeadword } from "./american-english";
 import type { WritingAttempt, WritingIssue } from "./practice-data";
 import {
   WRITING_LIMIT,
@@ -90,6 +91,7 @@ export default function WritingFeedback({
   const saved = (state.writing || [])
     .filter((item) => item.wordId === wordId)
     .sort((a, b) => b.time - a.time);
+  const headword = preferredHeadword(entry.word, state.voice);
   const latest =
     (attempt?.wordId === wordId ? attempt : undefined) ||
     (parentId ? saved.find((item) => item.id === parentId) : undefined);
@@ -140,7 +142,7 @@ export default function WritingFeedback({
         <div>
           <h3 id={labelId}>Viết câu và nhận phản hồi</h3>
           <p>
-            Dùng <strong lang="en">{entry.word.word}</strong> theo nghĩa:{" "}
+            Dùng <strong lang="en">{headword}</strong> theo nghĩa:{" "}
             {entry.word.meaning_vi}
           </p>
         </div>
@@ -160,7 +162,7 @@ export default function WritingFeedback({
         lang="en"
         rows={3}
         disabled={disabled || saving}
-        placeholder={`Viết một câu có dùng “${entry.word.word}”…`}
+        placeholder={`Viết một câu có dùng “${headword}”…`}
         onChange={(event) => {
           edited.current = true;
           setText(event.target.value);

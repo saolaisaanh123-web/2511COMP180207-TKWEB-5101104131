@@ -168,7 +168,7 @@ describe("Oxford-grounded content and safe upgrade", () => {
     }
     expect(
       words.filter((w) => w.collections.split(",").includes("phrasal-verbs")),
-    ).toHaveLength(100);
+    ).toHaveLength(proof.coverage.phrasalSenses);
     expect(
       words.filter((w) => w.collections.split(",").includes("slang")),
     ).toHaveLength(proof.coverage.slangSenses);
@@ -244,14 +244,19 @@ describe("Large dictionary learning safeguards", () => {
       true,
     );
   });
-  it("keeps all complete authored slang/phrasal senses contextual and separate from Oxford claims", () => {
+  it("keeps reviewed slang/phrasal contexts usable and emerging or ungradable contexts out of objective practice", () => {
     for (const w of words.filter((w) =>
       /slang|phrasal-verbs/.test(w.collections),
     )) {
       expect(w.level).toBe("");
       expect(w.meaning_vi).toBeTruthy();
-      expect(canPractice(w, 4)).toBe(true);
-      expect(w.content_status).toBe("reviewed");
+      if (w.learning_status === "lookup") {
+        expect(canPractice(w, 4), w.id).toBe(false);
+        expect(w.learning_note).toBeTruthy();
+      } else {
+        expect(w.content_status).toBe("reviewed");
+        expect(canPractice(w, 4), w.id).toBe(w.example_type !== "no-cloze");
+      }
     }
   });
 });

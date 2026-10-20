@@ -38,14 +38,15 @@
     "sha256": "8ced54ea9f49e335cb21a42a8cb6924a7eef74401d69af2af787a141c0557c40"
   },
   "coverage": {
-    "records": 5162,
+    "records": 5558,
     "scored": 4921,
-    "unscored": 241,
+    "unscored": 637,
     "unscoredByReason": {
       "no_exact_spelling_in_pinned_table": 20,
       "multiword_or_alternatives_not_an_observed_phrase_frequency": 10,
       "known_case_or_lemma_sense_conflation": 4,
-      "outside_oxford_headwords": 207
+      "outside_oxford_headwords": 207,
+      "new_source_entry_not_measured_in_pinned_frequency_table": 396
     },
     "caseNormalizedScoredHeadwords": 24,
     "caseConflationGroupsPresentInApp": []
@@ -1381,6 +1382,2382 @@
       "id": "idiom-pull-the-plug-01",
       "word": "pull the plug",
       "reason": "outside_oxford_headwords"
+    },
+    {
+      "id": "us-89139489e9045c-01",
+      "word": "because of",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-24ba2b932bced9-01",
+      "word": "pizza",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-f011bcb413dd2e-01",
+      "word": "sunny",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-527b0f6b6a7afc-01",
+      "word": "candy",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-411fc2dfab1f9c-01",
+      "word": "closet",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-3aa53ff20a66fc-01",
+      "word": "cookie",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-7ef83fd15516e3-01",
+      "word": "dessert",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-116e558d9aa57f-01",
+      "word": "elevator",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-0c9d11ab407c38-01",
+      "word": "garbage",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-b73365a99eedd9-01",
+      "word": "hike",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-6480424f9baff3-01",
+      "word": "instead of",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-fd7d647b6c6379-01",
+      "word": "railroad",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-c49ae16ffb4179-01",
+      "word": "refrigerator",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-2af89e77a5523c-01",
+      "word": "sneaker",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-ef5eee3c2a1dd9-01",
+      "word": "stove",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-c1e28cc5a7e6dc-01",
+      "word": "subway",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-7b04ef61e7a492-01",
+      "word": "trash",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-cb7f782be8f9df-01",
+      "word": "AI",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-9ecce931147b3b-01",
+      "word": "corn",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-b4a3b4a28efc23-01",
+      "word": "podcast",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-cc5aedf789db0d-01",
+      "word": "renewable",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-55a021fae968ec-01",
+      "word": "Wi-Fi",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-d2331a62324cf7-01",
+      "word": "congress",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-9b169e640ab44e-01",
+      "word": "senate",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-925ef124256d0c-01",
+      "word": "vaccine",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-ead8432258cba5-01",
+      "word": "athletic",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-cffca7f6e7e27c-01",
+      "word": "cowboy",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-d92656afe6f385-01",
+      "word": "dime",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-529d5ceee76bf3-01",
+      "word": "honey",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-5f3a60c0007c7f-01",
+      "word": "kindergarten",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-712655a093cd13-01",
+      "word": "mosquito",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-73467797ce1593-01",
+      "word": "nickel",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-4e146823eac4c5-01",
+      "word": "pharmacy",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-7b1599d2b3505d-01",
+      "word": "résumé",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-1e675ade1d9314-01",
+      "word": "sidewalk",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-355496831bfb7c-01",
+      "word": "teen",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-2289a3a5a249f5-01",
+      "word": "wolf",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-d08ee8d5e82082-01",
+      "word": "apparel",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-528fb75034e218-01",
+      "word": "bankruptcy",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-35468381efa121-01",
+      "word": "behavioral",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-05b8961673a347-01",
+      "word": "beverage",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-e10359a11011e1-01",
+      "word": "felony",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-54240062ddd538-01",
+      "word": "fiscal",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-933a28ddf38fec-01",
+      "word": "freshman",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-e7b556c5b7094c-01",
+      "word": "incarcerate",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-8930d28a0f8dc7-01",
+      "word": "incarceration",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-ea83003d14bddc-01",
+      "word": "intersection",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-9189ce403107dc-01",
+      "word": "inventory",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-23784ddfa26674-01",
+      "word": "lawmaker",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-501bababdb0347-01",
+      "word": "module",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-c420674620c75b-01",
+      "word": "proceeding",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-32948b883857b7-01",
+      "word": "rookie",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-b5ffa88a9a64e5-01",
+      "word": "roster",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-c65c1a0a95f7f4-01",
+      "word": "sophomore",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-57acde45fe8f8f-01",
+      "word": "superintendent",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-b381598711d174-01",
+      "word": "tumor",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "us-84101d77f9678e-01",
+      "word": "unconstitutional",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-48c2e83861f480-01",
+      "word": "abnormal",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-15d10301eb8aa6-01",
+      "word": "abnormality",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-b7b0379fbf9d48-01",
+      "word": "actively",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-58b32c8ca9f82f-01",
+      "word": "adaptive",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-d8c17c28d1eefb-01",
+      "word": "alteration",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-568f9a0b1e6bfe-01",
+      "word": "alternatively",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-c6d0db91c6791d-01",
+      "word": "analytical",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-37bd077a9269ea-01",
+      "word": "approximation",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-7d931c1eebaeb5-01",
+      "word": "categorize",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-b27236a11779a3-01",
+      "word": "causal",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-cffaf201293313-01",
+      "word": "causation",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-50ac466bdb1326-01",
+      "word": "centralize",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-276648597a0237-01",
+      "word": "characterization",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-7117f328be6d8d-01",
+      "word": "conceptual",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-35f2a42303af29-01",
+      "word": "conceptualize",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-dee89163c162c7-01",
+      "word": "conditional",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-f4cd8b85c65c2c-01",
+      "word": "constrain",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-79cefdf16b3627-01",
+      "word": "constructive",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-14ff265adc246e-01",
+      "word": "continuity",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-7ac3adf5170bcf-01",
+      "word": "cooperation",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-ef80c8293bfb69-01",
+      "word": "culturally",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-ed8add70309634-01",
+      "word": "cumulative",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-7e828c03d621c6-01",
+      "word": "denote",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-084d6b6f6a88a2-01",
+      "word": "descriptive",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-14487c3a181dd2-01",
+      "word": "determinant",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-970c84c5787bb6-01",
+      "word": "developed",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-3b84585cd6b355-01",
+      "word": "deviation",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-d21945d33fc56c-01",
+      "word": "differentiation",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-88921dae329323-01",
+      "word": "economically",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-85af377706e4f7-01",
+      "word": "efficacy",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-c158f5352ad2f6-01",
+      "word": "empirically",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-7bd558bdd940b2-01",
+      "word": "encode",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-7f94f4a118f85f-01",
+      "word": "equivalence",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-022ebbefa9560c-01",
+      "word": "estimation",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-cb44d8e2258382-01",
+      "word": "ethnicity",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-5328faa7ae3cc8-01",
+      "word": "exemplify",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-5f5496a3194801-01",
+      "word": "explanatory",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-087408f07e847f-01",
+      "word": "formulation",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-ca441466c24813-01",
+      "word": "generalization",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-21c57c2f1fed9c-01",
+      "word": "generalize",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-5c8e1859a19ac3-01",
+      "word": "geographical",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-aa6522b1edf514-01",
+      "word": "given",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-1bc231926731d6-01",
+      "word": "governmental",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-737e7b443e345f-01",
+      "word": "handout",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-d22bc1a80e22d7-01",
+      "word": "hierarchical",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-fdbbae413f5737-01",
+      "word": "historically",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-5c66e2d613e75f-01",
+      "word": "horizontal",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-63c79ea4f73bfa-01",
+      "word": "hypothesize",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-e6ea1130cdb816-01",
+      "word": "hypothetical",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-aa0545f4b8bb24-01",
+      "word": "ideally",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-ccba453c92c972-01",
+      "word": "implicit",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-2122f271566f01-01",
+      "word": "implicitly",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-2901151e5f2fbc-01",
+      "word": "importantly",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-d35524427097fe-01",
+      "word": "inconsistent",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-48f6598ff5cd85-01",
+      "word": "independently",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-483bc5aa0f6564-01",
+      "word": "indirectly",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-c6a27828e39963-01",
+      "word": "individually",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-bbaed57fb6ebec-01",
+      "word": "induction",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-ec840c11cbb19d-01",
+      "word": "inference",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-482a680ef149b6-01",
+      "word": "informed",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-3c9620c506c1e7-01",
+      "word": "initiation",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-b84f872d5413dc-01",
+      "word": "instability",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-f37b63bae8620f-01",
+      "word": "interviewee",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-14086a02adbac3-01",
+      "word": "interviewer",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-8293222ac30166-01",
+      "word": "intrinsic",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-ff3f384f90757b-01",
+      "word": "lecturer",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-e8bb7cf4e453db-01",
+      "word": "legally",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-cbe7bd93f8a721-01",
+      "word": "localized",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-149894d2c8df8b-01",
+      "word": "locally",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-88ac2bc5e0b0fa-01",
+      "word": "mediate",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-2648a26ff9b51c-01",
+      "word": "methodological",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-ee9911854ff910-01",
+      "word": "migrate",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-5de2aca699e0c1-01",
+      "word": "modelling",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-cdf52bd4b1661d-01",
+      "word": "modernity",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-25aa2657c50224-01",
+      "word": "modernization",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-5f5fdf563cb6e9-01",
+      "word": "negatively",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-d0f8236b9152a2-01",
+      "word": "optimal",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-e05829331e9825-01",
+      "word": "orient",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-8be752472485ab-01",
+      "word": "overlap",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-2e7449882b2ccd-01",
+      "word": "overlap",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-7f3c6ae8aa631d-01",
+      "word": "overview",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-7b32db9e9ae531-01",
+      "word": "positively",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-b8a41b8b57a216-01",
+      "word": "procedural",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-9edf7eafe7e6db-01",
+      "word": "progression",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-65d3f4fbbc14bf-01",
+      "word": "proportional",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-e980962e29d05b-01",
+      "word": "qualitative",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-111e89baca89c4-01",
+      "word": "quantify",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-d87f905ddab218-01",
+      "word": "quantitative",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-0bc235cea81e00-01",
+      "word": "randomize",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-33c63235a13abc-01",
+      "word": "randomly",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-12da94febbe5ef-01",
+      "word": "rationale",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-9fc15f929ea6a4-01",
+      "word": "rationality",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-1784a147146c69-01",
+      "word": "reconstruct",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-4a851f5c15aacf-01",
+      "word": "regardless of",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-c0c8ac0c36d316-01",
+      "word": "reliance",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-963619b2940c33-01",
+      "word": "resistant",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-c8bda2c57c8451-01",
+      "word": "restrictive",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-fc2f688998475f-01",
+      "word": "sampling",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-dc35aed30730d9-01",
+      "word": "sensory",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-37bc0404ab1a60-01",
+      "word": "separately",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-ea7a79743a95ca-01",
+      "word": "simplify",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-6ed23b81c0da59-01",
+      "word": "simultaneous",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-86f11d3c3ce4eb-01",
+      "word": "socially",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-ddf5f807f4cf9d-01",
+      "word": "societal",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-0a9fc847241fa1-01",
+      "word": "spatial",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-73203ef72e2bff-01",
+      "word": "statistically",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-671e4422b7af90-01",
+      "word": "stimulation",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-2733d0b8d7710d-01",
+      "word": "subjective",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-dc82854d99c054-01",
+      "word": "substantive",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-fb56b5f34ff46a-01",
+      "word": "systematically",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-3f77f81d619b41-01",
+      "word": "terminology",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-b04495cfe14501-01",
+      "word": "the above",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-25406db93e1b39-01",
+      "word": "theoretically",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-defd80e4809bc6-01",
+      "word": "traditionally",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-397a604496b068-01",
+      "word": "tutor",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-317f97179568d4-01",
+      "word": "unclear",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-fb70d343fc67c4-01",
+      "word": "undertaking",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-1f62584f8db7df-01",
+      "word": "unrelated",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-433299e030bffc-01",
+      "word": "unstable",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-179c7ccbc6d72c-01",
+      "word": "utilization",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-a1a0ccc2f40aea-01",
+      "word": "validate",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-0863d2e82967ca-01",
+      "word": "validation",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-a30150aced5b1b-01",
+      "word": "variance",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-326ab7542d0038-01",
+      "word": "above",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-084023e1378d44-01",
+      "word": "above",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-e00f3054248afd-01",
+      "word": "academic",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-48068ef9e5b7d1-01",
+      "word": "access",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-801868a767f4dd-01",
+      "word": "account",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-8674f4ac787e40-01",
+      "word": "act",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-e12e66ecd45bd4-01",
+      "word": "address",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-89f45752f23f61-01",
+      "word": "adult",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-315c0ce69570f1-01",
+      "word": "aim",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-81e1f7e5078de2-01",
+      "word": "alternative",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-cf897520a1944e-01",
+      "word": "amount",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-4d883ec5b493ae-01",
+      "word": "answer",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-6a3d53bf68fd36-01",
+      "word": "attack",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-c08d0135e4f3a3-01",
+      "word": "attempt",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-b09526efc601ea-01",
+      "word": "attribute",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-fec3e8847cf823-01",
+      "word": "average",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-87d63e95374b8e-01",
+      "word": "average",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-904d5d4280ba03-01",
+      "word": "balance",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-db945bae311059-01",
+      "word": "base",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-1795c3f0985f01-01",
+      "word": "below",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-65be4beca936ae-01",
+      "word": "benefit",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-f7d2ad1167b943-01",
+      "word": "beyond",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-01b85d0e85c218-01",
+      "word": "bias",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-c17876ccf43e44-01",
+      "word": "cause",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-8a9ee2d09803a5-01",
+      "word": "center",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-7e49f16771aafe-01",
+      "word": "challenge",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-e0c49088b8b8c4-01",
+      "word": "change",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-15de50e6bac385-01",
+      "word": "characteristic",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-ee374cd29a6f03-01",
+      "word": "claim",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-f077861a54c9aa-01",
+      "word": "classic",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-5ca775c4188f5c-01",
+      "word": "code",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-c82824c6856398-01",
+      "word": "complex",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-81c4c3bb58ddb9-01",
+      "word": "concern",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-940c15d6506bbd-01",
+      "word": "conduct",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-9ec91af457b693-01",
+      "word": "conflict",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-70abd5295e872a-01",
+      "word": "constant",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-39f3d4d60ca935-01",
+      "word": "construct",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-19c65fec12d99f-01",
+      "word": "contemporary",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-35270fed20b86b-01",
+      "word": "contrast",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-d36e786504fd18-01",
+      "word": "control",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-9254881e048e09-01",
+      "word": "coordinate",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-4565a9de724fc0-01",
+      "word": "correct",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-c8f6ac8f5ca5f1-01",
+      "word": "current",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-04408d82000b5d-01",
+      "word": "debate",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-4e54f205bf98b3-01",
+      "word": "decline",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-c616f66728c2be-01",
+      "word": "decrease",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-c78dd8027776bb-01",
+      "word": "design",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-13ed6966dffbb2-01",
+      "word": "desire",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-897d93fb37ecb0-01",
+      "word": "direct",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-ae6a2652a684ad-01",
+      "word": "disadvantage",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-f862b50e869d71-01",
+      "word": "document",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-a4690cb949df81-01",
+      "word": "dynamic",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-26b3f2428b45fa-01",
+      "word": "encounter",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-f141a47353e3bb-01",
+      "word": "end",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-ab3ad641c5221d-01",
+      "word": "equal",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-aef8728e96787c-01",
+      "word": "equal",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-0bea04ced57f39-01",
+      "word": "equivalent",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-2d0bf00f93b9aa-01",
+      "word": "estimate",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-017d9c33a91f33-01",
+      "word": "exercise",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-2fe23253dea15a-01",
+      "word": "experience",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-e6a7ca87f9fcfb-01",
+      "word": "expert",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-468998c8566560-01",
+      "word": "extreme",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-92f8815d71b699-01",
+      "word": "favor",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-137c2f7804dee2-01",
+      "word": "feature",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-fececa5d3b4631-01",
+      "word": "female",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-450db057ee4636-01",
+      "word": "flow",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-e5f4bae69896eb-01",
+      "word": "focus",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-083f701ef7260b-01",
+      "word": "following",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-d1e9824e6f9d9e-01",
+      "word": "force",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-2b7a6fd66f2b7b-01",
+      "word": "form",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-8402fe8bd7e00d-01",
+      "word": "function",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-564019e6a66ead-01",
+      "word": "fund",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-f3dc6d64786f95-01",
+      "word": "future",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-c520fa1f1da800-01",
+      "word": "gain",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-decd76c6ac9a7e-01",
+      "word": "general",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-ae64444fc61522-01",
+      "word": "group",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-913b14c84d0fc2-01",
+      "word": "guess",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-64aeebc3c1390f-01",
+      "word": "human",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-1c2624bdeba397-01",
+      "word": "ideal",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-32a04bca5566e0-01",
+      "word": "impact",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-7ab85f8627cacd-01",
+      "word": "increase",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-c0a03b668b551b-01",
+      "word": "individual",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-7506b789aef34b-01",
+      "word": "influence",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-640ba56a17924e-01",
+      "word": "interview",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-bf79611b0977e4-01",
+      "word": "key",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-a8356bd0998f03-01",
+      "word": "label",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-314c0316b299ed-01",
+      "word": "lack",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-7b385a30f35e77-01",
+      "word": "later",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-e5d835ecd4ff51-01",
+      "word": "latter",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-2c0368559978a4-01",
+      "word": "less",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-0dafa950dbbe0e-01",
+      "word": "less",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-15c8fe3663271c-01",
+      "word": "likely",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-9296db2a3efe91-01",
+      "word": "limit",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-4715a97826b808-01",
+      "word": "link",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-59f792465afa6d-01",
+      "word": "list",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-ffbb0cc082d9bd-01",
+      "word": "lower",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-456f358e55623d-01",
+      "word": "male",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-5f0ec7d3945fdd-01",
+      "word": "many",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-664153bad84221-01",
+      "word": "material",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-210d8bb0e6d427-01",
+      "word": "maximum",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-218ba65875cfeb-01",
+      "word": "measure",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-9e726e37ae8feb-01",
+      "word": "medium",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-8a561cdc4b8e22-01",
+      "word": "minimum",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-a6b218f08f0cf6-01",
+      "word": "model",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-ddcef9fdbb3b90-01",
+      "word": "monitor",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-7a6fd05fdb2f82-01",
+      "word": "most",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-280a32bdd83af2-01",
+      "word": "national",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-5769403bb14e04-01",
+      "word": "need",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-9fce1918f9b67e-01",
+      "word": "negative",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-2e88ba1c4d7d4f-01",
+      "word": "net",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-9d806301ac0d29-01",
+      "word": "note",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-6cf6c7c8e3083b-01",
+      "word": "novel",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-1402fb7935bf35-01",
+      "word": "objective",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-7eacd76bead47b-01",
+      "word": "ok",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-882ebc4a830049-01",
+      "word": "ok",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-6a185b9da372aa-01",
+      "word": "ok",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-4b02acd1dc001a-01",
+      "word": "order",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-2ff52d75045e19-01",
+      "word": "outline",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-60efa8e47e7fef-01",
+      "word": "overall",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-6a5f4365d42d94-01",
+      "word": "parallel",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-3081f279d0682f-01",
+      "word": "particular",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-f844372e3bcce6-01",
+      "word": "per cent",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-974c8d351cd79c-01",
+      "word": "point",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-4fe63d3908246d-01",
+      "word": "position",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-31d40a1179a660-01",
+      "word": "positive",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-f8adba254e3b2c-01",
+      "word": "potential",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-818062e6150ebf-01",
+      "word": "practical",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-392c8ef992d58a-01",
+      "word": "present",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-d2a528eb605a65-01",
+      "word": "present",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-bc5a26a9e7cda6-01",
+      "word": "process",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-07c6e939ec03c1-01",
+      "word": "produce",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-17a9215300ada7-01",
+      "word": "professional",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-299864df3dc174-01",
+      "word": "project",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-45d44f1464a6e3-01",
+      "word": "public",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-d0bf0b3cac5030-01",
+      "word": "question",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-0ebc01cbd9a7d8-01",
+      "word": "quote",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-467a93a69ec913-01",
+      "word": "range",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-61d7fb81b09060-01",
+      "word": "rate",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-12cce3a0b44884-01",
+      "word": "record",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-2066756ec1552c-01",
+      "word": "regard",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-a611ee692f174c-01",
+      "word": "relative",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-0a8910e728b984-01",
+      "word": "release",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-e07b3a04bfea1e-01",
+      "word": "report",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-3f056a3e0049f9-01",
+      "word": "representative",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-0207b74ddd056c-01",
+      "word": "research",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-5b7f98e1470e0f-01",
+      "word": "result",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-dccb9ad5b47046-01",
+      "word": "right",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-d6b16b05cf9a1a-01",
+      "word": "rise",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-2f9c89c73e61a7-01",
+      "word": "same",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-39225e07f8a564-01",
+      "word": "sample",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-cb91b4fe1d3751-01",
+      "word": "scale",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-fa4062dbcc2ff3-01",
+      "word": "second",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-60a256a43504be-01",
+      "word": "separate",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-f66ccef2acc362-01",
+      "word": "set",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-de768c5114f729-01",
+      "word": "shape",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-094f1b0c468669-01",
+      "word": "share",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-34b7f4214d2446-01",
+      "word": "shift",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-77e3d7df7e7b92-01",
+      "word": "sign",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-caa55e31e351e1-01",
+      "word": "slide",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-738800e122d7fc-01",
+      "word": "so",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-6fa91e89a0108a-01",
+      "word": "sort",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-78d790f5897620-01",
+      "word": "spread",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-115e977a84b6a7-01",
+      "word": "standard",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-4371ef8da1503e-01",
+      "word": "state",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-a5ac28aee7356b-01",
+      "word": "store",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-cfd77f4c70a7ef-01",
+      "word": "stress",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-9394b592d823e8-01",
+      "word": "structure",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-b6d76c47609616-01",
+      "word": "study",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-8fc42a3ce1b884-01",
+      "word": "subject",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-69155c06c920b5-01",
+      "word": "subject",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-932f2bb4db6a60-01",
+      "word": "substitute",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-0d2f135ac867a5-01",
+      "word": "such",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-22b68ad3482538-01",
+      "word": "sum",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-1fee2b1d42a4ce-01",
+      "word": "supply",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-fab66caaa2d03e-01",
+      "word": "support",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-5741ebc2031edd-01",
+      "word": "talk",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-c5789799b5d37d-01",
+      "word": "target",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-38ab1ec2960c7f-01",
+      "word": "term",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-9313b183fde221-01",
+      "word": "test",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-b616e7f8a5c0ff-01",
+      "word": "throughout",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-bf585cad26da1d-01",
+      "word": "total",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-5dbdedc5eaa469-01",
+      "word": "trace",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-384051d7e811ed-01",
+      "word": "transfer",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-9df1bda29c7d5d-01",
+      "word": "transport",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-87205f91e3d31b-01",
+      "word": "trust",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-9d75551e7c2c7f-01",
+      "word": "use",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-712a954709379c-01",
+      "word": "value",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-ed89ada52c1e68-01",
+      "word": "variable",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-b1f434d0e7a0fc-01",
+      "word": "view",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-c55efb92223352-01",
+      "word": "whatever",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-2563c96877ac85-01",
+      "word": "whole",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-d7f25a53f11eb6-01",
+      "word": "working",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "opal-be7669705b8010-01",
+      "word": "yield",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "cb-791567fa74ff73-01",
+      "word": "a dog and pony show",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "cb-3232ec3c877cb4-01",
+      "word": "the tail is wagging the dog",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "cb-cbda7830c2f374-01",
+      "word": "let sleeping dogs lie",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "cb-e67327a27b5e30-01",
+      "word": "bark up the wrong tree",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "cb-6372fcbf7b0e1c-01",
+      "word": "someone's bark is worse than their bite",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "cb-4f502390bc3605-01",
+      "word": "in the doghouse",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "cb-5859b55f23d66d-01",
+      "word": "work like a dog",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "cb-5ee3d5deef4123-01",
+      "word": "a dog's life",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "cb-de0440fb634a45-01",
+      "word": "go to the dogs",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "cb-794938a91bde36-01",
+      "word": "climate migration",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "cb-49c83d3f747c7d-01",
+      "word": "climate haven",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "cb-111f41d3283b3b-01",
+      "word": "climate vandalism",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "cb-1fb6ddf1c7fedb-01",
+      "word": "green hushing",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "cb-68c83632e078a9-01",
+      "word": "climate grief",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "cb-88a612258b38b0-01",
+      "word": "reverse budgeting",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "cb-9850a04c6110bd-01",
+      "word": "reverse influencing",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "cb-b7690c161f5835-01",
+      "word": "reverse decluttering",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "cb-f022c823afbf2f-01",
+      "word": "DTR",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "cb-4023e462a9451f-01",
+      "word": "situationship",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "cb-f2ce1dbf785dc1-01",
+      "word": "my treat",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "cb-ced884bc1e2ed8-01",
+      "word": "come over",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "cb-349badd9563284-01",
+      "word": "HENRY",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "cb-4ab0520faddfb2-01",
+      "word": "DINKWAD",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
     }
   ],
   "outputAfterAttachingMetadata": {
@@ -1407,7 +3784,14 @@
   ],
   "currentCanonicalVocabulary": {
     "filename": "vocabulary.txt",
-    "sha256": "b6f7f03d076425de1763975835266588780ab34032ca1c9148ab8f98594ee9a6"
+    "sha256": "19fb2f4dd2ffab355ac9fe59abf1442bfad79fbe036e7262d90197132667d004"
   },
-  "historicalExportNote": "inputBeforeAttachingMetadata and outputAfterAttachingMetadata describe the original pinned frequency export, before later editorial corrections; currentCanonicalVocabulary identifies the current canonical TXT."
+  "historicalExportNote": "inputBeforeAttachingMetadata and outputAfterAttachingMetadata describe the original pinned frequency export, before later editorial corrections; currentCanonicalVocabulary identifies the current canonical TXT.",
+  "sourceUpdateCanonicalHash": "19fb2f4dd2ffab355ac9fe59abf1442bfad79fbe036e7262d90197132667d004",
+  "supplementalSourceReview": {
+    "date": "2026-10-20",
+    "overlay": "data/authoring/source-update-2026-10.json",
+    "canonicalVocabularySha256": "19fb2f4dd2ffab355ac9fe59abf1442bfad79fbe036e7262d90197132667d004",
+    "scope": "Additive source-checked American spelling and list membership, targeted original meaning corrections and selected new senses; not a verification of every historical definition or publisher certification."
+  }
 }
