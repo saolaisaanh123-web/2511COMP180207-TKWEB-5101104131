@@ -9,6 +9,7 @@ import {
 } from "./core";
 import "./dictionary.css";
 import { preferredHeadword, youglishUsUrl } from "./american-english";
+import UsageNotes from "./UsageNotes";
 
 type DictionaryEntryProps = {
   entry: State["entries"][string];
@@ -346,6 +347,8 @@ export default function DictionaryEntry({
           </div>
         </div>
       </section>
+
+      <UsageNotes word={w} speak={speak} />
 
       {hasNewsContext && (
         <section className="dict-news" aria-label="Ngữ cảnh có nguồn">

@@ -46,6 +46,13 @@ Cập nhật 22/10/2026. Nhóm sửa 1, mục Tra cứu ngữ pháp và đợt r
 
 ## Thứ tự thực hiện
 
+### Cách dùng/ngữ cảnh và mục tiêu phiên — đã triển khai 22/10
+
+- Đã thực hiện ba đề xuất người dùng chọn từ báo cáo ForumFlash: 48 mục có mẫu dùng/giới từ/ghi chú/lỗi thường gặp/câu thứ hai, 7 mục có tính đếm được; 50 trang Oxford Advanced American đã đọc trực tiếp và kiểm tra HTTP/body/hash.
+- Dữ liệu bổ sung ở data/usage, không thay byte TXT/ID/contentKey/lịch sử/lịch ôn. getUsage chỉ gắn khi ID/đầu từ/POS/nghĩa khớp; task/context là snapshot tùy chọn, giữ nguyên câu đang làm qua reload/backup. Chỉ phiên mới luân phiên câu dựa trên lần đầu gần nhất; các mục còn lại vẫn một câu.
+- Mục tiêu phiên và tổng kết tách lượt ban đầu, có hỗ trợ, tự đánh giá, chưa chấm, bỏ qua và sửa sai. Retry giữ review/câu và khoảng đệm cũ; record chặn first/independent nếu cùng review hoặc cùng phiên/từ/kỹ năng. Không tự kết luận nhớ lâu từ sửa sai.
+- 268 unit, 30 data, 81 E2E; production gốc/đường dẫn con online/offline có đọc nội dung mới. Báo cáo docs/usage-and-session-upgrade-2026-10-22.md. Các việc nhóm 2–5 dưới đây vẫn còn trừ phạm vi đã ghi rõ ở mục này.
+
 ### 1. Chấm bài và lịch ôn — đã sửa, có hồi quy
 
 - core.record đã tách lịch khỏi independent cho cả self/rule: đúng lần đầu, không hint và đến hạn tăng bậc 1/3/7/14/30; đúng trước hạn giữ lịch; đúng có hint giữ bậc, hẹn ngày mai; sai thật về một ngày. Duplicate review, free practice và ungraded không sửa lịch. Quy tắc chứng nhận nhớ vững vẫn cần bằng chứng độc lập, không cấp bằng lịch ôn.

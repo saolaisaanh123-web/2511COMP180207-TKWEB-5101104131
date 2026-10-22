@@ -1,0 +1,905 @@
+[
+  {
+    "wordId": "agree-01",
+    "headword": "agree",
+    "partOfSpeech": "verb",
+    "meaningVi": "đồng ý; có cùng quan điểm",
+    "patterns": [
+      {
+        "form": "agree with somebody/something",
+        "explanation": "Đồng ý với một người, ý kiến hoặc cách phân tích."
+      },
+      {
+        "form": "agree (with somebody) about/on something",
+        "explanation": "Có cùng quan điểm về một vấn đề."
+      },
+      {
+        "form": "agree (that) + mệnh đề",
+        "explanation": "Nêu nội dung mà các bên cho là đúng."
+      }
+    ],
+    "note": "Phân biệt agree with (đồng quan điểm) với agree to a proposal/to do something (chấp thuận đề nghị hoặc đồng ý thực hiện). Không có be trong I agree.",
+    "mistake": {
+      "incorrect": "I am agree with your answer.",
+      "correct": "I agree with your answer.",
+      "explanation": "Agree là động từ; câu này dùng hiện tại đơn, không dùng am trước agree."
+    },
+    "example": {
+      "id": "usage-agree-01",
+      "en": "I agree with Maya that the deadline is too short.",
+      "vi": "Tôi đồng ý với Maya rằng thời hạn quá ngắn."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/agree",
+        "title": "agree verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22T03:06:37.821061+00:00",
+        "sha256": "313e2050444b41f1cad5ab5fce4e69d73eb4a2e86c8e5123f8d8a28b4ac5cdcc"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-0d7925903f3e8b-01",
+    "headword": "apologize",
+    "partOfSpeech": "verb",
+    "meaningVi": "xin lỗi",
+    "patterns": [
+      {
+        "form": "apologize to somebody",
+        "explanation": "Xin lỗi người nào đó."
+      },
+      {
+        "form": "apologize for something / for doing something",
+        "explanation": "Xin lỗi vì một việc hoặc hành động."
+      }
+    ],
+    "note": "Có thể bỏ người nhận hoặc lý do nếu ngữ cảnh đã rõ. Apologize là cách viết thường dùng ở Mỹ; apologise cũng là cách viết hợp lệ.",
+    "mistake": {
+      "incorrect": "I apologize you for the delay.",
+      "correct": "I apologize to you for the delay.",
+      "explanation": "Người nhận lời xin lỗi đi sau to; lý do đi sau for."
+    },
+    "example": {
+      "id": "usage-ox-0d7925903f3e8b-01",
+      "en": "I want to apologize to the team for missing the call.",
+      "vi": "Tôi muốn xin lỗi cả nhóm vì đã bỏ lỡ cuộc gọi."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/apologize",
+        "title": "apologize verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22T03:06:37.820108+00:00",
+        "sha256": "1988323f70f0e5d038225213669a7c7048e19c4bb145d0eb6928fc8dcbaa6043"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-97a5e41b45ddd2-01",
+    "headword": "apply",
+    "partOfSpeech": "verb",
+    "meaningVi": "nộp đơn xin",
+    "patterns": [
+      {
+        "form": "apply for something",
+        "explanation": "Nộp đơn xin việc, học bổng, giấy phép hoặc thứ muốn được cấp."
+      },
+      {
+        "form": "apply to an organization (for something)",
+        "explanation": "Nộp đơn đến một tổ chức; for nêu thứ xin cấp."
+      },
+      {
+        "form": "apply to do something",
+        "explanation": "Nộp đơn xin thực hiện hoặc tham gia việc gì."
+      }
+    ],
+    "note": "Đây là nghĩa nộp đơn xin. Apply something to something (áp dụng hoặc bôi lên) thuộc nghĩa khác, không thay giới từ máy móc giữa các nghĩa.",
+    "mistake": {
+      "incorrect": "I will apply the scholarship.",
+      "correct": "I will apply for the scholarship.",
+      "explanation": "Với nghĩa xin học bổng, cần for trước thứ muốn được cấp."
+    },
+    "example": {
+      "id": "usage-ox-97a5e41b45ddd2-01",
+      "en": "You can apply to the college for financial aid.",
+      "vi": "Bạn có thể nộp đơn đến trường cao đẳng để xin hỗ trợ tài chính."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/apply",
+        "title": "apply verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22T03:06:37.825822+00:00",
+        "sha256": "e2768d4eb183d054ef9b5d94f6c69565954fb87100f48823ce37313e5ba6179d"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-6dc09a300747b8-01",
+    "headword": "arrive",
+    "partOfSpeech": "verb",
+    "meaningVi": "đến nơi",
+    "patterns": [
+      {
+        "form": "arrive at a place",
+        "explanation": "Đến một điểm cụ thể như sân bay, nhà ga hoặc khách sạn."
+      },
+      {
+        "form": "arrive in a city/country",
+        "explanation": "Đến một thành phố hoặc quốc gia."
+      },
+      {
+        "form": "arrive home / arrive here / arrive there",
+        "explanation": "Home, here và there dùng trực tiếp sau arrive trong các cụm này."
+      }
+    ],
+    "note": "Chọn giới từ theo cách nhìn địa điểm: arrive at the airport, arrive in Boston. At không chỉ thời gian; in không phải cứ địa điểm lớn là áp dụng cho mọi ngữ cảnh.",
+    "mistake": {
+      "incorrect": "We arrive to Boston at noon.",
+      "correct": "We arrive in Boston at noon.",
+      "explanation": "Khi nêu thành phố đến, dùng in; không dùng to trong câu này."
+    },
+    "example": {
+      "id": "usage-ox-6dc09a300747b8-01",
+      "en": "We usually arrive in Chicago before the morning traffic gets heavy.",
+      "vi": "Chúng tôi thường đến Chicago trước khi giao thông buổi sáng trở nên đông đúc."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/arrive",
+        "title": "arrive verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22T03:06:37.822067+00:00",
+        "sha256": "4a8b8c076a9033a4e82876a634d257126e13dddc2a99774d920aa52778aa757d"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-6d38f6d6072843-01",
+    "headword": "belong",
+    "partOfSpeech": "verb",
+    "meaningVi": "thuộc về; là tài sản của",
+    "patterns": [
+      {
+        "form": "belong to somebody",
+        "explanation": "Thuộc sở hữu của ai."
+      },
+      {
+        "form": "Does this belong to you?",
+        "explanation": "Hỏi một vật có phải của người nghe không; dùng trợ động từ do/does khi hỏi."
+      }
+    ],
+    "note": "Với nghĩa sở hữu, belong thường dùng dạng đơn, không dùng tiếp diễn hoặc bị động. Belong còn có nghĩa ở đúng chỗ hoặc cảm thấy hòa nhập; đó không phải nghĩa sở hữu của mục này.",
+    "mistake": {
+      "incorrect": "These keys are belong to Alex.",
+      "correct": "These keys belong to Alex.",
+      "explanation": "Belong tự là động từ diễn tả quan hệ sở hữu; không thêm are trước belong."
+    },
+    "example": {
+      "id": "usage-ox-6d38f6d6072843-01",
+      "en": "Do these headphones belong to your brother?",
+      "vi": "Những chiếc tai nghe này có phải của anh trai bạn không?"
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/belong",
+        "title": "belong verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22T03:06:38.491609+00:00",
+        "sha256": "73442b14036d780d2f7e4105be79d0171f3b53b492f39d6d02ca5741f2328f6c"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/belong-to",
+        "title": "belong to phrasal verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22T03:07:16.154369+00:00",
+        "sha256": "f3d91cc69bdde76ce2caab7286fd9043d6f86fd0ce2014c71f184066760c7d21"
+      }
+    ]
+  },
+  {
+    "wordId": "depend-01",
+    "headword": "depend",
+    "partOfSpeech": "verb",
+    "meaningVi": "phụ thuộc",
+    "patterns": [
+      {
+        "form": "depend on/upon somebody/something",
+        "explanation": "Phụ thuộc vào người, điều kiện hoặc nguồn lực."
+      },
+      {
+        "form": "depend on how/what/whether + mệnh đề",
+        "explanation": "Điều tiếp theo được quyết định bởi nội dung mệnh đề."
+      }
+    ],
+    "note": "On thường gặp hơn upon. Trước what/how/whether, văn nói có thể lược on: It depends what you mean. Không đánh dấu mọi trường hợp depend thiếu on là sai; trước danh từ như the weather vẫn cần on/upon.",
+    "mistake": {
+      "incorrect": "Our plans depend of the weather.",
+      "correct": "Our plans depend on the weather.",
+      "explanation": "Trong nghĩa phụ thuộc này dùng depend on/upon, không dùng depend of."
+    },
+    "example": {
+      "id": "usage-depend-01",
+      "en": "Your final grade will depend on the quality of your report.",
+      "vi": "Điểm cuối cùng của bạn sẽ phụ thuộc vào chất lượng báo cáo."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/depend",
+        "title": "depend verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22T03:06:38.481597+00:00",
+        "sha256": "2821b7c6203a663e004888d3def6ddf2e2a7455ce256847517d3e5cf4f6fa08d"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/depend-on",
+        "title": "depend on phrasal verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22T03:07:16.420856+00:00",
+        "sha256": "66d02b6ac729c5958af013c6ec41fb5556742c62b78b81f73ddf0e08bb7203e3"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-d6a919ef536282-01",
+    "headword": "discuss",
+    "partOfSpeech": "verb",
+    "meaningVi": "thảo luận",
+    "patterns": [
+      {
+        "form": "discuss something (with somebody)",
+        "explanation": "Thảo luận trực tiếp về một vấn đề; with nêu người cùng trao đổi."
+      },
+      {
+        "form": "discuss what/how/whether + mệnh đề",
+        "explanation": "Thảo luận nội dung một câu hỏi gián tiếp."
+      },
+      {
+        "form": "discuss doing something",
+        "explanation": "Bàn về khả năng thực hiện một việc."
+      }
+    ],
+    "note": "Không thêm about để nối discuss với chủ đề trực tiếp. Quy tắc này không có nghĩa mọi chuỗi discuss about đều sai: about có thể thuộc thành phần khác, như about ten cases (khoảng mười trường hợp).",
+    "mistake": {
+      "incorrect": "We need to discuss about the budget.",
+      "correct": "We need to discuss the budget.",
+      "explanation": "The budget là chủ đề trực tiếp nên đứng ngay sau discuss. Có thể dùng talk about the budget với động từ talk."
+    },
+    "example": {
+      "id": "usage-ox-d6a919ef536282-01",
+      "en": "Let us discuss the design with the client before we order any materials.",
+      "vi": "Hãy thảo luận bản thiết kế với khách hàng trước khi đặt mua vật liệu."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/discuss",
+        "title": "discuss verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22T03:06:38.099521+00:00",
+        "sha256": "7a38c760cffb2f243271fb8a2ae161a0861f677a53162fa566843196ae0e044a"
+      }
+    ]
+  },
+  {
+    "wordId": "explain-01",
+    "headword": "explain",
+    "partOfSpeech": "verb",
+    "meaningVi": "giải thích",
+    "patterns": [
+      {
+        "form": "explain something to somebody",
+        "explanation": "Giải thích điều gì cho ai; người nghe đi sau to."
+      },
+      {
+        "form": "explain to somebody how/why/what + mệnh đề",
+        "explanation": "Giải thích cho ai cách làm, nguyên nhân hoặc nội dung."
+      },
+      {
+        "form": "explain (that) + mệnh đề",
+        "explanation": "Nêu điều cần làm rõ bằng một mệnh đề."
+      }
+    ],
+    "note": "Không chuyển mẫu tell somebody something sang explain somebody something. Có thể dùng explain không có tân ngữ khi điều cần giải thích đã rõ.",
+    "mistake": {
+      "incorrect": "Please explain me the process.",
+      "correct": "Please explain the process to me.",
+      "explanation": "Me là người nhận lời giải thích; trong nghĩa này cần to me."
+    },
+    "example": {
+      "id": "usage-explain-01",
+      "en": "Could you explain to the new employee how the booking system works?",
+      "vi": "Bạn có thể giải thích cho nhân viên mới cách hệ thống đặt chỗ hoạt động không?"
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/explain",
+        "title": "explain verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22T03:06:38.083354+00:00",
+        "sha256": "7d07db63ab00917bce201258d4ba1693fa13e65caa059f356f66d1d69d87c051"
+      }
+    ]
+  },
+  {
+    "wordId": "listen-01",
+    "headword": "listen",
+    "partOfSpeech": "verb",
+    "meaningVi": "lắng nghe",
+    "patterns": [
+      {
+        "form": "listen to somebody/something",
+        "explanation": "Chú ý nghe một người, câu chuyện, bản nhạc hoặc âm thanh."
+      },
+      {
+        "form": "listen carefully",
+        "explanation": "Có thể dùng listen không có tân ngữ khi nguồn âm thanh đã rõ."
+      }
+    ],
+    "note": "Listen nhấn mạnh sự chú ý; hear thiên về nghe thấy. Listen for (lắng tai chờ một âm thanh) là một mẫu khác, không thay thế listen to trong mọi câu.",
+    "mistake": {
+      "incorrect": "I listen music while cooking.",
+      "correct": "I listen to music while cooking.",
+      "explanation": "Khi nêu bản nhạc hoặc âm thanh được chú ý nghe, cần to trước tân ngữ."
+    },
+    "example": {
+      "id": "usage-listen-01",
+      "en": "Please listen to the safety instructions before the tour starts.",
+      "vi": "Hãy lắng nghe hướng dẫn an toàn trước khi chuyến tham quan bắt đầu."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/listen",
+        "title": "listen verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22T03:06:38.092841+00:00",
+        "sha256": "142068c1e2aa6ba0963c016aef73dc8308f1fdfedbd082789a2337190e68b7c4"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-3c01eba119e00d-01",
+    "headword": "look",
+    "partOfSpeech": "verb",
+    "meaningVi": "nhìn",
+    "patterns": [
+      {
+        "form": "look at somebody/something",
+        "explanation": "Hướng mắt nhìn vào một người hoặc vật."
+      },
+      {
+        "form": "look carefully",
+        "explanation": "Có thể không nêu đối tượng nếu ngữ cảnh đã rõ."
+      }
+    ],
+    "note": "Look at trong mục này là nhìn vào. Look for là tìm kiếm; look + tính từ như look tired là trông có vẻ. Đổi giới từ hoặc bổ ngữ có thể đổi nghĩa.",
+    "mistake": {
+      "incorrect": "Please look the map.",
+      "correct": "Please look at the map.",
+      "explanation": "Khi chỉ đối tượng để hướng mắt nhìn, dùng look at; look không nhận trực tiếp the map ở nghĩa này."
+    },
+    "example": {
+      "id": "usage-ox-3c01eba119e00d-01",
+      "en": "Look at the photo on the left and tell me what you notice.",
+      "vi": "Hãy nhìn bức ảnh bên trái và cho tôi biết bạn nhận thấy điều gì."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/look_1",
+        "title": "look verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22T03:06:38.532831+00:00",
+        "sha256": "80af14c530775543bf0eff85671fbf75d5bc028555fd0806237ad0f50ad26b5d"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-9350872d712a12-01",
+    "headword": "pay",
+    "partOfSpeech": "verb",
+    "meaningVi": "trả tiền; thanh toán",
+    "patterns": [
+      {
+        "form": "pay for something",
+        "explanation": "Thanh toán cho hàng hóa hoặc dịch vụ."
+      },
+      {
+        "form": "pay somebody / pay somebody an amount",
+        "explanation": "Trả tiền cho một người hoặc trả cho họ một số tiền."
+      },
+      {
+        "form": "pay a bill/debt/fine",
+        "explanation": "Thanh toán hóa đơn, nợ hoặc tiền phạt; không cần for trước các tân ngữ này."
+      }
+    ],
+    "note": "Phân biệt pay for dinner (trả tiền bữa ăn) với pay the bill (thanh toán hóa đơn). Paid là dạng quá khứ thường dùng với nghĩa trả tiền.",
+    "mistake": {
+      "incorrect": "I have pay for the tickets.",
+      "correct": "I have paid for the tickets.",
+      "explanation": "Sau have trong thì hiện tại hoàn thành cần quá khứ phân từ paid, không phải dạng nguyên mẫu pay. Pay for the tickets vẫn là mẫu thanh toán tiền vé."
+    },
+    "example": {
+      "id": "usage-ox-9350872d712a12-01",
+      "en": "We can pay for the tickets online and collect them at the entrance.",
+      "vi": "Chúng ta có thể thanh toán vé trên mạng rồi nhận vé ở lối vào."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/pay_1",
+        "title": "pay verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22T03:06:38.672552+00:00",
+        "sha256": "c7181bac9d6b14ad2ba49ed866c87fb9be0b4a313bfb43c2c882c6b7444ff2bf"
+      }
+    ]
+  },
+  {
+    "wordId": "prefer-01",
+    "headword": "prefer",
+    "partOfSpeech": "verb",
+    "meaningVi": "thích hơn",
+    "patterns": [
+      {
+        "form": "prefer A to B",
+        "explanation": "Thích A hơn B; dùng to để nối hai danh từ trong phép so sánh này."
+      },
+      {
+        "form": "prefer doing something / prefer to do something",
+        "explanation": "Cả V-ing và to + động từ đều có thể đi sau prefer khi nói sở thích."
+      }
+    ],
+    "note": "Không ép prefer chỉ đi với V-ing hoặc chỉ với to + động từ. Mẫu prefer A to B không dùng than thay cho to; những cấu trúc dài hơn có thể có cách nối khác.",
+    "mistake": {
+      "incorrect": "I prefer tea than coffee.",
+      "correct": "I prefer tea to coffee.",
+      "explanation": "Khi so sánh trực tiếp hai đồ uống sau prefer, dùng to chứ không dùng than."
+    },
+    "example": {
+      "id": "usage-prefer-01",
+      "en": "I prefer a short phone call to a long email when a problem is urgent.",
+      "vi": "Tôi thích một cuộc gọi ngắn hơn một email dài khi vấn đề cần xử lý gấp."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/prefer",
+        "title": "prefer verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22T03:06:38.341133+00:00",
+        "sha256": "6455c22045d9175b32f9f8c47e5182c4a6e3e6e606ba18bad41ab3a6f9bd61b5"
+      }
+    ]
+  },
+  {
+    "wordId": "provide-01",
+    "headword": "provide",
+    "partOfSpeech": "verb",
+    "meaningVi": "cung cấp",
+    "patterns": [
+      {
+        "form": "provide somebody with something",
+        "explanation": "Cung cấp cho ai một thứ; with nối với thứ được cung cấp."
+      },
+      {
+        "form": "provide something for somebody",
+        "explanation": "Cung cấp một thứ cho ai; for nối với người được hưởng."
+      },
+      {
+        "form": "provide something",
+        "explanation": "Có thể chỉ nêu thứ được cung cấp nếu người nhận không cần nói rõ."
+      }
+    ],
+    "note": "Đây là hai mẫu an toàn và thông dụng của nghĩa cung cấp. Không dùng ghi chú này làm bộ chấm tự động để phủ nhận mọi biến thể có thể gặp ở vùng hoặc văn cảnh khác.",
+    "mistake": {
+      "incorrect": "The school provides students about free meals.",
+      "correct": "The school provides students with free meals.",
+      "explanation": "Với students là người nhận trong mẫu này, thứ được cung cấp đi sau with; about không thể thay thế with."
+    },
+    "example": {
+      "id": "usage-provide-01",
+      "en": "The library can provide new members with free internet access.",
+      "vi": "Thư viện có thể cung cấp quyền truy cập Internet miễn phí cho thành viên mới."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/provide",
+        "title": "provide verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22T03:06:38.365795+00:00",
+        "sha256": "56e1092c40b3e667760df8cc7848e1733b025c7e7b44aff31898e73183efcf14"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-efafcd967c5eb1-01",
+    "headword": "remind",
+    "partOfSpeech": "verb",
+    "meaningVi": "nhắc nhở",
+    "patterns": [
+      {
+        "form": "remind somebody to do something",
+        "explanation": "Nhắc ai thực hiện một việc."
+      },
+      {
+        "form": "remind somebody about/of something",
+        "explanation": "Nhắc ai nhớ một việc hoặc thông tin."
+      },
+      {
+        "form": "remind somebody (that) + mệnh đề",
+        "explanation": "Nhắc ai về nội dung được diễn đạt thành mệnh đề."
+      }
+    ],
+    "note": "Remind cần người được nhắc trong các mẫu này. Remind somebody of còn có thể gợi liên tưởng; mục đang học ưu tiên nhắc việc cần nhớ hoặc cần làm.",
+    "mistake": {
+      "incorrect": "Please remind to bring my ID.",
+      "correct": "Please remind me to bring my ID.",
+      "explanation": "Cần me để nói rõ ai được nhắc mang giấy tờ."
+    },
+    "example": {
+      "id": "usage-ox-efafcd967c5eb1-01",
+      "en": "Please remind me to submit the form before Friday.",
+      "vi": "Hãy nhắc tôi nộp biểu mẫu trước thứ Sáu."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/remind",
+        "title": "remind verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22T03:06:38.611076+00:00",
+        "sha256": "ce6d2aa9ef3d5ff9346607403e616a05b403c15c1555fa30474d2886cff60d52"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-149d479f6a59e9-01",
+    "headword": "respond",
+    "partOfSpeech": "verb",
+    "meaningVi": "trả lời",
+    "patterns": [
+      {
+        "form": "respond to somebody/something",
+        "explanation": "Trả lời một người, câu hỏi, thư hoặc lời mời."
+      },
+      {
+        "form": "respond (that) + mệnh đề",
+        "explanation": "Đưa nội dung câu trả lời bằng một mệnh đề."
+      }
+    ],
+    "note": "Respond thường trang trọng hơn answer hoặc reply. Answer a question nhưng respond to a question; không chuyển mẫu tân ngữ của answer sang respond.",
+    "mistake": {
+      "incorrect": "Please respond my email.",
+      "correct": "Please respond to my email.",
+      "explanation": "Với email là điều được trả lời, dùng to sau respond."
+    },
+    "example": {
+      "id": "usage-ox-149d479f6a59e9-01",
+      "en": "Please respond to the survey by the end of the week.",
+      "vi": "Hãy trả lời khảo sát trước cuối tuần."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/respond",
+        "title": "respond verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22T03:06:38.628167+00:00",
+        "sha256": "f307f5863ce44a12b0e5f21e4c51be13878da4df9b2789ab2565ce8499bc5949"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-6998ec8d781ca3-01",
+    "headword": "succeed",
+    "partOfSpeech": "verb",
+    "meaningVi": "thành công, đạt mục tiêu",
+    "patterns": [
+      {
+        "form": "succeed in doing something",
+        "explanation": "Thành công trong việc thực hiện một hành động."
+      },
+      {
+        "form": "succeed in something / succeed as something",
+        "explanation": "Thành công trong một lĩnh vực hoặc với vai trò nào đó."
+      }
+    ],
+    "note": "Nghĩa thành công dùng succeed nội động từ. Succeed somebody (kế nhiệm ai) là nghĩa khác, không phải mẫu thay thế cho succeed in doing.",
+    "mistake": {
+      "incorrect": "She hopes to succeed to solve the problem.",
+      "correct": "She hopes to succeed in solving the problem.",
+      "explanation": "Sau succeed, hành động đạt được đi theo in + V-ing, không theo to + động từ."
+    },
+    "example": {
+      "id": "usage-ox-6998ec8d781ca3-01",
+      "en": "With better planning, we can succeed in reducing food waste.",
+      "vi": "Với việc lên kế hoạch tốt hơn, chúng ta có thể thành công trong việc giảm lãng phí thực phẩm."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/succeed",
+        "title": "succeed verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22T03:06:38.765416+00:00",
+        "sha256": "b9a7009baa81c5c2692ccace4d350f766308e3c706a105f995e5f069ec9a8dee"
+      }
+    ]
+  },
+  {
+    "wordId": "information-01",
+    "headword": "information",
+    "partOfSpeech": "noun",
+    "meaningVi": "thông tin",
+    "patterns": [
+      {
+        "form": "information about/on something",
+        "explanation": "Thông tin về một chủ đề."
+      },
+      {
+        "form": "a piece of information",
+        "explanation": "Một mẩu hoặc một thông tin cụ thể; dùng piece để đếm."
+      }
+    ],
+    "note": "Không thêm -s vào information trong nghĩa thông tin đang học. Có thể nói some information hoặc two pieces of information.",
+    "mistake": {
+      "incorrect": "I need an information about the schedule.",
+      "correct": "I need some information about the schedule.",
+      "explanation": "Information không đếm được trong nghĩa này nên không đứng trực tiếp sau an."
+    },
+    "example": {
+      "id": "usage-information-01",
+      "en": "The guide includes useful information about public transportation.",
+      "vi": "Cuốn hướng dẫn có thông tin hữu ích về giao thông công cộng."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/information",
+        "title": "information noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22T03:06:38.769297+00:00",
+        "sha256": "eca789521ad4f07180635823737f5c442c8301e8c38a6b23bce304391bc34698"
+      }
+    ],
+    "countability": "Không đếm được ở nghĩa thông tin: information, some information; một thông tin có thể diễn đạt bằng a piece of information."
+  },
+  {
+    "wordId": "advice-01",
+    "headword": "advice",
+    "partOfSpeech": "noun",
+    "meaningVi": "lời khuyên",
+    "patterns": [
+      {
+        "form": "give somebody advice / give advice to somebody",
+        "explanation": "Cho ai lời khuyên."
+      },
+      {
+        "form": "advice on something",
+        "explanation": "Lời khuyên về một vấn đề."
+      },
+      {
+        "form": "a piece of advice",
+        "explanation": "Một lời khuyên cụ thể; dùng piece để đếm."
+      }
+    ],
+    "note": "Advice là danh từ; advise là động từ. Trong nghĩa lời khuyên thông thường, không dùng an advice hoặc advices.",
+    "mistake": {
+      "incorrect": "She gave me an advice.",
+      "correct": "She gave me a piece of advice.",
+      "explanation": "Đếm từng lời khuyên bằng piece; advice không đứng trực tiếp sau an trong nghĩa này."
+    },
+    "example": {
+      "id": "usage-advice-01",
+      "en": "My supervisor gave me practical advice on preparing for the interview.",
+      "vi": "Người hướng dẫn cho tôi lời khuyên thiết thực về việc chuẩn bị phỏng vấn."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/advice",
+        "title": "advice noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22T03:06:38.795147+00:00",
+        "sha256": "014c9be295e2394e5e99c5b1b1dc8b7e6be1b598a202667bae734df508d38ff2"
+      }
+    ],
+    "countability": "Không đếm được ở nghĩa lời khuyên: some advice, a piece of advice, two pieces of advice."
+  },
+  {
+    "wordId": "furniture-01",
+    "headword": "furniture",
+    "partOfSpeech": "noun",
+    "meaningVi": "đồ nội thất",
+    "patterns": [
+      {
+        "form": "some/new/office furniture",
+        "explanation": "Nói chung về đồ nội thất; không thêm -s vào furniture ở nghĩa này."
+      },
+      {
+        "form": "a piece of furniture",
+        "explanation": "Đếm một món đồ nội thất bằng piece."
+      }
+    ],
+    "note": "Khi làm chủ ngữ, furniture dùng động từ số ít: The furniture is new. Có thể gọi tên từng vật bằng danh từ đếm được như a chair hoặc two tables.",
+    "mistake": {
+      "incorrect": "We bought two furnitures.",
+      "correct": "We bought two pieces of furniture.",
+      "explanation": "Furniture không có số nhiều -s ở nghĩa đồ nội thất thông thường; dùng pieces để đếm."
+    },
+    "example": {
+      "id": "usage-furniture-01",
+      "en": "The movers wrapped every piece of furniture before loading the truck.",
+      "vi": "Những người chuyển nhà bọc từng món đồ nội thất trước khi chất lên xe tải."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/furniture",
+        "title": "furniture noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22T03:06:38.867434+00:00",
+        "sha256": "fd2b451477094ddb12b2845cbe76e0dfe71ca572df2ec3b68ddb04fbe41196cc"
+      }
+    ],
+    "countability": "Không đếm được: furniture; đếm từng món bằng a piece/two pieces of furniture."
+  },
+  {
+    "wordId": "ox-1c09f5a7f47df2-01",
+    "headword": "equipment",
+    "partOfSpeech": "noun",
+    "meaningVi": "thiết bị",
+    "patterns": [
+      {
+        "form": "equipment for something",
+        "explanation": "Thiết bị dành cho một mục đích hoặc hoạt động."
+      },
+      {
+        "form": "a piece of equipment",
+        "explanation": "Một thiết bị cụ thể; dùng piece để đếm."
+      }
+    ],
+    "note": "Ở nghĩa thiết bị nói chung, equipment dùng như danh từ không đếm được và đi với động từ số ít. Không dùng equipments để chỉ nhiều thiết bị trong cách dùng thông thường này.",
+    "mistake": {
+      "incorrect": "The lab needs three new equipments.",
+      "correct": "The lab needs three new pieces of equipment.",
+      "explanation": "Muốn đếm từng thiết bị, dùng pieces of equipment; không thêm -s vào equipment."
+    },
+    "example": {
+      "id": "usage-ox-1c09f5a7f47df2-01",
+      "en": "Please check the safety equipment before you start climbing.",
+      "vi": "Hãy kiểm tra thiết bị an toàn trước khi bắt đầu leo núi."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/equipment",
+        "title": "equipment noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22T03:06:38.894227+00:00",
+        "sha256": "9344789c085fa8e9dd0bb1893dc636ce3c188e85a8744d6b77ebd00abff7b3b7"
+      }
+    ],
+    "countability": "Không đếm được ở nghĩa thiết bị: some equipment, a piece of equipment, three pieces of equipment."
+  },
+  {
+    "wordId": "research-01",
+    "headword": "research",
+    "partOfSpeech": "noun",
+    "meaningVi": "nghiên cứu",
+    "patterns": [
+      {
+        "form": "do/conduct research",
+        "explanation": "Tiến hành nghiên cứu; dùng do hoặc conduct cho hoạt động nghiên cứu."
+      },
+      {
+        "form": "research on/into something",
+        "explanation": "Nghiên cứu về một chủ đề hoặc vấn đề."
+      }
+    ],
+    "note": "Ghi chú này áp dụng cho research nói về hoạt động hoặc kiến thức nghiên cứu nói chung. Khi cần đếm từng công trình, a study hoặc a research project thường rõ hơn; không dùng ghi chú này để kết luận mọi cách dùng chuyên ngành khác đều sai.",
+    "mistake": {
+      "incorrect": "The team did a research on sleep.",
+      "correct": "The team did research on sleep.",
+      "explanation": "Với hoạt động nghiên cứu nói chung trong câu này, research là danh từ không đếm được. Nếu nói một công trình riêng có thể dùng a study hoặc a research project."
+    },
+    "example": {
+      "id": "usage-research-01",
+      "en": "The team will conduct research on how heat affects sleep.",
+      "vi": "Nhóm sẽ tiến hành nghiên cứu về việc nắng nóng ảnh hưởng đến giấc ngủ như thế nào."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/research_1",
+        "title": "research noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22T03:06:39.635443+00:00",
+        "sha256": "13b3303926e9702d40b9000af6990e3f0d8c4e3c9eac7a7a8b3c7a4648a4733b"
+      }
+    ],
+    "countability": "Thường không đếm được khi chỉ hoạt động nghiên cứu nói chung; đếm công trình bằng a study hoặc a research project."
+  },
+  {
+    "wordId": "experience-01",
+    "headword": "experience",
+    "partOfSpeech": "noun",
+    "meaningVi": "kinh nghiệm",
+    "patterns": [
+      {
+        "form": "experience in doing something",
+        "explanation": "Kinh nghiệm thực hiện một công việc."
+      },
+      {
+        "form": "experience with something",
+        "explanation": "Kinh nghiệm làm việc với một loại công việc, công cụ hoặc đối tượng."
+      },
+      {
+        "form": "gain experience",
+        "explanation": "Tích lũy kinh nghiệm qua thực hành."
+      }
+    ],
+    "note": "Mục này là kinh nghiệm nên dùng không đếm được. An experience/two experiences vẫn đúng khi chỉ một/hai trải nghiệm hoặc sự việc đã trải qua, nhưng đó là nghĩa khác.",
+    "mistake": {
+      "incorrect": "She has many experience in sales.",
+      "correct": "She has a lot of experience in sales.",
+      "explanation": "Kinh nghiệm làm việc không đếm được trong câu này; many cần danh từ đếm được số nhiều."
+    },
+    "example": {
+      "id": "usage-experience-01",
+      "en": "You do not need previous experience with this software to join the workshop.",
+      "vi": "Bạn không cần có kinh nghiệm sử dụng phần mềm này từ trước để tham gia buổi thực hành."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/experience_1",
+        "title": "experience noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22T03:06:39.282476+00:00",
+        "sha256": "3999f861762416ea18de7873a7bdd40789da46b66f763d246ca1d868242de836"
+      }
+    ],
+    "countability": "Không đếm được khi mang nghĩa kinh nghiệm; có thể đếm được ở nghĩa một sự việc hoặc trải nghiệm cụ thể."
+  },
+  {
+    "wordId": "ox-19fba0e995b979-01",
+    "headword": "news",
+    "partOfSpeech": "noun",
+    "meaningVi": "tin tức",
+    "patterns": [
+      {
+        "form": "news about/on something",
+        "explanation": "Tin tức về một sự kiện hoặc vấn đề."
+      },
+      {
+        "form": "a piece of news / a news story",
+        "explanation": "Dùng piece hoặc story khi cần đếm từng tin."
+      }
+    ],
+    "note": "Dù tận cùng bằng -s, news dùng động từ số ít ở nghĩa tin tức: The news is good. The news còn có thể chỉ bản tin phát thanh hoặc truyền hình.",
+    "mistake": {
+      "incorrect": "The news are surprising.",
+      "correct": "The news is surprising.",
+      "explanation": "News không phải danh từ số nhiều trong câu này; động từ hòa hợp là is."
+    },
+    "example": {
+      "id": "usage-ox-19fba0e995b979-01",
+      "en": "The news about the new train route is encouraging.",
+      "vi": "Tin về tuyến tàu mới rất đáng mừng."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/news",
+        "title": "news noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22T03:06:39.045288+00:00",
+        "sha256": "3c7481fb0c7b53fde27fa747c5da7184f415bb022d7c3b069f26004cfffde913"
+      }
+    ],
+    "countability": "Không đếm được ở nghĩa tin tức; dùng động từ số ít và không dùng a news để nói một tin."
+  },
+  {
+    "wordId": "ox-00e13ed7af55b2-01",
+    "headword": "work",
+    "partOfSpeech": "verb",
+    "meaningVi": "làm việc có mục đích",
+    "patterns": [
+      {
+        "form": "work on something",
+        "explanation": "Dành công sức thực hiện một nhiệm vụ hoặc dự án."
+      },
+      {
+        "form": "work with somebody",
+        "explanation": "Làm việc cùng ai."
+      },
+      {
+        "form": "work at something",
+        "explanation": "Nỗ lực thực hiện hoặc cải thiện một việc."
+      }
+    ],
+    "note": "Đây là nghĩa làm việc hoặc bỏ công sức. Work còn có nghĩa hoạt động/hiệu quả; đừng mặc định mọi câu có work đều nói về nghề nghiệp hay việc được trả lương.",
+    "mistake": {
+      "incorrect": "I am work on the report now.",
+      "correct": "I am working on the report now.",
+      "explanation": "Nếu dùng am để diễn tả việc đang làm, động từ cần dạng -ing. Cũng có thể dùng hiện tại đơn khi nói thói quen, tùy ý định."
+    },
+    "example": {
+      "id": "usage-ox-00e13ed7af55b2-01",
+      "en": "We work on the community garden together every weekend.",
+      "vi": "Chúng tôi cùng làm việc ở khu vườn cộng đồng vào mỗi cuối tuần."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/work_1",
+        "title": "work verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22T03:06:39.427393+00:00",
+        "sha256": "52aa70cf36f0b8182fd568a6e52f6c8de59856029803a050757248875f2cb1c3"
+      }
+    ]
+  }
+]

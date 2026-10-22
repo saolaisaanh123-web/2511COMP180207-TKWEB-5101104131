@@ -1,0 +1,875 @@
+[
+  {
+    "wordId": "suggest-01",
+    "headword": "suggest",
+    "partOfSpeech": "verb",
+    "meaningVi": "đề xuất; gợi ý",
+    "patterns": [
+      {
+        "form": "suggest + V-ing",
+        "explanation": "Gợi ý một hoạt động, không nêu người thực hiện ngay sau động từ."
+      },
+      {
+        "form": "suggest (that) + chủ ngữ + động từ nguyên mẫu",
+        "explanation": "Gợi ý người nào đó làm gì; mẫu dùng động từ nguyên mẫu trong mệnh đề này phù hợp tiếng Anh Mỹ."
+      }
+    ],
+    "note": "Với nghĩa đề xuất đang học, không dùng suggest + người + to V. Có thể nói suggest something to somebody khi nêu ý tưởng và người nhận.",
+    "mistake": {
+      "incorrect": "He suggested me to study English.",
+      "correct": "He suggested that I study English.",
+      "explanation": "Đổi sang mệnh đề that để nêu người thực hiện; không chuyển nguyên mẫu advise somebody to do sang suggest."
+    },
+    "example": {
+      "id": "usage-suggest-01",
+      "en": "I suggest checking the train schedule before we buy tickets.",
+      "vi": "Tôi đề nghị kiểm tra lịch tàu trước khi chúng ta mua vé."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/suggest",
+        "title": "suggest verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22",
+        "sha256": "34968a9f6b16cee5b12e216429f8b9277b249372c6aac0220fe833a5ab5b1e10"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-0eb15ad185af2b-01",
+    "headword": "recommend",
+    "partOfSpeech": "verb",
+    "meaningVi": "giới thiệu, đánh giá tốt",
+    "patterns": [
+      {
+        "form": "recommend + người/vật",
+        "explanation": "Giới thiệu người hoặc vật vì cho rằng phù hợp, tốt hoặc hữu ích."
+      },
+      {
+        "form": "recommend + người/vật + to + người nhận",
+        "explanation": "Nêu rõ người được giới thiệu cho; người nhận đứng sau to."
+      }
+    ],
+    "note": "Mục này luyện nghĩa giới thiệu/đánh giá tốt. Recommend còn dùng để khuyên một hành động; không suy ra rằng mọi cấu trúc có to V sau recommend đều sai.",
+    "mistake": {
+      "incorrect": "Can you recommend a hotel me?",
+      "correct": "Can you recommend a hotel to me?",
+      "explanation": "Khi đặt người nhận sau vật được giới thiệu theo mẫu này, cần to trước người nhận."
+    },
+    "example": {
+      "id": "usage-ox-0eb15ad185af2b-01",
+      "en": "Can you recommend a reliable mechanic in this neighborhood?",
+      "vi": "Bạn có thể giới thiệu một thợ sửa xe đáng tin cậy trong khu này không?"
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/recommend",
+        "title": "recommend verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22",
+        "sha256": "46c5bd5b6e2cabe4d3a0b3c342206a688bedf2d17594281773e367621ec6919c"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-bac8ab1286b879-01",
+    "headword": "advise",
+    "partOfSpeech": "verb",
+    "meaningVi": "khuyên",
+    "patterns": [
+      {
+        "form": "advise + người + (not) to V",
+        "explanation": "Khuyên một người cụ thể nên hoặc không nên làm gì."
+      },
+      {
+        "form": "advise against + V-ing",
+        "explanation": "Khuyên không nên làm một việc."
+      }
+    ],
+    "note": "Advise là động từ khuyên; advice là danh từ lời khuyên. Advise cũng có mẫu advise doing something khi không nêu người nhận lời khuyên.",
+    "mistake": {
+      "incorrect": "The nurse advised me rest.",
+      "correct": "The nurse advised me to rest.",
+      "explanation": "Sau advise + người, dùng to trước động từ chỉ việc được khuyên làm."
+    },
+    "example": {
+      "id": "usage-ox-bac8ab1286b879-01",
+      "en": "Doctors advise patients to keep a list of their medications.",
+      "vi": "Các bác sĩ khuyên bệnh nhân ghi một danh sách những thuốc mình đang dùng."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/advise",
+        "title": "advise verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22",
+        "sha256": "3925cbc085f253ff89cfc90976d9f424547a85b26b505aecdfbaf24e6e86853c"
+      }
+    ]
+  },
+  {
+    "wordId": "avoid-01",
+    "headword": "avoid",
+    "partOfSpeech": "verb",
+    "meaningVi": "tránh",
+    "patterns": [
+      {
+        "form": "avoid + danh từ",
+        "explanation": "Tránh người, vật, tình huống hoặc điều không mong muốn."
+      },
+      {
+        "form": "avoid + V-ing",
+        "explanation": "Tránh làm một việc; hành động đứng sau avoid ở dạng -ing."
+      }
+    ],
+    "note": "Không dùng avoid to V cho nghĩa tránh làm việc gì. Avoid có thể mang nghĩa né tránh hoặc phòng tránh điều xấu, tùy tân ngữ.",
+    "mistake": {
+      "incorrect": "I avoid to drive during rush hour.",
+      "correct": "I avoid driving during rush hour.",
+      "explanation": "Dùng driving làm tân ngữ chỉ hoạt động sau avoid."
+    },
+    "example": {
+      "id": "usage-avoid-01",
+      "en": "We avoid ordering food right before the restaurant closes.",
+      "vi": "Chúng tôi tránh gọi món ngay trước giờ nhà hàng đóng cửa."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/avoid",
+        "title": "avoid verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22",
+        "sha256": "1f2bdfb3abf05218c35107499037ca0733613125170f78e614bdf6e837724182"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-75fba329cb6ee8-01",
+    "headword": "enjoy",
+    "partOfSpeech": "verb",
+    "meaningVi": "thích; tận hưởng",
+    "patterns": [
+      {
+        "form": "enjoy + danh từ",
+        "explanation": "Thấy thích hoặc có niềm vui từ một điều gì."
+      },
+      {
+        "form": "enjoy + V-ing",
+        "explanation": "Thích làm một hoạt động."
+      }
+    ],
+    "note": "Trong một câu kể thông thường, enjoy thường cần tân ngữ: enjoy the trip, enjoy it, enjoy yourself. Lời chúc ngắn Enjoy! là cách dùng riêng, hợp lệ.",
+    "mistake": {
+      "incorrect": "I enjoy to cook for my friends.",
+      "correct": "I enjoy cooking for my friends.",
+      "explanation": "Sau enjoy dùng dạng -ing để gọi tên hoạt động, không dùng to cook."
+    },
+    "example": {
+      "id": "usage-ox-75fba329cb6ee8-01",
+      "en": "I enjoy walking through the park before breakfast.",
+      "vi": "Tôi thích đi bộ qua công viên trước bữa sáng."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/enjoy",
+        "title": "enjoy verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22",
+        "sha256": "47b1333f79a1a53f79cde36757db123a1960a5b396614a517516d9948bd49b07"
+      }
+    ]
+  },
+  {
+    "wordId": "consider-01",
+    "headword": "consider",
+    "partOfSpeech": "verb",
+    "meaningVi": "cân nhắc; xem xét",
+    "patterns": [
+      {
+        "form": "consider + danh từ",
+        "explanation": "Cân nhắc hoặc xem xét điều gì trước khi quyết định."
+      },
+      {
+        "form": "consider + V-ing",
+        "explanation": "Cân nhắc việc làm một hành động."
+      }
+    ],
+    "note": "Với nghĩa cân nhắc đang học, dùng consider doing. Consider somebody to be something thuộc nghĩa đánh giá/coi ai là gì, không phải ngoại lệ để viết consider to do.",
+    "mistake": {
+      "incorrect": "We are considering to move closer to work.",
+      "correct": "We are considering moving closer to work.",
+      "explanation": "Cần moving khi nói cân nhắc việc chuyển nhà, không phải nhận định ai là gì."
+    },
+    "example": {
+      "id": "usage-consider-01",
+      "en": "Please consider taking the bus if parking is expensive.",
+      "vi": "Hãy cân nhắc đi xe buýt nếu phí đỗ xe đắt."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/consider",
+        "title": "consider verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22",
+        "sha256": "e8009417080195902d7ce27f03b29235f7922abce04bc55cc40f4377b5e0e6bd"
+      }
+    ]
+  },
+  {
+    "wordId": "decide-01",
+    "headword": "decide",
+    "partOfSpeech": "verb",
+    "meaningVi": "quyết định",
+    "patterns": [
+      {
+        "form": "decide + to V",
+        "explanation": "Quyết định tự thực hiện một hành động."
+      },
+      {
+        "form": "decide + từ hỏi + to V",
+        "explanation": "Quyết định làm gì, đi đâu hoặc làm như thế nào."
+      },
+      {
+        "form": "decide against + V-ing",
+        "explanation": "Quyết định không làm một việc."
+      }
+    ],
+    "note": "Decide to do nói quyết định; consider doing chỉ nói đang cân nhắc, chưa chắc đã quyết định. Có thể dùng decide that + mệnh đề để trình bày quyết định.",
+    "mistake": {
+      "incorrect": "We decided taking the earlier flight.",
+      "correct": "We decided to take the earlier flight.",
+      "explanation": "Khi quyết định thực hiện hành động, dùng to take sau decide."
+    },
+    "example": {
+      "id": "usage-decide-01",
+      "en": "We need to decide whether to repair the car or replace it.",
+      "vi": "Chúng tôi cần quyết định nên sửa chiếc xe hay thay xe khác."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/decide",
+        "title": "decide verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22",
+        "sha256": "a823fc9f46acc3da2f3b2e75be2fae0c921c3e8953f59d8f9b41eba2bd4e2c3f"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-c29277f55fb31a-01",
+    "headword": "hope",
+    "partOfSpeech": "verb",
+    "meaningVi": "hy vọng",
+    "patterns": [
+      {
+        "form": "hope + to V",
+        "explanation": "Hy vọng chính chủ ngữ sẽ làm được điều gì."
+      },
+      {
+        "form": "hope (that) + mệnh đề",
+        "explanation": "Hy vọng một tình huống xảy ra; có thể nêu chủ ngữ khác trong mệnh đề."
+      },
+      {
+        "form": "hope for + danh từ",
+        "explanation": "Hy vọng có một điều hoặc kết quả."
+      }
+    ],
+    "note": "Không dùng hope + người + to V theo mẫu của want. Nếu người thực hiện khác, dùng một mệnh đề: I hope she wins.",
+    "mistake": {
+      "incorrect": "They hope me to pass the exam.",
+      "correct": "They hope that I pass the exam.",
+      "explanation": "Mệnh đề that I pass nêu người được hy vọng sẽ thi đỗ; me to pass không phù hợp sau hope."
+    },
+    "example": {
+      "id": "usage-ox-c29277f55fb31a-01",
+      "en": "We hope to reopen the library next month.",
+      "vi": "Chúng tôi hy vọng mở cửa lại thư viện vào tháng tới."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/hope_1",
+        "title": "hope verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22",
+        "sha256": "d7b4e2b0a0c98ab530dd9eb9218c1477e7094b15fe6e8375316e29858b169ddd"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-8656aa55d393b0-01",
+    "headword": "want",
+    "partOfSpeech": "verb",
+    "meaningVi": "muốn hoặc mong có điều gì",
+    "patterns": [
+      {
+        "form": "want + to V",
+        "explanation": "Muốn bản thân làm việc gì."
+      },
+      {
+        "form": "want + người/vật + to V",
+        "explanation": "Muốn ai hoặc điều gì thực hiện một hành động."
+      }
+    ],
+    "note": "Khi diễn đạt mong muốn theo mẫu này, không dùng want that + mệnh đề. Do you want…? khá trực tiếp; Would you like…? thường lịch sự hơn khi mời hoặc đề nghị.",
+    "mistake": {
+      "incorrect": "I want that you call me tomorrow.",
+      "correct": "I want you to call me tomorrow.",
+      "explanation": "Dùng you to call khi nêu việc muốn người khác làm."
+    },
+    "example": {
+      "id": "usage-ox-8656aa55d393b0-01",
+      "en": "Do you want me to save you a seat near the front?",
+      "vi": "Bạn có muốn tôi giữ cho bạn một chỗ gần phía trước không?"
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/want_1",
+        "title": "want verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22",
+        "sha256": "055d48adfdee2ef4ffaa7bcdd621995ea78c4eb1fa76ca9ca11978981d3f7b94"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-be8dff00b0d468-01",
+    "headword": "need",
+    "partOfSpeech": "verb",
+    "meaningVi": "cần",
+    "patterns": [
+      {
+        "form": "need + danh từ",
+        "explanation": "Cần một người hoặc một thứ vì điều đó quan trọng hay thiết yếu."
+      },
+      {
+        "form": "need + to V",
+        "explanation": "Cần làm việc gì, khi need được dùng như động từ thường."
+      }
+    ],
+    "note": "Need trong mục này là động từ thường. Need doing có thể mang nghĩa bị động, như needs washing; need dùng như động từ khuyết thiếu là cấu trúc khác, không áp dụng máy móc quy tắc to V cho mọi câu.",
+    "mistake": {
+      "incorrect": "We need leave before six.",
+      "correct": "We need to leave before six.",
+      "explanation": "Trong câu khẳng định dùng động từ thường này, thêm to trước leave."
+    },
+    "example": {
+      "id": "usage-ox-be8dff00b0d468-01",
+      "en": "You need to bring a photo ID to collect the package.",
+      "vi": "Bạn cần mang giấy tờ tùy thân có ảnh để nhận gói hàng."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/need_1",
+        "title": "need verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22",
+        "sha256": "ae1ad08e459ed8e92f0679f1dc774e5ab07ed5345ae1ab22e8fad6bc086d3c85"
+      }
+    ]
+  },
+  {
+    "wordId": "allow-01",
+    "headword": "allow",
+    "partOfSpeech": "verb",
+    "meaningVi": "cho phép",
+    "patterns": [
+      {
+        "form": "allow + người/vật + to V",
+        "explanation": "Cho phép người hoặc vật thực hiện một việc."
+      },
+      {
+        "form": "be allowed + to V",
+        "explanation": "Được cho phép làm gì."
+      },
+      {
+        "form": "allow + danh từ/V-ing",
+        "explanation": "Cho phép một hoạt động, không nêu riêng người thực hiện."
+      }
+    ],
+    "note": "Có người thực hiện thì dùng allow somebody to do; chỉ nêu hoạt động thì có thể dùng allow doing. Let somebody do không có to, khác allow.",
+    "mistake": {
+      "incorrect": "The owner allows us use the kitchen.",
+      "correct": "The owner allows us to use the kitchen.",
+      "explanation": "Sau allow + us cần to trước động từ use."
+    },
+    "example": {
+      "id": "usage-allow-01",
+      "en": "Does the museum allow visitors to take photos without flash?",
+      "vi": "Bảo tàng có cho phép khách chụp ảnh không dùng đèn flash không?"
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/allow",
+        "title": "allow verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22",
+        "sha256": "ce4261551078e13322f44de2d3996d20aa5f650e16b1afecd73f7e7ac5df4316"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-5654d4106d7025-01",
+    "headword": "let",
+    "partOfSpeech": "verb",
+    "meaningVi": "cho phép; để cho",
+    "patterns": [
+      {
+        "form": "let + người/vật + V nguyên mẫu không to",
+        "explanation": "Cho phép hoặc để ai, điều gì làm gì."
+      }
+    ],
+    "note": "Đối chiếu let somebody do với allow somebody to do. Khi chuyển ý cho phép làm việc sang bị động, thường dùng be allowed to do; đừng mở rộng lưu ý này thành cấm mọi câu bị động có let, vì let out là cấu trúc khác.",
+    "mistake": {
+      "incorrect": "They let me to borrow a laptop.",
+      "correct": "They let me borrow a laptop.",
+      "explanation": "Sau let + me dùng borrow không có to trong cấu trúc cho phép này."
+    },
+    "example": {
+      "id": "usage-ox-5654d4106d7025-01",
+      "en": "Please let the passengers leave the train before you get on.",
+      "vi": "Hãy để hành khách xuống tàu trước khi bạn lên."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/let_1",
+        "title": "let verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22",
+        "sha256": "ccfe011652560ddcc050cb215b234c9655ac78934ee89bcf051f15390679b601"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-d05aa2a15fb3c4-01",
+    "headword": "make",
+    "partOfSpeech": "verb",
+    "meaningVi": "làm ra; chế tạo",
+    "patterns": [
+      {
+        "form": "make + vật + from/out of + vật liệu",
+        "explanation": "Làm ra một vật từ vật liệu hoặc nguyên liệu."
+      },
+      {
+        "form": "make + vật + for + người",
+        "explanation": "Làm một thứ cho ai; cũng có thể dùng make + người + vật."
+      }
+    ],
+    "note": "Mục này dạy nghĩa làm ra/chế tạo. Make somebody do là cấu trúc gây khiến thuộc nghĩa khác, không dùng thay cho nghĩa làm ra một vật.",
+    "mistake": {
+      "incorrect": "Can you make a sandwich me?",
+      "correct": "Can you make a sandwich for me?",
+      "explanation": "Với vật đứng trước người nhận, dùng for. Cũng có thể viết Can you make me a sandwich?"
+    },
+    "example": {
+      "id": "usage-ox-d05aa2a15fb3c4-01",
+      "en": "We make small shelves out of leftover wood.",
+      "vi": "Chúng tôi làm những chiếc kệ nhỏ từ gỗ còn thừa."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/make_1",
+        "title": "make verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22",
+        "sha256": "ab9040fb1659c9dee4462bd3c5c862aeb6a4649841633d8b0cde822b135e733d"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-106a5842fc5fce-01",
+    "headword": "help",
+    "partOfSpeech": "verb",
+    "meaningVi": "giúp đỡ",
+    "patterns": [
+      {
+        "form": "help + người + (to) V",
+        "explanation": "Giúp ai thực hiện một việc; có thể có hoặc không có to."
+      },
+      {
+        "form": "help + người + with + danh từ",
+        "explanation": "Giúp ai về một công việc hoặc một phần việc."
+      }
+    ],
+    "note": "Cả help me carry và help me to carry đều đúng. Help somebody in doing something cũng có thể dùng; không coi mọi dạng -ing gần help là sai.",
+    "mistake": {
+      "incorrect": "Could you help me to carrying these boxes?",
+      "correct": "Could you help me carry these boxes?",
+      "explanation": "Trong mẫu help somebody (to) do, động từ là nguyên mẫu: carry hoặc to carry, không phải to carrying."
+    },
+    "example": {
+      "id": "usage-ox-106a5842fc5fce-01",
+      "en": "Can you help me check the address before I send the invitation?",
+      "vi": "Bạn có thể giúp tôi kiểm tra địa chỉ trước khi tôi gửi lời mời không?"
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/help_1",
+        "title": "help verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22",
+        "sha256": "f7e65332dbf4c8cd3d918b1b1cbd44fcdbdf7cdb082d0db94114208080a6041b"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-b4d5a180d618df-01",
+    "headword": "prevent",
+    "partOfSpeech": "verb",
+    "meaningVi": "ngăn chặn, phòng ngừa",
+    "patterns": [
+      {
+        "form": "prevent + danh từ",
+        "explanation": "Ngăn một sự việc xảy ra."
+      },
+      {
+        "form": "prevent + người/vật + from + V-ing",
+        "explanation": "Ngăn ai hoặc điều gì thực hiện một hành động."
+      }
+    ],
+    "note": "Mẫu from + V-ing nêu hành động bị ngăn cản. Phân biệt prevent an accident là ngăn tai nạn xảy ra với repair damage là sửa hậu quả đã có.",
+    "mistake": {
+      "incorrect": "The heavy snow prevented us to leave.",
+      "correct": "The heavy snow prevented us from leaving.",
+      "explanation": "Dùng from leaving để nêu hành động không thể xảy ra sau prevent + us."
+    },
+    "example": {
+      "id": "usage-ox-b4d5a180d618df-01",
+      "en": "Regular breaks can prevent your eyes from getting too tired.",
+      "vi": "Nghỉ giải lao đều đặn có thể giúp mắt bạn không bị quá mỏi."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/prevent",
+        "title": "prevent verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22",
+        "sha256": "764b4b54727c1b700e161599f7ae308e1a7cfed3016ee4c9a00955760feff3d7"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-6c45cb72a36e63-01",
+    "headword": "stop",
+    "partOfSpeech": "verb",
+    "meaningVi": "dừng di chuyển",
+    "patterns": [
+      {
+        "form": "stop at + điểm dừng",
+        "explanation": "Dừng ở một điểm, như trạm xăng hoặc đèn giao thông."
+      },
+      {
+        "form": "stop in + thành phố/khu vực",
+        "explanation": "Dừng trong một thành phố hoặc khu vực."
+      }
+    ],
+    "note": "Nghĩa đang học là dừng di chuyển. Stop to do nghĩa là dừng lại để làm việc khác; stop doing nghĩa là ngừng một hoạt động. Hai mẫu đó không thể đổi cho nhau mà vẫn giữ nguyên ý.",
+    "mistake": {
+      "incorrect": "Does this train stop to Denver?",
+      "correct": "Does this train stop in Denver?",
+      "explanation": "Denver là địa điểm, nên dùng in ở câu này; to + động từ sau stop có thể chỉ mục đích, không phải điểm dừng."
+    },
+    "example": {
+      "id": "usage-ox-6c45cb72a36e63-01",
+      "en": "We always stop at a gas station before we enter the desert.",
+      "vi": "Chúng tôi luôn dừng ở một trạm xăng trước khi đi vào sa mạc."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/stop_1",
+        "title": "stop verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22",
+        "sha256": "9954cdd07e5fbc92e4acc98fc551aba4d3490a58bc19569d52f5562ec141af86"
+      }
+    ]
+  },
+  {
+    "wordId": "remember-01",
+    "headword": "remember",
+    "partOfSpeech": "verb",
+    "meaningVi": "nhớ",
+    "patterns": [
+      {
+        "form": "remember + danh từ/mệnh đề",
+        "explanation": "Nhớ lại người, thông tin hoặc sự việc."
+      },
+      {
+        "form": "remember + to V",
+        "explanation": "Nhớ thực hiện một việc cần làm."
+      },
+      {
+        "form": "remember + V-ing",
+        "explanation": "Nhớ lại trải nghiệm làm một việc đã xảy ra."
+      }
+    ],
+    "note": "Remember to lock nhắc việc cần làm; remember locking nói có ký ức đã khóa. Cả hai cấu trúc đều đúng, nhưng khác quan hệ thời gian và ý nghĩa.",
+    "mistake": {
+      "incorrect": "Please remember call me tonight.",
+      "correct": "Please remember to call me tonight.",
+      "explanation": "Khi nhắc thực hiện cuộc gọi, dùng remember to call; không bỏ to."
+    },
+    "example": {
+      "id": "usage-remember-01",
+      "en": "Please remember to turn off the oven before you leave.",
+      "vi": "Hãy nhớ tắt lò nướng trước khi bạn đi."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/remember",
+        "title": "remember verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22",
+        "sha256": "c93f7d39c2039e939edc5cc6ec2f66eca65c8ccaa426dbfc997c583eedf8e53e"
+      }
+    ]
+  },
+  {
+    "wordId": "forget-01",
+    "headword": "forget",
+    "partOfSpeech": "verb",
+    "meaningVi": "quên",
+    "patterns": [
+      {
+        "form": "forget + danh từ/mệnh đề",
+        "explanation": "Quên thông tin hoặc sự việc."
+      },
+      {
+        "form": "forget + to V",
+        "explanation": "Quên thực hiện việc cần làm."
+      },
+      {
+        "form": "forget + V-ing",
+        "explanation": "Không nhớ trải nghiệm đã xảy ra; hay gặp trong lời nhấn mạnh never forget doing."
+      }
+    ],
+    "note": "Forget to do và forget doing đều có thể đúng nhưng khác ý. Dạng quá khứ thường dùng là forgot; trong cấu trúc hoàn thành ở đây dùng forgotten.",
+    "mistake": {
+      "incorrect": "Don't forget bring your ID.",
+      "correct": "Don't forget to bring your ID.",
+      "explanation": "Đây là lời nhắc làm một việc, nên dùng to bring sau forget."
+    },
+    "example": {
+      "id": "usage-forget-01",
+      "en": "Don't forget to attach the receipt when you email the store.",
+      "vi": "Đừng quên đính kèm biên lai khi bạn gửi email cho cửa hàng."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/forget",
+        "title": "forget verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22",
+        "sha256": "31c840c641264ca1bd6b18bb06a800997ce430d81cecde219a9b964a93e586d0"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-1e262cd7d11081-01",
+    "headword": "try",
+    "partOfSpeech": "verb",
+    "meaningVi": "cố gắng làm điều gì",
+    "patterns": [
+      {
+        "form": "try + to V",
+        "explanation": "Cố gắng làm một việc; chưa khẳng định đã thành công."
+      },
+      {
+        "form": "try your best + to V",
+        "explanation": "Cố gắng hết sức để làm việc gì."
+      }
+    ],
+    "note": "Try doing là thử một cách để xem có hiệu quả không, khác trọng tâm cố gắng của try to do. Try and do cũng dùng được trong lời nói với dạng try; không kết luận mọi mẫu and đều sai.",
+    "mistake": {
+      "incorrect": "I'll try solve the problem.",
+      "correct": "I'll try to solve the problem.",
+      "explanation": "Trong mẫu cố gắng làm một việc, dùng to trước solve."
+    },
+    "example": {
+      "id": "usage-ox-1e262cd7d11081-01",
+      "en": "We try to keep our meetings under thirty minutes.",
+      "vi": "Chúng tôi cố gắng giữ các cuộc họp dưới ba mươi phút."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/try_1",
+        "title": "try verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22",
+        "sha256": "7fe3115aff34b73089ef94d0f1aa61b26e599e2d625630e327816b4e41e1288c"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-d5259acec0d80c-01",
+    "headword": "regret",
+    "partOfSpeech": "verb",
+    "meaningVi": "hối tiếc",
+    "patterns": [
+      {
+        "form": "regret + danh từ",
+        "explanation": "Hối tiếc về điều gì."
+      },
+      {
+        "form": "regret + V-ing",
+        "explanation": "Hối tiếc về một việc đã làm."
+      },
+      {
+        "form": "regret that + mệnh đề",
+        "explanation": "Hối tiếc hoặc buồn vì một sự việc."
+      }
+    ],
+    "note": "Regret to inform/tell là cách báo tin không vui trang trọng, không diễn đạt việc đã làm rồi và nay hối tiếc. Chọn cấu trúc theo điều muốn nói, không coi to V luôn sai.",
+    "mistake": {
+      "incorrect": "I regret to send that angry email yesterday.",
+      "correct": "I regret sending that angry email yesterday.",
+      "explanation": "Khi hối tiếc về email đã gửi hôm qua, dùng sending. Regret to inform dùng khi sắp thông báo tin không vui."
+    },
+    "example": {
+      "id": "usage-ox-d5259acec0d80c-01",
+      "en": "I regret sharing the photo without asking your permission.",
+      "vi": "Tôi hối tiếc vì đã chia sẻ bức ảnh mà chưa xin phép bạn."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/regret_1",
+        "title": "regret verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22",
+        "sha256": "3fc25a177348d98d521eb15da62dc5902e5127e076cf6373aae43a8d680a5a82"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-82523faea1b0f2-01",
+    "headword": "mean",
+    "partOfSpeech": "verb",
+    "meaningVi": "có nghĩa là",
+    "patterns": [
+      {
+        "form": "mean + danh từ",
+        "explanation": "Có ý nghĩa hoặc nội dung là gì."
+      },
+      {
+        "form": "mean (that) + mệnh đề",
+        "explanation": "Một dấu hiệu hoặc thông tin có nghĩa là điều gì."
+      },
+      {
+        "form": "What does … mean?",
+        "explanation": "Hỏi ý nghĩa; sau does dùng mean, không thêm -s."
+      }
+    ],
+    "note": "Mục này dạy nghĩa có nghĩa là. Mean to do nghĩa là có ý định làm; mean doing có thể nêu hệ quả kéo theo. Không áp các mẫu đó vào mọi câu hỏi về nghĩa của từ.",
+    "mistake": {
+      "incorrect": "What does this label means?",
+      "correct": "What does this label mean?",
+      "explanation": "Does đã mang dấu hiệu ngôi thứ ba; động từ chính giữ dạng mean."
+    },
+    "example": {
+      "id": "usage-ox-82523faea1b0f2-01",
+      "en": "What does the blue symbol mean on this map?",
+      "vi": "Ký hiệu màu xanh trên bản đồ này có nghĩa là gì?"
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/mean_1",
+        "title": "mean verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22",
+        "sha256": "299d4055772a5deba2d6e6216fcb1c95141fb9fee8a68a1eb1e35ba67d00d8c1"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-1c48f6310f1c84-01",
+    "headword": "mind",
+    "partOfSpeech": "noun",
+    "meaningVi": "tâm trí",
+    "patterns": [
+      {
+        "form": "in + tính từ sở hữu + mind",
+        "explanation": "Trong tâm trí hoặc suy nghĩ của ai."
+      },
+      {
+        "form": "keep + tính từ sở hữu + mind on + việc",
+        "explanation": "Giữ sự chú ý vào việc gì."
+      },
+      {
+        "form": "keep something in mind",
+        "explanation": "Ghi nhớ hoặc lưu ý điều gì."
+      }
+    ],
+    "note": "Mục này là danh từ tâm trí, không phải động từ mind trong Would you mind doing…? Cách dùng đếm được phụ thuộc nghĩa và cụm, không gắn một nhãn duy nhất cho mọi cách dùng.",
+    "mistake": {
+      "incorrect": "I can't keep my mind in my work.",
+      "correct": "I can't keep my mind on my work.",
+      "explanation": "Khi nói giữ sự tập trung vào công việc theo cụm này, dùng on, không dùng in."
+    },
+    "example": {
+      "id": "usage-ox-1c48f6310f1c84-01",
+      "en": "A quick walk can clear my mind before I start writing.",
+      "vi": "Đi bộ một lát có thể giúp đầu óc tôi thông thoáng trước khi bắt đầu viết."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/mind_1",
+        "title": "mind noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22",
+        "sha256": "0372e44a3d5ff423d4596144ab4790a2c90152fd54fa2c3a854d4680fe52e5fc"
+      }
+    ],
+    "countability": "Oxford ghi cả đếm được và không đếm được cho nghĩa khả năng suy nghĩ; các cụm như my mind thường dùng số ít với từ sở hữu."
+  },
+  {
+    "wordId": "ox-42af43e3616eba-01",
+    "headword": "finish",
+    "partOfSpeech": "verb",
+    "meaningVi": "hoàn thành; kết thúc",
+    "patterns": [
+      {
+        "form": "finish + danh từ",
+        "explanation": "Hoàn thành một công việc hoặc một phần việc."
+      },
+      {
+        "form": "finish + V-ing",
+        "explanation": "Làm xong một hành động."
+      }
+    ],
+    "note": "Finish doing nói làm xong; stop doing chỉ nói ngừng, chưa chắc việc đã hoàn thành. Finish cũng có thể không có tân ngữ khi ngữ cảnh đã rõ.",
+    "mistake": {
+      "incorrect": "I need to finish to write this report.",
+      "correct": "I need to finish writing this report.",
+      "explanation": "Sau finish dùng writing để gọi tên hoạt động cần hoàn thành."
+    },
+    "example": {
+      "id": "usage-ox-42af43e3616eba-01",
+      "en": "Please finish labeling the boxes before the movers arrive.",
+      "vi": "Hãy ghi nhãn xong các thùng trước khi đội chuyển nhà đến."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/finish_1",
+        "title": "finish verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22",
+        "sha256": "f9accf2777bcdbe1c665183a89726013f8aa7ae715cccf214709343876531478"
+      }
+    ]
+  },
+  {
+    "wordId": "practise-01",
+    "headword": "practise",
+    "partOfSpeech": "verb",
+    "meaningVi": "luyện tập; thực hành",
+    "patterns": [
+      {
+        "form": "practice + danh từ",
+        "explanation": "Luyện một kỹ năng hoặc một hoạt động; practice là cách viết động từ trong tiếng Anh Mỹ."
+      },
+      {
+        "form": "practice + V-ing",
+        "explanation": "Luyện tập làm một hành động."
+      },
+      {
+        "form": "practice for + sự kiện",
+        "explanation": "Tập luyện để chuẩn bị cho một sự kiện."
+      }
+    ],
+    "note": "Ví dụ này dùng practice, cách viết động từ trong tiếng Anh Mỹ, được chấp nhận tương đương với đầu từ practise trong bài này. Lưu ý này chỉ nói cách viết, không đổi nghĩa luyện tập đang học.",
+    "mistake": {
+      "incorrect": "I practice to speak English every evening.",
+      "correct": "I practice speaking English every evening.",
+      "explanation": "Với nghĩa luyện hoạt động, dùng speaking sau practice. To speak có thể nêu mục đích ở cấu trúc khác, nhưng không thay trực tiếp tên hoạt động trong mẫu này."
+    },
+    "example": {
+      "id": "usage-practise-01",
+      "en": "We practice giving directions to visitors at the front desk.",
+      "vi": "Chúng tôi luyện chỉ đường cho khách tại quầy lễ tân."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/practice_1",
+        "title": "practice verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22",
+        "sha256": "f3b9815b442c46b6e1c575a2c14174a7248e9d5e3e4865ede9f9e7247903acca"
+      }
+    ]
+  }
+]

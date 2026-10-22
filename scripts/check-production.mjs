@@ -59,6 +59,33 @@ async function checkGrammar(page) {
     (await page.locator(".grammar-mistakes").innerText()).includes("Nên dùng"),
   );
 }
+async function checkUsage(page) {
+  await page.getByRole("button", { name: "Kho từ", exact: true }).click();
+  await page.getByPlaceholder(/Tìm từ/).fill("suggest");
+  await page
+    .locator(".word-card")
+    .filter({
+      has: page.getByRole("heading", { name: "suggest", exact: true }),
+    })
+    .click();
+  await page.locator(".dict-usage").waitFor();
+  assert.match(await page.locator(".usage-patterns").innerText(), /suggest/);
+  assert.match(
+    await page.locator(".usage-second-example").innerText(),
+    /train schedule/,
+  );
+  const source = await page
+    .locator(".usage-sources a")
+    .first()
+    .getAttribute("href");
+  assert.ok(
+    source.startsWith(
+      "https://www.oxfordlearnersdictionaries.com/definition/american_english/",
+    ),
+  );
+  await page.getByRole("button", { name: "Đóng", exact: true }).click();
+  await page.getByPlaceholder(/Tìm từ/).fill("");
+}
 const mime = {
   ".html": "text/html",
   ".js": "text/javascript",
@@ -119,6 +146,7 @@ try {
       .getByRole("heading", { name: "Hôm nay, mình học gì?" })
       .waitFor();
     await checkGrammar(page);
+    await checkUsage(page);
     assert.deepEqual(errors, []);
     console.log(
       `PASS: production ${path} renders, loads ${expectedCount} entries, reloads without error`,
@@ -197,9 +225,10 @@ try {
       expectedCount,
     );
     await checkGrammar(page);
+    await checkUsage(page);
     assert.deepEqual(errors, []);
     console.log(
-      `PASS: production ${path} reloads offline with ${expectedCount} entries and grammar lookup; private/API requests are not cached`,
+      `PASS: production ${path} reloads offline with ${expectedCount} entries, grammar and source-reviewed usage; private/API requests are not cached`,
     );
     await page.close();
   }

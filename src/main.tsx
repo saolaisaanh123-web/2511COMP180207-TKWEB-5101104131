@@ -56,6 +56,8 @@ import {
 import "./style.css";
 import ErrorBoundary from "./ErrorBoundary";
 import WordDetail from "./DictionaryEntry";
+import UsageNotes from "./UsageNotes";
+import { attachStudyContexts, exerciseWord } from "./usage";
 import CollectionBrowser from "./CollectionBrowser";
 import {
   rankNewWords,
@@ -69,6 +71,7 @@ import WritingFeedback from "./WritingFeedback";
 import SyncSettings from "./SyncSettings";
 import { useVisibleExposure } from "./useVisibleExposure";
 import { assessLearningAnswer } from "./assessment";
+import { sessionProgress, sessionSummaryLines } from "./session-guidance";
 import GrammarReference from "./GrammarReference";
 import { grammarArticles, grammarGroups } from "./grammar-data";
 import {
@@ -735,6 +738,7 @@ function App() {
         return;
       }
       let queue: Session["queue"] = [];
+      let goal: Session["goal"];
       if (scheduled) {
         queue = due
           .sort((a, b) => a[1].due - b[1].due)
@@ -743,6 +747,7 @@ function App() {
             skill: Number(k.slice(k.lastIndexOf(":") + 1)),
             review: uid(),
           }));
+        goal = { due: queue.length, continuing: 0, fresh: 0 };
         pendingScheduledTasks(base, active)
           .filter(
             (item) =>
@@ -750,8 +755,12 @@ function App() {
               [0, 2].includes(item.skill),
           )
           .forEach((item) => {
-            if (!queue.some((q) => q.id === item.id && q.skill === item.skill))
+            if (
+              !queue.some((q) => q.id === item.id && q.skill === item.skill)
+            ) {
               queue.push({ ...item, review: uid() });
+              goal!.continuing++;
+            }
           });
         const groups = new Map<string, Session["queue"]>();
         queue.forEach((item) =>
@@ -773,6 +782,7 @@ function App() {
             },
           ),
         );
+        goal.fresh = introductions.length;
         queue.push(...interleaveQueue(introductions));
       } else {
         const eligible = (
@@ -802,6 +812,7 @@ function App() {
         );
         return;
       }
+      queue = attachStudyContexts(base, queue);
       await commit(
         {
           ...base,
@@ -816,6 +827,7 @@ function App() {
             started: Date.now(),
             scheduled,
             count: queue.length,
+            ...(goal ? { goal } : {}),
           },
         },
         undefined,
@@ -831,7 +843,12 @@ function App() {
   }
   const task = state.session?.queue[state.session.index],
     entry = task ? state.entries[task.id] : undefined,
-    w = entry?.word;
+    w = entry?.word,
+    exercise = w && task?.skill === 4 ? exerciseWord(w, task.context) : w;
+  const sessionGuide = useMemo(
+    () => state.session && sessionProgress(state.session, state.history),
+    [state.session, state.history],
+  );
   function speak(text: string, url?: string, forTask = false) {
     if (!text.trim()) return;
     stopAudio();
@@ -913,7 +930,7 @@ function App() {
   }
   async function submit(result?: boolean, hintOverride?: boolean) {
     if (!task || !w || !state.session || lock.current) return;
-    if (entry?.archived || !canPractice(w, task.skill)) {
+    if (entry?.archived || !exercise || !canPractice(w, task.skill)) {
       setNotice(
         "Nội dung lượt này chưa đủ điều kiện luyện hoặc đã lưu trữ. Chọn bỏ qua để tiếp tục; không ghi kết quả và không thay đổi lịch ôn.",
       );
@@ -936,7 +953,7 @@ function App() {
         !self && task.skill !== 5
           ? assessLearningAnswer(
               answer,
-              w,
+              exercise,
               task.skill,
               Object.values(base.entries).map((e) => e.word),
             )
@@ -973,6 +990,7 @@ function App() {
         elapsed: Date.now() - started.current,
         session: state.session.id,
         review: task.review,
+        ...(task.skill === 4 && task.context ? { context: task.context } : {}),
         gap: prior.length ? Date.now() - prior[prior.length - 1].time : 0,
         first: !state.history.some(
           (h) =>
@@ -982,16 +1000,22 @@ function App() {
         ),
       };
       let next = record(base, r, state.session.scheduled);
+      let retryGap: number | undefined;
       if (
         !correct &&
         !ungraded &&
         !state.history.some((h) => h.review === task.review)
-      )
+      ) {
+        retryGap =
+          Math.min(next.session!.index + 4, next.session!.queue.length) -
+          next.session!.index -
+          1;
         next.session!.queue.splice(
           Math.min(next.session!.index + 4, next.session!.queue.length),
           0,
           { ...task },
         );
+      }
       await commit(next, undefined, base);
       answerDraft.current = undefined;
       storeBrowserDraft();
@@ -1001,15 +1025,23 @@ function App() {
           ? assessment?.message ||
               "Đã lưu câu. Chưa được chấm ngữ pháp hoặc mức độ sử dụng."
           : correct
-            ? self
-              ? "Đã lưu tự đánh giá."
-              : "Chính xác! " +
-                (hint
-                  ? "Có hỗ trợ — chưa tính là tự nhớ."
-                  : independent
-                    ? "Đã ghi nhận kết quả kiểm tra độc lập."
-                    : "Kết quả vừa học/tiếp xúc; chưa tính là bằng chứng nhớ sau khoảng cách.")
-            : "Cần củng cố. Mục này sẽ xuất hiện lại sau vài câu.",
+            ? sessionGuide?.isRetry && !self
+              ? r.hint
+                ? "Đã trả lời lại với hỗ trợ; vẫn cần tự kiểm tra lại. Lượt này chưa phải bằng chứng nhớ lâu."
+                : "Đã trả lời lại đúng. Đây là sửa sai trong phiên sau khi xem đáp án, chưa phải bằng chứng nhớ lâu."
+              : self
+                ? "Đã lưu tự đánh giá."
+                : "Chính xác! " +
+                  (r.hint
+                    ? "Có hỗ trợ — chưa tính là tự nhớ."
+                    : next.history.at(-1)?.independent
+                      ? "Đã ghi nhận kết quả kiểm tra độc lập."
+                      : "Kết quả vừa học/tiếp xúc; chưa tính là bằng chứng nhớ sau khoảng cách.")
+            : retryGap === undefined
+              ? "Lượt thử lại vẫn cần củng cố. Hãy xem lại cách dùng và kiểm tra ở lần ôn tiếp theo."
+              : retryGap > 0
+                ? `Cần củng cố. Mục này sẽ xuất hiện lại sau ${retryGap} lượt khác để bạn thử nhớ lại.`
+                : "Cần củng cố. Phiên không còn lượt khác để tạo khoảng đệm; bạn sẽ thử lại ở lượt kế tiếp. Đây là sửa sai ngay trong phiên.",
       );
     } catch (e) {
       notifyError(e);
@@ -1025,12 +1057,19 @@ function App() {
     storeBrowserDraft();
     const s = state.session;
     if (s.index + 1 >= s.queue.length) {
-      const h = state.history.filter((r) => r.session === s.id);
       const upcoming = Object.values(state.schedules)
         .filter((v) => v.due > Date.now())
         .sort((a, b) => a.due - b.due)[0];
       setSummary(
-        `Bạn đã thực hiện ${h.length} lượt. ${h.filter((r) => r.method === "rule" && r.correct && !r.hint).length} lượt kiểm tra đúng không gợi ý; ${h.filter((r) => r.method === "self").length} lượt tự đánh giá; ${h.filter((r) => !r.correct && r.method !== "ungraded").length} lượt cần củng cố. ${s.scheduled ? (upcoming ? "Lần ôn kế tiếp: " + new Date(upcoming.due).toLocaleString("vi-VN") : "Chưa có lịch ôn mới.") : "Luyện tự do không thay đổi lịch ôn."} Xem chi tiết từng kỹ năng trong Tiến độ.`,
+        [
+          ...sessionSummaryLines(s, state.history),
+          s.scheduled
+            ? upcoming
+              ? "Lần ôn kế tiếp: " +
+                new Date(upcoming.due).toLocaleString("vi-VN")
+              : "Chưa có lịch ôn mới."
+            : "Luyện tự do không thay đổi lịch ôn.",
+        ].join("\n"),
       );
       await commit({ ...state, session: undefined });
       setPage("today");
@@ -1548,7 +1587,17 @@ function App() {
                   )}
                 </section>
               )}
-              {summary && <div className="notice success">{summary}</div>}
+              {summary && (
+                <section
+                  className="notice success session-summary"
+                  aria-label="Kết quả phiên học"
+                >
+                  <h3>Phiên này đã hoàn thành</h3>
+                  {summary.split("\n").map((line, index) => (
+                    <p key={index}>{line}</p>
+                  ))}
+                </section>
+              )}
               {due.length > 20 && (
                 <div className="notice">
                   Bạn còn nhiều mục cần ôn. Hôm nay giảm đề xuất từ mới xuống 2
@@ -2101,13 +2150,15 @@ function App() {
             w &&
             task &&
             state.session &&
-            (entry?.archived || !canPractice(w, task.skill)) && (
+            (entry?.archived || !exercise || !canPractice(w, task.skill)) && (
               <section className="panel study">
                 <h2>Nội dung này chưa đủ điều kiện luyện</h2>
                 <p>
-                  Mục đã lưu trữ hoặc chưa được rà chất lượng. Bạn vẫn có thể
-                  tra cứu trong Kho từ; lượt này không được chấm hoặc thay đổi
-                  lịch ôn.
+                  {!exercise
+                    ? "Nghĩa hoặc nội dung của câu đã lưu không còn khớp với mục từ hiện tại."
+                    : "Mục đã lưu trữ hoặc chưa được rà chất lượng."}{" "}
+                  Bạn vẫn có thể tra cứu trong Kho từ; lượt này không được chấm
+                  hoặc thay đổi lịch ôn.
                 </p>
                 <button
                   className="primary"
@@ -2125,6 +2176,7 @@ function App() {
             task &&
             state.session &&
             !entry?.archived &&
+            exercise &&
             canPractice(w, task.skill) && (
               <>
                 <div className="study-top">
@@ -2139,8 +2191,46 @@ function App() {
                 <progress
                   value={state.session.index}
                   max={state.session.queue.length}
+                  aria-label="Tiến độ toàn phiên, gồm lượt sửa sai"
                 />
+                {sessionGuide && (
+                  <section
+                    className="session-goal"
+                    aria-label="Mục tiêu phiên học"
+                  >
+                    <div>
+                      <strong>
+                        {sessionGuide.words} từ · {sessionGuide.originalTasks}{" "}
+                        lượt ban đầu
+                      </strong>
+                      <span>
+                        Còn {sessionGuide.remaining} lượt ban đầu ·{" "}
+                        {sessionGuide.pendingRetries} lượt sửa sai đang chờ
+                      </span>
+                    </div>
+                    {state.session.goal && (
+                      <p>
+                        {state.session.goal.due} lượt đến hạn ·{" "}
+                        {state.session.goal.continuing} lượt kỹ năng cần tiếp
+                        tục · {state.session.goal.fresh} lượt từ mới
+                      </p>
+                    )}
+                    <p>
+                      Lượt sửa sai được ghi riêng; trả lời lại ngay trong phiên
+                      chưa chứng minh nhớ lâu.
+                    </p>
+                  </section>
+                )}
                 <section className="study panel">
+                  {sessionGuide?.isRetry && (
+                    <div className="session-retry" role="note">
+                      <strong>Thử lại từ cần củng cố</strong>
+                      <span>
+                        Bạn đã xem đáp án ở lượt trước. Hãy tự trả lời lại; kết
+                        quả này được tách khỏi lần kiểm tra đầu.
+                      </span>
+                    </div>
+                  )}
                   <span className="eyebrow">{skills[task.skill]}</span>
                   <h2>
                     {[2, 3].includes(task.skill)
@@ -2221,12 +2311,17 @@ function App() {
                       </button>
                     </>
                   )}
-                  {task.skill === 4 && w.example_en && (
+                  {task.skill === 4 && exercise.example_en && (
                     <>
-                      <p className="context">{cloze(w)}</p>
+                      <p className="context" lang="en">
+                        {cloze(exercise)}
+                      </p>
                       <p className="fineprint">
-                        Điền từ vào ví dụ đã lưu; kết quả chưa chứng minh khả
-                        năng dùng từ trong ngữ cảnh mới.
+                        {task.context
+                          ? "Ngữ cảnh thứ hai · cùng nghĩa đang học."
+                          : "Ngữ cảnh gốc · cùng nghĩa đang học."}{" "}
+                        Điền từ mục tiêu; kết quả là luyện truy hồi trong câu,
+                        chưa xác nhận khả năng tự dùng từ linh hoạt.
                       </p>
                     </>
                   )}
@@ -2324,8 +2419,11 @@ function App() {
                           {w.spelling_variants.split("|").join(", ")}.
                         </p>
                       )}
-                      {w.example_en && <p>{w.example_en}</p>}
-                      <small>{w.example_vi}</small>
+                      {exercise.example_en && (
+                        <p lang="en">{exercise.example_en}</p>
+                      )}
+                      <small lang="vi">{exercise.example_vi}</small>
+                      <UsageNotes word={w} speak={speak} compact />
                       {!feedback &&
                         ([0, 2].includes(task.skill) ? (
                           <div className="study-actions">

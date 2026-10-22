@@ -137,6 +137,7 @@ describe("Updates and evidence", () => {
         result({
           id: "r" + i,
           review: "v" + i,
+          session: "daily-session-" + i,
           time: Date.now() + i * 8 * 86400000,
           gap: i ? 8 * 86400000 : 0,
         }),
@@ -209,7 +210,9 @@ describe("Oxford-grounded content and safe upgrade", () => {
         expect(
           evidence.some(
             (item: { url: string; status: number; sha256: string }) =>
-              /^https:\/\/www\.oxfordlearnersdictionaries\.com\/definition\/(?:american_english|english)\//.test(item.url) &&
+              /^https:\/\/www\.oxfordlearnersdictionaries\.com\/definition\/(?:american_english|english)\//.test(
+                item.url,
+              ) &&
               item.status === 200 &&
               /^[a-f0-9]{64}$/.test(item.sha256),
           ),

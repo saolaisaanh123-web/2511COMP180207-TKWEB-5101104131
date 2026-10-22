@@ -33,6 +33,19 @@ export type Entry = {
   enrolled?: boolean;
   enrolledAt?: number;
 };
+/** Frozen when a new session starts; updates cannot replace a question mid-session. */
+export type StudyContext = {
+  id: string;
+  en: string;
+  vi: string;
+  targetVersion: string;
+};
+export type StudyTask = {
+  id: string;
+  skill: number;
+  review: string;
+  context?: StudyContext;
+};
 export type Result = {
   id: string;
   wordId: string;
@@ -54,15 +67,17 @@ export type Result = {
   contentVersion?: string;
   exposureGap?: number;
   assessmentNote?: string;
+  context?: StudyContext;
 };
 export type Schedule = { due: number; last: number; step: number };
 export type Session = {
   id: string;
-  queue: { id: string; skill: number; review: string }[];
+  queue: StudyTask[];
   index: number;
   started: number;
   scheduled: boolean;
   count: number;
+  goal?: { due: number; continuing: number; fresh: number };
   draft?: { key: string; answer: string; hint: boolean; revealed: boolean };
 };
 export type State = {
@@ -357,6 +372,13 @@ export const contentKey = (w: Word, skill = 0) =>
       : []),
     ...(skill === 4 ? [w.example_en || "", w.example_vi || ""] : []),
   ]);
+export function validStudyContext(value: unknown): value is StudyContext {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return false;
+  const c = value as Record<string, unknown>;
+  return ["id", "en", "vi", "targetVersion"].every(
+    (key) => typeof c[key] === "string" && c[key].trim().length > 0,
+  );
+}
 export function expose(state: State, id: string, time = Date.now()): State {
   if (!Object.hasOwn(state.entries, id)) return state;
   return {
@@ -525,6 +547,27 @@ export function record(state: State, r: Result, scheduled: boolean) {
   if (!Object.hasOwn(state.entries, r.wordId)) return state;
   if (!canPractice(state.entries[r.wordId].word, r.skill)) return state;
   const version = contentKey(state.entries[r.wordId].word, r.skill);
+  if (
+    r.context !== undefined &&
+    (r.skill !== 4 ||
+      !validStudyContext(r.context) ||
+      r.context.targetVersion !== version ||
+      cloze({ ...state.entries[r.wordId].word, example_en: r.context.en }) ===
+        r.context.en)
+  )
+    throw Error(
+      "Ngữ cảnh không còn khớp nghĩa đang học. Bỏ qua lượt này để giữ kết quả và lịch ôn hiện có.",
+    );
+  // A same-session repair is never a fresh retrieval, even if an older client
+  // or imported caller supplies first:true. Preserve prior results unchanged.
+  const first =
+    r.first &&
+    !state.history.some(
+      (old) =>
+        old.wordId === r.wordId &&
+        old.skill === r.skill &&
+        (old.review === r.review || old.session === r.session),
+    );
   let previous = 0;
   let lastExposure = state.exposures?.[r.wordId] || 0;
   for (const old of state.history) {
@@ -544,6 +587,7 @@ export function record(state: State, r: Result, scheduled: boolean) {
     r.audioPlayed !== true;
   r = {
     ...r,
+    first,
     scheduled,
     contentVersion: version,
     gap: previous ? r.time - previous : 0,
@@ -553,7 +597,7 @@ export function record(state: State, r: Result, scheduled: boolean) {
           independent:
             r.independent === true &&
             !r.hint &&
-            r.first &&
+            first &&
             independence(state, r.wordId, r.time),
         }
       : {}),
@@ -716,6 +760,8 @@ export function validateBackup(x: unknown): State {
         typeof r.contentVersion !== "string") ||
       (r.assessmentNote !== undefined &&
         typeof r.assessmentNote !== "string") ||
+      (r.context !== undefined &&
+        (r.skill !== 4 || !validStudyContext(r.context))) ||
       (r.exposureGap !== undefined &&
         (!Number.isFinite(r.exposureGap) || r.exposureGap < 0))
     )
@@ -756,6 +802,13 @@ export function validateBackup(x: unknown): State {
       !Number.isInteger(v.count) ||
       v.count < 0 ||
       v.count > v.queue.length ||
+      (v.goal !== undefined &&
+        (!v.goal ||
+          typeof v.goal !== "object" ||
+          ![v.goal.due, v.goal.continuing, v.goal.fresh].every(
+            (n) => Number.isInteger(n) && n >= 0,
+          ) ||
+          v.goal.due + v.goal.continuing + v.goal.fresh > v.queue.length)) ||
       (v === s.pausedScheduled && !v.scheduled) ||
       (v.draft !== undefined &&
         (!v.draft ||
@@ -770,7 +823,9 @@ export function validateBackup(x: unknown): State {
           !Number.isInteger(t.skill) ||
           t.skill < 0 ||
           t.skill > 5 ||
-          typeof t.review !== "string",
+          typeof t.review !== "string" ||
+          (t.context !== undefined &&
+            (t.skill !== 4 || !validStudyContext(t.context))),
       )
     )
       throw Error("Phiên học sao lưu không hợp lệ.");

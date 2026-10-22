@@ -24,6 +24,8 @@ Trong Kho từ, chọn **Bộ từ** để lọc American Oxford 3000/5000, OPAL
 
 Chi tiết nguồn, phạm vi kiểm tra và giới hạn: [báo cáo rà toàn kho](docs/full-vocabulary-review-2026-10-21.md), [ghi nguồn kho từ](public/data/SOURCES.md). Không có API trả phí hoặc yêu cầu tài khoản mới.
 
+**Cách dùng và ngữ cảnh:** 48 mục dễ dùng sai có cấu trúc/giới từ, ghi chú theo nghĩa, lỗi thường gặp và ví dụ Anh–Việt thứ hai, đối chiếu trực tiếp Oxford Advanced American. Bài luyện ngữ cảnh luân phiên hai câu ở phiên mới, giữ nguyên đề/nháp khi tải lại. Mục tiêu và tổng kết phiên tách lần trả lời đầu khỏi sửa sai; trả lời lại ngay không tự được tính là nhớ lâu. Xem [phạm vi và kiểm thử](docs/usage-and-session-upgrade-2026-10-22.md). Không thay kho TXT hoặc xóa lịch sử học.
+
 ## Chạy trên máy
 
 Cần Node.js 22 trở lên và npm:

@@ -107,3 +107,5 @@ Các tệp riêng phục vụ kiểm tra được giữ ngoài mã giao diện, 
 | `deep-inspect.mjs` | Kịch bản thao tác bằng trình duyệt |
 
 Không có lỗi JavaScript chưa bắt được trong các trạng thái đã thử. Không có kết quả chấm bài hoặc đồng bộ tài khoản thật để báo cáo. Tài liệu này đưa ra đề xuất, chưa triển khai thêm tính năng hoặc thay giao diện Jeongyeon.
+
+Theo yêu cầu tiếp theo của người dùng, ngày 22/10 đã triển khai cách dùng/ví dụ thứ hai cho 48 mục và làm rõ mục tiêu/sửa sai của phiên Jeongyeon. Phạm vi, nguồn và kiểm thử nằm trong [báo cáo nâng cấp](usage-and-session-upgrade-2026-10-22.md); các quan sát về ForumFlash ở trên giữ nguyên theo thời điểm kiểm tra.
