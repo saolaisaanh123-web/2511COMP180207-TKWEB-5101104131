@@ -4,7 +4,7 @@ import { parse } from "../src/core";
 
 const corpus = parse(readFileSync("public/data/vocabulary.txt", "utf8"));
 
-test("the published corpus exposes American Oxford and OPAL additions with exact sources while emerging Blog terms remain lookup-only", async ({
+test("the reviewed corpus exposes American Oxford and OPAL sources and usable Blog terms with their emerging-usage caveats", async ({
   page,
   context,
 }) => {
@@ -70,10 +70,10 @@ test("the published corpus exposes American Oxford and OPAL additions with exact
     })
     .click();
   await expect(page.locator(".dict-learning-note")).toContainText(
-    "Chỉ tra cứu",
+    "đối chiếu nguồn",
   );
-  await expect(page.locator(".dict-learning-note")).toContainText(
-    "không chứng minh",
+  await expect(page.locator(".dict-source-note")).toContainText(
+    /mới|chuyên biệt|không chứng minh|chưa chứng minh|ổn định|thuật ngữ/,
   );
   await expect(page.locator(".dict-example-heading h3")).toHaveText(
     "Ví dụ biên soạn",
@@ -101,4 +101,55 @@ test("the published corpus exposes American Oxford and OPAL additions with exact
   } finally {
     await context.setOffline(false);
   }
+});
+
+test("a formerly lookup-only word is learnable with its corrected meaning and licensed source on mobile", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/");
+  await expect(
+    page.getByRole("heading", { name: "Hôm nay, mình học gì?" }),
+  ).toBeVisible();
+  const initial = await page.evaluate(async () => {
+    const path = "/src/core.ts";
+    const core = await import(/* @vite-ignore */ path);
+    const state = await core.read();
+    const entries = Object.values(state.entries) as {
+      word: Record<string, string>;
+    }[];
+    return {
+      total: entries.length,
+      usable: entries.filter(({ word }) => core.canPractice(word, 0)).length,
+      history: state.history.length,
+    };
+  });
+  expect(initial).toEqual({ total: 5558, usable: 5558, history: 0 });
+  await page.getByRole("button", { name: "Kho từ", exact: true }).click();
+  await page
+    .getByRole("textbox", { name: "Tìm từ và nghĩa", exact: true })
+    .fill("bee");
+  await page
+    .locator(".word-card")
+    .filter({ has: page.getByRole("heading", { name: "bee", exact: true }) })
+    .click();
+  await expect(page.locator(".dict-translation")).toHaveText("con ong");
+  await expect(page.locator(".dict-definition")).not.toBeEmpty();
+  await expect(page.locator(".dict-meaning .dict-label").first()).toContainText(
+    "Open English WordNet (CC BY 4.0)",
+  );
+  await expect(page.locator(".dict-example-en")).toContainText(
+    "A bee landed on the flower.",
+  );
+  await expect(page.locator(".dict-example-vi")).toContainText("Một con ong");
+  await expect(page.locator(".dict-learning-note")).toContainText(
+    "đối chiếu nguồn",
+  );
+  await expect(page.locator(".dict-reference-list a").first()).toHaveAttribute(
+    "href",
+    /globalwordnet\/english-wordnet\//,
+  );
+  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(
+    390,
+  );
 });

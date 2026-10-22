@@ -1,6 +1,6 @@
 # Jeongyeon — ghi nhớ cho phiên sửa tiếp theo
 
-Cập nhật 20/10/2026. Nhóm sửa 1 và mục Tra cứu ngữ pháp đã hoàn thành. Các nhóm sửa 2–5 bên dưới vẫn là việc tiếp theo; không cần rà lại toàn bộ từ đầu. Người dùng đã cho phép commit/push sau khi nguồn và kiểm thử đạt.
+Cập nhật 22/10/2026. Nhóm sửa 1, mục Tra cứu ngữ pháp và đợt rà nội dung toàn bộ kho từ đã hoàn thành. Các lỗi bằng chứng/merge và tối ưu học dài hạn ở nhóm 2–5 vẫn còn; không cần rà lại nguồn từ đầu. Người dùng đã cho phép commit/push sau khi nguồn và kiểm thử đạt.
 
 ## Mục tiêu và giới hạn phải giữ
 
@@ -33,6 +33,17 @@ Cập nhật 20/10/2026. Nhóm sửa 1 và mục Tra cứu ngữ pháp đã hoà
 - Kiểm thử cuối: 242 unit, 20 data, 75 E2E đạt; TypeScript/build, production root/subpath/offline tải 5.558 mục và 52 bài ngữ pháp đạt. SHA256 TXT: 19fb2f4dd2ffab355ac9fe59abf1442bfad79fbe036e7262d90197132667d004.
 - Chưa công bố toàn bộ nghĩa Việt cũ được rà. Chưa nhập toàn bộ mẫu cụm OPAL; chưa có tần suất đo cho mục mới; chưa xác minh từng video YouGlish, Safari hoặc Supabase thật. Giữ các nhóm sửa 2–5 bên dưới để tiếp tục.
 
+## Rà toàn kho và so sánh website — hoàn thành 22/10/2026
+
+- Toàn bộ 5.558 mục hiện đủ nội dung để luyện; 0 mục mặc định chỉ tra cứu. Hoàn thiện 4.497 mục lookup cũ và đối chiếu lại 1.061 mục đã ready. Không đổi ID/thứ tự/đầu từ, đáp án/biến thể, CEFR/tần suất/source_fact_index; nghĩa của 1.061 ready giữ nguyên. Hai cặp ví dụ league/match làm rõ môn thể thao, chỉ lịch ngữ cảnh có thể thay đổi theo contentKey. Không xóa lịch sử hay bản cá nhân.
+- Nguồn nghĩa: OEWN khóa 45fdb60396dc804526b85f21a23c59983c2c396a, Oxford American/Academic, Merriam-Webster, một ít American Heritage/Collins; Cambridge Blog giữ sắc thái thuật ngữ mới. Cambridge Dictionary vẫn chặn. Đã sửa bee, clock, classroom, nghĩa cũ cast/flow/advertise/file và các redirect. Diplomatic sửa noun→adjective bằng nguồn bài chi tiết + danh sách trực tuyến adjective/C1; dữ kiện PDF noun vẫn giữ lịch sử.
+- 4.205 giải nghĩa Anh dùng theo giấy phép WordNet; 1.353 tự biên soạn. Metadata theo từng ID: 4.777 bằng chứng WordNet khớp chính xác ID/synset/URL/hash, 28 IPA mới literal NAmE, tổng344IPA. Phần lớn từ vẫn dùng TTS; không chế audio/IPA. 405 bằng chứng nhà xuất bản có body cache kiểm tra, 387 kế thừa phiếu đã xác minh trước khi /tmp bị xóa; không giả lượt tải mới.
+- Manifest data/authoring/full-review-2026-10.json +13shards; scripts/apply-full-review.py preview mặc định và --write rõ ràng. Old source-update/content-review replay áp dụng lớp mới sau cùng và giữ idempotence. public/data/full-review-provenance.json, giấy phép OEWN/Princeton và nhãn definition_source phân biệt Englishgloss được cấp phép với nội dung biên soạn. Mọi nghĩa chỉ là nghĩa được chọn, không phải tất cả nghĩa hay chứng nhận tuyệt đối.
+- Kiểm thử bàn giao: 251 unit, 30 data, 76 E2E đạt; sau chuẩn hóa URL nguồn chạy lại 2 E2E dữ liệu thật và production root/subpath/offline đều đạt. TypeScript/build đạt; chưa thử Safari/iPhone hoặc Supabase thật.
+- SHA256 canonical: 86a5b8d2a4a907b2ce7d3d8997972494ff35621dad870a765bc665dcee744eb4, 5.558 mục. Báo cáo docs/full-vocabulary-review-2026-10-21.md. Mã ứng dụng chỉ thêm trường nguồn định nghĩa/nhãn đúng; không thay thiết kế, cơ sở dữ liệu hoặc thuật toán ôn.
+- Đã mở và thử thật ForumFlashStudy sau khi mạng truy cập được: bài khách10thẻ, lật/đánh giá, cần ôn quay lại cuối lượt, reload cùngtab giữ phiên; bài kiểm tra chặn đăng nhập nên chưa thử chấm. Hai ví dụ + mẫu dùng/tính đếm được trên thẻ là điểm đáng tham khảo. Có lỗi logo/menu320px, reloadofflinekhách thất bại; không phán toàn bộ5.000từ hay backend. Báo cáo docs/forumflashstudy-comparison-2026-10-21.md; chưa triển khai các đề xuất mới chỉ từ việc so sánh.
+- Hướng tiếp: thống nhất bằng chứng và chống hồi sinh lịch nghĩa cũ (nhóm2); bổ sung mẫu dùng và ngữ cảnh thứ hai cho từ dễ nhầm; mục tiêu phiên ngắn cá nhân, sửa sai có khoảng đệm; kiểm tra mobile bằng va chạm/thao tác thực. Không xây khóa nhập môn/chủ đề bắt buộc, XP hay bài tập ngữ pháp.
+
 ## Thứ tự thực hiện
 
 ### 1. Chấm bài và lịch ôn — đã sửa, có hồi quy
@@ -53,10 +64,10 @@ Cập nhật 20/10/2026. Nhóm sửa 1 và mục Tra cứu ngữ pháp đã hoà
 
 ### 3. Nội dung chính xác và phù hợp trình độ
 
-- Sau đợt nguồn Mỹ/OPAL: 5.558 mục, 1.061 ready/4.497 lookup. Giữ hàng rào chất lượng; còn nhiều nghĩa Việt nguồn mở lịch sử chưa rà. Ưu tiên tiếp tục những mục B1–C1 hữu ích thay vì đánh dấu toàn kho ready.
-- Đã sửa hardly, sensible, execution và nghĩa Mỹ của pants trong đợt nguồn20/10. Tiếp tục rà các nghĩa nguồn mở khác; danh sách Oxford không đồng nghĩa mọi giải nghĩa Việt được Oxford xác nhận.
-- Mỗi mục luyện hiện chỉ một ví dụ. Bổ sung 2–3 ngữ cảnh cho mục ưu tiên, kiểm tra bằng câu chưa gặp. Nghĩa mới dùng ID liên kết ổn định, không ghi đè lịch sử nghĩa cũ. Chưa đối chiếu độc lập từng nghĩa trong toàn kho.
-- Có 316 IPA Mỹ được đối chiếu cho mục mới; phần lớn mục cũ vẫn chưa có IPA/audio. TTS cần tham chiếu cho từ đa cách phát âm. Không chế IPA hoặc tự nhận audio Oxford.
+- Sau rà toàn kho 21–22/10: 5.558 mục đã có nghĩa/ví dụ đủ để luyện và bằng chứng theo ID. Giữ hàng rào lookup cho từ tự nhập hoặc mục cá nhân chưa rà. Không mở thêm mọi nghĩa của đầu từ chỉ vì nghĩa hiện tại đã được đối chiếu.
+- Đã sửa các nghĩa nguồn mở cũ bằng overlay toàn kho và rà riêng vùng Anh–Mỹ. Danh sách Oxford vẫn chỉ chứng minh phạm vi đầu từ/POS/CEFR; bản dịch/ví dụ tự biên soạn không được gọi là Oxford chứng nhận.
+- Mỗi mục luyện hiện chỉ một ví dụ. Bổ sung 2–3 ngữ cảnh cho mục ưu tiên, kiểm tra bằng câu chưa gặp. Nghĩa mới dùng ID liên kết ổn định, không ghi đè lịch sử nghĩa cũ. Đã đối chiếu từng nghĩa đang dạy; chưa cung cấp toàn bộ các nghĩa của từng đầu từ.
+- Có 344 IPA trong dữ liệu sau 28 mục mới được đối chiếu literal NAmE; phần lớn mục vẫn chưa có IPA/audio. TTS cần tham chiếu cho từ đa cách phát âm. Không chế IPA hoặc tự nhận audio Oxford.
 
 ### 4. Năng suất và đề xuất đúng bài
 

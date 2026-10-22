@@ -9,7 +9,7 @@
     "preview": "vite preview --host 0.0.0.0",
     "test:e2e": "playwright test",
     "test:production": "npm run build && node scripts/check-production.mjs",
-    "test:data": "python3 scripts/test-content-quality.py"
+    "test:data": "python3 scripts/test-content-quality.py && python3 scripts/test-full-review.py"
   },
   "dependencies": {
     "@fontsource/be-vietnam-pro": "^5.3.0",

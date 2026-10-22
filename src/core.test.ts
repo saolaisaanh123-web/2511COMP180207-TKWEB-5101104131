@@ -1,5 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { readFileSync } from "node:fs";
+import { dirname, resolve } from "node:path";
 import {
   parse,
   serialize,
@@ -18,6 +19,19 @@ const source = readFileSync("public/data/vocabulary.txt", "utf8");
 const words = parse(source);
 const proof = JSON.parse(
   readFileSync("public/data/oxford-provenance.json", "utf8"),
+);
+const fullReviewPath = "data/authoring/full-review-2026-10.json";
+const fullReview = JSON.parse(readFileSync(fullReviewPath, "utf8"));
+const reviewedEntries = new Map<string, Record<string, any>>(
+  [
+    ...(fullReview.entries || []),
+    ...fullReview.shards.flatMap((shard: string) => {
+      const data = JSON.parse(
+        readFileSync(resolve(dirname(fullReviewPath), shard), "utf8"),
+      );
+      return Array.isArray(data) ? data : data.entries;
+    }),
+  ].map((entry: Record<string, any>) => [entry.id, entry]),
 );
 const sample = parse(readFileSync("public/data/vocabulary.sample.txt", "utf8"));
 const result = (overrides: Partial<Result> = {}): Result => ({
@@ -142,14 +156,22 @@ describe("Updates and evidence", () => {
 
 describe("Oxford-grounded content and safe upgrade", () => {
   it("matches each headword, POS and CEFR to retained PDF facts without invented IPA/audio", () => {
-    const pos: Record<string, string> = {
-      noun: "n.",
-      verb: "v.",
-      adjective: "adj.",
-      adverb: "adv.",
-      preposition: "prep.",
-      pronoun: "pron.",
-      determiner: "det.",
+    const pos: Record<string, string[]> = {
+      noun: ["n."],
+      verb: ["v.", "auxiliary v.", "modal v."],
+      adjective: ["adj."],
+      adverb: ["adv."],
+      preposition: ["prep."],
+      pronoun: ["pron."],
+      determiner: ["det."],
+      conjunction: ["conj."],
+      interjection: ["exclam."],
+      article: ["indefinite article", "definite article", "article"],
+      "modal verb": ["modal v."],
+      "auxiliary verb": ["auxiliary v."],
+      number: ["number"],
+      "ordinal number": ["ordinal number"],
+      "infinitive marker": ["infinitive marker"],
     };
     const coreWords = words.filter((w) =>
       (w.collections || "").split(",").some((c) => c.startsWith("oxford-")),
@@ -161,8 +183,41 @@ describe("Oxford-grounded content and safe upgrade", () => {
       expect(f).toBeDefined();
       expect(w.word).toBe(f.canonicalWord || f.word);
       expect(w.level).toBe(f.cefr);
-      expect(w.source).toContain(f.source_row);
-      expect(w.ipa).toBe("");
+      expect(Number(w.source_fact_index)).toBe(f.sourceFactIndex);
+      expect(f.source_row).toEqual(expect.any(String));
+      expect(f.source_row).toContain(f.homograph || f.headword || f.word);
+      const reviewed = reviewedEntries.get(w.id)!;
+      const retainedPos = f.pos.split(/\s*[,/]\s*/);
+      if (w.word === "diplomatic") {
+        expect(w.id).toBe("ox-76658a7ce8e611-01");
+        expect(w.part_of_speech).toBe("adjective");
+        expect(retainedPos).toEqual(["n."]);
+        expect(reviewed.previous_part_of_speech).toBe("noun");
+      } else {
+        expect(
+          (pos[w.part_of_speech] || [w.part_of_speech]).some((value) =>
+            retainedPos.includes(value),
+          ),
+          w.id,
+        ).toBe(true);
+      }
+      if (w.ipa) {
+        expect(w.ipa, w.id).toBe(reviewed.ipa);
+        const evidence = Array.isArray(reviewed.source_evidence)
+          ? reviewed.source_evidence
+          : [reviewed.source_evidence];
+        expect(
+          evidence.some(
+            (item: { url: string; status: number; sha256: string }) =>
+              /^https:\/\/www\.oxfordlearnersdictionaries\.com\/definition\/(?:american_english|english)\//.test(item.url) &&
+              item.status === 200 &&
+              /^[a-f0-9]{64}$/.test(item.sha256),
+          ),
+          w.id,
+        ).toBe(true);
+      } else {
+        expect(reviewed.ipa || "", w.id).toBe("");
+      }
       expect(w.audio_word).toBe("");
       if (w.content_status !== "reference") expect(w.meaning_vi).toBeTruthy();
     }

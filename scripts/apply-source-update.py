@@ -12,6 +12,7 @@ import hashlib
 import json
 from pathlib import Path
 import re
+import runpy
 from urllib.parse import urlparse
 
 from corpus_io import read_records, serialize_records
@@ -26,6 +27,7 @@ MEMBERSHIP_GROUPS = {
     "americanMembership": {"american-3000", "american-5000"},
     "opalMembership": {"opal-written", "opal-spoken"},
 }
+FULL_REVIEW = runpy.run_path(str(ROOT / "scripts/apply-full-review.py"))
 
 
 def digest(data):
@@ -125,9 +127,13 @@ def _validate_learning(row):
         raise ValueError(f"Learning-ready content needs original bilingual context: {row['id']}")
 
 
-def _matching_row(by_id, mapping, name):
+def _matching_row(by_id, mapping, name, newer=None):
     row = by_id.get(mapping["id"])
-    if row is None or any(row.get(key) != mapping[key] for key in IDENTITY):
+    identity = dict(row or {})
+    latest = (newer or {}).get(mapping["id"])
+    if latest and latest.get("previous_part_of_speech") == mapping["part_of_speech"] and identity.get("part_of_speech") == latest["part_of_speech"]:
+        identity["part_of_speech"] = latest["previous_part_of_speech"]
+    if row is None or any(identity.get(key) != mapping[key] for key in IDENTITY):
         raise ValueError(f"{name} cannot create, rename or change the POS of an ID: {mapping['id']}")
     return row
 
@@ -140,6 +146,9 @@ def apply_source_update(records, update):
     Unmentioned manual fields and the complete original ID order survive.
     """
     validate_source_update(update)
+    latest_review = FULL_REVIEW["applicable_full_review"](records)
+    newer = {row["id"]: row for row in latest_review["entries"]} if latest_review else {}
+    newer_fields = {entry_id: FULL_REVIEW["reviewed_fields"](latest_review, row) for entry_id, row in newer.items()}
     records = deepcopy(records)
     baseline = update["baseline"]
     size = baseline["entryCount"]
@@ -165,6 +174,8 @@ def apply_source_update(records, update):
                     matches = set(_collections(expected)) <= set(_collections(existing))
                 else:
                     matches = existing.get(key) == value
+                if not matches and key in newer_fields.get(addition["id"], {}):
+                    matches = existing.get(key) == newer_fields[addition["id"]][key]
                 if not matches:
                     raise ValueError(f"Conflicting addition fields: {addition['id']}:{key}; update the authored overlay explicitly")
         else:
@@ -172,7 +183,7 @@ def apply_source_update(records, update):
             records.append(row)
             by_id[row["id"]] = row
     for correction in update.get("corrections", []):
-        row = _matching_row(by_id, correction, "Correction")
+        row = _matching_row(by_id, correction, "Correction", newer)
         if "source_fact_index" in correction and correction["source_fact_index"] != row.get("source_fact_index"):
             raise ValueError("Supplemental source corrections must preserve the existing pinned Oxford fact")
         if "collections" in correction:
@@ -183,16 +194,16 @@ def apply_source_update(records, update):
         row.update(correction)
         _validate_learning(row)
     for spelling in update.get("americanSpellings", []):
-        row = _matching_row(by_id, spelling, "American spelling review")
+        row = _matching_row(by_id, spelling, "American spelling review", newer)
         row["preferred_us_spelling"] = spelling["preferred_us_spelling"]
     for name in MEMBERSHIP_GROUPS:
         for membership in update.get(name, []):
-            row = _matching_row(by_id, membership, name)
+            row = _matching_row(by_id, membership, name, newer)
             extra = ["academic", *membership["collections"]] if name == "opalMembership" else membership["collections"]
             row["collections"] = ",".join(dict.fromkeys([*_collections(row), *extra]))
     if [row["id"] for row in records] != [*current_ids[:size], *expected_ids]:
         raise ValueError("Source update changed the stable vocabulary ID order")
-    return records
+    return FULL_REVIEW["apply_full_review"](records, latest_review) if latest_review else records
 
 
 def corpus_coverage(records, previous):
@@ -277,12 +288,14 @@ def update_provenance(records, text, update, metadata, frequency, review, overla
         "coverageNotes": deepcopy(update.get("coverageNotes", [])),
         "method": "Existing IDs and their order are preserved. Only explicit corrections replace content. American display spellings and same-POS list membership do not assert validation of every existing meaning. Definitions and examples for additions/corrections are original editorial content, not copied publisher entries.",
     }
-    return {
+    documents = {
         "oxford-provenance.json": metadata,
         "frequency-provenance.json": frequency,
         "content-review-provenance.json": review,
         "source-update-provenance.json": provenance,
     }
+    latest_review = FULL_REVIEW["applicable_full_review"](records)
+    return FULL_REVIEW["update_documents"](records, text, latest_review, documents) if latest_review else documents
 
 
 def main():

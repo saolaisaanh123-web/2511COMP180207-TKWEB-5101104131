@@ -1,0 +1,11 @@
+Open English WordNet
+Source: https://github.com/globalwordnet/english-wordnet
+Pinned commit: 45fdb60396dc804526b85f21a23c59983c2c396a
+
+Open English WordNet is a fork of Princeton WordNet. Further development is licensed under Creative Commons Attribution 4.0 International; the original Princeton WordNet notice and license are preserved in Princeton-WordNet.txt. License: OEWN-CC-BY-4.0.txt.
+
+Attribution: John P. McCrae, Alexandre Rademaker, Francis Bond, Ewa Rudnicka, Christiane Fellbaum and the Open English WordNet contributors; Princeton University and the WordNet contributors for inherited material.
+
+Jeongyeon selects individual senses. Selected English glosses labelled definition_source=oewn are reproduced from that pinned source. Vietnamese learning meanings, translations, and authored practice examples are editorial adaptations/new work by Jeongyeon; they are not validated or endorsed by the WordNet authors. Selection, formatting and bilingual additions constitute modifications. The source supports lexical semantics, not CEFR, frequency, American-only usage or a guarantee of accuracy.
+
+Citation: McCrae et al. (2019), English WordNet 2019: An Open-Source WordNet for English, Proceedings of the 10th Global WordNet Conference. https://aclanthology.org/2019.gwc-1.31/

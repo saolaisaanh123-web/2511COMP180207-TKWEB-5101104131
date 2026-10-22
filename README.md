@@ -12,17 +12,17 @@ Nguồn chính là **British Council LearnEnglish**, theo lựa chọn của ng�
 
 ## Cập nhật nguồn từ vựng, ưu tiên Anh–Mỹ
 
-Kho hiện có **5.558 mục theo nghĩa/từ loại**, trong đó **1.061 mục đủ điều kiện luyện**, 4.497 mục chỉ tra cứu. Đã bổ sung 396 mục, giữ nguyên toàn bộ 5.162 ID và thứ tự cũ; sửa nghĩa đang hiển thị của `hardly`, `sensible`, `execution` và `pants`. Các trường nội dung học khác của mục cũ được kiểm tra giữ nguyên.
+Kho hiện có **5.558 mục theo nghĩa/từ loại, đều có nội dung để luyện**. Đợt rà toàn kho ngày 21/10 đối chiếu nghĩa được chọn theo từng ID với Open English WordNet, Oxford và nguồn từ điển Mỹ phù hợp; hoàn thiện 4.497 mục trước đây chỉ tra cứu và rà lại 1.061 mục cũ. Mỗi mục có nghĩa Việt, giải nghĩa Anh và ví dụ Anh–Việt. Giữ toàn bộ ID, đầu từ, dữ kiện CEFR/tần suất và các bản sửa cá nhân; sửa rõ ràng từ loại `diplomatic` theo nguồn hiện hành. Đây là số mục học theo nghĩa/từ loại, không phải 5.558 từ đơn Oxford khác nhau.
 
 - Nền tảng: đã đọc trực tiếp hai PDF **American Oxford 3000/5000** chính thức; mọi đầu từ trong hai bản này có mặt qua mục từ, biến thể đã xác minh hoặc mục bổ sung. Giữ riêng bằng chứng Oxford Anh–Anh cũ, không ép số đếm thành 5.000 thẻ.
 - Học thuật: **Oxford OPAL**, phân biệt văn viết và văn nói học thuật. Đã bổ sung các đầu từ và từ loại còn thiếu; nhãn OPAL của mục cũ chỉ xác nhận đầu từ/từ loại, không tự chứng nhận nghĩa Việt đang hiển thị. OPAL spoken dựa trên ngữ liệu học thuật Anh–Anh.
-- Ngôn ngữ hiện đại: 23 mục từ **Cambridge Dictionary Blog**; cách dùng mới hoặc chuyên biệt của Word Watcher/New words giữ ở chế độ tra cứu, không tự coi là từ phổ biến tại Mỹ hay đã được nhận vào từ điển.
-- Nghĩa/cách dùng mới đối chiếu trực tiếp Oxford American/Academic. **Cambridge Dictionary vẫn trả trang chặn 403**, nên không gắn nhãn các nghĩa này đã được Cambridge xác minh.
+- Ngôn ngữ hiện đại: 23 mục từ **Cambridge Dictionary Blog**, cùng các cách nói đời thường được đối chiếu thêm từ điển Mỹ. Mục mới/chuyên biệt có ví dụ được rà để luyện, đồng thời giữ cảnh báo về sắc thái và mức độ ổn định; không tự coi là từ phổ biến tại Mỹ hay đã được nhận vào mọi từ điển.
+- Nghĩa/cách dùng: **Open English WordNet** khóa phiên bản cung cấp các nghĩa từ vựng có giấy phép mở; **Oxford American/Academic** và **Merriam-Webster** đối chiếu từ chức năng, khác biệt vùng và các nghĩa hiện đại. Giải nghĩa Anh chép theo giấy phép WordNet có nhãn riêng; bản dịch và ví dụ Jeongyeon biên soạn được ghi riêng. **Cambridge Dictionary vẫn chặn 403**, nên không gắn nhãn đã xác minh Cambridge cho các mục chưa đọc được.
 - Phát âm: hồ sơ mới ưu tiên **Anh–Mỹ**, 61 biến thể của mục cũ có cách viết Mỹ đã đối chiếu; thêm liên kết **YouGlish chọn giọng Mỹ** trong chi tiết từ. Giữ lựa chọn giọng đã lưu. Nếu hồ sơ cũ đang chọn Anh–Anh, có thể đổi trong Cài đặt. Không tự đổi IPA hoặc URL âm thanh chỉ vì đổi giọng tổng hợp.
 
 Trong Kho từ, chọn **Bộ từ** để lọc American Oxford 3000/5000, OPAL hoặc Cambridge Blog. Thiết bị đã có dữ liệu dùng **Cập nhật kho mặc định**, xem trước rồi áp dụng; không xóa dữ liệu học. Cách viết Mỹ mới được chấp nhận dưới ID cũ và không đổi khóa nội dung/lịch ôn. Khi thực sự sửa nghĩa, lịch sử được giữ nhưng bằng chứng của nghĩa cũ không được coi là bằng chứng cho nghĩa mới.
 
-Chi tiết nguồn, phạm vi kiểm tra và giới hạn: [báo cáo cập nhật nguồn](docs/vocabulary-sources-2026-10-20.md), [ghi nguồn kho từ](public/data/SOURCES.md). Không có API trả phí hoặc yêu cầu tài khoản mới.
+Chi tiết nguồn, phạm vi kiểm tra và giới hạn: [báo cáo rà toàn kho](docs/full-vocabulary-review-2026-10-21.md), [ghi nguồn kho từ](public/data/SOURCES.md). Không có API trả phí hoặc yêu cầu tài khoản mới.
 
 ## Chạy trên máy
 
@@ -47,9 +47,9 @@ Các trường bắt buộc: `id`, `word`, `meaning_vi`, `example_en`, `example_
 
 - Giữ nguyên ID khi sửa cách diễn đạt để giữ lịch sử. Một nghĩa mới nên có ID mới.
 - Bộ từ: `foundation`, `ielts`, `personal`; một mục có thể có nhiều nhãn.
-- Kho mặc định gồm **toàn bộ 4.955 đầu từ/cách viết trong hai PDF Oxford 3000/5000** (5.323 dòng nguồn/từ loại/CEFR), cộng **100 mục nghĩa cụm động từ** và **107 mục Slang/thành ngữ/khẩu ngữ**; tổng 5.162 bản ghi. Có 27 thành ngữ đối chiếu với bài báo/chương trình Mỹ. Phân biệt nội dung đã rà soát, nghĩa nhập từ từ điển mở chưa rà soát từng mục, và 1 mục chỉ tra cứu có xung đột nguồn. Không gán mọi nghĩa/âm thanh cho Oxford. Xem [SOURCES.md](public/data/SOURCES.md) và giấy phép dữ liệu nhập.
+- Kho mặc định có 5.558 mục: phạm vi hai PDF Oxford Anh–Anh cũ, các đầu từ Mỹ và OPAL bổ sung, cụm động từ, thành ngữ/khẩu ngữ và Cambridge Blog. Giữ nguyên 5.323 dòng dữ kiện Oxford Anh–Anh và bằng chứng Mỹ riêng; các số dòng/từ loại không được đếm thành các từ đơn khác nhau. Có 27 thành ngữ đối chiếu với bài báo/chương trình Mỹ. Xem [SOURCES.md](public/data/SOURCES.md), [báo cáo rà toàn kho](docs/full-vocabulary-review-2026-10-21.md) và giấy phép dữ liệu.
 - Các trường mở rộng: `content_status` (`reviewed`, `dictionary`, `reference`), `example_type`, `register`, `region`, `case_sensitive`. Mục nhập thông thường vẫn bắt buộc nghĩa và ví dụ. `dictionary` cho phép thiếu ví dụ khi nguồn không cung cấp, phải có nghĩa và nguồn; `reference` chỉ tra cứu và bắt buộc ID/từ/nguồn, không tạo bài kiểm tra. Không dùng giá trị giả để qua kiểm tra.
-- Mặc định **674 mục được phép học**; **4.488 mục chỉ tra cứu** vẫn được giữ trong Kho từ. `learning_status: ready` cho phép dùng trong bài học; `lookup` chặn bài học. Không tự coi toàn bộ danh sách Oxford là nội dung đã rà. Người dùng có thể đối chiếu, bổ sung ví dụ, xác nhận để học và lưu bản cá nhân trong trang chi tiết.
+- Mặc định **5.558 mục được phép học** sau đợt rà nội dung toàn kho. `learning_status: ready` cho phép luyện; `lookup` vẫn chặn các mục nhập thêm hoặc mục cá nhân chưa được kiểm tra. Hàng rào chất lượng không bị bỏ: thêm từ vào danh sách không tự xác minh nghĩa/ví dụ. `definition_source: oewn` phân biệt giải nghĩa Anh có giấy phép WordNet với `authored` là phần biên soạn.
 - Kho từ phân trang 60 mục, Slang/cụm động từ phân trang 24 mục. Slang có trang riêng và không tự chen vào kế hoạch từ mới Oxford. Cụm từ không được gán CEFR khi chưa có căn cứ.
 - Kho từ giữ thứ tự CEFR A1–C2, rồi tần suất giảm dần trong cùng trình độ, rồi A–Z. Việc chọn từ cho phiên mới có bốn chế độ riêng: Thông minh, Ưu tiên thông dụng, Củng cố từ yếu và Trộn từ. CEFR chỉ hỗ trợ chọn; từ đến hạn và phiên đang học không bị chế độ mới xáo trộn. Mục chưa có CEFR/tần suất được ghi rõ, không bị coi là bằng chứng ít dùng. `frequency_zipf` và `frequency_source` ghi ước lượng cách viết tổng hợp từ wordfreq 3.1.1 cho 4.921 mục; không phân biệt nghĩa/từ loại/chữ hoa, không phải điểm Oxford hay tần suất riêng của thời sự Mỹ. Xem [phương pháp và giấy phép](data/frequency/README.md).
 - Trong Slang, lọc **Loại cách nói → Thành ngữ** và **Nguồn ngữ cảnh → Bản tin / phỏng vấn** để tìm các cụm dài. `expression_type` phân biệt `idiom`, `slang`, `colloquialism`, `abbreviation`, `term`. Các trường `news_source`, `news_title`, `news_url`, `news_date`, `news_excerpt`, `news_context_vi`, `news_source_type` lưu ngữ cảnh có nguồn; `news_source_type` là `reporting` hoặc `language-lesson`, không gộp bài dạy tiếng Anh thành tin thời sự. Trích dẫn và ví dụ luyện tập được trình bày riêng. Xem [dấu vết đối chiếu 27 bài nguồn](public/data/news-provenance.json). Không tự tải tin mới khi người học mở web.
@@ -122,7 +122,7 @@ Vite dùng `base: './'`; nội dung lấy theo `import.meta.env.BASE_URL`. Đi�
 
 ## Giới hạn được biết
 
-- Không chấm tổng quát ngữ nghĩa, độ tự nhiên hoặc phát âm; phản hồi viết chỉ nhận diện các cấu trúc đã hỗ trợ. Đồng bộ cần project Supabase Free; nghe nhớ nghĩa là tự đánh giá. Nội dung từ điển mở lịch sử chưa được rà soát thủ công toàn bộ; luôn xem nhãn nguồn trước khi học chuyên sâu.
+- Không chấm tổng quát ngữ nghĩa, độ tự nhiên hoặc phát âm; phản hồi viết chỉ nhận diện các cấu trúc đã hỗ trợ. Đồng bộ cần project Supabase Free; nghe nhớ nghĩa là tự đánh giá. Mỗi mục mới chỉ dạy một nghĩa được chọn; rà nguồn không phải chứng nhận của nhà xuất bản hay bảo đảm đúng tuyệt đối. Không suy CEFR, tần suất hoặc giọng Mỹ từ việc khớp WordNet.
 - CEFR đối chiếu đầu từ/loại từ, không xác nhận riêng mọi nghĩa. Bản Anh–Anh cũ được giữ theo PDF đã khóa phiên bản; đợt 20/10 bổ sung hai PDF American Oxford chính thức tải trực tiếp. Xem nguồn, commit, SHA256 và từng dòng đối chiếu trong `public/data/oxford-provenance.json`.
 - Trong cùng một phiên và lần ôn, thử lại không được tính như bằng chứng lần đầu. Nên dùng bài ngữ cảnh có đáp án duy nhất; dùng nút báo câu hỏi nếu ví dụ chưa đủ rõ.
 - Kiểm thử trình duyệt kiểm tra đường đi giọng đọc không khả dụng, không xác nhận chất lượng âm thanh thực tế hoặc giọng của mọi thiết bị. Thử phát từ/câu trên thiết bị cá nhân trước bài nghe.
@@ -138,11 +138,12 @@ Vite dùng `base: './'`; nội dung lấy theo `import.meta.env.BASE_URL`. Đi�
 
 `npm run test:data` dùng Python 3 thư viện chuẩn để kiểm tra các lỗi dữ liệu đã sửa, phạm vi và hash nguồn. CI chạy kiểm tra này, unit, toàn bộ E2E và production trước triển khai. Python không cần để chạy ứng dụng hoặc build thông thường.
 
-38 mục đã được sửa bằng `data/authoring/content-review-2026-10.txt`, gồm nghĩa cơ bản, bản dịch/ví dụ và ghép đúng homograph `lie` (nói dối, B1). Xem `public/data/content-review-provenance.json`; không tuyên bố đã rà thủ công toàn bộ 5.162 mục.
+Các overlay lịch sử (38 sửa ban đầu, đợt nguồn Mỹ/OPAL) được giữ nguyên. Overlay mới `data/authoring/full-review-2026-10.json` và các shard khai báo rõ từng ID đã rà, bằng chứng nguồn theo nghĩa và nội dung song ngữ. `scripts/apply-full-review.py` áp dụng sau các overlay cũ; xem `public/data/full-review-provenance.json`. Nội dung canonical vẫn là TXT và các bản sửa cá nhân giữ ưu tiên.
 
 Các lệnh tạo dữ liệu mặc định chỉ xuất xem trước ra `/tmp`, không ghi đè TXT:
 
 ```sh
+python3 scripts/apply-full-review.py
 python3 scripts/apply-content-review.py
 python3 scripts/build-full-corpus.py /workspace/scratch
 ```

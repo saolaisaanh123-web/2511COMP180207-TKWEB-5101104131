@@ -1,0 +1,3894 @@
+{
+  "entries": [
+    {
+      "id": "avoid-01",
+      "word": "avoid",
+      "part_of_speech": "verb",
+      "meaning_vi": "tránh",
+      "definition_en": "to choose not to do something that could cause a problem",
+      "collocation": "avoid doing something",
+      "example_en": "I avoid using my phone while studying.",
+      "example_vi": "Tôi tránh dùng điện thoại khi học.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.social.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "d0bc7620c30305592d0f8cf77e4119ab1cf12fcee93f4269341df017acdb4895",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "02468933-v",
+          "lemma": "avoid"
+        }
+      ]
+    },
+    {
+      "id": "achieve-01",
+      "word": "achieve",
+      "part_of_speech": "verb",
+      "meaning_vi": "đạt được",
+      "definition_en": "to reach a goal through effort",
+      "collocation": "achieve a goal",
+      "example_en": "Small daily steps help me achieve my goals.",
+      "example_vi": "Những bước nhỏ mỗi ngày giúp tôi đạt mục tiêu.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.social.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "d0bc7620c30305592d0f8cf77e4119ab1cf12fcee93f4269341df017acdb4895",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "02531751-v",
+          "lemma": "achieve"
+        }
+      ]
+    },
+    {
+      "id": "benefit-01",
+      "word": "benefit",
+      "part_of_speech": "noun",
+      "meaning_vi": "lợi ích",
+      "definition_en": "a useful result or advantage that something gives",
+      "collocation": "a clear benefit",
+      "example_en": "Walking has a clear benefit for my health.",
+      "example_vi": "Đi bộ mang lại một lợi ích rõ rệt cho sức khỏe của tôi.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.attribute.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "d827a1494144bc96ef6e973cac0b2ccc8980d1a192622c44fa46ed08f4db6157",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "05149888-n",
+          "lemma": "benefit"
+        }
+      ]
+    },
+    {
+      "id": "environment-01",
+      "word": "environment",
+      "part_of_speech": "noun",
+      "meaning_vi": "môi trường",
+      "definition_en": "the natural world in which people, animals and plants live",
+      "collocation": "protect the environment",
+      "example_en": "We can protect the environment by using less plastic.",
+      "example_vi": "Chúng ta có thể bảo vệ môi trường bằng cách dùng ít nhựa hơn.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/environment",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "6526568008698ec347737aec64d859fe399584f52ff37bbeb04b313fe5760c2a",
+          "scope": "Existing selected meaning and part of speech rechecked against the Oxford entry; original Jeongyeon English paraphrase and bilingual context retained.",
+          "sense_ref": "environment__37"
+        }
+      ]
+    },
+    {
+      "id": "improve-01",
+      "word": "improve",
+      "part_of_speech": "verb",
+      "meaning_vi": "cải thiện",
+      "definition_en": "to become better, or to help something become better",
+      "collocation": "improve a skill",
+      "example_en": "I practise every day to improve my writing.",
+      "example_vi": "Tôi luyện tập hằng ngày để cải thiện kỹ năng viết.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.change.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "126bb92adc1be69c4cf33e9ac1a5a492f6785971d23c527f5d8e0db51a980702",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00206293-v",
+          "lemma": "improve"
+        }
+      ]
+    },
+    {
+      "id": "opportunity-01",
+      "word": "opportunity",
+      "part_of_speech": "noun",
+      "meaning_vi": "cơ hội",
+      "definition_en": "a situation that gives someone a chance to do something",
+      "collocation": "an opportunity to learn",
+      "example_en": "The course gives me an opportunity to meet new people.",
+      "example_vi": "Khóa học cho tôi cơ hội gặp những người mới.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.state.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "3cb8cebbf3f812229c085d3f61608c3cca4e97a5c69e9bebb9c3e546a8411312",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "14507501-n",
+          "lemma": "opportunity"
+        }
+      ]
+    },
+    {
+      "id": "sustainable-01",
+      "word": "sustainable",
+      "part_of_speech": "adjective",
+      "meaning_vi": "bền vững",
+      "definition_en": "able to continue without using up resources or causing lasting harm",
+      "collocation": "sustainable development",
+      "example_en": "The city needs a sustainable transport system.",
+      "example_vi": "Thành phố cần một hệ thống giao thông bền vững.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/sustainable",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "27cb429a98b618a088bc1f1433850c118bab60d17e9a7767f56cc4e6e9a44bda",
+          "scope": "Existing selected meaning and part of speech rechecked against the Oxford entry; original Jeongyeon English paraphrase and bilingual context retained.",
+          "sense_ref": "sustainable__12"
+        }
+      ]
+    },
+    {
+      "id": "reduce-01",
+      "word": "reduce",
+      "part_of_speech": "verb",
+      "meaning_vi": "giảm",
+      "definition_en": "to make an amount or number smaller",
+      "collocation": "reduce traffic",
+      "example_en": "Taking the bus can reduce traffic in the city.",
+      "example_vi": "Đi xe buýt có thể giảm lượng xe lưu thông trong thành phố.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.change.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "126bb92adc1be69c4cf33e9ac1a5a492f6785971d23c527f5d8e0db51a980702",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00430013-v",
+          "lemma": "reduce"
+        }
+      ]
+    },
+    {
+      "id": "reliable-01",
+      "word": "reliable",
+      "part_of_speech": "adjective",
+      "meaning_vi": "đáng tin cậy",
+      "definition_en": "able to be trusted to work well or provide accurate information",
+      "collocation": "reliable information",
+      "example_en": "Students need reliable information for their research.",
+      "example_vi": "Sinh viên cần thông tin đáng tin cậy cho nghiên cứu.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00727525-a",
+          "lemma": "reliable"
+        }
+      ]
+    },
+    {
+      "id": "community-01",
+      "word": "community",
+      "part_of_speech": "noun",
+      "meaning_vi": "cộng đồng",
+      "definition_en": "a group of people who live in an area or share a connection",
+      "collocation": "local community",
+      "example_en": "Our community has a small public library.",
+      "example_vi": "Cộng đồng của chúng tôi có một thư viện công cộng nhỏ.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.group.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "4c5052b8dd31f1924f46899e8789d6fa916637d1451113c39ccded95c9d80a4e",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "08240723-n",
+          "lemma": "community"
+        }
+      ]
+    },
+    {
+      "id": "develop-01",
+      "word": "develop",
+      "part_of_speech": "verb",
+      "meaning_vi": "phát triển",
+      "definition_en": "to grow a skill or ability over time",
+      "collocation": "develop skills",
+      "example_en": "Group projects help students develop new skills.",
+      "example_vi": "Dự án nhóm giúp sinh viên phát triển kỹ năng mới.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.change.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "126bb92adc1be69c4cf33e9ac1a5a492f6785971d23c527f5d8e0db51a980702",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00546637-v",
+          "lemma": "develop"
+        }
+      ]
+    },
+    {
+      "id": "research-01",
+      "word": "research",
+      "part_of_speech": "noun",
+      "meaning_vi": "nghiên cứu",
+      "definition_en": "careful study that aims to discover or understand something",
+      "collocation": "conduct research",
+      "example_en": "This research explores how people learn languages.",
+      "example_vi": "Nghiên cứu này tìm hiểu cách con người học ngôn ngữ.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.act.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "c5ea061734ae4687ca1505e32e75f61936ec84c2a05eaa751f451702c8699291",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00638164-n",
+          "lemma": "research"
+        }
+      ]
+    },
+    {
+      "id": "challenge-01",
+      "word": "challenge",
+      "part_of_speech": "noun",
+      "meaning_vi": "thử thách",
+      "definition_en": "a difficult task that needs effort and ability",
+      "collocation": "face a challenge",
+      "example_en": "Learning a new language is an exciting challenge.",
+      "example_vi": "Học một ngôn ngữ mới là một thử thách thú vị.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.state.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "3cb8cebbf3f812229c085d3f61608c3cca4e97a5c69e9bebb9c3e546a8411312",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "13955981-n",
+          "lemma": "challenge"
+        }
+      ]
+    },
+    {
+      "id": "balance-01",
+      "word": "balance",
+      "part_of_speech": "noun",
+      "meaning_vi": "sự cân bằng",
+      "definition_en": "a suitable mix of different activities or needs",
+      "collocation": "a balance between",
+      "example_en": "I try to keep a balance between work and rest.",
+      "example_vi": "Tôi cố giữ sự cân bằng giữa công việc và nghỉ ngơi.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.state.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "3cb8cebbf3f812229c085d3f61608c3cca4e97a5c69e9bebb9c3e546a8411312",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "14025764-n",
+          "lemma": "balance"
+        }
+      ]
+    },
+    {
+      "id": "access-01",
+      "word": "access",
+      "part_of_speech": "noun",
+      "meaning_vi": "khả năng tiếp cận",
+      "definition_en": "the ability or opportunity to use a service or resource",
+      "collocation": "access to education",
+      "example_en": "Every child should have access to education.",
+      "example_vi": "Mọi trẻ em nên có khả năng tiếp cận giáo dục.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.attribute.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "d827a1494144bc96ef6e973cac0b2ccc8980d1a192622c44fa46ed08f4db6157",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "05182994-n",
+          "lemma": "access"
+        }
+      ]
+    },
+    {
+      "id": "affordable-01",
+      "word": "affordable",
+      "part_of_speech": "adjective",
+      "meaning_vi": "có giá phải chăng",
+      "definition_en": "not too expensive for the person who needs it",
+      "collocation": "affordable housing",
+      "example_en": "The town needs more affordable housing.",
+      "example_vi": "Thị trấn cần thêm nhà ở có giá phải chăng.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00938372-s",
+          "lemma": "affordable"
+        }
+      ]
+    },
+    {
+      "id": "device-01",
+      "word": "device",
+      "part_of_speech": "noun",
+      "meaning_vi": "thiết bị",
+      "definition_en": "a piece of equipment made for a particular purpose",
+      "collocation": "a useful device",
+      "example_en": "This device helps me track my daily exercise.",
+      "example_vi": "Thiết bị này giúp tôi theo dõi việc tập luyện hằng ngày.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.artifact.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "29873f01b589096f73d48d73f4e6877ffc6f633e8b025a3806eb1f60a95a6cae",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "03187746-n",
+          "lemma": "device"
+        }
+      ]
+    },
+    {
+      "id": "well-being-01",
+      "word": "well-being",
+      "part_of_speech": "noun",
+      "meaning_vi": "sức khỏe thể chất và tinh thần",
+      "definition_en": "the state of feeling healthy and comfortable in life",
+      "collocation": "support well-being",
+      "example_en": "Regular breaks support our well-being.",
+      "example_vi": "Nghỉ giải lao đều đặn hỗ trợ sức khỏe thể chất và tinh thần của chúng ta.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.state.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "3cb8cebbf3f812229c085d3f61608c3cca4e97a5c69e9bebb9c3e546a8411312",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "14470991-n",
+          "lemma": "well-being"
+        }
+      ]
+    },
+    {
+      "id": "home-01",
+      "word": "home",
+      "part_of_speech": "noun",
+      "meaning_vi": "nhà; nơi mình sống",
+      "definition_en": "The place where a person lives.",
+      "collocation": "a family home",
+      "example_en": "My home is close to a small park.",
+      "example_vi": "Nhà tôi ở gần một công viên nhỏ.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.artifact.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "29873f01b589096f73d48d73f4e6877ffc6f633e8b025a3806eb1f60a95a6cae",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "03264208-n",
+          "lemma": "home"
+        }
+      ]
+    },
+    {
+      "id": "family-01",
+      "word": "family",
+      "part_of_speech": "noun",
+      "meaning_vi": "gia đình",
+      "definition_en": "A group of people related to one another.",
+      "collocation": "a large family",
+      "example_en": "My family has dinner together every evening.",
+      "example_vi": "Gia đình tôi ăn tối cùng nhau mỗi tối.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.group.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "4c5052b8dd31f1924f46899e8789d6fa916637d1451113c39ccded95c9d80a4e",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "07986853-n",
+          "lemma": "family"
+        }
+      ]
+    },
+    {
+      "id": "friend-01",
+      "word": "friend",
+      "part_of_speech": "noun",
+      "meaning_vi": "bạn",
+      "definition_en": "Someone you like and spend time with.",
+      "collocation": "a close friend",
+      "example_en": "A close friend can help you through a difficult day.",
+      "example_vi": "Một người bạn thân có thể giúp bạn vượt qua một ngày khó khăn.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.person.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "7d2ce4bebd1cc762a5d4f4d6cf7aee228e5c795ed07263d575fea0b820780c48",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "10132360-n",
+          "lemma": "friend"
+        }
+      ]
+    },
+    {
+      "id": "neighbour-01",
+      "word": "neighbour",
+      "part_of_speech": "noun",
+      "meaning_vi": "người hàng xóm",
+      "definition_en": "Someone who lives near your home.",
+      "collocation": "a friendly neighbour",
+      "example_en": "Our neighbour grows flowers in her garden.",
+      "example_vi": "Người hàng xóm của chúng tôi trồng hoa trong vườn của bà ấy.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.person.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "7d2ce4bebd1cc762a5d4f4d6cf7aee228e5c795ed07263d575fea0b820780c48",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "10372030-n",
+          "lemma": "neighbour"
+        }
+      ]
+    },
+    {
+      "id": "parent-01",
+      "word": "parent",
+      "part_of_speech": "noun",
+      "meaning_vi": "cha hoặc mẹ",
+      "definition_en": "A person's mother or father.",
+      "collocation": "a single parent",
+      "example_en": "Each parent receives a copy of the school report.",
+      "example_vi": "Mỗi phụ huynh đều nhận được một bản báo cáo học tập.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.person.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "7d2ce4bebd1cc762a5d4f4d6cf7aee228e5c795ed07263d575fea0b820780c48",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "10419190-n",
+          "lemma": "parent"
+        }
+      ]
+    },
+    {
+      "id": "child-01",
+      "word": "child",
+      "part_of_speech": "noun",
+      "meaning_vi": "trẻ em; đứa trẻ",
+      "definition_en": "A young person who is not yet an adult.",
+      "collocation": "a young child",
+      "example_en": "Every child needs a safe place to play.",
+      "example_vi": "Mỗi đứa trẻ đều cần một nơi an toàn để vui chơi.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.person.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "7d2ce4bebd1cc762a5d4f4d6cf7aee228e5c795ed07263d575fea0b820780c48",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "09937051-n",
+          "lemma": "child"
+        }
+      ]
+    },
+    {
+      "id": "adult-01",
+      "word": "adult",
+      "part_of_speech": "noun",
+      "meaning_vi": "người trưởng thành",
+      "definition_en": "A person who is fully grown.",
+      "collocation": "a responsible adult",
+      "example_en": "An adult must stay with the children during the trip.",
+      "example_vi": "Một người lớn phải ở cùng các em nhỏ trong suốt chuyến đi.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.person.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "7d2ce4bebd1cc762a5d4f4d6cf7aee228e5c795ed07263d575fea0b820780c48",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "09628463-n",
+          "lemma": "adult"
+        }
+      ]
+    },
+    {
+      "id": "relationship-01",
+      "word": "relationship",
+      "part_of_speech": "noun",
+      "meaning_vi": "mối quan hệ",
+      "definition_en": "The connection between people and how they treat each other.",
+      "collocation": "a close relationship",
+      "example_en": "She has a good relationship with her brother.",
+      "example_vi": "Cô ấy có mối quan hệ tốt với anh trai.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.state.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "3cb8cebbf3f812229c085d3f61608c3cca4e97a5c69e9bebb9c3e546a8411312",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "13951421-n",
+          "lemma": "relationship"
+        }
+      ]
+    },
+    {
+      "id": "apartment-01",
+      "word": "apartment",
+      "part_of_speech": "noun",
+      "meaning_vi": "căn hộ",
+      "definition_en": "A home that is one part of a larger building.",
+      "collocation": "rent an apartment",
+      "example_en": "We rent a small apartment near the station.",
+      "example_vi": "Chúng tôi thuê một căn hộ nhỏ gần nhà ga.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.artifact.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "29873f01b589096f73d48d73f4e6877ffc6f633e8b025a3806eb1f60a95a6cae",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "02729230-n",
+          "lemma": "apartment"
+        }
+      ]
+    },
+    {
+      "id": "kitchen-01",
+      "word": "kitchen",
+      "part_of_speech": "noun",
+      "meaning_vi": "nhà bếp",
+      "definition_en": "A room where people prepare and cook food.",
+      "collocation": "a small kitchen",
+      "example_en": "There is a wooden table in the kitchen.",
+      "example_vi": "Có một chiếc bàn gỗ trong nhà bếp.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.artifact.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "29873f01b589096f73d48d73f4e6877ffc6f633e8b025a3806eb1f60a95a6cae",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "03625099-n",
+          "lemma": "kitchen"
+        }
+      ]
+    },
+    {
+      "id": "bedroom-01",
+      "word": "bedroom",
+      "part_of_speech": "noun",
+      "meaning_vi": "phòng ngủ",
+      "definition_en": "A room used mainly for sleeping.",
+      "collocation": "a shared bedroom",
+      "example_en": "My bedroom gets plenty of sunlight in the morning.",
+      "example_vi": "Phòng ngủ của tôi đón nhiều ánh nắng vào buổi sáng.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.artifact.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "29873f01b589096f73d48d73f4e6877ffc6f633e8b025a3806eb1f60a95a6cae",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "02824762-n",
+          "lemma": "bedroom"
+        }
+      ]
+    },
+    {
+      "id": "bathroom-01",
+      "word": "bathroom",
+      "part_of_speech": "noun",
+      "meaning_vi": "phòng tắm",
+      "definition_en": "A room with a bath or shower and often a toilet.",
+      "collocation": "a clean bathroom",
+      "example_en": "The bathroom is at the end of the hall.",
+      "example_vi": "Phòng tắm nằm ở cuối hành lang.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.artifact.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "29873f01b589096f73d48d73f4e6877ffc6f633e8b025a3806eb1f60a95a6cae",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "02810916-n",
+          "lemma": "bathroom"
+        }
+      ]
+    },
+    {
+      "id": "furniture-01",
+      "word": "furniture",
+      "part_of_speech": "noun",
+      "meaning_vi": "đồ nội thất",
+      "definition_en": "Large movable items used in a room, such as tables and chairs.",
+      "collocation": "wooden furniture",
+      "example_en": "We bought some wooden furniture for the living room.",
+      "example_vi": "Chúng tôi mua một ít đồ nội thất bằng gỗ cho phòng khách.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.artifact.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "29873f01b589096f73d48d73f4e6877ffc6f633e8b025a3806eb1f60a95a6cae",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "03410635-n",
+          "lemma": "furniture"
+        }
+      ]
+    },
+    {
+      "id": "meal-01",
+      "word": "meal",
+      "part_of_speech": "noun",
+      "meaning_vi": "bữa ăn",
+      "definition_en": "An occasion when you eat food, or the food eaten then.",
+      "collocation": "cook a meal",
+      "example_en": "We cook a simple meal together on Fridays.",
+      "example_vi": "Chúng tôi cùng nấu một bữa ăn đơn giản vào các ngày thứ Sáu.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.food.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "e374e23600a13cbfe76c6ea583186bfe80995f4e3502c9aaf0f90ab007b891b7",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "07589261-n",
+          "lemma": "meal"
+        }
+      ]
+    },
+    {
+      "id": "breakfast-01",
+      "word": "breakfast",
+      "part_of_speech": "noun",
+      "meaning_vi": "bữa sáng",
+      "definition_en": "The first meal you eat after waking up.",
+      "collocation": "have breakfast",
+      "example_en": "I usually have breakfast before seven.",
+      "example_vi": "Tôi thường ăn sáng trước bảy giờ.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.food.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "e374e23600a13cbfe76c6ea583186bfe80995f4e3502c9aaf0f90ab007b891b7",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "07590167-n",
+          "lemma": "breakfast"
+        }
+      ]
+    },
+    {
+      "id": "lunch-01",
+      "word": "lunch",
+      "part_of_speech": "noun",
+      "meaning_vi": "bữa trưa",
+      "definition_en": "A meal eaten around the middle of the day.",
+      "collocation": "have lunch",
+      "example_en": "We have lunch in the school cafeteria.",
+      "example_vi": "Chúng tôi ăn trưa ở căng tin của trường.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.food.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "e374e23600a13cbfe76c6ea583186bfe80995f4e3502c9aaf0f90ab007b891b7",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "07590641-n",
+          "lemma": "lunch"
+        }
+      ]
+    },
+    {
+      "id": "dinner-01",
+      "word": "dinner",
+      "part_of_speech": "noun",
+      "meaning_vi": "bữa tối; bữa chính trong ngày",
+      "definition_en": "The main meal of the day, often eaten in the evening.",
+      "collocation": "cook dinner",
+      "example_en": "My father will cook dinner tonight.",
+      "example_vi": "Tối nay bố tôi sẽ nấu bữa tối.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.food.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "e374e23600a13cbfe76c6ea583186bfe80995f4e3502c9aaf0f90ab007b891b7",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "07591291-n",
+          "lemma": "dinner"
+        }
+      ]
+    },
+    {
+      "id": "food-01",
+      "word": "food",
+      "part_of_speech": "noun",
+      "meaning_vi": "thức ăn; thực phẩm",
+      "definition_en": "Things that people or animals eat.",
+      "collocation": "fresh food",
+      "example_en": "This shop sells fresh food from nearby farms.",
+      "example_vi": "Cửa hàng này bán thực phẩm tươi từ các trang trại gần đó.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.Tops.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "2a082f37969c4ae0ef3590b31f73c05d915aba7ffdc1242e54a061bf8f9a9301",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00021445-n",
+          "lemma": "food"
+        }
+      ]
+    },
+    {
+      "id": "water-01",
+      "word": "water",
+      "part_of_speech": "noun",
+      "meaning_vi": "nước",
+      "definition_en": "The clear liquid people drink and use for washing.",
+      "collocation": "drinking water",
+      "example_en": "Please bring enough water for the walk.",
+      "example_vi": "Hãy mang đủ nước cho chuyến đi bộ.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.substance.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "5b7e47570a15012e7a43430a56a218a1ac7be81913bb094143a39b40387ed62f",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "14869913-n",
+          "lemma": "water"
+        }
+      ]
+    },
+    {
+      "id": "bread-01",
+      "word": "bread",
+      "part_of_speech": "noun",
+      "meaning_vi": "bánh mì",
+      "definition_en": "A baked food usually made from flour, water, and yeast.",
+      "collocation": "a slice of bread",
+      "example_en": "I ate a slice of bread with my soup.",
+      "example_vi": "Tôi ăn một lát bánh mì cùng với súp.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.food.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "e374e23600a13cbfe76c6ea583186bfe80995f4e3502c9aaf0f90ab007b891b7",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "07695101-n",
+          "lemma": "bread"
+        }
+      ]
+    },
+    {
+      "id": "fruit-01",
+      "word": "fruit",
+      "part_of_speech": "noun",
+      "meaning_vi": "trái cây; hoa quả",
+      "definition_en": "The part of a plant that contains seeds and is often eaten raw.",
+      "collocation": "fresh fruit",
+      "example_en": "Fresh fruit makes a convenient snack.",
+      "example_vi": "Trái cây tươi là một món ăn nhẹ tiện lợi.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.plant.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "69671bcf9de09e39cb46b5fafec69233278d17f4b4dbe093fb57d3deacc6a283",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "13155706-n",
+          "lemma": "fruit"
+        }
+      ]
+    },
+    {
+      "id": "vegetable-01",
+      "word": "vegetable",
+      "part_of_speech": "noun",
+      "meaning_vi": "rau; củ dùng làm thực phẩm",
+      "definition_en": "A plant or part of a plant eaten as food, such as a carrot.",
+      "collocation": "a green vegetable",
+      "example_en": "Choose a different vegetable for your soup each day.",
+      "example_vi": "Hãy chọn một loại rau củ khác nhau cho món súp mỗi ngày.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.food.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "e374e23600a13cbfe76c6ea583186bfe80995f4e3502c9aaf0f90ab007b891b7",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "07723196-n",
+          "lemma": "vegetable"
+        }
+      ]
+    },
+    {
+      "id": "market-01",
+      "word": "market",
+      "part_of_speech": "noun",
+      "meaning_vi": "chợ",
+      "definition_en": "A place where people buy and sell goods.",
+      "collocation": "a local market",
+      "example_en": "The local market opens early on Sundays.",
+      "example_vi": "Chợ địa phương mở cửa sớm vào các ngày Chủ nhật.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.artifact.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "29873f01b589096f73d48d73f4e6877ffc6f633e8b025a3806eb1f60a95a6cae",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "03466317-n",
+          "lemma": "market"
+        }
+      ]
+    },
+    {
+      "id": "shop-01",
+      "word": "shop",
+      "part_of_speech": "noun",
+      "meaning_vi": "cửa hàng",
+      "definition_en": "A place where goods are sold to customers.",
+      "collocation": "a book shop",
+      "example_en": "There is a small shop beside the bus stop.",
+      "example_vi": "Có một cửa hàng nhỏ bên cạnh trạm xe buýt.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.artifact.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "29873f01b589096f73d48d73f4e6877ffc6f633e8b025a3806eb1f60a95a6cae",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "04209460-n",
+          "lemma": "shop"
+        }
+      ]
+    },
+    {
+      "id": "price-01",
+      "word": "price",
+      "part_of_speech": "noun",
+      "meaning_vi": "giá; giá bán",
+      "definition_en": "The amount of money asked for something being sold.",
+      "collocation": "a reasonable price",
+      "example_en": "The price of this jacket is lower online.",
+      "example_vi": "Giá của chiếc áo khoác này trên mạng thấp hơn.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.possession.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "45bddb173490da62d868572ee1bc077f7f86b943d83fbadfd472aac4df8ebd1e",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "13324337-n",
+          "lemma": "price"
+        }
+      ]
+    },
+    {
+      "id": "cost-01",
+      "word": "cost",
+      "part_of_speech": "noun",
+      "meaning_vi": "chi phí",
+      "definition_en": "The money needed to buy something or pay for an activity.",
+      "collocation": "the total cost",
+      "example_en": "The total cost includes transport and lunch.",
+      "example_vi": "Tổng chi phí bao gồm đi lại và bữa trưa.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.possession.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "45bddb173490da62d868572ee1bc077f7f86b943d83fbadfd472aac4df8ebd1e",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "13296870-n",
+          "lemma": "cost"
+        }
+      ]
+    },
+    {
+      "id": "money-01",
+      "word": "money",
+      "part_of_speech": "noun",
+      "meaning_vi": "tiền",
+      "definition_en": "What people use to pay for goods and services.",
+      "collocation": "save money",
+      "example_en": "I save money each month for a new laptop.",
+      "example_vi": "Tôi tiết kiệm tiền mỗi tháng để mua máy tính xách tay mới.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.possession.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "45bddb173490da62d868572ee1bc077f7f86b943d83fbadfd472aac4df8ebd1e",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "13405730-n",
+          "lemma": "money"
+        }
+      ]
+    },
+    {
+      "id": "bill-01",
+      "word": "bill",
+      "part_of_speech": "noun",
+      "meaning_vi": "hóa đơn thanh toán",
+      "definition_en": "A statement showing how much money you must pay.",
+      "collocation": "pay a bill",
+      "example_en": "We share the electricity bill equally.",
+      "example_vi": "Chúng tôi chia đều tiền hóa đơn điện.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.communication.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "7053932585a7e05d38a2b04139e17800bca7fed8049e1e9f3f8e478a2734c23e",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "06528946-n",
+          "lemma": "bill"
+        }
+      ]
+    },
+    {
+      "id": "budget-01",
+      "word": "budget",
+      "part_of_speech": "noun",
+      "meaning_vi": "ngân sách; khoản tiền dự tính cho một việc",
+      "definition_en": "The amount of money available for a particular purpose.",
+      "collocation": "a monthly budget",
+      "example_en": "Our monthly budget leaves some money for books.",
+      "example_vi": "Ngân sách hằng tháng của chúng tôi có dành một khoản cho sách.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.possession.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "45bddb173490da62d868572ee1bc077f7f86b943d83fbadfd472aac4df8ebd1e",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "13443005-n",
+          "lemma": "budget"
+        }
+      ]
+    },
+    {
+      "id": "habit-01",
+      "word": "habit",
+      "part_of_speech": "noun",
+      "meaning_vi": "thói quen",
+      "definition_en": "Something you do regularly, often without thinking.",
+      "collocation": "a good habit",
+      "example_en": "Reading before bed is a useful habit.",
+      "example_vi": "Đọc sách trước khi ngủ là một thói quen hữu ích.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "e95c87bc234d89a12907b0fea1a7f96c1d0eb6e92d614680095d9447bcb39c7b",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "05676878-n",
+          "lemma": "habit"
+        }
+      ]
+    },
+    {
+      "id": "routine-01",
+      "word": "routine",
+      "part_of_speech": "noun",
+      "meaning_vi": "nếp sinh hoạt; chuỗi việc làm thường xuyên",
+      "definition_en": "The usual series of things you do regularly.",
+      "collocation": "a daily routine",
+      "example_en": "A short walk is part of my daily routine.",
+      "example_vi": "Một buổi đi bộ ngắn là một phần trong nếp sinh hoạt hằng ngày của tôi.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.act.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "c5ea061734ae4687ca1505e32e75f61936ec84c2a05eaa751f451702c8699291",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "01028424-n",
+          "lemma": "routine"
+        }
+      ]
+    },
+    {
+      "id": "journey-01",
+      "word": "journey",
+      "part_of_speech": "noun",
+      "meaning_vi": "chuyến đi; hành trình",
+      "definition_en": "Travel from one place to another.",
+      "collocation": "a long journey",
+      "example_en": "The journey to the village takes two hours.",
+      "example_vi": "Chuyến đi đến ngôi làng mất hai giờ.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.act.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "c5ea061734ae4687ca1505e32e75f61936ec84c2a05eaa751f451702c8699291",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00307252-n",
+          "lemma": "journey"
+        }
+      ]
+    },
+    {
+      "id": "holiday-01",
+      "word": "holiday",
+      "part_of_speech": "noun",
+      "meaning_vi": "kỳ nghỉ",
+      "definition_en": "A period away from work or study for rest or travel.",
+      "collocation": "a summer holiday",
+      "example_en": "We spent our summer holiday by the sea.",
+      "example_vi": "Chúng tôi dành kỳ nghỉ hè ở bên bờ biển.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.time.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "d1bba4e668251c117cd0a9d82e32b74f26d0cb46075ab6f3a4a5b177138570bc",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "15162842-n",
+          "lemma": "holiday"
+        }
+      ],
+      "review_note": "Nghĩa kỳ nghỉ dài được dùng phổ biến ở Anh–Anh; tiếng Anh–Mỹ thường dùng vacation. Holiday trong tiếng Anh–Mỹ cũng thường là ngày lễ. Không chấm các từ đồng nghĩa như biến thể chính tả."
+    },
+    {
+      "id": "weather-01",
+      "word": "weather",
+      "part_of_speech": "noun",
+      "meaning_vi": "thời tiết",
+      "definition_en": "Conditions outside, such as rain, sunshine, and wind.",
+      "collocation": "warm weather",
+      "example_en": "Warm weather makes outdoor exercise more pleasant.",
+      "example_vi": "Thời tiết ấm áp khiến việc tập thể dục ngoài trời dễ chịu hơn.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.phenomenon.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "9cf0fce44885a8a4382424b5068dc9e9c867fa5d88296233a5322360630f80d3",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "11545095-n",
+          "lemma": "weather"
+        }
+      ]
+    },
+    {
+      "id": "season-01",
+      "word": "season",
+      "part_of_speech": "noun",
+      "meaning_vi": "mùa trong năm",
+      "definition_en": "One of the main periods into which a year is divided.",
+      "collocation": "the rainy season",
+      "example_en": "The rainy season usually begins in May here.",
+      "example_vi": "Ở đây mùa mưa thường bắt đầu vào tháng Năm.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.time.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "d1bba4e668251c117cd0a9d82e32b74f26d0cb46075ab6f3a4a5b177138570bc",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "15261272-n",
+          "lemma": "season"
+        }
+      ]
+    },
+    {
+      "id": "temperature-01",
+      "word": "temperature",
+      "part_of_speech": "noun",
+      "meaning_vi": "nhiệt độ",
+      "definition_en": "A measure of how hot or cold something is.",
+      "collocation": "room temperature",
+      "example_en": "The temperature often falls after sunset.",
+      "example_vi": "Nhiệt độ thường giảm sau khi mặt trời lặn.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.attribute.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "d827a1494144bc96ef6e973cac0b2ccc8980d1a192622c44fa46ed08f4db6157",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "05018974-n",
+          "lemma": "temperature"
+        }
+      ]
+    },
+    {
+      "id": "clothes-01",
+      "word": "clothes",
+      "part_of_speech": "noun",
+      "meaning_vi": "quần áo",
+      "definition_en": "Items that people wear on their bodies.",
+      "collocation": "warm clothes",
+      "example_en": "Take warm clothes if you travel to the mountains.",
+      "example_vi": "Hãy mang quần áo ấm nếu bạn đi lên vùng núi.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.artifact.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "29873f01b589096f73d48d73f4e6877ffc6f633e8b025a3806eb1f60a95a6cae",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "02731365-n",
+          "lemma": "clothes"
+        }
+      ]
+    },
+    {
+      "id": "comfortable-01",
+      "word": "comfortable",
+      "part_of_speech": "adjective",
+      "meaning_vi": "thoải mái; dễ chịu",
+      "definition_en": "Making you feel physically relaxed and at ease.",
+      "collocation": "a comfortable chair",
+      "example_en": "This chair is comfortable enough for a long study session.",
+      "example_vi": "Chiếc ghế này đủ thoải mái cho một buổi học dài.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00478809-a",
+          "lemma": "comfortable"
+        }
+      ]
+    },
+    {
+      "id": "healthy-01",
+      "word": "healthy",
+      "part_of_speech": "adjective",
+      "meaning_vi": "khỏe mạnh; có sức khỏe tốt",
+      "definition_en": "In good physical or mental condition.",
+      "collocation": "stay healthy",
+      "example_en": "Regular exercise helps me stay healthy.",
+      "example_vi": "Tập thể dục đều đặn giúp tôi giữ sức khỏe.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "01173787-a",
+          "lemma": "healthy"
+        }
+      ]
+    },
+    {
+      "id": "hungry-01",
+      "word": "hungry",
+      "part_of_speech": "adjective",
+      "meaning_vi": "đói",
+      "definition_en": "Wanting or needing to eat.",
+      "collocation": "feel hungry",
+      "example_en": "I feel hungry after a long swim.",
+      "example_vi": "Tôi thấy đói sau một buổi bơi dài.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "01272183-a",
+          "lemma": "hungry"
+        }
+      ]
+    },
+    {
+      "id": "thirsty-01",
+      "word": "thirsty",
+      "part_of_speech": "adjective",
+      "meaning_vi": "khát nước",
+      "definition_en": "Wanting or needing a drink.",
+      "collocation": "feel thirsty",
+      "example_en": "You may feel thirsty after walking in the sun.",
+      "example_vi": "Bạn có thể thấy khát sau khi đi bộ dưới trời nắng.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "01273114-a",
+          "lemma": "thirsty"
+        }
+      ]
+    },
+    {
+      "id": "tired-01",
+      "word": "tired",
+      "part_of_speech": "adjective",
+      "meaning_vi": "mệt mỏi",
+      "definition_en": "Needing rest because you have little energy.",
+      "collocation": "feel tired",
+      "example_en": "I feel tired when I do not get enough sleep.",
+      "example_vi": "Tôi cảm thấy mệt khi không ngủ đủ giấc.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "02440540-a",
+          "lemma": "tired"
+        }
+      ]
+    },
+    {
+      "id": "busy-01",
+      "word": "busy",
+      "part_of_speech": "adjective",
+      "meaning_vi": "bận rộn",
+      "definition_en": "Having many things to do.",
+      "collocation": "a busy day",
+      "example_en": "Monday is usually a busy day at the shop.",
+      "example_vi": "Thứ Hai thường là một ngày bận rộn ở cửa hàng.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00293803-a",
+          "lemma": "busy"
+        }
+      ]
+    },
+    {
+      "id": "ready-01",
+      "word": "ready",
+      "part_of_speech": "adjective",
+      "meaning_vi": "sẵn sàng",
+      "definition_en": "Prepared to do something or be used.",
+      "collocation": "ready to leave",
+      "example_en": "We are ready to leave for the station.",
+      "example_vi": "Chúng tôi đã sẵn sàng lên đường đến nhà ga.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "01936911-a",
+          "lemma": "ready"
+        }
+      ]
+    },
+    {
+      "id": "early-01",
+      "word": "early",
+      "part_of_speech": "adjective",
+      "meaning_vi": "sớm",
+      "definition_en": "Happening before the usual or expected time.",
+      "collocation": "an early start",
+      "example_en": "An early start gives us more time to explore.",
+      "example_vi": "Khởi hành sớm giúp chúng tôi có thêm thời gian khám phá.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00816521-a",
+          "lemma": "early"
+        }
+      ]
+    },
+    {
+      "id": "late-01",
+      "word": "late",
+      "part_of_speech": "adjective",
+      "meaning_vi": "muộn; trễ",
+      "definition_en": "Happening or arriving after the expected time.",
+      "collocation": "late for class",
+      "example_en": "I was late for class because the bus broke down.",
+      "example_vi": "Tôi đến lớp muộn vì xe buýt bị hỏng.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "01907298-s",
+          "lemma": "late"
+        }
+      ]
+    },
+    {
+      "id": "important-01",
+      "word": "important",
+      "part_of_speech": "adjective",
+      "meaning_vi": "quan trọng",
+      "definition_en": "Having a strong effect on something or deserving attention.",
+      "collocation": "an important decision",
+      "example_en": "Sleep is important for learning and memory.",
+      "example_vi": "Giấc ngủ quan trọng đối với việc học và trí nhớ.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "01278672-a",
+          "lemma": "important"
+        }
+      ]
+    },
+    {
+      "id": "different-01",
+      "word": "different",
+      "part_of_speech": "adjective",
+      "meaning_vi": "khác; khác nhau",
+      "definition_en": "Not the same as another person or thing.",
+      "collocation": "a different approach",
+      "example_en": "We tried a different approach to the problem.",
+      "example_vi": "Chúng tôi thử một cách tiếp cận khác đối với vấn đề.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "02077434-s",
+          "lemma": "different"
+        }
+      ]
+    },
+    {
+      "id": "similar-01",
+      "word": "similar",
+      "part_of_speech": "adjective",
+      "meaning_vi": "tương tự; giống nhau ở một số điểm",
+      "definition_en": "Having some features that are alike.",
+      "collocation": "similar ideas",
+      "example_en": "The two students have similar ideas about the topic.",
+      "example_vi": "Hai học sinh có những ý tưởng tương tự nhau về chủ đề này.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "02078824-a",
+          "lemma": "similar"
+        }
+      ]
+    },
+    {
+      "id": "possible-01",
+      "word": "possible",
+      "part_of_speech": "adjective",
+      "meaning_vi": "có thể xảy ra hoặc thực hiện được",
+      "definition_en": "Able to happen or be done.",
+      "collocation": "a possible solution",
+      "example_en": "A shorter route is possible if the bridge is open.",
+      "example_vi": "Có thể đi tuyến đường ngắn hơn nếu cây cầu mở cửa.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "01826770-a",
+          "lemma": "possible"
+        }
+      ]
+    },
+    {
+      "id": "necessary-01",
+      "word": "necessary",
+      "part_of_speech": "adjective",
+      "meaning_vi": "cần thiết",
+      "definition_en": "Needed for a particular purpose or situation.",
+      "collocation": "necessary equipment",
+      "example_en": "A clear plan is necessary for a project this large.",
+      "example_vi": "Một kế hoạch rõ ràng là cần thiết cho dự án lớn như thế này.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "01584458-a",
+          "lemma": "necessary"
+        }
+      ]
+    },
+    {
+      "id": "useful-01",
+      "word": "useful",
+      "part_of_speech": "adjective",
+      "meaning_vi": "hữu ích",
+      "definition_en": "Helping you do or achieve something.",
+      "collocation": "useful advice",
+      "example_en": "This notebook is useful for recording new words.",
+      "example_vi": "Cuốn sổ này hữu ích cho việc ghi lại từ mới.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "02505612-a",
+          "lemma": "useful"
+        }
+      ]
+    },
+    {
+      "id": "difficult-01",
+      "word": "difficult",
+      "part_of_speech": "adjective",
+      "meaning_vi": "khó",
+      "definition_en": "Needing considerable effort or skill.",
+      "collocation": "a difficult question",
+      "example_en": "The final question was difficult for most students.",
+      "example_vi": "Câu hỏi cuối khó đối với phần lớn học sinh.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00748528-a",
+          "lemma": "difficult"
+        }
+      ]
+    },
+    {
+      "id": "easy-01",
+      "word": "easy",
+      "part_of_speech": "adjective",
+      "meaning_vi": "dễ",
+      "definition_en": "Requiring little effort or skill.",
+      "collocation": "an easy task",
+      "example_en": "The instructions are easy to follow.",
+      "example_vi": "Những hướng dẫn này dễ làm theo.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00752852-a",
+          "lemma": "easy"
+        }
+      ]
+    },
+    {
+      "id": "careful-01",
+      "word": "careful",
+      "part_of_speech": "adjective",
+      "meaning_vi": "cẩn thận",
+      "definition_en": "Taking care to avoid mistakes, harm, or problems.",
+      "collocation": "a careful choice",
+      "example_en": "Be careful when you copy a long number.",
+      "example_vi": "Hãy cẩn thận khi chép một dãy số dài.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00309819-a",
+          "lemma": "careful"
+        }
+      ]
+    },
+    {
+      "id": "common-01",
+      "word": "common",
+      "part_of_speech": "adjective",
+      "meaning_vi": "phổ biến; thường gặp",
+      "definition_en": "Found or happening in many places or situations.",
+      "collocation": "a common mistake",
+      "example_en": "Missing a final letter is a common spelling mistake.",
+      "example_vi": "Thiếu một chữ cái cuối là lỗi chính tả thường gặp.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00973799-s",
+          "lemma": "common"
+        }
+      ]
+    },
+    {
+      "id": "local-01",
+      "word": "local",
+      "part_of_speech": "adjective",
+      "meaning_vi": "thuộc địa phương; ở gần nơi đang nói đến",
+      "definition_en": "Connected with a particular nearby area.",
+      "collocation": "a local library",
+      "example_en": "Our local library offers free reading activities.",
+      "example_vi": "Thư viện địa phương của chúng tôi tổ chức các hoạt động đọc sách miễn phí.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.pert.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "8f20c40d08855ef1193146c9f8cf6762e2a2e7ed878823ed8367da48732f19bc",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "02767118-a",
+          "lemma": "local"
+        }
+      ]
+    },
+    {
+      "id": "public-01",
+      "word": "public",
+      "part_of_speech": "adjective",
+      "meaning_vi": "công cộng; dành cho mọi người",
+      "definition_en": "Available for people in general to use.",
+      "collocation": "public transport",
+      "example_en": "Good public transport makes a city easier to explore.",
+      "example_vi": "Giao thông công cộng tốt giúp việc khám phá thành phố dễ dàng hơn.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "01867145-a",
+          "lemma": "public"
+        }
+      ]
+    },
+    {
+      "id": "private-01",
+      "word": "private",
+      "part_of_speech": "adjective",
+      "meaning_vi": "riêng tư; dành riêng cho một người hoặc nhóm",
+      "definition_en": "Intended for a particular person or group rather than everyone.",
+      "collocation": "a private conversation",
+      "example_en": "We need a quiet room for a private conversation.",
+      "example_vi": "Chúng tôi cần một căn phòng yên tĩnh để trò chuyện riêng.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "01864034-a",
+          "lemma": "private"
+        }
+      ]
+    },
+    {
+      "id": "available-01",
+      "word": "available",
+      "part_of_speech": "adjective",
+      "meaning_vi": "có sẵn; có thể dùng hoặc lấy được",
+      "definition_en": "Ready to be obtained or used.",
+      "collocation": "available online",
+      "example_en": "The course materials are available online.",
+      "example_vi": "Tài liệu khóa học có sẵn trên mạng.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00184353-a",
+          "lemma": "available"
+        }
+      ]
+    },
+    {
+      "id": "learn-01",
+      "word": "learn",
+      "part_of_speech": "verb",
+      "meaning_vi": "học; tiếp thu kiến thức hoặc kỹ năng",
+      "definition_en": "To gain knowledge or ability through study or experience.",
+      "collocation": "learn a language",
+      "example_en": "I want to learn a new word every day.",
+      "example_vi": "Tôi muốn học một từ mới mỗi ngày.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "f8908eedf07920a8489aa2462ce2ec7a83c0ecff1fb48f4456aec100f8c97d37",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00599310-v",
+          "lemma": "learn"
+        }
+      ]
+    },
+    {
+      "id": "study-01",
+      "word": "study",
+      "part_of_speech": "verb",
+      "meaning_vi": "học; nghiên cứu một môn học",
+      "definition_en": "To spend time learning about a subject.",
+      "collocation": "study English",
+      "example_en": "We study English together twice a week.",
+      "example_vi": "Chúng tôi học tiếng Anh cùng nhau hai lần mỗi tuần.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "f8908eedf07920a8489aa2462ce2ec7a83c0ecff1fb48f4456aec100f8c97d37",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00601387-v",
+          "lemma": "study"
+        }
+      ]
+    },
+    {
+      "id": "read-01",
+      "word": "read",
+      "part_of_speech": "verb",
+      "meaning_vi": "đọc",
+      "definition_en": "To understand the meaning of written words.",
+      "collocation": "read a book",
+      "example_en": "I read a short article before breakfast.",
+      "example_vi": "Tôi đọc một bài báo ngắn trước bữa sáng.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "f8908eedf07920a8489aa2462ce2ec7a83c0ecff1fb48f4456aec100f8c97d37",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00626756-v",
+          "lemma": "read"
+        }
+      ]
+    },
+    {
+      "id": "write-01",
+      "word": "write",
+      "part_of_speech": "verb",
+      "meaning_vi": "viết",
+      "definition_en": "To form words or produce text.",
+      "collocation": "write a sentence",
+      "example_en": "Please write your answer in a complete sentence.",
+      "example_vi": "Hãy viết câu trả lời của bạn thành một câu hoàn chỉnh.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.communication.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "04a1531082705497ab51316d54dec360273ea896b195dfd2143b99d08d327541",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00995046-v",
+          "lemma": "write"
+        }
+      ]
+    },
+    {
+      "id": "speak-01",
+      "word": "speak",
+      "part_of_speech": "verb",
+      "meaning_vi": "nói",
+      "definition_en": "To use your voice to communicate words.",
+      "collocation": "speak clearly",
+      "example_en": "Try to speak clearly during the interview.",
+      "example_vi": "Hãy cố gắng nói rõ ràng trong buổi phỏng vấn.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.communication.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "04a1531082705497ab51316d54dec360273ea896b195dfd2143b99d08d327541",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00944022-v",
+          "lemma": "speak"
+        }
+      ]
+    },
+    {
+      "id": "listen-01",
+      "word": "listen",
+      "part_of_speech": "verb",
+      "meaning_vi": "lắng nghe",
+      "definition_en": "To pay attention to sounds or to someone speaking.",
+      "collocation": "listen carefully",
+      "example_en": "I listen to a short podcast on the bus.",
+      "example_vi": "Tôi nghe một tập podcast ngắn trên xe buýt.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.perception.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "405bc502fd98b268d8c9326567b7935f246415e29fb47c522140892a674a82d3",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "02174335-v",
+          "lemma": "listen"
+        }
+      ]
+    },
+    {
+      "id": "remember-01",
+      "word": "remember",
+      "part_of_speech": "verb",
+      "meaning_vi": "nhớ",
+      "definition_en": "To keep or bring information back into your mind.",
+      "collocation": "remember a name",
+      "example_en": "Pictures help me remember new words.",
+      "example_vi": "Hình ảnh giúp tôi nhớ từ mới.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "f8908eedf07920a8489aa2462ce2ec7a83c0ecff1fb48f4456aec100f8c97d37",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00609334-v",
+          "lemma": "remember"
+        }
+      ]
+    },
+    {
+      "id": "forget-01",
+      "word": "forget",
+      "part_of_speech": "verb",
+      "meaning_vi": "quên",
+      "definition_en": "To be unable to recall something or fail to remember to do it.",
+      "collocation": "forget a password",
+      "example_en": "I sometimes forget a word when I feel nervous.",
+      "example_vi": "Đôi khi tôi quên một từ khi cảm thấy căng thẳng.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "f8908eedf07920a8489aa2462ce2ec7a83c0ecff1fb48f4456aec100f8c97d37",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00610654-v",
+          "lemma": "forget"
+        }
+      ]
+    },
+    {
+      "id": "understand-01",
+      "word": "understand",
+      "part_of_speech": "verb",
+      "meaning_vi": "hiểu",
+      "definition_en": "To know the meaning of something or how it works.",
+      "collocation": "understand a question",
+      "example_en": "I understand the main idea of this paragraph.",
+      "example_vi": "Tôi hiểu ý chính của đoạn văn này.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "f8908eedf07920a8489aa2462ce2ec7a83c0ecff1fb48f4456aec100f8c97d37",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00590283-v",
+          "lemma": "understand"
+        }
+      ]
+    },
+    {
+      "id": "explain-01",
+      "word": "explain",
+      "part_of_speech": "verb",
+      "meaning_vi": "giải thích",
+      "definition_en": "To make an idea or situation clear to someone.",
+      "collocation": "explain a rule",
+      "example_en": "Can you explain this rule with a simple example?",
+      "example_vi": "Bạn có thể giải thích quy tắc này bằng một ví dụ đơn giản không?",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.communication.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "04a1531082705497ab51316d54dec360273ea896b195dfd2143b99d08d327541",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00941308-v",
+          "lemma": "explain"
+        }
+      ]
+    },
+    {
+      "id": "describe-01",
+      "word": "describe",
+      "part_of_speech": "verb",
+      "meaning_vi": "miêu tả; mô tả",
+      "definition_en": "To say what someone or something is like.",
+      "collocation": "describe a place",
+      "example_en": "Please describe the place where you grew up.",
+      "example_vi": "Hãy miêu tả nơi bạn lớn lên.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.communication.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "04a1531082705497ab51316d54dec360273ea896b195dfd2143b99d08d327541",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00967067-v",
+          "lemma": "describe"
+        }
+      ]
+    },
+    {
+      "id": "compare-01",
+      "word": "compare",
+      "part_of_speech": "verb",
+      "meaning_vi": "so sánh",
+      "definition_en": "To examine things to find similarities and differences.",
+      "collocation": "compare results",
+      "example_en": "We compare our answers after the exercise.",
+      "example_vi": "Chúng tôi so sánh câu trả lời sau bài tập.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "f8908eedf07920a8489aa2462ce2ec7a83c0ecff1fb48f4456aec100f8c97d37",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00654571-v",
+          "lemma": "compare"
+        }
+      ]
+    },
+    {
+      "id": "choose-01",
+      "word": "choose",
+      "part_of_speech": "verb",
+      "meaning_vi": "chọn; lựa chọn",
+      "definition_en": "To decide which person or thing you want.",
+      "collocation": "choose a topic",
+      "example_en": "You can choose a topic that interests you.",
+      "example_vi": "Bạn có thể chọn một chủ đề mình quan tâm.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "f8908eedf07920a8489aa2462ce2ec7a83c0ecff1fb48f4456aec100f8c97d37",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00676526-v",
+          "lemma": "choose"
+        }
+      ]
+    },
+    {
+      "id": "decide-01",
+      "word": "decide",
+      "part_of_speech": "verb",
+      "meaning_vi": "quyết định",
+      "definition_en": "To make a choice after thinking about something.",
+      "collocation": "decide what to do",
+      "example_en": "We need to decide how to divide the work.",
+      "example_vi": "Chúng tôi cần quyết định cách phân chia công việc.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "f8908eedf07920a8489aa2462ce2ec7a83c0ecff1fb48f4456aec100f8c97d37",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00699355-v",
+          "lemma": "decide"
+        }
+      ]
+    },
+    {
+      "id": "plan-01",
+      "word": "plan",
+      "part_of_speech": "verb",
+      "meaning_vi": "lên kế hoạch",
+      "definition_en": "To decide in advance what to do and how to do it.",
+      "collocation": "plan a trip",
+      "example_en": "We plan our study sessions at the start of each week.",
+      "example_vi": "Chúng tôi lên kế hoạch cho các buổi học vào đầu mỗi tuần.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.creation.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "50824d97ffdcecae07f9269f6422f3b781d3a97fb28ec668da0a4a8865dbcd56",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "01641910-v",
+          "lemma": "plan"
+        }
+      ]
+    },
+    {
+      "id": "prepare-01",
+      "word": "prepare",
+      "part_of_speech": "verb",
+      "meaning_vi": "chuẩn bị",
+      "definition_en": "To make someone or something ready for a future event.",
+      "collocation": "prepare for an exam",
+      "example_en": "I prepare for each lesson by reading the notes.",
+      "example_vi": "Tôi chuẩn bị cho mỗi buổi học bằng cách đọc ghi chú.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.change.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "126bb92adc1be69c4cf33e9ac1a5a492f6785971d23c527f5d8e0db51a980702",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00407168-v",
+          "lemma": "prepare"
+        }
+      ]
+    },
+    {
+      "id": "practise-01",
+      "word": "practise",
+      "part_of_speech": "verb",
+      "meaning_vi": "luyện tập; thực hành",
+      "definition_en": "To do an activity repeatedly to improve your ability.",
+      "collocation": "practise speaking",
+      "example_en": "We practise speaking English for ten minutes each day.",
+      "example_vi": "Chúng tôi luyện nói tiếng Anh mười phút mỗi ngày.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "f8908eedf07920a8489aa2462ce2ec7a83c0ecff1fb48f4456aec100f8c97d37",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00607488-v",
+          "lemma": "practise"
+        }
+      ]
+    },
+    {
+      "id": "repeat-01",
+      "word": "repeat",
+      "part_of_speech": "verb",
+      "meaning_vi": "lặp lại; nói hoặc làm lại",
+      "definition_en": "To say or do something again.",
+      "collocation": "repeat a sentence",
+      "example_en": "Please repeat the sentence a little more slowly.",
+      "example_vi": "Hãy nhắc lại câu đó chậm hơn một chút.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.communication.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "04a1531082705497ab51316d54dec360273ea896b195dfd2143b99d08d327541",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00960366-v",
+          "lemma": "repeat"
+        }
+      ]
+    },
+    {
+      "id": "check-01",
+      "word": "check",
+      "part_of_speech": "verb",
+      "meaning_vi": "kiểm tra",
+      "definition_en": "To examine something to see whether it is correct or suitable.",
+      "collocation": "check an answer",
+      "example_en": "Always check your answer before you move on.",
+      "example_vi": "Hãy luôn kiểm tra câu trả lời trước khi chuyển sang câu tiếp theo.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "f8908eedf07920a8489aa2462ce2ec7a83c0ecff1fb48f4456aec100f8c97d37",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00663742-v",
+          "lemma": "check"
+        }
+      ]
+    },
+    {
+      "id": "correct-01",
+      "word": "correct",
+      "part_of_speech": "verb",
+      "meaning_vi": "sửa cho đúng; sửa lỗi",
+      "definition_en": "To remove mistakes or put something right.",
+      "collocation": "correct a mistake",
+      "example_en": "Please correct any mistakes in this paragraph.",
+      "example_vi": "Hãy sửa mọi lỗi trong đoạn văn này.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.change.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "126bb92adc1be69c4cf33e9ac1a5a492f6785971d23c527f5d8e0db51a980702",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00200023-v",
+          "lemma": "correct"
+        }
+      ]
+    },
+    {
+      "id": "question-01",
+      "word": "question",
+      "part_of_speech": "noun",
+      "meaning_vi": "câu hỏi",
+      "definition_en": "Something said or written to ask for information.",
+      "collocation": "ask a question",
+      "example_en": "I have a question about the homework.",
+      "example_vi": "Tôi có một câu hỏi về bài tập về nhà.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.communication.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "7053932585a7e05d38a2b04139e17800bca7fed8049e1e9f3f8e478a2734c23e",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "07211342-n",
+          "lemma": "question"
+        }
+      ]
+    },
+    {
+      "id": "answer-01",
+      "word": "answer",
+      "part_of_speech": "noun",
+      "meaning_vi": "câu trả lời",
+      "definition_en": "What you say or write in response to a question.",
+      "collocation": "the correct answer",
+      "example_en": "Her answer includes a clear example.",
+      "example_vi": "Câu trả lời của cô ấy có một ví dụ rõ ràng.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.communication.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "7053932585a7e05d38a2b04139e17800bca7fed8049e1e9f3f8e478a2734c23e",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "06758700-n",
+          "lemma": "answer"
+        }
+      ]
+    },
+    {
+      "id": "reason-01",
+      "word": "reason",
+      "part_of_speech": "noun",
+      "meaning_vi": "lý do",
+      "definition_en": "Something that explains why an event happens or a person acts.",
+      "collocation": "a good reason",
+      "example_en": "Give one reason for your choice.",
+      "example_vi": "Hãy nêu một lý do cho lựa chọn của bạn.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.motive.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "dfd14947d951ae0979831bae3ee623cc149bcccec8b2da3dd1cf703b148ad707",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "09201896-n",
+          "lemma": "reason"
+        }
+      ]
+    },
+    {
+      "id": "example-01",
+      "word": "example",
+      "part_of_speech": "noun",
+      "meaning_vi": "ví dụ",
+      "definition_en": "A case used to explain or show an idea.",
+      "collocation": "a simple example",
+      "example_en": "This example shows how to use the word in a sentence.",
+      "example_vi": "Ví dụ này cho thấy cách dùng từ trong câu.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "e95c87bc234d89a12907b0fea1a7f96c1d0eb6e92d614680095d9447bcb39c7b",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "05828980-n",
+          "lemma": "example"
+        }
+      ]
+    },
+    {
+      "id": "information-01",
+      "word": "information",
+      "part_of_speech": "noun",
+      "meaning_vi": "thông tin",
+      "definition_en": "Facts or details about someone or something.",
+      "collocation": "useful information",
+      "example_en": "The school website has information about the course.",
+      "example_vi": "Trang web của trường có thông tin về khóa học.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "e95c87bc234d89a12907b0fea1a7f96c1d0eb6e92d614680095d9447bcb39c7b",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "05824413-n",
+          "lemma": "information"
+        }
+      ]
+    },
+    {
+      "id": "knowledge-01",
+      "word": "knowledge",
+      "part_of_speech": "noun",
+      "meaning_vi": "kiến thức; sự hiểu biết",
+      "definition_en": "What you know about a subject through learning or experience.",
+      "collocation": "general knowledge",
+      "example_en": "Reading widely can improve your general knowledge.",
+      "example_vi": "Đọc nhiều thể loại có thể nâng cao kiến thức tổng quát của bạn.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.Tops.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "2a082f37969c4ae0ef3590b31f73c05d915aba7ffdc1242e54a061bf8f9a9301",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00023451-n",
+          "lemma": "knowledge"
+        }
+      ]
+    },
+    {
+      "id": "skill-01",
+      "word": "skill",
+      "part_of_speech": "noun",
+      "meaning_vi": "kỹ năng",
+      "definition_en": "An ability developed through learning and practice.",
+      "collocation": "a useful skill",
+      "example_en": "Listening carefully is an important communication skill.",
+      "example_vi": "Lắng nghe cẩn thận là một kỹ năng giao tiếp quan trọng.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "e95c87bc234d89a12907b0fea1a7f96c1d0eb6e92d614680095d9447bcb39c7b",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "05645403-n",
+          "lemma": "skill"
+        }
+      ]
+    },
+    {
+      "id": "experience-01",
+      "word": "experience",
+      "part_of_speech": "noun",
+      "meaning_vi": "kinh nghiệm",
+      "definition_en": "Practical understanding gained by doing things.",
+      "collocation": "work experience",
+      "example_en": "She has experience of teaching young children.",
+      "example_vi": "Cô ấy có kinh nghiệm dạy trẻ nhỏ.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "e95c87bc234d89a12907b0fea1a7f96c1d0eb6e92d614680095d9447bcb39c7b",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "05766056-n",
+          "lemma": "experience"
+        }
+      ]
+    },
+    {
+      "id": "attention-01",
+      "word": "attention",
+      "part_of_speech": "noun",
+      "meaning_vi": "sự chú ý",
+      "definition_en": "The act of focusing your mind on something.",
+      "collocation": "pay attention",
+      "example_en": "Please pay attention to the ending of each word.",
+      "example_vi": "Hãy chú ý đến phần cuối của mỗi từ.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "e95c87bc234d89a12907b0fea1a7f96c1d0eb6e92d614680095d9447bcb39c7b",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "05710222-n",
+          "lemma": "attention"
+        }
+      ]
+    },
+    {
+      "id": "effort-01",
+      "word": "effort",
+      "part_of_speech": "noun",
+      "meaning_vi": "nỗ lực; công sức",
+      "definition_en": "The energy you use when trying to do something.",
+      "collocation": "make an effort",
+      "example_en": "Learning a language takes time and effort.",
+      "example_vi": "Học một ngôn ngữ cần thời gian và công sức.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.act.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "c5ea061734ae4687ca1505e32e75f61936ec84c2a05eaa751f451702c8699291",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00622867-n",
+          "lemma": "effort"
+        }
+      ]
+    },
+    {
+      "id": "progress-01",
+      "word": "progress",
+      "part_of_speech": "noun",
+      "meaning_vi": "sự tiến bộ",
+      "definition_en": "Improvement or movement towards a goal.",
+      "collocation": "make progress",
+      "example_en": "Short daily lessons help me make steady progress.",
+      "example_vi": "Những buổi học ngắn mỗi ngày giúp tôi tiến bộ đều đặn.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.act.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "c5ea061734ae4687ca1505e32e75f61936ec84c2a05eaa751f451702c8699291",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00250368-n",
+          "lemma": "progress"
+        }
+      ]
+    },
+    {
+      "id": "purpose-01",
+      "word": "purpose",
+      "part_of_speech": "noun",
+      "meaning_vi": "mục đích",
+      "definition_en": "The aim or reason for doing something.",
+      "collocation": "the main purpose",
+      "example_en": "The purpose of this activity is to build confidence.",
+      "example_vi": "Mục đích của hoạt động này là xây dựng sự tự tin.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "e95c87bc234d89a12907b0fea1a7f96c1d0eb6e92d614680095d9447bcb39c7b",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "05991037-n",
+          "lemma": "purpose"
+        }
+      ]
+    },
+    {
+      "id": "result-01",
+      "word": "result",
+      "part_of_speech": "noun",
+      "meaning_vi": "kết quả",
+      "definition_en": "Something that happens because of an action or process.",
+      "collocation": "a positive result",
+      "example_en": "The result of the test shows which topics need more practice.",
+      "example_vi": "Kết quả bài kiểm tra cho biết những chủ đề cần luyện tập thêm.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.event.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "c56af56ed053eebaa915332a163b7eafd4f78a4bb653b6a855b90aaddf239ea3",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "07307418-n",
+          "lemma": "result"
+        }
+      ]
+    },
+    {
+      "id": "change-01",
+      "word": "change",
+      "part_of_speech": "noun",
+      "meaning_vi": "sự thay đổi",
+      "definition_en": "A difference from an earlier state or situation.",
+      "collocation": "a small change",
+      "example_en": "A small change to my routine helped me study more often.",
+      "example_vi": "Một thay đổi nhỏ trong nếp sinh hoạt giúp tôi học thường xuyên hơn.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.act.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "c5ea061734ae4687ca1505e32e75f61936ec84c2a05eaa751f451702c8699291",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00191991-n",
+          "lemma": "change"
+        }
+      ]
+    },
+    {
+      "id": "problem-01",
+      "word": "problem",
+      "part_of_speech": "noun",
+      "meaning_vi": "vấn đề; điều khó cần giải quyết",
+      "definition_en": "A difficulty that needs attention or a solution.",
+      "collocation": "solve a problem",
+      "example_en": "We discussed the problem before looking for a solution.",
+      "example_vi": "Chúng tôi thảo luận vấn đề trước khi tìm giải pháp.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.state.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "3cb8cebbf3f812229c085d3f61608c3cca4e97a5c69e9bebb9c3e546a8411312",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "14434009-n",
+          "lemma": "problem"
+        }
+      ]
+    },
+    {
+      "id": "solution-01",
+      "word": "solution",
+      "part_of_speech": "noun",
+      "meaning_vi": "giải pháp; cách giải quyết",
+      "definition_en": "A way to deal with a problem successfully.",
+      "collocation": "find a solution",
+      "example_en": "The group found a simple solution to the problem.",
+      "example_vi": "Nhóm đã tìm ra một giải pháp đơn giản cho vấn đề.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "e95c87bc234d89a12907b0fea1a7f96c1d0eb6e92d614680095d9447bcb39c7b",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "05669513-n",
+          "lemma": "solution"
+        }
+      ]
+    },
+    {
+      "id": "choice-01",
+      "word": "choice",
+      "part_of_speech": "noun",
+      "meaning_vi": "sự lựa chọn; lựa chọn được đưa ra",
+      "definition_en": "An act of selecting between possibilities, or what is selected.",
+      "collocation": "make a choice",
+      "example_en": "You have a choice between two essay topics.",
+      "example_vi": "Bạn được lựa chọn giữa hai chủ đề bài luận.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.act.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "c5ea061734ae4687ca1505e32e75f61936ec84c2a05eaa751f451702c8699291",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00162063-n",
+          "lemma": "choice"
+        }
+      ]
+    },
+    {
+      "id": "decision-01",
+      "word": "decision",
+      "part_of_speech": "noun",
+      "meaning_vi": "quyết định",
+      "definition_en": "A choice made after thinking about something.",
+      "collocation": "make a decision",
+      "example_en": "We made a decision after listening to everyone.",
+      "example_vi": "Chúng tôi đưa ra quyết định sau khi lắng nghe mọi người.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "e95c87bc234d89a12907b0fea1a7f96c1d0eb6e92d614680095d9447bcb39c7b",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "05846685-n",
+          "lemma": "decision"
+        }
+      ]
+    },
+    {
+      "id": "opinion-01",
+      "word": "opinion",
+      "part_of_speech": "noun",
+      "meaning_vi": "ý kiến; quan điểm",
+      "definition_en": "What someone thinks or believes about a subject.",
+      "collocation": "express an opinion",
+      "example_en": "In my opinion, students need more time for reading.",
+      "example_vi": "Theo tôi, học sinh cần thêm thời gian để đọc sách.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "e95c87bc234d89a12907b0fea1a7f96c1d0eb6e92d614680095d9447bcb39c7b",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "05954491-n",
+          "lemma": "opinion"
+        }
+      ]
+    },
+    {
+      "id": "advice-01",
+      "word": "advice",
+      "part_of_speech": "noun",
+      "meaning_vi": "lời khuyên",
+      "definition_en": "Suggestions about what someone should do.",
+      "collocation": "give advice",
+      "example_en": "My teacher gave me useful advice about revision.",
+      "example_vi": "Giáo viên cho tôi lời khuyên hữu ích về việc ôn tập.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.communication.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "7053932585a7e05d38a2b04139e17800bca7fed8049e1e9f3f8e478a2734c23e",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "06684229-n",
+          "lemma": "advice"
+        }
+      ]
+    },
+    {
+      "id": "support-01",
+      "word": "support",
+      "part_of_speech": "verb",
+      "meaning_vi": "hỗ trợ; giúp đỡ",
+      "definition_en": "To help someone with practical needs or encouragement.",
+      "collocation": "support a friend",
+      "example_en": "We support each other when the course gets difficult.",
+      "example_vi": "Chúng tôi hỗ trợ lẫn nhau khi khóa học trở nên khó.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.social.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "d0bc7620c30305592d0f8cf77e4119ab1cf12fcee93f4269341df017acdb4895",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "02561834-v",
+          "lemma": "support"
+        }
+      ]
+    },
+    {
+      "id": "share-01",
+      "word": "share",
+      "part_of_speech": "verb",
+      "meaning_vi": "chia sẻ (ý tưởng, thông tin)",
+      "definition_en": "To tell other people about your ideas, feelings or knowledge.",
+      "collocation": "share ideas",
+      "example_en": "We share ideas before writing our reports.",
+      "example_vi": "Chúng tôi chia sẻ ý tưởng trước khi viết báo cáo.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.communication.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "04a1531082705497ab51316d54dec360273ea896b195dfd2143b99d08d327541",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "01065952-v",
+          "lemma": "share"
+        }
+      ]
+    },
+    {
+      "id": "join-01",
+      "word": "join",
+      "part_of_speech": "verb",
+      "meaning_vi": "tham gia; gia nhập",
+      "definition_en": "To become part of a group or take part in an activity.",
+      "collocation": "join a club",
+      "example_en": "You can join our reading club at any time.",
+      "example_vi": "Bạn có thể tham gia câu lạc bộ đọc sách của chúng tôi bất cứ lúc nào.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.social.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "d0bc7620c30305592d0f8cf77e4119ab1cf12fcee93f4269341df017acdb4895",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "02439823-v",
+          "lemma": "join"
+        }
+      ]
+    },
+    {
+      "id": "include-01",
+      "word": "include",
+      "part_of_speech": "verb",
+      "meaning_vi": "bao gồm",
+      "definition_en": "To have someone or something as one of the parts.",
+      "collocation": "include examples",
+      "example_en": "Please include two examples in your answer.",
+      "example_vi": "Hãy đưa hai ví dụ vào câu trả lời của bạn.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.change.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "126bb92adc1be69c4cf33e9ac1a5a492f6785971d23c527f5d8e0db51a980702",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00184024-v",
+          "lemma": "include"
+        }
+      ]
+    },
+    {
+      "id": "require-01",
+      "word": "require",
+      "part_of_speech": "verb",
+      "meaning_vi": "cần; đòi hỏi",
+      "definition_en": "To need something or make it necessary.",
+      "collocation": "require attention",
+      "example_en": "Some questions require a longer explanation.",
+      "example_vi": "Một số câu hỏi cần được giải thích dài hơn.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.consumption.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "005042d49b86fd740ec776144b9bfff4e5236c4f856bc89d2cd8b810d0755b07",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "01191258-v",
+          "lemma": "require"
+        }
+      ]
+    },
+    {
+      "id": "provide-01",
+      "word": "provide",
+      "part_of_speech": "verb",
+      "meaning_vi": "cung cấp",
+      "definition_en": "To give someone something they need or make it available.",
+      "collocation": "provide information",
+      "example_en": "The notes provide useful information about the topic.",
+      "example_vi": "Những ghi chú cung cấp thông tin hữu ích về chủ đề.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.possession.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "8a614afadc3f2f8ca7fa62447e60a583e901fbf54caf6c96c3d43e7d5ea2a861",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "02332196-v",
+          "lemma": "provide"
+        }
+      ]
+    },
+    {
+      "id": "create-01",
+      "word": "create",
+      "part_of_speech": "verb",
+      "meaning_vi": "tạo ra",
+      "definition_en": "To make something new.",
+      "collocation": "create a plan",
+      "example_en": "We create a short quiz at the end of each lesson.",
+      "example_vi": "Chúng tôi tạo một bài đố ngắn vào cuối mỗi buổi học.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.creation.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "50824d97ffdcecae07f9269f6422f3b781d3a97fb28ec668da0a4a8865dbcd56",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "01757596-v",
+          "lemma": "create"
+        }
+      ]
+    },
+    {
+      "id": "discover-01",
+      "word": "discover",
+      "part_of_speech": "verb",
+      "meaning_vi": "khám phá; tìm ra",
+      "definition_en": "To find something or become aware of it for the first time.",
+      "collocation": "discover a method",
+      "example_en": "You may discover a better way to remember difficult words.",
+      "example_vi": "Bạn có thể tìm ra một cách tốt hơn để nhớ những từ khó.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.perception.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "405bc502fd98b268d8c9326567b7935f246415e29fb47c522140892a674a82d3",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "02158938-v",
+          "lemma": "discover"
+        }
+      ]
+    },
+    {
+      "id": "consider-01",
+      "word": "consider",
+      "part_of_speech": "verb",
+      "meaning_vi": "cân nhắc; xem xét",
+      "definition_en": "To think carefully about something before deciding.",
+      "collocation": "consider an option",
+      "example_en": "Consider both sides before you give your opinion.",
+      "example_vi": "Hãy xem xét cả hai phía trước khi đưa ra ý kiến.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.communication.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "04a1531082705497ab51316d54dec360273ea896b195dfd2143b99d08d327541",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00814706-v",
+          "lemma": "consider"
+        }
+      ]
+    },
+    {
+      "id": "prefer-01",
+      "word": "prefer",
+      "part_of_speech": "verb",
+      "meaning_vi": "thích hơn",
+      "definition_en": "To like one thing more than another.",
+      "collocation": "prefer one option",
+      "example_en": "I prefer studying in a quiet room.",
+      "example_vi": "Tôi thích học trong một căn phòng yên tĩnh hơn.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.emotion.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "84f5ff45f040634682982263ae314c3bf3673d3031709ac9ba51660cde547ab2",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "01830440-v",
+          "lemma": "prefer"
+        }
+      ]
+    },
+    {
+      "id": "allow-01",
+      "word": "allow",
+      "part_of_speech": "verb",
+      "meaning_vi": "cho phép",
+      "definition_en": "To let someone do something.",
+      "collocation": "allow someone to do something",
+      "example_en": "The rules allow students to use a paper dictionary.",
+      "example_vi": "Nội quy cho phép học sinh dùng từ điển giấy.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.communication.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "04a1531082705497ab51316d54dec360273ea896b195dfd2143b99d08d327541",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00803980-v",
+          "lemma": "allow"
+        }
+      ]
+    },
+    {
+      "id": "encourage-01",
+      "word": "encourage",
+      "part_of_speech": "verb",
+      "meaning_vi": "khuyến khích; động viên",
+      "definition_en": "To give someone confidence or a reason to do something.",
+      "collocation": "encourage participation",
+      "example_en": "Good teachers encourage students to ask questions.",
+      "example_vi": "Giáo viên giỏi khuyến khích học sinh đặt câu hỏi.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.emotion.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "84f5ff45f040634682982263ae314c3bf3673d3031709ac9ba51660cde547ab2",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "01822202-v",
+          "lemma": "encourage"
+        }
+      ]
+    },
+    {
+      "id": "depend-01",
+      "word": "depend",
+      "part_of_speech": "verb",
+      "meaning_vi": "phụ thuộc",
+      "definition_en": "To be determined or affected by someone or something else.",
+      "collocation": "depend on",
+      "example_en": "Our travel plans depend on the weather.",
+      "example_vi": "Kế hoạch đi lại của chúng tôi phụ thuộc vào thời tiết.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.stative.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "04a7c3cc3f4d3b1585b11fa00c6574f4162063328f5f652b867e3a48ff35d346",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "02670312-v",
+          "lemma": "depend"
+        }
+      ]
+    },
+    {
+      "id": "agree-01",
+      "word": "agree",
+      "part_of_speech": "verb",
+      "meaning_vi": "đồng ý; có cùng quan điểm",
+      "definition_en": "To have the same opinion as someone else.",
+      "collocation": "agree with someone",
+      "example_en": "I agree with your point about regular practice.",
+      "example_vi": "Tôi đồng ý với ý kiến của bạn về việc luyện tập đều đặn.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.communication.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "04a1531082705497ab51316d54dec360273ea896b195dfd2143b99d08d327541",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00807038-v",
+          "lemma": "agree"
+        }
+      ]
+    },
+    {
+      "id": "refuse-01",
+      "word": "refuse",
+      "part_of_speech": "verb",
+      "meaning_vi": "từ chối",
+      "definition_en": "To say that you will not do or accept something.",
+      "collocation": "refuse an offer",
+      "example_en": "You can refuse an invitation politely.",
+      "example_vi": "Bạn có thể từ chối một lời mời một cách lịch sự.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.communication.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "04a1531082705497ab51316d54dec360273ea896b195dfd2143b99d08d327541",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00799092-v",
+          "lemma": "refuse"
+        }
+      ]
+    },
+    {
+      "id": "accept-01",
+      "word": "accept",
+      "part_of_speech": "verb",
+      "meaning_vi": "chấp nhận; nhận lời",
+      "definition_en": "To agree to receive something offered to you.",
+      "collocation": "accept an invitation",
+      "example_en": "I am happy to accept your invitation to the workshop.",
+      "example_vi": "Tôi rất vui nhận lời mời tham dự buổi tập huấn của bạn.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.communication.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "04a1531082705497ab51316d54dec360273ea896b195dfd2143b99d08d327541",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00799359-v",
+          "lemma": "accept"
+        }
+      ]
+    },
+    {
+      "id": "believe-01",
+      "word": "believe",
+      "part_of_speech": "verb",
+      "meaning_vi": "tin; cho là đúng",
+      "definition_en": "To think that something is true.",
+      "collocation": "believe that",
+      "example_en": "I believe that regular practice improves confidence.",
+      "example_vi": "Tôi tin rằng luyện tập đều đặn giúp tăng sự tự tin.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "f8908eedf07920a8489aa2462ce2ec7a83c0ecff1fb48f4456aec100f8c97d37",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00685199-v",
+          "lemma": "believe"
+        }
+      ]
+    },
+    {
+      "id": "expect-01",
+      "word": "expect",
+      "part_of_speech": "verb",
+      "meaning_vi": "mong đợi; cho rằng sẽ xảy ra",
+      "definition_en": "To think that something is likely to happen.",
+      "collocation": "expect a result",
+      "example_en": "We expect the library to open at eight.",
+      "example_vi": "Chúng tôi cho rằng thư viện sẽ mở cửa lúc tám giờ.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "f8908eedf07920a8489aa2462ce2ec7a83c0ecff1fb48f4456aec100f8c97d37",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00721658-v",
+          "lemma": "expect"
+        }
+      ]
+    },
+    {
+      "id": "suggest-01",
+      "word": "suggest",
+      "part_of_speech": "verb",
+      "meaning_vi": "đề xuất; gợi ý",
+      "definition_en": "To put forward an idea for someone to consider.",
+      "collocation": "suggest a solution",
+      "example_en": "I suggest taking a short break after this exercise.",
+      "example_vi": "Tôi đề xuất nghỉ một chút sau bài tập này.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.communication.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "04a1531082705497ab51316d54dec360273ea896b195dfd2143b99d08d327541",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00876925-v",
+          "lemma": "suggest"
+        }
+      ]
+    },
+    {
+      "id": "continue-01",
+      "word": "continue",
+      "part_of_speech": "verb",
+      "meaning_vi": "tiếp tục",
+      "definition_en": "To keep doing something or start it again after a pause.",
+      "collocation": "continue studying",
+      "example_en": "We will continue the discussion after lunch.",
+      "example_vi": "Chúng tôi sẽ tiếp tục cuộc thảo luận sau bữa trưa.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.stative.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "04a7c3cc3f4d3b1585b11fa00c6574f4162063328f5f652b867e3a48ff35d346",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "02690747-v",
+          "lemma": "continue"
+        }
+      ]
+    },
+    {
+      "id": "curriculum-01",
+      "word": "curriculum",
+      "part_of_speech": "noun",
+      "meaning_vi": "chương trình giảng dạy",
+      "definition_en": "The planned subjects and content taught in a course or school.",
+      "collocation": "school curriculum",
+      "example_en": "The school has added basic coding to its curriculum.",
+      "example_vi": "Nhà trường đã bổ sung kiến thức lập trình cơ bản vào chương trình giảng dạy.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.communication.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "7053932585a7e05d38a2b04139e17800bca7fed8049e1e9f3f8e478a2734c23e",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "06689161-n",
+          "lemma": "curriculum"
+        }
+      ]
+    },
+    {
+      "id": "scholarship-01",
+      "word": "scholarship",
+      "part_of_speech": "noun",
+      "meaning_vi": "học bổng",
+      "definition_en": "Financial support awarded to help a person pay for their studies.",
+      "collocation": "win a scholarship",
+      "example_en": "Lan won a scholarship to study environmental science.",
+      "example_vi": "Lan giành được học bổng để học ngành khoa học môi trường.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.possession.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "45bddb173490da62d868572ee1bc077f7f86b943d83fbadfd472aac4df8ebd1e",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "13287193-n",
+          "lemma": "scholarship"
+        }
+      ]
+    },
+    {
+      "id": "literacy-01",
+      "word": "literacy",
+      "part_of_speech": "noun",
+      "meaning_vi": "khả năng đọc và viết",
+      "definition_en": "The ability to read and write.",
+      "collocation": "improve literacy",
+      "example_en": "The evening classes help adults improve their literacy.",
+      "example_vi": "Các lớp học buổi tối giúp người trưởng thành nâng cao khả năng đọc và viết.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "e95c87bc234d89a12907b0fea1a7f96c1d0eb6e92d614680095d9447bcb39c7b",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "05646331-n",
+          "lemma": "literacy"
+        }
+      ]
+    },
+    {
+      "id": "assignment-01",
+      "word": "assignment",
+      "part_of_speech": "noun",
+      "meaning_vi": "bài tập được giao",
+      "definition_en": "A piece of work that a teacher asks students to complete.",
+      "collocation": "submit an assignment",
+      "example_en": "Our first assignment is a short report on local water use.",
+      "example_vi": "Bài tập đầu tiên của chúng tôi là một báo cáo ngắn về việc sử dụng nước tại địa phương.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.act.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "c5ea061734ae4687ca1505e32e75f61936ec84c2a05eaa751f451702c8699291",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00798247-n",
+          "lemma": "assignment"
+        }
+      ]
+    },
+    {
+      "id": "deadline-01",
+      "word": "deadline",
+      "part_of_speech": "noun",
+      "meaning_vi": "hạn chót",
+      "definition_en": "The latest time by which a task must be finished.",
+      "collocation": "meet a deadline",
+      "example_en": "The deadline for our biology report is Friday.",
+      "example_vi": "Hạn chót nộp báo cáo sinh học của chúng tôi là thứ Sáu.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.time.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "d1bba4e668251c117cd0a9d82e32b74f26d0cb46075ab6f3a4a5b177138570bc",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "15204935-n",
+          "lemma": "deadline"
+        }
+      ]
+    },
+    {
+      "id": "assessment-01",
+      "word": "assessment",
+      "part_of_speech": "noun",
+      "meaning_vi": "việc đánh giá kết quả học tập",
+      "definition_en": "A process used to judge what a student knows or can do.",
+      "collocation": "continuous assessment",
+      "example_en": "The course uses continuous assessment instead of one final exam.",
+      "example_vi": "Khóa học sử dụng việc đánh giá liên tục thay cho một kỳ thi cuối khóa.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.act.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "c5ea061734ae4687ca1505e32e75f61936ec84c2a05eaa751f451702c8699291",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00875745-n",
+          "lemma": "assessment"
+        }
+      ]
+    },
+    {
+      "id": "feedback-01",
+      "word": "feedback",
+      "part_of_speech": "noun",
+      "meaning_vi": "nhận xét góp ý",
+      "definition_en": "Comments that explain how well someone has done and how to improve.",
+      "collocation": "constructive feedback",
+      "example_en": "The teacher gave me useful feedback on the structure of my essay.",
+      "example_vi": "Giáo viên đã góp ý hữu ích cho tôi về bố cục bài luận.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/feedback",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "4921e26bfe67bbba35619199836b459138231c09abba3384b97191cfee5d7eea",
+          "scope": "Existing selected meaning and part of speech rechecked against the Oxford entry; original Jeongyeon English paraphrase and bilingual context retained.",
+          "sense_ref": "feedback__14"
+        }
+      ]
+    },
+    {
+      "id": "qualification-01",
+      "word": "qualification",
+      "part_of_speech": "noun",
+      "meaning_vi": "bằng cấp hoặc chứng chỉ",
+      "definition_en": "An official record showing that someone has completed training or met a standard.",
+      "collocation": "teaching qualification",
+      "example_en": "This teaching qualification allows her to apply for primary school jobs.",
+      "example_vi": "Chứng chỉ giảng dạy này cho phép cô ấy ứng tuyển vào các vị trí tại trường tiểu học.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/qualification",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "d0de58016e3b9706dba36d409c53159b485c0bf4de81596f1b9b781ed65cc159",
+          "scope": "Existing selected meaning and part of speech rechecked against the Oxford entry; original Jeongyeon English paraphrase and bilingual context retained.",
+          "sense_ref": "qualification__43"
+        }
+      ]
+    },
+    {
+      "id": "compulsory-01",
+      "word": "compulsory",
+      "part_of_speech": "adjective",
+      "meaning_vi": "bắt buộc",
+      "definition_en": "Required by a rule rather than chosen freely.",
+      "collocation": "compulsory subject",
+      "example_en": "Mathematics is compulsory for all students in their first year.",
+      "example_vi": "Toán học là môn bắt buộc đối với tất cả sinh viên năm nhất.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00851890-s",
+          "lemma": "compulsory"
+        }
+      ]
+    },
+    {
+      "id": "undergraduate-01",
+      "word": "undergraduate",
+      "part_of_speech": "noun",
+      "meaning_vi": "sinh viên đang học lấy bằng đại học đầu tiên",
+      "definition_en": "A student studying for their first university degree.",
+      "collocation": "undergraduate student",
+      "example_en": "Each undergraduate can borrow up to ten books from the library.",
+      "example_vi": "Mỗi sinh viên đại học được mượn tối đa mười cuốn sách từ thư viện.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.person.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "7d2ce4bebd1cc762a5d4f4d6cf7aee228e5c795ed07263d575fea0b820780c48",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "10756259-n",
+          "lemma": "undergraduate"
+        }
+      ]
+    },
+    {
+      "id": "seminar-01",
+      "word": "seminar",
+      "part_of_speech": "noun",
+      "meaning_vi": "buổi học thảo luận chuyên đề",
+      "definition_en": "A class in which a small group discusses a subject with a teacher.",
+      "collocation": "attend a seminar",
+      "example_en": "In the seminar, we discussed the evidence behind the author's argument.",
+      "example_vi": "Trong buổi học thảo luận, chúng tôi trao đổi về bằng chứng làm cơ sở cho lập luận của tác giả.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.act.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "c5ea061734ae4687ca1505e32e75f61936ec84c2a05eaa751f451702c8699291",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00893825-n",
+          "lemma": "seminar"
+        }
+      ]
+    },
+    {
+      "id": "lecture-01",
+      "word": "lecture",
+      "part_of_speech": "noun",
+      "meaning_vi": "bài giảng",
+      "definition_en": "A formal talk that teaches a subject to a group of students.",
+      "collocation": "attend a lecture",
+      "example_en": "The professor gave a lecture on the causes of inflation.",
+      "example_vi": "Giáo sư đã giảng một bài về các nguyên nhân gây ra lạm phát.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.act.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "c5ea061734ae4687ca1505e32e75f61936ec84c2a05eaa751f451702c8699291",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00894541-n",
+          "lemma": "lecture"
+        }
+      ]
+    },
+    {
+      "id": "revision-01",
+      "word": "revision",
+      "part_of_speech": "noun",
+      "meaning_vi": "việc ôn tập trước kỳ thi",
+      "definition_en": "Study of material already learned in preparation for an examination.",
+      "collocation": "exam revision",
+      "example_en": "I set aside an hour each evening for revision before the exam.",
+      "example_vi": "Tôi dành một giờ mỗi tối để ôn tập trước kỳ thi.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/revision",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "944319b7b997e9c2632486852e904ba2960b5cb9ca9639286475503a74099e2e",
+          "scope": "Existing selected meaning and part of speech rechecked against the Oxford entry; original Jeongyeon English paraphrase and bilingual context retained.",
+          "sense_ref": "revision_sng_3"
+        }
+      ],
+      "region": "Anh–Anh (nghĩa ôn thi)",
+      "review_note": "Revision nghĩa ôn thi là cách dùng Anh–Anh; tiếng Anh–Mỹ thường dùng review hoặc studying. Trong tiếng Anh–Mỹ, revision thường nói việc sửa đổi. Giữ nghĩa đang học, không đổi lịch sử chỉ để đổi vùng."
+    },
+    {
+      "id": "attendance-01",
+      "word": "attendance",
+      "part_of_speech": "noun",
+      "meaning_vi": "việc có mặt tại lớp",
+      "definition_en": "The act or record of being present at lessons.",
+      "collocation": "attendance record",
+      "example_en": "Regular attendance helped her keep up with the weekly lessons.",
+      "example_vi": "Việc đi học đều đặn giúp cô ấy theo kịp các bài học hằng tuần.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.time.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "d1bba4e668251c117cd0a9d82e32b74f26d0cb46075ab6f3a4a5b177138570bc",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "15310217-n",
+          "lemma": "attendance"
+        }
+      ]
+    },
+    {
+      "id": "occupation-01",
+      "word": "occupation",
+      "part_of_speech": "noun",
+      "meaning_vi": "nghề nghiệp",
+      "definition_en": "The kind of work a person does to earn money.",
+      "collocation": "state your occupation",
+      "example_en": "Please state your occupation on the application form.",
+      "example_vi": "Vui lòng ghi nghề nghiệp của bạn vào đơn đăng ký.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.act.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "c5ea061734ae4687ca1505e32e75f61936ec84c2a05eaa751f451702c8699291",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00583425-n",
+          "lemma": "occupation"
+        }
+      ]
+    },
+    {
+      "id": "recruitment-01",
+      "word": "recruitment",
+      "part_of_speech": "noun",
+      "meaning_vi": "việc tuyển dụng",
+      "definition_en": "The process of finding and choosing people for jobs.",
+      "collocation": "recruitment process",
+      "example_en": "The company has simplified its recruitment process to attract more candidates.",
+      "example_vi": "Công ty đã đơn giản hóa quy trình tuyển dụng để thu hút thêm ứng viên.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.act.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "c5ea061734ae4687ca1505e32e75f61936ec84c2a05eaa751f451702c8699291",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "01266204-n",
+          "lemma": "recruitment"
+        }
+      ]
+    },
+    {
+      "id": "applicant-01",
+      "word": "applicant",
+      "part_of_speech": "noun",
+      "meaning_vi": "người ứng tuyển",
+      "definition_en": "A person who formally asks to be considered for a job.",
+      "collocation": "job applicant",
+      "example_en": "Each applicant must submit a CV and a short cover letter.",
+      "example_vi": "Mỗi người ứng tuyển phải nộp sơ yếu lý lịch và một thư xin việc ngắn.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.person.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "7d2ce4bebd1cc762a5d4f4d6cf7aee228e5c795ed07263d575fea0b820780c48",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "09630310-n",
+          "lemma": "applicant"
+        }
+      ]
+    },
+    {
+      "id": "employer-01",
+      "word": "employer",
+      "part_of_speech": "noun",
+      "meaning_vi": "người hoặc tổ chức sử dụng lao động",
+      "definition_en": "A person or organisation that pays people to work for them.",
+      "collocation": "potential employer",
+      "example_en": "A potential employer may ask for references from your previous workplace.",
+      "example_vi": "Một đơn vị tuyển dụng tiềm năng có thể yêu cầu thông tin tham khảo từ nơi làm việc trước của bạn.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.person.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "7d2ce4bebd1cc762a5d4f4d6cf7aee228e5c795ed07263d575fea0b820780c48",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "10074465-n",
+          "lemma": "employer"
+        }
+      ]
+    },
+    {
+      "id": "employee-01",
+      "word": "employee",
+      "part_of_speech": "noun",
+      "meaning_vi": "nhân viên; người lao động được thuê",
+      "definition_en": "A person paid to work for another person or organisation.",
+      "collocation": "full-time employee",
+      "example_en": "Every employee receives safety training before using the equipment.",
+      "example_vi": "Mỗi nhân viên đều được đào tạo an toàn trước khi sử dụng thiết bị.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.person.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "7d2ce4bebd1cc762a5d4f4d6cf7aee228e5c795ed07263d575fea0b820780c48",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "10073616-n",
+          "lemma": "employee"
+        }
+      ]
+    },
+    {
+      "id": "salary-01",
+      "word": "salary",
+      "part_of_speech": "noun",
+      "meaning_vi": "lương cố định theo tháng hoặc năm",
+      "definition_en": "A fixed amount of pay stated for a month or year of employment.",
+      "collocation": "annual salary",
+      "example_en": "The position offers an annual salary of thirty thousand pounds.",
+      "example_vi": "Vị trí này có mức lương cố định hằng năm là ba mươi nghìn bảng.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/salary",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "55a3615b192eabba6acb23919d73282d95aa33f9e2e8370cb228c922c1f6c7e5",
+          "scope": "Existing selected meaning and part of speech rechecked against the Oxford entry; original Jeongyeon English paraphrase and bilingual context retained.",
+          "sense_ref": "salary__16"
+        }
+      ]
+    },
+    {
+      "id": "wage-01",
+      "word": "wage",
+      "part_of_speech": "noun",
+      "meaning_vi": "tiền công tính theo giờ hoặc tuần",
+      "definition_en": "Pay for work, usually calculated by the hour or week.",
+      "collocation": "hourly wage",
+      "example_en": "Her hourly wage increased after she completed the training.",
+      "example_vi": "Tiền công theo giờ của cô ấy tăng sau khi cô ấy hoàn thành khóa đào tạo.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/wage_1",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "598cb1e5038612b36e92912bb95139c63547f8c07c48a757e903b5999778d408",
+          "scope": "Existing selected meaning and part of speech rechecked against the Oxford entry; original Jeongyeon English paraphrase and bilingual context retained.",
+          "sense_ref": "wage_1__20"
+        }
+      ]
+    },
+    {
+      "id": "promotion-01",
+      "word": "promotion",
+      "part_of_speech": "noun",
+      "meaning_vi": "sự thăng chức",
+      "definition_en": "A move to a job with more responsibility or a higher position.",
+      "collocation": "earn a promotion",
+      "example_en": "She earned a promotion after successfully leading the sales team.",
+      "example_vi": "Cô ấy được thăng chức sau khi lãnh đạo nhóm bán hàng thành công.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.act.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "c5ea061734ae4687ca1505e32e75f61936ec84c2a05eaa751f451702c8699291",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00199300-n",
+          "lemma": "promotion"
+        }
+      ]
+    },
+    {
+      "id": "resignation-01",
+      "word": "resignation",
+      "part_of_speech": "noun",
+      "meaning_vi": "việc từ chức hoặc xin nghỉ việc",
+      "definition_en": "A formal decision to leave a job or position.",
+      "collocation": "submit a resignation",
+      "example_en": "He submitted his resignation after accepting a job closer to home.",
+      "example_vi": "Anh ấy nộp đơn xin nghỉ việc sau khi nhận một công việc gần nhà hơn.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.communication.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "7053932585a7e05d38a2b04139e17800bca7fed8049e1e9f3f8e478a2734c23e",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "06523551-n",
+          "lemma": "resignation"
+        }
+      ]
+    },
+    {
+      "id": "retirement-01",
+      "word": "retirement",
+      "part_of_speech": "noun",
+      "meaning_vi": "việc nghỉ hưu",
+      "definition_en": "The period or act of leaving working life, usually because of age.",
+      "collocation": "plan for retirement",
+      "example_en": "She is saving money for retirement while she is still working.",
+      "example_vi": "Cô ấy đang tiết kiệm tiền cho tuổi nghỉ hưu khi vẫn còn đi làm.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.state.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "3cb8cebbf3f812229c085d3f61608c3cca4e97a5c69e9bebb9c3e546a8411312",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "13977336-n",
+          "lemma": "retirement"
+        }
+      ]
+    },
+    {
+      "id": "productivity-01",
+      "word": "productivity",
+      "part_of_speech": "noun",
+      "meaning_vi": "năng suất lao động",
+      "definition_en": "The amount of useful output produced with a given amount of work or time.",
+      "collocation": "increase productivity",
+      "example_en": "Better tools can increase productivity without extending working hours.",
+      "example_vi": "Công cụ tốt hơn có thể tăng năng suất mà không cần kéo dài giờ làm việc.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.relation.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "4be123e8ef3a971ca5eb76e3a3b1e62c2b53b5c269d7d74817b74450c7e4df24",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "13846712-n",
+          "lemma": "productivity"
+        }
+      ]
+    },
+    {
+      "id": "workplace-01",
+      "word": "workplace",
+      "part_of_speech": "noun",
+      "meaning_vi": "nơi làm việc",
+      "definition_en": "The place where people carry out their jobs.",
+      "collocation": "safe workplace",
+      "example_en": "Good lighting helps create a safer workplace.",
+      "example_vi": "Ánh sáng tốt giúp tạo ra một nơi làm việc an toàn hơn.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.artifact.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "29873f01b589096f73d48d73f4e6877ffc6f633e8b025a3806eb1f60a95a6cae",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "04609402-n",
+          "lemma": "workplace"
+        }
+      ]
+    },
+    {
+      "id": "entrepreneur-01",
+      "word": "entrepreneur",
+      "part_of_speech": "noun",
+      "meaning_vi": "người khởi nghiệp kinh doanh",
+      "definition_en": "A person who starts and runs a business while accepting financial risk.",
+      "collocation": "successful entrepreneur",
+      "example_en": "The entrepreneur opened a small business that repairs used electronics.",
+      "example_vi": "Người khởi nghiệp mở một cơ sở nhỏ chuyên sửa chữa thiết bị điện tử đã qua sử dụng.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.person.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "7d2ce4bebd1cc762a5d4f4d6cf7aee228e5c795ed07263d575fea0b820780c48",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "10080160-n",
+          "lemma": "entrepreneur"
+        }
+      ]
+    },
+    {
+      "id": "pollution-01",
+      "word": "pollution",
+      "part_of_speech": "noun",
+      "meaning_vi": "sự ô nhiễm",
+      "definition_en": "The contamination of air, water or land by harmful substances or energy.",
+      "collocation": "reduce pollution",
+      "example_en": "Factories must treat wastewater to reduce pollution in nearby rivers.",
+      "example_vi": "Các nhà máy phải xử lý nước thải để giảm ô nhiễm ở những con sông gần đó.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.act.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "c5ea061734ae4687ca1505e32e75f61936ec84c2a05eaa751f451702c8699291",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00277831-n",
+          "lemma": "pollution"
+        }
+      ]
+    },
+    {
+      "id": "emission-01",
+      "word": "emission",
+      "part_of_speech": "noun",
+      "meaning_vi": "sự phát thải",
+      "definition_en": "The release of a substance, especially gas, into the air.",
+      "collocation": "the emission of smoke",
+      "example_en": "The emission of smoke from the factory caused complaints from nearby residents.",
+      "example_vi": "Việc phát thải khói từ nhà máy khiến cư dân gần đó phàn nàn.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.act.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "c5ea061734ae4687ca1505e32e75f61936ec84c2a05eaa751f451702c8699291",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "01255647-n",
+          "lemma": "emission"
+        }
+      ]
+    },
+    {
+      "id": "habitat-01",
+      "word": "habitat",
+      "part_of_speech": "noun",
+      "meaning_vi": "môi trường sống tự nhiên",
+      "definition_en": "The natural place where a plant or animal lives.",
+      "collocation": "natural habitat",
+      "example_en": "Building a road through the forest may damage the natural habitat of several birds.",
+      "example_vi": "Xây đường xuyên rừng có thể làm tổn hại môi trường sống tự nhiên của một số loài chim.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.location.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "0ece490f18f3669715723e7608ec0e30b6852945938f84b03b1d5ed1dbd88562",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "08598111-n",
+          "lemma": "habitat"
+        }
+      ]
+    },
+    {
+      "id": "conservation-01",
+      "word": "conservation",
+      "part_of_speech": "noun",
+      "meaning_vi": "sự bảo tồn thiên nhiên",
+      "definition_en": "The protection of nature and its resources from damage or loss.",
+      "collocation": "wildlife conservation",
+      "example_en": "The school raises money for wildlife conservation every spring.",
+      "example_vi": "Mỗi mùa xuân, trường gây quỹ cho việc bảo tồn động vật hoang dã.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.act.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "c5ea061734ae4687ca1505e32e75f61936ec84c2a05eaa751f451702c8699291",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "00820935-n",
+          "lemma": "conservation"
+        }
+      ]
+    },
+    {
+      "id": "drought-01",
+      "word": "drought",
+      "part_of_speech": "noun",
+      "meaning_vi": "hạn hán",
+      "definition_en": "A long period with too little rain for local needs.",
+      "collocation": "severe drought",
+      "example_en": "A severe drought forced farmers to plant crops that need less water.",
+      "example_vi": "Một đợt hạn hán nghiêm trọng buộc nông dân trồng các loại cây cần ít nước hơn.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.state.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "3cb8cebbf3f812229c085d3f61608c3cca4e97a5c69e9bebb9c3e546a8411312",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "14560656-n",
+          "lemma": "drought"
+        }
+      ]
+    },
+    {
+      "id": "flood-01",
+      "word": "flood",
+      "part_of_speech": "noun",
+      "meaning_vi": "lũ lụt",
+      "definition_en": "An overflow of water onto land that is normally dry.",
+      "collocation": "flood prevention",
+      "example_en": "Better drainage is an important part of flood prevention in the city.",
+      "example_vi": "Hệ thống thoát nước tốt hơn là một phần quan trọng trong việc phòng chống lũ lụt của thành phố.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.phenomenon.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "9cf0fce44885a8a4382424b5068dc9e9c867fa5d88296233a5322360630f80d3",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "11475008-n",
+          "lemma": "flood"
+        }
+      ]
+    },
+    {
+      "id": "wildlife-01",
+      "word": "wildlife",
+      "part_of_speech": "noun",
+      "meaning_vi": "động vật hoang dã",
+      "definition_en": "Animals that live freely in their natural surroundings.",
+      "collocation": "protect wildlife",
+      "example_en": "Drivers should slow down where wildlife frequently crosses the road.",
+      "example_vi": "Người lái xe nên giảm tốc ở những nơi động vật hoang dã thường xuyên băng qua đường.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.group.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "4c5052b8dd31f1924f46899e8789d6fa916637d1451113c39ccded95c9d80a4e",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "08010218-n",
+          "lemma": "wildlife"
+        }
+      ]
+    },
+    {
+      "id": "infrastructure-01",
+      "word": "infrastructure",
+      "part_of_speech": "noun",
+      "meaning_vi": "cơ sở hạ tầng",
+      "definition_en": "The basic physical systems that enable a place to function.",
+      "collocation": "transport infrastructure",
+      "example_en": "Investment in transport infrastructure can connect rural communities to major towns.",
+      "example_vi": "Đầu tư vào cơ sở hạ tầng giao thông có thể kết nối các cộng đồng nông thôn với những đô thị lớn.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.artifact.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "29873f01b589096f73d48d73f4e6877ffc6f633e8b025a3806eb1f60a95a6cae",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "03575144-n",
+          "lemma": "infrastructure"
+        }
+      ]
+    },
+    {
+      "id": "fare-01",
+      "word": "fare",
+      "part_of_speech": "noun",
+      "meaning_vi": "giá vé",
+      "definition_en": "The amount paid for a journey on public transport.",
+      "collocation": "bus fare",
+      "example_en": "The bus fare includes one transfer within thirty minutes.",
+      "example_vi": "Giá vé xe buýt bao gồm một lần chuyển tuyến trong vòng ba mươi phút.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.possession.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "45bddb173490da62d868572ee1bc077f7f86b943d83fbadfd472aac4df8ebd1e",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "13329169-n",
+          "lemma": "fare"
+        }
+      ]
+    },
+    {
+      "id": "passenger-01",
+      "word": "passenger",
+      "part_of_speech": "noun",
+      "meaning_vi": "hành khách",
+      "definition_en": "A person travelling in a vehicle who is not driving or working as a crew member.",
+      "collocation": "passenger information",
+      "example_en": "The station needs clearer passenger information during service disruptions.",
+      "example_vi": "Nhà ga cần cung cấp thông tin rõ ràng hơn cho hành khách khi dịch vụ bị gián đoạn.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.person.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "7d2ce4bebd1cc762a5d4f4d6cf7aee228e5c795ed07263d575fea0b820780c48",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "10423621-n",
+          "lemma": "passenger"
+        }
+      ]
+    },
+    {
+      "id": "vehicle-01",
+      "word": "vehicle",
+      "part_of_speech": "noun",
+      "meaning_vi": "phương tiện giao thông",
+      "definition_en": "A machine used to carry people or goods from place to place.",
+      "collocation": "private vehicle",
+      "example_en": "The bridge can support only one heavy vehicle at a time.",
+      "example_vi": "Cây cầu chỉ chịu được một phương tiện giao thông hạng nặng tại một thời điểm.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.artifact.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "29873f01b589096f73d48d73f4e6877ffc6f633e8b025a3806eb1f60a95a6cae",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "04531608-n",
+          "lemma": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "railway-01",
+      "word": "railway",
+      "part_of_speech": "noun",
+      "meaning_vi": "đường sắt",
+      "definition_en": "A system of tracks on which trains carry people or goods.",
+      "collocation": "railway network",
+      "example_en": "The railway network links the capital with several coastal towns.",
+      "example_vi": "Mạng lưới đường sắt nối thủ đô với một số thị trấn ven biển.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.artifact.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-20",
+          "sha256": "29873f01b589096f73d48d73f4e6877ffc6f633e8b025a3806eb1f60a95a6cae",
+          "scope": "Existing selected meaning and part of speech compared with the Open English WordNet synset; original Jeongyeon definitions and bilingual contexts retained.",
+          "sense_ref": "04055187-n",
+          "lemma": "railway"
+        }
+      ]
+    }
+  ]
+}

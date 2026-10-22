@@ -23,6 +23,7 @@ from corpus_policy import (
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "public/data"
 SOURCE_UPDATE = runpy.run_path(str(ROOT / "scripts/apply-source-update.py"))
+FULL_REVIEW = runpy.run_path(str(ROOT / "scripts/apply-full-review.py"))
 
 
 class CorpusQualityTests(unittest.TestCase):
@@ -36,6 +37,11 @@ class CorpusQualityTests(unittest.TestCase):
         cls.metadata = json.loads((DATA / "oxford-provenance.json").read_text())
         cls.facts = {row["sourceFactIndex"]: row for row in cls.metadata["entries"] + cls.metadata["additionalFacts"]}
         cls.source_update = SOURCE_UPDATE["load_source_update"](required=False)
+        cls.full_review = FULL_REVIEW["load_full_review"](required=False)
+        cls.full_fields = {
+            row["id"]: FULL_REVIEW["reviewed_fields"](cls.full_review, row)
+            for row in cls.full_review["entries"]
+        } if cls.full_review else {}
 
     def test_coverage_and_original_ids_survive(self):
         additions = self.source_update.get("additions", []) if self.source_update else []
@@ -69,7 +75,7 @@ class CorpusQualityTests(unittest.TestCase):
         for reviewed in overlay:
             actual = self.by_id[reviewed["id"]]
             for key, value in reviewed.items():
-                expected = newer_corrections.get(reviewed["id"], {}).get(key, value)
+                expected = self.full_fields.get(reviewed["id"], {}).get(key, newer_corrections.get(reviewed["id"], {}).get(key, value))
                 self.assertEqual(actual[key], expected, (actual["word"], key))
             fact = self.facts[int(actual["source_fact_index"])]
             self.assertEqual(fact["word"], actual["word"])
@@ -185,9 +191,18 @@ class CorpusQualityTests(unittest.TestCase):
 
     def test_reference_conflict_is_not_guessed(self):
         diplomatic = self.by_word["diplomatic"]
-        self.assertEqual(diplomatic["content_status"], "reference")
-        self.assertEqual(diplomatic["learning_status"], "lookup")
-        self.assertFalse(diplomatic["meaning_vi"])
+        if diplomatic["id"] in self.full_fields:
+            reviewed = next(row for row in self.full_review["entries"] if row["id"] == diplomatic["id"])
+            self.assertEqual(reviewed.get("previous_part_of_speech"), "noun")
+            self.assertEqual(diplomatic["part_of_speech"], "adjective")
+            self.assertEqual(diplomatic["content_status"], "reviewed")
+            self.assertTrue(diplomatic["meaning_vi"])
+            self.assertEqual(self.facts[int(diplomatic["source_fact_index"])]["pos"], "n.")
+            self.assertTrue(any(item.get("status") == 200 for item in FULL_REVIEW["evidence_for"](self.full_review, reviewed)))
+        else:
+            self.assertEqual(diplomatic["content_status"], "reference")
+            self.assertEqual(diplomatic["learning_status"], "lookup")
+            self.assertFalse(diplomatic["meaning_vi"])
 
     def test_source_update_is_exact_additive_and_replayable(self):
         if not self.source_update:
@@ -199,14 +214,20 @@ class CorpusQualityTests(unittest.TestCase):
         self.assertEqual(apply(edited, self.source_update), edited)
         for correction in self.source_update.get("corrections", []):
             for key, value in correction.items():
-                self.assertEqual(self.by_id[correction["id"]][key], value)
+                self.assertEqual(self.by_id[correction["id"]][key], self.full_fields.get(correction["id"], {}).get(key, value))
         for spelling in self.source_update.get("americanSpellings", []):
             self.assertEqual(self.by_id[spelling["id"]]["preferred_us_spelling"], spelling["preferred_us_spelling"])
         for group in ("americanMembership", "opalMembership"):
             for membership in self.source_update.get(group, []):
                 row = self.by_id[membership["id"]]
                 self.assertEqual(row["word"], membership["word"])
-                self.assertEqual(row["part_of_speech"], membership["part_of_speech"])
+                if membership["id"] == "ox-76658a7ce8e611-01" and membership["id"] in self.full_fields:
+                    reviewed = next(item for item in self.full_review["entries"] if item["id"] == membership["id"])
+                    self.assertEqual((membership["word"], membership["part_of_speech"]), ("diplomatic", "noun"))
+                    self.assertEqual((reviewed.get("previous_part_of_speech"), reviewed["part_of_speech"]), ("noun", "adjective"))
+                    self.assertEqual(row["part_of_speech"], "adjective")
+                else:
+                    self.assertEqual(row["part_of_speech"], membership["part_of_speech"])
                 self.assertTrue(set(membership["collections"]) <= set(row["collections"].split(",")))
 
     def test_source_update_provenance_matches_authored_input(self):

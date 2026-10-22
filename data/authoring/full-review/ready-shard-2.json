@@ -1,0 +1,3729 @@
+{
+  "entries": [
+    {
+      "id": "ox-cbcf6dfcd8154e-01",
+      "word": "instantly",
+      "part_of_speech": "adverb",
+      "meaning_vi": "ngay lập tức",
+      "example_en": "The lights came on instantly.",
+      "example_vi": "Đèn sáng lên ngay lập tức.",
+      "definition_en": "without delay or hesitation; with no time intervening",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adv.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "9d92cbcb348927c16baa2246b6a389fc6ed9833892a78287bcf5b387ea11f44b",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00049277-r"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-d1e49ac43dac0c-01",
+      "word": "integrated",
+      "part_of_speech": "adjective",
+      "meaning_vi": "được kết hợp thành một hệ thống thống nhất",
+      "example_en": "The city needs an integrated transport system.",
+      "example_vi": "Thành phố cần một hệ thống giao thông tích hợp.",
+      "definition_en": "formed or united into a whole",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "02487032-s"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-6b847a0ed0b2c4-01",
+      "word": "into",
+      "part_of_speech": "preposition",
+      "meaning_vi": "vào bên trong",
+      "example_en": "She put the books into her bag.",
+      "example_vi": "Cô ấy cho sách vào túi.",
+      "definition_en": "toward the inside of a place or container",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/into",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "455c896385606285dfef4fc64abe8b5f2b87db566e2e564c2f006aa46e2021b9",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "into__14"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-f415bf7b07a9b2-01",
+      "word": "IT",
+      "part_of_speech": "noun",
+      "meaning_vi": "công nghệ thông tin",
+      "example_en": "The IT team maintains the school network.",
+      "example_vi": "Nhóm công nghệ thông tin bảo trì mạng của trường.",
+      "definition_en": "the use of computers and telecommunications to store, process, and exchange information",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "e95c87bc234d89a12907b0fea1a7f96c1d0eb6e92d614680095d9447bcb39c7b",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "06143961-n"
+        }
+      ],
+      "review_note": "IT viết hoa trong nghĩa công nghệ thông tin. Không lấy tần suất của it đại từ để xếp hạng riêng ngành này."
+    },
+    {
+      "id": "ox-2ad8a7049d7c55-01",
+      "word": "it",
+      "part_of_speech": "pronoun",
+      "meaning_vi": "nó; đại từ thay cho một vật, sự việc hoặc con vật đã được nhắc đến",
+      "example_en": "I bought a new laptop because it was lighter than my old one.",
+      "example_vi": "Tôi đã mua một máy tính xách tay mới vì nó nhẹ hơn máy cũ.",
+      "definition_en": "a pronoun referring to a thing, situation or animal already identified",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/it_1",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "b3d82130ae69f945a2861216ff8ea7ecd56d385ae3438fb8ebffa212cb60df49",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "it_1__13"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-ea103d6cb5c3fb-01",
+      "word": "its",
+      "part_of_speech": "determiner",
+      "meaning_vi": "của nó (từ hạn định sở hữu)",
+      "example_en": "The company changed its name last year.",
+      "example_vi": "Công ty đổi tên vào năm ngoái.",
+      "definition_en": "belonging to the thing or animal already mentioned",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/its",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "f772d6a4859538328fd13d0cc9b5cf3fa8be8dbc324ce1b1321ad2a47db422a0",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "its__12"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-7d72fa8065e24a-01",
+      "word": "jail",
+      "part_of_speech": "noun",
+      "meaning_vi": "nhà tù; nơi giam giữ người theo quyết định pháp luật",
+      "example_en": "The report describes conditions in the local jail.",
+      "example_vi": "Báo cáo mô tả điều kiện trong nhà tù địa phương.",
+      "definition_en": "a place where people are held as prisoners",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.artifact.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "29873f01b589096f73d48d73f4e6877ffc6f633e8b025a3806eb1f60a95a6cae",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "03597432-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-0b27c158feb36a-01",
+      "word": "kind",
+      "part_of_speech": "noun",
+      "meaning_vi": "loại; kiểu",
+      "example_en": "What kind of music do you enjoy?",
+      "example_vi": "Bạn thích loại nhạc nào?",
+      "definition_en": "a category of things distinguished by some common characteristic or quality",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "e95c87bc234d89a12907b0fea1a7f96c1d0eb6e92d614680095d9447bcb39c7b",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "05847533-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-06d65378901e35-01",
+      "word": "large-scale",
+      "part_of_speech": "adjective",
+      "meaning_vi": "ở quy mô lớn",
+      "example_en": "The project requires large-scale investment.",
+      "example_vi": "Dự án cần đầu tư ở quy mô lớn.",
+      "definition_en": "unusually large in scope",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01391352-s"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-3547cb112ac448-01",
+      "word": "last",
+      "part_of_speech": "determiner",
+      "meaning_vi": "cuối cùng trong một chuỗi",
+      "example_en": "She caught the last bus home.",
+      "example_vi": "Cô ấy bắt chuyến xe buýt cuối cùng về nhà.",
+      "definition_en": "coming after every other member of a sequence",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/last1_1",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "5b69f3238857cf127d2965ea1bcce3283511400550ea05430c5a36186b4e6701",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "last1_1__10"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-c2e0c347e274d2-01",
+      "word": "league",
+      "part_of_speech": "noun",
+      "meaning_vi": "liên đoàn hoặc hệ thống giải đấu gồm các đội thi đấu với nhau",
+      "example_en": "Our school team has joined a local basketball league.",
+      "example_vi": "Đội của trường chúng tôi đã tham gia một giải bóng rổ địa phương.",
+      "definition_en": "a group of sports teams that compete against one another",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.group.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "4c5052b8dd31f1924f46899e8789d6fa916637d1451113c39ccded95c9d80a4e",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "08248105-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-f61e4e48a0a3ce-01",
+      "word": "legendary",
+      "part_of_speech": "adjective",
+      "meaning_vi": "nổi tiếng đến mức được nhiều người kể lại",
+      "example_en": "The museum celebrates a legendary musician.",
+      "example_vi": "Bảo tàng tôn vinh một nhạc sĩ huyền thoại.",
+      "definition_en": "so celebrated as to having taken on the nature of a legend",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01379281-s"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-f6a9dcb1876421-01",
+      "word": "lesbian",
+      "part_of_speech": "adjective",
+      "meaning_vi": "thuộc phụ nữ đồng tính hoặc tình yêu giữa phụ nữ",
+      "example_en": "The festival includes films by lesbian directors.",
+      "example_vi": "Liên hoan có các phim của những đạo diễn nữ đồng tính.",
+      "definition_en": "relating to women who are romantically or sexually attracted to women",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01205665-s"
+        }
+      ],
+      "review_note": "Lesbian trong bài là tính từ chỉ phụ nữ đồng tính hoặc liên quan đến họ; không suy ra quan hệ tình cảm cụ thể chỉ từ ví dụ nghề nghiệp."
+    },
+    {
+      "id": "ox-c8b1a1a3e6bcee-01",
+      "word": "lie",
+      "part_of_speech": "verb",
+      "meaning_vi": "nói dối; cố ý nói điều không đúng sự thật",
+      "example_en": "Please do not lie about your qualifications on the application.",
+      "example_vi": "Đừng nói dối về trình độ của bạn trong đơn đăng ký.",
+      "definition_en": "to deliberately say something that is not true",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.communication.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "04a1531082705497ab51316d54dec360273ea896b195dfd2143b99d08d327541",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00835938-v"
+        }
+      ],
+      "review_note": "Đang chọn lie nghĩa nói dối, quá khứ lied. Lie nghĩa nằm có quá khứ lay; hai nghĩa không dùng chung quy tắc chia."
+    },
+    {
+      "id": "ox-61a78304b3c41e-01",
+      "word": "lifestyle",
+      "part_of_speech": "noun",
+      "meaning_vi": "lối sống",
+      "example_en": "Regular exercise is part of a healthy lifestyle.",
+      "example_vi": "Tập luyện đều đặn là một phần của lối sống lành mạnh.",
+      "definition_en": "a manner of living that reflects the person's values and attitudes",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.attribute.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "d827a1494144bc96ef6e973cac0b2ccc8980d1a192622c44fa46ed08f4db6157",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "04937809-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-99a7026172d427-01",
+      "word": "light",
+      "part_of_speech": "noun",
+      "meaning_vi": "ánh sáng",
+      "example_en": "The room gets plenty of natural light.",
+      "example_vi": "Căn phòng nhận được nhiều ánh sáng tự nhiên.",
+      "definition_en": "brightness that allows people to see",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.phenomenon.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "9cf0fce44885a8a4382424b5068dc9e9c867fa5d88296233a5322360630f80d3",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "11494354-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-cab2644828bcc1-01",
+      "word": "like",
+      "part_of_speech": "preposition",
+      "meaning_vi": "giống; tương tự",
+      "example_en": "This fabric feels like silk.",
+      "example_vi": "Loại vải này cho cảm giác giống lụa.",
+      "definition_en": "similar to another person or thing",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/like_1",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "933d8b6a97d808d653b3263892a56e48d795d1d08dd36005380aff3f3bee3408",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "like_1__12"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-b6f8ae88482bde-01",
+      "word": "located",
+      "part_of_speech": "adjective",
+      "meaning_vi": "nằm ở một vị trí",
+      "example_en": "The library is located near the station.",
+      "example_vi": "Thư viện nằm gần nhà ga.",
+      "definition_en": "situated in a particular spot or position",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "02133811-s"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-76f75e6129fe30-01",
+      "word": "lost",
+      "part_of_speech": "adjective",
+      "meaning_vi": "bị lạc; không biết mình đang ở đâu",
+      "example_en": "We were lost without a map.",
+      "example_vi": "Chúng tôi bị lạc vì không có bản đồ.",
+      "definition_en": "having lost your bearings; confused as to time or place or personal identity",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01688793-s"
+        }
+      ],
+      "review_note": "Đang học lost nghĩa bị lạc, không xác định được vị trí; không trộn với mất đồ hoặc thua trận."
+    },
+    {
+      "id": "ox-226f9e95eca788-01",
+      "word": "majority",
+      "part_of_speech": "noun",
+      "meaning_vi": "đa số; phần lớn hơn một nửa của một nhóm",
+      "example_en": "A clear majority of residents support the new bus service.",
+      "example_vi": "Đa số rõ rệt cư dân ủng hộ dịch vụ xe buýt mới.",
+      "definition_en": "more than half of the people or things in a group",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.attribute.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "d827a1494144bc96ef6e973cac0b2ccc8980d1a192622c44fa46ed08f4db6157",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "05129822-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-ed0a3b494b3cd4-01",
+      "word": "manufacture",
+      "part_of_speech": "verb",
+      "meaning_vi": "sản xuất hàng hóa, thường với số lượng lớn",
+      "example_en": "These factories manufacture medical equipment.",
+      "example_vi": "Các nhà máy này sản xuất thiết bị y tế.",
+      "definition_en": "create or produce in a mechanical way",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.creation.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "50824d97ffdcecae07f9269f6422f3b781d3a97fb28ec668da0a4a8865dbcd56",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01762540-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-1137b15c7797aa-01",
+      "word": "many",
+      "part_of_speech": "determiner",
+      "meaning_vi": "nhiều (đi với danh từ đếm được số nhiều)",
+      "example_en": "Many students use the library after class.",
+      "example_vi": "Nhiều sinh viên sử dụng thư viện sau giờ học.",
+      "definition_en": "a large number of people or things",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/many",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "1672de17fe8f617501e5d00f9c6ae36b4630643dbaa8da3735af0911ac7f6305",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "many__13"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-9d95a2cf0d7180-01",
+      "word": "March",
+      "part_of_speech": "noun",
+      "meaning_vi": "tháng Ba",
+      "example_en": "Our next meeting is in March.",
+      "example_vi": "Cuộc họp tiếp theo của chúng tôi diễn ra vào tháng Ba.",
+      "definition_en": "the month following February and preceding April",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.time.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "d1bba4e668251c117cd0a9d82e32b74f26d0cb46075ab6f3a4a5b177138570bc",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "15235666-n"
+        }
+      ],
+      "review_note": "March viết hoa khi chỉ tháng Ba; tần suất march thường trộn với động từ đi diễu hành."
+    },
+    {
+      "id": "ox-4945a70fa7f9c1-01",
+      "word": "match",
+      "part_of_speech": "noun",
+      "meaning_vi": "trận thi đấu thể thao",
+      "example_en": "We watched a tennis match on Saturday.",
+      "example_vi": "Chúng tôi xem một trận quần vợt vào thứ Bảy.",
+      "definition_en": "a formal contest in which two or more persons or teams compete",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.event.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "c56af56ed053eebaa915332a163b7eafd4f78a4bb653b6a855b90aaddf239ea3",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "07485811-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-e0705e68b04682-01",
+      "word": "matching",
+      "part_of_speech": "adjective",
+      "meaning_vi": "hợp hoặc giống nhau về kiểu dáng, màu sắc",
+      "example_en": "The room has matching chairs and curtains.",
+      "example_vi": "Căn phòng có ghế và rèm đồng bộ.",
+      "definition_en": "intentionally matched",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01490011-s"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-8c78fe5b993648-01",
+      "word": "May",
+      "part_of_speech": "noun",
+      "meaning_vi": "tháng Năm",
+      "example_en": "The course starts in May.",
+      "example_vi": "Khóa học bắt đầu vào tháng Năm.",
+      "definition_en": "the month following April and preceding June",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.time.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "d1bba4e668251c117cd0a9d82e32b74f26d0cb46075ab6f3a4a5b177138570bc",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "15236280-n"
+        }
+      ],
+      "review_note": "May viết hoa khi chỉ tháng Năm; không dùng tần suất may trợ động từ để kết luận độ phổ biến của tên tháng."
+    },
+    {
+      "id": "ox-c8ce96a5ba0d15-01",
+      "word": "million",
+      "part_of_speech": "number",
+      "meaning_vi": "một triệu (1.000.000)",
+      "example_en": "The project costs one million dollars.",
+      "example_vi": "Dự án có chi phí một triệu đô la.",
+      "definition_en": "the number 1,000,000",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.quantity.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "7ee10508243f6b88938a638064d2baa341b2944dc72ddafac2417ff04eb23c29",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "13773673-n"
+        }
+      ],
+      "review_note": "Đang chọn số chính xác 1.000.000. Sau số cụ thể dùng million không thêm -s: two million."
+    },
+    {
+      "id": "ox-3fd30542fe3f61-01",
+      "word": "mine",
+      "part_of_speech": "pronoun",
+      "meaning_vi": "của tôi (đại từ sở hữu)",
+      "example_en": "That notebook is mine.",
+      "example_vi": "Cuốn sổ đó là của tôi.",
+      "definition_en": "belonging to the speaker or writer",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/mine_1",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "66e5be1f74c3fa45b6cef5414718c8f61bd26fc65349a7009b9c2f20f00bc71d",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "mine_1__12"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-48a39a33117179-01",
+      "word": "motorcycle",
+      "part_of_speech": "noun",
+      "meaning_vi": "xe máy; xe mô tô",
+      "example_en": "He travels to work by motorcycle.",
+      "example_vi": "Anh ấy đi làm bằng xe máy.",
+      "definition_en": "a motor vehicle with two wheels and a strong frame",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.artifact.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "29873f01b589096f73d48d73f4e6877ffc6f633e8b025a3806eb1f60a95a6cae",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "03796045-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-038468518ad812-01",
+      "word": "my",
+      "part_of_speech": "determiner",
+      "meaning_vi": "của tôi (từ hạn định sở hữu)",
+      "example_en": "My notebook is on the desk.",
+      "example_vi": "Cuốn sổ của tôi ở trên bàn.",
+      "definition_en": "a possessive word before a noun connected with the speaker",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/my",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "d5c8025bba51d33616b2eed6bd5bbc43b34dad9b828ff0115d84e38ee40a701d",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "my__14"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-b032a8abd93a9c-01",
+      "word": "next to",
+      "part_of_speech": "preposition",
+      "meaning_vi": "bên cạnh",
+      "example_en": "The pharmacy is next to the bank.",
+      "example_vi": "Nhà thuốc ở bên cạnh ngân hàng.",
+      "definition_en": "immediately beside a person or thing",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/next-to",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "cc8adb989118877c51195686a587ca5e394a1f4369f0439bd251418a419dd36b",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "next-to__9"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-edcd8e701a2df0-01",
+      "word": "nine",
+      "part_of_speech": "number",
+      "meaning_vi": "chín",
+      "example_en": "We invited nine people to the workshop.",
+      "example_vi": "Chúng tôi mời 9 người đến buổi hội thảo.",
+      "definition_en": "the number 9",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.quantity.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "7ee10508243f6b88938a638064d2baa341b2944dc72ddafac2417ff04eb23c29",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "13767410-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-cde4e100efd26f-01",
+      "word": "nineteen",
+      "part_of_speech": "number",
+      "meaning_vi": "mười chín",
+      "example_en": "We invited nineteen people to the workshop.",
+      "example_vi": "Chúng tôi mời 19 người đến buổi hội thảo.",
+      "definition_en": "the number 19",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.quantity.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "7ee10508243f6b88938a638064d2baa341b2944dc72ddafac2417ff04eb23c29",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "13770129-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-521c74a4d5824a-01",
+      "word": "ninety",
+      "part_of_speech": "number",
+      "meaning_vi": "chín mươi",
+      "example_en": "We invited ninety people to the workshop.",
+      "example_vi": "Chúng tôi mời 90 người đến buổi hội thảo.",
+      "definition_en": "the number 90",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.quantity.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "7ee10508243f6b88938a638064d2baa341b2944dc72ddafac2417ff04eb23c29",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "13772437-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-9390298f3fb0c5-01",
+      "word": "no",
+      "part_of_speech": "interjection",
+      "meaning_vi": "không (dùng để trả lời phủ định)",
+      "example_en": "No, I have not finished yet.",
+      "example_vi": "Không, tôi vẫn chưa làm xong.",
+      "definition_en": "a word giving a negative answer",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/no_1",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "2dfa155f32dd84f59ea64b1e756069475828002bf99750452b120505093a3a5c",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "no_1__12"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-04225201515016-01",
+      "word": "no one",
+      "part_of_speech": "pronoun",
+      "meaning_vi": "không một ai",
+      "example_en": "No one was waiting at the gate.",
+      "example_vi": "Không có ai đợi ở cổng.",
+      "definition_en": "not a single person",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/no-one",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "2e7d8e113258d40bf0b4a2c6a2f8ac73a92efceb5280a6bd3e8508837fd3e14b",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "no-one__14"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-6382b3cc881412-01",
+      "word": "nobody",
+      "part_of_speech": "pronoun",
+      "meaning_vi": "không ai",
+      "example_en": "Nobody knew the answer.",
+      "example_vi": "Không ai biết câu trả lời.",
+      "definition_en": "not a single person",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/nobody_1",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "90d20d73dcae83ce437fe78ee0c5443748348ccdca587b3cdc09c35a18d099b1",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "nobody_sng_1"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-f61fc65b2a7677-01",
+      "word": "non-profit",
+      "part_of_speech": "adjective",
+      "meaning_vi": "hoạt động không nhằm mục đích kiếm lợi nhuận",
+      "example_en": "She works for a non-profit organisation.",
+      "example_vi": "Cô ấy làm việc cho một tổ chức phi lợi nhuận.",
+      "definition_en": "not commercially motivated",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00486668-s"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-140bedbf9c3f6d-01",
+      "word": "none",
+      "part_of_speech": "pronoun",
+      "meaning_vi": "không một người hoặc vật nào trong số đã nhắc đến",
+      "example_en": "I checked the bags, but none was mine.",
+      "example_vi": "Tôi kiểm tra các túi nhưng không túi nào là của tôi.",
+      "definition_en": "not a single member of a mentioned group",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/none_1",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "c3544aa3791b3e136c4534d913ba689a9f29b669d88f3705b3c55f84b3cc1ba8",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "none_1__12"
+        }
+      ],
+      "review_note": "None thay cho một nhóm đã biết; động từ số ít hoặc số nhiều có thể phù hợp tùy nhóm và cách hiểu, không chấm một lựa chọn duy nhất trong mọi câu."
+    },
+    {
+      "id": "ox-1785cfc3bc6ac7-01",
+      "word": "nothing",
+      "part_of_speech": "pronoun",
+      "meaning_vi": "không có gì",
+      "example_en": "There is nothing in the box.",
+      "example_vi": "Không có gì trong hộp.",
+      "definition_en": "not a single thing",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/nothing",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "1fb99485ccbe764788b4b74114bf66cab8b63c8630a2e77114a41730d77db8cf",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "nothing__12"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-0729b81afda020-01",
+      "word": "nursing",
+      "part_of_speech": "adjective",
+      "meaning_vi": "đang cho con bú",
+      "example_en": "A nursing mother may need additional support.",
+      "example_vi": "Một người mẹ đang cho con bú có thể cần hỗ trợ thêm.",
+      "definition_en": "feeding a baby with milk from the breast",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/nurse_2",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "d62a348f7d8f56bd32ee2b6752ceaf3da2b9757cb03f9779932ae99f9edcca4a",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "nurse_sng_8"
+        }
+      ],
+      "review_note": "Nursing trong a nursing mother là dạng -ing của nurse, dùng bổ nghĩa mẹ đang cho con bú. Nguồn có đúng cụm này và nghĩa cho bú; không nhầm với nursing danh từ chỉ nghề điều dưỡng."
+    },
+    {
+      "id": "ox-102ad29298b7b4-01",
+      "word": "o'clock",
+      "part_of_speech": "adverb",
+      "meaning_vi": "giờ (dùng sau số chỉ giờ đúng)",
+      "example_en": "The lesson starts at nine o'clock.",
+      "example_vi": "Bài học bắt đầu lúc chín giờ đúng.",
+      "definition_en": "used after a number to state an exact clock hour",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adv.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "9d92cbcb348927c16baa2246b6a389fc6ed9833892a78287bcf5b387ea11f44b",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00198594-r"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-1e1c48dbdb5c1b-01",
+      "word": "obviously",
+      "part_of_speech": "adverb",
+      "meaning_vi": "rõ ràng; theo điều có thể nhận thấy",
+      "example_en": "The instructions were obviously unclear.",
+      "example_vi": "Rõ ràng các hướng dẫn không rõ ràng.",
+      "definition_en": "unmistakably (‘plain’ is often used informally for ‘plainly’)",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adv.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "9d92cbcb348927c16baa2246b6a389fc6ed9833892a78287bcf5b387ea11f44b",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00039730-r"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-565339bc4d33d7-01",
+      "word": "OK",
+      "part_of_speech": "interjection",
+      "meaning_vi": "được; đồng ý",
+      "example_en": "OK, let us start the meeting.",
+      "example_vi": "Được rồi, chúng ta bắt đầu cuộc họp thôi.",
+      "definition_en": "a word showing agreement or giving permission",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/ok_1",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "9d5d4fb1fc6a6d3c84d6edab95d424a126aa87a5d480692f377fce7317844455",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "ok_1__18"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-b8d31e852725af-01",
+      "word": "on",
+      "part_of_speech": "preposition",
+      "meaning_vi": "trên; chỉ vị trí tiếp xúc hoặc được đỡ bởi một bề mặt",
+      "example_en": "Your notebook is on the kitchen table.",
+      "example_vi": "Vở của bạn ở trên bàn bếp.",
+      "definition_en": "in a position touching or supported by a surface",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/on_1",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "ba16010c009c4f81f05c3f0d6c13066ca9bc23aeb38421368fc916b8bb8b13cf",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "on_1__14"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-a6556e4852e263-01",
+      "word": "our",
+      "part_of_speech": "determiner",
+      "meaning_vi": "của chúng tôi hoặc chúng ta",
+      "example_en": "Our class is preparing a group presentation.",
+      "example_vi": "Lớp chúng tôi đang chuẩn bị bài thuyết trình nhóm.",
+      "definition_en": "belonging to or connected with us",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/our",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "a9b9aef750fbd54b58413832690335dff97f50d44542bef4c9f06c19d48b054e",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "our__14"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-2c50624bea38c5-01",
+      "word": "pants",
+      "part_of_speech": "noun",
+      "meaning_vi": "quần dài (cách dùng Anh–Mỹ)",
+      "example_en": "I bought a pair of pants for my new office job.",
+      "example_vi": "Tôi mua một chiếc quần dài để đi làm công việc văn phòng mới.",
+      "definition_en": "clothing with two leg sections extending from the waist toward the ankles",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/pants",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "0bdbd158b934e56416c2698bc571b901a00086c0ba186d9792b69de73d86011d",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "pants__14"
+        }
+      ],
+      "review_note": "Đang học pants theo nghĩa Mỹ là quần dài. Trong cách dùng Anh–Anh pants thường chỉ quần lót; thường nói a pair of pants."
+    },
+    {
+      "id": "ox-b427c3dec90459-01",
+      "word": "per",
+      "part_of_speech": "preposition",
+      "meaning_vi": "mỗi; cho mỗi đơn vị",
+      "example_en": "The ticket costs ten dollars per person.",
+      "example_vi": "Vé có giá mười đô la mỗi người.",
+      "definition_en": "for each person or unit being counted or measured",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/per",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "6cbcc795b57ade922fd61fd7560a90d6b74f53969e3a7d828be6d6bd8c5fc456",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "per__12"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-f5d48a058c4813-01",
+      "word": "permanently",
+      "part_of_speech": "adverb",
+      "meaning_vi": "một cách lâu dài hoặc vĩnh viễn",
+      "example_en": "The factory closed permanently last year.",
+      "example_vi": "Nhà máy đã đóng cửa vĩnh viễn vào năm ngoái.",
+      "definition_en": "for a long time without essential change",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adv.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "9d92cbcb348927c16baa2246b6a389fc6ed9833892a78287bcf5b387ea11f44b",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00088404-r"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-55c64d0fcd6f9d-01",
+      "word": "photo",
+      "part_of_speech": "noun",
+      "meaning_vi": "bức ảnh",
+      "example_en": "She showed me a photo of her family.",
+      "example_vi": "Cô ấy cho tôi xem một bức ảnh gia đình mình.",
+      "definition_en": "a picture made using a camera",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.artifact.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "29873f01b589096f73d48d73f4e6877ffc6f633e8b025a3806eb1f60a95a6cae",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "03931348-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-82b5f777009797-01",
+      "word": "plenty",
+      "part_of_speech": "pronoun",
+      "meaning_vi": "rất nhiều; nhiều hơn mức cần thiết",
+      "example_en": "We have plenty to discuss today.",
+      "example_vi": "Hôm nay chúng ta có nhiều điều để thảo luận.",
+      "definition_en": "a large quantity that is enough for what is needed",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/plenty_1",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "177d4c479ea57116e12375166b0a7890b19cfb8984f6844590c355f5d7188dd8",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "plenty_1__12"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-847f5804f3fc1d-01",
+      "word": "poisonous",
+      "part_of_speech": "adjective",
+      "meaning_vi": "có độc, gây hại nếu ăn, hít hoặc hấp thụ",
+      "example_en": "Some wild mushrooms are poisonous.",
+      "example_vi": "Một số loại nấm dại có độc.",
+      "definition_en": "having the qualities or effects of a poison",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "02459585-s"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-81b6b2c874b787-01",
+      "word": "potential",
+      "part_of_speech": "noun",
+      "meaning_vi": "tiềm năng; khả năng phát triển hoặc đạt được điều gì",
+      "example_en": "The town has great potential for sustainable tourism.",
+      "example_vi": "Thị trấn có tiềm năng lớn để phát triển du lịch bền vững.",
+      "definition_en": "the ability to develop or achieve something in the future",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.state.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "3cb8cebbf3f812229c085d3f61608c3cca4e97a5c69e9bebb9c3e546a8411312",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "14506204-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-d9343d0a0097eb-01",
+      "word": "potentially",
+      "part_of_speech": "adverb",
+      "meaning_vi": "có khả năng xảy ra hoặc trở thành",
+      "example_en": "The change could potentially reduce waste.",
+      "example_vi": "Thay đổi đó có khả năng làm giảm chất thải.",
+      "definition_en": "with a possibility of becoming actual",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adv.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "9d92cbcb348927c16baa2246b6a389fc6ed9833892a78287bcf5b387ea11f44b",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00302263-r"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-b0f4b2e7996a5f-01",
+      "word": "prepared",
+      "part_of_speech": "adjective",
+      "meaning_vi": "đã sẵn sàng",
+      "example_en": "We are prepared for the interview.",
+      "example_vi": "Chúng tôi đã sẵn sàng cho buổi phỏng vấn.",
+      "definition_en": "having made preparations",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "02576155-s"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-ab2620f9b7154d-01",
+      "word": "programming",
+      "part_of_speech": "noun",
+      "meaning_vi": "việc viết chương trình máy tính",
+      "example_en": "She is learning programming at college.",
+      "example_vi": "Cô ấy đang học lập trình ở trường cao đẳng.",
+      "definition_en": "creating a sequence of instructions to enable the computer to do something",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.act.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "c5ea061734ae4687ca1505e32e75f61936ec84c2a05eaa751f451702c8699291",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00930762-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-129ce50dd90bf2-01",
+      "word": "race",
+      "part_of_speech": "noun",
+      "meaning_vi": "cuộc đua",
+      "example_en": "The race begins at nine tomorrow.",
+      "example_vi": "Cuộc đua bắt đầu lúc chín giờ ngày mai.",
+      "definition_en": "a contest of speed",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.event.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "c56af56ed053eebaa915332a163b7eafd4f78a4bb653b6a855b90aaddf239ea3",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "07473244-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-ee6fb3167b02cd-01",
+      "word": "ranking",
+      "part_of_speech": "noun",
+      "meaning_vi": "vị trí hoặc thứ tự trong một bảng xếp hạng",
+      "example_en": "The team's ranking improved after the competition.",
+      "example_vi": "Thứ hạng của đội được cải thiện sau cuộc thi.",
+      "definition_en": "position on a scale in relation to others in status or rank or achievement",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.state.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "3cb8cebbf3f812229c085d3f61608c3cca4e97a5c69e9bebb9c3e546a8411312",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "14452888-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-59cc3cb8a42973-01",
+      "word": "rape",
+      "part_of_speech": "noun",
+      "meaning_vi": "tội hiếp dâm; hành vi xâm hại tình dục nghiêm trọng không có sự đồng thuận",
+      "example_en": "The report calls for better support for survivors of rape.",
+      "example_vi": "Báo cáo kêu gọi hỗ trợ tốt hơn cho những người sống sót sau hành vi hiếp dâm.",
+      "definition_en": "a serious sexual crime involving penetration without consent",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/rape_1",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "259d243e77c340e0359a2db43d9c8415c0dd6954be5a76966e80ffca531a8437",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "rape_sng_2"
+        }
+      ],
+      "review_note": "Định nghĩa để hiểu từ vựng; phạm vi pháp lý có thể khác theo nơi. Việc không có khả năng đồng thuận không đồng nghĩa có sự đồng thuận."
+    },
+    {
+      "id": "ox-005cef244b8c15-01",
+      "word": "regardless",
+      "part_of_speech": "adverb",
+      "meaning_vi": "bất kể điều vừa nói; dù thế nào",
+      "example_en": "It may rain, but we will go regardless.",
+      "example_vi": "Có thể trời mưa, nhưng chúng tôi vẫn sẽ đi dù thế nào.",
+      "definition_en": "in spite of everything; without regard to drawbacks",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adv.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "9d92cbcb348927c16baa2246b6a389fc6ed9833892a78287bcf5b387ea11f44b",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00119427-r"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-fa3069bd423c0a-01",
+      "word": "regulatory",
+      "part_of_speech": "adjective",
+      "meaning_vi": "thuộc việc đặt ra hoặc thực thi quy định",
+      "example_en": "The company must meet regulatory requirements.",
+      "example_vi": "Công ty phải đáp ứng các yêu cầu theo quy định.",
+      "definition_en": "restricting according to rules or principles",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "02011781-s"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-637d7becb99839-01",
+      "word": "reporting",
+      "part_of_speech": "noun",
+      "meaning_vi": "hoạt động thu thập và đưa tin",
+      "example_en": "Accurate reporting is essential in journalism.",
+      "example_vi": "Đưa tin chính xác là điều thiết yếu trong báo chí.",
+      "definition_en": "the news as presented by reporters for newspapers or radio or television",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.communication.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "7053932585a7e05d38a2b04139e17800bca7fed8049e1e9f3f8e478a2734c23e",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "06696529-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-2e09d5210db841-01",
+      "word": "rest",
+      "part_of_speech": "noun",
+      "meaning_vi": "phần còn lại",
+      "example_en": "I will finish the rest tomorrow.",
+      "example_vi": "Tôi sẽ hoàn thành phần còn lại vào ngày mai.",
+      "definition_en": "something left after other parts have been taken away",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.relation.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "4be123e8ef3a971ca5eb76e3a3b1e62c2b53b5c269d7d74817b74450c7e4df24",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "13833030-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-350a770c0ec9f3-01",
+      "word": "rock",
+      "part_of_speech": "noun",
+      "meaning_vi": "đá; tảng đá",
+      "example_en": "A large rock blocked the path.",
+      "example_vi": "Một tảng đá lớn chắn lối đi.",
+      "definition_en": "a lump or mass of hard consolidated mineral matter",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.object.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "52351adcad28a13686080448a6d232148bb6f399426b0b9c9734aee12e8affd8",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "09438954-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-16367aacb67a4a-01",
+      "word": "second",
+      "part_of_speech": "number",
+      "meaning_vi": "thứ hai (trong thứ tự)",
+      "example_en": "She finished in second place.",
+      "example_vi": "Cô ấy kết thúc ở vị trí thứ hai.",
+      "definition_en": "coming after the first in a sequence",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.relation.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "4be123e8ef3a971ca5eb76e3a3b1e62c2b53b5c269d7d74817b74450c7e4df24",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "13868743-n"
+        }
+      ],
+      "review_note": "Second ở đây là số thứ tự thứ hai; không phải giây trong đơn vị thời gian."
+    },
+    {
+      "id": "ox-166e1cc67cfbf0-01",
+      "word": "sensible",
+      "part_of_speech": "adjective",
+      "meaning_vi": "hợp lý; biết suy xét thực tế",
+      "example_en": "Taking a break was a sensible decision after such a long drive.",
+      "example_vi": "Nghỉ một lát là quyết định hợp lý sau một chặng lái xe dài như vậy.",
+      "definition_en": "showing practical judgment about what is useful or appropriate",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01950023-a"
+        }
+      ],
+      "review_note": "Sensible nói sự hợp lý/biết suy xét. Sensitive thường nói nhạy cảm hoặc dễ bị ảnh hưởng; không tráo hai từ trong nghĩa đang học."
+    },
+    {
+      "id": "ox-6ee0eb490ff832-01",
+      "word": "set",
+      "part_of_speech": "verb",
+      "meaning_vi": "đặt vào một vị trí",
+      "example_en": "Please set the books on the table.",
+      "example_vi": "Hãy đặt sách lên bàn.",
+      "definition_en": "put into a certain place or abstract location",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.contact.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "379ce11e6877c4c87adc1219bc41cf1bb0d31fb5b64fdb294b1b48140b858041",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01496967-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-3ba8d02b16fd2a-01",
+      "word": "seven",
+      "part_of_speech": "number",
+      "meaning_vi": "bảy",
+      "example_en": "We invited seven people to the workshop.",
+      "example_vi": "Chúng tôi mời 7 người đến buổi hội thảo.",
+      "definition_en": "the number 7",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.quantity.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "7ee10508243f6b88938a638064d2baa341b2944dc72ddafac2417ff04eb23c29",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "13767056-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-2c5abdef2a0eac-01",
+      "word": "seventeen",
+      "part_of_speech": "number",
+      "meaning_vi": "mười bảy",
+      "example_en": "We invited seventeen people to the workshop.",
+      "example_vi": "Chúng tôi mời 17 người đến buổi hội thảo.",
+      "definition_en": "the number 17",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.quantity.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "7ee10508243f6b88938a638064d2baa341b2944dc72ddafac2417ff04eb23c29",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "13769865-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-ab0e4b1a783957-01",
+      "word": "seventy",
+      "part_of_speech": "number",
+      "meaning_vi": "bảy mươi",
+      "example_en": "We invited seventy people to the workshop.",
+      "example_vi": "Chúng tôi mời 70 người đến buổi hội thảo.",
+      "definition_en": "the number 70",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.quantity.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "7ee10508243f6b88938a638064d2baa341b2944dc72ddafac2417ff04eb23c29",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "13772034-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-2740e59ffb8c5e-01",
+      "word": "several",
+      "part_of_speech": "determiner",
+      "meaning_vi": "một vài; nhiều hơn hai nhưng không nhiều",
+      "example_en": "I have several questions about the plan.",
+      "example_vi": "Tôi có một vài câu hỏi về kế hoạch.",
+      "definition_en": "more than two but not a large number",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/several_1",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "4cf44671961b038935ea5bd57d459738017fe06b1daaf17972727b92d15130b5",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "several_1__13"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-0266a143d4d043-01",
+      "word": "shaped",
+      "part_of_speech": "adjective",
+      "meaning_vi": "có hình dạng nào đó",
+      "example_en": "The garden has a star-shaped flower bed.",
+      "example_vi": "Khu vườn có một luống hoa hình ngôi sao.",
+      "definition_en": "having the shape of",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.pert.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "8f20c40d08855ef1193146c9f8cf6762e2a2e7ed878823ed8367da48732f19bc",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "03147725-a"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-e3ced7f422ffbf-01",
+      "word": "shocked",
+      "part_of_speech": "adjective",
+      "meaning_vi": "rất bất ngờ và buồn hoặc khó chịu",
+      "example_en": "We were shocked by the news.",
+      "example_vi": "Chúng tôi bàng hoàng trước tin đó.",
+      "definition_en": "struck with fear, dread, or consternation",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00079166-s"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-f86b1f62a85542-01",
+      "word": "should",
+      "part_of_speech": "modal verb",
+      "meaning_vi": "nên; dùng để đưa ra lời khuyên",
+      "example_en": "You should check the timetable before you leave.",
+      "example_vi": "Bạn nên kiểm tra lịch trình trước khi đi.",
+      "definition_en": "used to say what is a good or sensible thing to do",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/should",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "13d033e3a15e764178f95d435ba45a03284ef3d7458cb88262897fb52a84d235",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "should__14"
+        }
+      ],
+      "review_note": "Should trong câu này đưa lời khuyên; không phải luôn tương đương nghĩa bắt buộc tuyệt đối của must."
+    },
+    {
+      "id": "ox-df41164e151227-01",
+      "word": "sixty",
+      "part_of_speech": "number",
+      "meaning_vi": "sáu mươi",
+      "example_en": "We invited sixty people to the workshop.",
+      "example_vi": "Chúng tôi mời 60 người đến buổi hội thảo.",
+      "definition_en": "the number 60",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.quantity.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "7ee10508243f6b88938a638064d2baa341b2944dc72ddafac2417ff04eb23c29",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "13771918-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-a6b46dd0d1ae5e-01",
+      "word": "some",
+      "part_of_speech": "determiner",
+      "meaning_vi": "một số; một ít (số lượng không xác định)",
+      "example_en": "We need some fresh water.",
+      "example_vi": "Chúng ta cần một ít nước sạch.",
+      "definition_en": "an unspecified quantity or number",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/some_1",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "8f5a9d8fe6f8efca2713133d7efad626f6a8cfcc5062a6e9325335f694fb0eb6",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "some_1__14"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-1cac4d101ee696-01",
+      "word": "southern",
+      "part_of_speech": "adjective",
+      "meaning_vi": "thuộc hoặc ở phía nam",
+      "example_en": "The city lies on the southern coast.",
+      "example_vi": "Thành phố nằm trên bờ biển phía nam.",
+      "definition_en": "situated in or oriented toward the south",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01607761-s"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-262cd7e8d3156b-01",
+      "word": "spending",
+      "part_of_speech": "noun",
+      "meaning_vi": "việc hoặc số tiền chi tiêu",
+      "example_en": "Public spending on education increased.",
+      "example_vi": "Chi tiêu công cho giáo dục đã tăng.",
+      "definition_en": "money paid out; an amount spent",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.possession.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "45bddb173490da62d868572ee1bc077f7f86b943d83fbadfd472aac4df8ebd1e",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "13296311-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-8e19545f050320-01",
+      "word": "spoken",
+      "part_of_speech": "adjective",
+      "meaning_vi": "được nói ra, thuộc lời nói",
+      "example_en": "The course focuses on spoken English.",
+      "example_vi": "Khóa học tập trung vào tiếng Anh nói.",
+      "definition_en": "uttered through the medium of speech or characterized by speech; sometimes used in combination",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "02291437-a"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-815fbec040e347-01",
+      "word": "spouse",
+      "part_of_speech": "noun",
+      "meaning_vi": "vợ hoặc chồng",
+      "example_en": "Employees may bring a spouse to the event.",
+      "example_vi": "Nhân viên có thể đưa vợ hoặc chồng đến sự kiện.",
+      "definition_en": "a person's partner in marriage",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.person.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "7d2ce4bebd1cc762a5d4f4d6cf7aee228e5c795ed07263d575fea0b820780c48",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "10660018-n"
+        }
+      ],
+      "review_note": "Spouse là cách gọi trung tính về giới của vợ hoặc chồng, thường gặp trong văn bản."
+    },
+    {
+      "id": "ox-1562206543da76-01",
+      "word": "staff",
+      "part_of_speech": "noun",
+      "meaning_vi": "đội ngũ nhân viên của một tổ chức",
+      "example_en": "The hospital staff receive regular safety training.",
+      "example_vi": "Đội ngũ nhân viên bệnh viện được tập huấn an toàn thường xuyên.",
+      "definition_en": "the people who work for an organization",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.group.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "4c5052b8dd31f1924f46899e8789d6fa916637d1451113c39ccded95c9d80a4e",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "08456947-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-fe6d3468cf5c74-01",
+      "word": "standard",
+      "part_of_speech": "noun",
+      "meaning_vi": "tiêu chuẩn; mức chất lượng dùng làm cơ sở đánh giá",
+      "example_en": "The new filters help the factory meet a higher safety standard.",
+      "example_vi": "Các bộ lọc mới giúp nhà máy đáp ứng một tiêu chuẩn an toàn cao hơn.",
+      "definition_en": "a level of quality used to judge or compare things",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.communication.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "7053932585a7e05d38a2b04139e17800bca7fed8049e1e9f3f8e478a2734c23e",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "07275291-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-e5930e63213247-01",
+      "word": "statistic",
+      "part_of_speech": "noun",
+      "meaning_vi": "một số liệu thống kê cụ thể",
+      "example_en": "The report includes a statistic on average travel time.",
+      "example_vi": "Báo cáo có một số liệu thống kê về thời gian đi lại trung bình.",
+      "definition_en": "a datum that can be represented numerically",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "e95c87bc234d89a12907b0fea1a7f96c1d0eb6e92d614680095d9447bcb39c7b",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "06030848-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-8f53dd914ced58-01",
+      "word": "stick",
+      "part_of_speech": "verb",
+      "meaning_vi": "dán; làm cho vật bám vào bề mặt",
+      "example_en": "We can stick the poster on the wall.",
+      "example_vi": "Chúng ta có thể dán áp phích lên tường.",
+      "definition_en": "fasten with an adhesive material like glue",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.contact.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "379ce11e6877c4c87adc1219bc41cf1bb0d31fb5b64fdb294b1b48140b858041",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01617485-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-d60384034b77c1-01",
+      "word": "strip",
+      "part_of_speech": "noun",
+      "meaning_vi": "dải vật liệu dài và hẹp",
+      "example_en": "Cut a strip of paper for the label.",
+      "example_vi": "Hãy cắt một dải giấy để làm nhãn.",
+      "definition_en": "artifact consisting of a narrow flat piece of material",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.artifact.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "29873f01b589096f73d48d73f4e6877ffc6f633e8b025a3806eb1f60a95a6cae",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "04346369-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-7309d9f34f5872-01",
+      "word": "strongly",
+      "part_of_speech": "adverb",
+      "meaning_vi": "một cách mạnh mẽ; với mức độ hoặc sự tin tưởng cao",
+      "example_en": "I strongly support equal access to education.",
+      "example_vi": "Tôi ủng hộ mạnh mẽ việc tiếp cận giáo dục bình đẳng.",
+      "definition_en": "with strength or in a strong manner",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adv.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "9d92cbcb348927c16baa2246b6a389fc6ed9833892a78287bcf5b387ea11f44b",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00178775-r"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-a5c935d142e9fa-01",
+      "word": "such",
+      "part_of_speech": "determiner",
+      "meaning_vi": "như thế; thuộc loại vừa được nhắc đến",
+      "example_en": "We need to prevent such mistakes.",
+      "example_vi": "Chúng ta cần ngăn những lỗi như thế.",
+      "definition_en": "of the kind already referred to",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/such",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "3f0bdffd26661f93cc12df3e41c53116637ea0dfdc0b78c61144a4ac5d6d7a3a",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "such__13"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-c06a4f8f0647f5-01",
+      "word": "temporarily",
+      "part_of_speech": "adverb",
+      "meaning_vi": "một cách tạm thời",
+      "example_en": "The road is temporarily closed for repairs.",
+      "example_vi": "Con đường tạm thời đóng để sửa chữa.",
+      "definition_en": "for a limited time only; not permanently",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adv.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "9d92cbcb348927c16baa2246b6a389fc6ed9833892a78287bcf5b387ea11f44b",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00088791-r"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-b9776d7ddf459c-01",
+      "word": "the",
+      "part_of_speech": "article",
+      "meaning_vi": "mạo từ xác định; đứng trước danh từ chỉ người hoặc vật đã xác định trong ngữ cảnh",
+      "example_en": "Please close the door next to your desk.",
+      "example_vi": "Hãy đóng cánh cửa cạnh bàn của bạn.",
+      "definition_en": "the definite article, used before a noun whose reference is identifiable in context",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/the",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "391aa5222d2b1f2325aa8d3c391cdff1a18e0170491bd160d348da5dece4c80c",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "the__14"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-fd963e4fd45949-01",
+      "word": "their",
+      "part_of_speech": "determiner",
+      "meaning_vi": "của họ (từ hạn định sở hữu)",
+      "example_en": "The students presented their ideas.",
+      "example_vi": "Các sinh viên trình bày ý tưởng của họ.",
+      "definition_en": "belonging to or connected with them",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/their",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "97add1b968d6a34dc5ad40b895bd14a172f7e45f4af7038620ebc4bd0ab86130",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "their__16"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-42ea40f608ce24-01",
+      "word": "themselves",
+      "part_of_speech": "pronoun",
+      "meaning_vi": "chính họ; tự họ",
+      "example_en": "They completed the project themselves.",
+      "example_vi": "Họ tự hoàn thành dự án.",
+      "definition_en": "used to emphasize the people performing an action",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/themselves",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "54951bf4beb7dad0277abfeffd684cebf2e363fd31b700a581b0174282f68ae7",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "themselves__30"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-9ecc81f0a4b6df-01",
+      "word": "thirteen",
+      "part_of_speech": "number",
+      "meaning_vi": "mười ba",
+      "example_en": "We invited thirteen people to the workshop.",
+      "example_vi": "Chúng tôi mời 13 người đến buổi hội thảo.",
+      "definition_en": "the number 13",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.quantity.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "7ee10508243f6b88938a638064d2baa341b2944dc72ddafac2417ff04eb23c29",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "13769339-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-aca5fb59db69e5-01",
+      "word": "thirty",
+      "part_of_speech": "number",
+      "meaning_vi": "ba mươi",
+      "example_en": "We invited thirty people to the workshop.",
+      "example_vi": "Chúng tôi mời 30 người đến buổi hội thảo.",
+      "definition_en": "the number 30",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.quantity.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "7ee10508243f6b88938a638064d2baa341b2944dc72ddafac2417ff04eb23c29",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "13771547-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-5ee23aea3d8c59-01",
+      "word": "thought-provoking",
+      "part_of_speech": "adjective",
+      "meaning_vi": "gợi nhiều suy nghĩ",
+      "example_en": "The article raises a thought-provoking question.",
+      "example_vi": "Bài viết đặt ra một câu hỏi gợi nhiều suy nghĩ.",
+      "definition_en": "stimulating interest or thought",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "02314278-s"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-a0af3a48cfad1f-01",
+      "word": "thousand",
+      "part_of_speech": "number",
+      "meaning_vi": "một nghìn (1.000)",
+      "example_en": "The school has about a thousand students.",
+      "example_vi": "Trường có khoảng một nghìn học sinh.",
+      "definition_en": "the number 1,000",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.quantity.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "7ee10508243f6b88938a638064d2baa341b2944dc72ddafac2417ff04eb23c29",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "13772984-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-8b5b9db0c13db2-01",
+      "word": "three",
+      "part_of_speech": "number",
+      "meaning_vi": "ba",
+      "example_en": "We invited three people to the workshop.",
+      "example_vi": "Chúng tôi mời 3 người đến buổi hội thảo.",
+      "definition_en": "the number 3",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.quantity.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "7ee10508243f6b88938a638064d2baa341b2944dc72ddafac2417ff04eb23c29",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "13766184-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-584e2d9ef6aea5-01",
+      "word": "thrilled",
+      "part_of_speech": "adjective",
+      "meaning_vi": "rất vui và hào hứng",
+      "example_en": "She was thrilled to receive the scholarship.",
+      "example_vi": "Cô ấy rất vui mừng khi nhận được học bổng.",
+      "definition_en": "feeling intense pleasurable excitement",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00923945-s"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-663ea1bfffe503-01",
+      "word": "to",
+      "part_of_speech": "preposition",
+      "meaning_vi": "đến; về phía một địa điểm hoặc đích đến",
+      "example_en": "We walked to the station after breakfast.",
+      "example_vi": "Chúng tôi đi bộ đến nhà ga sau bữa sáng.",
+      "definition_en": "in the direction of a place or destination",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/to_1",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "ed24d3609672dc14884a456056c5c41553f611e1465e2e355ce34da0fd16711e",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "to_1__14"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-28720365c5e747-01",
+      "word": "top",
+      "part_of_speech": "noun",
+      "meaning_vi": "phần trên cùng; đỉnh của một vật hoặc địa điểm",
+      "example_en": "There is a small café at the top of the hill.",
+      "example_vi": "Có một quán cà phê nhỏ ở trên đỉnh đồi.",
+      "definition_en": "the highest part of something",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.location.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "0ece490f18f3669715723e7608ec0e30b6852945938f84b03b1d5ed1dbd88562",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "08635538-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-f45b59736bd986-01",
+      "word": "transparency",
+      "part_of_speech": "noun",
+      "meaning_vi": "sự minh bạch; việc công khai và rõ ràng về thông tin hoặc quyết định",
+      "example_en": "Publishing the budget would improve transparency in local government.",
+      "example_vi": "Công bố ngân sách sẽ cải thiện tính minh bạch của chính quyền địa phương.",
+      "definition_en": "clarity that allows people to understand information and decisions",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/transparency",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "bbdc031a654390984da21e750154732656a7ed0871870b9a880cbea0c054e8fd",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "transparency_sng_4"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/transparent",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "02702c1946da602b70346f882238246f2ee7491c650841bf59d9f1713085ffeb",
+          "scope": "related adjective sense and actual official-documents example support clarity of public information",
+          "sense_ref": "transparent_sng_3"
+        }
+      ],
+      "review_note": "Đang học minh bạch theo khía cạnh thông tin/tình huống rõ và dễ hiểu. Nguồn không bảo đảm rằng mọi thông tin đều công khai hoặc không còn điều bị giấu."
+    },
+    {
+      "id": "ox-55b484fa51b492-01",
+      "word": "trillion",
+      "part_of_speech": "number",
+      "meaning_vi": "một nghìn tỷ (1.000.000.000.000; cách dùng hiện đại)",
+      "example_en": "The national debt exceeded one trillion dollars.",
+      "example_vi": "Nợ quốc gia vượt một nghìn tỷ đô la.",
+      "definition_en": "the number 1,000,000,000,000",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.quantity.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "7ee10508243f6b88938a638064d2baa341b2944dc72ddafac2417ff04eb23c29",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "13774583-n"
+        }
+      ],
+      "review_note": "Đang chọn trillion hiện đại = 1.000.000.000.000 (10^12). Không dùng nghĩa long-scale lịch sử 10^18 trong bài này."
+    },
+    {
+      "id": "ox-e0da2baa664d4f-01",
+      "word": "turnout",
+      "part_of_speech": "noun",
+      "meaning_vi": "số người tham dự hoặc đi bỏ phiếu",
+      "example_en": "The election had a high turnout.",
+      "example_vi": "Cuộc bầu cử có tỷ lệ cử tri đi bỏ phiếu cao.",
+      "definition_en": "attendance for a particular event or purpose (as to vote in an election)",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.act.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "c5ea061734ae4687ca1505e32e75f61936ec84c2a05eaa751f451702c8699291",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01236482-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-d1a749ad879b6c-01",
+      "word": "twelve",
+      "part_of_speech": "number",
+      "meaning_vi": "mười hai",
+      "example_en": "We invited twelve people to the workshop.",
+      "example_vi": "Chúng tôi mời 12 người đến buổi hội thảo.",
+      "definition_en": "the number 12",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.quantity.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "7ee10508243f6b88938a638064d2baa341b2944dc72ddafac2417ff04eb23c29",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "13768925-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-7c2c4df740f720-01",
+      "word": "twenty",
+      "part_of_speech": "number",
+      "meaning_vi": "hai mươi",
+      "example_en": "We invited twenty people to the workshop.",
+      "example_vi": "Chúng tôi mời 20 người đến buổi hội thảo.",
+      "definition_en": "the number 20",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.quantity.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "7ee10508243f6b88938a638064d2baa341b2944dc72ddafac2417ff04eb23c29",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "13770268-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-3fc4ccfe745870-01",
+      "word": "two",
+      "part_of_speech": "number",
+      "meaning_vi": "hai",
+      "example_en": "We invited two people to the workshop.",
+      "example_vi": "Chúng tôi mời 2 người đến buổi hội thảo.",
+      "definition_en": "the number 2",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.quantity.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "7ee10508243f6b88938a638064d2baa341b2944dc72ddafac2417ff04eb23c29",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "13765409-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-85738f8f9a7f1b-01",
+      "word": "whatever",
+      "part_of_speech": "determiner",
+      "meaning_vi": "bất kỳ điều hoặc loại nào",
+      "example_en": "Choose whatever colour you prefer.",
+      "example_vi": "Hãy chọn bất kỳ màu nào bạn thích.",
+      "definition_en": "any or every one of the kind mentioned",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/whatever_1",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "fa48ec81970bcc6e55cf3c2e1f067a8266656b3a07215f3f32e511f11f39e2a3",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "whatever_1__15"
+        }
+      ],
+      "review_note": "Trong ví dụ, whatever là từ hạn định đứng trước danh từ colour/color, nghĩa bất kỳ loại nào."
+    },
+    {
+      "id": "ox-006f92f1bdf8ce-01",
+      "word": "whatsoever",
+      "part_of_speech": "adverb",
+      "meaning_vi": "chút nào cả (nhấn mạnh trong câu phủ định)",
+      "example_en": "There was no evidence whatsoever.",
+      "example_vi": "Không có chút bằng chứng nào cả.",
+      "definition_en": "used after a negative expression to emphasize that there is none at all",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/whatsoever",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "7b4e3c908f90a33b258db06347a6ce28f106ae8d84a434ba4b44ff9890293dde",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "whatsoever_sng_1"
+        }
+      ],
+      "review_note": "Whatsoever thường nhấn mạnh phủ định: no evidence whatsoever. Không có nghĩa một số tùy ý như whatever trong ví dụ khác."
+    },
+    {
+      "id": "ox-b3922e60250ba1-01",
+      "word": "wherever",
+      "part_of_speech": "conjunction",
+      "meaning_vi": "bất cứ nơi nào",
+      "example_en": "You can study wherever you feel comfortable.",
+      "example_vi": "Bạn có thể học ở bất cứ nơi nào bạn thấy thoải mái.",
+      "definition_en": "in any place that",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/wherever_1",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "56864bc7f7af3cc6f3c36df2b94ccdd5220ad4ecd4cdb2bee127eb0e072cef33",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "wherever_1__14"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-b5293f2894ae49-01",
+      "word": "whilst",
+      "part_of_speech": "conjunction",
+      "meaning_vi": "trong khi; trong khoảng thời gian một việc khác đang xảy ra",
+      "example_en": "Please keep your phone silent whilst the interview is taking place.",
+      "example_vi": "Hãy để điện thoại ở chế độ im lặng trong khi cuộc phỏng vấn diễn ra.",
+      "definition_en": "while; during the time that something else happens",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/whilst",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "e51cc7055a791eab65e71a2ecf5601ff7dc0e9c1dab88e1e06a1d71b8f85e5d2",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "whilst_sng_1"
+        }
+      ],
+      "review_note": "Whilst thường gặp trong Anh–Anh; ưu tiên while trong giao tiếp Mỹ. Đang học nghĩa đồng thời, không phải mọi nghĩa đối lập của whilst."
+    },
+    {
+      "id": "ox-5d5766cf2d7870-01",
+      "word": "whole",
+      "part_of_speech": "adjective",
+      "meaning_vi": "toàn bộ; trọn vẹn, không thiếu phần nào",
+      "example_en": "We spent the whole afternoon preparing for the presentation.",
+      "example_vi": "Chúng tôi dành cả buổi chiều để chuẩn bị cho bài thuyết trình.",
+      "definition_en": "complete, with no part left out",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00516809-a"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-bc16f5825a9daf-01",
+      "word": "will",
+      "part_of_speech": "modal verb",
+      "meaning_vi": "sẽ; dùng để nói một dự đoán hoặc quyết định về tương lai",
+      "example_en": "I will send you the report tomorrow.",
+      "example_vi": "Tôi sẽ gửi báo cáo cho bạn vào ngày mai.",
+      "definition_en": "used when making a prediction or expressing a decision about the future",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/will_3",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "385adc87ccdae9c82f612ed77dddd23bb349cb46342607a3dee4cf1dd54b4c87",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "will_sng_1"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-7aca9b2c4a3612-01",
+      "word": "worldwide",
+      "part_of_speech": "adjective",
+      "meaning_vi": "trên khắp thế giới",
+      "example_en": "The campaign received worldwide attention.",
+      "example_vi": "Chiến dịch nhận được sự chú ý trên toàn thế giới.",
+      "definition_en": "spanning or extending throughout the entire world",
+      "definition_source": "oewn",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adj.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "74cb28a34abd50294a3329b497d9b0142282eaa22610b5ebeae9368dae646038",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01572087-s"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-a495a4b86c1eac-01",
+      "word": "yeah",
+      "part_of_speech": "interjection",
+      "meaning_vi": "ừ; vâng (thân mật)",
+      "example_en": "Yeah, I can help you with that.",
+      "example_vi": "Ừ, tôi có thể giúp bạn việc đó.",
+      "definition_en": "an informal way to say yes",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/yeah",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "62c33a7825ca520bd0efb81d274d999a83d1efccf48be481fedb1062a935902d",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "yeah__14"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-8a798890fe9381-01",
+      "word": "yes",
+      "part_of_speech": "interjection",
+      "meaning_vi": "có; vâng; đúng (để đồng ý hoặc xác nhận)",
+      "example_en": "Yes, that is the correct address.",
+      "example_vi": "Đúng, đó là địa chỉ chính xác.",
+      "definition_en": "a word confirming that an answer or statement is correct",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/yes_1",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "b0a5f00ef65c67e5075945e0daa743d23191a1313b80710505455735412c9063",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "yes_1__12"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-9523d9fbe79bcf-01",
+      "word": "yesterday",
+      "part_of_speech": "adverb",
+      "meaning_vi": "hôm qua",
+      "example_en": "I sent the application yesterday morning.",
+      "example_vi": "Tôi đã gửi đơn vào sáng hôm qua.",
+      "definition_en": "on the day before today",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/adv.all.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "9d92cbcb348927c16baa2246b6a389fc6ed9833892a78287bcf5b387ea11f44b",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00510249-r"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-4d040d3f646601-01",
+      "word": "your",
+      "part_of_speech": "determiner",
+      "meaning_vi": "của bạn hoặc các bạn",
+      "example_en": "Please write your name here.",
+      "example_vi": "Hãy viết tên bạn ở đây.",
+      "definition_en": "belonging to the person or people being addressed",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/your",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "dd4dd4a5014735568e0e08af87ea2850d011221596fe74eb5df774342be5e8c7",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "your__18"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "ox-f9194e73f9e945-01",
+      "word": "zero",
+      "part_of_speech": "number",
+      "meaning_vi": "số không (0)",
+      "example_en": "The temperature fell to zero.",
+      "example_vi": "Nhiệt độ giảm xuống không độ.",
+      "definition_en": "the number represented by 0",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/noun.quantity.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "7ee10508243f6b88938a638064d2baa341b2944dc72ddafac2417ff04eb23c29",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "13764498-n"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-wake-up-stop-sleeping-01",
+      "word": "wake up",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "thức giấc",
+      "example_en": "I usually wake up before my alarm rings.",
+      "example_vi": "Tôi thường thức giấc trước khi chuông báo thức reo.",
+      "definition_en": "To stop sleeping and become awake.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.body.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "6e085e60a4527222f9a96e27e082e0e282ca790af8a38bc4a45c9addbefb0fc6",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00018519-v"
+        }
+      ],
+      "review_note": "Wake up là thức giấc; get up là rời giường. Hai hành động có thể diễn ra cách nhau một lúc."
+    },
+    {
+      "id": "pv-get-up-leave-bed-01",
+      "word": "get up",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "ra khỏi giường sau khi thức dậy",
+      "example_en": "I get up at seven and make breakfast.",
+      "example_vi": "Tôi ra khỏi giường lúc bảy giờ rồi làm bữa sáng.",
+      "definition_en": "To leave your bed after sleeping.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.body.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "6e085e60a4527222f9a96e27e082e0e282ca790af8a38bc4a45c9addbefb0fc6",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00018151-v"
+        }
+      ],
+      "review_note": "Get up trong bài là ra khỏi giường; không tự đồng nhất với wake up nghĩa thức giấc."
+    },
+    {
+      "id": "pv-lie-down-rest-flat-01",
+      "word": "lie down",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "nằm xuống để nghỉ",
+      "example_en": "You can lie down on the sofa if you feel tired.",
+      "example_vi": "Bạn có thể nằm xuống ghế sofa nếu thấy mệt.",
+      "definition_en": "To move into a flat resting position on a bed or another surface.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.motion.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "29f0859977bede750239f911afb356885b50597afe9e161e2fc3f584ad86f095",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01989043-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-sit-down-take-seat-01",
+      "word": "sit down",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "ngồi xuống",
+      "example_en": "Please sit down while I find the documents.",
+      "example_vi": "Mời bạn ngồi xuống trong khi tôi tìm tài liệu.",
+      "definition_en": "To move from standing to a sitting position.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.motion.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "29f0859977bede750239f911afb356885b50597afe9e161e2fc3f584ad86f095",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01988916-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-stand-up-rise-to-feet-01",
+      "word": "stand up",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "đứng dậy",
+      "example_en": "Please stand up slowly if you feel dizzy.",
+      "example_vi": "Hãy đứng dậy từ từ nếu bạn thấy chóng mặt.",
+      "definition_en": "To rise to a standing position.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.motion.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "29f0859977bede750239f911afb356885b50597afe9e161e2fc3f584ad86f095",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01987278-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-go-out-leave-for-leisure-01",
+      "word": "go out",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "ra ngoài để vui chơi hoặc gặp gỡ",
+      "example_en": "We often go out for dinner on Fridays.",
+      "example_vi": "Chúng tôi thường ra ngoài ăn tối vào thứ Sáu.",
+      "definition_en": "To leave home for a social activity or entertainment.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.motion.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "29f0859977bede750239f911afb356885b50597afe9e161e2fc3f584ad86f095",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01846146-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-come-back-return-here-01",
+      "word": "come back",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "quay lại nơi người nói đang ở hoặc đang nói đến",
+      "example_en": "Can you come back tomorrow to collect your order?",
+      "example_vi": "Bạn có thể quay lại vào ngày mai để nhận đơn hàng không?",
+      "definition_en": "To return to the place where the speaker is or the place being discussed.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/come-back",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "f4b53c3ecc9a00fc5e78784abfc32c0678e51d81ae70cd42034a1e5079a8990b",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "come-back__11"
+        }
+      ],
+      "review_note": "Come back thường nhìn về nơi người nói đang ở hoặc nơi được lấy làm mốc trong hội thoại. Go back thường hướng trở lại nơi khác."
+    },
+    {
+      "id": "pv-go-back-return-there-01",
+      "word": "go back",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "trở lại nơi trước đó",
+      "example_en": "I need to go back to the office for my keys.",
+      "example_vi": "Tôi cần quay lại văn phòng để lấy chìa khóa.",
+      "definition_en": "To return to a place where you were before.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/go-back",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "2cf6de30272e22dfee6ba92ff033fc057f0aa4b5dfb07b9353efc55f17c0416a",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "go-back__24"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-come-in-enter-01",
+      "word": "come in",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "đi vào",
+      "example_en": "Please come in and close the door.",
+      "example_vi": "Mời vào và đóng cửa lại.",
+      "definition_en": "To enter the room or place where the speaker is.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.motion.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "29f0859977bede750239f911afb356885b50597afe9e161e2fc3f584ad86f095",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "02020375-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-get-in-enter-car-01",
+      "word": "get in",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "lên xe ô tô hoặc phương tiện nhỏ tương tự",
+      "example_en": "We should get in the taxi before it starts raining.",
+      "example_vi": "Chúng ta nên lên taxi trước khi trời bắt đầu mưa.",
+      "definition_en": "To enter a car, taxi, or similar small vehicle.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.motion.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "29f0859977bede750239f911afb356885b50597afe9e161e2fc3f584ad86f095",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "02020375-v"
+        }
+      ],
+      "review_note": "Trong ví dụ dùng get in cho xe ô tô/taxi; thường dùng get on cho xe buýt/tàu/máy bay."
+    },
+    {
+      "id": "pv-get-out-leave-car-01",
+      "word": "get out",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "ra khỏi xe ô tô hoặc phương tiện nhỏ tương tự",
+      "example_en": "You can get out here; the station is across the road.",
+      "example_vi": "Bạn có thể xuống xe ở đây; nhà ga ở bên kia đường.",
+      "definition_en": "To leave a car, taxi, or similar small vehicle.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.motion.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "29f0859977bede750239f911afb356885b50597afe9e161e2fc3f584ad86f095",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "02019020-v"
+        }
+      ],
+      "review_note": "Trong ví dụ dùng get out cho rời ô tô/taxi; thường dùng get off cho xe buýt/tàu/máy bay."
+    },
+    {
+      "id": "pv-get-on-board-transport-01",
+      "word": "get on",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "lên xe buýt, tàu hoặc máy bay",
+      "example_en": "We need to get on the bus at the next stop.",
+      "example_vi": "Chúng ta cần lên xe buýt ở điểm dừng tiếp theo.",
+      "definition_en": "To board a bus, train, plane, or similar form of transport.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.motion.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "29f0859977bede750239f911afb356885b50597afe9e161e2fc3f584ad86f095",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "02021901-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-get-off-leave-transport-01",
+      "word": "get off",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "xuống xe buýt, tàu hoặc máy bay",
+      "example_en": "We should get off the train at Central Station.",
+      "example_vi": "Chúng ta nên xuống tàu ở ga Trung tâm.",
+      "definition_en": "To leave a bus, train, plane, or similar form of transport.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.motion.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "29f0859977bede750239f911afb356885b50597afe9e161e2fc3f584ad86f095",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "02019914-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-take-off-remove-clothing-01",
+      "word": "take off",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "cởi hoặc tháo quần áo, giày hay phụ kiện đang mang",
+      "example_en": "Please take off your shoes before entering the room.",
+      "example_vi": "Hãy cởi giày trước khi vào phòng.",
+      "definition_en": "To remove an item of clothing or something you are wearing.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.body.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "6e085e60a4527222f9a96e27e082e0e282ca790af8a38bc4a45c9addbefb0fc6",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00050171-v"
+        }
+      ],
+      "review_note": "Đang học take off nghĩa cởi/tháo đồ đang mang. Take off còn có nghĩa máy bay cất cánh; không trộn đáp án hai nghĩa."
+    },
+    {
+      "id": "pv-put-on-wear-clothing-01",
+      "word": "put on",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "mặc hoặc đeo một món đồ",
+      "example_en": "You should put on a coat before going outside.",
+      "example_vi": "Bạn nên mặc áo khoác trước khi ra ngoài.",
+      "definition_en": "To place clothing or an accessory on your body.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.body.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "6e085e60a4527222f9a96e27e082e0e282ca790af8a38bc4a45c9addbefb0fc6",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00050369-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-try-on-test-clothing-01",
+      "word": "try on",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "mặc thử quần áo hoặc đi thử giày",
+      "example_en": "Can I try on this jacket before I buy it?",
+      "example_vi": "Tôi có thể mặc thử chiếc áo khoác này trước khi mua không?",
+      "definition_en": "To put on clothing or shoes briefly to check the fit or appearance.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.body.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "6e085e60a4527222f9a96e27e082e0e282ca790af8a38bc4a45c9addbefb0fc6",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00047034-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-dress-up-wear-special-clothes-01",
+      "word": "dress up",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "ăn mặc trang trọng hoặc đặc biệt hơn thường ngày",
+      "example_en": "We do not need to dress up for this restaurant.",
+      "example_vi": "Chúng ta không cần ăn mặc trang trọng để đến nhà hàng này.",
+      "definition_en": "To wear clothes that are more formal or special than your usual clothes.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.body.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "6e085e60a4527222f9a96e27e082e0e282ca790af8a38bc4a45c9addbefb0fc6",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00043880-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-turn-on-start-device-01",
+      "word": "turn on",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "bật thiết bị hoặc nguồn cung cấp",
+      "example_en": "Please turn on the light so I can read.",
+      "example_vi": "Hãy bật đèn để tôi có thể đọc sách.",
+      "definition_en": "To make a device or supply of power, light, or water start working.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.contact.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "379ce11e6877c4c87adc1219bc41cf1bb0d31fb5b64fdb294b1b48140b858041",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01513031-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-turn-off-stop-device-01",
+      "word": "turn off",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "tắt thiết bị hoặc nguồn cung cấp",
+      "example_en": "Please turn off the computer before you leave.",
+      "example_vi": "Hãy tắt máy tính trước khi bạn rời đi.",
+      "definition_en": "To stop a device or supply of power, light, or water from working.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.contact.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "379ce11e6877c4c87adc1219bc41cf1bb0d31fb5b64fdb294b1b48140b858041",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01513208-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-turn-up-increase-volume-01",
+      "word": "turn up",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "tăng âm lượng hoặc mức hoạt động của thiết bị",
+      "example_en": "Can you turn up the volume so everyone can hear?",
+      "example_vi": "Bạn có thể tăng âm lượng để mọi người đều nghe được không?",
+      "definition_en": "To increase the volume or setting of a device.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/turn-up",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "86326080a04ae2f36949622e189032122c09e6e1df123fd6be7b52df2556a6bf",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "turn-up__48"
+        }
+      ],
+      "review_note": "Turn up ở đây là tăng âm lượng. Cụm còn có nghĩa xuất hiện hoặc được tìm thấy, cần ngữ cảnh riêng."
+    },
+    {
+      "id": "pv-turn-down-decrease-volume-01",
+      "word": "turn down",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "giảm âm lượng hoặc mức hoạt động của thiết bị",
+      "example_en": "Please turn down the music while I am studying.",
+      "example_vi": "Hãy giảm âm lượng nhạc trong khi tôi đang học.",
+      "definition_en": "To reduce the volume or setting of a device.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.change.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "126bb92adc1be69c4cf33e9ac1a5a492f6785971d23c527f5d8e0db51a980702",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00268741-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-plug-in-connect-power-01",
+      "word": "plug in",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "cắm thiết bị vào nguồn điện",
+      "example_en": "You need to plug in the charger before the battery runs out.",
+      "example_vi": "Bạn cần cắm bộ sạc vào nguồn điện trước khi pin cạn.",
+      "definition_en": "To connect electrical equipment to a power supply with a plug.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.contact.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "379ce11e6877c4c87adc1219bc41cf1bb0d31fb5b64fdb294b1b48140b858041",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01423776-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-log-in-access-account-01",
+      "word": "log in",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "đăng nhập vào hệ thống",
+      "example_en": "You need to log in before you can save your progress.",
+      "example_vi": "Bạn cần đăng nhập trước khi có thể lưu tiến độ.",
+      "definition_en": "To gain access to a computer system or account by providing the required identification.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.possession.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "8a614afadc3f2f8ca7fa62447e60a583e901fbf54caf6c96c3d43e7d5ea2a861",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "02253955-v"
+        }
+      ],
+      "review_note": "Log in là động từ đăng nhập; login thường dùng làm danh từ hoặc tính từ, tùy cách dùng."
+    },
+    {
+      "id": "pv-log-out-leave-account-01",
+      "word": "log out",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "đăng xuất khỏi hệ thống",
+      "example_en": "Remember to log out when you use a shared computer.",
+      "example_vi": "Hãy nhớ đăng xuất khi dùng máy tính chung.",
+      "definition_en": "To end your active session in a computer system or account.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.possession.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "8a614afadc3f2f8ca7fa62447e60a583e901fbf54caf6c96c3d43e7d5ea2a861",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "02254101-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-sign-up-register-01",
+      "word": "sign up",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "đăng ký tham gia",
+      "example_en": "You can sign up for the free writing course today.",
+      "example_vi": "Bạn có thể đăng ký khóa học viết miễn phí ngay hôm nay.",
+      "definition_en": "To register to join an activity or receive a service.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.competition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "3bdd97919eddbcf4493999d46b981fe4be088beb3a06e49fd1f95de82f91d824",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01099720-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-fill-in-complete-form-01",
+      "word": "fill in",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "điền thông tin vào biểu mẫu",
+      "example_en": "Please fill in the application form in black ink.",
+      "example_vi": "Hãy điền mẫu đơn bằng mực đen.",
+      "definition_en": "To enter the requested information in a form or document.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.communication.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "04a1531082705497ab51316d54dec360273ea896b195dfd2143b99d08d327541",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01022740-v"
+        }
+      ],
+      "review_note": "Fill in a form và fill out a form đều gặp; Mỹ thường dùng fill out. Không coi cách dùng fill in ở đây là sai."
+    },
+    {
+      "id": "pv-write-down-record-writing-01",
+      "word": "write down",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "ghi lại bằng chữ viết",
+      "example_en": "Please write down the address before you forget it.",
+      "example_vi": "Hãy ghi lại địa chỉ trước khi bạn quên.",
+      "definition_en": "To record information in writing so that you can keep or remember it.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.communication.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "04a1531082705497ab51316d54dec360273ea896b195dfd2143b99d08d327541",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01022365-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-look-up-consult-reference-01",
+      "word": "look up",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "tra cứu thông tin trong nguồn tham khảo",
+      "example_en": "You can look up this word in a dictionary.",
+      "example_vi": "Bạn có thể tra từ này trong từ điển.",
+      "definition_en": "To search for a specific piece of information in a reference source.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.communication.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "04a1531082705497ab51316d54dec360273ea896b195dfd2143b99d08d327541",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00878614-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-read-through-read-completely-01",
+      "word": "read through",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "đọc hết một văn bản để kiểm tra hoặc nắm nội dung",
+      "example_en": "Please read through the report before the meeting.",
+      "example_vi": "Hãy đọc hết báo cáo trước cuộc họp.",
+      "definition_en": "To read a whole text, often to check it or understand its contents.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/read-through",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "631d86ad256a91899d4d71649c26666e8902d310f4f2d5481360363688ed0133",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "readthrough_sng_2"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-go-over-review-01",
+      "word": "go over",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "xem lại hoặc ôn lại kỹ",
+      "example_en": "We should go over our notes before the test.",
+      "example_vi": "Chúng ta nên ôn lại ghi chép trước bài kiểm tra.",
+      "definition_en": "To examine or review something carefully.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "f8908eedf07920a8489aa2462ce2ec7a83c0ecff1fb48f4456aec100f8c97d37",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00663742-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-hand-in-submit-01",
+      "word": "hand in",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "nộp bài hoặc tài liệu cho người có trách nhiệm",
+      "example_en": "We must hand in the assignment by Friday.",
+      "example_vi": "Chúng ta phải nộp bài tập chậm nhất vào thứ Sáu.",
+      "definition_en": "To give completed work or a document to the person responsible for receiving it.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/hand-in",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "3875e0e737c64f1750255b8b42f93cb52ea3406eb3a3f210a7534af74c5481b5",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "hand-in__11"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-hand-out-distribute-01",
+      "word": "hand out",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "phát cho từng người trong một nhóm",
+      "example_en": "The teacher will hand out the worksheets after the break.",
+      "example_vi": "Giáo viên sẽ phát phiếu bài tập sau giờ nghỉ.",
+      "definition_en": "To give copies or items to people in a group.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.possession.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "8a614afadc3f2f8ca7fa62447e60a583e901fbf54caf6c96c3d43e7d5ea2a861",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "02206426-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-give-back-return-item-01",
+      "word": "give back",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "trả lại một vật cho người sở hữu",
+      "example_en": "Please give back the book when you finish reading it.",
+      "example_vi": "Hãy trả lại cuốn sách khi bạn đọc xong.",
+      "definition_en": "To return something to the person who had it before.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/give-back",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "9ada5e6600b95ac1e4abdc6ee7273027d911dbf571c82087c424df32a52a02b6",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "give-back__12"
+        }
+      ],
+      "review_note": "Give back trong bài là trả lại vật cho người sở hữu; không phải give up nghĩa từ bỏ."
+    },
+    {
+      "id": "pv-take-back-return-purchase-01",
+      "word": "take back",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "mang món hàng đã mua trở lại cửa hàng",
+      "example_en": "I need to take back this kettle because it leaks.",
+      "example_vi": "Tôi cần mang trả chiếc ấm này vì nó bị rò nước.",
+      "definition_en": "To return something you bought to the shop that sold it.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.motion.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "29f0859977bede750239f911afb356885b50597afe9e161e2fc3f584ad86f095",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "02082541-v"
+        }
+      ],
+      "review_note": "Take something back to a store là mang hàng trở lại cửa hàng; nghĩa rút lại lời nói cần ngữ cảnh riêng."
+    },
+    {
+      "id": "pv-pick-up-lift-01",
+      "word": "pick up",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "nhấc hoặc nhặt một vật lên",
+      "example_en": "Please pick up the bag from the floor.",
+      "example_vi": "Hãy nhấc chiếc túi dưới sàn lên.",
+      "definition_en": "To lift something from a surface or from the ground.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.motion.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "29f0859977bede750239f911afb356885b50597afe9e161e2fc3f584ad86f095",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01980103-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-put-down-place-on-surface-01",
+      "word": "put down",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "đặt vật đang cầm xuống",
+      "example_en": "You can put down your cup on this tray.",
+      "example_vi": "Bạn có thể đặt cốc xuống chiếc khay này.",
+      "definition_en": "To place something you are holding onto a surface.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.contact.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "379ce11e6877c4c87adc1219bc41cf1bb0d31fb5b64fdb294b1b48140b858041",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01503011-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-put-away-store-01",
+      "word": "put away",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "cất vật vào đúng chỗ",
+      "example_en": "Please put away your clothes before dinner.",
+      "example_vi": "Hãy cất quần áo vào đúng chỗ trước bữa tối.",
+      "definition_en": "To place something in its usual storage place after using it.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/put-away",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "4cdce183d7b1fd054f3f0e86e05c0e60925ad6a87f5d8bc11934db35081db44a",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "put-away__24"
+        }
+      ],
+      "review_note": "Put away ở đây là cất đồ sau khi dùng. Không dùng nghĩa bỏ tù của cùng cụm làm gợi ý trong bài này."
+    },
+    {
+      "id": "pv-throw-away-discard-01",
+      "word": "throw away",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "vứt bỏ vì không cần hoặc không muốn giữ nữa",
+      "example_en": "Do not throw away this receipt until the warranty ends.",
+      "example_vi": "Đừng vứt hóa đơn này đi cho đến khi hết thời hạn bảo hành.",
+      "definition_en": "To get rid of something by putting it in the rubbish.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.possession.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "8a614afadc3f2f8ca7fa62447e60a583e901fbf54caf6c96c3d43e7d5ea2a861",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "02227100-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-tidy-up-make-orderly-01",
+      "word": "tidy up",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "dọn đồ cho ngăn nắp",
+      "example_en": "I need to tidy up my room before my friends arrive.",
+      "example_vi": "Tôi cần dọn phòng cho ngăn nắp trước khi bạn bè đến.",
+      "definition_en": "To put things in order so that a place is neat.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.change.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "126bb92adc1be69c4cf33e9ac1a5a492f6785971d23c527f5d8e0db51a980702",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00276642-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-clean-up-remove-dirt-01",
+      "word": "clean up",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "dọn sạch bụi bẩn, rác hoặc chỗ bừa bộn",
+      "example_en": "We need to clean up the spilled paint before it dries.",
+      "example_vi": "Chúng ta cần dọn sạch chỗ sơn đổ trước khi nó khô.",
+      "definition_en": "To remove dirt, waste, or a mess from a place.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.change.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "126bb92adc1be69c4cf33e9ac1a5a492f6785971d23c527f5d8e0db51a980702",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00276642-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-wash-up-wash-dishes-01",
+      "word": "wash up",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "rửa bát đĩa sau bữa ăn",
+      "example_en": "I usually wash up after dinner while my brother clears the table.",
+      "example_vi": "Tôi thường rửa bát sau bữa tối trong khi em trai dọn bàn.",
+      "definition_en": "To wash the dishes and utensils used for a meal.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.contact.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "379ce11e6877c4c87adc1219bc41cf1bb0d31fb5b64fdb294b1b48140b858041",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01535954-v"
+        }
+      ],
+      "review_note": "Wash up nghĩa rửa bát trong cách dùng Anh–Anh này; Mỹ thường nói wash the dishes. Wash up trong Mỹ thường là rửa tay/mặt."
+    },
+    {
+      "id": "pv-eat-out-restaurant-meal-01",
+      "word": "eat out",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "ăn ở nhà hàng thay vì ở nhà",
+      "example_en": "We rarely eat out because we enjoy cooking at home.",
+      "example_vi": "Chúng tôi hiếm khi ăn ở nhà hàng vì thích nấu ăn ở nhà.",
+      "definition_en": "To have a meal at a restaurant instead of at home.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.consumption.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "005042d49b86fd740ec776144b9bfff4e5236c4f856bc89d2cd8b810d0755b07",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01169974-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-cut-down-on-reduce-consumption-01",
+      "word": "cut down on",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "giảm lượng sử dụng hoặc tiêu thụ",
+      "example_en": "I am trying to cut down on sugar in my drinks.",
+      "example_vi": "Tôi đang cố giảm lượng đường trong đồ uống.",
+      "definition_en": "To use, consume, or do less of something.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/cut-down_1",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "a20f1ac0b1d4ca00de64a865b91e98da97f81ac77467b9ae37a9762883896af9",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "cut_sng_83"
+        }
+      ],
+      "review_note": "Cut down on + danh từ/V-ing là giảm lượng hoặc mức độ, không nhất thiết bỏ hoàn toàn."
+    },
+    {
+      "id": "pv-give-up-stop-habit-01",
+      "word": "give up",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "từ bỏ một thói quen hoặc hoạt động",
+      "example_en": "My father decided to give up smoking last year.",
+      "example_vi": "Bố tôi đã quyết định bỏ thuốc lá vào năm ngoái.",
+      "definition_en": "To stop an activity or a habit, often permanently.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.consumption.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "005042d49b86fd740ec776144b9bfff4e5236c4f856bc89d2cd8b810d0755b07",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01199057-v"
+        }
+      ],
+      "review_note": "Give up + danh từ/V-ing, như give up smoking. Không dùng give up to smoke với nghĩa bỏ thuốc."
+    },
+    {
+      "id": "pv-take-up-start-hobby-01",
+      "word": "take up",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "bắt đầu một sở thích hoặc hoạt động thường xuyên",
+      "example_en": "I want to take up swimming to improve my fitness.",
+      "example_vi": "Tôi muốn bắt đầu tập bơi để cải thiện thể lực.",
+      "definition_en": "To begin doing an activity as a hobby or regular interest.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.social.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "d0bc7620c30305592d0f8cf77e4119ab1cf12fcee93f4269341df017acdb4895",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "02597327-v"
+        }
+      ],
+      "review_note": "Đang học take up nghĩa bắt đầu một sở thích; không phải chiếm chỗ hoặc thời gian trong nghĩa khác."
+    },
+    {
+      "id": "pv-keep-up-with-maintain-level-01",
+      "word": "keep up with",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "theo kịp tốc độ hoặc mức độ của ai hay việc gì",
+      "example_en": "I review my notes daily to keep up with the class.",
+      "example_vi": "Tôi xem lại ghi chép hằng ngày để theo kịp lớp.",
+      "definition_en": "To stay at the same pace or level as someone or something.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/keep-up",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "8057e3cf9e7810778dbe3d5b7573e515cca21ec2c9277f1036cf35f4d5933d8f",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "keep-up__24"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-catch-up-on-finish-backlog-01",
+      "word": "catch up on",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "làm bù phần việc đã chậm hoặc bỏ lỡ",
+      "example_en": "I need the weekend to catch up on unfinished work.",
+      "example_vi": "Tôi cần cuối tuần để làm bù phần việc chưa xong.",
+      "definition_en": "To do work or another activity that you have fallen behind with.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/catch-up-on",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "f75ed442528e9dbce5e39df976ec6bb8985d4d76056b16d88f44457051d8a71e",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "catch_sng_60"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-catch-up-with-reach-same-level-01",
+      "word": "catch up with",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "bắt kịp người đang đi trước hoặc có tiến độ nhanh hơn",
+      "example_en": "Extra practice can help you catch up with your classmates.",
+      "example_vi": "Luyện tập thêm có thể giúp bạn bắt kịp các bạn cùng lớp.",
+      "definition_en": "To reach the position or level of someone who was ahead of you.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.competition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "3bdd97919eddbcf4493999d46b981fe4be088beb3a06e49fd1f95de82f91d824",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01157556-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-fall-behind-make-slow-progress-01",
+      "word": "fall behind",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "bị tụt lại về tiến độ",
+      "example_en": "Students may fall behind if they miss several lessons.",
+      "example_vi": "Học sinh có thể bị chậm tiến độ nếu nghỉ nhiều buổi học.",
+      "definition_en": "To make less progress than is expected or needed.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.motion.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "29f0859977bede750239f911afb356885b50597afe9e161e2fc3f584ad86f095",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "02001894-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-carry-on-continue-activity-01",
+      "word": "carry on",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "tiếp tục một việc đang làm",
+      "example_en": "We can carry on working once the power returns.",
+      "example_vi": "Chúng ta có thể tiếp tục làm việc khi có điện trở lại.",
+      "definition_en": "To continue an activity after or despite an interruption or difficulty.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/carry-on_1",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "a6b67c72c95c66b881bad52815466304d10dba6345820095a99204ad2e364633",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "carry_sng_54"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-keep-on-repeat-persist-01",
+      "word": "keep on",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "cứ tiếp tục hoặc lặp đi lặp lại một hành động",
+      "example_en": "If you keep on practising, the sounds will become easier.",
+      "example_vi": "Nếu bạn tiếp tục luyện tập, các âm sẽ trở nên dễ phát âm hơn.",
+      "definition_en": "To continue doing something persistently or repeatedly.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/keep-on",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "0296eea0c5a8c43525ec5b8e9f5654df34a2c90fc7c669f3852e80a2d93d1039",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "keep-on__11"
+        }
+      ],
+      "review_note": "Keep on + V-ing là tiếp tục hoặc lặp lại. Không dùng to + V trong cấu trúc này."
+    },
+    {
+      "id": "pv-work-out-solve-01",
+      "word": "work out",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "tìm ra lời giải bằng suy nghĩ hoặc tính toán",
+      "example_en": "We can work out the total cost with a calculator.",
+      "example_vi": "Chúng ta có thể tính ra tổng chi phí bằng máy tính.",
+      "definition_en": "To find an answer or solution by thinking or calculating.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "f8908eedf07920a8489aa2462ce2ec7a83c0ecff1fb48f4456aec100f8c97d37",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00638921-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-figure-out-understand-01",
+      "word": "figure out",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "hiểu ra hoặc tìm ra cách giải quyết",
+      "example_en": "I cannot figure out why this printer keeps stopping.",
+      "example_vi": "Tôi không hiểu ra được tại sao chiếc máy in này cứ ngừng hoạt động.",
+      "definition_en": "To understand something or discover how to deal with it by thinking.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "f8908eedf07920a8489aa2462ce2ec7a83c0ecff1fb48f4456aec100f8c97d37",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00636568-v"
+        }
+      ],
+      "review_note": "Figure out là hiểu hoặc tìm lời giải bằng suy nghĩ; ví dụ còn dùng why để mở mệnh đề điều chưa hiểu."
+    },
+    {
+      "id": "pv-find-out-discover-information-01",
+      "word": "find out",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "tìm ra hoặc biết được thông tin",
+      "example_en": "We need to find out when the library closes.",
+      "example_vi": "Chúng ta cần tìm hiểu thư viện đóng cửa lúc nào.",
+      "definition_en": "To discover information that you did not know before.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.communication.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "04a1531082705497ab51316d54dec360273ea896b195dfd2143b99d08d327541",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00922307-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-come-up-with-produce-idea-01",
+      "word": "come up with",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "nghĩ ra ý tưởng hoặc giải pháp",
+      "example_en": "Our team needs to come up with a cheaper solution.",
+      "example_vi": "Nhóm chúng tôi cần nghĩ ra một giải pháp ít tốn kém hơn.",
+      "definition_en": "To think of or produce an idea, answer, or plan.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/come-up-with",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "c65eccbb77b8c29f3353d6c2b198282c9cec076e80c9a71bf97aa7760d39e32d",
+          "scope": "selected meaning and usage; current bilingual example reviewed editorially",
+          "sense_ref": "come_sng_303"
+        }
+      ],
+      "review_note": "Come up with + danh từ là nghĩ ra/đưa ra câu trả lời hoặc giải pháp; không tách with khỏi cụm trong nghĩa này."
+    },
+    {
+      "id": "pv-point-out-draw-attention-01",
+      "word": "point out",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "chỉ ra hoặc lưu ý cho ai thấy một điều",
+      "example_en": "Please point out any errors you notice in the report.",
+      "example_vi": "Hãy chỉ ra những lỗi bạn nhận thấy trong báo cáo.",
+      "definition_en": "To draw attention to a fact or detail that someone may not have noticed.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.communication.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "04a1531082705497ab51316d54dec360273ea896b195dfd2143b99d08d327541",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00926583-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-bring-up-introduce-topic-01",
+      "word": "bring up",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "đề cập một chủ đề để thảo luận",
+      "example_en": "I plan to bring up the deadline at our meeting.",
+      "example_vi": "Tôi dự định đề cập thời hạn trong cuộc họp của chúng ta.",
+      "definition_en": "To introduce a subject into a conversation.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.communication.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "04a1531082705497ab51316d54dec360273ea896b195dfd2143b99d08d327541",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01027255-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-talk-over-discuss-before-decision-01",
+      "word": "talk over",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "bàn bạc kỹ trước khi quyết định",
+      "example_en": "We should talk over the proposal before we accept it.",
+      "example_vi": "Chúng ta nên bàn bạc kỹ đề xuất trước khi chấp nhận.",
+      "definition_en": "To discuss something carefully with someone before making a decision.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.communication.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "04a1531082705497ab51316d54dec360273ea896b195dfd2143b99d08d327541",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00815640-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-think-over-consider-carefully-01",
+      "word": "think over",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "suy nghĩ kỹ trước khi quyết định",
+      "example_en": "I need a day to think over your offer.",
+      "example_vi": "Tôi cần một ngày để suy nghĩ kỹ về lời đề nghị của bạn.",
+      "definition_en": "To consider something carefully before making a decision.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.cognition.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "f8908eedf07920a8489aa2462ce2ec7a83c0ecff1fb48f4456aec100f8c97d37",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "00632042-v"
+        }
+      ],
+      "review_note": "Đã đối chiếu nghĩa đang học với nguồn; giữ lại nghĩa và ví dụ song ngữ đã phù hợp. Không suy ra đã bao quát mọi nghĩa của đầu từ."
+    },
+    {
+      "id": "pv-make-up-invent-story-01",
+      "word": "make up",
+      "part_of_speech": "phrasal verb",
+      "meaning_vi": "bịa ra câu chuyện hoặc thông tin",
+      "example_en": "You do not need to make up an excuse; just explain what happened.",
+      "example_vi": "Bạn không cần bịa ra lý do; chỉ cần giải thích chuyện đã xảy ra.",
+      "definition_en": "To invent a story, excuse, or piece of information.",
+      "definition_source": "authored",
+      "source_evidence": [
+        {
+          "url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/45fdb60396dc804526b85f21a23c59983c2c396a/src/yaml/verb.creation.yaml",
+          "status": 200,
+          "checkedAt": "2026-10-21",
+          "sha256": "50824d97ffdcecae07f9269f6422f3b781d3a97fb28ec668da0a4a8865dbcd56",
+          "scope": "selected current meaning and part of speech; existing authored bilingual context reviewed",
+          "sense_ref": "01637966-v"
+        }
+      ],
+      "review_note": "Đang học make up nghĩa bịa chuyện hoặc lý do; không phải trang điểm hay làm hòa."
+    }
+  ]
+}

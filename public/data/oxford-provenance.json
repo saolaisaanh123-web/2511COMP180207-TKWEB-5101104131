@@ -74116,33 +74116,35 @@
   "coverage": {
     "oxfordHeadwords": 4955,
     "entryCount": 5558,
-    "reviewed": 1061,
-    "dictionary": 4496,
-    "reference": 1,
+    "reviewed": 5558,
+    "dictionary": 0,
+    "reference": 0,
     "phrasalSenses": 101,
     "slangSenses": 129,
-    "withBilingualContext": 4028,
-    "missingContext": 1530,
-    "referenceWords": [
-      {
-        "word": "diplomatic",
-        "part_of_speech": "noun"
-      }
-    ],
-    "learningReady": 1061,
-    "lookupOnly": 4497
+    "withBilingualContext": 5558,
+    "missingContext": 0,
+    "referenceWords": [],
+    "learningReady": 5558,
+    "lookupOnly": 0
   },
   "contentReview": {
     "overlay": "../../data/authoring/content-review-2026-10.txt",
     "entries": 38,
     "scope": "Targeted modern-meaning corrections and authored bilingual contexts; not an assertion that all Oxford meanings have been reviewed.",
-    "canonicalVocabularySha256": "19fb2f4dd2ffab355ac9fe59abf1442bfad79fbe036e7262d90197132667d004",
+    "canonicalVocabularySha256": "86a5b8d2a4a907b2ce7d3d8997972494ff35621dad870a765bc665dcee744eb4",
     "supplementalSourceReview": {
       "date": "2026-10-20",
       "overlay": "data/authoring/source-update-2026-10.json",
-      "canonicalVocabularySha256": "19fb2f4dd2ffab355ac9fe59abf1442bfad79fbe036e7262d90197132667d004",
+      "canonicalVocabularySha256": "86a5b8d2a4a907b2ce7d3d8997972494ff35621dad870a765bc665dcee744eb4",
       "scope": "Additive source-checked American spelling and list membership, targeted original meaning corrections and selected new senses; not a verification of every historical definition or publisher certification."
     }
   },
-  "sourceUpdateCanonicalHash": "19fb2f4dd2ffab355ac9fe59abf1442bfad79fbe036e7262d90197132667d004"
+  "sourceUpdateCanonicalHash": "86a5b8d2a4a907b2ce7d3d8997972494ff35621dad870a765bc665dcee744eb4",
+  "fullVocabularyReview": {
+    "reviewId": "2026-10-full-vocabulary-review",
+    "date": "2026-10-21",
+    "canonicalVocabularySha256": "86a5b8d2a4a907b2ce7d3d8997972494ff35621dad870a765bc665dcee744eb4",
+    "reviewedEntries": 5558,
+    "scope": "Explicit selected meanings and original bilingual contexts reviewed against directly read source evidence. Historical word-list facts are preserved separately; this is not publisher certification or a claim to cover every sense."
+  }
 }

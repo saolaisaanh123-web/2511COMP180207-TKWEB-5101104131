@@ -273,7 +273,11 @@ export default function DictionaryEntry({
         </div>
         <div className="dict-sense-body">
           <p className="dict-label">
-            {importedSource ? "Giải nghĩa từ nguồn" : "Giải nghĩa biên soạn"}
+            {w.definition_source === "oewn"
+              ? "Giải nghĩa tiếng Anh · Open English WordNet (CC BY 4.0)"
+              : importedSource
+                ? "Giải nghĩa từ nguồn"
+                : "Giải nghĩa biên soạn"}
           </p>
           <p className="dict-definition" lang="en">
             {w.definition_en || "Chưa có giải nghĩa tiếng Anh trong dữ liệu."}

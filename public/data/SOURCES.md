@@ -2,7 +2,26 @@
 
 Kho mặc định hiện chứa **toàn bộ phạm vi Oxford 3000 và phần bổ sung Oxford 5000 theo hai PDF đã đối chiếu**, cộng bộ cụm động từ và Slang/thành ngữ/khẩu ngữ ban đầu, gồm 27 thành ngữ có ngữ cảnh báo chí. Tất cả nội dung học nằm trong file UTF-8 `vocabulary.txt`; không nhúng từ vựng vào mã giao diện.
 
-## Nguồn ưu tiên từ ngày 20/10/2026
+## Rà toàn bộ nội dung học ngày 21/10/2026
+
+Kho hiện có **5.558 mục theo nghĩa/từ loại, đều đủ nội dung để luyện**. Hoàn thiện 4.497 mục trước đây chỉ tra cứu và đối chiếu lại 1.061 mục vốn đã học được; không chỉ đổi cờ `ready`. Mỗi mục có nghĩa Việt, giải nghĩa Anh, câu tiếng Anh hoàn chỉnh và bản dịch Việt. Một mục vẫn chỉ học một nghĩa được chọn, không bao gồm mọi nghĩa của đầu từ.
+
+- **Open English WordNet**, phiên bản khóa `45fdb60396dc804526b85f21a23c59983c2c396a`: chọn nghĩa và từ loại cụ thể qua synset/lemma. Nguồn này phát triển từ Princeton WordNet, dùng để đối chiếu ngữ nghĩa; không lấy thứ tự nghĩa làm bằng chứng thông dụng, CEFR hoặc ưu tiên Mỹ.
+- **Oxford American/Academic/Learner’s**: đọc các nghĩa phù hợp cho từ chức năng, nghĩa WordNet chưa bao phủ tốt, từ loại và khác biệt Anh–Mỹ. **Merriam-Webster** cùng các nguồn từ điển bổ sung được đọc cho tiếng lóng/cách dùng hiện đại; từng nguồn thật nằm trong bằng chứng của từng ID.
+- **Cambridge Dictionary Blog**: giữ nguồn trực tiếp và cảnh báo thuật ngữ mới/chuyên biệt. Có ví dụ đã rà để luyện không đồng nghĩa nhà xuất bản xác nhận đó là từ phổ biến hay ổn định trong mọi vùng.
+- `definition_source: oewn` chỉ phần giải nghĩa Anh được sử dụng theo **CC BY 4.0**; `authored` là phần diễn giải biên soạn. Nghĩa Việt và ví dụ song ngữ là nội dung Jeongyeon biên soạn, được đối chiếu theo nghĩa cụ thể, không giả là ví dụ nguyên văn của nhà xuất bản.
+
+Giữ nguyên tất cả ID/thứ tự, đầu từ nguồn, đáp án/cách viết đã duyệt, CEFR/tần suất và dữ kiện lịch sử. Sửa công khai `diplomatic` từ nhãn danh từ cũ thành tính từ: bài chi tiết Oxford và danh sách trực tuyến hiện hành ghi adjective/C1; dòng PDF cũ vẫn giữ như dấu vết nguồn. Không tự tạo IPA hoặc âm thanh. Nguồn Cambridge Dictionary chưa đọc được vẫn không được gắn nhãn đã xác minh.
+
+Dữ liệu biên soạn và bằng chứng theo ID nằm trong `data/authoring/full-review-2026-10.json` cùng `full-review/*.json`; provenance công khai ở `full-review-provenance.json`. Mỗi nguồn có URL, ngày thực đọc, HTTP và SHA256 snapshot. Bằng chứng đã đọc ở đợt trước giữ nguyên ngày thật; không giả là vừa tải lại. HTML/YAML toàn văn để nghiên cứu nằm ngoài sản phẩm; chỉ các giải nghĩa WordNet được cấp phép và nội dung biên soạn được đưa vào bài học.
+
+Ghi công và giấy phép: [OEWN-NOTICE](licenses/OEWN-NOTICE.txt), [CC BY 4.0](licenses/OEWN-CC-BY-4.0.txt), [Princeton WordNet](licenses/Princeton-WordNet.txt). Giữ các giấy phép FVDP/OVDP/Wiktionary và dữ kiện nhập trước đây bên dưới; đợt mới không đổi giấy phép của dữ liệu lịch sử hoặc mã ứng dụng.
+
+`learning_status: lookup` vẫn có tác dụng cho mục tự nhập/chưa rà hoặc mục cá nhân bị tạm ngưng. `ready` mô tả nội dung đủ dùng để luyện, không xác nhận người học đã nhớ, không phải chứng nhận của Oxford/WordNet/Merriam-Webster và không phải bảo đảm chính xác tuyệt đối. Khi sửa nghĩa, cơ chế phiên bản nội dung giữ lịch sử nhưng không dùng bằng chứng của nghĩa cũ cho nghĩa mới; bản sửa cá nhân tiếp tục có ưu tiên.
+
+Các phần dưới lưu phạm vi và số lượng của **những đợt nhập lịch sử**, không phải số lượng học được hiện tại.
+
+## Đợt nguồn ngày 20/10/2026 (lịch sử)
 
 | Mục đích | Nguồn và phạm vi đã kiểm tra |
 | --- | --- |
@@ -12,7 +31,7 @@ Kho mặc định hiện chứa **toàn bộ phạm vi Oxford 3000 và phần b�
 | Phát âm/giao tiếp | Liên kết YouGlish có bộ lọc American đã kiểm tra cấu trúc trang bằng URL thật. Không kiểm chứng từng video, không nhập audio hoặc dùng video làm bằng chứng chấm bài. |
 | Học thuật/IELTS | Oxford OPAL: danh sách và phương pháp chính thức; 1.511 dòng từ đơn/từ loại, 1.339 nhãn từ. Chỉ bổ sung phần thiếu sau khi đọc mục từ. OPAL spoken dùng ngữ liệu Anh–Anh, không gán tần suất Mỹ hay band IELTS. |
 
-Kho hiện tại: **5.558 mục theo nghĩa/từ loại**, **1.061 ready**, **4.497 lookup**. Thêm **396 mục** gồm 57 mục nền tảng Mỹ, 316 mục OPAL theo từ loại (không nhân đôi mục đã có cùng từ loại), 23 mục Cambridge Blog. 12 mục Blog mới/chuyên biệt và danh từ `practical` mang nhãn Anh–Anh được giữ chỉ tra cứu. Các mục cũ chưa rà nghĩa vẫn chỉ tra cứu.
+Bản ngày 20/10: **5.558 mục theo nghĩa/từ loại**, **1.061 ready**, **4.497 lookup**. Thêm **396 mục** gồm 57 mục nền tảng Mỹ, 316 mục OPAL theo từ loại (không nhân đôi mục đã có cùng từ loại), 23 mục Cambridge Blog. 12 mục Blog mới/chuyên biệt và danh từ `practical` mang nhãn Anh–Anh được giữ chỉ tra cứu. Các mục cũ chưa rà nghĩa vẫn chỉ tra cứu.
 
 Giữ nguyên ID/thứ tự của 5.162 mục cũ. Chỉ bốn mục có nghĩa/ngữ cảnh được sửa có chủ đích: `hardly` → hầu như không; `sensible` → hợp lý/biết suy xét; `execution` → sự thực hiện/triển khai trong nghĩa đang luyện; `pants` → quần dài trong cách dùng Mỹ, kèm phân biệt Anh–Anh. 61 cách viết Mỹ của mục cũ được lưu ở `preferred_us_spelling`, không đổi đầu từ nguồn hoặc khóa nội dung đã dùng cho lịch học. Có thêm 316 IPA North American đối chiếu trực tiếp các mục mới; không tạo URL audio Oxford.
 
@@ -35,15 +54,15 @@ Hai PDF Mỹ được phát hiện theo href thật từ trang Oxford:
 - `Oxford 5000` là tên danh sách; ứng dụng không nhân đôi thẻ để ép số đếm thành 5.000. Đây là phạm vi đầy đủ của **bản PDF lưu trữ cụ thể**, không tuyên bố đã xác minh phiên bản mới nhất trực tiếp từ nhà xuất bản.
 - Phần Oxford 5000 bổ sung chủ yếu ở B2–C1, không phải toàn bộ là từ sơ cấp. Có thể lọc CEFR khi củng cố nền tảng.
 
-## Ba mức nội dung
+## Ba mức nội dung trong đợt nhập lịch sử
 
 1. **Đã rà soát:** nội dung biên soạn và rà soát ngôn ngữ riêng, giữ các ID cũ. Không đồng nghĩa là Oxford chứng nhận nghĩa hoặc người học đã thuộc.
 2. **Từ từ điển mở:** nghĩa Việt cùng từ loại được chọn từ FVDP/OVDP hoặc dữ liệu Wiktionary có nguồn. Chưa rà soát thủ công từng mục; nguồn lịch sử có thể có lỗi hoặc cách diễn đạt cũ. Bản dịch, ví dụ này **không phải định nghĩa/ví dụ Oxford**.
-3. **Chỉ tra cứu:** dòng nguồn có xung đột hoặc thiếu nghĩa cùng từ loại đáng tin cậy. Không tạo bài kiểm tra cho mục này. Hiện có `diplomatic`: bản PDF lưu ghi `n.`, trong khi nguồn nghĩa phổ biến ghi tính từ. Ứng dụng không sửa âm thầm hoặc dạy một từ loại chưa đối chiếu.
+3. **Chỉ tra cứu:** dòng nguồn có xung đột hoặc thiếu nghĩa cùng từ loại đáng tin cậy. Không tạo bài kiểm tra cho mục này. Bản nhập cũ có `diplomatic`: bản PDF lưu ghi `n.`, trong khi nguồn nghĩa phổ biến ghi tính từ. Ứng dụng không sửa âm thầm hoặc dạy một từ loại chưa đối chiếu.
 
 Một mục học một nghĩa chính; các nghĩa Oxford khác vẫn có dấu vết dòng nguồn, không được tuyên bố đã cung cấp đầy đủ mọi nghĩa của mỗi từ.
 
-Nếu nguồn không có ví dụ, để trống và ghi rõ. Không dựng câu ví dụ giả để đủ số lượng. Bài điền ngữ cảnh chỉ tạo khi có ngữ liệu Anh–Việt và đáp án mục tiêu có thể che đúng; cụm trích từ từ điển được ghi là ngữ liệu, không giả là câu mới biên soạn. Các mục có nghĩa vẫn hỗ trợ nhớ nghĩa, nhớ để viết, nghe và tự viết câu. Không đồng nhất nội dung đã xem với bằng chứng đã nhớ.
+Trong lần nhập nguồn lịch sử, nguồn không có ví dụ được để trống và ghi rõ. Đợt rà toàn kho mới dùng câu ví dụ gốc do Jeongyeon biên soạn, có nhãn riêng; không giả là ví dụ trích từ nhà xuất bản. Bài điền ngữ cảnh chỉ tạo khi có ngữ liệu Anh–Việt và đáp án mục tiêu có thể che đúng; cụm trích từ từ điển được ghi là ngữ liệu, không giả là câu mới biên soạn. Các mục có nghĩa vẫn hỗ trợ nhớ nghĩa, nhớ để viết, nghe và tự viết câu. Không đồng nhất nội dung đã xem với bằng chứng đã nhớ.
 
 ## Nguồn đầu từ/loại từ/CEFR
 
@@ -103,7 +122,7 @@ ID của 259 mục đã có được giữ nguyên. Bản sửa cá nhân không
 
 `data/authoring/*.txt` lưu riêng nội dung biên soạn cho các mục bổ sung, cụm động từ và slang. `scripts/build-full-corpus.py` kết hợp chúng với dữ kiện/nguồn trích xuất có ghi provenance; Vite không cần chạy script này, chỉ đọc TXT đã lưu. Người dùng thêm/sửa từ trực tiếp trong `vocabulary.txt` hoặc giao diện như trước.
 
-## Số lượng bản hiện tại
+## Số lượng bản nhập trước đợt nguồn 20/10 (lịch sử)
 
 - oxfordHeadwords: 4955
 - entryCount: 5162

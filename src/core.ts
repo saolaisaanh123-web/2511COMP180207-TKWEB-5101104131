@@ -96,6 +96,7 @@ export const fields = [
   "part_of_speech",
   "meaning_vi",
   "definition_en",
+  "definition_source",
   "ipa",
   "level",
   "topics",

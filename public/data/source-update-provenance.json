@@ -3,7 +3,7 @@
   "date": "2026-10-20",
   "overlay": "data/authoring/source-update-2026-10.json",
   "overlaySha256": "d3b48a0a59caf9d079f3ebdca0adac8c0e29cd674b569f0623f46e01cb09dc99",
-  "canonicalVocabularySha256": "19fb2f4dd2ffab355ac9fe59abf1442bfad79fbe036e7262d90197132667d004",
+  "canonicalVocabularySha256": "86a5b8d2a4a907b2ce7d3d8997972494ff35621dad870a765bc665dcee744eb4",
   "baseline": {
     "protectedStudyFields": [
       "id",
@@ -35,21 +35,16 @@
   "coverage": {
     "oxfordHeadwords": 4955,
     "entryCount": 5558,
-    "reviewed": 1061,
-    "dictionary": 4496,
-    "reference": 1,
+    "reviewed": 5558,
+    "dictionary": 0,
+    "reference": 0,
     "phrasalSenses": 101,
     "slangSenses": 129,
-    "withBilingualContext": 4028,
-    "missingContext": 1530,
-    "referenceWords": [
-      {
-        "word": "diplomatic",
-        "part_of_speech": "noun"
-      }
-    ],
-    "learningReady": 1061,
-    "lookupOnly": 4497
+    "withBilingualContext": 5558,
+    "missingContext": 0,
+    "referenceWords": [],
+    "learningReady": 5558,
+    "lookupOnly": 0
   },
   "collectionCounts": {
     "foundation": 5012,
@@ -3708,5 +3703,12 @@
     "Unverified historical dictionary meanings remain lookup-only; this update is not a claim of complete sense validation for all 5000 words.",
     "User scope assumption: missing single-word OPAL entries first; selected modern phrases. All OPAL phrase patterns are not imported."
   ],
-  "method": "Existing IDs and their order are preserved. Only explicit corrections replace content. American display spellings and same-POS list membership do not assert validation of every existing meaning. Definitions and examples for additions/corrections are original editorial content, not copied publisher entries."
+  "method": "Existing IDs and their order are preserved. Only explicit corrections replace content. American display spellings and same-POS list membership do not assert validation of every existing meaning. Definitions and examples for additions/corrections are original editorial content, not copied publisher entries.",
+  "fullVocabularyReview": {
+    "reviewId": "2026-10-full-vocabulary-review",
+    "date": "2026-10-21",
+    "canonicalVocabularySha256": "86a5b8d2a4a907b2ce7d3d8997972494ff35621dad870a765bc665dcee744eb4",
+    "reviewedEntries": 5558,
+    "scope": "Explicit selected meanings and original bilingual contexts reviewed against directly read source evidence. Historical word-list facts are preserved separately; this is not publisher certification or a claim to cover every sense."
+  }
 }
