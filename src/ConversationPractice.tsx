@@ -25,12 +25,15 @@ type Draft = {
   complete: boolean;
   retryOf?: string;
   savedId?: string;
+  recall: boolean;
+  usedHint: boolean;
 };
 type DraftBank = { selected?: string; drafts: Record<string, Draft> };
 const draftKey = "jeongyeon:conversation-drafts:v1";
 function readDrafts(): { bank: DraftBank; warning: string } {
   try {
-    const raw = sessionStorage.getItem(draftKey);
+    const raw =
+      localStorage.getItem(draftKey) || sessionStorage.getItem(draftKey);
     if (!raw) return { bank: { drafts: {} }, warning: "" };
     const data = JSON.parse(raw) as DraftBank;
     if (
@@ -66,6 +69,8 @@ function readDrafts(): { bank: DraftBank; warning: string } {
         complete: item.complete === true,
         retryOf: typeof item.retryOf === "string" ? item.retryOf : undefined,
         savedId: typeof item.savedId === "string" ? item.savedId : undefined,
+        recall: item.recall === true,
+        usedHint: item.usedHint === true,
       };
     }
     return {
@@ -89,6 +94,8 @@ const blankDraft = (d: Dialogue): Draft => ({
   translation: false,
   lines: [],
   complete: false,
+  recall: false,
+  usedHint: false,
 });
 function highlight(text: string, d: Dialogue): ReactNode[] {
   const escaped = d.targets
@@ -129,6 +136,12 @@ export function ConversationPractice({
       : recommendations[0]?.dialogue.id || "",
   );
   const d = available.find((item) => item.id === selected);
+  const britishTerms = d
+    ? ["railway", "revision", "neighbour"].filter((term) =>
+        d.lines.some((line) => new RegExp(`\\b${term}\\b`, "i").test(line.en)),
+      )
+    : [];
+  const usesPounds = !!d?.lines.some((line) => /\bpounds?\b/i.test(line.en));
   const [draft, setDraft] = useState<Draft>(() =>
     d
       ? bank.current.drafts[d.id] || blankDraft(d)
@@ -138,6 +151,8 @@ export function ConversationPractice({
           translation: false,
           lines: [],
           complete: false,
+          recall: false,
+          usedHint: false,
         },
   );
   const [warning, setWarning] = useState(initial.warning);
@@ -168,10 +183,12 @@ export function ConversationPractice({
       drafts: { ...bank.current.drafts, [current.id]: next },
     };
     try {
+      localStorage.setItem(draftKey, JSON.stringify(bank.current));
+      // Preserve same-tab migration/fallback for older app versions.
       sessionStorage.setItem(draftKey, JSON.stringify(bank.current));
     } catch {
       setWarning(
-        "Không lưu được nháp trên trình duyệt này. Giữ trang mở cho đến khi bấm Lưu và xem phản hồi; kết quả chỉ an toàn sau khi lưu thành công.",
+        "Chưa lưu được đầy đủ nháp trên trình duyệt này. Giữ trang mở cho đến khi bấm Lưu và xem phản hồi; kết quả chỉ an toàn sau khi lưu thành công.",
       );
     }
   }
@@ -232,6 +249,10 @@ export function ConversationPractice({
         "Thiết bị chưa có giọng đọc tiếng Anh khả dụng. Bạn vẫn đọc và làm bài được; chưa ghi nhận đã nghe.",
       );
       return;
+    }
+    if (draftRef.current.recall) {
+      updateDraft({ ...draftRef.current, usedHint: true });
+      onExpose(d.targets.map((t) => t.id));
     }
     const token = playback.current;
     const dialogueAtStart = d;
@@ -339,7 +360,12 @@ export function ConversationPractice({
         state,
         d,
         draft.values,
-        { lines: draft.lines, complete: draft.complete },
+        {
+          lines: draft.lines,
+          complete: draft.complete,
+          hidden: draft.recall,
+          usedHint: draft.usedHint,
+        },
         draft.retryOf,
       );
     setPendingAttempt(attempt);
@@ -368,7 +394,13 @@ export function ConversationPractice({
           ),
         )
       : {};
-    updateDraft({ ...draft, values, savedId: undefined, retryOf: report.id });
+    updateDraft({
+      ...draft,
+      values,
+      savedId: undefined,
+      retryOf: report.id,
+      usedHint: true,
+    });
     setError("");
   }
 
@@ -473,7 +505,7 @@ export function ConversationPractice({
       {!d ? (
         <p className="notice">
           {available.length
-            ? "Đoạn trước không còn phù hợp sau khi kho từ thay đổi. Chọn một đoạn khác; nháp cũ vẫn được giữ trong phiên trình duyệt này."
+            ? "Đoạn trước không còn phù hợp sau khi kho từ thay đổi. Chọn một đoạn khác; nháp cũ vẫn được giữ trên trình duyệt này."
             : "Kho hiện tại chưa có đủ nhóm từ đã rà tương ứng với các đoạn hội thoại. Bạn vẫn có thể dùng các bài luyện từ cũ."}
         </p>
       ) : (
@@ -485,6 +517,58 @@ export function ConversationPractice({
             </span>
           </div>
           <p className="conversation-reason">{allRecommendation?.reason}</p>
+          {(britishTerms.length > 0 || usesPounds) && (
+            <p className="conversation-note">
+              {usesPounds && "Tình huống này dùng bảng Anh (pounds). "}
+              {britishTerms.length > 0 && (
+                <>
+                  Bản gốc có cách viết/cách dùng Anh–Anh:{" "}
+                  <span lang="en">{britishTerms.join(", ")}</span>.{" "}
+                </>
+              )}
+              Giọng đọc Mỹ không tự đổi nội dung gốc; hãy đối chiếu ghi chú của
+              từng từ.
+            </p>
+          )}
+          <div className="conversation-audio">
+            {!draft.recall ? (
+              <button
+                disabled={saving || !!report}
+                onClick={() => {
+                  stopAudio();
+                  updateDraft({
+                    ...draft,
+                    recall: true,
+                    translation: false,
+                    usedHint:
+                      draft.usedHint ||
+                      Object.values(draft.values).some(
+                        (value) => value.trim().length > 0,
+                      ),
+                  });
+                }}
+              >
+                Ẩn đoạn để tự thử nhớ
+              </button>
+            ) : (
+              <button
+                disabled={saving}
+                onClick={() => {
+                  updateDraft({ ...draft, recall: false, usedHint: true });
+                  onExpose(d.targets.map((t) => t.id));
+                }}
+              >
+                Xem lại đoạn · tính là gợi ý
+              </button>
+            )}
+          </div>
+          {draft.recall && (
+            <p className="conversation-note" role="status">
+              Đang ẩn đoạn và phần giải nghĩa. Mở lại đoạn hoặc nghe lại sẽ được
+              ghi là có gợi ý. Đây vẫn là luyện ngay sau đọc/nghe, chưa phải
+              bằng chứng nhớ lâu.
+            </p>
+          )}
           {!recommendations.some((r) => r.dialogue.id === selected) && (
             <p className="conversation-note">
               Đang giữ bài và câu trả lời hiện tại. Chọn bài trong danh sách để
@@ -527,6 +611,7 @@ export function ConversationPractice({
             <label className="conversation-check">
               <input
                 type="checkbox"
+                disabled={draft.recall}
                 checked={draft.translation}
                 onChange={(e) =>
                   updateDraft({ ...draft, translation: e.target.checked })
@@ -547,46 +632,51 @@ export function ConversationPractice({
                 ? "Đã có một lượt nghe hết được giữ trong nháp."
                 : "Chưa ghi nhận lượt nghe hết đoạn.")}
           </p>
-          <ol className="conversation-lines">
-            {d.lines.map((l, i) => (
-              <li className={i % 2 ? "speaker-b" : "speaker-a"} key={i}>
-                <div className="conversation-line-top">
-                  <strong>{l.speaker}</strong>
-                  <button
-                    aria-label={`Nghe câu ${i + 1} của ${l.speaker}`}
-                    onClick={() => play([i])}
-                    disabled={!!playing}
-                  >
-                    <Volume2 size={17} />
-                  </button>
-                </div>
-                <p lang="en">{highlight(l.en, d)}</p>
-                {draft.translation && (
-                  <p className="conversation-translation">{l.vi}</p>
-                )}
-              </li>
-            ))}
-          </ol>
-          <details className="conversation-context">
-            <summary>Nghĩa của {d.targets.length} từ trong đoạn</summary>
-            <dl>
-              {d.targets.map((t) => (
-                <div key={t.id}>
-                  <dt lang="en">{t.lemma}</dt>
-                  <dd>{t.context}</dd>
-                </div>
+          {!draft.recall && (
+            <ol className="conversation-lines">
+              {d.lines.map((l, i) => (
+                <li className={i % 2 ? "speaker-b" : "speaker-a"} key={i}>
+                  <div className="conversation-line-top">
+                    <strong>{l.speaker}</strong>
+                    <button
+                      aria-label={`Nghe câu ${i + 1} của ${l.speaker}`}
+                      onClick={() => play([i])}
+                      disabled={!!playing}
+                    >
+                      <Volume2 size={17} />
+                    </button>
+                  </div>
+                  <p lang="en">{highlight(l.en, d)}</p>
+                  {draft.translation && (
+                    <p className="conversation-translation">{l.vi}</p>
+                  )}
+                </li>
               ))}
-            </dl>
-            <p className="conversation-note">
-              Giải thích theo tình huống do ứng dụng biên soạn; không phải trích
-              dẫn lời giải nghĩa của Oxford.
-            </p>
-          </details>
+            </ol>
+          )}
+          {!draft.recall && (
+            <details className="conversation-context">
+              <summary>Nghĩa của {d.targets.length} từ trong đoạn</summary>
+              <dl>
+                {d.targets.map((t) => (
+                  <div key={t.id}>
+                    <dt lang="en">{t.lemma}</dt>
+                    <dd>{t.context}</dd>
+                  </div>
+                ))}
+              </dl>
+              <p className="conversation-note">
+                Giải thích theo tình huống do ứng dụng biên soạn; không phải
+                trích dẫn lời giải nghĩa của Oxford.
+              </p>
+            </details>
+          )}
           <div className="conversation-exercises">
             <h3>Thử hiểu và trả lời</h3>
             <p className="conversation-note">
-              Văn bản vẫn ở trên để đối chiếu. Điểm dưới đây đo bài luyện có hỗ
-              trợ, không đo trí nhớ độc lập hay ngữ pháp câu tự viết.
+              {draft.recall
+                ? "Bạn đang thử trả lời khi ẩn đoạn. Kết quả ghi riêng việc mở lại gợi ý, chưa chứng minh nhớ sau nhiều ngày."
+                : "Văn bản vẫn ở trên để đối chiếu. Điểm dưới đây đo bài luyện có hỗ trợ, không đo trí nhớ độc lập hay ngữ pháp câu tự viết."}
             </p>
             {d.questions.map((q, i) => {
               const answer = report?.answers.find((a) => a.questionId === q.id);
@@ -682,6 +772,9 @@ export function ConversationPractice({
                   Đã lưu:{" "}
                   {report.answers.filter((a) => a.correct === true).length}/3
                   câu có đáp án đúng.{" "}
+                  {report.answers.every((a) => !a.hint)
+                    ? "Đã trả lời khi ẩn đoạn, không mở lại gợi ý; đây là luyện trong phiên. "
+                    : "Lượt có hỗ trợ hoặc phản hồi trước. "}
                   {report.answers.some((a) => a.kind === "reply")
                     ? "Câu trả lời mở đã lưu, chưa chấm tự động."
                     : "Chưa viết câu trả lời mở."}

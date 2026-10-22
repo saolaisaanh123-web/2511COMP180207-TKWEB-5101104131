@@ -18,7 +18,7 @@ export type UsageEntry = {
   countability?: string;
   note: string;
   mistake: { incorrect: string; correct: string; explanation: string };
-  example: { id: string; en: string; vi: string };
+  example: { id: string; en: string; vi: string; alternatives?: string[] };
   sources: { url: string; title: string; checkedAt: string; sha256: string }[];
 };
 
@@ -95,6 +95,9 @@ export function attachStudyContexts(
       en: usage.example.en,
       vi: usage.example.vi,
       targetVersion: version,
+      ...(usage.example.alternatives
+        ? { alternatives: [...usage.example.alternatives] }
+        : {}),
     };
     return exerciseWord(word, context) ? { ...task, context } : task;
   });

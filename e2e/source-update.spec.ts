@@ -124,7 +124,11 @@ test("a formerly lookup-only word is learnable with its corrected meaning and li
       history: state.history.length,
     };
   });
-  expect(initial).toEqual({ total: 5558, usable: 5558, history: 0 });
+  expect(initial).toEqual({
+    total: corpus.length,
+    usable: corpus.length,
+    history: 0,
+  });
   await page.getByRole("button", { name: "Kho từ", exact: true }).click();
   await page
     .getByRole("textbox", { name: "Tìm từ và nghĩa", exact: true })

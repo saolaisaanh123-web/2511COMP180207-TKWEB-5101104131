@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { BookOpen, ExternalLink, Volume2 } from "lucide-react";
 import {
   type State,
@@ -10,6 +10,8 @@ import {
 import "./dictionary.css";
 import { preferredHeadword, youglishUsUrl } from "./american-english";
 import UsageNotes from "./UsageNotes";
+import { selectLearningEvidence } from "./evidence";
+import { pronunciationPrompt } from "./pronunciation";
 
 type DictionaryEntryProps = {
   entry: State["entries"][string];
@@ -68,6 +70,7 @@ export default function DictionaryEntry({
   change,
 }: DictionaryEntryProps) {
   const w = entry.word;
+  const evidence = useMemo(() => selectLearningEvidence(state), [state]);
   const headword = preferredHeadword(w, state.voice);
   const usHeadword = preferredHeadword(w, "en-US");
   const [confirmedMeaning, setConfirmedMeaning] = useState(false);
@@ -103,7 +106,11 @@ export default function DictionaryEntry({
         hostname.endsWith(".oxfordlearnersdictionaries.com")
       );
     });
-  const wordAudio = safeHttpsUrl(w.audio_word);
+  const pronunciation = useMemo(
+    () => pronunciationPrompt(w, state.entries, state.voice),
+    [w, state.entries, state.voice],
+  );
+  const wordAudio = pronunciation.url;
   const exampleAudio = safeHttpsUrl(w.audio_example);
   const newsUrl = safeHttpsUrl(w.news_url);
   const newsMediaUrl = safeHttpsUrl(w.news_media_url);
@@ -232,16 +239,24 @@ export default function DictionaryEntry({
           </span>
           <button
             className="dict-audio"
-            aria-label="Nghe từ"
+            aria-label={
+              pronunciation.usesContext ? "Nghe từ trong câu" : "Nghe từ"
+            }
             title={
               wordAudio
                 ? "Phát âm thanh từ URL; dùng giọng tổng hợp nếu phát thất bại"
-                : "Phát từ bằng giọng tổng hợp của trình duyệt"
+                : pronunciation.usesContext
+                  ? "Phát câu ví dụ của nghĩa này bằng giọng tổng hợp của trình duyệt"
+                  : "Phát từ bằng giọng tổng hợp của trình duyệt"
             }
-            onClick={() => speak(headword, wordAudio)}
+            onClick={() => speak(pronunciation.text, wordAudio)}
           >
             <Volume2 size={17} aria-hidden="true" />
-            {wordAudio ? "Nghe từ · âm thanh URL" : "Nghe từ · giọng tổng hợp"}
+            {wordAudio
+              ? "Nghe từ · âm thanh URL"
+              : pronunciation.usesContext
+                ? "Nghe từ trong câu · giọng tổng hợp"
+                : "Nghe từ · giọng tổng hợp"}
           </button>
         </div>
         <p className="dict-muted">
@@ -250,6 +265,8 @@ export default function DictionaryEntry({
             : "Giọng tổng hợp của trình duyệt; không phải bản ghi phát âm Oxford."}
         </p>
         <p className="dict-muted">
+          {pronunciation.usesContext &&
+            "Từ này có nhiều từ loại trong kho. Nghe câu ví dụ giúp nhận biết ngữ cảnh của nghĩa đang xem; giọng tổng hợp vẫn có thể đọc sai trọng âm. "}
           IPA và âm thanh URL theo dữ liệu của mục từ; lựa chọn giọng tổng hợp
           không tự xác nhận chúng là phát âm Anh–Mỹ.
         </p>
@@ -615,7 +632,7 @@ export default function DictionaryEntry({
           {skills.map((skill, index) => (
             <li key={skill}>
               <strong>{skill}</strong>
-              <span>{strength(state, w.id, index)}</span>
+              <span>{strength(state, w.id, index, evidence)}</span>
               <small>
                 Ôn tiếp:{" "}
                 {state.schedules[w.id + ":" + index]

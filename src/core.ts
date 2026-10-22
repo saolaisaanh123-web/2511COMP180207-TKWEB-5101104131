@@ -4,6 +4,17 @@ import type {
   LearningMode,
 } from "./practice-data";
 import { validatePracticeCollections } from "./practice-data";
+import {
+  appendExposureEvent,
+  validateExposureEvents,
+  type ExposureEvent,
+} from "./exposure-events";
+import {
+  evidenceForSkill,
+  selectLearningEvidence,
+  type LearningEvidence,
+} from "./evidence";
+import { scheduleForEntries } from "./schedule-state";
 
 export const skills = [
   "Hiểu nghĩa",
@@ -39,6 +50,7 @@ export type StudyContext = {
   en: string;
   vi: string;
   targetVersion: string;
+  alternatives?: string[];
 };
 export type StudyTask = {
   id: string;
@@ -69,7 +81,19 @@ export type Result = {
   assessmentNote?: string;
   context?: StudyContext;
 };
-export type Schedule = { due: number; last: number; step: number };
+export type Schedule = {
+  due: number;
+  last: number;
+  step: number;
+  contentVersion?: string;
+};
+export type WritingDraft = {
+  wordId: string;
+  parentId?: string;
+  text: string;
+  updatedAt: number;
+  contentVersion?: string;
+};
 export type Session = {
   id: string;
   queue: StudyTask[];
@@ -91,10 +115,14 @@ export type State = {
   session?: Session;
   pausedScheduled?: Session;
   exposures?: Record<string, number>;
+  exposureEvents?: ExposureEvent[];
   sourceVersion?: string;
   learningMode?: LearningMode;
   writing?: WritingAttempt[];
   conversations?: ConversationAttempt[];
+  writingDrafts?: Record<string, WritingDraft>;
+  learningFloor?: "all" | "A2" | "B1" | "B2" | "C1";
+  studySkills?: number[];
 };
 export const empty = (): State => ({
   version: 1,
@@ -375,19 +403,24 @@ export const contentKey = (w: Word, skill = 0) =>
 export function validStudyContext(value: unknown): value is StudyContext {
   if (!value || typeof value !== "object" || Array.isArray(value)) return false;
   const c = value as Record<string, unknown>;
-  return ["id", "en", "vi", "targetVersion"].every(
-    (key) => typeof c[key] === "string" && c[key].trim().length > 0,
+  return (
+    ["id", "en", "vi", "targetVersion"].every(
+      (key) => typeof c[key] === "string" && c[key].trim().length > 0,
+    ) &&
+    (c.alternatives === undefined ||
+      (Array.isArray(c.alternatives) &&
+        c.alternatives.every(
+          (answer) => typeof answer === "string" && answer.trim().length > 0,
+        )))
   );
 }
 export function expose(state: State, id: string, time = Date.now()): State {
   if (!Object.hasOwn(state.entries, id)) return state;
-  return {
-    ...state,
-    exposures: {
-      ...state.exposures,
-      [id]: Math.max(state.exposures?.[id] || 0, time),
-    },
-  };
+  return appendExposureEvent(state, {
+    id: crypto.randomUUID(),
+    wordId: id,
+    time,
+  });
 }
 export function independence(
   state: State,
@@ -504,43 +537,21 @@ export const day = (n: number) => {
   const d = new Date(n);
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
 };
-const groupedHistory = new WeakMap<State, Map<string, Result[]>>();
-export function strength(state: State, id: string, skill: number) {
-  let groups = groupedHistory.get(state);
-  if (!groups) {
-    groups = new Map();
-    for (const r of state.history) {
-      const key = r.wordId + ":" + r.skill;
-      const list = groups.get(key) || [];
-      list.push(r);
-      groups.set(key, list);
-    }
-    groupedHistory.set(state, groups);
-  }
-  const h = groups.get(id + ":" + skill) || [];
-  const currentContent = Object.hasOwn(state.entries, id)
-    ? contentKey(state.entries[id].word, skill)
-    : undefined;
-  const clean = h.filter(
-    (r) =>
-      r.correct &&
-      !r.hint &&
-      r.method === "rule" &&
-      r.first &&
-      r.evidenceVersion === 2 &&
-      r.independent === true &&
-      r.contentVersion === currentContent &&
-      (![2, 3].includes(skill) || r.audioPlayed === true),
+export function strength(
+  state: State,
+  id: string,
+  skill: number,
+  evidence?: LearningEvidence,
+) {
+  const proof = evidenceForSkill(
+    evidence || selectLearningEvidence(state),
+    id,
+    skill,
   );
-  if (!h.length) return "Chưa đủ dữ liệu";
-  if (h.slice(-2).some((r) => !r.correct && r.method !== "ungraded"))
-    return "Cần củng cố";
-  if (
-    new Set(clean.map((r) => day(r.time))).size >= 3 &&
-    clean.some((r) => (r.exposureGap ?? 0) >= 7 * 86400000)
-  )
-    return "Nhớ khá vững";
-  return clean.length ? "Chưa ổn định" : "Đang làm quen";
+  if (!proof.current.length) return "Chưa đủ dữ liệu";
+  if (proof.weak) return "Cần củng cố";
+  if (proof.retained) return "Nhớ khá vững";
+  return proof.objective.length ? "Chưa ổn định" : "Đang làm quen";
 }
 export function record(state: State, r: Result, scheduled: boolean) {
   if (state.history.some((x) => x.id === r.id)) return state;
@@ -605,7 +616,7 @@ export function record(state: State, r: Result, scheduled: boolean) {
       ? { correct: false, method: "ungraded" as const, independent: false }
       : {}),
   };
-  const next: State = {
+  let next: State = {
     ...state,
     entries: { ...state.entries },
     history: [...state.history, r],
@@ -630,7 +641,7 @@ export function record(state: State, r: Result, scheduled: boolean) {
     r.method !== "ungraded" &&
     !next.history.slice(0, -1).some((x) => x.review === r.review)
   ) {
-    const old = next.schedules[key];
+    const old = scheduleForEntries(state, key, state.entries);
     const dueForReview = !old || r.time >= old.due;
     // Scheduling and objective mastery answer different questions. Revealing
     // a self-assessed answer or seeing the word in another skill must not trap
@@ -651,9 +662,20 @@ export function record(state: State, r: Result, scheduled: boolean) {
       const interval = canAdvance && r.correct ? [1, 3, 7, 14, 30][step] : 1;
       const due = new Date(r.time);
       due.setDate(due.getDate() + interval);
-      next.schedules[key] = { last: r.time, due: due.getTime(), step };
+      next.schedules[key] = {
+        last: r.time,
+        due: due.getTime(),
+        step,
+        contentVersion: version,
+      };
     }
   }
+  next = appendExposureEvent(next, {
+    id: `result:${r.id}`,
+    resultId: r.id,
+    wordId: r.wordId,
+    time: r.time,
+  });
   return next;
 }
 export { subscribeStoredState as subscribeStorage } from "./storage";
@@ -694,6 +716,19 @@ export function validateBackup(x: unknown): State {
         Array.isArray(s.exposures)))
   )
     throw Error("Bản sao lưu không hợp lệ.");
+  if (
+    s.learningFloor !== undefined &&
+    !["all", "A2", "B1", "B2", "C1"].includes(s.learningFloor)
+  )
+    throw Error("Mức ưu tiên từ mới không hợp lệ.");
+  if (
+    s.studySkills !== undefined &&
+    (!Array.isArray(s.studySkills) ||
+      !s.studySkills.length ||
+      s.studySkills.some((n) => !Number.isInteger(n) || n < 0 || n > 5) ||
+      new Set(s.studySkills).size !== s.studySkills.length)
+  )
+    throw Error("Kỹ năng luyện không hợp lệ.");
   if (
     [s.session, s.pausedScheduled].some(
       (v) => v !== undefined && (!v || typeof v !== "object"),
@@ -780,13 +815,37 @@ export function validateBackup(x: unknown): State {
       v.due < v.last ||
       !Number.isInteger(v.step) ||
       v.step < 0 ||
-      v.step > 4
+      v.step > 4 ||
+      (v.contentVersion !== undefined && typeof v.contentVersion !== "string")
     )
       throw Error("Lịch ôn không hợp lệ.");
   }
   for (const [id, time] of Object.entries(s.exposures || {})) {
     if (!Object.hasOwn(s.entries, id) || !Number.isFinite(time) || time < 0)
       throw Error("Lần tiếp xúc sao lưu không hợp lệ.");
+  }
+  validateExposureEvents(s);
+  if (s.writingDrafts !== undefined) {
+    if (
+      !s.writingDrafts ||
+      typeof s.writingDrafts !== "object" ||
+      Array.isArray(s.writingDrafts)
+    )
+      throw Error("Nháp viết không hợp lệ.");
+    for (const [key, draft] of Object.entries(s.writingDrafts)) {
+      if (
+        ["__proto__", "constructor", "prototype"].includes(key) ||
+        !draft ||
+        !Object.hasOwn(s.entries, draft.wordId) ||
+        typeof draft.text !== "string" ||
+        !Number.isFinite(draft.updatedAt) ||
+        draft.updatedAt < 0 ||
+        (draft.parentId !== undefined && typeof draft.parentId !== "string") ||
+        (draft.contentVersion !== undefined &&
+          typeof draft.contentVersion !== "string")
+      )
+        throw Error("Nháp viết không hợp lệ.");
+    }
   }
   for (const v of [s.session, s.pausedScheduled]) {
     if (!v) continue;

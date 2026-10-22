@@ -28,6 +28,7 @@ MEMBERSHIP_GROUPS = {
     "opalMembership": {"opal-written", "opal-spoken"},
 }
 FULL_REVIEW = runpy.run_path(str(ROOT / "scripts/apply-full-review.py"))
+ESSENTIAL_SENSES = runpy.run_path(str(ROOT / "scripts/apply-essential-senses.py"))
 
 
 def digest(data):
@@ -146,6 +147,9 @@ def apply_source_update(records, update):
     Unmentioned manual fields and the complete original ID order survive.
     """
     validate_source_update(update)
+    # The historical source update owns only its pinned prefix and additions.
+    # A newer declared tail is validated separately, then replayed last.
+    records, _essential_tail = ESSENTIAL_SENSES["separate_essential_senses"](records)
     latest_review = FULL_REVIEW["applicable_full_review"](records)
     newer = {row["id"]: row for row in latest_review["entries"]} if latest_review else {}
     newer_fields = {entry_id: FULL_REVIEW["reviewed_fields"](latest_review, row) for entry_id, row in newer.items()}
@@ -203,7 +207,8 @@ def apply_source_update(records, update):
             row["collections"] = ",".join(dict.fromkeys([*_collections(row), *extra]))
     if [row["id"] for row in records] != [*current_ids[:size], *expected_ids]:
         raise ValueError("Source update changed the stable vocabulary ID order")
-    return FULL_REVIEW["apply_full_review"](records, latest_review) if latest_review else records
+    records = FULL_REVIEW["apply_full_review"](records, latest_review) if latest_review else records
+    return ESSENTIAL_SENSES["apply_essential_senses"](records)
 
 
 def corpus_coverage(records, previous):
@@ -295,7 +300,8 @@ def update_provenance(records, text, update, metadata, frequency, review, overla
         "source-update-provenance.json": provenance,
     }
     latest_review = FULL_REVIEW["applicable_full_review"](records)
-    return FULL_REVIEW["update_documents"](records, text, latest_review, documents) if latest_review else documents
+    documents = FULL_REVIEW["update_documents"](records, text, latest_review, documents) if latest_review else documents
+    return ESSENTIAL_SENSES["add_provenance"](documents, records, text)
 
 
 def main():
@@ -320,6 +326,7 @@ def main():
         VOCABULARY.write_text(text, encoding="utf-8", newline="\n")
         for filename, value in documents.items():
             (DATA / filename).write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        (DATA / "vocabulary-version.json").write_text(json.dumps({"version": digest(text.encode()), "entryCount": len(records), "bytes": len(text.encode())}, indent=2) + "\n", encoding="utf-8")
     else:
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(text, encoding="utf-8", newline="\n")

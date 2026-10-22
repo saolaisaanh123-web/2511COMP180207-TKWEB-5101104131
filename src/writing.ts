@@ -84,7 +84,7 @@ const rules: Rule[] = [
     // About can modify a quantity, as in "discussed about twenty cases".
     // Ambiguous cases stay ungraded instead of receiving a false correction.
     skip: (m, text) =>
-      /^(?:\d|a\b|an\b|one\b|two\b|three\b|four\b|five\b|six\b|seven\b|eight\b|nine\b|ten\b|eleven\b|twelve\b|thirteen\b|fourteen\b|fifteen\b|sixteen\b|seventeen\b|eighteen\b|nineteen\b|twenty\b|thirty\b|forty\b|fifty\b|sixty\b|seventy\b|eighty\b|ninety\b|hundred\b|thousand\b|million\b|billion\b|half\b|twice\b|thrice\b|several\b|some\b|many\b|most\b|all\b|the\s+(?:same|right|usual|expected)\b)/i.test(
+      /^(?:\d|as\b|a\b|an\b|one\b|two\b|three\b|four\b|five\b|six\b|seven\b|eight\b|nine\b|ten\b|eleven\b|twelve\b|thirteen\b|fourteen\b|fifteen\b|sixteen\b|seventeen\b|eighteen\b|nineteen\b|twenty\b|thirty\b|forty\b|fifty\b|sixty\b|seventy\b|eighty\b|ninety\b|hundred\b|thousand\b|million\b|billion\b|half\b|twice\b|thrice\b|several\b|some\b|many\b|most\b|all\b|the\s+(?:same|right|usual|expected)\b)/i.test(
         text.slice(m.index! + m[0].length).trimStart(),
       ),
   },

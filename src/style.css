@@ -244,7 +244,7 @@ nav b {
 .workspace {
   margin-left: 245px;
 }
-header {
+.app-header {
   height: 79px;
   border-bottom: 1px solid #e7ece6;
   display: flex;
@@ -253,7 +253,7 @@ header {
   padding: 0 44px;
   background: #fdfefd;
 }
-header > div {
+.app-header > div {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -262,7 +262,7 @@ header > div {
 .breadcrumb {
   color: #97a197;
 }
-header strong {
+.app-header strong {
   font-weight: 500;
 }
 .local-tag {
@@ -1034,6 +1034,29 @@ select {
   background: none;
   padding-left: 0;
 }
+.study-preferences {
+  margin: 18px 0;
+  border: 1px solid #dfe7dc;
+  border-radius: 12px;
+  padding: 12px;
+}
+.study-preferences legend {
+  font-weight: 600;
+  font-size: 14px;
+}
+.study-preferences label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  font-size: 14px;
+}
+.study-preferences input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  flex: 0 0 auto;
+}
 .session-goal {
   max-width: 680px;
   margin: 16px auto 0;
@@ -1275,7 +1298,7 @@ hr {
   .muted {
     display: none;
   }
-  header {
+  .app-header {
     padding: 0 25px;
   }
   .practice-grid {
@@ -1398,11 +1421,11 @@ hr {
   .workspace {
     margin: 0;
   }
-  header {
+  .app-header {
     height: 61px;
     padding: 0 20px;
   }
-  header > div {
+  .app-header > div {
     gap: 8px;
     font-size: 10px;
   }

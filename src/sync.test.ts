@@ -245,6 +245,49 @@ describe("non-destructive cloud merge", () => {
     expect(merged.state.entries.word.reports).toEqual(["one", "two"]);
     expect(merged.state.entries.word.enrolledAt).toBe(100);
   });
+
+  it("unions separate writing drafts and requests a choice for competing edits of the same draft", () => {
+    const base = sample(),
+      local = sample(),
+      remote = sample();
+    const draft = {
+      wordId: "word",
+      text: "I suggest leaving early.",
+      updatedAt: 100,
+    };
+    base.writingDrafts = { first: draft };
+    local.writingDrafts = {
+      first: { ...draft, text: "I suggest taking the train.", updatedAt: 200 },
+      localOnly: { ...draft, parentId: "local-parent" },
+    };
+    remote.writingDrafts = {
+      first: {
+        ...draft,
+        text: "I suggest bringing some water.",
+        updatedAt: 300,
+      },
+      remoteOnly: { ...draft, parentId: "remote-parent" },
+    };
+    const merged = mergeCloudState(base, local, remote);
+    expect(merged.state.writingDrafts?.localOnly).toEqual(
+      local.writingDrafts.localOnly,
+    );
+    expect(merged.state.writingDrafts?.remoteOnly).toEqual(
+      remote.writingDrafts.remoteOnly,
+    );
+    expect(merged.conflicts.map((conflict) => conflict.path)).toContain(
+      "writingDrafts.first.text",
+    );
+    const choices = Object.fromEntries(
+      merged.conflicts.map((conflict) => [conflict.path, "remote" as const]),
+    );
+    const resolved = mergeCloudState(base, local, remote, choices);
+    expect(resolved.conflicts).toEqual([]);
+    expect(resolved.state.writingDrafts?.first).toEqual(
+      remote.writingDrafts.first,
+    );
+    expect(local.writingDrafts.first.text).toBe("I suggest taking the train.");
+  });
 });
 
 describe("Supabase protocol and account boundaries", () => {

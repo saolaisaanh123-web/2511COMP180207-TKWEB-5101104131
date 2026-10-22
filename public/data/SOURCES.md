@@ -4,7 +4,7 @@ Kho mặc định hiện chứa **toàn bộ phạm vi Oxford 3000 và phần b�
 
 ## Rà toàn bộ nội dung học ngày 21/10/2026
 
-Kho hiện có **5.558 mục theo nghĩa/từ loại, đều đủ nội dung để luyện**. Hoàn thiện 4.497 mục trước đây chỉ tra cứu và đối chiếu lại 1.061 mục vốn đã học được; không chỉ đổi cờ `ready`. Mỗi mục có nghĩa Việt, giải nghĩa Anh, câu tiếng Anh hoàn chỉnh và bản dịch Việt. Một mục vẫn chỉ học một nghĩa được chọn, không bao gồm mọi nghĩa của đầu từ.
+Đợt này đã rà **5.558 mục theo nghĩa/từ loại, đều đủ nội dung để luyện**. Hoàn thiện 4.497 mục trước đây chỉ tra cứu và đối chiếu lại 1.061 mục vốn đã học được; không chỉ đổi cờ `ready`. Mỗi mục có nghĩa Việt, giải nghĩa Anh, câu tiếng Anh hoàn chỉnh và bản dịch Việt. Một mục vẫn chỉ học một nghĩa được chọn, không bao gồm mọi nghĩa của đầu từ. Sau bổ sung hai nghĩa nền tảng ngày 23/10 bên dưới, tổng hiện tại là 5.560 mục.
 
 - **Open English WordNet**, phiên bản khóa `45fdb60396dc804526b85f21a23c59983c2c396a`: chọn nghĩa và từ loại cụ thể qua synset/lemma. Nguồn này phát triển từ Princeton WordNet, dùng để đối chiếu ngữ nghĩa; không lấy thứ tự nghĩa làm bằng chứng thông dụng, CEFR hoặc ưu tiên Mỹ.
 - **Oxford American/Academic/Learner’s**: đọc các nghĩa phù hợp cho từ chức năng, nghĩa WordNet chưa bao phủ tốt, từ loại và khác biệt Anh–Mỹ. **Merriam-Webster** cùng các nguồn từ điển bổ sung được đọc cho tiếng lóng/cách dùng hiện đại; từng nguồn thật nằm trong bằng chứng của từng ID.
@@ -151,3 +151,22 @@ TXT đã commit là nội dung chuẩn; sửa trực tiếp không cần viết 
 Trường tùy chọn `spelling_variants` ghi các cách viết tương đương đã rà riêng theo nghĩa và từ loại, phân cách bằng `|`. Hiện có 10 mục, gồm `neighbour` → `neighbor`, động từ `practise` → `practice`, `characterize` → `characterise` và các cách ghép từ như `healthcare` → `health care`. Danh từ `practice` không nhận `practise`. Không suy ra tự động biến thể `-ise/-ize`, bỏ dấu gạch nối, từ đồng nghĩa hay cách chia động từ.
 
 Danh sách biên tập nằm trong `scripts/corpus_policy.py`, được áp dụng lại qua `scripts/apply-content-review.py`; full builder giữ trường này như các chỉnh sửa canonical khác. Đây là phần rà chính tả của ứng dụng, không phải sự chứng nhận của Oxford. `accepted_answers`, ID, nghĩa, lịch sử nội dung và các quyết định `lookup`/`ready` không đổi chỉ vì bổ sung trường này. Chỉ 10 mục có biến thể mới xuất trường mới; định dạng TXT cũ vẫn được hỗ trợ.
+
+## Bổ sung nghĩa nền tảng ngày 23/10/2026
+
+Hai nghĩa có ID mới được thêm sau đợt rà 5.558 mục: `like-verb-enjoy-01`
+(động từ thích) và `lie-horizontal-01` (động từ nằm). Giữ nguyên từng byte
+của 5.558 mục cũ; không thay nghĩa giới từ `like` hoặc nghĩa nói dối của `lie`.
+Kho hiện có 5.560 mục. Hai bài Oxford Advanced American đã được đọc trực tiếp
+ngày 22/10; URL, ngày, HTTP và SHA256 nằm trong
+`essential-senses-provenance.json`. IPA Mỹ được đối chiếu literal từ bài nguồn.
+Nguồn bài đúng từ loại: [like verb](https://www.oxfordlearnersdictionaries.com/definition/american_english/like_3), [lie¹ verb](https://www.oxfordlearnersdictionaries.com/definition/american_english/lie_1).
+Nghĩa Việt, giải nghĩa tiếng Anh và ví dụ Anh–Việt là nội dung biên soạn.
+Nhãn A1 dựa trên đúng dòng từ loại/nghĩa trong PDF American Oxford 3000 đã khóa;
+không tạo `source_fact_index` Anh–Anh giả và không suy đoán thêm tần suất.
+
+Lớp authoring: `data/authoring/essential-senses-2026-10-22.json`.
+`scripts/apply-essential-senses.py` mặc định chỉ xem trước; `--write` mới áp dụng.
+Các pipeline nguồn, full-review và content-review cũ đều tái áp lớp bổ sung
+sau cùng, giữ nguyên ID/thứ tự và kết quả canonical. Đây là bổ sung hai nghĩa
+đã xác định thiếu, không phải tuyên bố đã nhập mọi nghĩa của mọi đầu từ.

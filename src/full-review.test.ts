@@ -45,6 +45,8 @@ const reviewed: Reviewed[] = [
 const reviewById = new Map(reviewed.map((row) => [row.id, row]));
 const text = readFileSync("public/data/vocabulary.txt", "utf8");
 const words = parse(text);
+const reviewedWords = words.slice(0, review.baseline.entryCount);
+const essential = read("data/authoring/essential-senses-2026-10-22.json");
 const byId = new Map(words.map((word) => [word.id, word]));
 const byWord = new Map<string, Word>();
 for (const word of words)
@@ -70,11 +72,21 @@ describe("Complete source-backed vocabulary review", () => {
   it("reviews every actual record once and retains the pinned stable-ID order", () => {
     expect(review.expectedEntryCount).toBe(5558);
     expect(reviewed).toHaveLength(review.expectedEntryCount);
-    expect(words).toHaveLength(review.baseline.entryCount);
-    expect(reviewed).toHaveLength(words.length);
-    expect(reviewById.size).toBe(words.length);
-    expect([...byId.keys()].sort()).toEqual([...reviewById.keys()].sort());
-    expect(hash(words.map((word) => word.id).join("\n"))).toBe(
+    expect(words).toHaveLength(
+      review.baseline.entryCount + essential.entries.length,
+    );
+    expect(reviewed).toHaveLength(reviewedWords.length);
+    expect(reviewById.size).toBe(reviewedWords.length);
+    expect(reviewedWords.map((word) => word.id).sort()).toEqual(
+      [...reviewById.keys()].sort(),
+    );
+    expect(words.slice(review.baseline.entryCount)).toEqual(
+      essential.entries.map((entry: { word: Word }) => {
+        // TXT retains every authored field and materializes absent optional fields as absent.
+        return entry.word;
+      }),
+    );
+    expect(hash(reviewedWords.map((word) => word.id).join("\n"))).toBe(
       review.baseline.idsSha256,
     );
     expect(review.baseline.vocabularySha256).toBe(
@@ -99,9 +111,9 @@ describe("Complete source-backed vocabulary review", () => {
     ])
       expect(fields).toContain(required);
     expect(Object.keys(review.baseline.preservedFieldHashes)).toHaveLength(
-      words.length,
+      reviewedWords.length,
     );
-    for (const word of words) {
+    for (const word of reviewedWords) {
       const values = fields.map((field) => word[field] || "");
       expect(hash(JSON.stringify(values)), word.id).toBe(
         review.baseline.preservedFieldHashes[word.id],

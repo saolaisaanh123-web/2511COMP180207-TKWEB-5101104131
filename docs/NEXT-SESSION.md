@@ -1,6 +1,10 @@
 # Jeongyeon — ghi nhớ cho phiên sửa tiếp theo
 
-Cập nhật 22/10/2026. Nhóm sửa 1, mục Tra cứu ngữ pháp và đợt rà nội dung toàn bộ kho từ đã hoàn thành. Các lỗi bằng chứng/merge và tối ưu học dài hạn ở nhóm 2–5 vẫn còn; không cần rà lại nguồn từ đầu. Người dùng đã cho phép commit/push sau khi nguồn và kiểm thử đạt.
+Cập nhật 23/10/2026. Đợt sửa theo kiểm tra tổng thể đã triển khai các lỗi lịch khác nghĩa, thống kê không thống nhất, lựa chọn từ lặp, thứ tự kỹ năng, chấm đáp án mơ hồ, phản hồi discuss, nháp viết và mobile. Đã bổ sung hai nghĩa A1 của like/lie theo Oxford American, kho hiện có 5.560 mục sẵn học và 346 IPA. Giữ nguyên 5.558 mục cũ từng byte. Không cần rà lại nguồn từ đầu. Người dùng đã cho phép commit/push sau khi nguồn và kiểm thử đạt.
+
+**Kiểm thử bàn giao đợt này:** 333 unit, 37 data và 100 E2E Chromium đạt; TypeScript/build, production đường dẫn gốc/con, offline và thông báo thiếu JavaScript đạt. Phát hành qua workflow Pages trên main; xem kết quả theo commit trong báo cáo, không coi Supabase mô phỏng là kiểm thử cloud thật. Báo cáo: [learning-reliability-2026-10-23.md](learning-reliability-2026-10-23.md).
+
+**Phần còn lại thực sự:** cách dùng/ngữ cảnh thứ hai mới có 48 mục, 12 hội thoại/48 ID mục tiêu, phần lớn phát âm còn dựa TTS. Chưa có Supabase thật; snapshot cloud vẫn chứa toàn kho và giới hạn 20 MiB, chưa chuyển sang delta. Chưa chấm ngữ pháp tổng quát hoặc tự nhận đã phủ mọi nghĩa của mỗi đầu từ. Đây là các giới hạn phát triển tiếp, không phải những lỗi đã sửa bên dưới còn đang tồn tại.
 
 ## Mục tiêu và giới hạn phải giữ
 
@@ -62,35 +66,40 @@ Cập nhật 22/10/2026. Nhóm sửa 1, mục Tra cứu ngữ pháp và đợt r
 - assessment.ts dùng outcome correct/incorrect/ungraded. Một số đáp án khác cùng nghĩa Việt+POS ready, ba ngữ cảnh cloze đã rà và 10 nhóm đồng âm được giữ trung lập: lưu lý do assessmentNote, không tính đúng/sai, không retry/reset/mastery. Mục đã archive vẫn được xét làm đáp án thay thế hợp lệ, không được đưa lại vào queue. Đây không phải bộ chấm mọi từ đồng nghĩa.
 - Bài nhớ để viết có từ loại/giải nghĩa (che mục từ nếu xuất hiện). Nghe chính tả nghe cả câu và điền phần thiếu khi có context; chỉ nhận sau playback thành công. Giữ tương thích từ cá nhân thiếu context bằng nghe từ, nhóm đồng âm vẫn có phản hồi trung lập. Kết quả mới là nghe/viết có ngữ cảnh, không tuyên bố nghe từ rời.
 
-### 2. Thống nhất bằng chứng và bảo vệ dữ liệu — việc tiếp theo
+### 2. Thống nhất bằng chứng và bảo vệ dữ liệu — đã triển khai 23/10
 
-- analytics bỏ kết quả có gợi ý trước khi xét yếu; có trường hợp vẫn báo nhớ vững sau lần sai có gợi ý. Các bảng cũ/mới còn khác bộ lọc phiên bản nghĩa và thời gian. Không gọi nhớ sau ≥24 giờ khi chưa có khoảng cách thời gian quan sát được. Dùng bộ chọn bằng chứng chung. Xem analytics.ts:106,147; core.ts:497; main.tsx:999.
-- Nhập backup cũ hoặc tab cũ lưu kết quả có thể giữ nghĩa mới nhưng phục hồi lịch của nghĩa cũ. Gắn/kiểm tra contentVersion cho lịch theo kỹ năng. Xem main.tsx:2897; storage.ts:209.
-- Merge cloud giữ nhãn độc lập cũ dù thiết bị khác đã xem nghĩa gần thời điểm kiểm tra. Cần sự kiện exposure có ID và tính lại bằng chứng dẫn xuất, giữ kết quả gốc. Xem sync.ts:453.
-- Nhóm1 chỉ sửa chấm các lượt mới; khi thống nhất bằng chứng cần xem cách phản ánh những lượt cũ bị chấm sai do biến thể hiện đã chấp nhận, không ghi đè/xóa lịch sử bất biến.
+- `evidence.ts` là bộ chọn chung cho phân tích, chi tiết từ, đề xuất và thống kê cũ. Chỉ dùng nghĩa hiện tại, thời gian hợp lệ, lần đầu không trùng review/phiên/từ/kỹ năng; giữ nguyên lịch sử gốc.
+- Sai hoặc cần gợi ý vẫn là tín hiệu yếu; không đưa lượt có gợi ý vào tỷ lệ đúng độc lập. Chỉ tính nhớ sau ≥24 giờ khi có khoảng nghỉ đã biết; không suy từ dữ liệu thiếu. Giữ tiêu chí nhớ vững nhiều ngày và khoảng nghỉ dài.
+- `schedule-state.ts` ràng buộc lịch với phiên bản nội dung theo kỹ năng tại record, đọc/ghi IndexedDB, nhập backup, tab cũ và merge cloud. Lịch legacy còn hợp lệ được giữ nguyên; không dùng lịch của snapshot nghĩa cũ cho nghĩa mới.
+- `exposure-events.ts` hợp nhất tiếp xúc bằng ID bất biến; chuyển timestamp legacy thành sự kiện trước khi merge. Nếu thiết bị khác đã xem nghĩa 30 giây trước câu trả lời, bằng chứng dẫn xuất không còn nhận khoảng nghỉ 8 ngày; kết quả gốc vẫn giữ.
+- Bổ sung hồi quy thực tế cho backup cũ, tab cũ, đồng bộ tiếp xúc và cùng nháp bị sửa cạnh tranh. Chưa tự sửa lại lịch sử bất biến của những lượt cũ từng chấm nhầm.
 
 ### 3. Nội dung chính xác và phù hợp trình độ
 
-- Sau rà toàn kho 21–22/10: 5.558 mục đã có nghĩa/ví dụ đủ để luyện và bằng chứng theo ID. Giữ hàng rào lookup cho từ tự nhập hoặc mục cá nhân chưa rà. Không mở thêm mọi nghĩa của đầu từ chỉ vì nghĩa hiện tại đã được đối chiếu.
-- Đã sửa các nghĩa nguồn mở cũ bằng overlay toàn kho và rà riêng vùng Anh–Mỹ. Danh sách Oxford vẫn chỉ chứng minh phạm vi đầu từ/POS/CEFR; bản dịch/ví dụ tự biên soạn không được gọi là Oxford chứng nhận.
-- Mỗi mục luyện hiện chỉ một ví dụ. Bổ sung 2–3 ngữ cảnh cho mục ưu tiên, kiểm tra bằng câu chưa gặp. Nghĩa mới dùng ID liên kết ổn định, không ghi đè lịch sử nghĩa cũ. Đã đối chiếu từng nghĩa đang dạy; chưa cung cấp toàn bộ các nghĩa của từng đầu từ.
-- Có 344 IPA trong dữ liệu sau 28 mục mới được đối chiếu literal NAmE; phần lớn mục vẫn chưa có IPA/audio. TTS cần tham chiếu cho từ đa cách phát âm. Không chế IPA hoặc tự nhận audio Oxford.
+- Kho hiện có 5.560 mục ready. Đợt bổ sung này thêm `like-verb-enjoy-01` (thích, A1) và `lie-horizontal-01` (nằm, A1), đối chiếu trực tiếp Oxford American cùng dữ kiện American Oxford; có nguồn, receipt/hash, IPA Mỹ literal và lưu ý lay/lain/lying. Không gọi nghĩa like/lie cũ sai.
+- 5.558 mục cũ là tiền tố byte không đổi của TXT mới; các pipeline preview/replay áp dụng thêm lớp essential-senses được khai báo, không đổi ID hoặc ghi đè bản cá nhân. SHA256 canonical: `10392288d69ba11cc6e5fc74e02e0cc3654bea50cda229254236848d2d3a87f4`.
+- 48 mục có cách dùng và ngữ cảnh thứ hai; những mục còn lại vẫn một câu. 346 IPA, chưa có audio nguồn mặc định. Không coi đủ đầu từ là đủ mọi nghĩa, không coi bản dịch/ví dụ biên soạn là được Oxford chứng nhận.
+- TTS ở từ cùng đầu mục khác từ loại có thể dùng câu song ngữ đã biên soạn cho đúng nghĩa; hiển thị “Nghe từ trong câu” và cảnh báo giới hạn trọng âm. Audio HTTPS do người dùng cấu hình vẫn được ưu tiên. Không chế IPA hoặc ghi âm Oxford.
 
-### 4. Năng suất và đề xuất đúng bài
+### 4. Năng suất và đề xuất đúng bài — đã triển khai 23/10
 
-- Chế độ thông dụng khi luyện có thể lặp cùng 20 mục dù đã trả lời đúng; chế độ smart không có cùng lỗi trong phép thử. Thêm yếu tố cần học/lần luyện gần nhất. Xem recommendations.ts:317.
-- Cold start smart ưu tiên từ chức năng A1; 5 từ mới tạo 30 lượt. Cho đánh dấu nhanh từ đã biết, chia phiên theo thời gian/lượt và phân bổ kỹ năng theo nhu cầu; không xóa backlog hay đổi hàng đợi phiên đang học.
-- Luyện ngay có thể lấy kỹ năng đã chọn trước đó thay vì điểm yếu. Gửi rõ wordId/skill/dialogueId/attemptId; thay đổi mục tiêu phải được tôn trọng ở phiên mới. Xem main.tsx:2438,676; analytics.ts:563.
+- Chế độ thông dụng tạm nhường từ vừa trả lời đúng/tự đánh giá/viết trong 24 giờ khi còn từ khác; từ yếu và lượt đến hạn không bị bỏ qua. Không coi tự đánh giá hoặc câu chưa chấm là bằng chứng nhớ vững.
+- Phiên mới luân phiên kỹ năng khách quan đứng trước theo từng từ giữa nhớ để viết, nghe chính tả và ngữ cảnh. Giữ nguyên task/review/context và điều kiện độc lập; phiên đang dở/retry không bị đổi thứ tự.
+- Cài đặt thêm mức ưu tiên từ mới và kỹ năng cho phiên mới. Chỉ lọc giới thiệu mới hoặc kỹ năng chưa học; không lọc lịch đã đến hạn, không thay queue đang chạy, mục chưa biết CEFR vẫn hợp lệ. Đây là lựa chọn cá nhân, không phải kết quả kiểm tra trình độ.
+- Nút “Luyện ngay” của nhóm thường quên cũ truyền kỹ năng yếu thực tế thay vì dùng lựa chọn luyện trước đó.
 
-### 5. Hội thoại, viết câu, mobile và cloud dài hạn
+### 5. Hội thoại, viết câu, mobile và cloud
 
-- 12 hội thoại chỉ có 48 từ mục tiêu; đang nhìn transcript khi trả lời. Mở rộng có biên tập, thêm pha truy hồi ẩn đáp án; đọc/nghe không tự tính thành thạo.
-- Quy tắc discuss báo nhầm câu đúng: We discussed about as many cases as we did last week. Giữ phản hồi ngữ pháp hẹp, miễn phí và không chắc thì không kết luận đúng/sai. Xem writing.ts:75.
-- Nháp ở phần phản hồi viết trong Tiến độ mất khi chuyển trang; nháp hội thoại chỉ theo tab. Dùng IndexedDB; phản hồi cũ cần hiện phiên bản nghĩa. Nháp trong phiên học đã có lưu, không làm hỏng.
-- Mobile 320/390 px: header phần viết bị chồng chữ do CSS header toàn cục. Scope style.css:247, sửa writing-feedback.css:10. Ghi chú quan trọng có chỗ 7–10 px, tương phản thấp; nâng độ đọc được mà giữ phong cách.
-- Cloud snapshot ban đầu khoảng 9 MB, raw giới hạn 20 MiB. Trước khi lịch sử lớn cần đồng bộ thay đổi cá nhân/sự kiện tăng dần, không gửi lại toàn bộ corpus và không tự xóa lịch sử.
+- Hội thoại có pha ẩn transcript để tự nhớ; mở lại ghi có gợi ý, retry vẫn có hỗ trợ. Kết quả đọc/nghe/tự nhớ ngay không tự tăng lịch hoặc chứng nhận nhớ lâu. Thêm nhãn ngữ liệu vùng; giọng Mỹ không biến câu Anh–Anh thành tiếng Mỹ. Phạm vi vẫn 12 đoạn/48 từ mục tiêu, chưa tạo hội thoại cho mọi nhóm từ.
+- Các đáp án recommend/advise/suggest đã đối chiếu trong ngữ cảnh cụ thể được lưu trung lập; metadata đóng băng theo đề, không thêm synonym chung cho mọi câu. Phần ngữ cảnh hiển thị nghĩa và từ loại mục tiêu.
+- Quy tắc discuss thu hẹp để không sửa sai about chỉ số lượng xấp xỉ/as many. Phản hồi viết vẫn giới hạn, miễn phí; không phát hiện mẫu sai không đồng nghĩa câu đúng.
+- Nháp viết ngoài phiên lưu IndexedDB theo từ và luồng sửa, lưu phiên bản nghĩa. Lưu thành công chỉ xóa đúng bản nháp đã gửi bằng tombstone, không xóa bản sửa mới từ tab khác. Sao lưu chờ flush rồi đọc dữ liệu bền mới nhất; nháp trong phiên học vẫn theo session hiện có.
+- Scope header ứng dụng để không đè header phản hồi viết, chỉnh kích thước ghi chú và vùng thao tác. Bổ sung kiểm tra giao nhau của chữ ở 320/390 px, không chỉ scrollWidth.
+- Cloud đã sửa hợp nhất tiếp xúc/lịch/nháp nhưng **chưa thay kiến trúc snapshot**. Chưa có project thật để thử auth/RLS và hai thiết bị. Trước khi lịch sử lớn cần thiết kế delta cá nhân/sự kiện, không tự xóa lịch sử để né giới hạn 20 MiB.
 
-## Bằng chứng và kiểm thử
+## Bằng chứng và kiểm thử các đợt trước
+
+Kết quả cuối của đợt 23/10 cần ghi trong báo cáo learning-reliability, sau khi chạy lại trên mã đã tích hợp; các số sau là lịch sử.
 
 - Baseline đã kiểm tra: 8c013e95cb39948cdbab5f53b6fafb40ee442a8c, repo saolaisaanh123-web/WebHocTuVungTiengAnh.
 - Sau sửa nhóm 1 và thêm ngữ pháp: `npm test`: 219 đạt (15 file); `npm run test:data`: 12 đạt; Playwright: 67 đạt; `npm run test:production`: TypeScript/build, đường dẫn gốc/con và reload offline gồm tra cứu ngữ pháp đạt. Sau bổ sung citation đã chạy lại 23 unit ngữ pháp, 8 E2E ngữ pháp và production đều đạt. Test bảo toàn trạng thái giữ sourceVersion từ lần nạp đầu để tránh nhầm cập nhật metadata nền với thay đổi do đọc bài.
@@ -102,4 +111,4 @@ Cập nhật 22/10/2026. Nhóm sửa 1, mục Tra cứu ngữ pháp và đợt r
 
 ## Tiêu chí cho đợt tiếp theo
 
-Nhóm1 đã kiểm tra lịch không kẹt một ngày, exposure ngoài màn hình, biến thể hợp lệ và các đề mơ hồ đã xác nhận; giữ lịch sử/lịch/phiên/nháp sau update chính tả. Còn phải thống nhất mọi thống kê cùng nghĩa/phạm vi dùng chung bằng chứng, và bảo đảm sửa nghĩa rồi merge backup/tab cũ không hồi sinh lịch cũ (nhóm2). Không đánh dấu các nhóm2–5 đã hoàn thành; giữ dữ liệu và chạy hồi quy phù hợp trước bàn giao.
+Giữ các hồi quy lịch theo nghĩa, tiếp xúc nhiều thiết bị, bằng chứng có hỗ trợ/không rõ khoảng nghỉ, đáp án trung lập, nháp và tùy chọn phiên mới. Sau khi bàn giao đợt 23/10, ưu tiên mở rộng cách dùng/ngữ cảnh cho từ thực sự yếu, rà nghĩa nền tảng còn thiếu theo từ loại/nghĩa và chuẩn bị đồng bộ delta trước khi dữ liệu lớn. Không coi toàn bộ các giới hạn nội dung/dịch vụ đã hoàn thành chỉ vì các lỗi trọng điểm đã sửa. Không yêu cầu AI trả phí. Khi sửa tiếp, giữ các tiêu chí kiểm thử đã bàn giao và kiểm tra trạng thái phát hành theo commit trong workflow Pages.

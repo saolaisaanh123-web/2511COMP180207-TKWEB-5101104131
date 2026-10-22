@@ -1,7 +1,6 @@
 import {
   canPractice,
   collectFresh,
-  contentKey,
   day,
   frequencyScore,
   type Entry,
@@ -10,6 +9,13 @@ import {
 } from "./core";
 
 import type { LearningMode } from "./practice-data";
+import {
+  isDelayedEvidence,
+  isRetainedEvidence,
+  isWeakEvidence,
+  selectLearningEvidence,
+} from "./evidence";
+import { scheduleForEntries } from "./schedule-state";
 export type { LearningMode } from "./practice-data";
 export const selectionModes: {
   value: LearningMode;
@@ -24,7 +30,8 @@ export const selectionModes: {
   {
     value: "common",
     label: "Ưu tiên thông dụng",
-    description: "Ưu tiên tần suất đã có trong dữ liệu, CEFR chỉ hỗ trợ.",
+    description:
+      "Ưu tiên từ thông dụng cần học; giãn từ vừa trả lời đúng hoặc đã vững.",
   },
   {
     value: "weak",
@@ -48,6 +55,7 @@ type SkillMemory = {
   days: Set<string>;
   longGap: boolean;
   latest: Result;
+  attempts: Result[];
 };
 type Summary = {
   count: number;
@@ -65,6 +73,7 @@ type Candidate = WordRecommendation & {
   family: string;
   part: string;
   topic: string;
+  practiceTier: number;
 };
 const DAY = 86400000;
 const levels = ["A1", "A2", "B1", "B2", "C1", "C2"];
@@ -119,29 +128,16 @@ function indexEvidence(
   skill?: number,
 ): Map<string, Evidence> {
   const words = new Map(entries.map((e) => [e.word.id, e.word]));
-  const versions = new Map<string, string>();
   const summaries = new Map<string, Summary>();
-  for (const r of state.history) {
+  for (const r of selectLearningEvidence(state, now).attempts) {
     const word = words.get(r.wordId);
     if (
       !word ||
       (skill !== undefined && r.skill !== skill) ||
       !canPractice(word, r.skill) ||
-      r.method !== "rule" ||
-      !r.first ||
-      r.evidenceVersion !== 2 ||
-      !Number.isFinite(r.time) ||
-      r.time > now ||
-      ([2, 3].includes(r.skill) && r.audioPlayed !== true)
+      r.method !== "rule"
     )
       continue;
-    const key = `${r.wordId}:${r.skill}`;
-    let version = versions.get(key);
-    if (!version) {
-      version = contentKey(word, r.skill);
-      versions.set(key, version);
-    }
-    if (r.contentVersion !== version) continue;
     const summary: Summary = summaries.get(r.wordId) || {
       count: 0,
       latest: 0,
@@ -159,18 +155,15 @@ function indexEvidence(
       days: new Set<string>(),
       longGap: false,
       latest: r,
+      attempts: [],
     };
+    memory.attempts.push(r);
     if (
       r.time > memory.latest.time ||
       (r.time === memory.latest.time && compareIds(r.id, memory.latest.id) < 0)
     )
       memory.latest = r;
-    if (
-      r.correct &&
-      !r.hint &&
-      r.independent === true &&
-      (r.exposureGap === undefined || r.exposureGap >= DAY)
-    ) {
+    if (r.correct && !r.hint && isDelayedEvidence(r)) {
       summary.independentDays.add(day(r.time));
       memory.days.add(day(r.time));
       // A long interval in this skill does not prove a long interval without
@@ -183,25 +176,28 @@ function indexEvidence(
   }
   const evidence = new Map<string, Evidence>();
   for (const [id, summary] of summaries) {
-    const mistakes = summary.recent.filter((r) => !r.correct || r.hint).length;
-    const latest = summary.recent[0];
-    const weak =
-      !latest.correct ||
-      latest.hint ||
-      mistakes >= 2 ||
-      (mistakes > 0 && summary.independentDays.size < 3);
+    const weakSkills = [...summary.skillMemory.values()]
+      .filter((memory) => isWeakEvidence(memory.attempts))
+      .sort(
+        (a, b) =>
+          b.latest.time - a.latest.time || compareIds(a.latest.id, b.latest.id),
+      );
+    const recent = weakSkills.length
+      ? [...weakSkills[0].attempts]
+          .sort((a, b) => b.time - a.time || compareIds(a.id, b.id))
+          .slice(0, 4)
+      : summary.recent;
+    const mistakes = recent.filter((r) => !r.correct || r.hint).length;
+    const weak = weakSkills.length > 0;
     evidence.set(id, {
       ...summary,
+      recent,
       mistakes,
       weak,
       stable:
         !weak &&
-        [...summary.skillMemory.values()].some(
-          (memory) =>
-            memory.days.size >= 3 &&
-            memory.longGap &&
-            memory.latest.correct &&
-            !memory.latest.hint,
+        [...summary.skillMemory.values()].some((memory) =>
+          isRetainedEvidence(memory.attempts),
         ),
     });
   }
@@ -294,6 +290,17 @@ export function recommendWords(
     intent === "new" ? collectFresh(state, entries) : entries
   ).filter((e) => !e.archived && !e.known && canPractice(e.word, skill ?? 0));
   const evidence = indexEvidence(state, entries, now, skill);
+  // Recency controls optional practice variety, not mastery. Self-ratings and
+  // saved writing still represent time spent, even when they cannot establish
+  // objective recall. Keep the latest current-sense result so a newer failure
+  // or supported answer is never hidden behind an earlier success.
+  const practiceLatest = new Map<string, Result>();
+  if (mode === "common" && intent === "practice") {
+    for (const result of selectLearningEvidence(state, now).current) {
+      if (skill !== undefined && result.skill !== skill) continue;
+      practiceLatest.set(result.wordId, result);
+    }
+  }
   // Ability inference uses all words, including words already in the schedule.
   const target = supportedLevel(entries, evidence);
   const seed = day(now);
@@ -314,8 +321,48 @@ export function recommendWords(
       Math.max(proof?.latest || 0, state.exposures?.[id] || 0),
     );
     let score: number;
+    let practiceTier = 0;
+    let recentPractice: "correct" | "self" | "writing" | undefined;
     if (mode === "common") {
       score = (frequency ?? 2.5) * 20 + affinity * 0.15;
+      if (intent === "practice" && !proof?.weak) {
+        const relevantSkills =
+          skill === undefined ? [0, 1, 2, 3, 4, 5] : [skill];
+        const due = relevantSkills.some((s) => {
+          const schedule = scheduleForEntries(
+            state,
+            `${id}:${s}`,
+            state.entries,
+          );
+          return schedule !== undefined && schedule.due <= now;
+        });
+        if (!due) {
+          const latest = practiceLatest.get(id);
+          if (latest && !latest.hint && now - latest.time < DAY) {
+            if (latest.correct && latest.method === "rule")
+              recentPractice = "correct";
+            else if (latest.correct && latest.method === "self")
+              recentPractice = "self";
+            else if (
+              latest.skill === 5 &&
+              latest.method === "ungraded" &&
+              latest.answer.trim()
+            )
+              recentPractice = "writing";
+          }
+          // Stable pools keep frequency as their main ordering signal, while
+          // a completed round leaves room for other useful words. If every
+          // candidate is cooling down, we still offer a valid practice set.
+          const needsSupport =
+            !!latest &&
+            (latest.hint || (!latest.correct && latest.method !== "ungraded"));
+          practiceTier = recentPractice
+            ? 2
+            : !needsSupport && proof?.stable
+              ? 1
+              : 0;
+        }
+      }
     } else if (mode === "weak") {
       score =
         (proof!.recent[0].correct && !proof!.recent[0].hint ? 0 : 26) +
@@ -346,14 +393,18 @@ export function recommendWords(
     ranked.push({
       entry,
       score,
-      reason: `${frequencyReason} ${memoryReason(proof, !!state.exposures?.[id])}${mode === "mixed" ? " Thứ tự trộn cố định trong ngày." : ""}`,
+      reason: `${frequencyReason} ${memoryReason(proof, !!state.exposures?.[id])}${mode === "mixed" ? " Thứ tự trộn cố định trong ngày." : ""}${practiceTier === 2 ? (recentPractice === "self" ? " Vừa tự đánh giá; tạm nhường lượt cho từ khác trong 24 giờ, chưa xác nhận nhớ độc lập." : recentPractice === "writing" ? " Vừa luyện viết; tạm nhường lượt cho từ khác trong 24 giờ, câu chưa được chấm đúng." : " Vừa trả lời đúng; tạm giảm ưu tiên trong 24 giờ nếu còn từ khác cần luyện.") : practiceTier === 1 ? " Ưu tiên từ cần học khác trước khi luyện lại từ đã vững." : ""}`,
       family: wordFamily(entry.word.word),
       part: firstTag(entry.word.part_of_speech),
       topic: firstTag(entry.word.topics),
+      practiceTier,
     });
   }
   ranked.sort(
-    (a, b) => b.score - a.score || compareIds(a.entry.word.id, b.entry.word.id),
+    (a, b) =>
+      a.practiceTier - b.practiceTier ||
+      b.score - a.score ||
+      compareIds(a.entry.word.id, b.entry.word.id),
   );
   const requested = options.limit ?? ranked.length;
   const limit = Math.min(
@@ -372,7 +423,11 @@ export function recommendWords(
     let adjustedScore = -Infinity;
     for (let i = 0; i < window.length; i++) {
       const adjusted = window[i].score - diversityPenalty(window[i], recent);
-      if (adjusted > adjustedScore) {
+      if (
+        window[i].practiceTier < window[best].practiceTier ||
+        (window[i].practiceTier === window[best].practiceTier &&
+          adjusted > adjustedScore)
+      ) {
         best = i;
         adjustedScore = adjusted;
       }

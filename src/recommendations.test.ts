@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   contentKey,
   empty,
+  record,
   sortForLearning,
   type Entry,
   type Result,
@@ -47,8 +48,8 @@ function result(e: Entry, extra: Partial<Result> = {}): Result {
     hint: false,
     method: "rule",
     elapsed: 1000,
-    session: "session",
-    review: "review",
+    session: `session-${extra.time ?? NOW - DAY}`,
+    review: `review-${e.word.id}-${extra.time ?? NOW - DAY}-${skill}`,
     gap: 8 * DAY,
     exposureGap: 8 * DAY,
     first: true,
@@ -292,10 +293,11 @@ describe("Personal learning recommendations", () => {
       "giảm ưu tiên luyện lại",
     );
     s.history.push(
+      result(e, { skill: 1, time: NOW - 33 * DAY, exposureGap: DAY }),
       result(e, { skill: 1, time: NOW - 25 * DAY, exposureGap: DAY }),
-      result(e, { skill: 1, time: NOW - 17 * DAY, exposureGap: DAY }),
     );
-    // Skill 1 now has three days, including its own long gap.
+    // Skill 1 now has three distinct days, including its own long gap. None
+    // shares a timestamp with a result that reveals the word in another skill.
     expect(recommendWords(s, [e], { now: NOW })[0].reason).toContain(
       "giảm ưu tiên luyện lại",
     );
@@ -361,5 +363,240 @@ describe("Personal learning recommendations", () => {
     expect(s).toEqual(before);
     expect(recommendWords(s, [], { now: NOW })).toEqual([]);
     expect(recommendWords(s, [e], { limit: 0, now: NOW })).toEqual([]);
+  });
+
+  it("lets another common round through after twenty current first-attempt successes, without hiding due or weak words", () => {
+    const words = Array.from({ length: 50 }, (_, i) =>
+      entry(`common-${i}`, {
+        frequency_zipf: String(7 - i * 0.03),
+      }),
+    );
+    let s = state(...words);
+    const first = recommendWords(s, words, {
+      mode: "common",
+      skill: 1,
+      limit: 20,
+      now: NOW,
+    });
+    for (const [i, recommended] of first.entries())
+      s = record(
+        s,
+        result(recommended.entry, {
+          id: `common-round:${i}`,
+          session: "common-round",
+          review: `common-round-review-${i}`,
+          time: NOW + i * 1000,
+          scheduled: false,
+        }),
+        false,
+      );
+    const now = NOW + 60_000;
+    const second = recommendWords(s, words, {
+      mode: "common",
+      skill: 1,
+      limit: 20,
+      now,
+    });
+    expect(ids(second).filter((id) => ids(first).includes(id))).toEqual([]);
+    expect(
+      recommendWords(s, [...words].reverse(), {
+        mode: "common",
+        skill: 1,
+        limit: 20,
+        now,
+      }),
+    ).toEqual(second);
+
+    // A real scheduled review takes precedence over an optional practice rest.
+    const due = first[0].entry;
+    s.schedules[`${due.word.id}:1`] = {
+      last: NOW - DAY,
+      due: NOW - 1000,
+      step: 0,
+    };
+    expect(
+      ids(
+        recommendWords(s, words, { mode: "common", skill: 1, limit: 20, now }),
+      ),
+    ).toContain(due.word.id);
+    const weak = first[1].entry;
+    s = record(
+      s,
+      result(weak, {
+        id: "common-weak",
+        review: "common-weak-review",
+        session: "weak-round",
+        time: now - 1000,
+        correct: false,
+      }),
+      false,
+    );
+    expect(
+      ids(
+        recommendWords(s, words, { mode: "common", skill: 1, limit: 20, now }),
+      ),
+    ).toContain(weak.word.id);
+  });
+
+  it("keeps a small cooling pool usable and releases the rest after 24 hours", () => {
+    const recent = entry("recent-common", { frequency_zipf: "7" });
+    const other = entry("other-common", { frequency_zipf: "5" });
+    const s = state(recent, other);
+    s.history = [
+      result(recent, {
+        time: NOW - 1000,
+        independent: false,
+        exposureGap: 1000,
+      }),
+    ];
+    const now = NOW;
+    const cooled = recommendWords(s, [recent, other], {
+      mode: "common",
+      skill: 1,
+      now,
+    });
+    expect(ids(cooled)).toEqual(["other-common", "recent-common"]);
+    expect(cooled[1].reason).toContain("24 giờ");
+    expect(
+      ids(
+        recommendWords(s, [recent, other], {
+          mode: "common",
+          skill: 1,
+          now: NOW + DAY,
+        }),
+      ),
+    ).toEqual(["recent-common", "other-common"]);
+  });
+
+  it.each([0, 2, 5])(
+    "rotates twenty recently self-rated or written words for skill %s without claiming mastery",
+    (skill) => {
+      const words = Array.from({ length: 50 }, (_, i) =>
+        entry(`personal-${i}`, { frequency_zipf: String(7 - i * 0.03) }),
+      );
+      let s = state(...words);
+      const first = recommendWords(s, words, {
+        mode: "common",
+        skill,
+        limit: 20,
+        now: NOW,
+      });
+      for (const [index, recommended] of first.entries()) {
+        s = record(
+          s,
+          result(recommended.entry, {
+            id: `personal-round:${index}`,
+            review: `personal-review-${index}`,
+            session: "personal-round",
+            time: NOW + index * 1000,
+            skill,
+            method: skill === 5 ? "ungraded" : "self",
+            correct: skill !== 5,
+            answer:
+              skill === 5 ? `I can use ${recommended.entry.word.word}.` : "",
+          }),
+          false,
+        );
+      }
+      const next = recommendWords(s, words, {
+        mode: "common",
+        skill,
+        limit: 20,
+        now: NOW + 60_000,
+      });
+      expect(ids(next).filter((id) => ids(first).includes(id))).toEqual([]);
+      const repeated = recommendWords(
+        s,
+        first.map((r) => r.entry),
+        {
+          mode: "common",
+          skill,
+          now: NOW + 60_000,
+        },
+      );
+      expect(repeated[0].reason).toContain(
+        skill === 5 ? "Vừa luyện viết" : "Vừa tự đánh giá",
+      );
+      expect(repeated[0].reason).not.toContain("Vừa trả lời đúng");
+      expect(repeated[0].reason).not.toContain("đã vững");
+    },
+  );
+
+  it("does not cool a due self-rated word or a word whose newest self-rating needs support", () => {
+    const reviewed = entry("reviewed", { frequency_zipf: "7" });
+    const other = entry("unseen", { frequency_zipf: "5" });
+    let s = state(reviewed, other);
+    s = record(
+      s,
+      result(reviewed, { skill: 0, method: "self", time: NOW - 2000 }),
+      false,
+    );
+    expect(
+      ids(
+        recommendWords(s, [reviewed, other], {
+          mode: "common",
+          skill: 0,
+          now: NOW,
+        }),
+      ),
+    ).toEqual(["unseen", "reviewed"]);
+    s.schedules[`${reviewed.word.id}:0`] = {
+      last: NOW - DAY,
+      due: NOW - 1,
+      step: 0,
+    };
+    expect(
+      ids(
+        recommendWords(s, [reviewed, other], {
+          mode: "common",
+          skill: 0,
+          now: NOW,
+        }),
+      ),
+    ).toEqual(["reviewed", "unseen"]);
+    delete s.schedules[`${reviewed.word.id}:0`];
+    s = record(
+      s,
+      result(reviewed, {
+        id: "latest-self-failure",
+        review: "new-self-review",
+        session: "new-self-session",
+        skill: 0,
+        method: "self",
+        time: NOW - 1000,
+        correct: false,
+      }),
+      false,
+    );
+    expect(
+      ids(
+        recommendWords(s, [reviewed, other], {
+          mode: "common",
+          skill: 0,
+          now: NOW,
+        }),
+      ),
+    ).toEqual(["reviewed", "unseen"]);
+  });
+
+  it("uses the shared per-skill weak policy, including hinted failure after another skill succeeded", () => {
+    const e = entry("mixed-evidence");
+    const s = state(e);
+    s.history = [
+      result(e, {
+        id: "dictation-weak",
+        skill: 3,
+        time: NOW - 3000,
+        correct: false,
+        hint: true,
+      }),
+      result(e, { id: "writing-good", skill: 1, time: NOW - 1000 }),
+    ];
+    expect(ids(recommendWords(s, [e], { mode: "weak", now: NOW }))).toEqual([
+      e.word.id,
+    ]);
+    expect(
+      recommendWords(s, [e], { mode: "weak", now: NOW })[0].reason,
+    ).toContain("1/1 lượt gần nhất sai hoặc cần gợi ý");
   });
 });

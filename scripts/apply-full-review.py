@@ -13,6 +13,7 @@ import hashlib
 import json
 from pathlib import Path
 import re
+import runpy
 from urllib.parse import urlparse
 
 from corpus_io import read_records, serialize_records
@@ -21,6 +22,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "public/data"
 VOCABULARY = DATA / "vocabulary.txt"
 UPDATE = ROOT / "data/authoring/full-review-2026-10.json"
+ESSENTIAL_SENSES = runpy.run_path(str(ROOT / "scripts/apply-essential-senses.py"))
 IDENTITY = ("id", "word", "part_of_speech")
 REQUIRED_CONTENT = ("meaning_vi", "definition_en", "example_en", "example_vi")
 OPTIONAL_CONTENT = ("collocation", "ipa", "register", "region", "example_type", "definition_source")
@@ -305,7 +307,7 @@ def update_documents(records, text, review, documents):
         "entries": [{"id": row["id"], "word": row["word"], "partOfSpeech": row["part_of_speech"], "meaningVi": row["meaning_vi"], "evidence": evidence_for(review, row)} for row in review["entries"]],
         "limitations": ["A source match supports a selected sense and part of speech; it does not certify a Vietnamese translation or every authored sentence.", "Oxford CEFR membership, corpus frequency and regional preferences remain separate evidence; they are not inferred from a WordNet match.", "Reading one selected sense is not verification of all senses of a headword."],
     }
-    return documents
+    return ESSENTIAL_SENSES["add_provenance"](documents, records, text)
 
 
 def write_manifest(text, count):
@@ -323,6 +325,7 @@ def main():
     original = VOCABULARY.read_bytes()
     review = load_full_review(args.input)
     records = apply_full_review(read_records(VOCABULARY), review)
+    records = ESSENTIAL_SENSES["apply_essential_senses"](records)
     text = serialize_records(records)
     names = ("oxford-provenance.json", "frequency-provenance.json", "content-review-provenance.json", "source-update-provenance.json")
     documents = update_documents(records, text, review, {name: json.loads((DATA / name).read_text(encoding="utf-8")) for name in names if (DATA / name).exists()})

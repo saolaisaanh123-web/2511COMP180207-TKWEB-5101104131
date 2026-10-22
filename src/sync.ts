@@ -1,4 +1,6 @@
-import { contentKey, validateBackup, type State, type Schedule } from "./core";
+import { validateBackup, type State, type Schedule } from "./core";
+import { scheduleForEntries } from "./schedule-state";
+import { exposureEventsForSnapshot } from "./exposure-events";
 
 export type ServiceConfig = { url: string; anonKey: string };
 export type AuthSession = {
@@ -450,9 +452,22 @@ export function mergeCloudState(
         : copy(left || right);
   }
   // These records are append-only. An ID collision with different contents is an integrity error.
-  for (const key of ["history", "conversations", "writing"] as const) {
-    const left = ((local as State & JsonRecord)[key] || []) as JsonRecord[];
-    const right = ((remote as State & JsonRecord)[key] || []) as JsonRecord[];
+  for (const key of [
+    "history",
+    "conversations",
+    "writing",
+    "exposureEvents",
+  ] as const) {
+    const left = (
+      key === "exposureEvents"
+        ? exposureEventsForSnapshot(local) || []
+        : (local as State & JsonRecord)[key] || []
+    ) as JsonRecord[];
+    const right = (
+      key === "exposureEvents"
+        ? exposureEventsForSnapshot(remote) || []
+        : (remote as State & JsonRecord)[key] || []
+    ) as JsonRecord[];
     const records = new Map<string, JsonRecord>();
     for (const item of [...left, ...right]) {
       const id = String(item.id);
@@ -481,17 +496,9 @@ export function mergeCloudState(
     ...Object.keys(local.schedules),
     ...Object.keys(remote.schedules),
   ])) {
-    const boundary = key.lastIndexOf(":"),
-      id = key.slice(0, boundary),
-      skill = Number(key.slice(boundary + 1));
-    const compatible = (state: State) =>
-      state.entries[id] &&
-      output.entries[id] &&
-      contentKey(state.entries[id].word, skill) ===
-        contentKey(output.entries[id].word, skill);
-    const left = compatible(local) ? local.schedules[key] : undefined,
-      right = compatible(remote) ? remote.schedules[key] : undefined,
-      before = base && compatible(base) ? base.schedules[key] : undefined;
+    const left = scheduleForEntries(local, key, output.entries),
+      right = scheduleForEntries(remote, key, output.entries),
+      before = base && scheduleForEntries(base, key, output.entries);
     let merged: Schedule | undefined;
     if (equal(left, right)) merged = left;
     else if (base && equal(left, before)) merged = right;
@@ -502,6 +509,9 @@ export function mergeCloudState(
         due: Math.max(last, Math.min(left.due, right.due)),
         last,
         step: Math.min(left.step, right.step),
+        ...(left.contentVersion || right.contentVersion
+          ? { contentVersion: left.contentVersion || right.contentVersion }
+          : {}),
       };
     } else merged = left || right;
     if (merged) output.schedules[key] = copy(merged);
@@ -513,6 +523,7 @@ export function mergeCloudState(
     "session",
     "pausedScheduled",
     "exposures",
+    "exposureEvents",
     "conversations",
     "writing",
     "sourceVersion",

@@ -132,8 +132,8 @@ describe("Evidence-based learning insights", () => {
   it("shows immediate and independent denominators separately, with honest small-sample uncertainty", () => {
     const r = analyzeLearning(
       withHistory([
-        result({ independent: false, exposureGap: 5000 }),
-        result({ correct: false }),
+        result({ independent: false, exposureGap: 5000, time: NOW - 9 * DAY }),
+        result({ correct: false, time: NOW - DAY }),
       ]),
       NOW,
     );
@@ -152,19 +152,80 @@ describe("Evidence-based learning insights", () => {
     expect(evidenceMetric(0, 0).interval).toBeNull();
   });
   it("uses exact non-overlapping rest intervals and never infers 7/30-day recall from a same-skill gap", () => {
+    // Each saved interval must be possible in the actual chronology. Separate
+    // same-time attempts would themselves expose the answer and bound the gap.
+    const intervals = [
+      DAY - 1,
+      DAY,
+      7 * DAY - 1,
+      7 * DAY,
+      30 * DAY - 1,
+      30 * DAY,
+    ];
+    let time = NOW - 100 * DAY - intervals.reduce((sum, gap) => sum + gap, 0);
+    const unknown = result({
+      time: time - 80 * DAY,
+      exposureGap: undefined,
+      gap: 80 * DAY,
+    });
     const state = withHistory([
-      result({ exposureGap: DAY - 1 }),
-      result({ exposureGap: DAY }),
-      result({ exposureGap: 7 * DAY - 1 }),
-      result({ exposureGap: 7 * DAY, correct: false }),
-      result({ exposureGap: 30 * DAY - 1 }),
-      result({ exposureGap: 30 * DAY }),
-      result({ exposureGap: undefined, gap: 80 * DAY }),
+      unknown,
+      ...intervals.map((exposureGap, index) => {
+        time += exposureGap;
+        return result({ time, exposureGap, correct: index !== 3 });
+      }),
     ]);
     const r = analyzeLearning(state, NOW);
     expect(r.retention.map((b) => b.metric.total)).toEqual([2, 2, 1]);
     expect(r.retention.map((b) => b.metric.correct)).toEqual([2, 1, 1]);
     expect(r.missingExposureGap).toBe(1);
+  });
+  it("keeps a first answer with an unknown exposure interval out of both measured time groups", () => {
+    const state = withHistory([
+      result({ time: NOW, exposureGap: undefined, gap: 0 }),
+    ]);
+    const before = structuredClone(state);
+    const report = analyzeLearning(state, NOW);
+    expect(report.skills[1].objective.total).toBe(1);
+    expect(report.skills[1].delayed.total).toBe(0);
+    expect(report.skills[1].immediate.total).toBe(0);
+    expect(report.skills[1].unverified.total).toBe(1);
+    expect(report.retention.every((bucket) => bucket.metric.total === 0)).toBe(
+      true,
+    );
+    expect(report.missingExposureGap).toBe(1);
+    expect(state).toEqual(before);
+  });
+  it("flags a recent hinted failure without inflating independent accuracy or erasing older answers", () => {
+    const history = [32, 24, 16, 8].map((days) =>
+      result({ time: NOW - days * DAY }),
+    );
+    const state = withHistory(history);
+    expect(analyzeLearning(state, NOW).counts.retained).toBe(1);
+    const latest = result({
+      time: NOW,
+      hint: true,
+      correct: false,
+      independent: false,
+      exposureGap: 8 * DAY,
+    });
+    const updated = { ...state, history: [...history, latest] };
+    const report = analyzeLearning(updated, NOW);
+    expect(report.words[0]).toMatchObject({
+      status: "weak",
+      failures: 1,
+      attempts: 5,
+      weakSkills: [1],
+      retainedSkills: [],
+    });
+    expect(report.skills[1].objective).toMatchObject({ total: 4, correct: 4 });
+    expect(report.skills[1].supported).toBe(1);
+    expect(report.recommendations[0]).toMatchObject({
+      action: "practice",
+      skill: 1,
+      ids: [word.id],
+    });
+    expect(updated.history).toEqual([...history, latest]);
   });
   it("requires same-skill, distinct independent days and a real seven-day rest for retained status", () => {
     const history = [

@@ -256,50 +256,75 @@ test("new insights never infer seven or thirty-day retention from legacy same-sk
     .all())
     await expect(article).toContainText("Chưa đủ dữ liệu");
   await expect(insights).toContainText(
-    "3 lượt độc lập cũ chưa lưu đủ khoảng nghỉ",
+    "3 lượt kiểm tra chưa xác định được khoảng nghỉ với mọi tiếp xúc",
+  );
+  const writing = insights.locator(".insight-skill").filter({
+    has: page.getByRole("heading", { name: "Nhớ để viết", exact: true }),
+  });
+  await expect(writing).toContainText(
+    "3 lượt chưa đủ bằng chứng về khoảng nghỉ độc lập; không tính là nhớ sau 24 giờ",
   );
   expect((await read(page)).history).toEqual(state.history);
 });
 
-test("new retention counts real all-exposure gaps and excludes stale-content answers", async ({
-  page,
-}) => {
-  await openFixture(page);
-  const state = merge(empty(), fixture, "default"),
-    now = Date.now();
-  state.history = [
-    evidence(apple, "rest-one-day", { time: now - 50 * DAY, exposureGap: DAY }),
-    evidence(apple, "rest-seven-days", {
-      time: now - 40 * DAY,
-      exposureGap: 7 * DAY,
-      correct: false,
-    }),
-    evidence(apple, "obsolete-sense", {
-      time: now - 2 * DAY,
-      exposureGap: 30 * DAY,
-      contentVersion: "an earlier meaning",
-    }),
-    evidence(apple, "rest-thirty-days", {
-      time: now - DAY,
-      exposureGap: 30 * DAY,
-    }),
-  ];
-  await seed(page, state);
-  await progress(page);
-  const buckets = page.locator(".learning-insights .insight-retention article");
-  await expect(buckets).toHaveCount(3);
-  await expect(buckets.nth(0).locator(".insight-metric strong")).toHaveText(
-    "100% · 1/1 lượt",
-  );
-  await expect(buckets.nth(1).locator(".insight-metric strong")).toHaveText(
-    "0% · 0/1 lượt",
-  );
-  await expect(buckets.nth(2).locator(".insight-metric strong")).toHaveText(
-    "100% · 1/1 lượt",
-  );
-  await expect(buckets.nth(2)).toContainText("Ít dữ liệu");
-  expect((await read(page)).history).toEqual(state.history);
-});
+for (const { staleDays, dayResult, monthResult } of [
+  {
+    staleDays: 80,
+    dayResult: "100% · 1/1 lượt",
+    monthResult: "100% · 1/1 lượt",
+  },
+  {
+    staleDays: 2,
+    dayResult: "100% · 2/2 lượt",
+    monthResult: "Chưa đủ dữ liệu",
+  },
+]) {
+  test(`new retention excludes stale-content answers but includes their word exposure ${staleDays} days ago`, async ({
+    page,
+  }) => {
+    await openFixture(page);
+    const state = merge(empty(), fixture, "default"),
+      now = Date.now();
+    state.history = [
+      evidence(apple, "rest-one-day", {
+        time: now - 50 * DAY,
+        exposureGap: DAY,
+      }),
+      evidence(apple, "rest-seven-days", {
+        time: now - 40 * DAY,
+        exposureGap: 7 * DAY,
+        correct: false,
+      }),
+      evidence(apple, "obsolete-sense", {
+        time: now - staleDays * DAY,
+        exposureGap: 30 * DAY,
+        contentVersion: "an earlier meaning",
+      }),
+      evidence(apple, "rest-thirty-days", {
+        time: now - DAY,
+        exposureGap: 30 * DAY,
+      }),
+    ].sort((a, b) => a.time - b.time);
+    await seed(page, state);
+    await progress(page);
+    const buckets = page.locator(
+      ".learning-insights .insight-retention article",
+    );
+    await expect(buckets).toHaveCount(3);
+    await expect(buckets.nth(0).locator(".insight-metric strong")).toHaveText(
+      dayResult,
+    );
+    await expect(buckets.nth(1).locator(".insight-metric strong")).toHaveText(
+      "0% · 0/1 lượt",
+    );
+    await expect(buckets.nth(2).locator(".insight-metric strong")).toHaveText(
+      monthResult,
+    );
+    if (staleDays === 80)
+      await expect(buckets.nth(2)).toContainText("Ít dữ liệu");
+    expect((await read(page)).history).toEqual(state.history);
+  });
+}
 
 test("empty insights stay finite and explain missing verified active-use evidence on narrow screens", async ({
   page,

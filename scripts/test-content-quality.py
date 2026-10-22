@@ -45,12 +45,14 @@ class CorpusQualityTests(unittest.TestCase):
 
     def test_coverage_and_original_ids_survive(self):
         additions = self.source_update.get("additions", []) if self.source_update else []
-        self.assertEqual(len(self.rows), 5162 + len(additions))
-        self.assertEqual(len(self.by_id), 5162 + len(additions))
+        essential = SOURCE_UPDATE["ESSENTIAL_SENSES"]["load_essential_senses"]()
+        senses = [entry["word"] for entry in essential["entries"]]
+        self.assertEqual(len(self.rows), 5162 + len(additions) + len(senses))
+        self.assertEqual(len(self.by_id), 5162 + len(additions) + len(senses))
         if self.source_update:
             self.assertEqual(self.source_update["baseline"]["entryCount"], 5162)
             self.assertEqual(SOURCE_UPDATE["ids_digest"](self.rows[:5162]), self.source_update["baseline"]["idsSha256"])
-            self.assertEqual([row["id"] for row in self.rows[5162:]], [row["id"] for row in additions])
+            self.assertEqual([row["id"] for row in self.rows[5162:]], [row["id"] for row in additions + senses])
         self.assertEqual(sum("oxford-" in row.get("collections", "") for row in self.rows), 4955)
         self.assertEqual(sum("phrasal-verbs" in row.get("collections", "").split(",") for row in self.rows), 100 + sum("phrasal-verbs" in row["collections"].split(",") for row in additions))
         self.assertEqual(sum("slang" in row.get("collections", "").split(",") for row in self.rows), 107 + sum("slang" in row["collections"].split(",") for row in additions))

@@ -1,4 +1,9 @@
 import type { Entry, State, Word } from "./core";
+import { compatibleSchedules, scheduleForEntries } from "./schedule-state";
+import {
+  mergeExposureEvents,
+  exposureEventsForSnapshot,
+} from "./exposure-events";
 
 type StoredEntry = Omit<Entry, "word">;
 type StoredState = Omit<State, "entries"> & {
@@ -205,17 +210,46 @@ export function rebaseState(base: State, next: State, latest: State): State {
   );
   if (writing !== undefined) result.writing = writing;
   if (conversations !== undefined) result.conversations = conversations;
+  const exposureEvents = mergePracticeEvidence(
+    exposureEventsForSnapshot(base),
+    exposureEventsForSnapshot(next),
+    exposureEventsForSnapshot(latest),
+    "lịch sử tiếp xúc",
+    (event) => [event.wordId],
+    result.entries,
+  );
+  if (exposureEvents !== undefined)
+    result.exposureEvents = mergeExposureEvents(exposureEvents);
+  const writingDrafts = changedObject(
+    base.writingDrafts,
+    next.writingDrafts,
+    latest.writingDrafts,
+    "nháp viết",
+  );
+  if (writingDrafts !== undefined) result.writingDrafts = writingDrafts;
+  else delete result.writingDrafts;
+
+  // Entry updates may legitimately change a sense while a tab is saving a
+  // setting or a review. Bind every candidate to its originating snapshot.
+  result.schedules = compatibleSchedules(latest, result.entries);
 
   for (const key of new Set([
     ...Object.keys(base.schedules),
     ...Object.keys(next.schedules),
   ])) {
-    const before = base.schedules[key];
-    const after = next.schedules[key];
-    const current = latest.schedules[key];
-    if (same(before, after)) continue;
-    if (after && !result.entries[key.slice(0, key.lastIndexOf(":"))])
+    if (same(base.schedules[key], next.schedules[key])) continue;
+    if (
+      next.schedules[key] &&
+      !result.entries[key.slice(0, key.lastIndexOf(":"))]
+    )
       throw new StorageConflictError("kho từ của lịch ôn đã được thay thế");
+    const before = scheduleForEntries(base, key, result.entries);
+    const after = scheduleForEntries(next, key, result.entries);
+    const current = scheduleForEntries(latest, key, result.entries);
+    // An incompatible old-sense write/deletion is not a deletion or a newer
+    // review of the current sense. Preserve its immutable result, not its due date.
+    if ((next.schedules[key] && !after) || (!next.schedules[key] && !before))
+      continue;
     if (after && current && !same(before, current)) {
       // Independent reviews of one skill keep the most recent review's timing.
       if (after.last > current.last) result.schedules[key] = clone(after);
@@ -227,6 +261,7 @@ export function rebaseState(base: State, next: State, latest: State): State {
     if (schedule) result.schedules[key] = schedule;
     else delete result.schedules[key];
   }
+  result.schedules = compatibleSchedules(result);
   result.session = changedValue(
     base.session,
     next.session,
@@ -252,6 +287,8 @@ export function rebaseState(base: State, next: State, latest: State): State {
     "exposures",
     "writing",
     "conversations",
+    "exposureEvents",
+    "writingDrafts",
   ]);
   const a = base as unknown as Record<string, unknown>;
   const b = next as unknown as Record<string, unknown>;
@@ -437,8 +474,9 @@ export async function readStoredState(
     tx.onerror = () => reject(tx.error);
     tx.onabort = () => reject(tx.error || new Error("Không đọc được tiến độ."));
   });
-  lastRead = state;
-  return state;
+  const compatible = { ...state, schedules: compatibleSchedules(state) };
+  lastRead = compatible;
+  return compatible;
 }
 
 export function saveStoredState(
@@ -472,6 +510,7 @@ export function saveStoredState(
             persisted = options.replace
               ? clone(next)
               : rebaseState(base || latest, next, latest);
+            persisted.schedules = compatibleSchedules(persisted);
             revision = (stored && isCompact(stored) ? stored.revision : 0) + 1;
             const oldWordRevision =
               stored && isCompact(stored) ? stored.wordRevision : 0;

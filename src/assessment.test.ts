@@ -11,6 +11,13 @@ const entry = (headword: string): Word => {
 };
 const assess = (answer: string, headword: string, skill: number) =>
   assessLearningAnswer(answer, entry(headword), skill, words);
+const usage: {
+  wordId: string;
+  headword: string;
+  partOfSpeech: string;
+  meaningVi: string;
+  example: { en: string; vi: string; alternatives?: string[] };
+}[] = JSON.parse(readFileSync("data/usage/group-a.json", "utf8"));
 
 describe("fair target-word assessment on the real corpus", () => {
   it.each([1, 3, 4])("accepts the target itself for skill %i", (skill) => {
@@ -83,6 +90,78 @@ describe("fair target-word assessment on the real corpus", () => {
       });
     // A matching Vietnamese cue alone is not a reviewed cloze alternative.
     expect(assess("fairness", "justice", 4)).toEqual({ outcome: "incorrect" });
+  });
+
+  it.each([
+    ["suggest", "recommend"],
+    ["suggest", "advise"],
+    ["recommend", "suggest"],
+  ])(
+    "keeps %s's source-reviewed second-context answer %s neutral",
+    (target, answer) => {
+      const original = entry(target);
+      const supplement = usage.find((row) => row.wordId === original.id)!;
+      expect(supplement.headword).toBe(original.word);
+      expect(supplement.partOfSpeech).toBe(original.part_of_speech);
+      expect(supplement.meaningVi).toBe(original.meaning_vi);
+      const contextualWord = {
+        ...original,
+        example_en: supplement.example.en,
+        example_vi: supplement.example.vi,
+      };
+      const result = assessLearningAnswer(
+        answer,
+        contextualWord,
+        4,
+        words,
+        supplement.example.alternatives,
+      );
+      expect(result.outcome).toBe("ungraded");
+      expect(result.message).toContain("không tính đúng/sai");
+      expect(
+        assessLearningAnswer(
+          original.word,
+          contextualWord,
+          4,
+          words,
+          supplement.example.alternatives,
+        ).outcome,
+      ).toBe("correct");
+      // A sentence-bound alternative is never accepted in an unrelated recall skill.
+      expect(
+        assessLearningAnswer(
+          answer,
+          contextualWord,
+          3,
+          words,
+          supplement.example.alternatives,
+        ).outcome,
+      ).toBe("incorrect");
+    },
+  );
+
+  it("does not turn an unreviewed synonym or typo into contextual credit", () => {
+    const supplement = usage.find((row) => row.headword === "suggest")!;
+    const contextualWord = {
+      ...entry("suggest"),
+      example_en: supplement.example.en,
+      example_vi: supplement.example.vi,
+    };
+    for (const answer of ["recomend", "think", "recommend that", ""])
+      expect(
+        assessLearningAnswer(
+          answer,
+          contextualWord,
+          4,
+          words,
+          supplement.example.alternatives,
+        ).outcome,
+      ).toBe("incorrect");
+    // Callers must attach only the reviewed alternatives for the actual frozen
+    // question; the default API never guesses synonyms by headword alone.
+    expect(
+      assessLearningAnswer("recommend", entry("suggest"), 4, words).outcome,
+    ).toBe("incorrect");
   });
 
   it.each([

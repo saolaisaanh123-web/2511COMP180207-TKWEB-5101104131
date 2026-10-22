@@ -23,7 +23,8 @@
     "example": {
       "id": "usage-suggest-01",
       "en": "I suggest checking the train schedule before we buy tickets.",
-      "vi": "Tôi đề nghị kiểm tra lịch tàu trước khi chúng ta mua vé."
+      "vi": "Tôi đề nghị kiểm tra lịch tàu trước khi chúng ta mua vé.",
+      "alternatives": ["recommend", "advise"]
     },
     "sources": [
       {
@@ -31,6 +32,18 @@
         "title": "suggest verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
         "checkedAt": "2026-10-22",
         "sha256": "34968a9f6b16cee5b12e216429f8b9277b249372c6aac0220fe833a5ab5b1e10"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/recommend",
+        "title": "recommend verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22",
+        "sha256": "46c5bd5b6e2cabe4d3a0b3c342206a688bedf2d17594281773e367621ec6919c"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/advise",
+        "title": "advise verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22",
+        "sha256": "3925cbc085f253ff89cfc90976d9f424547a85b26b505aecdfbaf24e6e86853c"
       }
     ]
   },
@@ -58,7 +71,8 @@
     "example": {
       "id": "usage-ox-0eb15ad185af2b-01",
       "en": "Can you recommend a reliable mechanic in this neighborhood?",
-      "vi": "Bạn có thể giới thiệu một thợ sửa xe đáng tin cậy trong khu này không?"
+      "vi": "Bạn có thể giới thiệu một thợ sửa xe đáng tin cậy trong khu này không?",
+      "alternatives": ["suggest"]
     },
     "sources": [
       {
@@ -66,6 +80,18 @@
         "title": "recommend verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
         "checkedAt": "2026-10-22",
         "sha256": "46c5bd5b6e2cabe4d3a0b3c342206a688bedf2d17594281773e367621ec6919c"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/suggest",
+        "title": "suggest verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22",
+        "sha256": "34968a9f6b16cee5b12e216429f8b9277b249372c6aac0220fe833a5ab5b1e10"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/advise",
+        "title": "advise verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-22",
+        "sha256": "3925cbc085f253ff89cfc90976d9f424547a85b26b505aecdfbaf24e6e86853c"
       }
     ]
   },

@@ -1244,6 +1244,7 @@ export function recommendDialogues(
 export function evaluateDialogueAnswer(
   question: DialogueQuestion,
   answer: string,
+  supported = true,
 ): ConversationAnswer {
   const correct = question.accepted.some(
     (accepted) => normalize(answer) === normalize(accepted),
@@ -1255,9 +1256,9 @@ export function evaluateDialogueAnswer(
     correct,
     targetIds: question.targetIds,
     explanation: question.explanation,
-    // The source dialogue remains visible: this is supported contextual practice,
-    // never independent recall evidence or an automatic SRS/mastery update.
-    hint: true,
+    // Hiding the transcript is still immediate practice, never proof of
+    // delayed recall or an automatic SRS/mastery update.
+    hint: supported,
   };
 }
 
@@ -1265,11 +1266,18 @@ export function makeConversationAttempt(
   state: State,
   d: Dialogue,
   values: Record<string, string>,
-  audio: { lines: string[]; complete: boolean },
+  audio: {
+    lines: string[];
+    complete: boolean;
+    hidden?: boolean;
+    usedHint?: boolean;
+  },
   retryOf?: string,
 ): ConversationAttempt {
+  const supported =
+    audio.hidden !== true || audio.usedHint === true || !!retryOf;
   const answers = d.questions.map((q) =>
-    evaluateDialogueAnswer(q, values[q.id] || ""),
+    evaluateDialogueAnswer(q, values[q.id] || "", supported),
   );
   if (values.reply?.trim())
     answers.push({
@@ -1279,7 +1287,7 @@ export function makeConversationAttempt(
       targetIds: d.targets.map((t) => t.id),
       explanation:
         "Câu trả lời mở được lưu để tự xem lại; chưa thể chấm tự động ngữ pháp hoặc cách dùng từ ở đây.",
-      hint: true,
+      hint: supported,
     });
   return {
     id: crypto.randomUUID(),

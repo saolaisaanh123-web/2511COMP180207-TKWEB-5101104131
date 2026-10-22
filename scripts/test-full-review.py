@@ -5,11 +5,13 @@ import hashlib
 import json
 from pathlib import Path
 import runpy
+import subprocess
+import sys
 import tempfile
 import unittest
 from unittest.mock import patch
 
-from corpus_io import serialize_records
+from corpus_io import read_records, serialize_records
 
 ROOT = Path(__file__).resolve().parents[1]
 FULL = runpy.run_path(str(ROOT / "scripts/apply-full-review.py"))
@@ -159,6 +161,95 @@ class FullReviewTests(unittest.TestCase):
             bad[-1]["meaning_vi"] = "unexpected edit"
             with self.assertRaises(ValueError):
                 OLD["apply_source_update"](bad, old)
+
+
+class EssentialSenseTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.api = OLD["ESSENTIAL_SENSES"]
+        cls.review = cls.api["load_essential_senses"](required=True)
+        cls.records = read_records(ROOT / "public/data/vocabulary.txt")
+        cls.size = cls.review["baseline"]["entryCount"]
+
+    def test_only_declared_senses_are_appended_without_changing_any_previous_byte(self):
+        prefix = serialize_records(self.records[:self.size]).encode()
+        self.assertEqual(hashlib.sha256(prefix).hexdigest(), self.review["baseline"]["vocabularySha256"])
+        self.assertEqual(self.api["ids_digest"](self.records[:self.size]), self.review["baseline"]["idsSha256"])
+        self.assertEqual(self.records[self.size:], [entry["word"] for entry in self.review["entries"]])
+        self.assertEqual([row["id"] for row in self.records[self.size:]], ["like-verb-enjoy-01", "lie-horizontal-01"])
+
+    def test_applying_additions_twice_preserves_input_and_same_spelling_existing_senses(self):
+        prefix = deepcopy(self.records[:self.size])
+        before = deepcopy(prefix)
+        once = self.api["apply_essential_senses"](prefix, self.review)
+        self.assertEqual(prefix, before)
+        self.assertEqual(self.api["apply_essential_senses"](once, self.review), once)
+        old_like = next(row for row in prefix if row["word"] == "like")
+        old_lie = next(row for row in prefix if row["word"] == "lie")
+        self.assertEqual(old_like["part_of_speech"], "preposition")
+        self.assertEqual(old_lie["meaning_vi"], "nói dối; cố ý nói điều không đúng sự thật")
+        for old in (old_like, old_lie):
+            self.assertEqual(next(row for row in once if row["id"] == old["id"]), old)
+
+    def test_tail_conflict_reordering_and_undeclared_records_fail_closed(self):
+        for records in (
+            self.records[:self.size] + list(reversed(self.records[self.size:])),
+            self.records + [{**self.records[-1], "id": "unlisted-sense"}],
+        ):
+            with self.assertRaises(ValueError):
+                self.api["apply_essential_senses"](records, self.review)
+        changed = deepcopy(self.records)
+        changed[-1]["meaning_vi"] = "unreviewed replacement"
+        with self.assertRaises(ValueError):
+            self.api["apply_essential_senses"](changed, self.review)
+
+    def test_exact_american_fact_receipts_are_checked_without_british_fact_index_fabrication(self):
+        facts = json.loads((ROOT / "data/lexicons/american-oxford-2026-10.json").read_text())["facts"]
+        for entry in self.review["entries"]:
+            self.assertEqual(facts[entry["americanFactIndex"]], entry["americanFact"])
+            self.assertEqual(entry["americanFact"]["cefr"], "A1")
+            self.assertEqual(entry["word"]["part_of_speech"], "verb")
+            self.assertEqual(entry["word"]["source_fact_index"], "")
+            self.assertEqual(entry["source"]["status"], 200)
+            self.assertNotIn("definitions", entry["source"])
+
+    def test_missing_evidence_or_wrong_homograph_fact_is_rejected(self):
+        for mutate in (
+            lambda review: review["entries"][0]["source"].update(status=403),
+            lambda review: review["entries"][1]["americanFact"].update(homograph="2"),
+        ):
+            review = deepcopy(self.review)
+            mutate(review)
+            with tempfile.TemporaryDirectory() as folder:
+                path = Path(folder) / "review.json"
+                path.write_text(json.dumps(review, ensure_ascii=False))
+                with self.assertRaises(ValueError):
+                    self.api["load_essential_senses"](path, required=True)
+
+    def test_historical_provenance_and_new_source_layer_cover_the_canonical_tail(self):
+        data = ROOT / "public/data"
+        checksum = hashlib.sha256((data / "vocabulary.txt").read_bytes()).hexdigest()
+        historical = json.loads((data / "full-review-provenance.json").read_text())
+        additional = json.loads((data / "essential-senses-provenance.json").read_text())
+        self.assertEqual(historical["reviewedEntries"], self.size)
+        self.assertEqual(len(historical["entries"]), self.size)
+        self.assertEqual(additional["entries"], self.review["entries"])
+        self.assertEqual(additional["canonicalVocabularySha256"], checksum)
+        self.assertEqual(historical["coverage"]["entryCount"], len(self.records))
+        for filename in ("oxford-provenance.json", "frequency-provenance.json", "content-review-provenance.json", "source-update-provenance.json", "full-review-provenance.json"):
+            doc = json.loads((data / filename).read_text())
+            self.assertEqual(doc["essentialSenses"]["canonicalVocabularySha256"], checksum)
+
+    def test_every_older_preview_keeps_additions_and_canonical_metadata_unchanged(self):
+        data = ROOT / "public/data"
+        names = ["vocabulary.txt", "vocabulary-version.json", "oxford-provenance.json", "frequency-provenance.json", "content-review-provenance.json", "source-update-provenance.json", "full-review-provenance.json", "essential-senses-provenance.json"]
+        before = {name: (data / name).read_bytes() for name in names}
+        with tempfile.TemporaryDirectory() as folder:
+            for script in ("apply-essential-senses.py", "apply-source-update.py", "apply-full-review.py", "apply-content-review.py"):
+                output = Path(folder) / (script + ".txt")
+                subprocess.run([sys.executable, str(ROOT / "scripts" / script), "--output", str(output)], cwd=ROOT, check=True, stdout=subprocess.DEVNULL)
+                self.assertEqual(output.read_bytes(), before["vocabulary.txt"], script)
+        self.assertEqual({name: (data / name).read_bytes() for name in names}, before)
 
 
 if __name__ == "__main__":

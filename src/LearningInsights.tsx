@@ -202,13 +202,14 @@ export function LearningInsights({
               chấm bằng quy tắc; chưa đủ bằng chứng nhớ lâu.
             </li>
             <li>
-              <strong>Cần củng cố:</strong> kiểm tra gần nhất sai, hoặc có ít
-              nhất 2 lỗi trong 4 kiểm tra gần nhất của một kỹ năng.
+              <strong>Cần củng cố:</strong> kiểm tra gần nhất sai hoặc cần gợi
+              ý, hoặc có ít nhất 2 lượt sai/cần gợi ý trong 4 kiểm tra gần nhất
+              của một kỹ năng.
             </li>
             <li>
               <strong>Ghi nhớ khá vững:</strong> một kỹ năng có ít nhất 3 ngày
               nhớ đúng độc lập, có lượt cách mọi tiếp xúc đã ghi nhận ít nhất 7
-              ngày, và không có lỗi gần đây theo tiêu chí trên.
+              ngày, và không còn dấu hiệu cần củng cố theo tiêu chí trên.
             </li>
             <li>
               <strong>Có bằng chứng dùng chủ động:</strong> ít nhất 2 ngày viết
@@ -245,9 +246,9 @@ export function LearningInsights({
         </div>
         {report.missingExposureGap > 0 && (
           <p className="insight-note">
-            {report.missingExposureGap} lượt độc lập cũ chưa lưu đủ khoảng nghỉ
-            với mọi tiếp xúc, nên chưa được xếp vào các nhóm này. Chúng vẫn có
-            trong lịch sử và thống kê gốc.
+            {report.missingExposureGap} lượt kiểm tra chưa xác định được khoảng
+            nghỉ với mọi tiếp xúc, nên chưa được xếp vào các nhóm này. Chúng vẫn
+            có trong lịch sử và thống kê gốc.
           </p>
         )}
         <p className="insight-note">
@@ -324,6 +325,10 @@ export function LearningInsights({
               <p className="insight-note">
                 {s.self} tự đánh giá · {s.ungraded} chưa chấm · {s.excluded}{" "}
                 lượt lịch sử ngoài mẫu kiểm tra hợp lệ.
+                {s.supported > 0 &&
+                  ` ${s.supported} lượt có gợi ý vẫn được dùng để nhận diện từ yếu, không cộng vào tỷ lệ đúng không hỗ trợ.`}
+                {s.unverified.total > 0 &&
+                  ` ${s.unverified.total} lượt chưa đủ bằng chứng về khoảng nghỉ độc lập; không tính là nhớ sau 24 giờ.`}
                 {s.localIssues > 0 &&
                   ` ${s.localIssues} câu có lỗi được bộ quy tắc cục bộ phát hiện.`}
                 {s.serviceReviews > 0 &&

@@ -57,7 +57,19 @@ import "./style.css";
 import ErrorBoundary from "./ErrorBoundary";
 import WordDetail from "./DictionaryEntry";
 import UsageNotes from "./UsageNotes";
-import { attachStudyContexts, exerciseWord } from "./usage";
+import { attachStudyContexts, exerciseWord, getUsage } from "./usage";
+import { selectLearningEvidence } from "./evidence";
+import { mergeBackupSchedules } from "./schedule-state";
+import {
+  mergeExposureEvents,
+  exposureEventsForSnapshot,
+} from "./exposure-events";
+import { orderScheduledTasks } from "./session-planning";
+import {
+  freshForPreference,
+  chosenStudySkills,
+  filterPendingForPreference,
+} from "./learning-preferences";
 import CollectionBrowser from "./CollectionBrowser";
 import {
   rankNewWords,
@@ -68,6 +80,7 @@ import { analyzeLearning } from "./analytics";
 import { LearningInsights } from "./LearningInsights";
 import ConversationPractice from "./ConversationPractice";
 import WritingFeedback from "./WritingFeedback";
+import { flushWritingDrafts, writingDraftSavedEvent } from "./writing-drafts";
 import SyncSettings from "./SyncSettings";
 import { useVisibleExposure } from "./useVisibleExposure";
 import { assessLearningAnswer } from "./assessment";
@@ -80,6 +93,7 @@ import {
   selectEnglishVoice,
 } from "./american-english";
 import { clearSyncBinding } from "./sync";
+import { pronunciationPrompt } from "./pronunciation";
 import {
   registerOffline,
   getOfflineStatus,
@@ -441,6 +455,23 @@ function App() {
     [],
   );
   useEffect(() => {
+    let alive = true;
+    const refreshDraftState = () => {
+      read()
+        .then((next) => {
+          if (!alive) return;
+          current.current = next;
+          setState(next);
+        })
+        .catch(notifyError);
+    };
+    window.addEventListener(writingDraftSavedEvent, refreshDraftState);
+    return () => {
+      alive = false;
+      window.removeEventListener(writingDraftSavedEvent, refreshDraftState);
+    };
+  }, []);
+  useEffect(() => {
     stopAudio();
     setAudioPlayed(false);
     const session = current.current.session;
@@ -513,7 +544,11 @@ function App() {
     () =>
       rankNewWords(
         state,
-        active.filter((e) => !level || e.word.level === level),
+        freshForPreference(active, state.learningFloor).filter(
+          (e) =>
+            (!level || e.word.level === level) &&
+            chosenStudySkills(state, e).length > 0,
+        ),
         learningMode,
         now,
       ),
@@ -522,6 +557,9 @@ function App() {
       state.history,
       state.schedules,
       state.exposures,
+      state.exposureEvents,
+      state.learningFloor,
+      state.studySkills,
       learningMode,
       level,
       day(now),
@@ -569,6 +607,7 @@ function App() {
       state.entries,
       state.history,
       state.exposures,
+      state.exposureEvents,
       learningMode,
       practice,
       search,
@@ -586,10 +625,15 @@ function App() {
       state.history,
       state.schedules,
       state.exposures,
+      state.exposureEvents,
       state.writing,
       state.conversations,
       day(now),
     ],
+  );
+  const learningEvidence = useMemo(
+    () => selectLearningEvidence(state, now),
+    [state, day(now)],
   );
   const reviewWordId =
     writingReview?.wordId ||
@@ -748,7 +792,7 @@ function App() {
             review: uid(),
           }));
         goal = { due: queue.length, continuing: 0, fresh: 0 };
-        pendingScheduledTasks(base, active)
+        filterPendingForPreference(base, pendingScheduledTasks(base, active))
           .filter(
             (item) =>
               base.entries[item.id]?.goal !== "recognition" ||
@@ -762,25 +806,14 @@ function App() {
               goal!.continuing++;
             }
           });
-        const groups = new Map<string, Session["queue"]>();
-        queue.forEach((item) =>
-          groups.set(item.id, [...(groups.get(item.id) || []), item]),
-        );
-        const priority = [1, 3, 4, 0, 2, 5];
-        queue = [...groups.values()].flatMap((items) =>
-          items.sort(
-            (a, b) => priority.indexOf(a.skill) - priority.indexOf(b.skill),
-          ),
-        );
+        queue = orderScheduledTasks(base, queue);
         queue = interleaveQueue(queue);
         const introductions: Session["queue"] = [];
         fresh.slice(0, planned).forEach((e) =>
-          (e.goal === "recognition" ? [0, 2] : [0, 1, 2, 3, 4, 5]).forEach(
-            (skill) => {
-              if (canPractice(e.word, skill))
-                introductions.push({ id: e.word.id, skill, review: uid() });
-            },
-          ),
+          chosenStudySkills(base, e).forEach((skill) => {
+            if (canPractice(e.word, skill))
+              introductions.push({ id: e.word.id, skill, review: uid() });
+          }),
         );
         goal.fresh = introductions.length;
         queue.push(...interleaveQueue(introductions));
@@ -845,6 +878,10 @@ function App() {
     entry = task ? state.entries[task.id] : undefined,
     w = entry?.word,
     exercise = w && task?.skill === 4 ? exerciseWord(w, task.context) : w;
+  const wordPronunciation = useMemo(
+    () => w && pronunciationPrompt(w, state.entries, state.voice),
+    [w, state.entries, state.voice],
+  );
   const sessionGuide = useMemo(
     () => state.session && sessionProgress(state.session, state.history),
     [state.session, state.history],
@@ -956,6 +993,10 @@ function App() {
               exercise,
               task.skill,
               Object.values(base.entries).map((e) => e.word),
+              task.context?.alternatives ||
+                (getUsage(w)?.example.en === exercise.example_en
+                  ? getUsage(w)?.example.alternatives
+                  : undefined),
             )
           : undefined;
       const ungraded = task.skill === 5 || assessment?.outcome === "ungraded";
@@ -1082,12 +1123,11 @@ function App() {
   const history = state.history.filter(
     (h) => range === 0 || h.time >= now - range * 86400000,
   );
-  const tested = history.filter(
-      (h) => h.first && h.method === "rule" && !h.hint,
-    ),
-    delayed = tested.filter(
-      (h) => h.evidenceVersion === 2 && h.independent && h.gap >= 86400000,
-    );
+  const inPeriod = (h: State["history"][number]) =>
+    range === 0 || h.time >= now - range * 86400000;
+  const evidenceHistory = learningEvidence.current.filter(inPeriod);
+  const tested = learningEvidence.objective.filter(inPeriod),
+    delayed = learningEvidence.delayed.filter(inPeriod);
   const ratio = (h: typeof history) =>
     h.length
       ? `${Math.round((h.filter((r) => r.correct).length / h.length) * 100)}% · ${h.length} lượt`
@@ -1101,7 +1141,7 @@ function App() {
     ["insufficient", "Chưa đủ dữ liệu để kết luận"],
   ];
   const periodHistory = new Map<string, typeof history>();
-  for (const r of history) {
+  for (const r of evidenceHistory) {
     const list = periodHistory.get(r.wordId) || [];
     list.push(r);
     periodHistory.set(r.wordId, list);
@@ -1116,7 +1156,9 @@ function App() {
           );
           if (focus === "stable")
             return skills.some(
-              (_, i) => strength(state, e.word.id, i) === "Nhớ khá vững",
+              (_, i) =>
+                strength(state, e.word.id, i, learningEvidence) ===
+                "Nhớ khá vững",
             );
           if (focus === "writing")
             return (
@@ -1133,11 +1175,18 @@ function App() {
             );
           if (focus === "forgotten")
             return (
-              h.filter((r) => !r.correct && r.method !== "ungraded").length >= 2
+              learningEvidence.attempts.filter(
+                (r) =>
+                  r.wordId === e.word.id &&
+                  inPeriod(r) &&
+                  (!r.correct || r.hint),
+              ).length >= 2
             );
           if (focus === "insufficient")
             return !skills.some(
-              (_, i) => strength(state, e.word.id, i) === "Nhớ khá vững",
+              (_, i) =>
+                strength(state, e.word.id, i, learningEvidence) ===
+                "Nhớ khá vững",
             );
           return h.length > 0;
         })
@@ -1298,7 +1347,7 @@ function App() {
         </div>
       </aside>
       <div className="workspace">
-        <header>
+        <header className="app-header">
           <div>
             <span className="breadcrumb">Góc học của bạn</span>
             <ChevronRight size={14} />
@@ -2274,13 +2323,19 @@ function App() {
                         onClick={() =>
                           task.skill === 3 && canPractice(w, 4)
                             ? speak(w.example_en, w.audio_example, true)
-                            : speak(displayWord(w), w.audio_word, true)
+                            : speak(
+                                wordPronunciation!.text,
+                                wordPronunciation!.url,
+                                true,
+                              )
                         }
                       >
                         <Volume2 size={28} />{" "}
                         {task.skill === 3 && canPractice(w, 4)
                           ? "Nghe câu"
-                          : "Nghe từ"}
+                          : wordPronunciation?.usesContext
+                            ? "Nghe từ trong câu"
+                            : "Nghe từ"}
                       </button>
                       <p className="fineprint" aria-live="polite">
                         {audioPlaying
@@ -2293,10 +2348,13 @@ function App() {
                         {(
                           task.skill === 3 && canPractice(w, 4)
                             ? w.audio_example
-                            : w.audio_word
+                            : wordPronunciation?.url
                         )
                           ? "Âm thanh khai báo; có thể dùng giọng tổng hợp dự phòng."
                           : "Giọng tổng hợp của trình duyệt"}
+                        {wordPronunciation?.usesContext && task.skill === 2
+                          ? ". Dùng câu ví dụ để hỗ trợ phân biệt từ loại; giọng tổng hợp vẫn có thể nhấn sai trọng âm."
+                          : ""}
                       </p>
                       <button
                         className="text-button"
@@ -2313,6 +2371,10 @@ function App() {
                   )}
                   {task.skill === 4 && exercise.example_en && (
                     <>
+                      <p className="recall-cues">
+                        Nghĩa mục tiêu: {w.meaning_vi}
+                        {w.part_of_speech ? ` · ${w.part_of_speech}` : ""}
+                      </p>
                       <p className="context" lang="en">
                         {cloze(exercise)}
                       </p>
@@ -2400,8 +2462,17 @@ function App() {
                         {displayWord(w)}{" "}
                         <button
                           className="icon"
-                          aria-label="Nghe từ"
-                          onClick={() => speak(displayWord(w), w.audio_word)}
+                          aria-label={
+                            wordPronunciation?.usesContext
+                              ? "Nghe từ trong câu"
+                              : "Nghe từ"
+                          }
+                          onClick={() =>
+                            speak(
+                              wordPronunciation!.text,
+                              wordPronunciation!.url,
+                            )
+                          }
                         >
                           <Volume2 size={19} />
                         </button>
@@ -2582,7 +2653,7 @@ function App() {
                   <span>
                     Nhớ qua các ngày
                     <strong className="metric">{ratio(delayed)}</strong>
-                    <em>Lần kiểm tra cách lần trước ≥ 24 giờ</em>
+                    <em>Cách mọi tiếp xúc đã ghi nhận ít nhất 24 giờ</em>
                   </span>
                 </div>
               </div>
@@ -2596,13 +2667,13 @@ function App() {
                       <span>{ratio(h)}</span>
                       <small>
                         {
-                          history.filter(
+                          evidenceHistory.filter(
                             (r) => r.skill === i && r.method === "self",
                           ).length
                         }{" "}
                         tự đánh giá ·{" "}
                         {
-                          history.filter(
+                          evidenceHistory.filter(
                             (r) => r.skill === i && r.method === "ungraded",
                           ).length
                         }{" "}
@@ -2644,7 +2715,10 @@ function App() {
                     </span>
                     <span>
                       {skills
-                        .map((s, i) => `${s}: ${strength(state, e.word.id, i)}`)
+                        .map(
+                          (s, i) =>
+                            `${s}: ${strength(state, e.word.id, i, learningEvidence)}`,
+                        )
                         .join(" · ")}
                     </span>
                     <button
@@ -2656,7 +2730,9 @@ function App() {
                             ? 2
                             : focus === "writing"
                               ? 1
-                              : undefined,
+                              : (learningReport.words.find(
+                                  (item) => item.id === e.word.id,
+                                )?.weakSkills[0] ?? 1),
                         )
                       }
                     >
@@ -2749,6 +2825,11 @@ function App() {
                       </button>
                       <small>
                         {new Date(r.time).toLocaleString("vi-VN")} · Chưa chấm
+                        {state.entries[r.wordId] &&
+                        r.contentVersion !==
+                          contentKey(state.entries[r.wordId].word, r.skill)
+                          ? " · Câu viết theo nghĩa trước đây"
+                          : ""}
                       </small>
                     </article>
                   ))}
@@ -2989,6 +3070,57 @@ function App() {
               />
             </label>
             <label className="setting-row">
+              Mức ưu tiên từ mới
+              <select
+                aria-label="Mức ưu tiên từ mới"
+                value={state.learningFloor || "all"}
+                onChange={(e) =>
+                  commit({
+                    ...state,
+                    learningFloor: e.target.value as State["learningFloor"],
+                  }).catch(notifyError)
+                }
+              >
+                <option value="all">Tất cả trình độ</option>
+                <option value="A2">Từ A2 trở lên</option>
+                <option value="B1">Từ B1 trở lên</option>
+                <option value="B2">Từ B2 trở lên</option>
+                <option value="C1">Từ C1 trở lên</option>
+              </select>
+            </label>
+            <fieldset className="study-preferences">
+              <legend>Kỹ năng ưu tiên ở phiên mới</legend>
+              {skills.map((label, index) => {
+                const selected = state.studySkills || [0, 1, 2, 3, 4, 5];
+                return (
+                  <label key={label}>
+                    <input
+                      type="checkbox"
+                      checked={selected.includes(index)}
+                      disabled={
+                        selected.length === 1 && selected.includes(index)
+                      }
+                      onChange={(e) =>
+                        commit({
+                          ...state,
+                          studySkills: e.target.checked
+                            ? [...selected, index].sort((a, b) => a - b)
+                            : selected.filter((skill) => skill !== index),
+                        }).catch(notifyError)
+                      }
+                    />
+                    {label}
+                  </label>
+                );
+              })}
+            </fieldset>
+            <p className="fineprint">
+              Chọn mức phù hợp nếu bạn đã có nền tảng. Mục chưa có CEFR vẫn được
+              xét và ghi rõ thiếu dữ liệu. Các lựa chọn áp dụng cho từ mới và kỹ
+              năng chưa bắt đầu ở phiên mới; mọi lượt đến hạn vẫn được giữ.
+              Phiên đang học và lịch sử không thay đổi.
+            </p>
+            <label className="setting-row">
               Giọng đọc ưu tiên
               <select
                 value={state.voice}
@@ -3032,13 +3164,21 @@ function App() {
             </p>
             <div className="file-actions">
               <button
-                onClick={() =>
-                  download(
-                    "jeongyeon-backup.json",
-                    JSON.stringify(state, null, 2),
-                    "application/json",
-                  )
-                }
+                onClick={async () => {
+                  try {
+                    await flushWritingDrafts();
+                    clearTimeout(draftTimer.current);
+                    await persistDraft();
+                    const latest = await read();
+                    download(
+                      "jeongyeon-backup.json",
+                      JSON.stringify(latest, null, 2),
+                      "application/json",
+                    );
+                  } catch (error) {
+                    notifyError(error);
+                  }
+                }}
               >
                 <Download size={16} /> Sao lưu toàn bộ JSON
               </button>
@@ -3105,66 +3245,79 @@ function App() {
             </p>
             <button
               className="primary"
-              onClick={() => {
-                if (replace && !confirm("Thay thế toàn bộ dữ liệu hiện tại?"))
-                  return;
-                if (replace) clearSyncBinding();
-                const combined = replace
-                  ? backup
-                  : {
-                      ...state,
-                      entries: { ...backup.entries, ...state.entries },
-                      schedules: { ...backup.schedules, ...state.schedules },
-                      exposures: Object.fromEntries(
-                        [
-                          ...new Set([
-                            ...Object.keys(backup.exposures || {}),
-                            ...Object.keys(state.exposures || {}),
-                          ]),
-                        ].map((id) => [
-                          id,
-                          Math.max(
-                            backup.exposures?.[id] || 0,
-                            state.exposures?.[id] || 0,
-                          ),
-                        ]),
-                      ),
-                      history: [
-                        ...new Map(
-                          [...backup.history, ...state.history].map((h) => [
-                            h.id,
-                            h,
-                          ]),
-                        ).values(),
-                      ].sort((a, b) => a.time - b.time),
-                      writing: [
-                        ...new Map(
+              onClick={async () => {
+                try {
+                  if (replace && !confirm("Thay thế toàn bộ dữ liệu hiện tại?"))
+                    return;
+                  await flushWritingDrafts();
+                  clearTimeout(draftTimer.current);
+                  await persistDraft();
+                  const state = await read();
+                  if (replace) clearSyncBinding();
+                  const combined = replace
+                    ? backup
+                    : {
+                        ...state,
+                        entries: { ...backup.entries, ...state.entries },
+                        schedules: mergeBackupSchedules(state, backup),
+                        exposureEvents: mergeExposureEvents(
+                          exposureEventsForSnapshot(state),
+                          exposureEventsForSnapshot(backup),
+                        ),
+                        writingDrafts: {
+                          ...backup.writingDrafts,
+                          ...state.writingDrafts,
+                        },
+                        exposures: Object.fromEntries(
                           [
-                            ...(backup.writing || []),
-                            ...(state.writing || []),
-                          ].map((a) => [a.id, a]),
-                        ).values(),
-                      ].sort((a, b) => a.time - b.time),
-                      conversations: [
-                        ...new Map(
-                          [
-                            ...(backup.conversations || []),
-                            ...(state.conversations || []),
-                          ].map((a) => [a.id, a]),
-                        ).values(),
-                      ].sort((a, b) => a.time - b.time),
-                    };
-                commit(combined, { replace })
-                  .then(() => {
-                    setBackup(undefined);
-                    if (replace) {
-                      setPage("today");
-                      answerDraft.current = undefined;
-                      storeBrowserDraft();
-                    }
-                    setNotice("Đã khôi phục dữ liệu.");
-                  })
-                  .catch(notifyError);
+                            ...new Set([
+                              ...Object.keys(backup.exposures || {}),
+                              ...Object.keys(state.exposures || {}),
+                            ]),
+                          ].map((id) => [
+                            id,
+                            Math.max(
+                              backup.exposures?.[id] || 0,
+                              state.exposures?.[id] || 0,
+                            ),
+                          ]),
+                        ),
+                        history: [
+                          ...new Map(
+                            [...backup.history, ...state.history].map((h) => [
+                              h.id,
+                              h,
+                            ]),
+                          ).values(),
+                        ].sort((a, b) => a.time - b.time),
+                        writing: [
+                          ...new Map(
+                            [
+                              ...(backup.writing || []),
+                              ...(state.writing || []),
+                            ].map((a) => [a.id, a]),
+                          ).values(),
+                        ].sort((a, b) => a.time - b.time),
+                        conversations: [
+                          ...new Map(
+                            [
+                              ...(backup.conversations || []),
+                              ...(state.conversations || []),
+                            ].map((a) => [a.id, a]),
+                          ).values(),
+                        ].sort((a, b) => a.time - b.time),
+                      };
+                  await commit(combined, { replace }, state);
+                  setBackup(undefined);
+                  if (replace) {
+                    setPage("today");
+                    answerDraft.current = undefined;
+                    storeBrowserDraft();
+                  }
+                  setNotice("Đã khôi phục dữ liệu.");
+                } catch (error) {
+                  notifyError(error);
+                }
               }}
             >
               Xác nhận {replace ? "thay thế" : "hợp nhất"}

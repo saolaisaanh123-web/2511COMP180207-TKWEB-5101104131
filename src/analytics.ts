@@ -5,6 +5,11 @@ import {
   type Result,
   type State,
 } from "./core";
+import {
+  evidenceForSkill,
+  isDelayedEvidence,
+  selectLearningEvidence,
+} from "./evidence";
 
 const DAY = 86_400_000;
 export type KnowledgeStatus =
@@ -31,6 +36,8 @@ export type SkillInsight = {
   objective: EvidenceMetric;
   immediate: EvidenceMetric;
   delayed: EvidenceMetric;
+  unverified: EvidenceMetric;
+  supported: number;
   self: number;
   ungraded: number;
   excluded: number;
@@ -103,9 +110,7 @@ export function evidenceMetric(total: number, correct: number): EvidenceMetric {
 
 const metric = (results: Result[]) =>
   evidenceMetric(results.length, results.filter((r) => r.correct).length);
-const isIndependent = (r: Result) =>
-  r.independent === true &&
-  (r.exposureGap === undefined || r.exposureGap >= DAY);
+const isIndependent = isDelayedEvidence;
 export const writingCategoryLabels: Record<string, string> = {
   "verb-pattern": "Cấu trúc động từ",
   tense: "Thì",
@@ -130,38 +135,16 @@ function validTime(time: number, now: number) {
 export function analyzeLearning(state: State, now = Date.now()) {
   const entries = Object.values(state.entries).filter((e) => !e.archived);
   const activeIds = new Set(entries.map((e) => e.word.id));
-  const seen = new Set<string>();
-  const history = state.history
-    .filter((r) => {
-      if (seen.has(r.id) || !activeIds.has(r.wordId) || !validTime(r.time, now))
-        return false;
-      seen.add(r.id);
-      return true;
-    })
-    .sort((a, b) => a.time - b.time || a.id.localeCompare(b.id));
-  const current = history.filter(
-    (r) =>
-      r.contentVersion === contentKey(state.entries[r.wordId].word, r.skill),
-  );
-  const testedReviews = new Set<string>();
-  const objective = current.filter((r) => {
-    if (
-      r.skill < 0 ||
-      r.skill > 4 ||
-      r.method !== "rule" ||
-      !r.first ||
-      r.hint ||
-      r.evidenceVersion !== 2 ||
-      ([2, 3].includes(r.skill) && r.audioPlayed !== true)
-    )
-      return false;
-    const key = `${r.wordId}:${r.skill}:${r.review || r.id}`;
-    if (testedReviews.has(key)) return false;
-    testedReviews.add(key);
-    return true;
-  });
-  const independent = objective.filter(isIndependent);
+  const evidence = selectLearningEvidence(state, now);
+  const {
+    history,
+    current,
+    attempts,
+    objective,
+    delayed: independent,
+  } = evidence;
   const byWord = new Map<string, Result[]>();
+  const attemptsByWord = new Map<string, Result[]>();
   const allByWord = new Map<string, Result[]>();
   for (const r of history) {
     const group = allByWord.get(r.wordId) || [];
@@ -172,6 +155,11 @@ export function analyzeLearning(state: State, now = Date.now()) {
     const group = byWord.get(r.wordId) || [];
     group.push(r);
     byWord.set(r.wordId, group);
+  }
+  for (const r of attempts) {
+    const group = attemptsByWord.get(r.wordId) || [];
+    group.push(r);
+    attemptsByWord.set(r.wordId, group);
   }
 
   // Kept as separate evidence sources: local pattern detection is not a full
@@ -226,24 +214,14 @@ export function analyzeLearning(state: State, now = Date.now()) {
   const words: WordInsight[] = entries.map((entry) => {
     const id = entry.word.id,
       results = byWord.get(id) || [],
+      testedAttempts = attemptsByWord.get(id) || [],
       all = allByWord.get(id) || [];
     const weakSkills: number[] = [],
       retainedSkills: number[] = [];
     for (let skill = 0; skill < 5; skill++) {
-      const h = results.filter((r) => r.skill === skill),
-        recent = h.slice(-4);
-      if (
-        h.length &&
-        (!h.at(-1)!.correct || recent.filter((r) => !r.correct).length >= 2)
-      )
-        weakSkills.push(skill);
-      const clean = h.filter((r) => r.correct && isIndependent(r));
-      if (
-        new Set(clean.map((r) => calendarDay(r.time))).size >= 3 &&
-        clean.some((r) => (r.exposureGap ?? 0) >= 7 * DAY) &&
-        !weakSkills.includes(skill)
-      )
-        retainedSkills.push(skill);
+      const proof = evidenceForSkill(evidence, id, skill);
+      if (proof.weak) weakSkills.push(skill);
+      if (proof.retained) retainedSkills.push(skill);
     }
     const active = aiWriting
       .filter(
@@ -288,7 +266,7 @@ export function analyzeLearning(state: State, now = Date.now()) {
     const reasons: string[] = [];
     if (weakSkills.length)
       reasons.push(
-        `Lượt kiểm tra gần nhất sai hoặc ít nhất 2 lỗi trong 4 lượt gần nhất ở: ${weakSkills.map((s) => skills[s]).join(", ")}.`,
+        `Lượt kiểm tra gần nhất sai/cần gợi ý hoặc ít nhất 2 lượt cần hỗ trợ trong 4 lượt gần nhất ở: ${weakSkills.map((s) => skills[s]).join(", ")}.`,
       );
     else if (status === "active")
       reasons.push(
@@ -314,8 +292,8 @@ export function analyzeLearning(state: State, now = Date.now()) {
       id,
       status,
       reasons,
-      attempts: results.length,
-      failures: results.filter((r) => !r.correct).length,
+      attempts: testedAttempts.length,
+      failures: testedAttempts.filter((r) => !r.correct).length,
       weakSkills,
       retainedSkills,
       activeEvidence: activeDays.length,
@@ -343,8 +321,18 @@ export function analyzeLearning(state: State, now = Date.now()) {
       skill,
       label,
       objective: metric(h),
-      immediate: metric(h.filter((r) => !isIndependent(r))),
+      immediate: metric(
+        h.filter((r) => Number.isFinite(r.exposureGap) && r.exposureGap! < DAY),
+      ),
       delayed: metric(h.filter(isIndependent)),
+      unverified: metric(
+        h.filter(
+          (r) =>
+            !isIndependent(r) &&
+            (!Number.isFinite(r.exposureGap) || r.exposureGap! >= DAY),
+        ),
+      ),
+      supported: attempts.filter((r) => r.skill === skill && r.hint).length,
       self: current.filter((r) => r.skill === skill && r.method === "self")
         .length,
       ungraded:
@@ -403,7 +391,7 @@ export function analyzeLearning(state: State, now = Date.now()) {
       ),
     ),
   }));
-  const missingExposureGap = independent.filter(
+  const missingExposureGap = objective.filter(
     (r) => !Number.isFinite(r.exposureGap),
   ).length;
 
@@ -470,7 +458,7 @@ export function analyzeLearning(state: State, now = Date.now()) {
   };
   const frequentlyForgotten = words
     .filter((w) => {
-      const h = byWord.get(w.id) || [];
+      const h = attemptsByWord.get(w.id) || [];
       return (
         new Set(h.filter((r) => !r.correct).map((r) => calendarDay(r.time)))
           .size >= 2 && w.status === "weak"
@@ -480,7 +468,7 @@ export function analyzeLearning(state: State, now = Date.now()) {
     .map((w) => w.id);
   const improving = words
     .filter((w) => {
-      const h = byWord.get(w.id) || [],
+      const h = attemptsByWord.get(w.id) || [],
         recent = h.slice(-3),
         older = h.slice(0, -3);
       return (

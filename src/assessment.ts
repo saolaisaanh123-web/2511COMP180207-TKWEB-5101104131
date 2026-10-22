@@ -54,6 +54,7 @@ export function assessLearningAnswer(
   word: Word,
   skill: number,
   words: Word[],
+  contextualAnswers?: readonly string[],
 ): LearningAssessment {
   if (grade(answer, word)) return { outcome: "correct" };
 
@@ -84,14 +85,22 @@ export function assessLearningAnswer(
   }
 
   if (skill === 4) {
-    const alternative = contextualAlternatives.some(
-      (context) =>
-        normalize(context.word) === normalize(word.word) &&
-        normalize(context.partOfSpeech) ===
-          normalize(word.part_of_speech || "") &&
-        normalize(context.example) === normalize(word.example_en) &&
-        context.answers.some((value) => normalize(value) === normalize(answer)),
-    );
+    const alternative =
+      contextualAnswers?.some(
+        (value) => normalize(value) === normalize(answer),
+      ) ||
+      contextualAlternatives.some(
+        (context) =>
+          normalize(context.word) === normalize(word.word) &&
+          normalize(context.partOfSpeech) ===
+            normalize(word.part_of_speech || "") &&
+          normalize(context.example) === normalize(word.example_en) &&
+          context.answers.some(
+            (value) => normalize(value) === normalize(answer),
+          ),
+      );
+    // The optional alternatives belong to the frozen, reviewed question. They
+    // are deliberately not accepted target spellings or a global synonym list.
     if (alternative)
       return {
         outcome: "ungraded",

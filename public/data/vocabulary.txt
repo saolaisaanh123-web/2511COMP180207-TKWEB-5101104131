@@ -205941,3 +205941,77 @@ learning_note: Nghĩa được chọn đã đối chiếu nguồn; nghĩa Việt
 source_fact_index:
 frequency_note: Chưa có phép đo tần suất cho mục mới này; không suy ra độ hiếm hoặc tần suất Mỹ từ thứ tự danh sách.
 definition_source: authored
+---
+id: like-verb-enjoy-01
+word: like
+part_of_speech: verb
+meaning_vi: thích
+definition_en: to feel that someone or something is pleasant or enjoyable
+ipa: /laɪk/
+level: A1
+topics: daily life
+collections: foundation,american-3000,essential-senses
+collocation: like doing something; like to do something
+example_en: I like reading by the window on rainy afternoons.
+example_vi: Tôi thích đọc sách bên cửa sổ vào những buổi chiều mưa.
+audio_word:
+audio_example:
+accepted_answers: like
+source: Đối chiếu nghĩa/từ loại/IPA Mỹ: https://www.oxfordlearnersdictionaries.com/definition/american_english/like_3 | A1 theo American Oxford 3000. Nghĩa Việt, giải nghĩa Anh và ví dụ song ngữ do Jeongyeon biên soạn.
+note: Động từ chỉ cảm giác thích; khác giới từ like nghĩa giống/tương tự.
+content_status: reviewed
+example_type: authored
+register:
+region: General; ưu tiên đối chiếu Anh–Mỹ
+case_sensitive:
+frequency_zipf:
+frequency_source:
+expression_type:
+news_source:
+news_title:
+news_url:
+news_date:
+news_excerpt:
+news_context_vi:
+news_source_type:
+learning_status: ready
+learning_note: Nghĩa nền tảng bổ sung đã đối chiếu trực tiếp Oxford American; đây là một nghĩa được chọn, không phải toàn bộ mục từ.
+source_fact_index:
+definition_source: authored
+---
+id: lie-horizontal-01
+word: lie
+part_of_speech: verb
+meaning_vi: nằm; ở tư thế nằm ngang
+definition_en: to be in a horizontal position with your body on a surface
+ipa: /laɪ/
+level: A1
+topics: daily life
+collections: foundation,american-3000,essential-senses
+collocation: lie on your back; lie on your side
+example_en: I need to lie on my side to feel comfortable.
+example_vi: Tôi cần nằm nghiêng để cảm thấy thoải mái.
+audio_word:
+audio_example:
+accepted_answers: lie
+source: Đối chiếu nghĩa/từ loại/IPA Mỹ: https://www.oxfordlearnersdictionaries.com/definition/american_english/lie_1 | A1 theo American Oxford 3000. Nghĩa Việt, giải nghĩa Anh và ví dụ song ngữ do Jeongyeon biên soạn.
+note: Nghĩa nằm, khác lie nghĩa nói dối. Dạng quá khứ lay, quá khứ phân từ lain; -ing lying. Không dùng laid cho nghĩa nội động từ này.
+content_status: reviewed
+example_type: authored
+register:
+region: General; ưu tiên đối chiếu Anh–Mỹ
+case_sensitive:
+frequency_zipf:
+frequency_source:
+expression_type:
+news_source:
+news_title:
+news_url:
+news_date:
+news_excerpt:
+news_context_vi:
+news_source_type:
+learning_status: ready
+learning_note: Nghĩa nền tảng bổ sung đã đối chiếu trực tiếp Oxford American; đây là một nghĩa được chọn, không phải toàn bộ mục từ.
+source_fact_index:
+definition_source: authored

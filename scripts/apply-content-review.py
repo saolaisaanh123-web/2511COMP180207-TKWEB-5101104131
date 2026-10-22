@@ -87,7 +87,9 @@ def main():
     # Structural and semantic invariants matter more than a forced round count.
     original_rows = parse_records(original.decode("utf-8"))
     assert [row["id"] for row in records[:len(original_rows)]] == [row["id"] for row in original_rows]
-    assert len(records) == 5162 + (len(source_update.get("additions", [])) if source_update else 0)
+    essential = SOURCE_UPDATE["ESSENTIAL_SENSES"]["load_essential_senses"]()
+    essential_count = len(essential["entries"]) if SOURCE_UPDATE["ESSENTIAL_SENSES"]["applies_to"](records, essential) else 0
+    assert len(records) == 5162 + (len(source_update.get("additions", [])) if source_update else 0) + essential_count
     assert len(all_facts) == 5323
     assert sum("oxford-" in row.get("collections", "") for row in records) == 4955
     assert all(any(char.isalpha() for char in row.get("meaning_vi", "")) for row in records if row["learning_status"] == "ready")
@@ -164,6 +166,7 @@ def main():
         VOCABULARY.write_text(text, encoding="utf-8", newline="\n")
         for filename, value in documents.items():
             (ROOT / "public/data" / filename).write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        (ROOT / "public/data/vocabulary-version.json").write_text(json.dumps({"version": digest(text.encode()), "entryCount": len(records), "bytes": len(text.encode())}, indent=2) + "\n", encoding="utf-8")
     else:
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(text, encoding="utf-8", newline="\n")

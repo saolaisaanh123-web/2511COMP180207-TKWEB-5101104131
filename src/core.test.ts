@@ -131,6 +131,8 @@ describe("Updates and evidence", () => {
   });
   it("requires three separate tested days and a seven-day gap for stable skill", () => {
     let s = merge(empty(), words, "default");
+    const testedAt = Date.now() - 16 * 86400000;
+    s.exposures = { [words[0].id]: testedAt - 8 * 86400000 };
     for (let i = 0; i < 3; i++)
       s = record(
         s,
@@ -138,7 +140,7 @@ describe("Updates and evidence", () => {
           id: "r" + i,
           review: "v" + i,
           session: "daily-session-" + i,
-          time: Date.now() + i * 8 * 86400000,
+          time: testedAt + i * 8 * 86400000,
           gap: i ? 8 * 86400000 : 0,
         }),
         false,

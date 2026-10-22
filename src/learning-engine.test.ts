@@ -101,6 +101,7 @@ describe("Independent learning evidence", () => {
   });
   it("only counts results for the current meaning and selectively resets changed context", () => {
     let s = initial();
+    s.exposures = { [word.id]: day };
     for (let i = 1; i <= 3; i++) s = record(s, result(i * 8 * day), true);
     expect(strength(s, word.id, 1)).toBe("Nhớ khá vững");
     s.schedules["apple:4"] = { last: day, due: 2 * day, step: 0 };

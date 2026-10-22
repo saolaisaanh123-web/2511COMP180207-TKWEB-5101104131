@@ -657,3 +657,13 @@
   line-height: 1.8;
   color: #5e4b25;
 }
+
+/* Source/scope warnings are part of learning accuracy, not decorative metadata. */
+.dict-entry .dict-label,
+.dict-entry .dict-muted,
+.dict-entry .dict-sense-note,
+.dict-entry .dict-source-text,
+.dict-entry .dict-source-note {
+  font-size: 12px;
+  line-height: 1.75;
+}

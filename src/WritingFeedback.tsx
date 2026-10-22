@@ -1,6 +1,6 @@
 import { useEffect, useId, useRef, useState } from "react";
 import { Check, RotateCcw } from "lucide-react";
-import type { State } from "./core";
+import { contentKey, type State, type WritingDraft } from "./core";
 import { preferredHeadword } from "./american-english";
 import type { WritingAttempt, WritingIssue } from "./practice-data";
 import {
@@ -10,6 +10,14 @@ import {
   writingCategories,
 } from "./writing";
 import "./writing-feedback.css";
+import {
+  clearWritingDraft,
+  loadWritingDraft,
+  persistWritingDraft,
+  findWritingDraft,
+  writingDraftFlushEvent,
+  type WritingDraftFlushDetail,
+} from "./writing-drafts";
 
 export type WritingFeedbackProps = {
   state: State;
@@ -64,9 +72,56 @@ export default function WritingFeedback({
   const [attempt, setAttempt] = useState<WritingAttempt>();
   const [saving, setSaving] = useState(false);
   const [message, setMessage] = useState("");
+  const [draftWarning, setDraftWarning] = useState("");
   const edited = useRef(false);
   const textarea = useRef<HTMLTextAreaElement>(null);
   const revision = useRef(0);
+  const durable = !onTextChange;
+  const draftTimer = useRef<ReturnType<typeof setTimeout> | undefined>(
+    undefined,
+  );
+  const pendingDraft = useRef<WritingDraft | undefined>(undefined);
+  const activeDraft = useRef<WritingDraft | undefined>(undefined);
+  const previousInitial = useRef({ wordId, parentId, initialText });
+
+  function flushDraft() {
+    clearTimeout(draftTimer.current);
+    const value = pendingDraft.current;
+    pendingDraft.current = undefined;
+    return value
+      ? persistWritingDraft(value).catch((error) => {
+          if (
+            !pendingDraft.current ||
+            pendingDraft.current.updatedAt <= value.updatedAt
+          )
+            pendingDraft.current = value;
+          throw error;
+        })
+      : Promise.resolve();
+  }
+  function stageDraft(value: string, from = parent) {
+    if (!durable || !entry) return;
+    const next: WritingDraft = {
+      wordId,
+      ...(from ? { parentId: from } : {}),
+      text: value,
+      updatedAt: Math.max(
+        Date.now(),
+        (activeDraft.current?.updatedAt || 0) + 1,
+      ),
+      contentVersion: contentKey(entry.word, 5),
+    };
+    pendingDraft.current = next;
+    activeDraft.current = next;
+    clearTimeout(draftTimer.current);
+    draftTimer.current = setTimeout(() => {
+      flushDraft().catch(() =>
+        setDraftWarning(
+          "Chưa lưu được nháp. Hãy giữ trang mở và lưu câu trước khi rời đi.",
+        ),
+      );
+    }, 250);
+  }
 
   useEffect(() => {
     revision.current++;
@@ -76,10 +131,80 @@ export default function WritingFeedback({
     setMessage("");
     setSaving(false);
     edited.current = false;
+    activeDraft.current = undefined;
+    setDraftWarning("");
+    if (durable) {
+      const mayRestore = !initialText || !!parentId;
+      const cached = findWritingDraft(state, wordId, parentId);
+      if (cached?.text && mayRestore) {
+        setText(cached.text);
+        setParent(cached.parentId || parentId);
+        activeDraft.current = cached;
+      }
+      const generation = revision.current;
+      loadWritingDraft(wordId, parentId)
+        .then((draft) => {
+          if (
+            generation !== revision.current ||
+            edited.current ||
+            !draft ||
+            !draft.text ||
+            !mayRestore
+          )
+            return;
+          setText(draft.text);
+          setParent(draft.parentId || parentId);
+          activeDraft.current = draft;
+          if (
+            draft.text &&
+            draft.contentVersion &&
+            entry &&
+            draft.contentVersion !== contentKey(entry.word, 5)
+          )
+            setDraftWarning(
+              "Nháp được viết theo nghĩa trước đây. Hãy đối chiếu lại nghĩa hiện tại trước khi kiểm tra.",
+            );
+        })
+        .catch(() =>
+          setDraftWarning(
+            "Không đọc được nháp đã lưu. Các câu đã gửi vẫn được giữ trong lịch sử.",
+          ),
+        );
+    }
+    const saveOnPageHide = () => {
+      void flushDraft().catch(() => undefined);
+    };
+    const flushRequested = (event: Event) => {
+      const write = flushDraft();
+      (event as CustomEvent<WritingDraftFlushDetail>).detail?.waitUntil(write);
+      void write.catch(() =>
+        setDraftWarning(
+          "Chưa lưu được nháp mới nhất. Hãy giữ trang mở và thử lại.",
+        ),
+      );
+    };
+    window.addEventListener("pagehide", saveOnPageHide);
+    window.addEventListener(writingDraftFlushEvent, flushRequested);
+    return () => {
+      revision.current++;
+      window.removeEventListener("pagehide", saveOnPageHide);
+      window.removeEventListener(writingDraftFlushEvent, flushRequested);
+      void flushDraft().catch(() => undefined);
+    };
   }, [wordId, parentId]);
   useEffect(() => {
-    if (!edited.current) setText(initialText);
-  }, [initialText]);
+    const previous = previousInitial.current;
+    previousInitial.current = { wordId, parentId, initialText };
+    // Initial restoration belongs to the word/thread effect above. Replacing
+    // it again on mount can briefly expose an older saved sentence to editing.
+    if (
+      previous.wordId !== wordId ||
+      previous.parentId !== parentId ||
+      previous.initialText === initialText
+    )
+      return;
+    if (!edited.current && (initialText || !durable)) setText(initialText);
+  }, [initialText, wordId, parentId]);
 
   if (!entry || entry.archived)
     return (
@@ -107,9 +232,18 @@ export default function WritingFeedback({
     setMessage("");
     const generation = revision.current;
     const next = makeWritingAttempt(entry.word, text, parent);
+    const submittedDraft = activeDraft.current;
     try {
+      await flushDraft();
       await onSave(next);
+      if (durable && submittedDraft)
+        await clearWritingDraft(submittedDraft).catch(() =>
+          setDraftWarning(
+            "Câu đã lưu; chưa dọn được nháp cũ. Lịch sử câu vẫn được giữ.",
+          ),
+        );
       if (generation !== revision.current) return;
+      activeDraft.current = undefined;
       setAttempt(next);
       setParent(next.id);
       setMessage(
@@ -130,6 +264,7 @@ export default function WritingFeedback({
     setParent(from?.id || parent);
     setText(value);
     onTextChange?.(value);
+    stageDraft(value, from?.id || parent);
     setAttempt(undefined);
     edited.current = true;
     setMessage("Hãy chỉnh sửa câu rồi kiểm tra lại. Bản ban đầu vẫn được giữ.");
@@ -167,10 +302,16 @@ export default function WritingFeedback({
           edited.current = true;
           setText(event.target.value);
           onTextChange?.(event.target.value);
+          stageDraft(event.target.value);
           setAttempt(undefined);
           setMessage("");
         }}
       />
+      {draftWarning && (
+        <p className="writing-notice" role="status">
+          {draftWarning}
+        </p>
+      )}
       <div className="writing-actions">
         <small>
           {text.length}/{WRITING_LIMIT} ký tự
@@ -288,6 +429,7 @@ export default function WritingFeedback({
                     setText(item.text);
                     setParent(item.id);
                     onTextChange?.(item.text);
+                    stageDraft(item.text, item.id);
                     edited.current = true;
                   }}
                 >

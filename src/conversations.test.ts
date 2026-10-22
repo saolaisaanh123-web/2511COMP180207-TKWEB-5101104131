@@ -153,6 +153,7 @@ describe("Authored contextual conversation practice", () => {
       complete: false,
     });
     expect(attempt.answers.filter((a) => a.correct)).toHaveLength(3);
+    expect(attempt.answers.every((answer) => answer.hint)).toBe(true);
     expect(
       attempt.answers.find((a) => a.kind === "reply")?.correct,
     ).toBeUndefined();
@@ -166,6 +167,28 @@ describe("Authored contextual conversation practice", () => {
     expect(() =>
       validatePracticeCollections({ ...state, conversations: [attempt] }),
     ).not.toThrow();
+  });
+
+  it("only records unassisted immediate recall when the transcript stays hidden without a hint or retry", () => {
+    const state = source();
+    const values = Object.fromEntries(
+      sample.questions.map((q) => [q.id, q.accepted[0]]),
+    );
+    const attempt = (usedHint = false, retryOf?: string) =>
+      makeConversationAttempt(
+        state,
+        sample,
+        values,
+        { lines: [], complete: false, hidden: true, usedHint },
+        retryOf,
+      );
+    expect(attempt().answers.every((answer) => !answer.hint)).toBe(true);
+    expect(attempt(true).answers.every((answer) => answer.hint)).toBe(true);
+    expect(
+      attempt(false, "earlier-result").answers.every((answer) => answer.hint),
+    ).toBe(true);
+    expect(state.history).toEqual([]);
+    expect(state.schedules).toEqual({});
   });
 
   it("distinguishes exposure, listening and an actual wrong answer when proposing retries", () => {

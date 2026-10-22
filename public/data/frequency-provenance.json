@@ -38,15 +38,15 @@
     "sha256": "8ced54ea9f49e335cb21a42a8cb6924a7eef74401d69af2af787a141c0557c40"
   },
   "coverage": {
-    "records": 5558,
+    "records": 5560,
     "scored": 4921,
-    "unscored": 637,
+    "unscored": 639,
     "unscoredByReason": {
       "no_exact_spelling_in_pinned_table": 20,
       "multiword_or_alternatives_not_an_observed_phrase_frequency": 10,
       "known_case_or_lemma_sense_conflation": 4,
       "outside_oxford_headwords": 207,
-      "new_source_entry_not_measured_in_pinned_frequency_table": 396
+      "new_source_entry_not_measured_in_pinned_frequency_table": 398
     },
     "caseNormalizedScoredHeadwords": 24,
     "caseConflationGroupsPresentInApp": []
@@ -3758,6 +3758,18 @@
       "word": "DINKWAD",
       "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
       "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "like-verb-enjoy-01",
+      "word": "like",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
+    },
+    {
+      "id": "lie-horizontal-01",
+      "word": "lie",
+      "reason": "new_source_entry_not_measured_in_pinned_frequency_table",
+      "note": "No frequency estimate was invented for an additive source-review entry."
     }
   ],
   "outputAfterAttachingMetadata": {
@@ -3784,21 +3796,28 @@
   ],
   "currentCanonicalVocabulary": {
     "filename": "vocabulary.txt",
-    "sha256": "86a5b8d2a4a907b2ce7d3d8997972494ff35621dad870a765bc665dcee744eb4"
+    "sha256": "10392288d69ba11cc6e5fc74e02e0cc3654bea50cda229254236848d2d3a87f4"
   },
   "historicalExportNote": "inputBeforeAttachingMetadata and outputAfterAttachingMetadata describe the original pinned frequency export, before later editorial corrections; currentCanonicalVocabulary identifies the current canonical TXT.",
-  "sourceUpdateCanonicalHash": "86a5b8d2a4a907b2ce7d3d8997972494ff35621dad870a765bc665dcee744eb4",
+  "sourceUpdateCanonicalHash": "10392288d69ba11cc6e5fc74e02e0cc3654bea50cda229254236848d2d3a87f4",
   "supplementalSourceReview": {
     "date": "2026-10-20",
     "overlay": "data/authoring/source-update-2026-10.json",
-    "canonicalVocabularySha256": "86a5b8d2a4a907b2ce7d3d8997972494ff35621dad870a765bc665dcee744eb4",
+    "canonicalVocabularySha256": "10392288d69ba11cc6e5fc74e02e0cc3654bea50cda229254236848d2d3a87f4",
     "scope": "Additive source-checked American spelling and list membership, targeted original meaning corrections and selected new senses; not a verification of every historical definition or publisher certification."
   },
   "fullVocabularyReview": {
     "reviewId": "2026-10-full-vocabulary-review",
     "date": "2026-10-21",
-    "canonicalVocabularySha256": "86a5b8d2a4a907b2ce7d3d8997972494ff35621dad870a765bc665dcee744eb4",
+    "canonicalVocabularySha256": "10392288d69ba11cc6e5fc74e02e0cc3654bea50cda229254236848d2d3a87f4",
     "reviewedEntries": 5558,
     "scope": "Explicit selected meanings and original bilingual contexts reviewed against directly read source evidence. Historical word-list facts are preserved separately; this is not publisher certification or a claim to cover every sense."
+  },
+  "essentialSenses": {
+    "reviewId": "essential-senses-2026-10-22",
+    "date": "2026-10-22",
+    "canonicalVocabularySha256": "10392288d69ba11cc6e5fc74e02e0cc3654bea50cda229254236848d2d3a87f4",
+    "addedEntries": 2,
+    "scope": "Append two directly source-reviewed foundational senses without replacing any existing spelling/POS/sense or stable ID. American facts identify exact homograph/POS; they do not certify authored Vietnamese translations."
   }
 }

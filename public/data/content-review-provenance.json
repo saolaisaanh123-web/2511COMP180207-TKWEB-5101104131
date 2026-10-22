@@ -4,7 +4,7 @@
   "method": "Targeted editorial review of audit findings. Definitions and bilingual practice examples are original app-authored content. Oxford sourceFactIndex identifies the exact pinned headword/POS/homograph fact, not publisher approval of the authored definition.",
   "overlay": "data/authoring/content-review-2026-10.txt",
   "overlaySha256": "85577b9ab62aa1ed2090dee3ad12bbbfc18daf4edd900e23012605d23d96e9b5",
-  "canonicalVocabularySha256": "86a5b8d2a4a907b2ce7d3d8997972494ff35621dad870a765bc665dcee744eb4",
+  "canonicalVocabularySha256": "10392288d69ba11cc6e5fc74e02e0cc3654bea50cda229254236848d2d3a87f4",
   "reviewedCorrections": [
     {
       "id": "ox-f86b1f62a85542-01",
@@ -237,16 +237,16 @@
   ],
   "coverage": {
     "oxfordHeadwords": 4955,
-    "entryCount": 5558,
-    "reviewed": 5558,
+    "entryCount": 5560,
+    "reviewed": 5560,
     "dictionary": 0,
     "reference": 0,
     "phrasalSenses": 101,
     "slangSenses": 129,
-    "withBilingualContext": 5558,
+    "withBilingualContext": 5560,
     "missingContext": 0,
     "referenceWords": [],
-    "learningReady": 5558,
+    "learningReady": 5560,
     "lookupOnly": 0
   },
   "limitations": [
@@ -345,15 +345,22 @@
   "supplementalSourceReview": {
     "date": "2026-10-20",
     "overlay": "data/authoring/source-update-2026-10.json",
-    "canonicalVocabularySha256": "86a5b8d2a4a907b2ce7d3d8997972494ff35621dad870a765bc665dcee744eb4",
+    "canonicalVocabularySha256": "10392288d69ba11cc6e5fc74e02e0cc3654bea50cda229254236848d2d3a87f4",
     "scope": "Additive source-checked American spelling and list membership, targeted original meaning corrections and selected new senses; not a verification of every historical definition or publisher certification."
   },
-  "sourceUpdateCanonicalHash": "86a5b8d2a4a907b2ce7d3d8997972494ff35621dad870a765bc665dcee744eb4",
+  "sourceUpdateCanonicalHash": "10392288d69ba11cc6e5fc74e02e0cc3654bea50cda229254236848d2d3a87f4",
   "fullVocabularyReview": {
     "reviewId": "2026-10-full-vocabulary-review",
     "date": "2026-10-21",
-    "canonicalVocabularySha256": "86a5b8d2a4a907b2ce7d3d8997972494ff35621dad870a765bc665dcee744eb4",
+    "canonicalVocabularySha256": "10392288d69ba11cc6e5fc74e02e0cc3654bea50cda229254236848d2d3a87f4",
     "reviewedEntries": 5558,
     "scope": "Explicit selected meanings and original bilingual contexts reviewed against directly read source evidence. Historical word-list facts are preserved separately; this is not publisher certification or a claim to cover every sense."
+  },
+  "essentialSenses": {
+    "reviewId": "essential-senses-2026-10-22",
+    "date": "2026-10-22",
+    "canonicalVocabularySha256": "10392288d69ba11cc6e5fc74e02e0cc3654bea50cda229254236848d2d3a87f4",
+    "addedEntries": 2,
+    "scope": "Append two directly source-reviewed foundational senses without replacing any existing spelling/POS/sense or stable ID. American facts identify exact homograph/POS; they do not certify authored Vietnamese translations."
   }
 }
