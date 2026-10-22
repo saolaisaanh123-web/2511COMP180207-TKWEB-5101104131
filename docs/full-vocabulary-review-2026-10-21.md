@@ -69,7 +69,7 @@ Phát triển/build bình thường dùng TXT đã commit, không cần tải ng
 
 ## Kiểm thử bàn giao
 
-- **251 unit tests**, **30 kiểm thử dữ liệu** (20 hồi quy + 10 an toàn áp dụng review); TypeScript đạt. Các kiểm tra cũ được cập nhật đúng lớp nguồn mới, vẫn giữ bảo vệ ID/CEFR/POS và chỉ chấp nhận ngoại lệ diplomatic có bằng chứng.
+- **251 unit tests**, **30 kiểm thử dữ liệu** (20 hồi quy + 10 an toàn áp dụng review); TypeScript đạt. Bài kiểm tra toàn bộ 5.558 mục có thời gian riêng 30 giây cho máy CI dùng chung; giữ nguyên tất cả assertion. Các kiểm tra cũ được cập nhật đúng lớp nguồn mới, vẫn giữ bảo vệ ID/CEFR/POS và chỉ chấp nhận ngoại lệ diplomatic có bằng chứng.
 - **76 E2E Chromium** đạt trên bản tích hợp: học/ôn, bốn chế độ chọn từ, giữ phiên/lịch sử, hai tab, nhập TXT, sao lưu, hội thoại/viết, ngữ pháp và mobile. Sau khi chuẩn hóa URL hash WordNet, chạy lại cả hai E2E dữ liệu thật/ghi nguồn và production đều đạt; thay đổi chuẩn hóa chỉ chạm nguồn, không chạm nghĩa/ví dụ.
 - **Build production** đạt; đường dẫn gốc và đường dẫn con nạp 5.558 mục, tải lại ngoại tuyến kèm ngữ pháp hoạt động. Request riêng/API không bị cache; thiếu JavaScript hiện thông báo thay cho trang trắng. Còn cảnh báo bundle trên 500 kB (khoảng 202 kB gzip), không phải lỗi build.
 - Preview chỉ đọc và replay các overlay giữ nguyên kết quả canonical; dữ liệu cá nhân giữ ưu tiên, lịch sử không bị xóa, các trường không được phép sửa khớp hash baseline. Kiểm tra riêng 28 IPA mới đều khớp literal NAmE trong HTML Oxford đã đọc.

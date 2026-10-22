@@ -153,6 +153,8 @@ describe("Complete source-backed vocabulary review", () => {
     }
   });
 
+  // This exhaustive scan checks every field/skill across 5,558 real records;
+  // shared CI runners need more than the default five-second test budget.
   it("uses actual authored teaching content and keeps licensed gloss attribution explicit", () => {
     for (const row of reviewed) {
       const word = byId.get(row.id)!;
@@ -197,7 +199,7 @@ describe("Complete source-backed vocabulary review", () => {
         word.example_type !== "no-cloze",
       );
     }
-  });
+  }, 30_000);
 
   it("corrects the demonstrably wrong bee meaning and obsolete default learning senses", () => {
     expect(byWord.get("bee")!.meaning_vi).toContain("ong");
