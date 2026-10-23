@@ -103,6 +103,8 @@ Kết quả trên mã đã tích hợp:
 - Production build, đường dẫn gốc/con và reload offline: **đạt** (`npm run test:production`).
 - Phát hành: `.github/workflows/pages.yml` chạy lại unit, dữ liệu, E2E và production trước khi xuất bản. Xem [lần chạy theo commit](https://github.com/saolaisaanh123-web/WebHocTuVungTiengAnh/actions/workflows/pages.yml) và [website công khai](https://saolaisaanh123-web.github.io/WebHocTuVungTiengAnh/). Đối chiếu bản mới bằng SHA256 TXT ở trên và bundle của bản build.
 
+CI ghi lỗi trình duyệt vào GitHub Checks để vẫn đọc được tên bài và chi tiết khi không tải được file log. Workflow ưu tiên Chrome/Chromium đã có trên runner, in phiên bản và truyền cùng đường dẫn cho E2E/production; chỉ tải headless shell khi không có trình duyệt. Các assertion và bước chặn phát hành vẫn giữ nguyên.
+
 Kiểm thử phát âm trong trình duyệt kiểm tra record danh từ/động từ đọc đúng câu của từng nghĩa bằng giọng Mỹ, không lộ chữ trước khi mở đáp án; audio cá nhân vẫn được phát riêng. Âm thanh được giả lập để xác minh đường đi/phát xong, không dùng kiểm thử đó làm bằng chứng chất lượng TTS thực tế.
 
 Hai nguồn Oxford của nghĩa bổ sung được kiểm tra truy cập lại, đều trả HTTP 200. Bản kiểm thử retention cũ được tách thành hai tình huống: có đủ khoảng nghỉ 30 ngày và vừa tiếp xúc nghĩa cũ hôm trước; tình huống thứ hai chỉ được tính khoảng nghỉ một ngày. Giữ nguyên các kết quả gốc trong cả hai.

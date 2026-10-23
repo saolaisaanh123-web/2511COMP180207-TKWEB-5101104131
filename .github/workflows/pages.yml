@@ -23,8 +23,16 @@ jobs:
       - run: npm test
       - name: Verify curated vocabulary and source metadata
         run: npm run test:data
-      - name: Install browser for production verification
-        run: npx playwright install --with-deps chromium
+      - name: Prepare browser for learning and production verification
+        timeout-minutes: 10
+        run: |
+          browser_path="$(command -v google-chrome || command -v google-chrome-stable || command -v chromium || true)"
+          if [ -n "$browser_path" ]; then
+            echo "CHROMIUM_PATH=$browser_path" >> "$GITHUB_ENV"
+            "$browser_path" --version
+          else
+            npx playwright install --with-deps --only-shell chromium
+          fi
       - name: Verify learning and data recovery in the browser
         run: npm run test:e2e
       - name: Verify built site before publishing
