@@ -1,5 +1,6 @@
 import { expect, test, type Page } from "@playwright/test";
 import { readFileSync } from "node:fs";
+import { createHash } from "node:crypto";
 import {
   contentKey,
   empty,
@@ -14,12 +15,26 @@ const DAY = 86_400_000;
 const words = parse(readFileSync("public/data/vocabulary.txt", "utf8")).filter(
   (word) => ["achieve-01", "avoid-01"].includes(word.id),
 );
+const fixtureText = serialize(words);
+const fixtureVersion = createHash("sha256").update(fixtureText).digest("hex");
 
 async function openApp(page: Page) {
+  // The manifest must describe the same fixture. A real-corpus hash otherwise
+  // starts an unrelated background source write after a legacy state is read.
+  await page.route("**/data/vocabulary-version.json", (route) =>
+    route.fulfill({
+      contentType: "application/json",
+      body: JSON.stringify({
+        version: fixtureVersion,
+        entryCount: words.length,
+        bytes: Buffer.byteLength(fixtureText),
+      }),
+    }),
+  );
   await page.route("**/data/vocabulary.txt", (route) =>
     route.fulfill({
       contentType: "text/plain; charset=utf-8",
-      body: serialize(words),
+      body: fixtureText,
     }),
   );
   await page.goto("/");
@@ -72,6 +87,10 @@ function seededProgress() {
   const time = now - 8 * DAY;
   state.entries[word.id].enrolled = true;
   state.entries[word.id].enrolledAt = time;
+  // This fixture resumes two already-enrolled words. Keep the reading test free
+  // of a fresh-word hero exposure; visibility tracking has its own regressions.
+  state.entries[words[1].id].enrolled = true;
+  state.entries[words[1].id].enrolledAt = time;
   state.entries[word.id].notes = "Ghi chú cá nhân cần được giữ nguyên.";
   state.entries[word.id].goal = "all";
   state.history = [
@@ -318,12 +337,9 @@ test("grammar reading preserves vocabulary, schedules, history, the unfinished s
   const beforeNavigation = await snapshot(page);
   await openReference(page);
   const baseline = await snapshot(page);
-  // The existing home screen may legitimately record a visible word meaning.
-  // Exclude that from the entry transition, then require the complete stored
-  // state (including exposures) to stay byte-for-byte equivalent while reading.
-  expect({ ...baseline, exposures: beforeNavigation.exposures }).toEqual(
-    beforeNavigation,
-  );
+  // Compare every field, including both exposure representations. Neither
+  // navigation into grammar nor reading it may add a vocabulary observation.
+  expect(baseline).toEqual(beforeNavigation);
   expect(baseline.history).toEqual(seed.history);
   expect(baseline.schedules).toEqual(seed.schedules);
   expect(baseline.session).toEqual(seed.session);

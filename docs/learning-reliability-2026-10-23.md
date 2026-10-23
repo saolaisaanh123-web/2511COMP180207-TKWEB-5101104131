@@ -107,6 +107,8 @@ CI ghi lỗi trình duyệt vào GitHub Checks để vẫn đọc được tên 
 
 Trên runner CI, ba bài nạp kho thật dừng ở giới hạn khởi tạo 5 giây, còn 97 bài đạt. Ba bài này dùng thời gian chờ trang sẵn sàng tối đa 30 giây và ngân sách bài 90 giây cho nạp/ghi kho lạnh; các assertion nội dung, số mục và bảo toàn dữ liệu giữ nguyên. Đây không phải phép đo tốc độ trên điện thoại người dùng.
 
+Bộ giả lập của kiểm thử đọc ngữ pháp trả manifest khớp đúng TXT hai mục, thay vì trộn hash kho thật với TXT giả lập gây ghi nguồn nền. Hai từ trong phiên đã lưu đều được ghi là đang học để tách khỏi việc xem từ mới ở trang chủ. Kiểm thử yêu cầu toàn bộ State, kể cả hai dạng lịch sử tiếp xúc, không đổi khi vào và đọc ngữ pháp; không bỏ các trường mới khỏi phép so sánh.
+
 Kiểm thử phát âm trong trình duyệt kiểm tra record danh từ/động từ đọc đúng câu của từng nghĩa bằng giọng Mỹ, không lộ chữ trước khi mở đáp án; audio cá nhân vẫn được phát riêng. Âm thanh được giả lập để xác minh đường đi/phát xong, không dùng kiểm thử đó làm bằng chứng chất lượng TTS thực tế.
 
 Hai nguồn Oxford của nghĩa bổ sung được kiểm tra truy cập lại, đều trả HTTP 200. Bản kiểm thử retention cũ được tách thành hai tình huống: có đủ khoảng nghỉ 30 ngày và vừa tiếp xúc nghĩa cũ hôm trước; tình huống thứ hai chỉ được tính khoảng nghỉ một ngày. Giữ nguyên các kết quả gốc trong cả hai.
