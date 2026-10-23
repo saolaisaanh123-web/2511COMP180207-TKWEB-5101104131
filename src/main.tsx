@@ -225,12 +225,27 @@ function App() {
         setSettings(false);
       }
       if (e.key === "Tab") {
+        const collapsed = Array.from(
+          dialog.querySelectorAll("details:not([open])"),
+        );
         const nodes = Array.from(
           dialog.querySelectorAll<HTMLElement>(
-            "button,input,textarea,select,[href]",
+            'button,input,textarea,select,[href],summary,[tabindex]:not([tabindex="-1"])',
           ),
         ).filter(
-          (n) => !(n as HTMLButtonElement).disabled && n.offsetParent !== null,
+          (n) =>
+            !n.matches(":disabled") &&
+            n.tabIndex >= 0 &&
+            n.offsetParent !== null &&
+            // Chromium can report layout boxes for a disclosure's hidden
+            // inputs after it has been opened and closed. Only its summary
+            // remains in the keyboard order while the disclosure is closed.
+            collapsed.every(
+              (details) =>
+                details === n ||
+                !details.contains(n) ||
+                details.querySelector(":scope > summary")?.contains(n),
+            ),
         );
         const first = nodes[0],
           last = nodes[nodes.length - 1];
@@ -1218,22 +1233,26 @@ function App() {
         }
         onClick={(e) => e.stopPropagation()}
       >
-        <button className="close icon" aria-label="Đóng" onClick={close}>
-          <X size={20} />
-        </button>
-        {notice && (
-          <div className="notice" role="status">
-            {notice}
-            <button
-              className="icon"
-              aria-label="Đóng thông báo"
-              onClick={() => setNotice("")}
-            >
-              <X size={15} />
-            </button>
-          </div>
-        )}
-        {content}
+        <div className="modal-controls">
+          <button className="close icon" aria-label="Đóng" onClick={close}>
+            <X size={20} />
+          </button>
+        </div>
+        <div className="modal-content" tabIndex={0}>
+          {notice && (
+            <div className="notice" role="status">
+              {notice}
+              <button
+                className="icon"
+                aria-label="Đóng thông báo"
+                onClick={() => setNotice("")}
+              >
+                <X size={15} />
+              </button>
+            </div>
+          )}
+          {content}
+        </div>
       </section>
     </div>
   );

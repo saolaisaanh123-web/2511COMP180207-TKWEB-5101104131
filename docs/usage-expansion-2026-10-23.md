@@ -32,6 +32,14 @@ Vào **Kho từ → Trạng thái → Có cách dùng đã đối chiếu**. M�
 
 Bài ngữ cảnh của phiên mới luân phiên câu gốc/câu bổ sung dựa trên lần làm đầu gần nhất. Đề và nháp đã tạo giữ nguyên qua tải lại hoặc sao lưu. Lượt sửa sai không thành bằng chứng nhớ lâu. Ghi chú chỉ gắn khi ID, đầu từ, từ loại và nghĩa Việt khớp; bản sửa cá nhân đổi nghĩa/từ loại không nhận nhầm quy tắc nguồn.
 
+## Sửa thêm lỗi đọc nội dung dài
+
+Kiểm tra trực tiếp bản Pages đầu đợt phát hiện nút Đóng dạng sticky có thể che một phần chữ khi cuộn từ điển trên điện thoại và máy tính. Đã tái hiện bằng đo vùng chữ thực tế giao với nút, trước khi sửa.
+
+Nút Đóng nay có hàng riêng; phần nội dung cuộn độc lập, có thể nhận focus và cuộn bằng bàn phím. Giữ màu sắc, kích thước nút và thiết kế chủ đạo. Cài đặt, biên tập, xem trước cập nhật và khôi phục dùng chung bố cục này.
+
+Rà bàn phím còn phát hiện phần cấu hình Supabase thu gọn bị bỏ qua khi Tab, và Chromium có thể trả layout box cho input đã ẩn sau khi đóng disclosure. Bộ giữ focus nay nhận summary/vùng cuộn và loại phần bị thu gọn, giữ vòng Tab/Shift+Tab trong cửa sổ. Đây là kiểm tra bố cục và thao tác cấu hình, không phải đồng bộ Supabase thật.
+
 ## Tệp thay đổi và bảo toàn dữ liệu
 
 | Tệp | Mục đích |
@@ -40,11 +48,12 @@ Bài ngữ cảnh của phiên mới luân phiên câu gốc/câu bổ sung dự
 | `data/usage/group-g.json` | 16 danh từ, tính đếm được và đối chiếu nghĩa |
 | `data/usage/group-h.json` | 16 tính từ, giới từ và cấu trúc |
 | `src/usage.test.ts` | Kiểm tra đủ 144 mục, 32 danh từ mới qua hai đợt, câu luyện và đáp án trung tính |
-| `e2e/usage-expansion.spec.ts` | Thêm hai ca 320/390 px: nội dung mới, snapshot câu thứ hai, giữ nháp và xuất/validate JSON thật |
+| `e2e/usage-expansion.spec.ts` | Hai ca nội dung mới 320/390 px; ba hồi quy che chữ, cuộn và focus ở 320×568, 844×320, 1440×1000 |
+| `src/main.tsx`, `src/style.css` | Tách vùng đóng/vùng cuộn, giữ focus cho phần đọc và disclosure, không che chữ |
 | `scripts/check-production.mjs` | Kiểm bộ lọc toàn kho và cả ba nhóm mới ở gốc/con, online/offline, cùng mục suggest cũ |
 | `README.md`, `docs/NEXT-SESSION.md`, báo cáo này | Phạm vi hiện tại và bàn giao |
 
-TXT giữ nguyên từng byte, SHA256 `10392288d69ba11cc6e5fc74e02e0cc3654bea50cda229254236848d2d3a87f4`, 8.878.717 byte. Không thay mã giao diện, schema IndexedDB, ID, contentKey, lịch sử, lịch ôn, thuật toán chọn từ hoặc định dạng sao lưu. Nội dung mới được đóng gói cùng ứng dụng để đọc offline sau khi tải cập nhật; mở trang nguồn cần Internet.
+TXT giữ nguyên từng byte, SHA256 `10392288d69ba11cc6e5fc74e02e0cc3654bea50cda229254236848d2d3a87f4`, 8.878.717 byte. Giữ thiết kế chủ đạo; phần giao diện chỉ sửa bố cục/cuộn/focus của cửa sổ dùng chung. Không thay schema IndexedDB, ID, contentKey, lịch sử, lịch ôn, thuật toán chọn từ hoặc định dạng sao lưu. Nội dung mới được đóng gói cùng ứng dụng để đọc offline sau khi tải cập nhật; mở trang nguồn cần Internet.
 
 ## Kiểm chứng nguồn
 
@@ -59,7 +68,7 @@ Chế độ offline chỉ kiểm tra khai báo/liên kết với canonical, khô
 
 - **335/335 unit**, 27 tệp; toàn bộ 144 mục khớp canonical, có câu thứ hai tạo chỗ trống được, nguồn đầy đủ và đáp án thay thế không cộng điểm nhớ từ đích. Kiểm tra tính đếm được bao gồm đủ 32 danh từ mới qua hai đợt.
 - **37/37 kiểm thử dữ liệu**: 20 kiểm tra chất lượng + 17 kiểm tra rà toàn kho; TXT không đổi.
-- **106/106 E2E Chromium**. Hai ca mới ở 320/390 px mở đúng nội dung/nguồn, không tràn ngang; tạo phiên thật với câu thứ hai của spend/paper/familiar từ lịch sử câu gốc, giữ nháp qua tải lại, tải JSON thật và kiểm tra hợp lệ mà không thay lịch sử/lịch ôn. Giữ nguyên sáu ca cách dùng qua hai đợt và các luồng học cũ.
+- **109/109 E2E Chromium**. Hai ca mới ở 320/390 px mở đúng nội dung/nguồn, không tràn ngang; tạo phiên thật với câu thứ hai của spend/paper/familiar từ lịch sử câu gốc, giữ nháp qua tải lại, tải JSON thật và kiểm tra hợp lệ mà không thay lịch sử/lịch ôn. Sáu ca cách dùng qua hai đợt và các luồng học cũ vẫn đạt. Ba hồi quy bổ sung ở 320×568, 844×320 và 1440×1000 xác nhận chữ không bị nút Đóng che, cuộn nội dung riêng, Tab tới nguồn và mở/đóng cấu hình thu gọn không thoát focus.
 - **TypeScript và build production đạt**. Ở cả gốc và đường dẫn con, online/offline đều tải 5.560 mục, 52 bài ngữ pháp, bộ lọc 144 mục cách dùng và nội dung mới đủ ba nhóm. Kiểm tra cả suggest cũ và spend/paper/familiar mới. Trạng thái thiếu JavaScript đạt; không cache request riêng tư/API.
 - **Nguồn live 65/65, receipt 65/65, metadata 164/164** đạt. Có lượt rà nội dung độc lập cho 48 mục mới; không có kiểm thử Supabase thật.
 

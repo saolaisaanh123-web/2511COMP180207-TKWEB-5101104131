@@ -2,7 +2,7 @@
 
 Cập nhật 23/10/2026. Đợt sửa theo kiểm tra tổng thể đã triển khai các lỗi lịch khác nghĩa, thống kê không thống nhất, lựa chọn từ lặp, thứ tự kỹ năng, chấm đáp án mơ hồ, phản hồi discuss, nháp viết và mobile. Đã bổ sung hai nghĩa A1 của like/lie theo Oxford American, kho hiện có 5.560 mục sẵn học và 346 IPA. Giữ nguyên 5.558 mục cũ từng byte. Không cần rà lại nguồn từ đầu. Người dùng đã cho phép commit/push sau khi nguồn và kiểm thử đạt.
 
-**Kiểm thử bàn giao mới nhất:** 335 unit, 37 data và 106 E2E Chromium đạt; TypeScript/build, production đường dẫn gốc/con, offline và thông báo thiếu JavaScript đạt. Báo cáo hiện hành: [usage-expansion-2026-10-23.md](usage-expansion-2026-10-23.md). Đợt sửa độ tin cậy trước hai đợt mở rộng có 333 unit/100 E2E, xem [learning-reliability-2026-10-23.md](learning-reliability-2026-10-23.md). Không coi Supabase mô phỏng là kiểm thử cloud thật.
+**Kiểm thử bàn giao mới nhất:** 335 unit, 37 data và 109 E2E Chromium đạt; TypeScript/build, production đường dẫn gốc/con, offline và thông báo thiếu JavaScript đạt. Báo cáo hiện hành: [usage-expansion-2026-10-23.md](usage-expansion-2026-10-23.md). Đợt sửa độ tin cậy trước hai đợt mở rộng có 333 unit/100 E2E, xem [learning-reliability-2026-10-23.md](learning-reliability-2026-10-23.md). Không coi Supabase mô phỏng là kiểm thử cloud thật.
 
 **Phần còn lại thực sự:** cách dùng/ngữ cảnh thứ hai hiện có 144 mục; 5.416 mục còn lại vẫn một câu, 12 hội thoại/48 ID mục tiêu, phần lớn phát âm còn dựa TTS. Chưa có Supabase thật; snapshot cloud vẫn chứa toàn kho và giới hạn 20 MiB, chưa chuyển sang delta. Chưa chấm ngữ pháp tổng quát hoặc tự nhận đã phủ mọi nghĩa của mỗi đầu từ. Đây là các giới hạn phát triển tiếp, không phải những lỗi đã sửa bên dưới còn đang tồn tại.
 
@@ -13,8 +13,10 @@ Cập nhật 23/10/2026. Đợt sửa theo kiểm tra tổng thể đã triển 
 - Đã đọc/rà nguồn trực tiếp và rà nội dung độc lập. 48 mục dẫn 65 URL Oxford American, 62 URL chưa có ở a-e, 3 nguồn dùng lại. Live65/65, receipt65/65 khớp cache gốc, offline toàn bộ144mục/164URL đạt. Nhận dạng nguồn không tự chứng nhận quy tắc/ví dụ.
 - Sửa draft tránh kết luận sai với attend to, enter into, grateful for hoặc insist+indicative vốn có thể hợp lệ ở ngữ cảnh khác. different from/than có lưu ý vùng; business/room/glass/chicken/paper/time/success bám đúng nghĩa. Câu mới của mỗi mục khác bối cảnh câu canonical; synonym chỉ trung tính theo đúng câu.
 - Bổ sung hai ca UI320/390 thật trong e2e/usage-expansion.spec.ts: tạo các snapshot câu2 spend/paper/familiar từ lịch sử câu1, giữ nháp qua reload và xuất/validate JSON thật; lịch sử và lịch ôn không đổi. scripts/check-production.mjs kiểm suggest và cả3nhóm mới, filter144, online/offline ở gốc/con.
-- Không chỉnh mã giao diện hoặc schema lưu trữ, không thêm dependency/API. Dùng bộ lọc đã có Kho từ → Trạng thái → Có cách dùng đã đối chiếu. Báo cáo hiện hành: [usage-expansion-2026-10-23.md](usage-expansion-2026-10-23.md).
-- Bản đã chốt đạt 335 unit, 37 data, 106 E2E; TypeScript/build và production gốc/con/offline đạt. Bundle chính khoảng958kB/gzip272kB; trước khi tăng nội dung quy mô lớn nên xem xét cách chia gói/cache, giữ getUsage và snapshot tương thích.
+- Giữ thiết kế và schema lưu trữ, không thêm dependency/API. Dùng bộ lọc đã có Kho từ → Trạng thái → Có cách dùng đã đối chiếu. Báo cáo hiện hành: [usage-expansion-2026-10-23.md](usage-expansion-2026-10-23.md).
+- Bản đã chốt đạt 335 unit, 37 data, 109 E2E; TypeScript/build và production gốc/con/offline đạt. Bundle chính khoảng958kB/gzip272kB; trước khi tăng nội dung quy mô lớn nên xem xét cách chia gói/cache, giữ getUsage và snapshot tương thích.
+
+- Kiểm tra live sau commit45e39fd phát hiện .close sticky che chữ khi cuộn. Đã tách .modal-controls/.modal-content để nút đóng không chồng vùng đọc; content nhận focus và cuộn riêng. Focus trap nhận summary/tabindex0 và lọc descendants của closed details để không thoát ra nền sau khi mở/đóng cấu hình. Ba hồi quy thật 320×568/844×320/1440×1000 đo chữ, cuộn, Tab nguồn và settings disclosure; có baseline fail trước sửa.
 
 ## Mở rộng cách dùng — đợt 1, 23/10/2026
 

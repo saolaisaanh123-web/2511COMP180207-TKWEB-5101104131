@@ -476,3 +476,182 @@ for (const width of [320, 390]) {
     expect(validated.schedules).toEqual(initial.schedules);
   });
 }
+
+for (const viewport of [
+  { width: 320, height: 568 },
+  { width: 844, height: 320 },
+  { width: 1440, height: 1000 },
+]) {
+  test(`long usage notes scroll below a separate close control and their source is keyboard reachable at ${viewport.width}px`, async ({
+    page,
+  }) => {
+    await page.setViewportSize(viewport);
+    const paper = nextTargets.find((word) => word.word === "paper")!;
+    const version = await open(page, [paper]);
+    await seed(page, enrolledState([paper], version));
+    await selectUsage(page);
+    await page.locator(".word-card").click();
+    const dialog = page.getByRole("dialog", { name: "Chi tiết mục từ" });
+    await expect(dialog.locator(".usage-countability")).toBeVisible();
+
+    // Test the actual text rectangles while moving long explanations and
+    // source text past the close button. Clipped text outside the scrollport
+    // is excluded; a sticky button covering visible text must fail.
+    const overlaps = await dialog.evaluate((modal) => {
+      const body =
+        modal.querySelector<HTMLElement>(".modal-content") ||
+        (modal as HTMLElement);
+      const close = modal.querySelector<HTMLElement>(".close")!;
+      const paragraphs = Array.from(
+        modal.querySelectorAll<HTMLElement>(
+          ".usage-patterns p, .usage-countability, .usage-sources a",
+        ),
+      );
+      const overlaps: { text: string; width: number; height: number }[] = [];
+      for (const paragraph of paragraphs) {
+        body.scrollTop +=
+          paragraph.getBoundingClientRect().top -
+          close.getBoundingClientRect().top -
+          4;
+        const clip = body.getBoundingClientRect();
+        const button = close.getBoundingClientRect();
+        const walker = document.createTreeWalker(
+          modal.querySelector(".dict-entry")!,
+          NodeFilter.SHOW_TEXT,
+        );
+        let node: Node | null;
+        while ((node = walker.nextNode())) {
+          if (!node.textContent?.trim()) continue;
+          const range = document.createRange();
+          range.selectNodeContents(node);
+          for (const rect of range.getClientRects()) {
+            const left = Math.max(rect.left, clip.left, button.left);
+            const right = Math.min(rect.right, clip.right, button.right);
+            const top = Math.max(rect.top, clip.top, button.top);
+            const bottom = Math.min(rect.bottom, clip.bottom, button.bottom);
+            if (right - left > 1 && bottom - top > 1)
+              overlaps.push({
+                text: node.textContent.trim().slice(0, 100),
+                width: right - left,
+                height: bottom - top,
+              });
+          }
+        }
+      }
+      return overlaps;
+    });
+    expect(
+      overlaps,
+      "The close button must not cover readable usage text",
+    ).toEqual([]);
+
+    const controls = dialog.locator(".modal-controls");
+    const body = dialog.locator(".modal-content");
+    const close = dialog.getByRole("button", { name: "Đóng", exact: true });
+    await expect(controls).toBeVisible();
+    await expect(body).toBeVisible();
+    const controlBounds = (await controls.boundingBox())!;
+    const bodyBounds = (await body.boundingBox())!;
+    expect(bodyBounds.y).toBeGreaterThanOrEqual(
+      controlBounds.y + controlBounds.height - 1,
+    );
+    expect(
+      await body.evaluate(
+        (element) => element.scrollHeight > element.clientHeight,
+      ),
+    ).toBe(true);
+    await body.evaluate((element) => {
+      element.scrollTop = 0;
+    });
+    await body.focus();
+    await page.keyboard.press("PageDown");
+    await expect
+      .poll(() => body.evaluate((element) => element.scrollTop))
+      .toBeGreaterThan(0);
+    await expect(close).toBeInViewport({ ratio: 1 });
+    expect(await dialog.evaluate((element) => element.scrollTop)).toBe(0);
+
+    const source = dialog.locator(".usage-sources a").first();
+    await close.focus();
+    const possibleStops = await dialog
+      .locator(
+        'button, a[href], input, select, textarea, summary, [tabindex="0"]',
+      )
+      .count();
+    let reachedSource = false;
+    for (let index = 0; index <= possibleStops; index++) {
+      await page.keyboard.press("Tab");
+      if (
+        await source.evaluate((element) => document.activeElement === element)
+      ) {
+        reachedSource = true;
+        break;
+      }
+    }
+    expect(reachedSource, "Tab navigation must reach the usage source").toBe(
+      true,
+    );
+    await expect(source).toBeInViewport({ ratio: 1 });
+    const sourceBounds = (await source.boundingBox())!;
+    expect(sourceBounds.y).toBeGreaterThanOrEqual(bodyBounds.y - 1);
+    expect(sourceBounds.y + sourceBounds.height).toBeLessThanOrEqual(
+      bodyBounds.y + bodyBounds.height + 1,
+    );
+    await expect(close).toBeInViewport({ ratio: 1 });
+    expect(
+      await page.evaluate(() => document.documentElement.scrollWidth),
+    ).toBe(viewport.width);
+    await close.focus();
+    await page.keyboard.press("Enter");
+    await expect(dialog).toHaveCount(0);
+
+    // The final unconfigured-cloud disclosure must participate in the same
+    // keyboard loop; trapping at the preceding backup button hides it.
+    await page.getByRole("button", { name: "Cài đặt", exact: true }).click();
+    const settings = page.getByRole("dialog", { name: "Cài đặt và sao lưu" });
+    const settingsClose = settings.getByRole("button", {
+      name: "Đóng",
+      exact: true,
+    });
+    const configuration = settings.locator("details").filter({
+      hasText: "Cấu hình Supabase công khai trên thiết bị này",
+    });
+    const summary = configuration.locator("summary");
+    await expect(configuration).not.toHaveAttribute("open", "");
+    await settingsClose.focus();
+    const settingsStops = await settings
+      .locator(
+        'button, a[href], input, select, textarea, summary, [tabindex="0"]',
+      )
+      .count();
+    let reachedConfiguration = false;
+    for (let index = 0; index <= settingsStops; index++) {
+      await page.keyboard.press("Tab");
+      if (
+        await summary.evaluate((element) => document.activeElement === element)
+      ) {
+        reachedConfiguration = true;
+        break;
+      }
+    }
+    expect(
+      reachedConfiguration,
+      "Tab navigation must reach the final settings disclosure",
+    ).toBe(true);
+    await expect(summary).toBeInViewport({ ratio: 1 });
+    await page.keyboard.press("Enter");
+    await expect(configuration).toHaveAttribute("open", "");
+    await expect(
+      settings.getByRole("textbox", { name: "URL project", exact: true }),
+    ).toBeVisible();
+    await page.keyboard.press("Enter");
+    await expect(configuration).not.toHaveAttribute("open", "");
+    await page.keyboard.press("Tab");
+    await expect(settingsClose).toBeFocused();
+    await page.keyboard.press("Shift+Tab");
+    await expect(summary).toBeFocused();
+    await settingsClose.focus();
+    await page.keyboard.press("Enter");
+    await expect(settings).toHaveCount(0);
+  });
+}
