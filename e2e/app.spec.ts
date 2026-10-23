@@ -304,10 +304,11 @@ test("audio fallback and unavailable voices do not crash or count a skipped test
 test("existing learner previews Oxford corpus update without losing progress or private edits", async ({
   page,
 }) => {
+  test.setTimeout(90000);
   await page.goto("/");
   await expect(
     page.getByRole("heading", { name: "Hôm nay, mình học gì?" }),
-  ).toBeVisible();
+  ).toBeVisible({ timeout: 30000 });
   const sample = parse(
     readFileSync("public/data/vocabulary.sample.txt", "utf8"),
   );

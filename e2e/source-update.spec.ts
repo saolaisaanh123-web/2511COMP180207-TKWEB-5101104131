@@ -3,6 +3,9 @@ import { readFileSync } from "node:fs";
 import { parse } from "../src/core";
 
 const corpus = parse(readFileSync("public/data/vocabulary.txt", "utf8"));
+// These tests import and persist the real ~9 MB corpus on a cold browser.
+// Keep a bounded startup allowance separate from normal UI assertions.
+test.setTimeout(90000);
 
 test("the reviewed corpus exposes American Oxford and OPAL sources and usable Blog terms with their emerging-usage caveats", async ({
   page,
@@ -12,7 +15,7 @@ test("the reviewed corpus exposes American Oxford and OPAL sources and usable Bl
   await page.goto("/");
   await expect(
     page.getByRole("heading", { name: "Hôm nay, mình học gì?" }),
-  ).toBeVisible();
+  ).toBeVisible({ timeout: 30000 });
   await page.getByRole("button", { name: "Kho từ", exact: true }).click();
   await expect(page.locator(".word-grid")).toHaveAttribute(
     "data-total-items",
@@ -110,7 +113,7 @@ test("a formerly lookup-only word is learnable with its corrected meaning and li
   await page.goto("/");
   await expect(
     page.getByRole("heading", { name: "Hôm nay, mình học gì?" }),
-  ).toBeVisible();
+  ).toBeVisible({ timeout: 30000 });
   const initial = await page.evaluate(async () => {
     const path = "/src/core.ts";
     const core = await import(/* @vite-ignore */ path);
