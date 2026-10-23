@@ -1,0 +1,646 @@
+[
+  {
+    "wordId": "ox-a30d5f870e0bcb-01",
+    "headword": "interested",
+    "partOfSpeech": "adjective",
+    "meaningVi": "quan tâm; có hứng thú",
+    "patterns": [
+      {
+        "form": "interested in somebody/something",
+        "explanation": "Có hứng thú với một người, sự vật hoặc lĩnh vực."
+      },
+      {
+        "form": "interested in doing something",
+        "explanation": "Có hứng thú hoặc muốn tham gia một hoạt động; sau in dùng dạng -ing."
+      },
+      {
+        "form": "interested to hear something",
+        "explanation": "Dùng khi muốn được nghe thông tin hoặc ý kiến. Đây là một cấu trúc hợp lệ, không phải mọi trường hợp interested + to đều sai."
+      }
+    ],
+    "note": "Interested nói về người hoặc nhóm có hứng thú; interesting nói về người hoặc điều thu hút sự chú ý. An interested audience là khán giả quan tâm, không đồng nghĩa an interesting audience. Mục này không nói về interested party theo nghĩa bên có lợi ích liên quan.",
+    "mistake": {
+      "incorrect": "We are interested in rent a studio.",
+      "correct": "We are interested in renting a studio.",
+      "explanation": "In là giới từ trong cấu trúc này; động từ chỉ hoạt động thuê nhà chuyển thành renting."
+    },
+    "example": {
+      "id": "usage-ox-a30d5f870e0bcb-01",
+      "en": "We are interested in renting a small studio near the station.",
+      "vi": "Chúng tôi quan tâm đến việc thuê một căn hộ studio nhỏ gần nhà ga."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/interested",
+        "checkedAt": "2026-10-23T00:59:30.075680+00:00",
+        "sha256": "f46f332b1fb41ba7282adca94236bdd24a34279be7bf8e931e1d6e2c0facc034",
+        "title": "interested adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/interesting",
+        "checkedAt": "2026-10-23T00:59:30.061812+00:00",
+        "sha256": "6f860b4476e04684a1fbc1ea23cb8988dd998eda29d0c403b1eae10e79b435a3",
+        "title": "interesting adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-637ab2808704d8-01",
+    "headword": "interesting",
+    "partOfSpeech": "adjective",
+    "meaningVi": "thú vị",
+    "patterns": [
+      {
+        "form": "an interesting + danh từ",
+        "explanation": "Đặt trước danh từ để mô tả người hoặc điều thu hút sự chú ý."
+      },
+      {
+        "form": "find something interesting",
+        "explanation": "Thấy điều gì thú vị; interesting mô tả điều được nhận xét."
+      },
+      {
+        "form": "It is interesting to do something / that + mệnh đề",
+        "explanation": "Dùng để nhận xét một việc tìm hiểu, so sánh hoặc một thông tin đáng chú ý."
+      }
+    ],
+    "note": "Interesting mô tả điều gây hứng thú, còn interested mô tả sự quan tâm. Một người cũng có thể interesting nếu khiến người khác muốn tìm hiểu; không áp dụng máy móc mẹo “-ing chỉ dành cho đồ vật”.",
+    "mistake": {
+      "incorrect": "We saw an interestingly photograph.",
+      "correct": "We saw an interesting photograph.",
+      "explanation": "Ở đây cần tính từ interesting bổ nghĩa cho photograph. Interestingly là trạng từ và không thay trực tiếp tính từ ở vị trí này."
+    },
+    "example": {
+      "id": "usage-ox-637ab2808704d8-01",
+      "en": "I found the discussion about city gardens interesting.",
+      "vi": "Tôi thấy cuộc thảo luận về những khu vườn trong thành phố thú vị.",
+      "alternatives": ["fascinating", "stimulating"]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/interesting",
+        "checkedAt": "2026-10-23T00:59:30.061812+00:00",
+        "sha256": "6f860b4476e04684a1fbc1ea23cb8988dd998eda29d0c403b1eae10e79b435a3",
+        "title": "interesting adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/interested",
+        "checkedAt": "2026-10-23T00:59:30.075680+00:00",
+        "sha256": "f46f332b1fb41ba7282adca94236bdd24a34279be7bf8e931e1d6e2c0facc034",
+        "title": "interested adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-60e6aa4ad2d315-01",
+    "headword": "bored",
+    "partOfSpeech": "adjective",
+    "meaningVi": "chán; cảm thấy không còn hứng thú",
+    "patterns": [
+      {
+        "form": "be/get bored",
+        "explanation": "Cảm thấy hoặc bắt đầu chán vì không có gì thú vị để làm."
+      },
+      {
+        "form": "bored with somebody/something",
+        "explanation": "Chán một người hoặc sự việc."
+      },
+      {
+        "form": "bored with doing something",
+        "explanation": "Chán việc làm một hoạt động; sau with dùng dạng -ing."
+      }
+    ],
+    "note": "Bored diễn tả cảm giác của người trải nghiệm; boring mô tả người hoặc việc gây ra sự chán. I am bored và I am boring đều có thể đúng, nhưng nghĩa khác nhau: tôi thấy chán và tôi là người khiến người khác chán.",
+    "mistake": {
+      "incorrect": "I am bored with wait in line.",
+      "correct": "I am bored with waiting in line.",
+      "explanation": "Sau with cần một danh từ hoặc dạng -ing của hoạt động; không dùng động từ nguyên thể wait theo cách này."
+    },
+    "example": {
+      "id": "usage-ox-60e6aa4ad2d315-01",
+      "en": "I became bored with listening to automated hold messages.",
+      "vi": "Tôi bắt đầu thấy chán việc nghe những thông báo chờ máy tự động."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/bored",
+        "checkedAt": "2026-10-23T00:59:30.085241+00:00",
+        "sha256": "468d3ffda962440393f1f89290a42b2d0fd9b0ad26ead827795392cd75722b4e",
+        "title": "bored adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/boring",
+        "checkedAt": "2026-10-23T00:59:30.061861+00:00",
+        "sha256": "dc77a89539e4e3dcd810a0425247318417a950780bca2a2958ba3ca7f6f655fb",
+        "title": "boring adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-f953f70b913234-01",
+    "headword": "boring",
+    "partOfSpeech": "adjective",
+    "meaningVi": "nhàm chán; gây buồn chán",
+    "patterns": [
+      {
+        "form": "a boring + danh từ",
+        "explanation": "Mô tả người, hoạt động hoặc sự vật không thú vị và dễ khiến người khác chán."
+      },
+      {
+        "form": "find something boring",
+        "explanation": "Nhận xét rằng điều gì làm mình thấy chán."
+      },
+      {
+        "form": "boring for somebody",
+        "explanation": "Nêu người thấy hoạt động hoặc sự việc nhàm chán."
+      }
+    ],
+    "note": "Boring nói về tác động gây chán, không phải cảm giác đang chán. A boring person vẫn đúng: đó là người khiến người khác chán. Boringly là trạng từ, như trong một cụm có tính từ theo sau, không thay boring đứng một mình sau be.",
+    "mistake": {
+      "incorrect": "The instructions are boringly.",
+      "correct": "The instructions are boring.",
+      "explanation": "Sau are, câu này cần tính từ mô tả instructions. Boringly đứng một mình không hoàn thành phần mô tả trong câu này."
+    },
+    "example": {
+      "id": "usage-ox-f953f70b913234-01",
+      "en": "Sorting the same receipts for hours can be boring.",
+      "vi": "Việc phân loại mãi những hóa đơn giống nhau suốt nhiều giờ có thể rất nhàm chán.",
+      "alternatives": ["dull", "tedious"]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/boring",
+        "checkedAt": "2026-10-23T00:59:30.061861+00:00",
+        "sha256": "dc77a89539e4e3dcd810a0425247318417a950780bca2a2958ba3ca7f6f655fb",
+        "title": "boring adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/bored",
+        "checkedAt": "2026-10-23T00:59:30.085241+00:00",
+        "sha256": "468d3ffda962440393f1f89290a42b2d0fd9b0ad26ead827795392cd75722b4e",
+        "title": "bored adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-8d1c8a7a12c373-01",
+    "headword": "excited",
+    "partOfSpeech": "adjective",
+    "meaningVi": "hào hứng",
+    "patterns": [
+      {
+        "form": "excited about something / about doing something",
+        "explanation": "Hào hứng về điều gì hoặc việc sắp làm."
+      },
+      {
+        "form": "excited to do something",
+        "explanation": "Hào hứng khi có cơ hội hoặc biết mình sẽ làm một việc."
+      },
+      {
+        "form": "excited at/by something",
+        "explanation": "Có thể dùng khi nêu điều hoặc cảnh tượng khơi dậy sự hào hứng."
+      }
+    ],
+    "note": "Trong nghĩa đang học, excited diễn tả cảm xúc hào hứng; exciting mô tả điều tạo ra cảm xúc đó. Các giới từ about, at và by đều xuất hiện trong nguồn tùy cách diễn đạt, không có một giới từ duy nhất cho mọi câu.",
+    "mistake": {
+      "incorrect": "The group was excited about start the project.",
+      "correct": "The group was excited about starting the project.",
+      "explanation": "Sau giới từ about, hoạt động được diễn đạt bằng starting, không phải động từ nguyên thể start."
+    },
+    "example": {
+      "id": "usage-ox-8d1c8a7a12c373-01",
+      "en": "The volunteers are excited about planting the first trees in the empty lot.",
+      "vi": "Các tình nguyện viên hào hứng với việc trồng những cây đầu tiên trên khu đất trống.",
+      "alternatives": ["ecstatic", "elated"]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/excited",
+        "checkedAt": "2026-10-23T00:59:30.341341+00:00",
+        "sha256": "5c26e4f7e7e22cd2ce4605ac0625f2073fd50fb519a78ca9af0b979e6ab1f774",
+        "title": "excited adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/exciting",
+        "checkedAt": "2026-10-23T00:59:30.345173+00:00",
+        "sha256": "6aac76e815896bea7c91958db23fa95af788a410acf5ee0d43ecb32870bad463",
+        "title": "exciting adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-5ae666e5b1a641-01",
+    "headword": "exciting",
+    "partOfSpeech": "adjective",
+    "meaningVi": "hấp dẫn; gây hào hứng",
+    "patterns": [
+      {
+        "form": "an exciting + danh từ",
+        "explanation": "Mô tả sự kiện, trải nghiệm hoặc điều khiến người ta hào hứng."
+      },
+      {
+        "form": "find something exciting",
+        "explanation": "Thấy một việc hấp dẫn hoặc gây hào hứng."
+      }
+    ],
+    "note": "Exciting mô tả tác động của trải nghiệm; excited mô tả cảm xúc của người tham gia. Chẳng hạn, một trải nghiệm exciting có thể khiến người tham gia excited. Không dùng mẹo đuôi từ để đoán mức độ hào hứng hay coi các từ gần nghĩa luôn giống hệt nhau.",
+    "mistake": {
+      "incorrect": "It was an excite experience.",
+      "correct": "It was an exciting experience.",
+      "explanation": "Excite là động từ; để bổ nghĩa cho experience trong cụm danh từ này cần tính từ exciting."
+    },
+    "example": {
+      "id": "usage-ox-5ae666e5b1a641-01",
+      "en": "Watching a whale surface beside our boat was exciting.",
+      "vi": "Được nhìn một con cá voi nổi lên ngay bên thuyền của chúng tôi thật hào hứng.",
+      "alternatives": ["thrilling"]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/exciting",
+        "checkedAt": "2026-10-23T00:59:30.345173+00:00",
+        "sha256": "6aac76e815896bea7c91958db23fa95af788a410acf5ee0d43ecb32870bad463",
+        "title": "exciting adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/excited",
+        "checkedAt": "2026-10-23T00:59:30.341341+00:00",
+        "sha256": "5c26e4f7e7e22cd2ce4605ac0625f2073fd50fb519a78ca9af0b979e6ab1f774",
+        "title": "excited adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com"
+      }
+    ]
+  },
+  {
+    "wordId": "tired-01",
+    "headword": "tired",
+    "partOfSpeech": "adjective",
+    "meaningVi": "mệt mỏi",
+    "patterns": [
+      {
+        "form": "be/look/feel tired",
+        "explanation": "Đang, trông hoặc cảm thấy mệt và cần nghỉ ngơi."
+      },
+      {
+        "form": "too tired to do something",
+        "explanation": "Mệt đến mức không đủ sức làm một việc."
+      }
+    ],
+    "note": "Mục này tập trung vào mệt vì cần nghỉ. Tired of something còn có nghĩa chán hoặc không chịu nổi một việc; đó không nhất thiết là mệt thể chất. Tiring diễn tả điều làm người ta mệt, không phải cảm giác mệt của người đó.",
+    "mistake": {
+      "incorrect": "I am too tired cook dinner.",
+      "correct": "I am too tired to cook dinner.",
+      "explanation": "Sau too tired, dùng to + động từ để nêu việc quá sức trong tình huống này."
+    },
+    "example": {
+      "id": "usage-tired-01",
+      "en": "After carrying the boxes upstairs, I was too tired to cook dinner.",
+      "vi": "Sau khi mang các thùng lên lầu, tôi mệt đến mức không đủ sức nấu bữa tối.",
+      "alternatives": ["weary"]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/tired",
+        "checkedAt": "2026-10-23T00:59:30.349034+00:00",
+        "sha256": "8f796b923b0c10e784eeca9763f5cf3ff90f8f528f94742a74f24620e9badc50",
+        "title": "tired adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/tiring",
+        "checkedAt": "2026-10-23T01:05:33.994591+00:00",
+        "sha256": "0e5fe63c7f5aae87b7ba93c943f3676e1e0a645d1c5ba0b1193167094c209d12",
+        "title": "tiring adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-180366dd3b2cc1-01",
+    "headword": "afraid",
+    "partOfSpeech": "adjective",
+    "meaningVi": "sợ hãi",
+    "patterns": [
+      {
+        "form": "afraid of somebody/something / of doing something",
+        "explanation": "Sợ một người, sự vật hoặc việc có thể xảy ra."
+      },
+      {
+        "form": "afraid to do something",
+        "explanation": "Không dám làm vì cảm thấy sợ hoặc lo điều không hay."
+      }
+    ],
+    "note": "Trong cách dùng thông thường này, afraid đứng sau be/feel, không đặt ngay trước danh từ như a frightened child. Afraid of doing và afraid to do đều có thể đúng tùy ý muốn diễn đạt; không nên ghi nhớ rằng chỉ một mẫu luôn được dùng.",
+    "mistake": {
+      "incorrect": "She is afraid of walk across the bridge alone.",
+      "correct": "She is afraid of walking across the bridge alone.",
+      "explanation": "Sau giới từ of dùng walking. Nếu chọn mẫu với động từ nguyên thể, có thể viết afraid to walk."
+    },
+    "example": {
+      "id": "usage-ox-180366dd3b2cc1-01",
+      "en": "He was afraid to step onto the cracked bridge.",
+      "vi": "Anh ấy sợ không dám bước lên cây cầu bị nứt.",
+      "alternatives": ["scared", "frightened"]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/afraid",
+        "checkedAt": "2026-10-23T00:59:30.367925+00:00",
+        "sha256": "80dc65a6ae4e43fba92c67fba4d933ed2080dda40f044893757289bd2f776d51",
+        "title": "afraid adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-8bf9fd4be091a1-01",
+    "headword": "aware",
+    "partOfSpeech": "adjective",
+    "meaningVi": "biết; nhận thức được",
+    "patterns": [
+      {
+        "form": "aware of something",
+        "explanation": "Biết hoặc nhận thức được một điều, vấn đề hay nguy cơ."
+      },
+      {
+        "form": "aware (that) + mệnh đề",
+        "explanation": "Nêu rõ sự việc mà mình biết hoặc nhận ra; có thể bỏ that."
+      },
+      {
+        "form": "make somebody aware of something",
+        "explanation": "Làm cho ai nhận thức được một điều."
+      }
+    ],
+    "note": "Trong nghĩa biết hoặc nhận thức được một sự việc, aware thường đứng sau be/become hoặc trong make somebody aware. Không áp dụng ghi chú này máy móc cho cách dùng như environmentally aware, vốn được nguồn ghi là một cách dùng khác.",
+    "mistake": {
+      "incorrect": "We were aware of the bus had left.",
+      "correct": "We were aware that the bus had left.",
+      "explanation": "The bus had left là mệnh đề hoàn chỉnh, nên dùng aware that. Nếu theo aware of, cần đổi phần sau thành cụm danh từ phù hợp."
+    },
+    "example": {
+      "id": "usage-ox-8bf9fd4be091a1-01",
+      "en": "The new residents were not aware that the tap water had to be boiled.",
+      "vi": "Những cư dân mới không biết rằng nước máy phải được đun sôi trước khi dùng."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/aware",
+        "checkedAt": "2026-10-23T00:59:30.610426+00:00",
+        "sha256": "ed973b4d647b854efd7354aac9d5a361b46d3deb265ec557a47a416f4fa50738",
+        "title": "aware adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-c9195f0946897b-01",
+    "headword": "responsible",
+    "partOfSpeech": "adjective",
+    "meaningVi": "chịu trách nhiệm",
+    "patterns": [
+      {
+        "form": "responsible for somebody/something",
+        "explanation": "Có trách nhiệm chăm lo một người hoặc phụ trách một việc."
+      },
+      {
+        "form": "responsible for doing something",
+        "explanation": "Có nhiệm vụ thực hiện việc gì; sau for dùng dạng -ing."
+      }
+    ],
+    "note": "Responsible for nêu người hoặc công việc mình phụ trách. Responsible to somebody còn có thể nói về người hoặc cấp mà mình phải báo cáo; vì vậy không được kết luận responsible to luôn sai. Mục này không đồng nhất trách nhiệm công việc với mọi trường hợp quy lỗi gây hậu quả.",
+    "mistake": {
+      "incorrect": "Kim is responsible for order new supplies.",
+      "correct": "Kim is responsible for ordering new supplies.",
+      "explanation": "For là giới từ; dùng ordering khi nêu nhiệm vụ đặt mua vật tư."
+    },
+    "example": {
+      "id": "usage-ox-c9195f0946897b-01",
+      "en": "Our building manager is responsible for replacing the hallway light bulbs.",
+      "vi": "Người quản lý tòa nhà của chúng tôi chịu trách nhiệm thay các bóng đèn ở hành lang."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/responsible",
+        "checkedAt": "2026-10-23T00:59:30.610123+00:00",
+        "sha256": "fcd0123ccc7e0c93e6d63b3d3065119ce4f0d5040efe3b82f53e498990569c4c",
+        "title": "responsible adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-80415b2524ae7d-01",
+    "headword": "capable",
+    "partOfSpeech": "adjective",
+    "meaningVi": "có khả năng",
+    "patterns": [
+      {
+        "form": "capable of something",
+        "explanation": "Có khả năng đạt được hoặc thực hiện điều gì."
+      },
+      {
+        "form": "capable of doing something",
+        "explanation": "Có khả năng làm việc gì; of đi với dạng -ing."
+      }
+    ],
+    "note": "Để nêu hành động có thể làm, dùng capable of + -ing; mẫu tương ứng với able là able to + động từ. A capable teacher còn mô tả một người làm việc giỏi; đây là một cách dùng khác được nguồn ghi nhận.",
+    "mistake": {
+      "incorrect": "This team is capable to repair the trail.",
+      "correct": "This team is capable of repairing the trail.",
+      "explanation": "Khi nêu hành động sau capable, dùng of repairing. Không chuyển nguyên mẫu able to repair sang capable to repair."
+    },
+    "example": {
+      "id": "usage-ox-80415b2524ae7d-01",
+      "en": "This small team is capable of repairing the trail before winter.",
+      "vi": "Nhóm nhỏ này có khả năng sửa con đường mòn trước mùa đông."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/capable",
+        "checkedAt": "2026-10-23T00:59:30.635307+00:00",
+        "sha256": "1b70bed94a7d9cc9f8f85c99bee263c913cb367f47ebd6c62030b86c241c7e42",
+        "title": "capable adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-2d92fc5142e6a2-01",
+    "headword": "suitable",
+    "partOfSpeech": "adjective",
+    "meaningVi": "phù hợp với mục đích hoặc hoàn cảnh",
+    "patterns": [
+      {
+        "form": "suitable for somebody/something",
+        "explanation": "Phù hợp với một người, nhóm người, mục đích hoặc hoàn cảnh."
+      },
+      {
+        "form": "a suitable + danh từ",
+        "explanation": "Dùng trước danh từ khi đánh giá sự phù hợp, như một địa điểm hoặc ứng viên thích hợp."
+      }
+    ],
+    "note": "Suitable đánh giá sự phù hợp với mục đích, không nhất thiết nói người hay vật đó giỏi hoặc tốt trong mọi mặt. Nguồn còn có something suitable to wear; không thể vì thế đổi mọi mẫu suitable for thành suitable to.",
+    "mistake": {
+      "incorrect": "This bag is suitable carry a camera.",
+      "correct": "This bag is suitable for carrying a camera.",
+      "explanation": "Câu này nói mục đích sử dụng của chiếc túi; dùng suitable for carrying a camera. Không đặt động từ carry ngay sau suitable theo cách này."
+    },
+    "example": {
+      "id": "usage-ox-2d92fc5142e6a2-01",
+      "en": "This room is suitable for a small community meeting.",
+      "vi": "Căn phòng này phù hợp để tổ chức một cuộc họp nhỏ của cộng đồng.",
+      "alternatives": ["appropriate"]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/suitable",
+        "checkedAt": "2026-10-23T00:59:30.625501+00:00",
+        "sha256": "1dede9797a45bb88562a44795a3277bf038a69d64b5314bc271d3f17050415c3",
+        "title": "suitable adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-442b7af49162a9-01",
+    "headword": "likely",
+    "partOfSpeech": "adjective",
+    "meaningVi": "có khả năng xảy ra",
+    "patterns": [
+      {
+        "form": "somebody/something is likely to do something",
+        "explanation": "Dự đoán một người hoặc sự vật có khả năng làm hoặc gặp điều gì."
+      },
+      {
+        "form": "It is likely (that) + mệnh đề",
+        "explanation": "Nêu một sự việc có khả năng xảy ra bằng cả mệnh đề."
+      }
+    ],
+    "note": "Likely ở đây là tính từ diễn tả khả năng, không khẳng định chắc chắn xảy ra. Nguồn Mỹ cũng ghi nhận likely là trạng từ và mô tả dạng đứng một mình như will likely arrive là không trang trọng; đó là từ loại khác, không phải câu bị thiếu be.",
+    "mistake": {
+      "incorrect": "The package is likely arrive tomorrow.",
+      "correct": "The package is likely to arrive tomorrow.",
+      "explanation": "Sau tính từ likely, mẫu với hành động cần to arrive. Mẫu trạng từ will likely arrive có cấu trúc khác."
+    },
+    "example": {
+      "id": "usage-ox-442b7af49162a9-01",
+      "en": "The replacement parts are likely to arrive on Friday.",
+      "vi": "Các linh kiện thay thế có khả năng sẽ đến vào thứ Sáu.",
+      "alternatives": ["expected"]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/likely_1",
+        "checkedAt": "2026-10-23T00:59:31.110522+00:00",
+        "sha256": "a6b66aebfd3cce1bcb84198a3d7a4f30a15399d0bef90186d89b93c4ffffaf49",
+        "title": "likely adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/likely_2",
+        "checkedAt": "2026-10-23T01:05:33.528970+00:00",
+        "sha256": "f1a1d0a257035be66a54ceeda005ff8f647641784bdc3eacfadb8f2c4c5422dd",
+        "title": "likely adverb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-c0a6eb55b12b7d-01",
+    "headword": "worth",
+    "partOfSpeech": "adjective",
+    "meaningVi": "có giá trị bằng mức được nêu",
+    "patterns": [
+      {
+        "form": "be worth + số tiền/giá trị",
+        "explanation": "Nêu giá trị quy ra tiền hoặc một mức giá trị tương ứng."
+      },
+      {
+        "form": "How much is something worth?",
+        "explanation": "Hỏi giá trị của một món đồ, không nhất thiết là giá bán được niêm yết."
+      }
+    ],
+    "note": "Mục này là worth theo nghĩa giá trị bằng một mức tiền được nêu. Trong mẫu đang học, worth theo sau be; không đặt worth ngay trước danh từ như một tính từ thông thường. Worth doing ở nghĩa đáng làm là cách dùng khác, không thay cho nghĩa tiền tệ đang học.",
+    "mistake": {
+      "incorrect": "This camera worth two hundred dollars.",
+      "correct": "This camera is worth two hundred dollars.",
+      "explanation": "Trong câu hoàn chỉnh này cần is trước worth để tạo vị ngữ nêu giá trị chiếc máy ảnh."
+    },
+    "example": {
+      "id": "usage-ox-c0a6eb55b12b7d-01",
+      "en": "The repair shop says my old laptop is worth less than fifty dollars.",
+      "vi": "Tiệm sửa chữa nói rằng chiếc máy tính xách tay cũ của tôi có giá trị chưa đến năm mươi đô la."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/worth_1",
+        "checkedAt": "2026-10-23T00:59:31.149452+00:00",
+        "sha256": "77036e6962f3c40cf1b7987f5198a1215cac9ca715639723e4d8dca22979cc72",
+        "title": "worth adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-b0ad6bc1931197-01",
+    "headword": "able",
+    "partOfSpeech": "adjective",
+    "meaningVi": "có khả năng; có thể",
+    "patterns": [
+      {
+        "form": "be able to do something",
+        "explanation": "Có khả năng hoặc điều kiện để làm một việc."
+      },
+      {
+        "form": "will be able to do something",
+        "explanation": "Dùng be able to để diễn tả khả năng trong tương lai."
+      },
+      {
+        "form": "have/has been able to do something",
+        "explanation": "Dùng với thì hoàn thành khi nói về khả năng thực hiện việc gì trong khoảng thời gian đến hiện tại."
+      }
+    ],
+    "note": "Was/were able to thường dùng khi kể việc đã làm được trong một dịp cụ thể. Could có thể diễn tả khả năng chung trong quá khứ; nguồn cũng ghi các ngoại lệ như câu phủ định và động từ tri giác, nên không kết luận could luôn sai khi nói về quá khứ.",
+    "mistake": {
+      "incorrect": "They will able to provide a receipt.",
+      "correct": "They will be able to provide a receipt.",
+      "explanation": "Sau will, cần be trong cụm be able to. Able không thay một mình cho động từ sau will."
+    },
+    "example": {
+      "id": "usage-ox-b0ad6bc1931197-01",
+      "en": "We were able to unlock the storage room with the spare key.",
+      "vi": "Chúng tôi đã mở được phòng chứa đồ bằng chiếc chìa khóa dự phòng."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/able",
+        "checkedAt": "2026-10-23T00:59:30.901706+00:00",
+        "sha256": "bbe2298c010ea1009d0955a53e6e78ba52eb6c2ae229b52b4d3e890d99f5b7dc",
+        "title": "able adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-26c8cca6e668df-01",
+    "headword": "confident",
+    "partOfSpeech": "adjective",
+    "meaningVi": "tự tin",
+    "patterns": [
+      {
+        "form": "be/feel confident",
+        "explanation": "Tin vào khả năng của bản thân trong việc làm điều gì."
+      },
+      {
+        "form": "confident about something / about doing something",
+        "explanation": "Tự tin về việc hoặc hoạt động mình sắp thực hiện."
+      }
+    ],
+    "note": "Trong nghĩa đang học, confident nói về sự tự tin vào khả năng. Confident that/of còn có thể nhấn mạnh sự tin chắc vào kết quả dự đoán; hãy đọc ngữ cảnh, không coi tự tin là bằng chứng chắc chắn thành công.",
+    "mistake": {
+      "incorrect": "She is confident about speak to clients.",
+      "correct": "She is confident about speaking to clients.",
+      "explanation": "Sau about dùng speaking để diễn đạt hoạt động, không dùng động từ nguyên thể speak theo cách này."
+    },
+    "example": {
+      "id": "usage-ox-26c8cca6e668df-01",
+      "en": "Regular practice has made me confident about speaking to customers.",
+      "vi": "Việc luyện tập đều đặn đã giúp tôi tự tin khi nói chuyện với khách hàng."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/confident",
+        "checkedAt": "2026-10-23T00:59:30.913355+00:00",
+        "sha256": "970923ede919b20ec95ddebc73a9947c168ab1ab301f16a70d569af036ba51ff",
+        "title": "confident adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com"
+      }
+    ]
+  }
+]

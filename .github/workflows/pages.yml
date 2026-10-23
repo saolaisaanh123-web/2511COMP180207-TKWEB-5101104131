@@ -22,7 +22,9 @@ jobs:
       - run: npm ci
       - run: npm test
       - name: Verify curated vocabulary and source metadata
-        run: npm run test:data
+        run: |
+          npm run test:data
+          python3 scripts/check-usage-sources.py --offline
       - name: Prepare browser for learning and production verification
         timeout-minutes: 10
         run: |

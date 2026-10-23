@@ -1,0 +1,631 @@
+[
+  {
+    "wordId": "ox-2f2fc7f2e9ce13-01",
+    "headword": "ask",
+    "partOfSpeech": "verb",
+    "meaningVi": "hỏi",
+    "patterns": [
+      {
+        "form": "ask somebody something",
+        "explanation": "Hỏi ai một thông tin, chẳng hạn tên, giá hoặc một câu hỏi; người được hỏi đứng trực tiếp sau ask."
+      },
+      {
+        "form": "ask (somebody) about something",
+        "explanation": "Hỏi về một chủ đề; about giới thiệu điều muốn biết thêm."
+      },
+      {
+        "form": "ask (somebody) + if/whether/what/how…",
+        "explanation": "Nêu nội dung câu hỏi bằng một mệnh đề; bên trong dùng trật tự câu kể, như ask where the office is."
+      }
+    ],
+    "note": "Mục này tập trung nghĩa hỏi để lấy thông tin. Ask còn có các nghĩa yêu cầu hoặc xin phép với mẫu khác; không dùng ask to somebody thay cho ask somebody trong những mẫu hỏi ở đây.",
+    "mistake": {
+      "incorrect": "Can I ask to you a question?",
+      "correct": "Can I ask you a question?",
+      "explanation": "Người được hỏi là you, đặt ngay sau ask; không thêm to trước you trong mẫu ask somebody a question."
+    },
+    "example": {
+      "id": "usage-ask-2026-10-23",
+      "en": "Please ask the pharmacist whether this medicine can make you sleepy.",
+      "vi": "Hãy hỏi dược sĩ xem loại thuốc này có thể khiến bạn buồn ngủ không."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/ask",
+        "title": "ask verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:58:57.759705+00:00",
+        "sha256": "b576767e3afe4a6086e1bbd721c3f6effdfb5add4b4503be54f34c4f4ccf0233"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-879915cfdc2cb4-01",
+    "headword": "tell",
+    "partOfSpeech": "verb",
+    "meaningVi": "nói cho ai biết thông tin",
+    "patterns": [
+      {
+        "form": "tell somebody something / tell something to somebody",
+        "explanation": "Cho ai biết một thông tin: có thể đặt người nhận trước thông tin, hoặc dùng to sau thông tin."
+      },
+      {
+        "form": "tell somebody (that) + mệnh đề",
+        "explanation": "Cho ai biết điều gì; có thể bỏ that nhưng vẫn giữ người nhận trước mệnh đề."
+      },
+      {
+        "form": "tell somebody + what/when/where/how…",
+        "explanation": "Truyền đạt thông tin như thời điểm, nơi chốn hoặc cách làm cho một người cụ thể."
+      }
+    ],
+    "note": "Tell thường có người nhận trực tiếp trong nghĩa truyền đạt thông tin; say tập trung vào lời được nói. Đây không phải quy tắc rằng tell lúc nào cũng phải có người nhận: tell a story và tell the truth là những cách dùng hợp lệ khác.",
+    "mistake": {
+      "incorrect": "She told to me that the room was ready.",
+      "correct": "She told me that the room was ready.",
+      "explanation": "Với mệnh đề that, đặt me ngay sau told. Mẫu có to là told the news to me, khi thông tin là một cụm danh từ."
+    },
+    "example": {
+      "id": "usage-tell-2026-10-23",
+      "en": "Could you tell the receptionist that our flight has been canceled?",
+      "vi": "Bạn có thể báo cho nhân viên lễ tân biết chuyến bay của chúng tôi đã bị hủy không?"
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/tell",
+        "title": "tell verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:58:57.790748+00:00",
+        "sha256": "c713888cd39fe9443ec85ed12bd70859f1422c5d3f8525e1a6d41633a9f138ea"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-a0b967fc60136d-01",
+    "headword": "say",
+    "partOfSpeech": "verb",
+    "meaningVi": "nói, diễn đạt bằng lời",
+    "patterns": [
+      {
+        "form": "say something / say (that) + mệnh đề",
+        "explanation": "Nói một điều hoặc thuật lại nội dung lời nói; thường có thể bỏ that trong mệnh đề tường thuật."
+      },
+      {
+        "form": "say something to somebody",
+        "explanation": "Nếu nêu người nghe trong mẫu này, dùng to; không chuyển thẳng sang cách đặt người nhận của tell."
+      },
+      {
+        "form": "say + lời nói được trích dẫn",
+        "explanation": "Dùng để đưa ra nguyên lời nói, chẳng hạn một lời chào, câu trả lời hoặc lời nhắn."
+      }
+    ],
+    "note": "Trong các mẫu truyền đạt lời nói ở đây, phân biệt say something to somebody với tell somebody something. Không suy thành lệnh cấm mọi cụm say to + động từ: nguồn cũng ghi nhận kiểu lời nhắn He said to meet him here.",
+    "mistake": {
+      "incorrect": "She said me that the gate was closed.",
+      "correct": "She said to me that the gate was closed.",
+      "explanation": "Trong mẫu này, say cần to trước người nghe. Một cách sửa khác là She told me that the gate was closed."
+    },
+    "example": {
+      "id": "usage-say-2026-10-23",
+      "en": "Please say your booking number again so I can check the reservation.",
+      "vi": "Bạn vui lòng đọc lại mã đặt chỗ để tôi kiểm tra thông tin đặt chỗ."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/say_1",
+        "title": "say verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:58:58.070463+00:00",
+        "sha256": "7853535df1a4c7f6f4d897c3ab22c44cdc334076863d5d29df87b7ce0f29e12c"
+      }
+    ]
+  },
+  {
+    "wordId": "speak-01",
+    "headword": "speak",
+    "partOfSpeech": "verb",
+    "meaningVi": "nói",
+    "patterns": [
+      {
+        "form": "speak to/with somebody about something",
+        "explanation": "Trao đổi với ai về một việc; cả to và with đều xuất hiện trong nguồn Anh–Mỹ."
+      },
+      {
+        "form": "speak + trạng từ chỉ cách nói",
+        "explanation": "Miêu tả cách sử dụng giọng nói, như speak clearly hoặc speak slowly; không cần tân ngữ chỉ người trong mẫu này."
+      }
+    ],
+    "note": "Speak có thể gợi cuộc trao đổi có mục đích hoặc trang trọng hơn talk, nhưng đây là xu hướng, không phải ranh giới tuyệt đối. Mẫu nêu người nghe dùng to/with; điều đó không có nghĩa mọi danh từ sau speak đều cần giới từ, vì còn có cách dùng như speak English.",
+    "mistake": {
+      "incorrect": "May I speak the nurse about these instructions?",
+      "correct": "May I speak with the nurse about these instructions?",
+      "explanation": "Khi nurse là người được trao đổi, dùng speak to/with the nurse. Không gắn trực tiếp người nghe như mẫu tell somebody."
+    },
+    "example": {
+      "id": "usage-speak-2026-10-23",
+      "en": "Could I speak with the nurse about these instructions before I leave?",
+      "vi": "Tôi có thể trao đổi với y tá về những hướng dẫn này trước khi ra về không?",
+      "alternatives": ["talk"]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/speak_1",
+        "title": "speak verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:58:57.560798+00:00",
+        "sha256": "25f27a8556dcde246f986d75c631b4a8a0e2aad47a6cbd057b12791f8e4cd494"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/talk_1",
+        "title": "talk verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:58:57.883065+00:00",
+        "sha256": "c7b498c1e8af9ee0b7c483b146071f5fc4b9997511b212fb35bb7f94d0b9bbba"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-ce7611e7481e75-01",
+    "headword": "talk",
+    "partOfSpeech": "verb",
+    "meaningVi": "trò chuyện, trao đổi bằng lời",
+    "patterns": [
+      {
+        "form": "talk to/with somebody",
+        "explanation": "Trò chuyện hoặc trao đổi với một người; to và with đều dùng được trong tiếng Anh Mỹ."
+      },
+      {
+        "form": "talk (to/with somebody) about something",
+        "explanation": "Nêu thêm chủ đề bằng about; có thể không nêu người đối thoại nếu đã rõ."
+      }
+    ],
+    "note": "Talk thường phù hợp một cuộc trò chuyện, nhưng cũng dùng cho việc nghiêm túc. Không biến mẫu talk about thành quy tắc cấm talk + danh từ trong mọi trường hợp: talk business là một cách dùng hợp lệ riêng.",
+    "mistake": {
+      "incorrect": "Let's talk the new neighbor about the noise.",
+      "correct": "Let's talk to the new neighbor about the noise.",
+      "explanation": "Trong ý định trao đổi với người hàng xóm, cần to/with trước người đó. About giới thiệu chủ đề tiếng ồn."
+    },
+    "example": {
+      "id": "usage-talk-2026-10-23",
+      "en": "We usually talk about local events while we wait for the laundry.",
+      "vi": "Chúng tôi thường trò chuyện về các sự kiện trong khu vực trong lúc chờ giặt xong quần áo.",
+      "alternatives": ["speak"]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/talk_1",
+        "title": "talk verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:58:57.883065+00:00",
+        "sha256": "c7b498c1e8af9ee0b7c483b146071f5fc4b9997511b212fb35bb7f94d0b9bbba"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/speak_1",
+        "title": "speak verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:58:57.560798+00:00",
+        "sha256": "25f27a8556dcde246f986d75c631b4a8a0e2aad47a6cbd057b12791f8e4cd494"
+      }
+    ]
+  },
+  {
+    "wordId": "learn-01",
+    "headword": "learn",
+    "partOfSpeech": "verb",
+    "meaningVi": "học; tiếp thu kiến thức hoặc kỹ năng",
+    "patterns": [
+      {
+        "form": "learn something / learn about something",
+        "explanation": "Tiếp thu một kỹ năng hoặc nội dung; about nhấn mạnh tìm hiểu về một chủ đề."
+      },
+      {
+        "form": "learn to do something / learn how to do something",
+        "explanation": "Học cách thực hiện một việc; sau to dùng động từ nguyên mẫu."
+      },
+      {
+        "form": "learn (something) from somebody/something",
+        "explanation": "Nêu người hoặc trải nghiệm giúp mình học được điều gì."
+      }
+    ],
+    "note": "Learn nhìn từ phía người tiếp thu; teach nhìn từ phía người hướng dẫn. Nguồn ghi cả learned và learnt ở dạng quá khứ, nên không tự coi learnt là sai. Ví dụ ở đây dùng nghĩa học kỹ năng, không phải learn nghĩa mới nghe tin.",
+    "mistake": {
+      "incorrect": "I want to learn how use a sewing machine.",
+      "correct": "I want to learn how to use a sewing machine.",
+      "explanation": "Khi how mở đầu cụm chỉ cách làm, giữ how to + động từ; không bỏ to giữa how và use."
+    },
+    "example": {
+      "id": "usage-learn-2026-10-23",
+      "en": "You can learn to repair a flat bicycle tire at the community workshop.",
+      "vi": "Bạn có thể học cách sửa lốp xe đạp bị xẹp tại buổi hướng dẫn của cộng đồng."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/learn",
+        "title": "learn verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:58:58.060170+00:00",
+        "sha256": "43b1edc5c6db868b670bb44ed94dad09f3a13759b8b8e0a71a0ef82fe437942c"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-eb0b4270edb36c-01",
+    "headword": "teach",
+    "partOfSpeech": "verb",
+    "meaningVi": "dạy kiến thức hoặc kỹ năng",
+    "patterns": [
+      {
+        "form": "teach somebody something / teach something to somebody",
+        "explanation": "Dạy cho ai một môn hoặc nội dung; đặt người trước nội dung, hoặc dùng to sau nội dung."
+      },
+      {
+        "form": "teach somebody to do something / teach somebody how to do something",
+        "explanation": "Hướng dẫn để ai có thể tự làm một việc; người học đứng ngay sau teach."
+      }
+    ],
+    "note": "Trong tiếng Anh chuẩn, người hướng dẫn teach và người tiếp thu learn. Ở đây chỉ nói việc truyền kiến thức/kỹ năng; không dùng các nghĩa như trừng phạt ai hoặc khiến ai rút ra bài học để suy ra quy tắc cho mục này.",
+    "mistake": {
+      "incorrect": "The volunteers teach to children how to swim.",
+      "correct": "The volunteers teach children how to swim.",
+      "explanation": "Trong mẫu teach somebody how to do, đặt children trực tiếp sau teach. Mẫu có to đặt nội dung trước, như teach English to children."
+    },
+    "example": {
+      "id": "usage-teach-2026-10-23",
+      "en": "Local volunteers teach children to swim every summer.",
+      "vi": "Các tình nguyện viên địa phương dạy trẻ em bơi vào mỗi mùa hè."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/teach",
+        "title": "teach verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:58:58.074994+00:00",
+        "sha256": "cb15f1190b2492f55c76974297da001a33099a59346f1de1ee78f9d4b7140538"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-d106ccb1fe638b-01",
+    "headword": "borrow",
+    "partOfSpeech": "verb",
+    "meaningVi": "mượn; vay",
+    "patterns": [
+      {
+        "form": "borrow something from somebody/something",
+        "explanation": "Nhận một vật của người hoặc nơi khác để dùng tạm rồi trả lại; from chỉ phía cho mượn."
+      },
+      {
+        "form": "borrow money (from somebody/a bank)",
+        "explanation": "Vay tiền với ý định hoàn trả; có thể lược phía cho vay nếu ngữ cảnh đã rõ."
+      }
+    ],
+    "note": "Chủ ngữ của borrow là bên nhận để dùng tạm; chủ ngữ của lend là bên cho mượn. Phân biệt góc nhìn này khi chuyển câu hỏi giữa Could I borrow…? và Could you lend me…?.",
+    "mistake": {
+      "incorrect": "Could I borrow a ladder to you for the afternoon?",
+      "correct": "Could I borrow a ladder from you for the afternoon?",
+      "explanation": "Người nói muốn nhận thang từ you, nên dùng from. Nếu you là bên đưa thang cho người nói, có thể nói Could you lend me a ladder…?."
+    },
+    "example": {
+      "id": "usage-borrow-2026-10-23",
+      "en": "Students can borrow camping gear from the recreation center before the weekend.",
+      "vi": "Sinh viên có thể mượn đồ cắm trại từ trung tâm giải trí trước cuối tuần."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/borrow",
+        "title": "borrow verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:58:58.170862+00:00",
+        "sha256": "4401f4fb5d334746d0c35f21baad8c07ac7a104329e03975cf778e8b026c7793"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/lend",
+        "title": "lend verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:58:58.356829+00:00",
+        "sha256": "f386eb9d7c31fd17c0da88097c04caa94e91ed28f75de0e862c5fbdf08579c8f"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-5d59b2b96755e2-01",
+    "headword": "lend",
+    "partOfSpeech": "verb",
+    "meaningVi": "cho mượn; cho vay",
+    "patterns": [
+      {
+        "form": "lend somebody something",
+        "explanation": "Cho ai dùng tạm một vật hoặc cho vay tiền; nêu người nhận trước thứ được cho mượn."
+      },
+      {
+        "form": "lend something to somebody",
+        "explanation": "Cùng góc nhìn cho mượn, nhưng nêu vật trước rồi người nhận sau to."
+      }
+    ],
+    "note": "Lend nhìn từ phía cho mượn, borrow nhìn từ phía nhận. Dạng quá khứ là lent. Loan cũng là động từ hợp lệ trong tiếng Anh Mỹ với nghĩa cho mượn/cho vay; không tự đánh sai chỉ vì người học chọn loan ở ngữ cảnh phù hợp.",
+    "mistake": {
+      "incorrect": "Could you lend your ladder from me?",
+      "correct": "Could you lend your ladder to me?",
+      "explanation": "Với lend, người nhận theo sau to; from thuộc cách diễn đạt borrow something from somebody."
+    },
+    "example": {
+      "id": "usage-lend-2026-10-23",
+      "en": "Our neighbor can lend us a ladder while we paint the kitchen.",
+      "vi": "Người hàng xóm có thể cho chúng tôi mượn một chiếc thang trong lúc chúng tôi sơn nhà bếp.",
+      "alternatives": ["loan"]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/lend",
+        "title": "lend verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:58:58.356829+00:00",
+        "sha256": "f386eb9d7c31fd17c0da88097c04caa94e91ed28f75de0e862c5fbdf08579c8f"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/borrow",
+        "title": "borrow verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:58:58.170862+00:00",
+        "sha256": "4401f4fb5d334746d0c35f21baad8c07ac7a104329e03975cf778e8b026c7793"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/loan_2",
+        "title": "loan verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T01:03:17.526677+00:00",
+        "sha256": "2c915ae6d04d9a8b7d56d6fc6f55c13294d4222db8cd9f0d878547aae1c24c89"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-3513d9452af7c1-01",
+    "headword": "promise",
+    "partOfSpeech": "verb",
+    "meaningVi": "hứa",
+    "patterns": [
+      {
+        "form": "promise to do something / promise not to do something",
+        "explanation": "Cam kết chính mình sẽ làm hoặc không làm một việc."
+      },
+      {
+        "form": "promise (somebody) (that) + mệnh đề",
+        "explanation": "Nêu người nhận lời hứa nếu cần, rồi nội dung được cam kết trong một mệnh đề."
+      },
+      {
+        "form": "promise somebody something / promise something to somebody",
+        "explanation": "Cam kết dành hoặc đưa cho ai một điều gì; hai trật tự này cần dùng đúng vị trí người và vật."
+      }
+    ],
+    "note": "Các mẫu ở đây nói lời cam kết. Promise còn có nghĩa báo hiệu điều gì có khả năng xảy ra; không dùng nghĩa đó để kết luận rằng mọi người dùng promise đều đang đưa ra một lời hứa cá nhân.",
+    "mistake": {
+      "incorrect": "I promise to keeping your address private.",
+      "correct": "I promise to keep your address private.",
+      "explanation": "Sau promise to dùng động từ nguyên mẫu keep, không phải keeping. Cũng có thể dùng mệnh đề: I promise that I will keep…."
+    },
+    "example": {
+      "id": "usage-promise-2026-10-23",
+      "en": "I promise to keep your home address private.",
+      "vi": "Tôi hứa sẽ giữ kín địa chỉ nhà của bạn."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/promise_1",
+        "title": "promise verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:58:58.339197+00:00",
+        "sha256": "5a3968817f977520bd342bf611a28ddb01964e6d0c9108d39b99f9225af13f04"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-988180bf0c9328-01",
+    "headword": "offer",
+    "partOfSpeech": "verb",
+    "meaningVi": "đề nghị cho; đưa ra",
+    "patterns": [
+      {
+        "form": "offer somebody something / offer something to somebody",
+        "explanation": "Đề nghị đưa, cung cấp hoặc dành cho ai một thứ; người nhận có thể đứng trước vật hoặc sau to."
+      },
+      {
+        "form": "offer to do something",
+        "explanation": "Tự đề nghị thực hiện một việc cho người khác; người đề nghị cũng là người sẽ làm việc đó."
+      }
+    ],
+    "note": "Khi tự nhận làm một việc, dùng offer to do; khi đề nghị cho ai một vật, dùng offer somebody something. Chọn cấu trúc theo điều muốn đề nghị, không chỉ thay máy móc offer bằng ask hay suggest.",
+    "mistake": {
+      "incorrect": "They offered to helping us move.",
+      "correct": "They offered to help us move.",
+      "explanation": "To trong offer to do mở đầu động từ nguyên mẫu; dùng help, không dùng helping."
+    },
+    "example": {
+      "id": "usage-offer-2026-10-23",
+      "en": "Did your neighbors offer to water the plants while you were away?",
+      "vi": "Hàng xóm có đề nghị tưới cây giúp bạn trong lúc bạn đi vắng không?"
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/offer_1",
+        "title": "offer verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:58:58.371679+00:00",
+        "sha256": "25559cf0c8f40937d8c13a838d18f6a8dfee9747e1d458942ef115b5ba2ea86f"
+      }
+    ]
+  },
+  {
+    "wordId": "expect-01",
+    "headword": "expect",
+    "partOfSpeech": "verb",
+    "meaningVi": "mong đợi; cho rằng sẽ xảy ra",
+    "patterns": [
+      {
+        "form": "expect somebody/something to do something",
+        "explanation": "Cho rằng một người hoặc sự việc sẽ thực hiện/xảy ra theo cách nêu sau to."
+      },
+      {
+        "form": "expect to do something",
+        "explanation": "Cho rằng chính chủ ngữ sẽ làm hoặc trải qua một việc."
+      },
+      {
+        "form": "expect (that) + mệnh đề",
+        "explanation": "Nêu điều được dự đoán bằng một mệnh đề có chủ ngữ và động từ chia phù hợp."
+      }
+    ],
+    "note": "Trong nghĩa đang học, expect nói điều mình cho là sẽ xảy ra; điều đó không bảo đảm kết quả đúng như dự đoán. Expect còn có thể diễn tả yêu cầu/trông đợi theo trách nhiệm, nhưng ví dụ ở đây tập trung vào dự đoán.",
+    "mistake": {
+      "incorrect": "I expect that him to arrive before noon.",
+      "correct": "I expect him to arrive before noon.",
+      "explanation": "Không trộn that + mệnh đề với him to arrive. Một cách sửa khác là I expect that he will arrive before noon."
+    },
+    "example": {
+      "id": "usage-expect-2026-10-23",
+      "en": "Analysts expect food prices to fall after the harvest.",
+      "vi": "Các nhà phân tích dự đoán giá thực phẩm sẽ giảm sau vụ thu hoạch."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/expect",
+        "title": "expect verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:58:58.427780+00:00",
+        "sha256": "3af36b95921c9c72596a437c259793a80479c04683c3e3106297e93167d10ff9"
+      }
+    ]
+  },
+  {
+    "wordId": "refuse-01",
+    "headword": "refuse",
+    "partOfSpeech": "verb",
+    "meaningVi": "từ chối",
+    "patterns": [
+      {
+        "form": "refuse to do something",
+        "explanation": "Nói rằng mình sẽ không làm việc được yêu cầu hoặc đề nghị; dùng to + động từ nguyên mẫu."
+      },
+      {
+        "form": "refuse something",
+        "explanation": "Không nhận điều được đưa ra, chẳng hạn một lời mời hoặc một đề nghị."
+      }
+    ],
+    "note": "Refuse thường là không làm/không nhận, còn deny trong nghĩa phủ nhận là nói điều gì không đúng sự thật. Hai từ có thể gần nhau ở một số nghĩa khác như từ chối cấp thứ gì; không coi chúng là hai từ thay thế cho nhau ở mọi cấu trúc.",
+    "mistake": {
+      "incorrect": "The tenant refused to signing the revised agreement.",
+      "correct": "The tenant refused to sign the revised agreement.",
+      "explanation": "Trong refuse to do, động từ sau to là sign, không phải signing. Đừng chuyển mẫu deny doing sang refuse."
+    },
+    "example": {
+      "id": "usage-refuse-2026-10-23",
+      "en": "The tenant may refuse to sign the revised agreement until the fee is explained.",
+      "vi": "Người thuê có thể từ chối ký thỏa thuận sửa đổi cho đến khi khoản phí được giải thích rõ."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/refuse1",
+        "title": "refuse verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:58:58.890620+00:00",
+        "sha256": "23c1b227c97a40f65f8dbccd60f2c9c61abf29657f305bf1a17eded7cf8d9490"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/deny",
+        "title": "deny verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:58:58.625415+00:00",
+        "sha256": "092f6b3d8f74cabfe4ff1983f1c6814e38852bdd5e045abe49d5a0a6bdcfcd29"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-3026a0ca485e58-01",
+    "headword": "deny",
+    "partOfSpeech": "verb",
+    "meaningVi": "phủ nhận",
+    "patterns": [
+      {
+        "form": "deny something / deny (that) + mệnh đề",
+        "explanation": "Phủ nhận một lời buộc tội, một nhận định hoặc điều được nói là có thật."
+      },
+      {
+        "form": "deny doing something",
+        "explanation": "Phủ nhận mình đã làm một việc; sau deny dùng dạng V-ing trong mẫu này."
+      }
+    ],
+    "note": "Deny doing không có nghĩa từ chối sẽ làm việc đó: nó phủ nhận việc đã làm hoặc đang bị gán cho mình. Refuse to do diễn tả không đồng ý làm. Động từ deny có những nghĩa khác, nhưng không gắn chúng vào bài luyện phủ nhận này.",
+    "mistake": {
+      "incorrect": "She denied to damage the fence.",
+      "correct": "She denied damaging the fence.",
+      "explanation": "Nếu muốn phủ nhận việc làm hỏng hàng rào, dùng deny damaging. To damage không tạo mẫu phủ nhận hành động ở đây."
+    },
+    "example": {
+      "id": "usage-deny-2026-10-23",
+      "en": "Teachers deny that the new grading policy favors athletes.",
+      "vi": "Các giáo viên phủ nhận việc chính sách chấm điểm mới ưu ái các vận động viên."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/deny",
+        "title": "deny verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:58:58.625415+00:00",
+        "sha256": "092f6b3d8f74cabfe4ff1983f1c6814e38852bdd5e045abe49d5a0a6bdcfcd29"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/refuse1",
+        "title": "refuse verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:58:58.890620+00:00",
+        "sha256": "23c1b227c97a40f65f8dbccd60f2c9c61abf29657f305bf1a17eded7cf8d9490"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-181229424893bb-01",
+    "headword": "manage",
+    "partOfSpeech": "verb",
+    "meaningVi": "quản lý; điều hành",
+    "patterns": [
+      {
+        "form": "manage a business/team/project",
+        "explanation": "Điều hành hoặc phụ trách một tổ chức, tập thể hay công việc; tân ngữ đứng trực tiếp sau manage."
+      },
+      {
+        "form": "manage time/money/information",
+        "explanation": "Quản lý việc sử dụng thời gian, tiền hoặc thông tin một cách hợp lý; vẫn là mẫu manage + danh từ."
+      }
+    ],
+    "note": "Nghĩa mục hiện tại là quản lý/điều hành. Manage to do nghĩa xoay xở làm được một việc là nghĩa khác; không dùng các câu manage to làm bằng chứng rằng đã dùng đúng nghĩa điều hành đang học.",
+    "mistake": {
+      "incorrect": "They manage to a busy cafe.",
+      "correct": "They manage a busy cafe.",
+      "explanation": "Trong nghĩa điều hành, đặt nơi kinh doanh trực tiếp sau manage. Manage to phải đi với một động từ khi mang nghĩa khác là xoay xở làm được."
+    },
+    "example": {
+      "id": "usage-manage-2026-10-23",
+      "en": "Two sisters manage a small bookstore near the station.",
+      "vi": "Hai chị em điều hành một hiệu sách nhỏ gần nhà ga."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/manage",
+        "title": "manage verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:58:58.667937+00:00",
+        "sha256": "4c0fd17fe3d01dcc95131004da0c68f85a3874eb3ce9bbfb9b738be15a7922e5"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-f901528b18bc7e-01",
+    "headword": "afford",
+    "partOfSpeech": "verb",
+    "meaningVi": "có đủ tiền để mua hoặc làm gì",
+    "patterns": [
+      {
+        "form": "can/could afford something",
+        "explanation": "Có đủ tiền để mua hoặc chi trả cho thứ được nêu; thường gặp trong câu hỏi hoặc phủ định."
+      },
+      {
+        "form": "can/could afford to do something",
+        "explanation": "Có đủ khả năng tài chính để làm một việc; sau to dùng động từ nguyên mẫu."
+      }
+    ],
+    "note": "Mục này tập trung vào khả năng chi trả. Các mẫu thường đi với can/could hoặc be able to; không hiểu thành quy tắc mọi câu afford đều phải có can. Nguồn không dùng bị động cho nghĩa có đủ tiền/thời gian này.",
+    "mistake": {
+      "incorrect": "I cannot afford to paying the extra fee.",
+      "correct": "I cannot afford to pay the extra fee.",
+      "explanation": "Sau afford to dùng động từ nguyên mẫu pay. To paying không phải cấu trúc của cách dùng đang xét."
+    },
+    "example": {
+      "id": "usage-afford-2026-10-23",
+      "en": "With a student discount, I can afford to replace my worn-out glasses.",
+      "vi": "Nhờ được giảm giá cho sinh viên, tôi có đủ tiền thay cặp kính đã cũ hỏng."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/afford",
+        "title": "afford verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:58:58.691759+00:00",
+        "sha256": "89a738a25bef7a09ac7ed47fb93464995e2211da8ff1b9001cf498f6f06ab0d7"
+      }
+    ]
+  }
+]

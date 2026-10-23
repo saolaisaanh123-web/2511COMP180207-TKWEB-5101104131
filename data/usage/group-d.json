@@ -1,0 +1,594 @@
+[
+  {
+    "wordId": "evidence-01",
+    "headword": "evidence",
+    "partOfSpeech": "noun",
+    "meaningVi": "bằng chứng",
+    "patterns": [
+      {
+        "form": "evidence of / for something",
+        "explanation": "Nêu dấu hiệu của một việc hoặc bằng chứng ủng hộ một nhận định."
+      },
+      {
+        "form": "evidence that + mệnh đề",
+        "explanation": "Nêu điều mà bằng chứng cho thấy hoặc củng cố."
+      }
+    ],
+    "countability": "Khi nói bằng chứng nói chung, evidence thường không đếm được và đi với động từ số ít. Nguồn cũng ghi nhận cách dùng đếm được, nhất là trong văn cảnh chuyên môn; không suy ra rằng evidences luôn sai.",
+    "note": "Độ thuyết phục được diễn tả bằng convincing/strong evidence, không phải cứ có evidence là đã chứng minh chắc chắn một kết luận. Các giới từ of và for phụ thuộc quan hệ ý nghĩa.",
+    "mistake": {
+      "incorrect": "The evidence are convincing.",
+      "correct": "The evidence is convincing.",
+      "explanation": "Evidence trong câu này chỉ tập hợp bằng chứng nói chung, không có đuôi số nhiều; dùng is thay cho are."
+    },
+    "example": {
+      "id": "usage-evidence-01",
+      "en": "The lab found evidence that the water had been contaminated.",
+      "vi": "Phòng thí nghiệm tìm thấy bằng chứng cho thấy nước đã bị nhiễm bẩn.",
+      "alternatives": ["proof"]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/evidence_1",
+        "title": "evidence noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:59:25.748148+00:00",
+        "sha256": "e5fcd0160f99e64a990281080edd5803a9640a03178e1b536c453c226f0805e2"
+      }
+    ]
+  },
+  {
+    "wordId": "knowledge-01",
+    "headword": "knowledge",
+    "partOfSpeech": "noun",
+    "meaningVi": "kiến thức; sự hiểu biết",
+    "patterns": [
+      {
+        "form": "knowledge of / about something",
+        "explanation": "Nói đến kiến thức hoặc mức độ hiểu biết về một lĩnh vực."
+      },
+      {
+        "form": "a wide knowledge of something",
+        "explanation": "Một phạm vi hiểu biết rộng về một lĩnh vực; a đi với cụm có tính từ bổ nghĩa, không phải quy tắc đếm mọi kiến thức."
+      }
+    ],
+    "countability": "Kiến thức nói chung thường là danh từ không đếm được. Tuy nhiên, a wide knowledge of ... là cách dùng số ít được nguồn ghi nhận; không thể kết luận rằng mọi a + knowledge đều sai.",
+    "note": "Bài này dùng nghĩa kiến thức/kỹ năng tích lũy. Without somebody’s knowledge là nghĩa không hay biết một sự việc, cần đọc theo ngữ cảnh riêng.",
+    "mistake": {
+      "incorrect": "Her knowledge of biology are impressive.",
+      "correct": "Her knowledge of biology is impressive.",
+      "explanation": "Chủ ngữ trung tâm là knowledge, không phải biology hay số lượng kiến thức; dùng động từ số ít is."
+    },
+    "example": {
+      "id": "usage-knowledge-01",
+      "en": "A basic knowledge of first aid can help during an emergency.",
+      "vi": "Kiến thức sơ cứu cơ bản có thể giúp ích trong tình huống khẩn cấp.",
+      "alternatives": ["understanding"]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/knowledge",
+        "title": "knowledge noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:59:25.498329+00:00",
+        "sha256": "3a4d5943be3c048f51423d7bdce2be9d32af9aa8ca5d880add2cd107510333fd"
+      }
+    ]
+  },
+  {
+    "wordId": "progress-01",
+    "headword": "progress",
+    "partOfSpeech": "noun",
+    "meaningVi": "sự tiến bộ",
+    "patterns": [
+      {
+        "form": "make good / steady progress",
+        "explanation": "Tiến bộ tốt hoặc đều đặn; make là động từ kết hợp thông dụng với nghĩa này."
+      },
+      {
+        "form": "make progress in doing something",
+        "explanation": "Nêu hoạt động hoặc mục tiêu đang có tiến bộ."
+      }
+    ],
+    "countability": "Trong nghĩa sự tiến bộ, progress không đếm được: nói some/a lot of progress, không dùng many progress để đếm những bước tiến.",
+    "note": "In progress có nghĩa đang diễn ra; một dự án in progress chưa chắc đã có tiến bộ tốt. Không đánh đồng trạng thái đang làm với chất lượng kết quả.",
+    "mistake": {
+      "incorrect": "We have made many progress this week.",
+      "correct": "We have made a lot of progress this week.",
+      "explanation": "Many dùng với danh từ đếm được số nhiều. Với progress trong nghĩa này, dùng a lot of hoặc một lượng từ phù hợp cho danh từ không đếm được."
+    },
+    "example": {
+      "id": "usage-progress-01",
+      "en": "After a month of physical therapy, I can finally see real progress.",
+      "vi": "Sau một tháng vật lý trị liệu, cuối cùng tôi cũng thấy sự tiến bộ thực sự."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/progress_1",
+        "title": "progress noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:59:26.119163+00:00",
+        "sha256": "443723d0dcb694ce0a8ca6b8b593cf9458a8f00114ea2d2929c57cfaccd7719a"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-404355522396b9-01",
+    "headword": "homework",
+    "partOfSpeech": "noun",
+    "meaningVi": "bài tập về nhà",
+    "patterns": [
+      {
+        "form": "do your homework",
+        "explanation": "Làm bài tập giáo viên giao về nhà."
+      },
+      {
+        "form": "turn in / hand in your homework",
+        "explanation": "Nộp bài tập; turn in là cách diễn đạt quen thuộc trong môi trường học tập ở Mỹ."
+      }
+    ],
+    "countability": "Homework không đếm được trong nghĩa bài tập về nhà. Một bài cụ thể có thể gọi là an assignment hoặc nêu loại bài, thay vì thêm -s vào homework.",
+    "note": "Do your homework còn có nghĩa bóng là tìm hiểu kỹ để chuẩn bị. Nghĩa bóng đó khác bài tập ở trường đang học trong mục này.",
+    "mistake": {
+      "incorrect": "My homework are due at midnight.",
+      "correct": "My homework is due at midnight.",
+      "explanation": "Homework là danh từ không đếm được trong câu này, nên dùng is dù bài tập có thể gồm nhiều câu hỏi."
+    },
+    "example": {
+      "id": "usage-ox-404355522396b9-01",
+      "en": "Our teacher asked us to turn in the history homework before lunch.",
+      "vi": "Giáo viên yêu cầu chúng tôi nộp bài tập lịch sử trước bữa trưa."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/homework",
+        "title": "homework noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:59:25.502741+00:00",
+        "sha256": "e37cd66e92989dc785a2909c7737456cc06d24ed9433995c3c51c30ae2aa1a9b"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-fdeb33892d1867-01",
+    "headword": "permission",
+    "partOfSpeech": "noun",
+    "meaningVi": "sự cho phép",
+    "patterns": [
+      {
+        "form": "permission (for somebody) to do something",
+        "explanation": "Sự cho phép để một người thực hiện một việc; to nối với động từ nguyên mẫu."
+      },
+      {
+        "form": "with / without permission",
+        "explanation": "Có hoặc không có sự cho phép của người hay tổ chức có thẩm quyền."
+      }
+    ],
+    "countability": "Sự cho phép nói chung thường không đếm được. Permissions có thể chỉ những giấy phép hoặc sự chấp thuận bằng văn bản riêng, như quyền tái bản; không cấm mọi dạng số nhiều.",
+    "note": "Phân biệt sự cho phép thực hiện một hành động với các văn bản/quyền cụ thể. Chọn cấu trúc theo ý muốn nói, không tự thêm a trước mọi permission.",
+    "mistake": {
+      "incorrect": "We need permission to enters the laboratory.",
+      "correct": "We need permission to enter the laboratory.",
+      "explanation": "Khi nêu việc được cho phép, cấu trúc ở đây là permission to + động từ nguyên mẫu enter, không chia thành enters sau to."
+    },
+    "example": {
+      "id": "usage-ox-fdeb33892d1867-01",
+      "en": "Our group has permission to display the photographs in the lobby.",
+      "vi": "Nhóm chúng tôi được phép trưng bày các bức ảnh ở sảnh."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/permission",
+        "title": "permission noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:59:25.492567+00:00",
+        "sha256": "50c5da9bcfabf0059bfe59b65ac3ea60be3fcc99b86b358412c4d2bcb5f9622a"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-0b22f40bb71c86-01",
+    "headword": "employment",
+    "partOfSpeech": "noun",
+    "meaningVi": "việc làm; tình trạng có việc",
+    "patterns": [
+      {
+        "form": "be in paid / full-time employment",
+        "explanation": "Đang có việc làm được trả công hoặc có việc toàn thời gian."
+      },
+      {
+        "form": "seek / find employment",
+        "explanation": "Tìm hoặc tìm được việc làm; employment có sắc thái trang trọng hơn work trong cách nói này."
+      }
+    ],
+    "countability": "Tình trạng có việc và công việc nói chung thường dùng employment không đếm được. Nguồn cũng ghi nhận employments khi nói các công việc/giai đoạn làm việc riêng, nên không tuyệt đối hóa thành luôn không đếm được.",
+    "note": "Nghĩa đang học liên quan đến việc làm. Employment of something với nghĩa sử dụng một thứ là nghĩa khác, không thay thế máy móc cho cụm nói về nghề nghiệp.",
+    "mistake": {
+      "incorrect": "Full-time employment provide a regular income.",
+      "correct": "Full-time employment provides a regular income.",
+      "explanation": "Employment ở đây là danh từ số ít chỉ việc làm nói chung; trong hiện tại đơn, động từ đi với provides."
+    },
+    "example": {
+      "id": "usage-ox-0b22f40bb71c86-01",
+      "en": "Paid employment can help recent graduates become financially independent.",
+      "vi": "Việc làm có trả công có thể giúp người mới tốt nghiệp độc lập về tài chính.",
+      "alternatives": ["work"]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/employment",
+        "title": "employment noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:59:26.157043+00:00",
+        "sha256": "99fd79c4d29fba9d32998270d1844a556211135554710828a2941764d8892bf2"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-12d264de09a571-01",
+    "headword": "clothing",
+    "partOfSpeech": "noun",
+    "meaningVi": "quần áo; đồ mặc",
+    "patterns": [
+      {
+        "form": "protective / warm clothing",
+        "explanation": "Quần áo bảo hộ hoặc quần áo giữ ấm; clothing thường nói chung về một loại đồ mặc."
+      },
+      {
+        "form": "a piece / an item / an article of clothing",
+        "explanation": "Nêu một món đồ mặc cụ thể mà không biến clothing thành danh từ đếm được."
+      }
+    ],
+    "countability": "Clothing không đếm được trong nghĩa quần áo: clothing is ..., còn clothes là dạng số nhiều đi với are. Đếm món đồ bằng items/pieces/articles of clothing.",
+    "note": "Clothing trang trọng hơn clothes và hay nói đến một loại đồ mặc. Giữ phân biệt giữa tên gọi chung và một chiếc áo/quần cụ thể.",
+    "mistake": {
+      "incorrect": "I packed three clothings for the hike.",
+      "correct": "I packed three items of clothing for the hike.",
+      "explanation": "Với ba món đồ mặc cụ thể, dùng three items of clothing; không tạo số nhiều clothings cho nghĩa thông thường này."
+    },
+    "example": {
+      "id": "usage-ox-12d264de09a571-01",
+      "en": "Each item of clothing in this donation box has been washed.",
+      "vi": "Mỗi món quần áo trong thùng quyên góp này đều đã được giặt."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/clothing",
+        "title": "clothing noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T01:00:25.938735+00:00",
+        "sha256": "4d5948a2aec618617497339fd436cd0ca6c80f39b01e3b8927426cb9c4df37b7"
+      }
+    ]
+  },
+  {
+    "wordId": "money-01",
+    "headword": "money",
+    "partOfSpeech": "noun",
+    "meaningVi": "tiền",
+    "patterns": [
+      {
+        "form": "save / spend / earn money",
+        "explanation": "Tiết kiệm, tiêu hoặc kiếm tiền; chọn động từ theo hành động muốn diễn đạt."
+      },
+      {
+        "form": "how much money / a lot of money",
+        "explanation": "Hỏi hoặc diễn tả số tiền bằng cấu trúc dành cho danh từ không đếm được."
+      }
+    ],
+    "countability": "Money dùng không đếm được trong nghĩa tiền thông thường, dù số tiền có thể được đếm bằng dollars, bills hoặc coins. Monies/moneys là cách dùng pháp lý hoặc cổ chỉ các khoản tiền, không phải số nhiều thông dụng.",
+    "note": "Cash nhấn vào tiền mặt khi cần đối lập với các hình thức tiền khác. Money rộng hơn, nên không thay bằng cash trong mọi ngữ cảnh.",
+    "mistake": {
+      "incorrect": "How many money should I bring?",
+      "correct": "How much money should I bring?",
+      "explanation": "Dùng how much với money trong nghĩa này; how many cần một đơn vị đếm được số nhiều như dollars."
+    },
+    "example": {
+      "id": "usage-money-01",
+      "en": "The fundraiser collected enough money to replace the library's broken printer.",
+      "vi": "Đợt gây quỹ đã thu đủ tiền để thay chiếc máy in bị hỏng của thư viện.",
+      "alternatives": ["cash"]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/money",
+        "title": "money noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:59:25.868966+00:00",
+        "sha256": "89d1e2d6039800484fd2ea0524214a51505acbbf99c26f44bfa961e3992895f3"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-075f4ab854e2a3-01",
+    "headword": "traffic",
+    "partOfSpeech": "noun",
+    "meaningVi": "lượng xe hoặc người đi lại",
+    "patterns": [
+      {
+        "form": "heavy / rush-hour traffic",
+        "explanation": "Lượng xe đông hoặc giao thông vào giờ cao điểm; dùng heavy để mô tả mức độ đông của xe."
+      },
+      {
+        "form": "be stuck in traffic",
+        "explanation": "Bị kẹt giữa dòng xe; in nối với traffic trong cụm này."
+      }
+    ],
+    "countability": "Traffic không đếm được khi nói lượng xe hoặc sự đi lại nói chung: a lot of traffic, traffic is .... Cars/vehicles là những đơn vị có thể đếm.",
+    "note": "Ngoài giao thông đường bộ, traffic còn có thể nói luồng đi lại hoặc dữ liệu. Bài này tập trung vào lượng xe/người đi lại, không tự gắn mọi cách dùng của data traffic vào cùng ngữ cảnh.",
+    "mistake": {
+      "incorrect": "There are too many traffic on this street.",
+      "correct": "There is too much traffic on this street.",
+      "explanation": "Với traffic trong nghĩa lượng xe nói chung, dùng too much và động từ số ít is; many đi với danh từ số nhiều như cars."
+    },
+    "example": {
+      "id": "usage-ox-075f4ab854e2a3-01",
+      "en": "We left before sunrise to avoid the traffic near the stadium.",
+      "vi": "Chúng tôi đi trước bình minh để tránh dòng xe gần sân vận động."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/traffic_1",
+        "title": "traffic noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:59:26.055015+00:00",
+        "sha256": "a6bff08a8cdeeb8d9e9b15a8c27b8ee5cfe9a0e1858b7c94eb8f0170b5a13dd9"
+      }
+    ]
+  },
+  {
+    "wordId": "weather-01",
+    "headword": "weather",
+    "partOfSpeech": "noun",
+    "meaningVi": "thời tiết",
+    "patterns": [
+      {
+        "form": "good / bad / wet / cold weather",
+        "explanation": "Mô tả điều kiện thời tiết tại một nơi, một thời điểm."
+      },
+      {
+        "form": "weather permitting",
+        "explanation": "Nếu thời tiết cho phép; thường đặt vào câu nêu kế hoạch ngoài trời."
+      }
+    ],
+    "countability": "Weather không đếm được khi nói thời tiết nói chung: good weather, the weather is .... Thành ngữ in all weathers được nguồn ghi riêng; không suy từ đó rằng mọi ngữ cảnh đều dùng weathers.",
+    "note": "The weather đôi khi còn chỉ bản tin dự báo trong ngữ cảnh nghe/xem tin. Đừng nhầm nghĩa bản tin với điều kiện ngoài trời trong mục này.",
+    "mistake": {
+      "incorrect": "It was a terrible weather for a picnic.",
+      "correct": "It was terrible weather for a picnic.",
+      "explanation": "Trong cách nói thời tiết xấu nói chung, weather không dùng a; terrible là tính từ bổ nghĩa và không làm danh từ trở thành đếm được."
+    },
+    "example": {
+      "id": "usage-weather-01",
+      "en": "The match will move indoors if the weather gets worse this evening.",
+      "vi": "Trận đấu sẽ chuyển vào trong nhà nếu thời tiết xấu đi tối nay."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/weather_1",
+        "title": "weather noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:59:26.266753+00:00",
+        "sha256": "b9916eb2f8120807170da0c0dee489d19bef51b636008dcc98697d33da188ad6"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-6f5a5c61ccdbd8-01",
+    "headword": "damage",
+    "partOfSpeech": "noun",
+    "meaningVi": "thiệt hại; hư hỏng",
+    "patterns": [
+      {
+        "form": "damage to something",
+        "explanation": "Nêu thứ chịu thiệt hại hoặc hư hỏng; dùng to trước vật bị ảnh hưởng."
+      },
+      {
+        "form": "cause / do damage",
+        "explanation": "Gây thiệt hại; có thể thêm serious, minor hoặc extensive để chỉ mức độ."
+      }
+    ],
+    "countability": "Damage là không đếm được khi chỉ thiệt hại/hư hỏng: damage is ..., much damage. Damages trong pháp lý là tiền bồi thường, khác nghĩa đang học.",
+    "note": "Phân biệt damage là thiệt hại và damages là khoản bồi thường do tòa quyết định. Không dùng sự hiện diện của -s ở nghĩa pháp lý để đếm số chỗ hư hỏng.",
+    "mistake": {
+      "incorrect": "The damage to the roof were extensive.",
+      "correct": "The damage to the roof was extensive.",
+      "explanation": "Danh từ trung tâm damage không đếm được trong nghĩa hư hỏng; chủ ngữ này đi với was, không phải were."
+    },
+    "example": {
+      "id": "usage-ox-6f5a5c61ccdbd8-01",
+      "en": "The movers checked the piano for damage before loading it onto the truck.",
+      "vi": "Những người chuyển đồ kiểm tra đàn piano xem có hư hỏng không trước khi đưa lên xe tải."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/damage_1",
+        "title": "damage noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:59:26.048914+00:00",
+        "sha256": "1fe636c71803c1b45da21205fc4d21eed85cff8fbf2b8a166ac0550392818f8e"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-aafe609f4f899a-01",
+    "headword": "behaviour",
+    "partOfSpeech": "noun",
+    "meaningVi": "hành vi; cách cư xử",
+    "patterns": [
+      {
+        "form": "behavior toward somebody",
+        "explanation": "Nêu cách cư xử đối với một người hoặc nhóm người."
+      },
+      {
+        "form": "good / bad behavior",
+        "explanation": "Đánh giá cách cư xử nói chung, không đếm từng hành vi riêng trong cụm này."
+      },
+      {
+        "form": "be on your best behavior",
+        "explanation": "Cố gắng cư xử lịch sự, đúng mực nhất có thể."
+      }
+    ],
+    "countability": "Cách cư xử nói chung thường là không đếm được và đi với động từ số ít. Behaviors có thể dùng trong ngữ cảnh kỹ thuật/nghiên cứu để chỉ những kiểu hành vi riêng.",
+    "note": "Behavior là cách viết Mỹ; behaviour là cách viết Anh của cùng từ. ID và đầu mục gốc được giữ, còn ví dụ ở đây dùng cách viết Mỹ đã được mục từ chấp nhận.",
+    "mistake": {
+      "incorrect": "His behavior toward the staff were unacceptable.",
+      "correct": "His behavior toward the staff was unacceptable.",
+      "explanation": "Behavior là chủ ngữ số ít trong nghĩa cách cư xử nói chung. Staff không phải chủ ngữ của was trong câu này."
+    },
+    "example": {
+      "id": "usage-ox-aafe609f4f899a-01",
+      "en": "The manager addressed his aggressive behavior during the staff meeting.",
+      "vi": "Người quản lý đã trao đổi về cách cư xử hung hăng của anh ấy trong cuộc họp nhân viên."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/behavior",
+        "title": "behavior noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:59:26.136973+00:00",
+        "sha256": "ec7b92bb033f682f7d8be8adb1f78b63548ebeb29aad5ce11d2311011d34e53c"
+      }
+    ]
+  },
+  {
+    "wordId": "opportunity-01",
+    "headword": "opportunity",
+    "partOfSpeech": "noun",
+    "meaningVi": "cơ hội",
+    "patterns": [
+      {
+        "form": "an opportunity to do something",
+        "explanation": "Một cơ hội để làm việc gì; dùng động từ nguyên mẫu sau to."
+      },
+      {
+        "form": "an opportunity for something / for doing something",
+        "explanation": "Nêu hoạt động hoặc điều kiện mà cơ hội đó tạo ra; sau for có thể là danh từ hoặc V-ing."
+      }
+    ],
+    "countability": "Opportunity có cả cách dùng đếm được và không đếm được. An opportunity/opportunities nói các dịp cụ thể; plenty of opportunity có thể nói khả năng/cơ hội nói chung.",
+    "note": "Nguồn cũng ghi nhận opportunity of doing something. Không coi for + V-ing hay of + V-ing là sai chỉ vì đã học to + động từ nguyên mẫu.",
+    "mistake": {
+      "incorrect": "She had an opportunity for learn coding.",
+      "correct": "She had an opportunity to learn coding.",
+      "explanation": "Ở đây dùng to learn; nếu chọn for thì phải đổi thành for learning, không đặt động từ nguyên mẫu learn trực tiếp sau for."
+    },
+    "example": {
+      "id": "usage-opportunity-01",
+      "en": "The internship gave me an opportunity to test my design skills with real customers.",
+      "vi": "Kỳ thực tập cho tôi cơ hội thử áp dụng kỹ năng thiết kế với khách hàng thực tế.",
+      "alternatives": ["chance"]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/opportunity",
+        "title": "opportunity noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:59:26.343162+00:00",
+        "sha256": "32fab5c544cf56061ef84a0bc84fde578fc153d21f8b9b415aaed0856f3049ec"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-62484e22a6a5ad-01",
+    "headword": "health",
+    "partOfSpeech": "noun",
+    "meaningVi": "sức khỏe",
+    "patterns": [
+      {
+        "form": "be in good / poor health",
+        "explanation": "Ở tình trạng sức khỏe tốt hoặc kém."
+      },
+      {
+        "form": "be good / bad for your health",
+        "explanation": "Có lợi hoặc có hại cho sức khỏe."
+      }
+    ],
+    "countability": "Health không đếm được trong nghĩa sức khỏe của cơ thể hoặc tinh thần: your health is ..., good health. Health problems là số nhiều của problems, không phải của health.",
+    "note": "Mental health và physical health nói các mặt của sức khỏe. Các cách nói về health of a business/marriage là nghĩa mở rộng, không đồng nhất với sức khỏe con người ở đây.",
+    "mistake": {
+      "incorrect": "My health are getting better.",
+      "correct": "My health is getting better.",
+      "explanation": "Chủ ngữ health không đếm được trong nghĩa sức khỏe; động từ phù hợp là is."
+    },
+    "example": {
+      "id": "usage-ox-62484e22a6a5ad-01",
+      "en": "Long shifts can be bad for your mental health.",
+      "vi": "Những ca làm việc dài có thể có hại cho sức khỏe tinh thần của bạn."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/health",
+        "title": "health noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:59:26.334479+00:00",
+        "sha256": "55c0cccc42d2ae3a37939ac056a6869226210fc278d4271033c9d2a7ceb5d2e1"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-68bf0109c6f8a8-01",
+    "headword": "education",
+    "partOfSpeech": "noun",
+    "meaningVi": "giáo dục",
+    "patterns": [
+      {
+        "form": "higher / adult / secondary education",
+        "explanation": "Nêu một cấp học hoặc loại hình giáo dục; thường dùng education nói chung."
+      },
+      {
+        "form": "a college education",
+        "explanation": "Một quá trình/trình độ giáo dục đại học; đây là cách dùng số ít có a được nguồn ghi nhận."
+      }
+    ],
+    "countability": "Education thường không đếm được khi nói giáo dục nói chung, nhưng có cách dùng số ít như a college education. Vì vậy không sửa mọi cụm a + education thành sai.",
+    "note": "Education có thể chỉ quá trình dạy-học, một loại hình đào tạo hoặc ngành học. Chọn cách diễn đạt theo nghĩa cụ thể; a college education không có nghĩa là một ngôi trường.",
+    "mistake": {
+      "incorrect": "Education are essential for this community.",
+      "correct": "Education is essential for this community.",
+      "explanation": "Education ở đây nói quá trình giáo dục nói chung; dùng động từ số ít is."
+    },
+    "example": {
+      "id": "usage-ox-68bf0109c6f8a8-01",
+      "en": "The new scholarship will help her pay for a college education.",
+      "vi": "Học bổng mới sẽ giúp cô ấy trang trải việc học đại học."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/education",
+        "title": "education noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T00:59:26.386425+00:00",
+        "sha256": "d687668b9df8954b17cd21f8a956cfcdadf4c564040e47e02d0c1cbce14bad67"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-6694ea8075001f-01",
+    "headword": "transport",
+    "partOfSpeech": "noun",
+    "meaningVi": "sự vận chuyển từ nơi này sang nơi khác",
+    "patterns": [
+      {
+        "form": "the transport of something",
+        "explanation": "Sự vận chuyển một loại hàng hóa hoặc vật dụng; of nêu thứ được chuyển đi."
+      },
+      {
+        "form": "transport costs",
+        "explanation": "Chi phí vận chuyển; transport bổ nghĩa cho danh từ costs."
+      }
+    ],
+    "countability": "Trong nghĩa sự vận chuyển, transport không đếm được. A troop transport là tàu/máy bay/xe chở quân, thuộc nghĩa phương tiện có thể đếm được khác.",
+    "note": "Nguồn Mỹ giải thích nghĩa này qua transportation; hai từ đều dùng được khi nói việc vận chuyển hàng hóa. Không dùng mẫu đếm phương tiện để sửa danh từ chỉ hoạt động vận chuyển.",
+    "mistake": {
+      "incorrect": "The transport of these machines are expensive.",
+      "correct": "The transport of these machines is expensive.",
+      "explanation": "Chủ ngữ trung tâm là transport, không phải machines. Với hoạt động vận chuyển nói chung, dùng is."
+    },
+    "example": {
+      "id": "usage-ox-6694ea8075001f-01",
+      "en": "The hospital arranged secure transport of the donated equipment to a rural clinic.",
+      "vi": "Bệnh viện thu xếp việc vận chuyển an toàn thiết bị được quyên góp đến một phòng khám ở nông thôn.",
+      "alternatives": ["transportation"]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/transport_2",
+        "title": "transport noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T01:00:25.387256+00:00",
+        "sha256": "7074b6a13448203ea152ce344122e5cf9a629ea182387bb01a3b0774313ddeec"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/transportation",
+        "title": "transportation noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T01:02:14.636715+00:00",
+        "sha256": "f5bdcb496938b8a64e0c7e83d251dcb4c64a24d36cc882c291fe0ead59b7ddff"
+      }
+    ]
+  }
+]

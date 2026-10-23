@@ -4,7 +4,16 @@ Cập nhật 23/10/2026. Đợt sửa theo kiểm tra tổng thể đã triển 
 
 **Kiểm thử bàn giao đợt này:** 333 unit, 37 data và 100 E2E Chromium đạt; TypeScript/build, production đường dẫn gốc/con, offline và thông báo thiếu JavaScript đạt. Phát hành qua workflow Pages trên main; xem kết quả theo commit trong báo cáo, không coi Supabase mô phỏng là kiểm thử cloud thật. Báo cáo: [learning-reliability-2026-10-23.md](learning-reliability-2026-10-23.md).
 
-**Phần còn lại thực sự:** cách dùng/ngữ cảnh thứ hai mới có 48 mục, 12 hội thoại/48 ID mục tiêu, phần lớn phát âm còn dựa TTS. Chưa có Supabase thật; snapshot cloud vẫn chứa toàn kho và giới hạn 20 MiB, chưa chuyển sang delta. Chưa chấm ngữ pháp tổng quát hoặc tự nhận đã phủ mọi nghĩa của mỗi đầu từ. Đây là các giới hạn phát triển tiếp, không phải những lỗi đã sửa bên dưới còn đang tồn tại.
+**Phần còn lại thực sự:** cách dùng/ngữ cảnh thứ hai hiện có 96 mục; 5.464 mục còn lại vẫn một câu, 12 hội thoại/48 ID mục tiêu, phần lớn phát âm còn dựa TTS. Chưa có Supabase thật; snapshot cloud vẫn chứa toàn kho và giới hạn 20 MiB, chưa chuyển sang delta. Chưa chấm ngữ pháp tổng quát hoặc tự nhận đã phủ mọi nghĩa của mỗi đầu từ. Đây là các giới hạn phát triển tiếp, không phải những lỗi đã sửa bên dưới còn đang tồn tại.
+
+## Mở rộng cách dùng — 23/10/2026
+
+- Đã bổ sung 16 động từ + 16 danh từ + 16 tính từ ở data/usage/group-c/d/e.json, nâng tổng 48→96 mục; có 24 ghi chú tính đếm được. Đã đọc trực tiếp 52 URL Oxford American mới và rà nội dung độc lập, live 52/52 đúng bài; offline toàn bộ 96 mục/102 URL đạt.
+- Gắn đúng ID/đầu từ/POS/nghĩa; manage/tired/worth chỉ kiểm tra nghĩa canonical, có giải thích ngoại lệ danh từ và khác biệt vùng. Giữ behaviour/behavior cùng ID cũ. Ví dụ bổ sung tự biên soạn, đáp án thay thế theo đúng câu vẫn trung tính/chưa chấm.
+- Kho từ → Trạng thái → Có cách dùng đã đối chiếu: chỉ lọc mục tương thích; áp dụng cho luyện tập tự do và giữ lịch/phiên đang dở. Nhãn bộ lọc hiển thị tiếng Việt. Không đổi TXT, 5.560 mục và SHA256 phía dưới giữ nguyên.
+- scripts/check-usage-sources.py có --offline cho CI và live theo --files; xác minh đúng bài có định nghĩa, không chỉ HTTP200. Nhận dạng nguồn không thay lượt đọc quy tắc. Raw HTML không đưa vào repository.
+- Phạm vi, tệp thay đổi, kiểm thử và giới hạn trong [usage-expansion-2026-10-23.md](usage-expansion-2026-10-23.md). Không cần rà lại 48 bài mới từ đầu; mở rộng tiếp các từ có lợi ích học tập cao, không thêm hàng loạt bằng quy tắc suy đoán.
+- Kiểm thử bản đóng băng: 335 unit, 37 data, 104 E2E đạt; TypeScript/build và production gốc/con/offline đạt. Mốc 333/100 phía trên là đợt sửa độ tin cậy trước khi mở rộng này, không phải số ca hiện tại.
 
 ## Mục tiêu và giới hạn phải giữ
 
@@ -78,7 +87,7 @@ Cập nhật 23/10/2026. Đợt sửa theo kiểm tra tổng thể đã triển 
 
 - Kho hiện có 5.560 mục ready. Đợt bổ sung này thêm `like-verb-enjoy-01` (thích, A1) và `lie-horizontal-01` (nằm, A1), đối chiếu trực tiếp Oxford American cùng dữ kiện American Oxford; có nguồn, receipt/hash, IPA Mỹ literal và lưu ý lay/lain/lying. Không gọi nghĩa like/lie cũ sai.
 - 5.558 mục cũ là tiền tố byte không đổi của TXT mới; các pipeline preview/replay áp dụng thêm lớp essential-senses được khai báo, không đổi ID hoặc ghi đè bản cá nhân. SHA256 canonical: `10392288d69ba11cc6e5fc74e02e0cc3654bea50cda229254236848d2d3a87f4`.
-- 48 mục có cách dùng và ngữ cảnh thứ hai; những mục còn lại vẫn một câu. 346 IPA, chưa có audio nguồn mặc định. Không coi đủ đầu từ là đủ mọi nghĩa, không coi bản dịch/ví dụ biên soạn là được Oxford chứng nhận.
+- 96 mục có cách dùng và ngữ cảnh thứ hai sau đợt mở rộng 23/10; 5.464 mục còn lại vẫn một câu. 346 IPA, chưa có audio nguồn mặc định. Không coi đủ đầu từ là đủ mọi nghĩa, không coi bản dịch/ví dụ biên soạn là được Oxford chứng nhận.
 - TTS ở từ cùng đầu mục khác từ loại có thể dùng câu song ngữ đã biên soạn cho đúng nghĩa; hiển thị “Nghe từ trong câu” và cảnh báo giới hạn trọng âm. Audio HTTPS do người dùng cấu hình vẫn được ưu tiên. Không chế IPA hoặc ghi âm Oxford.
 
 ### 4. Năng suất và đề xuất đúng bài — đã triển khai 23/10

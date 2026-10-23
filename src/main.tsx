@@ -114,6 +114,12 @@ const collectionLabels: Record<string, string> = {
   "american-5000": "American Oxford 5000 · Bổ sung",
   "cambridge-blog": "Cambridge Blog · Ngôn ngữ hiện đại",
 };
+const statusLabels: Record<string, string> = {
+  new: "Chưa học",
+  studied: "Đã học",
+  known: "Tự đánh dấu đã biết",
+  usage: "Có cách dùng đã đối chiếu",
+};
 function download(name: string, text: string, type = "text/plain") {
   const url = URL.createObjectURL(
     new Blob([text], { type: type + ";charset=utf-8" }),
@@ -585,11 +591,13 @@ function App() {
         (e.word.collections || "").split(",").includes(collection)) &&
       (!level || e.word.level === level) &&
       (!status ||
-        (status === "known"
-          ? e.known
-          : status === "new"
-            ? !studiedIds.has(e.word.id)
-            : studiedIds.has(e.word.id))),
+        (status === "usage"
+          ? !!getUsage(e.word)
+          : status === "known"
+            ? e.known
+            : status === "new"
+              ? !studiedIds.has(e.word.id)
+              : studiedIds.has(e.word.id))),
   );
   const practiceEligible = filtered.filter((e) =>
     canPractice(e.word, practice),
@@ -649,7 +657,7 @@ function App() {
       topic && `Chủ đề: ${topic}`,
       collection && `Bộ: ${collection}`,
       level && `CEFR: ${level}`,
-      status && `Trạng thái: ${status}`,
+      status && `Trạng thái: ${statusLabels[status] || status}`,
     ]
       .filter(Boolean)
       .join(" · ") || "Toàn bộ Kho từ";
@@ -1930,6 +1938,7 @@ function App() {
                   <option value="new">Chưa học</option>
                   <option value="studied">Đã học</option>
                   <option value="known">Tự đánh dấu đã biết</option>
+                  <option value="usage">Có cách dùng đã đối chiếu</option>
                 </select>
               </div>
               <p className="fineprint">

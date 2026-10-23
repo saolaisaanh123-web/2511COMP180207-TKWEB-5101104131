@@ -2,6 +2,8 @@ import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import {
   cloze,
+  grade,
+  normalize,
   contentKey,
   empty,
   merge,
@@ -20,6 +22,7 @@ import {
 import { analyzeLearning } from "./analytics";
 import { rebaseState } from "./storage";
 import { cloudPayload, mergeCloudState } from "./sync";
+import { assessLearningAnswer } from "./assessment";
 
 const corpus = parse(readFileSync("public/data/vocabulary.txt", "utf8"));
 const target = corpus.find((word) => word.word === "suggest")!;
@@ -55,11 +58,11 @@ function result(overrides: Partial<Result> = {}): Result {
 }
 
 describe("source-reviewed usage and contextual recall", () => {
-  it("ships 48 distinct, complete, sense-matched supplements with real source receipts", () => {
-    expect(usageEntries).toHaveLength(48);
-    expect(new Set(usageEntries.map((entry) => entry.wordId)).size).toBe(48);
+  it("ships 96 distinct, complete, sense-matched supplements with real source receipts", () => {
+    expect(usageEntries).toHaveLength(96);
+    expect(new Set(usageEntries.map((entry) => entry.wordId)).size).toBe(96);
     expect(new Set(usageEntries.map((entry) => entry.example.id)).size).toBe(
-      48,
+      96,
     );
     for (const entry of usageEntries) {
       const word = corpus.find((w) => w.id === entry.wordId)!;
@@ -90,6 +93,65 @@ describe("source-reviewed usage and contextual recall", () => {
         expect(Number.isFinite(Date.parse(source.checkedAt))).toBe(true);
       }
     }
+  });
+
+  it("keeps reviewed alternative answers local to their exact example and never credits target recall", () => {
+    for (const entry of usageEntries) {
+      const word = corpus.find((candidate) => candidate.id === entry.wordId)!;
+      const alternatives = entry.example.alternatives || [];
+      expect(new Set(alternatives.map(normalize)).size, entry.headword).toBe(
+        alternatives.length,
+      );
+      const exercise = {
+        ...word,
+        example_en: entry.example.en,
+        example_vi: entry.example.vi,
+      };
+      for (const answer of alternatives) {
+        expect(answer.trim(), entry.headword).not.toBe("");
+        expect(grade(answer, word), `${entry.headword}: ${answer}`).toBe(false);
+        expect(
+          assessLearningAnswer(answer, exercise, 4, corpus, alternatives)
+            .outcome,
+          `${entry.headword}: ${answer}`,
+        ).toBe("ungraded");
+      }
+    }
+  });
+
+  it("covers the new noun group with explicit sense-scoped countability and accepts the reviewed US form", () => {
+    const nouns = [
+      "evidence",
+      "knowledge",
+      "progress",
+      "homework",
+      "permission",
+      "employment",
+      "money",
+      "traffic",
+      "weather",
+      "damage",
+      "behaviour",
+      "opportunity",
+      "health",
+      "education",
+      "transport",
+      "clothing",
+    ];
+    for (const headword of nouns) {
+      const entry = usageEntries.find(
+        (candidate) => candidate.headword === headword,
+      );
+      expect(entry, headword).toBeDefined();
+      expect(entry!.countability?.trim(), headword).toBeTruthy();
+      const word = corpus.find((candidate) => candidate.id === entry!.wordId)!;
+      expect(word.part_of_speech).toBe("noun");
+      const exercise = { ...word, example_en: entry!.example.en };
+      expect(cloze(exercise), headword).not.toBe(exercise.example_en);
+    }
+    const behavior = corpus.find((word) => word.word === "behaviour")!;
+    expect(grade("behavior", behavior)).toBe(true);
+    expect(grade("behaviour", behavior)).toBe(true);
   });
 
   it("does not attach a different sense or POS to a personal edit", () => {
