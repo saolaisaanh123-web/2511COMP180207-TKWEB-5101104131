@@ -19,6 +19,15 @@ const expectedGrammarCount = (
     ),
   )
 ).reduce((total, count) => total + count, 0);
+const usageEntries = (
+  await Promise.all(
+    (await readdir("data/usage"))
+      .filter((name) => name.endsWith(".json"))
+      .map(async (name) =>
+        JSON.parse(await readFile("data/usage/" + name, "utf8")),
+      ),
+  )
+).flat();
 async function checkGrammar(page) {
   await page
     .getByRole("button", { name: "Tra cứu ngữ pháp", exact: true })
@@ -61,30 +70,55 @@ async function checkGrammar(page) {
 }
 async function checkUsage(page) {
   await page.getByRole("button", { name: "Kho từ", exact: true }).click();
-  await page.getByPlaceholder(/Tìm từ/).fill("suggest");
   await page
-    .locator(".word-card")
-    .filter({
-      has: page.getByRole("heading", { name: "suggest", exact: true }),
-    })
-    .click();
-  await page.locator(".dict-usage").waitFor();
-  assert.match(await page.locator(".usage-patterns").innerText(), /suggest/);
-  assert.match(
-    await page.locator(".usage-second-example").innerText(),
-    /train schedule/,
+    .getByRole("combobox", { name: "Trạng thái", exact: true })
+    .selectOption("usage");
+  assert.equal(
+    Number(await page.locator(".word-grid").getAttribute("data-total-items")),
+    usageEntries.length,
   );
-  const source = await page
-    .locator(".usage-sources a")
-    .first()
-    .getAttribute("href");
-  assert.ok(
-    source.startsWith(
-      "https://www.oxfordlearnersdictionaries.com/definition/american_english/",
-    ),
-  );
-  await page.getByRole("button", { name: "Đóng", exact: true }).click();
+  for (const headword of ["suggest", "spend", "paper", "familiar"]) {
+    const usage = usageEntries.find((entry) => entry.headword === headword);
+    assert.ok(usage, `Missing authored usage for ${headword}`);
+    await page.getByPlaceholder(/Tìm từ/).fill(headword);
+    await page
+      .locator(".word-card")
+      .filter({
+        has: page.getByRole("heading", { name: headword, exact: true }),
+      })
+      .click();
+    const panel = page.getByRole("region", { name: "Cách dùng đã đối chiếu" });
+    await panel.waitFor();
+    assert.ok(
+      (await panel.locator(".usage-patterns").innerText()).includes(
+        usage.patterns[0].form,
+      ),
+    );
+    assert.ok(
+      (await panel.locator(".usage-second-example").innerText()).includes(
+        usage.example.en,
+      ),
+    );
+    assert.ok(
+      (await panel.locator(".usage-second-example").innerText()).includes(
+        usage.example.vi,
+      ),
+    );
+    if (usage.countability)
+      assert.equal(
+        await panel.locator(".usage-countability").innerText(),
+        usage.countability,
+      );
+    assert.equal(
+      await panel.locator(".usage-sources a").first().getAttribute("href"),
+      usage.sources[0].url,
+    );
+    await page.getByRole("button", { name: "Đóng", exact: true }).click();
+  }
   await page.getByPlaceholder(/Tìm từ/).fill("");
+  await page
+    .getByRole("combobox", { name: "Trạng thái", exact: true })
+    .selectOption("");
 }
 const mime = {
   ".html": "text/html",

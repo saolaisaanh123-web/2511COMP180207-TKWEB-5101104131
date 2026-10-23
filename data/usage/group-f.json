@@ -1,0 +1,713 @@
+[
+  {
+    "wordId": "ox-f64a33ff88c381-01",
+    "headword": "spend",
+    "partOfSpeech": "verb",
+    "meaningVi": "dành thời gian cho việc gì",
+    "patterns": [
+      {
+        "form": "spend + khoảng thời gian + doing something",
+        "explanation": "Dành một khoảng thời gian để làm việc gì; hành động sau khoảng thời gian dùng dạng -ing."
+      },
+      {
+        "form": "spend + thời gian + on something",
+        "explanation": "Nêu việc được dành thời gian bằng on + danh từ, như spend time on a project."
+      },
+      {
+        "form": "spend + thời gian + cụm chỉ nơi chốn",
+        "explanation": "Nêu nơi trải qua một quãng thời gian, như spend a week in a city."
+      }
+    ],
+    "note": "Mục này chỉ luyện nghĩa dành hoặc trải qua thời gian. Spend còn dùng với tiền hoặc công sức trong các nghĩa khác. Nguồn cũng ghi nhận spend time in doing something; không vì mẫu thông dụng doing mà coi mọi trường hợp có in đều sai.",
+    "mistake": {
+      "incorrect": "I spend ten minutes to stretch before cycling.",
+      "correct": "I spend ten minutes stretching before cycling.",
+      "explanation": "Khi nói dành mười phút làm việc gì trong mẫu này, dùng spend ten minutes stretching. Không chuyển trực tiếp cấu trúc mất bao lâu để làm việc gì thành spend + thời gian + to V."
+    },
+    "example": {
+      "id": "usage-spend-round2-2026-10-23",
+      "en": "I spend ten minutes stretching before I ride my bike to work.",
+      "vi": "Tôi dành mười phút giãn cơ trước khi đạp xe đi làm."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/spend",
+        "title": "spend verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:18.356093+00:00",
+        "sha256": "740936feafb2f5158262b7f3aaf67c5c2bbae6dbcade02dfa15d29fa3bf94f67"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-716ecabb45ac6a-01",
+    "headword": "wait",
+    "partOfSpeech": "verb",
+    "meaningVi": "chờ điều được mong đợi",
+    "patterns": [
+      {
+        "form": "wait for somebody/something",
+        "explanation": "Chờ một người hoặc một điều được mong đợi; for giới thiệu đối tượng đang chờ."
+      },
+      {
+        "form": "wait for somebody/something to do something",
+        "explanation": "Chờ cho người hoặc vật thực hiện một hành động, như wait for the paint to dry."
+      },
+      {
+        "form": "wait to do something",
+        "explanation": "Chủ ngữ tự chờ để thực hiện hành động sau to, như wait to speak."
+      }
+    ],
+    "note": "Có thể chỉ nói wait nếu đối tượng đã rõ, hoặc thêm nơi chốn như wait outside. Trước một khoảng thời gian, nguồn cho phép cả wait twenty minutes và wait for twenty minutes. Wait your turn là cách dùng có tân ngữ riêng; không suy ra mọi danh từ sau wait đều phải có for.",
+    "mistake": {
+      "incorrect": "Please wait the courier outside.",
+      "correct": "Please wait for the courier outside.",
+      "explanation": "The courier là người đang được chờ, nên trong ý này dùng wait for the courier. Không áp dụng máy móc mẫu wait your turn cho người giao hàng."
+    },
+    "example": {
+      "id": "usage-wait-round2-2026-10-23",
+      "en": "Please wait for the paint to dry before you move the shelves.",
+      "vi": "Hãy chờ sơn khô rồi mới di chuyển các kệ."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/wait_1",
+        "title": "wait verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:17.580592+00:00",
+        "sha256": "dbac8a0a58d4d41494f1c18286bc6380bb3342a05337527b51262179efd95303"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-85441a43c7cb9f-01",
+    "headword": "permit",
+    "partOfSpeech": "verb",
+    "meaningVi": "cho phép",
+    "patterns": [
+      {
+        "form": "permit somebody to do something",
+        "explanation": "Cho phép một người làm việc gì; giữ to trước động từ sau người được cho phép."
+      },
+      {
+        "form": "permit something",
+        "explanation": "Cho phép một điều hoặc hoạt động được nêu bằng danh từ, như permit photography."
+      },
+      {
+        "form": "be permitted to do something",
+        "explanation": "Dạng bị động: được phép làm việc gì; vẫn dùng to + động từ nguyên mẫu."
+      }
+    ],
+    "note": "Permit mang sắc thái trang trọng, phù hợp quy định hoặc giấy phép; allow thường dùng hơn trong nhiều cuộc nói chuyện đời thường. Mục này luyện nghĩa cho phép, không luyện nghĩa làm cho điều gì trở nên khả thi trong kiểu if time permits.",
+    "mistake": {
+      "incorrect": "The city will permit residents install solar panels.",
+      "correct": "The city will permit residents to install solar panels.",
+      "explanation": "Với người được cho phép là residents, dùng permit residents to install. Không bỏ to như trong mẫu let somebody do something."
+    },
+    "example": {
+      "id": "usage-permit-round2-2026-10-23",
+      "en": "The city will permit residents to install solar panels on garage roofs.",
+      "vi": "Thành phố sẽ cho phép cư dân lắp pin mặt trời trên mái nhà để xe.",
+      "alternatives": [
+        "allow"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/permit_1",
+        "title": "permit verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:20.053396+00:00",
+        "sha256": "67fce9418b02a28f02d6a07a5ec9675e25aa947715e9538ff1e187e388eb48fb"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/allow",
+        "title": "allow verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:27:23.611438+00:00",
+        "sha256": "3e95595ea8dea218f8ce29dadaa8974f3a8f56c4a6baa5087dd8cc743579a607"
+      }
+    ]
+  },
+  {
+    "wordId": "join-01",
+    "headword": "join",
+    "partOfSpeech": "verb",
+    "meaningVi": "tham gia; gia nhập",
+    "patterns": [
+      {
+        "form": "join + tổ chức/nhóm",
+        "explanation": "Gia nhập một câu lạc bộ, đội hoặc tổ chức; không thêm in trước tên nhóm trong mẫu này."
+      },
+      {
+        "form": "join somebody (for something)",
+        "explanation": "Tham gia cùng ai, có thể nêu hoạt động bằng for, như join us for dinner."
+      },
+      {
+        "form": "join somebody in doing something",
+        "explanation": "Cùng ai làm việc gì; hành động sau in dùng dạng -ing."
+      }
+    ],
+    "note": "Các mẫu này thuộc nghĩa gia nhập hoặc cùng tham gia. Join in là một cụm có thật dùng cho việc tham gia hoạt động; điều đó không làm join in a club thành cách thay thế thông thường cho join a club. Mục này không luyện nghĩa nối hai vật.",
+    "mistake": {
+      "incorrect": "Can I join to your volunteer team?",
+      "correct": "Can I join your volunteer team?",
+      "explanation": "Khi hỏi gia nhập đội, team là tân ngữ trực tiếp của join; bỏ to trước tên đội."
+    },
+    "example": {
+      "id": "usage-join-round2-2026-10-23",
+      "en": "Can I join your team for Saturday's river cleanup?",
+      "vi": "Tôi có thể tham gia cùng đội của bạn trong buổi dọn rác ven sông vào thứ Bảy không?"
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/join_1",
+        "title": "join verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:18.957102+00:00",
+        "sha256": "60bbb42d11a2dc5f7981a0f82efbf7c1d5a28b4da51d7d403c21b54d9900797b"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-192f9a06d1dd2d-01",
+    "headword": "attend",
+    "partOfSpeech": "verb",
+    "meaningVi": "tham dự",
+    "patterns": [
+      {
+        "form": "attend + sự kiện",
+        "explanation": "Tham dự một buổi họp, lễ hoặc sự kiện; sự kiện đứng trực tiếp sau attend."
+      },
+      {
+        "form": "attend",
+        "explanation": "Dùng không có tân ngữ khi người nghe đã biết đó là sự kiện nào."
+      }
+    ],
+    "note": "Attending một sự kiện là có mặt tham dự, không nhất thiết phát biểu hay tham gia tích cực. Attend to là cách dùng khác liên quan việc chú ý hoặc xử lý; không thêm to trước sự kiện khi chỉ muốn nói tham dự.",
+    "mistake": {
+      "incorrect": "Employees can attending the annual safety briefing online.",
+      "correct": "Employees can attend the annual safety briefing online.",
+      "explanation": "Sau động từ khuyết thiếu can, dùng động từ nguyên mẫu attend, không dùng attending. Trong nghĩa tham dự ở đây, the briefing là tân ngữ trực tiếp. Attend to còn có nghĩa chú ý hoặc xử lý, không phải một cụm luôn sai."
+    },
+    "example": {
+      "id": "usage-attend-round2-2026-10-23",
+      "en": "Employees can attend the annual safety briefing online or in person.",
+      "vi": "Nhân viên có thể tham dự buổi phổ biến an toàn hằng năm trực tuyến hoặc trực tiếp.",
+      "alternatives": [
+        "join"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/attend",
+        "title": "attend verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:18.677129+00:00",
+        "sha256": "9a6a464200dddb4f9ae3109d0d060532810ef4ffe8463460adaefc89554220bb"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/join_1",
+        "title": "join verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:18.957102+00:00",
+        "sha256": "60bbb42d11a2dc5f7981a0f82efbf7c1d5a28b4da51d7d403c21b54d9900797b"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-ed4561f685f133-01",
+    "headword": "reach",
+    "partOfSpeech": "verb",
+    "meaningVi": "đến được nơi nào",
+    "patterns": [
+      {
+        "form": "reach + địa điểm",
+        "explanation": "Đến được nơi đang đi tới; địa điểm đứng trực tiếp sau reach."
+      },
+      {
+        "form": "be reached by + phương tiện",
+        "explanation": "Nêu cách đến được một nơi trong câu bị động, như be reached by boat."
+      }
+    ],
+    "note": "Bài này dùng nghĩa đến một địa điểm. So sánh reach the farm với arrive at the farm: arrive cần giới từ phù hợp, còn reach nhận địa điểm trực tiếp. Các nghĩa vươn tay, liên lạc hoặc đạt mục tiêu không phải mục tiêu luyện ở đây.",
+    "mistake": {
+      "incorrect": "The ambulance should reach to the farm soon.",
+      "correct": "The ambulance should reach the farm soon.",
+      "explanation": "Với nghĩa đến được trang trại, dùng reach the farm, không thêm to. Một cách diễn đạt khác là arrive at the farm."
+    },
+    "example": {
+      "id": "usage-reach-round2-2026-10-23",
+      "en": "The ambulance should reach the farm within twenty minutes.",
+      "vi": "Xe cứu thương dự kiến sẽ đến được trang trại trong vòng hai mươi phút.",
+      "alternatives": [
+        "get to",
+        "arrive at"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/reach_1",
+        "title": "reach verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:18.671433+00:00",
+        "sha256": "03ad4daf6adbaaf787d7017211aa1ec561d0bfbdeeb69555f898dfd4d47d756f"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/arrive",
+        "title": "arrive verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:27:23.598973+00:00",
+        "sha256": "5d29043b24e85d06d1028dcb4a48d68339a249340400c2234038be1d601c5b90"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-e08d706b3e4ce9-01",
+    "headword": "enter",
+    "partOfSpeech": "verb",
+    "meaningVi": "đi vào",
+    "patterns": [
+      {
+        "form": "enter + nơi chốn",
+        "explanation": "Mẫu thông dụng để nói đi vào một nơi: địa điểm đứng trực tiếp sau enter, như enter the room."
+      },
+      {
+        "form": "enter",
+        "explanation": "Có thể không nêu nơi chốn nếu đã rõ, như lời nhắc gõ cửa trước khi vào."
+      },
+      {
+        "form": "enter through + lối đi",
+        "explanation": "Nêu cửa hoặc lối được dùng để đi vào; through diễn tả đường đi, không phải tân ngữ địa điểm của enter."
+      }
+    ],
+    "note": "Enter có sắc thái tương đối trang trọng trong nghĩa đi vào. Mẫu gọn, thông dụng là enter the room; go into the room cũng tự nhiên. Nguồn có mục enter into cho các cách dùng khác, nên không suy thành điều cấm mọi trường hợp enter đi cùng into. Bài này không luyện nghĩa nhập dữ liệu hoặc ghi danh.",
+    "mistake": {
+      "incorrect": "Only trained staff may entered the chemical storage area.",
+      "correct": "Only trained staff may enter the chemical storage area.",
+      "explanation": "Sau động từ khuyết thiếu may, dùng dạng nguyên mẫu enter, không dùng dạng quá khứ entered. Nơi được đi vào là tân ngữ trực tiếp trong mẫu enter the storage area."
+    },
+    "example": {
+      "id": "usage-enter-round2-2026-10-23",
+      "en": "Only trained staff may enter the chemical storage area.",
+      "vi": "Chỉ nhân viên đã được đào tạo mới được đi vào khu vực lưu trữ hóa chất.",
+      "alternatives": [
+        "go into"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/enter",
+        "title": "enter verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:19.003202+00:00",
+        "sha256": "2518c02e5f52912f7a4fc16ba7c419ade078ba332d65c9fa10d7c65a3485b63b"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-f0e68ac26df218-01",
+    "headword": "visit",
+    "partOfSpeech": "verb",
+    "meaningVi": "đến xem một địa điểm",
+    "patterns": [
+      {
+        "form": "visit + địa điểm",
+        "explanation": "Đến thăm hoặc xem một nơi trong một khoảng thời gian; địa điểm là tân ngữ trực tiếp."
+      },
+      {
+        "form": "be visited by somebody",
+        "explanation": "Dạng bị động để nói một địa điểm được ai đến thăm hoặc tham quan."
+      }
+    ],
+    "note": "Trong nghĩa của mục này, nói visit a place. A visit to a place là cụm danh từ khác, có to sau danh từ visit. Nguồn còn ghi nhận visit người, website hoặc visit không có tân ngữ, nhưng các cách dùng đó không phải nghĩa đang luyện ở đây.",
+    "mistake": {
+      "incorrect": "We plan to visit to the neighborhood before buying a house.",
+      "correct": "We plan to visit the neighborhood before buying a house.",
+      "explanation": "Visit ở đây là động từ, nên bỏ to trước địa điểm. Không chuyển giới từ từ cụm danh từ a visit to the neighborhood sang mẫu động từ."
+    },
+    "example": {
+      "id": "usage-visit-round2-2026-10-23",
+      "en": "We plan to visit the neighborhood at night before we buy a house there.",
+      "vi": "Chúng tôi dự định đến xem khu dân cư vào ban đêm trước khi mua nhà ở đó.",
+      "alternatives": [
+        "explore"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/visit_1",
+        "title": "visit verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:19.192488+00:00",
+        "sha256": "18faf5376871e5f6760238b9f779e708626af578ba23f331630b8ab9ee780b26"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/explore",
+        "title": "explore verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:27:23.871159+00:00",
+        "sha256": "ecf1ef97da0eab755bf75ab64d8d6efb7818114fcbb869a531123594d5696b3b"
+      }
+    ]
+  },
+  {
+    "wordId": "describe-01",
+    "headword": "describe",
+    "partOfSpeech": "verb",
+    "meaningVi": "miêu tả; mô tả",
+    "patterns": [
+      {
+        "form": "describe somebody/something to somebody",
+        "explanation": "Miêu tả một người hoặc vật cho người nghe; người nhận thông tin đứng sau to."
+      },
+      {
+        "form": "describe somebody/something as + đặc điểm",
+        "explanation": "Miêu tả người hoặc vật là như thế nào; as giới thiệu cách đánh giá hoặc đặc điểm."
+      },
+      {
+        "form": "describe how/what…",
+        "explanation": "Miêu tả bằng mệnh đề nêu cách làm hoặc nội dung; mệnh đề dùng trật tự câu kể."
+      }
+    ],
+    "note": "Trong mẫu truyền đạt mô tả, describe không có cách đặt người nghe trực tiếp như tell somebody something. Nguồn cũng có describe doing something để kể lại việc đã nhìn thấy hoặc trải qua. Không dùng các mẫu này để luyện nghĩa kỹ thuật vạch ra một hình dạng.",
+    "mistake": {
+      "incorrect": "Please describe me the missing suitcase.",
+      "correct": "Please describe the missing suitcase to me.",
+      "explanation": "Đặt thứ được miêu tả là the missing suitcase ngay sau describe, rồi thêm to me để nêu người nghe."
+    },
+    "example": {
+      "id": "usage-describe-round2-2026-10-23",
+      "en": "Please describe the missing suitcase to the airline representative.",
+      "vi": "Hãy miêu tả chiếc vali bị thất lạc cho nhân viên đại diện hãng hàng không."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/describe",
+        "title": "describe verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:19.251600+00:00",
+        "sha256": "3ec9bea846203bd7d3441c1ddb80e85bf028deb9acbf22d64293882568c4e5e3"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-68b9c231ac85c9-01",
+    "headword": "mention",
+    "partOfSpeech": "verb",
+    "meaningVi": "đề cập; nhắc đến",
+    "patterns": [
+      {
+        "form": "mention somebody/something (to somebody)",
+        "explanation": "Nhắc đến một người hoặc một việc; có thể thêm người nghe sau to."
+      },
+      {
+        "form": "mention (that) + mệnh đề",
+        "explanation": "Đề cập một nội dung bằng mệnh đề; that có thể được lược bỏ."
+      },
+      {
+        "form": "mention doing something",
+        "explanation": "Nhắc đến việc làm gì; hành động sau mention dùng dạng -ing."
+      }
+    ],
+    "note": "Mention thường chỉ một lần nhắc hoặc nói ngắn, không nhất thiết giải thích chi tiết. Có thể gặp about trong phần thông tin mở rộng, như mention something about the plan; điều đó không biến mention about the plan thành mẫu thay cho mention the plan.",
+    "mistake": {
+      "incorrect": "Did the inspector mention to see cracks?",
+      "correct": "Did the inspector mention seeing cracks?",
+      "explanation": "Khi nói người kiểm tra nhắc đến việc nhìn thấy vết nứt, dùng mention seeing. Không dùng to see trực tiếp để bổ nghĩa cho mention trong ý này."
+    },
+    "example": {
+      "id": "usage-mention-round2-2026-10-23",
+      "en": "Did the inspector mention seeing cracks near the basement window?",
+      "vi": "Người kiểm tra có nhắc đến việc nhìn thấy vết nứt gần cửa sổ tầng hầm không?",
+      "alternatives": [
+        "report"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/mention_1",
+        "title": "mention verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:19.282362+00:00",
+        "sha256": "fa9c592e4189877542977d8da480e95858da99004c22b2db1841144934c60ec9"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/report_1",
+        "title": "report verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:28:18.651698+00:00",
+        "sha256": "63659d9f770788d9f7808f8ae4401967606ec6c71f1d3954951556eb875b4890"
+      }
+    ]
+  },
+  {
+    "wordId": "encourage-01",
+    "headword": "encourage",
+    "partOfSpeech": "verb",
+    "meaningVi": "khuyến khích; động viên",
+    "patterns": [
+      {
+        "form": "encourage somebody",
+        "explanation": "Động viên hoặc tiếp thêm tự tin cho một người; có thể không nêu thêm hành động."
+      },
+      {
+        "form": "encourage somebody to do something",
+        "explanation": "Khuyến khích ai thực hiện một việc; dùng to + động từ nguyên mẫu sau người được khuyến khích."
+      },
+      {
+        "form": "encourage doing something",
+        "explanation": "Khuyến khích một hoạt động nói chung mà không nêu một người làm cụ thể."
+      }
+    ],
+    "note": "Phân biệt encourage children to read với encourage reading: có người được khuyến khích thì dùng somebody to do; khi nêu hoạt động có thể dùng -ing. Không biến mẫu này thành quy tắc rằng encourage luôn cần tân ngữ chỉ người.",
+    "mistake": {
+      "incorrect": "Our librarian will encourage children read aloud.",
+      "correct": "Our librarian will encourage children to read aloud.",
+      "explanation": "Children là người được khuyến khích, nên hành động sau đó cần to read. Nếu chỉ nêu hoạt động, có thể viết encourage reading aloud."
+    },
+    "example": {
+      "id": "usage-encourage-round2-2026-10-23",
+      "en": "Our librarian will encourage children to read aloud to the therapy dogs.",
+      "vi": "Thủ thư của chúng tôi sẽ khuyến khích trẻ đọc thành tiếng cho những chú chó hỗ trợ trị liệu nghe.",
+      "alternatives": [
+        "urge"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/encourage",
+        "title": "encourage verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:19.495674+00:00",
+        "sha256": "492d69888d62716fd6100d3605ceda22fe4f584677ab51f315accf6891f7ed9f"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/urge_1",
+        "title": "urge verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:27:24.174291+00:00",
+        "sha256": "30cdfc99e068f159b49e5ef50bda1677584f15c0aca2227ff8225526451cf243"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-aa63925edf225e-01",
+    "headword": "warn",
+    "partOfSpeech": "verb",
+    "meaningVi": "cảnh báo về nguy hiểm hoặc rủi ro",
+    "patterns": [
+      {
+        "form": "warn somebody about/of something",
+        "explanation": "Cảnh báo ai về một nguy cơ hoặc điều bất lợi."
+      },
+      {
+        "form": "warn somebody not to do something",
+        "explanation": "Cảnh báo một người không nên làm việc có rủi ro; giữ not trước to."
+      },
+      {
+        "form": "warn (somebody) against doing something",
+        "explanation": "Cảnh báo tránh một hành động; sau against dùng dạng -ing."
+      },
+      {
+        "form": "warn (somebody) that + mệnh đề",
+        "explanation": "Nêu nội dung cảnh báo bằng một mệnh đề."
+      }
+    ],
+    "note": "Các mẫu warn about/of a danger và warn against doing something có cách nối khác nhau. Nguồn cũng cho phép warn somebody to do something khi cảnh báo người đó cần thực hiện hành động để tránh nguy hiểm; không coi mọi warn + to V đều sai.",
+    "mistake": {
+      "incorrect": "Please warn the campers not drink water from the stream.",
+      "correct": "Please warn the campers not to drink water from the stream.",
+      "explanation": "Với người được cảnh báo là the campers, dùng not to drink. Một cách khác là warn the campers against drinking water from the stream."
+    },
+    "example": {
+      "id": "usage-warn-round2-2026-10-23",
+      "en": "Please warn the campers not to drink water from the stream.",
+      "vi": "Hãy cảnh báo những người cắm trại không được uống nước từ con suối.",
+      "alternatives": [
+        "advise",
+        "caution"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/warn",
+        "title": "warn verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:19.668954+00:00",
+        "sha256": "d5a2d6c450af896c7113d947d7f1ebc2365a0e320278b3ddc4b8775621e9dfa8"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/advise",
+        "title": "advise verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:27:24.183253+00:00",
+        "sha256": "93997669cbf14a9b2c2c2248ac404e610f1b2962d40b0ad501ba57665d5169a7"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/caution_2",
+        "title": "caution verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:27:24.461159+00:00",
+        "sha256": "4cba1335d8705aa6e909d9b0ef7c17b76957b517822fe655f6076089ada1c40d"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-61b0a3c4d28279-01",
+    "headword": "convince",
+    "partOfSpeech": "verb",
+    "meaningVi": "thuyết phục",
+    "patterns": [
+      {
+        "form": "convince somebody of something",
+        "explanation": "Thuyết phục ai tin một điều được nêu bằng danh từ."
+      },
+      {
+        "form": "convince somebody (that) + mệnh đề",
+        "explanation": "Làm cho ai tin một điều là đúng; người được thuyết phục đứng trước mệnh đề."
+      },
+      {
+        "form": "convince somebody to do something",
+        "explanation": "Thuyết phục ai làm gì; cách dùng này được Oxford American ghi nhận."
+      }
+    ],
+    "note": "Không gắn nhãn convince somebody to do là sai. Nguồn phân biệt nghĩa nổi bật của convince là làm ai tin, của persuade là khiến ai đồng ý làm, nhưng cũng nêu rằng hai từ thường dùng cho cả hai nghĩa, nhất là convince thay persuade.",
+    "mistake": {
+      "incorrect": "Could these savings convince the landlord replace the furnace?",
+      "correct": "Could these savings convince the landlord to replace the furnace?",
+      "explanation": "Trong ý thuyết phục chủ nhà thực hiện hành động, dùng convince the landlord to replace. Không bỏ to trước replace."
+    },
+    "example": {
+      "id": "usage-convince-round2-2026-10-23",
+      "en": "Could these energy savings convince the landlord to replace the old furnace?",
+      "vi": "Liệu khoản tiết kiệm năng lượng này có thể thuyết phục chủ nhà thay chiếc lò sưởi cũ không?",
+      "alternatives": [
+        "persuade"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/convince",
+        "title": "convince verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:19.546854+00:00",
+        "sha256": "59fe5bfc91b66e9235d6664ee07f75bb09da54faa74cec556434d6b4628b7b91"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/persuade",
+        "title": "persuade verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:27:24.460761+00:00",
+        "sha256": "55a99f87492391425694c5cbc12e89fc868c32c445fb761818fb4ea677e833eb"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-509c40394c0eaa-01",
+    "headword": "insist",
+    "partOfSpeech": "verb",
+    "meaningVi": "khăng khăng; nhất quyết",
+    "patterns": [
+      {
+        "form": "insist on something/somebody doing something",
+        "explanation": "Nhất quyết yêu cầu một điều hoặc hành động; sau on dùng danh từ hoặc dạng -ing. Có thể nêu người thực hiện trước dạng -ing."
+      },
+      {
+        "form": "insist that + chủ ngữ + động từ nguyên mẫu không to",
+        "explanation": "Khi nêu yêu cầu mạnh, tiếng Anh Mỹ dùng mẫu như insist that every volunteer wear a vest; wear không thêm -s trong mẫu yêu cầu này."
+      },
+      {
+        "form": "insist",
+        "explanation": "Có thể dùng riêng khi điều được yêu cầu đã rõ trong hội thoại."
+      }
+    ],
+    "note": "Bài tập dùng nghĩa nhất quyết yêu cầu một việc được thực hiện. Insist còn có nghĩa khăng khăng khẳng định điều gì là thật; mệnh đề that trong nghĩa khẳng định có cách chia thì thông thường, không bắt buộc dùng mẫu yêu cầu ở trên.",
+    "mistake": {
+      "incorrect": "The organizer may insist on every volunteer wear a reflective vest.",
+      "correct": "The organizer may insist on every volunteer wearing a reflective vest.",
+      "explanation": "Trong mẫu insist on somebody doing something, hành động sau người thực hiện dùng dạng -ing: every volunteer wearing. Một cách khác là insist that every volunteer wear a reflective vest trong mẫu yêu cầu của tiếng Anh Mỹ."
+    },
+    "example": {
+      "id": "usage-insist-round2-2026-10-23",
+      "en": "The organizer may insist that every volunteer wear a reflective vest.",
+      "vi": "Người tổ chức có thể nhất quyết yêu cầu mọi tình nguyện viên mặc áo phản quang.",
+      "alternatives": [
+        "demand",
+        "require"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/insist",
+        "title": "insist verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:19.789166+00:00",
+        "sha256": "ed0a00b0e6d9095aacee8eb45adf1126e01eb1652d6168d9f6f706228e1f910c"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-7e92261c4445c0-01",
+    "headword": "concentrate",
+    "partOfSpeech": "verb",
+    "meaningVi": "tập trung sự chú ý",
+    "patterns": [
+      {
+        "form": "concentrate (on something)",
+        "explanation": "Tập trung chú ý, có thể nêu điều đang chú ý bằng on + danh từ."
+      },
+      {
+        "form": "concentrate on doing something",
+        "explanation": "Tập trung vào một hành động; sau on dùng dạng -ing."
+      },
+      {
+        "form": "concentrate your attention/efforts on something",
+        "explanation": "Dồn sự chú ý hoặc nỗ lực vào một điều cụ thể."
+      }
+    ],
+    "note": "Mục này luyện nghĩa tập trung sự chú ý. Có thể dùng concentrate không có tân ngữ nếu đã rõ việc đang làm. Không áp dụng các mẫu này cho nghĩa gom nguồn lực vào một nơi hoặc làm dung dịch đậm đặc hơn.",
+    "mistake": {
+      "incorrect": "I need to concentrate on finish this report.",
+      "correct": "I need to concentrate on finishing this report.",
+      "explanation": "Khi hành động đứng sau giới từ on trong mẫu concentrate on doing something, dùng dạng -ing: finishing this report. Không đặt động từ nguyên mẫu finish trực tiếp sau on trong câu này."
+    },
+    "example": {
+      "id": "usage-concentrate-round2-2026-10-23",
+      "en": "I find it easier to concentrate on my reading when my phone is in another room.",
+      "vi": "Tôi thấy dễ tập trung đọc hơn khi điện thoại để ở phòng khác.",
+      "alternatives": [
+        "focus"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/concentrate_1",
+        "title": "concentrate verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:27:22.959924+00:00",
+        "sha256": "2098a28e96147c4515c00a0bcfb6c49de771e424c0ff8532253548bf22783d52"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/focus_1",
+        "title": "focus verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:27:24.764483+00:00",
+        "sha256": "d5b3b2a612c56761f77653aa9408cd4c09d7c204c9b0fa3e52d9939daf42b50b"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-48f8106bb7de70-01",
+    "headword": "participate",
+    "partOfSpeech": "verb",
+    "meaningVi": "tham gia",
+    "patterns": [
+      {
+        "form": "participate in something",
+        "explanation": "Tham gia vào một hoạt động; dùng in trước hoạt động."
+      },
+      {
+        "form": "participate",
+        "explanation": "Dùng không nêu hoạt động khi ngữ cảnh đã rõ; có thể thêm trạng từ như actively hoặc fully."
+      }
+    ],
+    "note": "Participate mang sắc thái tương đối trang trọng. So sánh participate in an activity với join a group: hai từ không có cùng mẫu tân ngữ. Tham gia một hoạt động không đồng nghĩa chỉ có mặt tham dự sự kiện.",
+    "mistake": {
+      "incorrect": "Residents can participate the survey.",
+      "correct": "Residents can participate in the survey.",
+      "explanation": "Participate là nội động từ trong nghĩa này; cần in trước tên hoạt động, không nhận trực tiếp the survey như join nhận tên một nhóm."
+    },
+    "example": {
+      "id": "usage-participate-round2-2026-10-23",
+      "en": "Residents can participate in a survey about the new bus routes.",
+      "vi": "Cư dân có thể tham gia một cuộc khảo sát về các tuyến xe buýt mới.",
+      "alternatives": [
+        "take part"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/participate",
+        "title": "participate verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:19.961403+00:00",
+        "sha256": "75104fc147221cc1f11739cf834df3712702df64b0604ac9ea312ddcc1321ac1"
+      }
+    ]
+  }
+]

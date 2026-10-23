@@ -2,11 +2,21 @@
 
 Cập nhật 23/10/2026. Đợt sửa theo kiểm tra tổng thể đã triển khai các lỗi lịch khác nghĩa, thống kê không thống nhất, lựa chọn từ lặp, thứ tự kỹ năng, chấm đáp án mơ hồ, phản hồi discuss, nháp viết và mobile. Đã bổ sung hai nghĩa A1 của like/lie theo Oxford American, kho hiện có 5.560 mục sẵn học và 346 IPA. Giữ nguyên 5.558 mục cũ từng byte. Không cần rà lại nguồn từ đầu. Người dùng đã cho phép commit/push sau khi nguồn và kiểm thử đạt.
 
-**Kiểm thử bàn giao đợt này:** 333 unit, 37 data và 100 E2E Chromium đạt; TypeScript/build, production đường dẫn gốc/con, offline và thông báo thiếu JavaScript đạt. Phát hành qua workflow Pages trên main; xem kết quả theo commit trong báo cáo, không coi Supabase mô phỏng là kiểm thử cloud thật. Báo cáo: [learning-reliability-2026-10-23.md](learning-reliability-2026-10-23.md).
+**Kiểm thử bàn giao mới nhất:** 335 unit, 37 data và 106 E2E Chromium đạt; TypeScript/build, production đường dẫn gốc/con, offline và thông báo thiếu JavaScript đạt. Báo cáo hiện hành: [usage-expansion-2026-10-23.md](usage-expansion-2026-10-23.md). Đợt sửa độ tin cậy trước hai đợt mở rộng có 333 unit/100 E2E, xem [learning-reliability-2026-10-23.md](learning-reliability-2026-10-23.md). Không coi Supabase mô phỏng là kiểm thử cloud thật.
 
-**Phần còn lại thực sự:** cách dùng/ngữ cảnh thứ hai hiện có 96 mục; 5.464 mục còn lại vẫn một câu, 12 hội thoại/48 ID mục tiêu, phần lớn phát âm còn dựa TTS. Chưa có Supabase thật; snapshot cloud vẫn chứa toàn kho và giới hạn 20 MiB, chưa chuyển sang delta. Chưa chấm ngữ pháp tổng quát hoặc tự nhận đã phủ mọi nghĩa của mỗi đầu từ. Đây là các giới hạn phát triển tiếp, không phải những lỗi đã sửa bên dưới còn đang tồn tại.
+**Phần còn lại thực sự:** cách dùng/ngữ cảnh thứ hai hiện có 144 mục; 5.416 mục còn lại vẫn một câu, 12 hội thoại/48 ID mục tiêu, phần lớn phát âm còn dựa TTS. Chưa có Supabase thật; snapshot cloud vẫn chứa toàn kho và giới hạn 20 MiB, chưa chuyển sang delta. Chưa chấm ngữ pháp tổng quát hoặc tự nhận đã phủ mọi nghĩa của mỗi đầu từ. Đây là các giới hạn phát triển tiếp, không phải những lỗi đã sửa bên dưới còn đang tồn tại.
 
-## Mở rộng cách dùng — 23/10/2026
+## Mở rộng cách dùng — đợt 2, 23/10/2026
+
+- Tiếp tục sau commit 8eac9c4: thêm 48 mục ở group-f/g/h.json, nâng tổng 96→144; 40 mục có ghi chú tính đếm được. Kho TXT vẫn 5.560 mục, không đổi byte/ID/phiên bản nội dung/lịch sử/lịch ôn. Mục cũ a-e giữ nguyên.
+- Nhóm mới: 16 động từ cấu trúc/giới từ; 16 danh từ phân biệt C/U theo nghĩa; 16 tính từ giới từ và cấu trúc dễ nhầm. Search chỉ có noun nên dùng permit; rely có bài điều hướng tới rely-on thay vì định nghĩa tại bài chính nên dùng concentrate. Không sửa canonical để lấp nhóm.
+- Đã đọc/rà nguồn trực tiếp và rà nội dung độc lập. 48 mục dẫn 65 URL Oxford American, 62 URL chưa có ở a-e, 3 nguồn dùng lại. Live65/65, receipt65/65 khớp cache gốc, offline toàn bộ144mục/164URL đạt. Nhận dạng nguồn không tự chứng nhận quy tắc/ví dụ.
+- Sửa draft tránh kết luận sai với attend to, enter into, grateful for hoặc insist+indicative vốn có thể hợp lệ ở ngữ cảnh khác. different from/than có lưu ý vùng; business/room/glass/chicken/paper/time/success bám đúng nghĩa. Câu mới của mỗi mục khác bối cảnh câu canonical; synonym chỉ trung tính theo đúng câu.
+- Bổ sung hai ca UI320/390 thật trong e2e/usage-expansion.spec.ts: tạo các snapshot câu2 spend/paper/familiar từ lịch sử câu1, giữ nháp qua reload và xuất/validate JSON thật; lịch sử và lịch ôn không đổi. scripts/check-production.mjs kiểm suggest và cả3nhóm mới, filter144, online/offline ở gốc/con.
+- Không chỉnh mã giao diện hoặc schema lưu trữ, không thêm dependency/API. Dùng bộ lọc đã có Kho từ → Trạng thái → Có cách dùng đã đối chiếu. Báo cáo hiện hành: [usage-expansion-2026-10-23.md](usage-expansion-2026-10-23.md).
+- Bản đã chốt đạt 335 unit, 37 data, 106 E2E; TypeScript/build và production gốc/con/offline đạt. Bundle chính khoảng958kB/gzip272kB; trước khi tăng nội dung quy mô lớn nên xem xét cách chia gói/cache, giữ getUsage và snapshot tương thích.
+
+## Mở rộng cách dùng — đợt 1, 23/10/2026
 
 - Đã bổ sung 16 động từ + 16 danh từ + 16 tính từ ở data/usage/group-c/d/e.json, nâng tổng 48→96 mục; có 24 ghi chú tính đếm được. Đã đọc trực tiếp 52 URL Oxford American mới và rà nội dung độc lập, live 52/52 đúng bài; offline toàn bộ 96 mục/102 URL đạt.
 - Gắn đúng ID/đầu từ/POS/nghĩa; manage/tired/worth chỉ kiểm tra nghĩa canonical, có giải thích ngoại lệ danh từ và khác biệt vùng. Giữ behaviour/behavior cùng ID cũ. Ví dụ bổ sung tự biên soạn, đáp án thay thế theo đúng câu vẫn trung tính/chưa chấm.
@@ -87,7 +97,7 @@ Cập nhật 23/10/2026. Đợt sửa theo kiểm tra tổng thể đã triển 
 
 - Kho hiện có 5.560 mục ready. Đợt bổ sung này thêm `like-verb-enjoy-01` (thích, A1) và `lie-horizontal-01` (nằm, A1), đối chiếu trực tiếp Oxford American cùng dữ kiện American Oxford; có nguồn, receipt/hash, IPA Mỹ literal và lưu ý lay/lain/lying. Không gọi nghĩa like/lie cũ sai.
 - 5.558 mục cũ là tiền tố byte không đổi của TXT mới; các pipeline preview/replay áp dụng thêm lớp essential-senses được khai báo, không đổi ID hoặc ghi đè bản cá nhân. SHA256 canonical: `10392288d69ba11cc6e5fc74e02e0cc3654bea50cda229254236848d2d3a87f4`.
-- 96 mục có cách dùng và ngữ cảnh thứ hai sau đợt mở rộng 23/10; 5.464 mục còn lại vẫn một câu. 346 IPA, chưa có audio nguồn mặc định. Không coi đủ đầu từ là đủ mọi nghĩa, không coi bản dịch/ví dụ biên soạn là được Oxford chứng nhận.
+- 144 mục có cách dùng và ngữ cảnh thứ hai sau hai đợt mở rộng 23/10; 5.416 mục còn lại vẫn một câu. 346 IPA, chưa có audio nguồn mặc định. Không coi đủ đầu từ là đủ mọi nghĩa, không coi bản dịch/ví dụ biên soạn là được Oxford chứng nhận.
 - TTS ở từ cùng đầu mục khác từ loại có thể dùng câu song ngữ đã biên soạn cho đúng nghĩa; hiển thị “Nghe từ trong câu” và cảnh báo giới hạn trọng âm. Audio HTTPS do người dùng cấu hình vẫn được ưu tiên. Không chế IPA hoặc ghi âm Oxford.
 
 ### 4. Năng suất và đề xuất đúng bài — đã triển khai 23/10

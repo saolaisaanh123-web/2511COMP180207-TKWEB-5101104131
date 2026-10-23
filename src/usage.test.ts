@@ -58,11 +58,11 @@ function result(overrides: Partial<Result> = {}): Result {
 }
 
 describe("source-reviewed usage and contextual recall", () => {
-  it("ships 96 distinct, complete, sense-matched supplements with real source receipts", () => {
-    expect(usageEntries).toHaveLength(96);
-    expect(new Set(usageEntries.map((entry) => entry.wordId)).size).toBe(96);
+  it("ships 144 distinct, complete, sense-matched supplements with real source receipts", () => {
+    expect(usageEntries).toHaveLength(144);
+    expect(new Set(usageEntries.map((entry) => entry.wordId)).size).toBe(144);
     expect(new Set(usageEntries.map((entry) => entry.example.id)).size).toBe(
-      96,
+      144,
     );
     for (const entry of usageEntries) {
       const word = corpus.find((w) => w.id === entry.wordId)!;
@@ -119,7 +119,7 @@ describe("source-reviewed usage and contextual recall", () => {
     }
   });
 
-  it("covers the new noun group with explicit sense-scoped countability and accepts the reviewed US form", () => {
+  it("covers the expanded noun groups with explicit sense-scoped countability and accepts the reviewed US form", () => {
     const nouns = [
       "evidence",
       "knowledge",
@@ -137,6 +137,22 @@ describe("source-reviewed usage and contextual recall", () => {
       "education",
       "transport",
       "clothing",
+      "job",
+      "task",
+      "business",
+      "service",
+      "room",
+      "space",
+      "time",
+      "paper",
+      "glass",
+      "chicken",
+      "hair",
+      "ability",
+      "attention",
+      "access",
+      "effect",
+      "success",
     ];
     for (const headword of nouns) {
       const entry = usageEntries.find(

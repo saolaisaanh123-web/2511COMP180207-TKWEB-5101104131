@@ -1,0 +1,764 @@
+[
+  {
+    "wordId": "different-01",
+    "headword": "different",
+    "partOfSpeech": "adjective",
+    "meaningVi": "khác; khác nhau",
+    "patterns": [
+      {
+        "form": "different from somebody/something",
+        "explanation": "So sánh và nói một người hoặc vật không giống người hoặc vật kia."
+      },
+      {
+        "form": "different than somebody/something / different than + mệnh đề",
+        "explanation": "Nguồn Anh–Mỹ cũng ghi nhận than, kể cả khi phần sau là một mệnh đề; không tự xem different than là sai."
+      },
+      {
+        "form": "a different + danh từ số ít",
+        "explanation": "Nói đến một người, vật hoặc cách làm khác; mạo từ phụ thuộc cụm danh từ theo sau."
+      }
+    ],
+    "note": "Different from là lựa chọn dùng rộng rãi; different than cũng có trong tiếng Anh Mỹ. Chọn giới từ theo cấu trúc và ý định so sánh, không lấy một biến thể duy nhất làm đáp án bắt buộc cho mọi câu.",
+    "mistake": {
+      "incorrect": "The uniforms here are different with the ones at my old school.",
+      "correct": "The uniforms here are different from the ones at my old school.",
+      "explanation": "Khi so sánh hai bộ đồng phục trong câu này, dùng different from hoặc different than. With không thay thế hai mẫu so sánh được nêu ở đây."
+    },
+    "example": {
+      "id": "usage-different-round2-2026-10-23",
+      "en": "The emergency exit looks different from the main entrance, so visitors can identify it quickly.",
+      "vi": "Lối thoát hiểm trông khác lối vào chính nên khách có thể nhận ra nhanh chóng.",
+      "alternatives": [
+        "distinct",
+        "dissimilar"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/different",
+        "title": "different adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:25:23.713228+00:00",
+        "sha256": "128f2cbef6105341dc57dfcba2bce36dbc07a4982f09a73c0c2423e9c7d82ca5"
+      }
+    ]
+  },
+  {
+    "wordId": "similar-01",
+    "headword": "similar",
+    "partOfSpeech": "adjective",
+    "meaningVi": "tương tự; giống nhau ở một số điểm",
+    "patterns": [
+      {
+        "form": "similar to somebody/something",
+        "explanation": "Nêu người hoặc vật có những điểm giống với đối tượng đang nói đến."
+      },
+      {
+        "form": "similar in something",
+        "explanation": "Chỉ rõ phương diện giống nhau, chẳng hạn kích cỡ, hình dạng hoặc cách hoạt động."
+      },
+      {
+        "form": "similar + danh từ số nhiều",
+        "explanation": "Có thể đặt trước danh từ để miêu tả những đối tượng tương tự nhau; không nhất thiết nêu đối tượng so sánh."
+      }
+    ],
+    "note": "Similar có nghĩa giống ở một số điểm, không khẳng định giống hệt. Mẫu similar to nêu đối tượng so sánh, còn similar in nêu phương diện; không đổi to thành than theo mẫu tính từ so sánh hơn.",
+    "mistake": {
+      "incorrect": "This lock is similar than the one upstairs.",
+      "correct": "This lock is similar to the one upstairs.",
+      "explanation": "Similar không phải dạng so sánh hơn đi với than. Dùng similar to để so sánh chiếc khóa này với chiếc khóa ở tầng trên."
+    },
+    "example": {
+      "id": "usage-similar-round2-2026-10-23",
+      "en": "The replacement tiles are similar in color to the ones already on the kitchen wall.",
+      "vi": "Những viên gạch thay thế có màu tương tự các viên đang ốp trên tường bếp.",
+      "alternatives": [
+        "close",
+        "comparable"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/similar",
+        "title": "similar adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:25:23.712848+00:00",
+        "sha256": "5709f15b9e9d7d00221c47729fb2e0ab9a5db1aaca632f0235d1b38679548d4f"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-3a419467866c11-01",
+    "headword": "familiar",
+    "partOfSpeech": "adjective",
+    "meaningVi": "quen thuộc",
+    "patterns": [
+      {
+        "form": "something is familiar to somebody",
+        "explanation": "Một điều trông, nghe hoặc có vẻ quen thuộc đối với người nhận ra nó."
+      },
+      {
+        "form": "somebody is familiar with something",
+        "explanation": "Một người đã biết hoặc hiểu khá rõ điều gì."
+      },
+      {
+        "form": "look/sound familiar",
+        "explanation": "Dùng sau look hoặc sound khi nhận ra vẻ ngoài hoặc âm thanh quen thuộc."
+      }
+    ],
+    "note": "Đổi to thành with thường kéo theo đổi cách nhìn và chủ thể: một hệ thống có thể familiar to người dùng; người dùng có thể familiar with hệ thống. Mục này không luyện nghĩa cư xử suồng sã của familiar.",
+    "mistake": {
+      "incorrect": "I am familiar about the backup procedure.",
+      "correct": "I am familiar with the backup procedure.",
+      "explanation": "Trong ý nói tôi biết rõ quy trình, dùng familiar with. Nếu quy trình là chủ ngữ, có thể viết The backup procedure is familiar to me."
+    },
+    "example": {
+      "id": "usage-familiar-round2-2026-10-23",
+      "en": "This melody is familiar to anyone who grew up watching that cartoon.",
+      "vi": "Giai điệu này quen thuộc với những ai lớn lên cùng bộ phim hoạt hình đó.",
+      "alternatives": [
+        "recognizable",
+        "recognisable",
+        "known"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/familiar",
+        "title": "familiar adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:25:23.695808+00:00",
+        "sha256": "4e30ec4dcb7e17ebace1be1425f772a32808a73c6a96948c40b0249877aae82e"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-fde281f3efb869-01",
+    "headword": "satisfied",
+    "partOfSpeech": "adjective",
+    "meaningVi": "hài lòng",
+    "patterns": [
+      {
+        "form": "be/feel satisfied with somebody/something",
+        "explanation": "Hài lòng vì điều gì đạt được hoặc diễn ra theo mong muốn."
+      },
+      {
+        "form": "a satisfied customer/smile",
+        "explanation": "Có thể đứng trước danh từ để nói về người cảm thấy hài lòng hoặc nét mặt thể hiện cảm giác đó."
+      }
+    ],
+    "note": "Ở đây satisfied diễn tả sự hài lòng. Satisfied that… còn có thể mang nghĩa tin hoặc chấp nhận rằng điều gì đúng; không tự đưa nghĩa tin chắc đó vào bài luyện của mục này. Pleased hoặc happy có thể phù hợp một số câu nhưng không phải đáp án thay thế chung cho mọi tình huống.",
+    "mistake": {
+      "incorrect": "I was satisfied of the bowl I made.",
+      "correct": "I was satisfied with the bowl I made.",
+      "explanation": "Trong ý hài lòng với sản phẩm mình làm, dùng satisfied with. Không dùng of để nối satisfied với sản phẩm trong mẫu này."
+    },
+    "example": {
+      "id": "usage-satisfied-round2-2026-10-23",
+      "en": "By the end of the pottery workshop, I was satisfied with the bowl I had made.",
+      "vi": "Đến cuối buổi học làm gốm, tôi hài lòng với chiếc bát mình đã làm.",
+      "alternatives": [
+        "pleased",
+        "happy",
+        "content"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/satisfied",
+        "title": "satisfied adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:25:24.012762+00:00",
+        "sha256": "8727670960798e14dfe0b1bc4070acc4062bfb35e4b8c47f5c794e99ee11be30"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/pleased",
+        "title": "pleased adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:25:24.289521+00:00",
+        "sha256": "6398d0fb024876e9fecf104f1e6731a14fc0070c189432006de8fd2960908ff4"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-364d78e6fc3db7-01",
+    "headword": "disappointed",
+    "partOfSpeech": "adjective",
+    "meaningVi": "thất vọng",
+    "patterns": [
+      {
+        "form": "disappointed at/by something",
+        "explanation": "Thất vọng trước một sự việc hoặc vì chất lượng, kết quả không như kỳ vọng."
+      },
+      {
+        "form": "disappointed in/with somebody/something",
+        "explanation": "Thất vọng về một người, vật hoặc chính bản thân; cả in và with đều có trong nguồn."
+      },
+      {
+        "form": "disappointed to do something / disappointed (that) + mệnh đề",
+        "explanation": "Nêu điều gây thất vọng bằng động từ nguyên mẫu có to hoặc bằng một mệnh đề."
+      }
+    ],
+    "note": "Có nhiều giới từ phù hợp tùy câu; không đánh dấu by, at, in hoặc with là sai chỉ vì khác một mẫu học thuộc. Sau to trong disappointed to see/hear/find… là động từ nguyên mẫu.",
+    "mistake": {
+      "incorrect": "We were disappointed to missing the last ferry.",
+      "correct": "We were disappointed to miss the last ferry.",
+      "explanation": "To ở đây mở đầu động từ nguyên mẫu nên dùng miss. Có thể diễn đạt lại bằng một mệnh đề, như We were disappointed that we missed the last ferry."
+    },
+    "example": {
+      "id": "usage-disappointed-round2-2026-10-23",
+      "en": "The hikers were disappointed to find the lookout closed for repairs.",
+      "vi": "Những người đi bộ đường dài thất vọng khi thấy đài quan sát đóng cửa để sửa chữa.",
+      "alternatives": [
+        "upset",
+        "sad"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/disappointed",
+        "title": "disappointed adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:25:23.990522+00:00",
+        "sha256": "ad582a8623a80d4b2396af154d3ab1f900c218d82af6be642543530b295ffcfb"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-d069c85283b98c-01",
+    "headword": "proud",
+    "partOfSpeech": "adjective",
+    "meaningVi": "tự hào",
+    "patterns": [
+      {
+        "form": "proud of somebody/something/yourself",
+        "explanation": "Tự hào về một người, thành quả hoặc việc có liên quan đến mình."
+      },
+      {
+        "form": "proud to be/have/do something",
+        "explanation": "Nêu việc khiến mình tự hào bằng động từ nguyên mẫu có to."
+      },
+      {
+        "form": "proud (that) + mệnh đề",
+        "explanation": "Dùng một mệnh đề để giải thích điều làm mình tự hào."
+      }
+    ],
+    "note": "Mục này luyện cảm giác tự hào, không đồng nhất với nghĩa kiêu ngạo. Có thể dùng proud of + cụm danh từ hoặc V-ing, hoặc proud to + động từ nguyên mẫu; không ghép of trực tiếp với to + V.",
+    "mistake": {
+      "incorrect": "She is proud of to help her community.",
+      "correct": "She is proud to help her community.",
+      "explanation": "Để nêu hành động theo mẫu proud to do, bỏ of. Proud of helping her community cũng là một cách diễn đạt hợp lệ."
+    },
+    "example": {
+      "id": "usage-proud-round2-2026-10-23",
+      "en": "The neighbors were proud of the mural they had painted together.",
+      "vi": "Những người hàng xóm tự hào về bức tranh tường họ đã cùng nhau vẽ."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/proud_1",
+        "title": "proud adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:25:24.278842+00:00",
+        "sha256": "dfd107eed73c44de2595a8bdd7502b3f3c43279bee336274c0b91c24865565d0"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-74e0a141ec4179-01",
+    "headword": "pleased",
+    "partOfSpeech": "adjective",
+    "meaningVi": "hài lòng",
+    "patterns": [
+      {
+        "form": "pleased with somebody/something",
+        "explanation": "Hài lòng với một người, việc hoặc kết quả nào đó."
+      },
+      {
+        "form": "pleased (that) + mệnh đề",
+        "explanation": "Nêu điều khiến mình vui hoặc hài lòng bằng một mệnh đề."
+      },
+      {
+        "form": "pleased to hear/know/see…",
+        "explanation": "Nêu điều khiến mình vui hoặc hài lòng bằng động từ nguyên mẫu có to; còn xuất hiện trong lời đáp lịch sự."
+      }
+    ],
+    "note": "Trong nghĩa đang học, pleased thường nói về cảm giác hài lòng hoặc vui trước một việc. Pleased with không có nghĩa đánh giá mọi khía cạnh của người hoặc vật đó; các từ gần nghĩa phải xét theo từng câu. Không suy từ mẫu to hear thành to + V-ing.",
+    "mistake": {
+      "incorrect": "I was pleased to hearing that the repair was finished.",
+      "correct": "I was pleased to hear that the repair was finished.",
+      "explanation": "Sau pleased to dùng hear ở dạng nguyên mẫu. Không dùng hearing trong cấu trúc này."
+    },
+    "example": {
+      "id": "usage-pleased-round2-2026-10-23",
+      "en": "The coach was pleased with the team's calm response after the referee changed the call.",
+      "vi": "Huấn luyện viên hài lòng với phản ứng bình tĩnh của đội sau khi trọng tài thay đổi quyết định.",
+      "alternatives": [
+        "satisfied",
+        "happy",
+        "delighted"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/pleased",
+        "title": "pleased adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:25:24.289521+00:00",
+        "sha256": "6398d0fb024876e9fecf104f1e6731a14fc0070c189432006de8fd2960908ff4"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/satisfied",
+        "title": "satisfied adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:25:24.012762+00:00",
+        "sha256": "8727670960798e14dfe0b1bc4070acc4062bfb35e4b8c47f5c794e99ee11be30"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-13d9ead0ef6e1b-01",
+    "headword": "worried",
+    "partOfSpeech": "adjective",
+    "meaningVi": "lo lắng về điều có thể bất lợi",
+    "patterns": [
+      {
+        "form": "worried about somebody/something/doing something",
+        "explanation": "Lo lắng về một người, vấn đề hoặc điều có thể xảy ra."
+      },
+      {
+        "form": "worried by something",
+        "explanation": "Nêu điều làm mình lo lắng."
+      },
+      {
+        "form": "worried (that) + mệnh đề",
+        "explanation": "Nói rõ điều đáng lo bằng một mệnh đề; that có thể được lược bỏ khi phù hợp."
+      }
+    ],
+    "note": "Worried, anxious và nervous có phần nghĩa giao nhau. Nguồn mô tả nervous thường gặp trước việc quan trọng hoặc khó, anxious có thể mạnh và trang trọng hơn, nhưng đây là xu hướng chứ không phải ranh giới tuyệt đối giữa các từ.",
+    "mistake": {
+      "incorrect": "The residents are worried about to lose their homes.",
+      "correct": "The residents are worried about losing their homes.",
+      "explanation": "Sau giới từ about, dùng cụm danh từ hoặc dạng V-ing; trong câu này là losing. Không dùng about to lose như một cụm bổ nghĩa cho worried."
+    },
+    "example": {
+      "id": "usage-worried-round2-2026-10-23",
+      "en": "I'm worried that the frozen pipes may burst while we're away.",
+      "vi": "Tôi lo rằng các đường ống bị đóng băng có thể vỡ khi chúng tôi vắng nhà.",
+      "alternatives": [
+        "concerned",
+        "anxious",
+        "nervous",
+        "afraid"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/worried",
+        "title": "worried adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:25:24.302568+00:00",
+        "sha256": "1f0221448f5044d90e445205a0877153ec2e04d7e679a8866cd9c3a895e0a973"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/anxious",
+        "title": "anxious adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:25:24.576726+00:00",
+        "sha256": "8b935637ac5fec8317121fe37627f9c20da1ddc859acb2c90276037cc93c6229"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/nervous",
+        "title": "nervous adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:25:24.594907+00:00",
+        "sha256": "37352d67e63617f47f971416da623b1cb6647d2ff079237bfce7b39b7278412b"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-fb3a7850111f29-01",
+    "headword": "nervous",
+    "partOfSpeech": "adjective",
+    "meaningVi": "lo lắng; hồi hộp",
+    "patterns": [
+      {
+        "form": "nervous about something",
+        "explanation": "Lo lắng hoặc hơi sợ về một việc."
+      },
+      {
+        "form": "nervous about doing something",
+        "explanation": "Nêu hành động khiến mình hồi hộp bằng V-ing sau about."
+      },
+      {
+        "form": "feel/get nervous",
+        "explanation": "Nói về cảm giác hoặc sự chuyển sang trạng thái hồi hộp, lo lắng."
+      }
+    ],
+    "note": "Nervous không chỉ dùng cho phỏng vấn hoặc thi cử; nguồn còn ghi nhận nỗi lo nói chung và tính cách dễ lo. Mục này không luyện nghĩa thuộc về dây thần kinh trong nervous system. Không xem anxious hay worried là sai trong mọi câu có nervous.",
+    "mistake": {
+      "incorrect": "I get nervous about speak in front of a crowd.",
+      "correct": "I get nervous about speaking in front of a crowd.",
+      "explanation": "About là giới từ, nên hành động nói trước đám đông được diễn đạt bằng speaking. Không dùng động từ nguyên mẫu trần speak ngay sau about ở đây."
+    },
+    "example": {
+      "id": "usage-nervous-round2-2026-10-23",
+      "en": "Maya felt nervous about driving across the long suspension bridge.",
+      "vi": "Maya thấy lo lắng về việc lái xe qua cây cầu treo dài.",
+      "alternatives": [
+        "anxious",
+        "worried",
+        "uneasy",
+        "concerned"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/nervous",
+        "title": "nervous adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:25:24.594907+00:00",
+        "sha256": "37352d67e63617f47f971416da623b1cb6647d2ff079237bfce7b39b7278412b"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/anxious",
+        "title": "anxious adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:25:24.576726+00:00",
+        "sha256": "8b935637ac5fec8317121fe37627f9c20da1ddc859acb2c90276037cc93c6229"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/worried",
+        "title": "worried adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:25:24.302568+00:00",
+        "sha256": "1f0221448f5044d90e445205a0877153ec2e04d7e679a8866cd9c3a895e0a973"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-faef616df2ec24-01",
+    "headword": "anxious",
+    "partOfSpeech": "adjective",
+    "meaningVi": "lo lắng",
+    "patterns": [
+      {
+        "form": "anxious about something/doing something",
+        "explanation": "Lo lắng về một vấn đề hoặc hành động có thể dẫn đến điều không mong muốn."
+      },
+      {
+        "form": "anxious for somebody",
+        "explanation": "Lo cho một người, chẳng hạn lo về sự an toàn hoặc tình trạng của họ."
+      }
+    ],
+    "note": "Ở đây anxious nghĩa là lo lắng. Anxious to do something hoặc anxious for something còn có thể mang nghĩa rất muốn một điều xảy ra; không tự hiểu mọi câu có anxious là đang sợ hãi. Những khác biệt về mức độ và văn phong so với worried/nervous chỉ là xu hướng.",
+    "mistake": {
+      "incorrect": "They were anxious about to lose the water supply.",
+      "correct": "They were anxious about losing the water supply.",
+      "explanation": "Với ý lo về nguy cơ mất nguồn nước, dùng about losing. Đừng ghép about với to + động từ nguyên mẫu trong mẫu này."
+    },
+    "example": {
+      "id": "usage-anxious-round2-2026-10-23",
+      "en": "The farmers are anxious about losing their crops during the drought.",
+      "vi": "Những người nông dân lo lắng về nguy cơ mất mùa trong đợt hạn hán.",
+      "alternatives": [
+        "worried",
+        "concerned",
+        "nervous",
+        "uneasy"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/anxious",
+        "title": "anxious adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:25:24.576726+00:00",
+        "sha256": "8b935637ac5fec8317121fe37627f9c20da1ddc859acb2c90276037cc93c6229"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/worried",
+        "title": "worried adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:25:24.302568+00:00",
+        "sha256": "1f0221448f5044d90e445205a0877153ec2e04d7e679a8866cd9c3a895e0a973"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/nervous",
+        "title": "nervous adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:25:24.594907+00:00",
+        "sha256": "37352d67e63617f47f971416da623b1cb6647d2ff079237bfce7b39b7278412b"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-a55751cecd11ba-01",
+    "headword": "essential",
+    "partOfSpeech": "adjective",
+    "meaningVi": "thiết yếu",
+    "patterns": [
+      {
+        "form": "essential for/to something",
+        "explanation": "Thiết yếu hoặc cực kỳ cần cho một mục đích, hoạt động hay tình huống."
+      },
+      {
+        "form": "it is essential to do something",
+        "explanation": "Nói rằng thực hiện một việc là điều thiết yếu; dùng động từ nguyên mẫu sau to."
+      },
+      {
+        "form": "it is essential that + mệnh đề",
+        "explanation": "Diễn đạt điều cần thiết bằng một mệnh đề."
+      }
+    ],
+    "note": "Essential mạnh hơn việc chỉ hữu ích: điều đó được xem là rất quan trọng và cần thiết trong hoàn cảnh đang nói. Cả for và to đều có trong nguồn, không đặt ra một quy tắc loại bỏ một giới từ trong mọi câu. Mục này không luyện nghĩa thuộc bản chất cơ bản của một vật.",
+    "mistake": {
+      "incorrect": "A helmet is essential for to ride safely.",
+      "correct": "A helmet is essential for riding safely.",
+      "explanation": "Sau for dùng riding, không dùng for to ride trong cấu trúc thông thường này. Có thể đổi sang It is essential to wear a helmet when riding."
+    },
+    "example": {
+      "id": "usage-essential-round2-2026-10-23",
+      "en": "A properly fitted helmet is essential for riding on this rocky trail.",
+      "vi": "Một chiếc mũ bảo hiểm vừa vặn là vật dụng thiết yếu khi đi xe trên đường mòn gồ ghề này.",
+      "alternatives": [
+        "necessary",
+        "vital",
+        "crucial",
+        "important",
+        "indispensable"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/essential_1",
+        "title": "essential adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:25:24.893717+00:00",
+        "sha256": "74f568ff938c0f05824c8ba25c7a19009f76bac8c2dbe69001d01e75b47cc60a"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/necessary",
+        "title": "necessary adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:25:24.867553+00:00",
+        "sha256": "ea26e69bb3bc31c1680753299e7158b3a90c63e8ad086b8567b96b03ed62e4ed"
+      }
+    ]
+  },
+  {
+    "wordId": "necessary-01",
+    "headword": "necessary",
+    "partOfSpeech": "adjective",
+    "meaningVi": "cần thiết",
+    "patterns": [
+      {
+        "form": "necessary for somebody/something",
+        "explanation": "Nêu người hoặc mục đích cần một điều gì."
+      },
+      {
+        "form": "it is necessary (for somebody) to do something",
+        "explanation": "Nói một việc cần được thực hiện, có thể nêu rõ người thực hiện sau for."
+      },
+      {
+        "form": "if/where/when necessary",
+        "explanation": "Cách nói gọn nghĩa là nếu, nơi nào hoặc khi cần thiết."
+      }
+    ],
+    "note": "Necessary là cần cho một mục đích hoặc lý do; không có nghĩa một việc chỉ đơn giản là có ích. Khi it là chủ ngữ giả trong mẫu ở đây, dùng to + V. Điều đó không cấm câu có V-ing làm chủ ngữ, như Wearing a seat belt is necessary.",
+    "mistake": {
+      "incorrect": "It is necessary for us wear a seat belt.",
+      "correct": "It is necessary for us to wear a seat belt.",
+      "explanation": "Trong mẫu It is necessary for somebody to do something, sau us phải có to wear. Cũng có thể đưa hành động lên làm chủ ngữ: Wearing a seat belt is necessary."
+    },
+    "example": {
+      "id": "usage-necessary-round2-2026-10-23",
+      "en": "Is it necessary to remove my shoes before entering the workshop?",
+      "vi": "Có cần cởi giày trước khi vào xưởng không?",
+      "alternatives": [
+        "essential",
+        "important"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/necessary",
+        "title": "necessary adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:25:24.867553+00:00",
+        "sha256": "ea26e69bb3bc31c1680753299e7158b3a90c63e8ad086b8567b96b03ed62e4ed"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/essential_1",
+        "title": "essential adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:25:24.893717+00:00",
+        "sha256": "74f568ff938c0f05824c8ba25c7a19009f76bac8c2dbe69001d01e75b47cc60a"
+      }
+    ]
+  },
+  {
+    "wordId": "ready-01",
+    "headword": "ready",
+    "partOfSpeech": "adjective",
+    "meaningVi": "sẵn sàng",
+    "patterns": [
+      {
+        "form": "ready for something",
+        "explanation": "Đã chuẩn bị hoặc ở trạng thái có thể tham gia một việc."
+      },
+      {
+        "form": "ready to do something",
+        "explanation": "Sẵn sàng thực hiện hành động, theo sau là động từ nguyên mẫu có to."
+      },
+      {
+        "form": "get somebody/something ready for something",
+        "explanation": "Chuẩn bị cho một người hoặc vật để có thể tham gia hoặc được sử dụng."
+      }
+    ],
+    "note": "Mục này tập trung trạng thái đã chuẩn bị sẵn. Ready còn có nghĩa sẵn lòng, sắp làm gì hoặc hoàn tất để sử dụng tùy câu; không suy mọi lần dùng từ này đều có cùng nghĩa. Ready to do không phải ready for + động từ nguyên mẫu trần.",
+    "mistake": {
+      "incorrect": "The musicians are ready for perform.",
+      "correct": "The musicians are ready to perform.",
+      "explanation": "Để nêu hành động biểu diễn, dùng ready to perform. For có thể đi trước cụm danh từ như ready for the performance."
+    },
+    "example": {
+      "id": "usage-ready-round2-2026-10-23",
+      "en": "After testing the microphones, the volunteers were ready for the outdoor concert.",
+      "vi": "Sau khi thử micro, các tình nguyện viên đã sẵn sàng cho buổi hòa nhạc ngoài trời.",
+      "alternatives": [
+        "prepared"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/ready_1",
+        "title": "ready adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:25:25.145255+00:00",
+        "sha256": "4ec4dd2a1ac8ac3adf0baaa2a07934730d903bfd2c4fa218243544bd469f4629"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-ca0f69b95d71fe-01",
+    "headword": "willing",
+    "partOfSpeech": "adjective",
+    "meaningVi": "sẵn lòng hoặc muốn làm gì",
+    "patterns": [
+      {
+        "form": "willing to do something",
+        "explanation": "Sẵn lòng thực hiện một việc, không phản đối hoặc không cần bị ép buộc."
+      },
+      {
+        "form": "be perfectly/quite willing to do something",
+        "explanation": "Nhấn mạnh mức độ sẵn lòng trong lời đề nghị hoặc phản hồi."
+      },
+      {
+        "form": "a willing helper/volunteer",
+        "explanation": "Có thể dùng trước danh từ khi miêu tả người nhiệt tình giúp đỡ."
+      }
+    ],
+    "note": "Willing thể hiện sự sẵn lòng, không tự chứng minh có khả năng hoặc đã hoàn tất chuẩn bị. Nguồn có cụm willing and able và willing helpers; vì vậy không nói rằng willing tuyệt đối không được đứng trước danh từ.",
+    "mistake": {
+      "incorrect": "Our neighbor is willing helping us on Saturday.",
+      "correct": "Our neighbor is willing to help us on Saturday.",
+      "explanation": "Hành động sau willing trong mẫu này là to help, không phải helping. Willing là tính từ ở đây, không phải động từ được chia theo thì."
+    },
+    "example": {
+      "id": "usage-willing-round2-2026-10-23",
+      "en": "The retired mechanic is willing to inspect our old van before the trip.",
+      "vi": "Người thợ máy đã nghỉ hưu sẵn lòng kiểm tra chiếc xe tải nhỏ cũ của chúng tôi trước chuyến đi.",
+      "alternatives": [
+        "ready",
+        "happy",
+        "pleased",
+        "prepared"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/willing",
+        "title": "willing adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:25:25.162027+00:00",
+        "sha256": "e0e19eac97efd8de22232876453d0fc09fe16717797ccbc043e98c59197a6456"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/ready_1",
+        "title": "ready adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:25:25.145255+00:00",
+        "sha256": "4ec4dd2a1ac8ac3adf0baaa2a07934730d903bfd2c4fa218243544bd469f4629"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/pleased",
+        "title": "pleased adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:25:24.289521+00:00",
+        "sha256": "6398d0fb024876e9fecf104f1e6731a14fc0070c189432006de8fd2960908ff4"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-c0cafcf0e2d6a2-01",
+    "headword": "sure",
+    "partOfSpeech": "adjective",
+    "meaningVi": "chắc chắn, không nghi ngờ",
+    "patterns": [
+      {
+        "form": "sure (that) + mệnh đề",
+        "explanation": "Chắc rằng một thông tin là đúng; có thể bỏ that khi phù hợp."
+      },
+      {
+        "form": "sure of/about something",
+        "explanation": "Chắc về một thông tin hoặc vấn đề; of/about đi trước cụm danh từ hoặc đại từ."
+      },
+      {
+        "form": "not sure how/whether…",
+        "explanation": "Diễn đạt điều mình còn chưa rõ bằng từ hỏi hoặc whether."
+      }
+    ],
+    "note": "Mục này luyện sự chắc chắn về thông tin. Sure to do something còn có thể nói điều chắc sẽ xảy ra, còn Be sure to… có thể là lời nhắc; không tự gộp các mẫu đó vào mọi câu có sure. Sure about that có thể đúng khi that là đại từ nghĩa là điều đó.",
+    "mistake": {
+      "incorrect": "I'm sure about that the room is empty.",
+      "correct": "I'm sure that the room is empty.",
+      "explanation": "That trong câu này mở đầu mệnh đề the room is empty nên dùng sure that. Nếu chỉ nói Tôi chắc về điều đó, câu I am sure about that là hợp lệ; không phải cứ gặp about that là sai."
+    },
+    "example": {
+      "id": "usage-sure-round2-2026-10-23",
+      "en": "Are you sure that this adapter is safe to use with my laptop?",
+      "vi": "Bạn có chắc rằng bộ chuyển đổi này dùng an toàn với máy tính xách tay của tôi không?",
+      "alternatives": [
+        "certain",
+        "confident",
+        "convinced",
+        "positive"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/sure_1",
+        "title": "sure adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:25:25.468466+00:00",
+        "sha256": "6c9b8e579ba9f8beda7180962d7ad1e5df46a5bcf855322b5ccdfcf480a397ed"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-8652b6b8e1b1f9-01",
+    "headword": "grateful",
+    "partOfSpeech": "adjective",
+    "meaningVi": "biết ơn",
+    "patterns": [
+      {
+        "form": "grateful to somebody for something",
+        "explanation": "Biết ơn ai vì điều họ đã làm hoặc vì điều tốt mình nhận được; to nêu người, for nêu lý do."
+      },
+      {
+        "form": "grateful (that) + mệnh đề",
+        "explanation": "Nêu điều tốt khiến mình cảm thấy biết ơn bằng một mệnh đề."
+      },
+      {
+        "form": "I would be grateful if you could…",
+        "explanation": "Cách đưa ra lời nhờ lịch sự, thường gặp trong thư từ hoặc tình huống trang trọng."
+      }
+    ],
+    "note": "Grateful diễn tả lòng biết ơn, không chỉ là trạng thái vui. Có thể lược người nhận hoặc lý do khi đã rõ: grateful to the volunteers, grateful for the blankets. Không ép một đáp án duy nhất khi thankful cũng phù hợp với đúng câu đang luyện.",
+    "mistake": {
+      "incorrect": "We are grateful the volunteers for keeping the dogs safe.",
+      "correct": "We are grateful to the volunteers for keeping the dogs safe.",
+      "explanation": "Grateful là tính từ; trong mẫu này cần to trước người và for trước lý do. Grateful for the volunteers có thể mang ý biết ơn vì có họ, nên không phải mọi cụm for + người sau grateful đều sai."
+    },
+    "example": {
+      "id": "usage-grateful-round2-2026-10-23",
+      "en": "We're grateful for the donated blankets that kept us warm during the power outage.",
+      "vi": "Chúng tôi biết ơn vì những tấm chăn được quyên góp đã giúp mình giữ ấm trong lúc mất điện.",
+      "alternatives": [
+        "thankful"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/grateful",
+        "title": "grateful adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:25:25.438485+00:00",
+        "sha256": "acb8a166b14ae5b8a719c7142d85db63a9e163482167895a480cd15920c4ad11"
+      }
+    ]
+  }
+]

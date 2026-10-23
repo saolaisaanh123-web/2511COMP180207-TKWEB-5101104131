@@ -1,0 +1,684 @@
+[
+  {
+    "wordId": "ox-5e8c9902207afa-01",
+    "headword": "job",
+    "partOfSpeech": "noun",
+    "meaningVi": "việc làm có trả công",
+    "patterns": [
+      {
+        "form": "get / find / accept a job",
+        "explanation": "Tìm được hoặc nhận một vị trí làm việc có trả công."
+      },
+      {
+        "form": "a job as somebody",
+        "explanation": "Nêu nghề hoặc vai trò bằng as, chẳng hạn a job as a technician."
+      }
+    ],
+    "countability": "Trong nghĩa vị trí việc làm, job là danh từ đếm được: a job, two jobs. Một người có thể có nhiều jobs nếu làm nhiều công việc có trả công.",
+    "note": "Job còn có nghĩa một việc cần làm, như việc nhà; không phải mọi job đều nói một vị trí tuyển dụng. Bài này tập trung vào việc làm có trả công.",
+    "mistake": {
+      "incorrect": "She has two part-time job.",
+      "correct": "She has two part-time jobs.",
+      "explanation": "Sau two cần danh từ số nhiều jobs. Part-time là phần bổ nghĩa, không thay việc chia số nhiều của job."
+    },
+    "example": {
+      "id": "usage-ox-5e8c9902207afa-01-2026-10-23-r2",
+      "en": "After graduation, Maya accepted a job as a lab technician.",
+      "vi": "Sau khi tốt nghiệp, Maya nhận một công việc làm kỹ thuật viên phòng thí nghiệm.",
+      "alternatives": [
+        "position"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/job_1",
+        "title": "job noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:36.173852+00:00",
+        "sha256": "ab3b7ae719d08be4c91a8a6da2f24d21f84ef0398e24339b88d5201c0dc5da2a"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-0ebb429fa86d48-01",
+    "headword": "task",
+    "partOfSpeech": "noun",
+    "meaningVi": "nhiệm vụ hoặc công việc được giao",
+    "patterns": [
+      {
+        "form": "complete / carry out a task",
+        "explanation": "Hoàn thành hoặc thực hiện một nhiệm vụ được giao."
+      },
+      {
+        "form": "the task of doing something",
+        "explanation": "Nêu việc phải làm bằng of và động từ dạng -ing."
+      },
+      {
+        "form": "somebody’s task is to do something",
+        "explanation": "Giải thích nhiệm vụ của ai là làm gì."
+      }
+    ],
+    "countability": "Task trong nghĩa một nhiệm vụ là danh từ đếm được: a task, several tasks. Có thể dùng one task để tách một việc cụ thể trong cả công việc lớn.",
+    "note": "Task thường nhấn mạnh việc cần thực hiện, đôi khi khó hoặc không dễ chịu; đây là xu hướng, không có nghĩa mọi task đều khó. Job cũng có thể chỉ một việc được giao.",
+    "mistake": {
+      "incorrect": "The task of repair the elevator took all morning.",
+      "correct": "The task of repairing the elevator took all morning.",
+      "explanation": "Sau giới từ of, dùng repairing trong mẫu the task of doing something, không đặt động từ nguyên mẫu repair trực tiếp."
+    },
+    "example": {
+      "id": "usage-ox-0ebb429fa86d48-01-2026-10-23-r2",
+      "en": "Our main task today is to restore the files on the damaged laptop.",
+      "vi": "Nhiệm vụ chính hôm nay của chúng tôi là khôi phục các tệp trên chiếc máy tính xách tay bị hỏng.",
+      "alternatives": [
+        "job"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/task_1",
+        "title": "task noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:36.177671+00:00",
+        "sha256": "04f43f94c7cb1a96fdd026cbd2d60fa65257f6cbc45fc8fc97d8f6827cca8418"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-11d40417959631-01",
+    "headword": "business",
+    "partOfSpeech": "noun",
+    "meaningVi": "doanh nghiệp; cơ sở kinh doanh",
+    "patterns": [
+      {
+        "form": "start / run / expand a business",
+        "explanation": "Thành lập, điều hành hoặc mở rộng một doanh nghiệp."
+      },
+      {
+        "form": "a small / family business",
+        "explanation": "Một cơ sở kinh doanh nhỏ hoặc một doanh nghiệp gia đình."
+      }
+    ],
+    "countability": "Khi chỉ một doanh nghiệp, business đếm được: a business, several businesses. Đuôi số nhiều là -es: businesses.",
+    "note": "Business cũng không đếm được khi nói hoạt động kinh doanh hoặc tình hình làm ăn, như Business is slow. Không áp dụng cách đếm doanh nghiệp cho mọi nghĩa của từ này.",
+    "mistake": {
+      "incorrect": "Several local business supported the event.",
+      "correct": "Several local businesses supported the event.",
+      "explanation": "Trong câu này đang đếm các doanh nghiệp địa phương; sau several dùng businesses, không phải business."
+    },
+    "example": {
+      "id": "usage-ox-11d40417959631-01-2026-10-23-r2",
+      "en": "I want to start a bicycle repair business after I finish my training.",
+      "vi": "Tôi muốn mở một cơ sở sửa xe đạp sau khi hoàn thành khóa đào tạo.",
+      "alternatives": [
+        "company"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/business",
+        "title": "business noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:35.941066+00:00",
+        "sha256": "68565f9b07dbe8d80a2bb7776a0abe7e7bda2ec64fd17f0b1ea0b73c3459f2a8"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-9df6b026a8c6c2-01",
+    "headword": "service",
+    "partOfSpeech": "noun",
+    "meaningVi": "dịch vụ hỗ trợ",
+    "patterns": [
+      {
+        "form": "provide / offer a service",
+        "explanation": "Cung cấp một dịch vụ đáp ứng nhu cầu của khách hàng hoặc người sử dụng."
+      },
+      {
+        "form": "a service for somebody",
+        "explanation": "Nêu nhóm người được dịch vụ hỗ trợ."
+      },
+      {
+        "form": "customer service",
+        "explanation": "Nói việc chăm sóc, phục vụ khách hàng nói chung; không đếm từng dịch vụ trong cụm này."
+      }
+    ],
+    "countability": "Một dịch vụ cụ thể có thể đếm được: a delivery service, several services. Service chỉ mức độ/hoạt động phục vụ nói chung thường không đếm được, như excellent service.",
+    "note": "Chọn cách đếm theo ý định: các loại dịch vụ khác nhau là services, còn chất lượng phục vụ nói chung là service. Từ còn có những nghĩa khác như lễ tôn giáo, không dùng trong ví dụ luyện này.",
+    "mistake": {
+      "incorrect": "This delivery service are available on weekends.",
+      "correct": "This delivery service is available on weekends.",
+      "explanation": "This delivery service là một dịch vụ cụ thể ở số ít, nên dùng is. Nếu nói nhiều dịch vụ thì phải đổi cả chủ ngữ thành these delivery services."
+    },
+    "example": {
+      "id": "usage-ox-9df6b026a8c6c2-01-2026-10-23-r2",
+      "en": "The grocery store’s delivery service brings food to customers who cannot leave home.",
+      "vi": "Dịch vụ giao hàng của cửa hàng thực phẩm mang đồ ăn đến cho những khách hàng không thể ra khỏi nhà."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/service_1",
+        "title": "service noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:36.320374+00:00",
+        "sha256": "943c54d97e3b0a9b54d4f8dce96b6666706cb2c57de96e039823393baca8f914"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-1f1c5b2fad7784-01",
+    "headword": "room",
+    "partOfSpeech": "noun",
+    "meaningVi": "phòng trong tòa nhà",
+    "patterns": [
+      {
+        "form": "a room in a building",
+        "explanation": "Một phòng có tường, sàn và trần trong một tòa nhà."
+      },
+      {
+        "form": "a living / dining / waiting room",
+        "explanation": "Tên phòng thường ghép từ chỉ công dụng trước room."
+      }
+    ],
+    "countability": "Room chỉ một căn phòng là danh từ đếm được: a room, three rooms. Cần phân biệt với room không đếm được mang nghĩa chỗ trống.",
+    "note": "Trong There is enough room for a chair, room là chỗ trống, không phải một căn phòng. Bài này luyện nghĩa căn phòng trong tòa nhà, không tự đổi sang nghĩa chỗ trống.",
+    "mistake": {
+      "incorrect": "The apartment has three room.",
+      "correct": "The apartment has three rooms.",
+      "explanation": "Đang đếm ba căn phòng, nên danh từ sau three phải là rooms. Room không đếm được chỉ chỗ trống là một cách dùng khác."
+    },
+    "example": {
+      "id": "usage-ox-1f1c5b2fad7784-01-2026-10-23-r2",
+      "en": "We turned the spare room into a quiet place to study.",
+      "vi": "Chúng tôi biến căn phòng còn trống thành một nơi yên tĩnh để học."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/room_1",
+        "title": "room noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:36.501398+00:00",
+        "sha256": "91d7d594f33a5a197c4c7598335ca7f235067fe08ba5ede1bd2a8cea86bf1ea6"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-3f49dbbfe051cb-01",
+    "headword": "space",
+    "partOfSpeech": "noun",
+    "meaningVi": "chỗ trống, khoảng trống",
+    "patterns": [
+      {
+        "form": "enough / more space for something",
+        "explanation": "Đủ hoặc thêm chỗ trống để đặt hay dùng một thứ."
+      },
+      {
+        "form": "take up space",
+        "explanation": "Chiếm chỗ; có thể thêm too much để nói chiếm quá nhiều chỗ."
+      },
+      {
+        "form": "a space between things",
+        "explanation": "Một khoảng trống xác định nằm giữa các vật."
+      }
+    ],
+    "countability": "Space thường không đếm được khi nói lượng chỗ trống: enough space, much space. Khi chỉ một vị trí hoặc khoảng xác định, có thể đếm: a parking space, two spaces.",
+    "note": "Ở đây luyện chỗ trống có thể sử dụng. Space còn chỉ vũ trụ hoặc khoảng thời gian trong các mẫu khác; không suy nghĩa đó từ mọi câu có space.",
+    "mistake": {
+      "incorrect": "The old freezer takes up too many space.",
+      "correct": "The old freezer takes up too much space.",
+      "explanation": "Ở đây nói lượng chỗ bị chiếm, dùng much với space không đếm được. Many cần một danh từ đếm được số nhiều, như many parking spaces."
+    },
+    "example": {
+      "id": "usage-ox-3f49dbbfe051cb-01-2026-10-23-r2",
+      "en": "Let’s leave enough space beside the door for a wheelchair.",
+      "vi": "Hãy chừa đủ chỗ trống bên cạnh cửa cho một chiếc xe lăn.",
+      "alternatives": [
+        "room"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/space_1",
+        "title": "space noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:36.477433+00:00",
+        "sha256": "75c7414a05dc40db3de7737fc2742affea1b075c05158c396e10754395373f05"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-336074805fc853-01",
+    "headword": "time",
+    "partOfSpeech": "noun",
+    "meaningVi": "thời gian có thể dành cho việc gì",
+    "patterns": [
+      {
+        "form": "have / make time to do something",
+        "explanation": "Có hoặc thu xếp thời gian để làm một việc."
+      },
+      {
+        "form": "have time for something",
+        "explanation": "Có thời gian dành cho một việc hoặc một người."
+      },
+      {
+        "form": "run out of time",
+        "explanation": "Không còn đủ thời gian để tiếp tục hoặc hoàn thành việc đang làm."
+      }
+    ],
+    "countability": "Time chỉ lượng thời gian có thể dành cho việc gì thường không đếm được: much time, enough time. Times đếm những lần xảy ra; a long time là cụm chỉ một khoảng thời gian hợp lệ.",
+    "note": "Không cấm mọi a hoặc -s với time: a good time, three times dùng những nghĩa/cấu trúc khác. Trong câu luyện này, time nói quỹ thời gian để làm một việc.",
+    "mistake": {
+      "incorrect": "I don’t have many time to cook tonight.",
+      "correct": "I don’t have much time to cook tonight.",
+      "explanation": "Đang nói lượng thời gian rảnh, nên dùng much time. Many times có nghĩa nhiều lần và không giữ nguyên ý của câu."
+    },
+    "example": {
+      "id": "usage-ox-336074805fc853-01-2026-10-23-r2",
+      "en": "Please allow enough time to find parking before the appointment.",
+      "vi": "Hãy dành đủ thời gian tìm chỗ đỗ xe trước cuộc hẹn."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/time_1",
+        "title": "time noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:37.400820+00:00",
+        "sha256": "c27569765c3001faf1d0a7eb8d2529b793ee17df34a6773dd61d4fc257662776"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-382635c9325bf3-01",
+    "headword": "paper",
+    "partOfSpeech": "noun",
+    "meaningVi": "giấy",
+    "patterns": [
+      {
+        "form": "a piece / sheet of paper",
+        "explanation": "Một mảnh hoặc một tờ giấy; đếm bằng piece/sheet thay vì đếm vật liệu paper."
+      },
+      {
+        "form": "write / draw on paper",
+        "explanation": "Viết hoặc vẽ trên giấy."
+      },
+      {
+        "form": "wrap something in paper",
+        "explanation": "Bọc một đồ vật bằng giấy."
+      }
+    ],
+    "countability": "Paper chỉ vật liệu giấy không đếm được: some paper, two sheets of paper. A paper có thể là một bài báo học thuật, bài viết hoặc tờ báo; đó là nghĩa khác.",
+    "note": "Papers cũng có thể chỉ tài liệu hoặc giấy tờ. Nếu đang muốn nói đúng hai tờ giấy trắng, two sheets of paper rõ hơn two papers.",
+    "mistake": {
+      "incorrect": "We need three sheet of paper for the labels.",
+      "correct": "We need three sheets of paper for the labels.",
+      "explanation": "Trong cụm này, sheet là đơn vị được đếm nên cần số nhiều sheets sau three; paper vẫn chỉ vật liệu."
+    },
+    "example": {
+      "id": "usage-ox-382635c9325bf3-01-2026-10-23-r2",
+      "en": "Please wrap the bowl in paper before putting it in the box.",
+      "vi": "Hãy bọc chiếc bát bằng giấy trước khi đặt vào hộp."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/paper_1",
+        "title": "paper noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:36.781271+00:00",
+        "sha256": "4a346e238b81943a48534917a60de929c746fae36f4efe3d3f0cf70fb1e914d9"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-132a1a391cce18-01",
+    "headword": "glass",
+    "partOfSpeech": "noun",
+    "meaningVi": "cốc thủy tinh",
+    "patterns": [
+      {
+        "form": "a water / wine glass",
+        "explanation": "Một chiếc cốc dùng để uống nước hoặc rượu vang."
+      },
+      {
+        "form": "a glass of water / juice",
+        "explanation": "Một cốc nước/nước ép; có thể nói chiếc cốc hoặc lượng đồ uống trong cốc theo ngữ cảnh."
+      }
+    ],
+    "countability": "Glass chỉ chiếc cốc là danh từ đếm được: a glass, two glasses. Glass chỉ chất liệu thủy tinh không đếm được; a piece of glass là một mảnh thủy tinh.",
+    "note": "Glasses còn có thể nghĩa kính mắt; a pair of glasses là một cặp kính. Không phải mọi glasses đều dịch là những chiếc cốc: xem ngữ cảnh.",
+    "mistake": {
+      "incorrect": "There are four clean glass on the shelf.",
+      "correct": "There are four clean glasses on the shelf.",
+      "explanation": "Trong ý bốn chiếc cốc, dùng danh từ số nhiều glasses sau four. Nghĩa chất liệu không đếm được không áp dụng ở đây."
+    },
+    "example": {
+      "id": "usage-ox-132a1a391cce18-01-2026-10-23-r2",
+      "en": "The waiter placed a clean glass beside each plate.",
+      "vi": "Người phục vụ đặt một chiếc cốc thủy tinh sạch bên cạnh mỗi chiếc đĩa.",
+      "alternatives": [
+        "cup"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/glass_1",
+        "title": "glass noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:36.845004+00:00",
+        "sha256": "075645540ea3be90de92a48d9de33fe5cc64571b716b60c47daa793baa4f0b4c"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/cup_1",
+        "title": "cup noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:30:51.494120+00:00",
+        "sha256": "5298948fc1f8d467b07964e6c42104862a3471e6df2b1e50a0c6ddddeaa36efa"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-811eb81b9d11d6-01",
+    "headword": "chicken",
+    "partOfSpeech": "noun",
+    "meaningVi": "con gà",
+    "patterns": [
+      {
+        "form": "a chicken / keep chickens",
+        "explanation": "Một con gà hoặc nuôi gà; dùng số nhiều khi đếm nhiều con."
+      },
+      {
+        "form": "free-range chickens",
+        "explanation": "Những con gà được nuôi thả; đây là một cụm mô tả cách chăn nuôi."
+      }
+    ],
+    "countability": "Chicken chỉ con gà đếm được: a chicken, several chickens. Chicken chỉ thịt gà thường không đếm được, như some chicken hoặc chicken soup.",
+    "note": "Mục này luyện nghĩa con vật. Không đổi ví dụ sang fried chicken rồi vẫn coi là cùng nghĩa con gà đang học. Hen nói cụ thể gà mái, hẹp hơn chicken.",
+    "mistake": {
+      "incorrect": "The farmer keeps six chicken.",
+      "correct": "The farmer keeps six chickens.",
+      "explanation": "Đang đếm sáu con gà sống, nên dùng chickens. Chicken không đếm được khi chỉ thịt gà là một cách dùng khác."
+    },
+    "example": {
+      "id": "usage-ox-811eb81b9d11d6-01-2026-10-23-r2",
+      "en": "A chicken followed the farmer across the field at feeding time.",
+      "vi": "Một con gà đi theo người nông dân qua cánh đồng vào giờ cho ăn.",
+      "alternatives": [
+        "hen"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/chicken_1",
+        "title": "chicken noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:37.050888+00:00",
+        "sha256": "a333881ac4d6b9052aae7d067c680c3a6611e46a8a5ee92339c6abce6aab695b"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/hen",
+        "title": "hen noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:30:51.603347+00:00",
+        "sha256": "24ff0e94dce56970683fe4a402ff1100d52a6824f34e765ece58817ccec2f2f5"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-4dc2159bba05da-01",
+    "headword": "hair",
+    "partOfSpeech": "noun",
+    "meaningVi": "tóc",
+    "patterns": [
+      {
+        "form": "brush / comb / wash your hair",
+        "explanation": "Chải hoặc gội tóc; thường dùng hair nói toàn bộ mái tóc."
+      },
+      {
+        "form": "have / get your hair cut",
+        "explanation": "Nói đến việc được/nhờ cắt tóc, thường do người khác thực hiện; không nhấn mạnh người tự cắt."
+      }
+    ],
+    "countability": "Hair thường không đếm được khi nói mái tóc nói chung: her hair is long. A hair hoặc several hairs đếm từng sợi; không kết luận mọi dạng hairs đều sai.",
+    "note": "Phân biệt mái tóc với từng sợi tóc. Tính từ curly/straight/gray thường tả đặc điểm mái tóc, không làm hair tự trở thành danh từ số nhiều.",
+    "mistake": {
+      "incorrect": "Her hair are naturally curly.",
+      "correct": "Her hair is naturally curly.",
+      "explanation": "Ở đây hair chỉ cả mái tóc và đi với is. Nếu đếm các sợi riêng biệt, có thể dùng hairs với động từ số nhiều."
+    },
+    "example": {
+      "id": "usage-ox-4dc2159bba05da-01-2026-10-23-r2",
+      "en": "Tie your hair back before you start preparing food.",
+      "vi": "Hãy buộc tóc gọn ra sau trước khi bắt đầu chuẩn bị đồ ăn."
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/hair",
+        "title": "hair noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:37.154409+00:00",
+        "sha256": "b1e42ec450597e9ad323cacb3d82f639b2591ff8541e93e2e9e3cea286ce9f8c"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-bcffaab67df49e-01",
+    "headword": "ability",
+    "partOfSpeech": "noun",
+    "meaningVi": "khả năng làm một việc",
+    "patterns": [
+      {
+        "form": "the ability to do something",
+        "explanation": "Khả năng thực hiện một việc; sau to là động từ nguyên mẫu."
+      },
+      {
+        "form": "to the best of your ability",
+        "explanation": "Làm tốt nhất trong khả năng của mình, không phải bảo đảm kết quả hoàn hảo."
+      }
+    ],
+    "countability": "Ability chỉ khả năng làm một việc cụ thể thường dùng số ít, như the ability to pay. Khi nói các năng lực/kỹ năng riêng, nguồn cũng dùng abilities; một mức kỹ năng nói chung có thể không đếm được.",
+    "note": "Khả năng thực hiện một việc khác với việc đã thực hiện thành công. Có ability không tự có nghĩa người đó đã làm việc ấy hoặc đạt kết quả mong muốn.",
+    "mistake": {
+      "incorrect": "The course develops your ability solving practical problems.",
+      "correct": "The course develops your ability to solve practical problems.",
+      "explanation": "Trong mẫu ability to do something, cần to solve. Không dùng ability + V-ing trực tiếp để thay cấu trúc này."
+    },
+    "example": {
+      "id": "usage-ox-bcffaab67df49e-01-2026-10-23-r2",
+      "en": "The exercise tests your ability to notice small changes in pitch.",
+      "vi": "Bài luyện kiểm tra khả năng nhận ra những thay đổi nhỏ về cao độ của bạn.",
+      "alternatives": [
+        "capacity"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/ability_1",
+        "title": "ability noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:37.567365+00:00",
+        "sha256": "0d152b102858dd658bf3679d243608db8639165e8c54703a66d3f5f21f57f4de"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/capacity",
+        "title": "capacity noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:30:51.192515+00:00",
+        "sha256": "b197a533e90792b5a4ac4dcb51e0ed6618866a37dcd56ca2f21fcef1827a476b"
+      }
+    ]
+  },
+  {
+    "wordId": "attention-01",
+    "headword": "attention",
+    "partOfSpeech": "noun",
+    "meaningVi": "sự chú ý",
+    "patterns": [
+      {
+        "form": "pay attention to somebody / something",
+        "explanation": "Chú ý lắng nghe, nhìn hoặc suy nghĩ kỹ về người hay việc được nêu sau to."
+      },
+      {
+        "form": "catch / attract somebody’s attention",
+        "explanation": "Khiến ai chú ý; người chú ý được nêu bằng sở hữu cách."
+      },
+      {
+        "form": "draw attention to something",
+        "explanation": "Làm người khác chú ý đến một điểm hay vấn đề."
+      }
+    ],
+    "countability": "Attention chỉ sự tập trung hoặc chú ý nói chung không đếm được. Attentions có thể nói những hành động thể hiện sự quan tâm với ai; đó không phải số nhiều của sự tập trung trong bài này.",
+    "note": "Pay attention không có nghĩa trả tiền: đây là cụm cố định. Attention còn có nghĩa chăm sóc/xử lý, như medical attention, khác sự tập trung đang luyện.",
+    "mistake": {
+      "incorrect": "Please pay attention at the instructions on the label.",
+      "correct": "Please pay attention to the instructions on the label.",
+      "explanation": "Khi nêu điều cần chú ý, mẫu là pay attention to something. Trong câu này không thay to bằng at."
+    },
+    "example": {
+      "id": "usage-attention-01-2026-10-23-r2",
+      "en": "The unusual smell caught the technician’s attention before she switched on the machine.",
+      "vi": "Mùi bất thường khiến người kỹ thuật viên chú ý trước khi cô ấy bật máy.",
+      "alternatives": [
+        "interest"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/attention_1",
+        "title": "attention noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:37.677660+00:00",
+        "sha256": "34d6403dac7d1b618f67dd94e4656b64c5fcdd6d8898be710bcc9d48eedb07be"
+      }
+    ]
+  },
+  {
+    "wordId": "access-01",
+    "headword": "access",
+    "partOfSpeech": "noun",
+    "meaningVi": "khả năng tiếp cận",
+    "patterns": [
+      {
+        "form": "have / get / gain access to something",
+        "explanation": "Có hoặc có được khả năng tiếp cận, sử dụng hay đi vào một nơi."
+      },
+      {
+        "form": "give somebody access to something",
+        "explanation": "Cho ai khả năng/quyền tiếp cận một nơi, người hoặc nguồn lực."
+      }
+    ],
+    "countability": "Access trong các nghĩa danh từ tiếp cận/quyền sử dụng ở đây không đếm được: access to the building, easy access. Không dùng an access để đếm một lượt truy cập trong những mẫu này.",
+    "note": "To là giới từ trong danh từ access to something. Động từ access đứng trực tiếp trước tân ngữ, như access a file; không chuyển mẫu danh từ sang động từ một cách máy móc.",
+    "mistake": {
+      "incorrect": "Access to the upper floor are restricted after 6 p.m.",
+      "correct": "Access to the upper floor is restricted after 6 p.m.",
+      "explanation": "Access là chủ ngữ không đếm được trong ý khả năng/quyền tiếp cận, nên dùng is. Cụm to the upper floor không làm chủ ngữ thành số nhiều."
+    },
+    "example": {
+      "id": "usage-access-01-2026-10-23-r2",
+      "en": "The new ramp gives visitors access to the museum’s upper floor.",
+      "vi": "Đường dốc mới giúp khách tham quan tiếp cận tầng trên của bảo tàng.",
+      "alternatives": [
+        "entry"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/access_1",
+        "title": "access noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:37.681683+00:00",
+        "sha256": "6ea680df9bc0ac3b61f764090c3b8ed9755a8751a0fb50d0bf24eeb5d55de07a"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/access_2",
+        "title": "access verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:30:50.392565+00:00",
+        "sha256": "bd1436aa86bf90c1e9281c1d108052e3d6284e6641fa2c34dac201802afa9f4d"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/entry",
+        "title": "entry noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:30:51.850477+00:00",
+        "sha256": "cfa9f3e5cda1555e564f5632d0e4d0fd190a29e1d56c051e74a297e586fee167"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-dcb576426a17b7-01",
+    "headword": "effect",
+    "partOfSpeech": "noun",
+    "meaningVi": "tác động; kết quả",
+    "patterns": [
+      {
+        "form": "have an effect on somebody / something",
+        "explanation": "Có tác động đến ai hoặc điều gì; đối tượng chịu tác động đứng sau on."
+      },
+      {
+        "form": "the effect of something on something",
+        "explanation": "Nêu cả nguyên nhân và điều chịu tác động."
+      }
+    ],
+    "countability": "Effect chỉ tác động/kết quả có thể đếm hoặc không đếm: an effect, several effects, with little effect. Chọn cách đếm theo ý nói một tác động cụ thể hay hiệu quả nói chung.",
+    "note": "Trong nghĩa thông thường ở đây, effect là danh từ còn affect là động từ chỉ ảnh hưởng. Effect cũng có thể là động từ trang trọng nghĩa tạo ra/thực hiện, nên không nói effect lúc nào cũng là danh từ.",
+    "mistake": {
+      "incorrect": "The schedule change had an effect to our sleep.",
+      "correct": "The schedule change had an effect on our sleep.",
+      "explanation": "Với danh từ effect chỉ tác động lên một đối tượng, dùng on. To không thay on trong mẫu have an effect on something."
+    },
+    "example": {
+      "id": "usage-ox-dcb576426a17b7-01-2026-10-23-r2",
+      "en": "The extra lighting had a noticeable effect on how safely people used the stairs.",
+      "vi": "Hệ thống chiếu sáng bổ sung có tác động rõ rệt đến mức độ an toàn khi mọi người sử dụng cầu thang.",
+      "alternatives": [
+        "impact",
+        "influence"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/effect_1",
+        "title": "effect noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:37.862519+00:00",
+        "sha256": "9d32ea9aad75c82d5eb283fdf803965addcf71160c721c8fc88c611d15530362"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/impact_1",
+        "title": "impact noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:30:51.764128+00:00",
+        "sha256": "3c9249c3b3c2f5e6f668fca528a318527a5f19fcaea4a888e7f24ba49c3b9fe2"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/influence_1",
+        "title": "influence noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:30:51.873760+00:00",
+        "sha256": "cde3b28889912b327a6407c7bbd667880bc00a50a84fa62224c9f6096ff960b0"
+      }
+    ]
+  },
+  {
+    "wordId": "ox-aee408847d35e4-01",
+    "headword": "success",
+    "partOfSpeech": "noun",
+    "meaningVi": "sự thành công hoặc đạt được điều mong muốn",
+    "patterns": [
+      {
+        "form": "success in doing something",
+        "explanation": "Sự thành công trong việc thực hiện một việc; sau in dùng V-ing."
+      },
+      {
+        "form": "the key / secret to success",
+        "explanation": "Yếu tố then chốt hoặc bí quyết giúp đạt thành công."
+      }
+    ],
+    "countability": "Success chỉ việc đạt điều mong muốn thường không đếm được: much success, economic success. A success hoặc successes có thể chỉ người, sự kiện hay kết quả thành công cụ thể.",
+    "note": "Không xem a success là sai: The event was a success là cách dùng hợp lệ khác. Mục này luyện sự thành công trong một mục tiêu, không đếm các sự kiện thành công riêng lẻ.",
+    "mistake": {
+      "incorrect": "Her success in solve the puzzle surprised everyone.",
+      "correct": "Her success in solving the puzzle surprised everyone.",
+      "explanation": "Sau giới từ in dùng solving. Success to solve không phải mẫu thay trực tiếp cho success in solving trong ý này."
+    },
+    "example": {
+      "id": "usage-ox-aee408847d35e4-01-2026-10-23-r2",
+      "en": "The rescue team’s success in finding the missing child brought relief to the whole town.",
+      "vi": "Việc đội cứu hộ thành công tìm thấy đứa trẻ mất tích khiến cả thị trấn nhẹ nhõm.",
+      "alternatives": [
+        "achievement"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/success",
+        "title": "success noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:24:37.962587+00:00",
+        "sha256": "5202172859c811cba94ab4f89d77b3d349b0666a521d5f4a1b0e1e0314e551f2"
+      },
+      {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/achievement",
+        "title": "achievement noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced American Dictionary at OxfordLearnersDictionaries.com",
+        "checkedAt": "2026-10-23T14:30:52.281494+00:00",
+        "sha256": "a72e4b8d2d436d6310b480ccad0dea0d2c2da568c9be0d8c18dbe1b43a4b426e"
+      }
+    ]
+  }
+]
